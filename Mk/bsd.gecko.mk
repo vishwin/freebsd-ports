@@ -4,6 +4,7 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
+#
 # 4 column tabs prevent hair loss and tooth decay!
 
 # bsd.gecko.mk abstracts the selection of gecko-based backends. It allows users
@@ -116,6 +117,11 @@ RUSTFLAGS+=	${CFLAGS:M-march=*:S/-march=/-C target-cpu=/}
 RUSTFLAGS+=	${CFLAGS:M-mcpu=*:S/-mcpu=/-C target-cpu=/:S/power/pwr/}
 .else
 RUSTFLAGS+=	${CFLAGS:M-mcpu=*:S/-mcpu=/-C target-cpu=/}
+.endif
+
+.if defined(WITH_CCACHE_BUILD)
+MOZ_OPTIONS+=	--with-ccache
+BUILD_DEPENDS+=	ccache:devel/ccache # XXX host ccache not detected/honoured
 .endif
 
 # Standard depends
