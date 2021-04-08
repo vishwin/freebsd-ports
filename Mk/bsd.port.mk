@@ -3479,6 +3479,9 @@ PKG_CREATE_ARGS+=	-r ${STAGEDIR}
 .  if defined(PKG_CREATE_VERBOSE)
 PKG_CREATE_ARGS+=	-v
 .  endif
+.  if defined(PKG_CREATE_LEVEL)
+PKG_CREATE_ARGS+=	-l ${PKG_CREATE_LEVEL}
+.  endif
 do-package: ${_EXTRA_PACKAGE_TARGET_DEP} ${WRKDIR}/pkg
 .endif
 
