@@ -84,6 +84,7 @@
     SUBDIR += ncbi-blast+
     SUBDIR += ncbi-cxx-toolkit
     SUBDIR += ncbi-toolkit
+    SUBDIR += ncbi-vdb
     SUBDIR += ngs-sdk
     SUBDIR += p5-AcePerl
     SUBDIR += p5-Bio-ASN1-EntrezGene
@@ -122,9 +123,11 @@
     SUBDIR += protomol
     SUBDIR += psi88
     SUBDIR += py-Genesis-PyAPI
+    SUBDIR += py-bigwig
     SUBDIR += py-biom-format
     SUBDIR += py-biopython
     SUBDIR += py-bx-python
+    SUBDIR += py-crossmap
     SUBDIR += py-cutadapt
     SUBDIR += py-dnaio
     SUBDIR += py-ete3
