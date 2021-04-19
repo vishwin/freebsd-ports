@@ -23,4 +23,6 @@ GH_ACCOUNT=	freebsd
 GH_PROJECT=	drm-kmod-firmware
 GH_TAGNAME=	df9e66d
 
+NO_CCACHE=	yes
+
 .include <bsd.port.mk>

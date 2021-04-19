@@ -56,4 +56,6 @@ PLIST_SUB+=     I915="@comment "
 PLIST_SUB+=     VMWGFX="@comment "
 .endif
 
+NO_CCACHE=	yes
+
 .include <bsd.port.mk>

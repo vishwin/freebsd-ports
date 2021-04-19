@@ -53,4 +53,6 @@ PLIST_SUB+=	AMDKFD="@comment "
 PLIST_SUB+=	I915="@comment "
 .endif
 
+NO_CCACHE=	yes
+
 .include <bsd.port.mk>

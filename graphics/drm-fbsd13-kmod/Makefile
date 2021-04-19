@@ -70,4 +70,6 @@ post-install-SOURCE-on:
 		cd ${WRKSRC} && ${COPYTREE_SHARE} ${dir} ${KMODSRC}
 .endfor
 
+NO_CCACHE=	yes
+
 .include <bsd.port.mk>

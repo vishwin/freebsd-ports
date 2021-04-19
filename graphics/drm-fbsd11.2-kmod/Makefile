@@ -35,4 +35,6 @@ IGNORE=		only supported on FreeBSD 11.
 IGNORE=		not supported on anything but FreeBSD (missing linuxkpi functionality)
 .endif
 
+NO_CCACHE=	yes
+
 .include <bsd.port.mk>
