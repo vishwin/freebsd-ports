@@ -14,4 +14,6 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	KhronosGroup
 TEST_TARGET=	test
 
+NO_CCACHE=	yes
+
 .include <bsd.port.mk>
