@@ -133,6 +133,7 @@
     SUBDIR += adol-c
     SUBDIR += algae
     SUBDIR += alglib
+    SUBDIR += alps
     SUBDIR += alt-ergo
     SUBDIR += amath
     SUBDIR += ambit
@@ -154,6 +155,7 @@
     SUBDIR += atlas
     SUBDIR += barvinok
     SUBDIR += bcal
+    SUBDIR += bcps
     SUBDIR += bitwise
     SUBDIR += blacs
     SUBDIR += blas
