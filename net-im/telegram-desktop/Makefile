@@ -65,7 +65,7 @@ CMAKE_OFF=	DESKTOP_APP_USE_PACKAGED_RLOTTIE DESKTOP_APP_USE_PACKAGED_VARIANT \
 CXXFLAGS+=	-DNDEBUG
 
 # see Bugzilla #245452 for details
-NO_CCACHE=	yes
+#NO_CCACHE=	yes
 
 # Telegram uses OpenAL for its audio, but libtgvoip (for voice calls) can use PulseAudio or ALSA.
 # It dynamically loads PulseAudio, and if this fails, it loads ALSA.
