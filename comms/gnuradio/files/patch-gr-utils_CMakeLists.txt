@@ -1,0 +1,11 @@
+--- gr-utils/CMakeLists.txt.orig	2021-03-22 22:37:12 UTC
++++ gr-utils/CMakeLists.txt
+@@ -10,7 +10,7 @@
+ ########################################################################
+ include(GrPython)
+ 
+-GR_PYTHON_CHECK_MODULE("Mako >= ${GR_MAKO_MIN_VERSION}" mako "mako.__version__ >= '${GR_MAKO_MIN_VERSION}'" MAKO_FOUND)
++GR_PYTHON_CHECK_MODULE("Mako >= ${GR_MAKO_MIN_VERSION}" mako "tuple(int(s) for s in mako.__version__.split('.')) >= tuple(int(s) for s in '${GR_MAKO_MIN_VERSION}'.split('.'))" MAKO_FOUND)
+ 
+ GR_PYTHON_CHECK_MODULE_RAW(
+   "click"

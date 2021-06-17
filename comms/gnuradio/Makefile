@@ -1,7 +1,6 @@
 PORTNAME=	gnuradio
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.8.1.0
-PORTREVISION=	7
+DISTVERSION=	3.9.2.0
 CATEGORIES=	comms astro hamradio
 
 MAINTAINER=	hamradio@FreeBSD.org
@@ -9,114 +8,115 @@ COMMENT=	Amateur Radio Software defined radio
 
 LICENSE=	GPLv3
 
-BUILD_DEPENDS=	volk>0:devel/volk \
-		doxygen>0:devel/doxygen \
-		${PYTHON_PKGNAMEPREFIX}sphinx>=1.2.2,1:textproc/py-sphinx@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR} \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mako>=1.0.7:textproc/py-mako@${PY_FLAVOR} \
 		${PYNUMPY} \
-		${PYTHON_SITELIBDIR}/mako/__init__.py:textproc/py-mako@${PY_FLAVOR} \
-		${PYTHON_SITELIBDIR}/yaml/__init__.py:devel/py-yaml@${PY_FLAVOR} \
-		${PYTHON_SITELIBDIR}/gi/__init__.py:devel/py-gobject3@${PY_FLAVOR} \
-		${PYTHON_SITELIBDIR}/cairo/__init__.py:graphics/py-cairo@${PY_FLAVOR} \
-		${PYTHON_SITELIBDIR}/six.py:devel/py-six@${PY_FLAVOR} \
-		${PYTHON_SITELIBDIR}/click/__init__.py:devel/py-click@${PY_FLAVOR} \
-		${PYTHON_SITELIBDIR}/click_plugins/__init__.py:devel/py-click-plugins@${PY_FLAVOR} \
-		aconnect:audio/alsa-utils \
-		cheetah:devel/py-cheetah3@${PY_FLAVOR} \
-		cppzmq>0:net/cppzmq \
-		guile:lang/guile \
-		minixmlto:textproc/minixmlto \
-		sdl-config:devel/sdl12 \
-		swig:devel/swig \
-		mpir>0:math/mpir \
-		xdg-open:devel/xdg-utils
-LIB_DEPENDS=	libcodec2.so:audio/codec2 \
-		libfftw3.so:math/fftw3 \
-		libfftw3f.so:math/fftw3-float \
-		libgmpxx.so:math/gmp \
-		libqwt6.so:x11-toolkits/qwt6 \
-		${PY_BOOST} \
+		${PYTHON_PKGNAMEPREFIX}pybind11>=2.4:devel/py-pybind11@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyqtgraph>0:graphics/py-pyqtgraph@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR} \
+		pybind11>=2.4:devel/pybind11 \
+		${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}click-plugins>0:devel/py-click-plugins@${PY_FLAVOR}
+LIB_DEPENDS=	libboost_date_time.so:devel/boost-libs \
+		libvolk.so:devel/volk \
 		liblog4cpp.so:devel/log4cpp \
-		libportaudio.so:audio/portaudio \
-		libjack.so:audio/jack \
+		libgmpxx.so:math/gmp \
+		libsndfile.so:audio/libsndfile \
+		libfftw3f.so:math/fftw3-float \
 		libasound.so:audio/alsa-lib \
-		libgsl.so:math/gsl \
+		libjack.so:audio/jack \
+		libportaudio.so:audio/portaudio \
+		libSDL.so:devel/sdl12 \
+		libcodec2.so:audio/codec2 \
 		libgsm.so:audio/gsm \
-		libboost_date_time.so:devel/boost-libs \
-		liborc-0.4.so:devel/orc \
-		libzmq.so:net/libzmq4
-RUN_DEPENDS:=	${BUILD_DEPENDS}
+		libgsl.so:math/gsl \
+		libunwind.so:devel/libunwind
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mako>=1.0.7:textproc/py-mako@${PY_FLAVOR} \
+		${PYNUMPY} \
+		${PYTHON_PKGNAMEPREFIX}pybind11>=2.4:devel/py-pybind11@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyqtgraph>0:graphics/py-pyqtgraph@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}click-plugins>0:devel/py-click-plugins@${PY_FLAVOR}
 
-USES=		cmake compiler:c++11-lang desktop-file-utils fortran gnome \
-		iconv perl5 pkgconfig pyqt:5 python:3.5+ qt:5 shared-mime-info \
+USES=		cmake compiler:c++14-lang iconv pkgconfig python:3.6+ shared-mime-info \
 		shebangfix
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	gnuradio
-GH_PROJECT=	gnuradio
-
 SHEBANG_FILES=	grc/scripts/freedesktop/grc_setup_freedesktop.in \
 		gnuradio-runtime/python/gnuradio/ctrlport/gr-ctrlport-monitor \
 		gnuradio-runtime/python/gnuradio/ctrlport/gr-perf-monitorx
+USE_LDCONFIG=	yes
 
-CMAKE_ARGS+=	-DCMAKE_INSTALL_RPATH:STRING="${LOCALBASE}/lib/gcc${_GCC_VER}" \
-		-DENABLE_GR_CTRLPORT="YES" \
-		-DICONV_LIB:STRING="X${ICONV_LIB}" \
-		-DICONV_PREFIX:STRING="${ICONV_PREFIX}" \
-		-DLOCALBASE:STRING="${LOCALBASE}" \
-		-DGR_PKG_DOC_DIR:STRING="${DOCSDIR}" \
-		-DPYTHON_EXECUTABLE:STRING="${PYTHON_CMD}" \
-		-DSWIG_EXECUTABLE:STRING="${LOCALBASE}/bin/swig"\
-		-DXMLTO_EXECUTABLE:STRING=minixmlto \
-		-DENABLE_INTERNAL_VOLK:STRING="OFF"
+CMAKE_OFF=	ENABLE_DEFAULT \
+		ENABLE_DOXYGEN
+CMAKE_ON=	ENABLE_PYTHON \
+		ENABLE_GNURADIO_RUNTIME \
+		ENABLE_GR_CTRLPORT \
+		ENABLE_POSTINSTALL \
+		ENABLE_GR_ANALOG \
+		ENABLE_GR_AUDIO \
+		ENABLE_GR_BLOCKS \
+		ENABLE_GR_CHANNELS \
+		ENABLE_GR_DIGITAL \
+		ENABLE_GR_DTV \
+		ENABLE_GR_FEC \
+		ENABLE_GR_FFT \
+		ENABLE_GR_FILTER \
+		ENABLE_GR_NETWORK \
+		ENABLE_GR_VIDEO_SDL \
+		ENABLE_GR_TRELLIS \
+		ENABLE_GR_UTILS \
+		ENABLE_GR_MODTOOL \
+		ENABLE_GR_BLOCKTOOL \
+		ENABLE_GR_VOCODER \
+		ENABLE_GR_WAVELET
+CMAKE_ARGS+=	-DCMAKE_INSTALL_PREFIX="${PREFIX}" \
+		-DPYTHON_EXECUTABLE="${PYTHON_CMD}"
 # for detailed debugging uncomment the next line
 #CMAKE_ARGS+=	--debug-output --trace
-USE_CXXSTD=	c++11
-USE_PYQT=	core gui opengl
-USE_WX=		3.0
-USE_QT=		buildtools core gui xml qmake widgets
-WX_COMPS=	wx wx:build wx:run python:build python:run
-USE_LDCONFIG=	yes
-LIBSTRIP_FILES=	analog audio blocks channels digital dtv fec fft\
-		filter pmt qtgui runtime trellis video-sdl\
+LIBSTRIP_FILES=	analog audio blocks channels digital dtv fec fft \
+		filter pmt qtgui runtime trellis video-sdl \
 		vocoder wavelet
 
-OPTIONS_DEFINE=		DOCS UHD TESTING DOXYGEN
-# Unfortunately building docs on i386 fails
-##OPTIONS_EXCLUDE_${i386}=	DOXYGEN
-# Yay. building docs is broken on 10 and HEAD too so turn them all off
-OPTIONS_EXCLUDE=	DOXYGEN
-OPTIONS_SUB=		yes
+PLIST_SUB+=	LIBVERSION=${PORTVERSION:C/\.[0-9]$//} \
+		PORTVERSION=${PORTVERSION}
+
+OPTIONS_DEFINE=	GRC QT5 SOAPY TEST UHD ZMQ
+OPTIONS_DEFAULT=	SOAPY UHD ZMQ
+OPTIONS_SUB=	yes
+GRC_DESC=	Include GNU Radio Companion
+SOAPY_DESC=	Include SoapySDR support
 UHD_DESC=	Include UHD support from Ettus
-TESTING_DESC=	Include testing support
-INSTALLS_ICONS=		yes
+ZMQ_DESC=	Include ZeroMQ support
 
-PLIST_SUB+=	PORTVERSION=${PORTVERSION}
+GRC_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}gobject3>0:devel/py-gobject3@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}cairo>0:graphics/py-cairo@${PY_FLAVOR}
+GRC_RUN_DEPENDS:=	${GRC_BUILD_DEPENDS}
+GRC_USES=	desktop-file-utils gnome
+GRC_USE=	gnome=cairo,gtk30,pango
+GRC_CMAKE_BOOL=	ENABLE_GRC
+QT5_LIB_DEPENDS=	libqwt6.so:x11-toolkits/qwt6
+QT5_USES=	pyqt:5 qt:5
+QT5_USE=	pyqt=core,gui,widgets qt=buildtools,core,gui,qmake,widgets
+QT5_CMAKE_BOOL=	ENABLE_GR_QTGUI
+QT5_CMAKE_ON=	-DQWT_LIBRARIES=${PREFIX}/lib/qt5/libqwt6.so \
+		-DQWT_INCLUDE_DIRS=${PREFIX}/include/qt5/qwt6
+SOAPY_LIB_DEPENDS=	libSoapySDR.so:misc/soapysdr
+SOAPY_CMAKE_BOOL=	ENABLE_GR_SOAPY
+TEST_CMAKE_BOOL=	ENABLE_TESTING
+UHD_LIB_DEPENDS=	libuhd.so:comms/uhd
+UHD_CMAKE_BOOL=	ENABLE_GR_UHD
+ZMQ_BUILD_DEPENDS=	cppzmq>0:net/cppzmq
+ZMQ_LIB_DEPENDS=	libzmq.so:net/libzmq4
+ZMQ_CMAKE_BOOL=	ENABLE_GR_ZEROMQ
 
-DOXYGEN_BUILD_DEPENDS=	doxygen:devel/doxygen \
-			${PYTHON_PKGNAMEPREFIX}sphinx>=1.2.2,1:textproc/py-sphinx@${PY_FLAVOR} \
-			dot:graphics/graphviz \
-			xmlto:textproc/xmlto \
-			freefont-ttf>0:x11-fonts/freefont-ttf
-DOXYGEN_CMAKE_ON=	-DENABLE_DOXYGEN:STRING="ON" \
-		-DENABLE_DOCS:STRING="ON"
-DOXYGEN_CMAKE_OFF=	-DENABLE_DOXYGEN:STRING="OFF" \
-		-DENABLE_DOCS:STRING="OFF"
-
-UHD_CMAKE_ON=	-DENABLE_GR_UHD:STRING="ON"
-UHD_CMAKE_OFF=	-DENABLE_GR_UHD:STRING="OFF"
-
-TESTING_CMAKE_ON=	-DENABLE_TESTING:STRING="ON"
-TESTING_CMAKE_OFF=	-DENABLE_TESTING:STRING="OFF"
-
-.include <bsd.port.pre.mk>
-
-.if ${PORT_OPTIONS:MUHD}
-LIBSTRIP_FILES+=	uhd
-LIB_DEPENDS+=	libuhd.so:comms/uhd
-PLIST_SUB+=	UHD=""
-.else
-PLIST_SUB+=	UHD="@comment "
+.include <bsd.port.options.mk>
+.if ${PORT_OPTIONS:MGRC}
+INSTALLS_ICONS=	yes
 .endif
 
-.include <bsd.port.post.mk>
+post-install:
+	@${FIND} ${STAGEDIR}${ETCDIR} -type f -exec ${MV} {} {}.sample \;
+
+.include <bsd.port.mk>
