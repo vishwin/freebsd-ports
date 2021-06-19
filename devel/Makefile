@@ -82,6 +82,7 @@
     SUBDIR += R-cran-purrr
     SUBDIR += R-cran-randomForest
     SUBDIR += R-cran-rappdirs
+    SUBDIR += R-cran-rcmdcheck
     SUBDIR += R-cran-registry
     SUBDIR += R-cran-rematch2
     SUBDIR += R-cran-remotes
@@ -4150,6 +4151,7 @@
     SUBDIR += py-azure-mgmt-dns
     SUBDIR += py-azure-mgmt-eventgrid
     SUBDIR += py-azure-mgmt-eventhub
+    SUBDIR += py-azure-mgmt-extendedlocation
     SUBDIR += py-azure-mgmt-hdinsight
     SUBDIR += py-azure-mgmt-imagebuilder
     SUBDIR += py-azure-mgmt-iotcentral
