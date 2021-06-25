@@ -579,7 +579,6 @@
     SUBDIR += elixir-quantum
     SUBDIR += elixir-smppex
     SUBDIR += elixir-timex
-    SUBDIR += elixir-tirexs
     SUBDIR += elixir-trailing_format_plug
     SUBDIR += elixir-tzdata
     SUBDIR += elixir-unsafe
@@ -4323,6 +4322,7 @@
     SUBDIR += py-cson
     SUBDIR += py-csv23
     SUBDIR += py-ctags
+    SUBDIR += py-ctypesgen
     SUBDIR += py-curio
     SUBDIR += py-cursive
     SUBDIR += py-curtsies
