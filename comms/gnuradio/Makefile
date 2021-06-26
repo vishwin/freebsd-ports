@@ -8,6 +8,15 @@ COMMENT=	Amateur Radio Software defined radio
 
 LICENSE=	GPLv3
 
+FLAVORS=	default grc headless
+default_CONFLICTS_INSTALL=	gnuradio-grc gnuradio-headless
+grc_CONFLICTS_INSTALL=	gnuradio gnuradio-headless
+grc_PKGNAMESUFFIX=	-grc
+grc_COMMENT=	(include GNU Radio Companion)
+headless_CONFLICTS_INSTALL=	gnuradio gnuradio-grc
+headless_PKGNAMESUFFIX=	-headless
+headless_COMMENT=	(no GUI components)
+
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mako>=1.0.7:textproc/py-mako@${PY_FLAVOR} \
 		${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pybind11>=2.4:devel/py-pybind11@${PY_FLAVOR} \
@@ -72,17 +81,17 @@ CMAKE_ON=	ENABLE_PYTHON \
 		ENABLE_GR_WAVELET
 CMAKE_ARGS+=	-DCMAKE_INSTALL_PREFIX="${PREFIX}" \
 		-DPYTHON_EXECUTABLE="${PYTHON_CMD}"
-# for detailed debugging uncomment the next line
-#CMAKE_ARGS+=	--debug-output --trace
-LIBSTRIP_FILES=	analog audio blocks channels digital dtv fec fft \
-		filter pmt qtgui runtime trellis video-sdl \
-		vocoder wavelet
 
 PLIST_SUB+=	LIBVERSION=${PORTVERSION:C/\.[0-9]$//} \
 		PORTVERSION=${PORTVERSION}
 
 OPTIONS_DEFINE=	GRC QT5 SOAPY TEST UHD ZMQ
-OPTIONS_DEFAULT=	SOAPY UHD ZMQ
+OPTIONS_DEFAULT=	QT5 SOAPY UHD ZMQ
+.if ${FLAVOR:U} == grc
+OPTIONS_SLAVE+=	GRC
+.elif ${FLAVOR:U} == headless
+OPTIONS_EXCLUDE=	GRC QT5
+.endif
 OPTIONS_SUB=	yes
 GRC_DESC=	Include GNU Radio Companion
 SOAPY_DESC=	Include SoapySDR support
