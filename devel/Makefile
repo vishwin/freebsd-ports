@@ -885,6 +885,7 @@
     SUBDIR += gradle
     SUBDIR += gradle-completion
     SUBDIR += gradle5
+    SUBDIR += gradle6
     SUBDIR += gradle62
     SUBDIR += grantlee5
     SUBDIR += grcov
@@ -6978,7 +6979,6 @@
     SUBDIR += vcglib
     SUBDIR += vera++
     SUBDIR += vexcl
-    SUBDIR += viewvc
     SUBDIR += viewvc-devel
     SUBDIR += violet
     SUBDIR += vitables
