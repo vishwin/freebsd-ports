@@ -419,6 +419,7 @@
     SUBDIR += fusefs-squashfuse
     SUBDIR += fusefs-sshfs
     SUBDIR += fusefs-unionfs
+    SUBDIR += fusefs-unreliablefs
     SUBDIR += fusefs-webdavfs
     SUBDIR += fusefs-zip
     SUBDIR += fvcool
@@ -983,10 +984,8 @@
     SUBDIR += pstree
     SUBDIR += puppet-lint
     SUBDIR += puppet-mode.el
-    SUBDIR += puppet5
     SUBDIR += puppet6
     SUBDIR += puppet7
-    SUBDIR += puppetserver5
     SUBDIR += puppetserver6
     SUBDIR += puppetserver7
     SUBDIR += pv
