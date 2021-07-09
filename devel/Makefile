@@ -869,6 +869,7 @@
     SUBDIR += golangci-lint
     SUBDIR += golint
     SUBDIR += google-cloud-cpp
+    SUBDIR += google-cloud-cpp117
     SUBDIR += google-gdata
     SUBDIR += google-perftools
     SUBDIR += google-styleguide
@@ -6906,7 +6907,6 @@
     SUBDIR += svntrac
     SUBDIR += swank-clojure
     SUBDIR += swig
-    SUBDIR += synfig
     SUBDIR += sysconftool
     SUBDIR += sysfsutils
     SUBDIR += systemc
