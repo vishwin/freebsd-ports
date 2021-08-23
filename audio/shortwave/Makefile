@@ -13,8 +13,8 @@ LIB_DEPENDS=	libdbus-1.so:devel/dbus
 USES=		cargo gettext gnome meson pkgconfig python:build shebangfix sqlite ssl
 USE_GITHUB=	nodefault
 USE_GITLAB=	yes
-USE_GSTREAMER1=	good libav soup vorbis
 USE_GNOME=	gdkpixbuf2 gtk40 libadwaita
+USE_GSTREAMER1=	good libav soup vorbis
 GH_TUPLE=	gtk-rs:gtk3-rs:1ca4fbcc30ec882f6079f26018c30ef1ceb8a2e2:gtk3 \
 		gtk-rs:gtk4-rs:534f63e66a2a3883770fe110a8a556a4b40f84b3:gtk4
 GL_SITE=	https://gitlab.gnome.org
@@ -298,7 +298,6 @@ CARGO_GIT_SUBDIR=	gstreamer:gstreamer-audio:gstreamer-audio \
 			gtk4:gdk-sys:gdk4/sys \
 			gtk4:gdk:gdk4 \
 			gtk4:gtk-sys:gtk4/sys \
-			gtk4:gtk:gtk4 \
 			gtk4:gtk:gtk4 \
 			libadwaita:adw:libadwaita
 CARGO_BUILD=	no
