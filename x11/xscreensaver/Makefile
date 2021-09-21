@@ -1,8 +1,7 @@
 # Created by: dom@myrddin.demon.co.uk
 
 PORTNAME=	xscreensaver
-PORTVERSION=	5.44
-PORTREVISION=	3
+PORTVERSION=	6.02
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 
@@ -32,6 +31,7 @@ CONFLICTS=	xscreensaver-gnome xscreensaver-gnome-hacks
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	PERL="${PERL}"
 CONFIGURE_ARGS=	--enable-locking \
+		--with-app-defaults=${PREFIX}/lib/X11/app-defaults/ \
 		--with-configdir=${PREFIX}/share/xscreensaver/config/ \
 		--with-dpms-ext \
 		--with-gl \
@@ -41,7 +41,6 @@ CONFIGURE_ARGS=	--enable-locking \
 		--with-jpeg=${LOCALBASE} \
 		--with-pixbuf \
 		--with-randr-ext \
-		--with-x-app-defaults=${PREFIX}/lib/X11/app-defaults/ \
 		--with-xdbe-ext \
 		--with-xf86gamma-ext \
 		--with-xf86vmode-ext \
@@ -59,6 +58,7 @@ OPTIONS_DEFAULT=	PAM XFT
 OPTIONS_SUB=		yes
 
 PAM_CONFIGURE_WITH=	pam
+PAM_EXTRA_PATCHES_OFF=	${PATCHDIR}/extra-patch-drop-privileges
 
 SETUID_HACKS_DESC=	Install sonar hack suid so it can ping
 
@@ -97,7 +97,7 @@ SUB_FILES=	xscreensaver-blank.desktop xscreensaver-lock.desktop \
 post-patch:
 	${REINPLACE_CMD} -e 's|/usr/X11R6|${LOCALBASE}|g' \
 			-e 's|pkg_config --list-all|pkg_config --help|' \
-			${WRKSRC}/configure.in
+			${WRKSRC}/configure.ac
 	${REINPLACE_CMD} -e "s|/etc/pam.d|${PREFIX}/etc/pam.d|g" \
 		${WRKSRC}/driver/passwd-pam.c \
 		${WRKSRC}/driver/xscreensaver.man
