@@ -1,3 +1,29 @@
+  <vuln vid="576aa394-1d85-11ec-8b7d-4f5b624574e2">
+    <topic>webkit2-gtk3 -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>webkit2-gtk3</name>
+	<range><lt>2.32.4</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The WebKitGTK project reports vulnerabilities:</p>
+	<blockquote cite="https://webkitgtk.org/security/WSA-2021-0005.html">
+		<ul><li>CVE-2021-30858: Processing maliciously crafted web content may lead to arbitrary code execution.</li></ul>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-30858</cvename>
+      <url>https://webkitgtk.org/security/WSA-2021-0005.html</url>
+    </references>
+    <dates>
+      <discovery>2021-09-20</discovery>
+      <entry>2021-09-24</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="b6c875f1-1d76-11ec-ae80-704d7b472482">
     <topic>chromium -- use after free in Portals</topic>
     <affects>
@@ -385,16 +411,17 @@
       </body>
     </description>
     <references>
-      <cvename>CVE-CVE-2021-33193</cvename>
-      <cvename>CVE-CVE-2021-34798</cvename>
-      <cvename>CVE-CVE-2021-36160</cvename>
-      <cvename>CVE-CVE-2021-39275</cvename>
-      <cvename>CVE-CVE-2021-40438</cvename>
+      <cvename>CVE-2021-33193</cvename>
+      <cvename>CVE-2021-34798</cvename>
+      <cvename>CVE-2021-36160</cvename>
+      <cvename>CVE-2021-39275</cvename>
+      <cvename>CVE-2021-40438</cvename>
       <url>http://httpd.apache.org/security/vulnerabilities_24.html</url>
     </references>
     <dates>
       <discovery>2021-09-16</discovery>
       <entry>2021-09-17</entry>
+      <modified>2021-09-28</modified>
     </dates>
   </vuln>
 
@@ -403,8 +430,7 @@
     <affects>
       <package>
        <name>curl</name>
-       <range><lt>7.79.0</lt></range>
-       <range><ge>7.20.0</ge></range>
+       <range><ge>7.20.0</ge><lt>7.79.0</lt></range>
      </package>
     </affects>
     <description>
@@ -428,6 +454,7 @@
     <dates>
       <discovery>2021-09-15</discovery>
       <entry>2021-09-17</entry>
+      <modified>2021-09-28</modified>
     </dates>
   </vuln>
 
