@@ -165,14 +165,10 @@
     SUBDIR += cfengine-devel
     SUBDIR += cfengine-masterfiles
     SUBDIR += cfengine-masterfiles-devel
-    SUBDIR += cfengine-masterfiles310
-    SUBDIR += cfengine-masterfiles311
     SUBDIR += cfengine-masterfiles315
     SUBDIR += cfengine-masterfiles316
     SUBDIR += cfengine-masterfiles317
     SUBDIR += cfengine-masterfiles318
-    SUBDIR += cfengine310
-    SUBDIR += cfengine311
     SUBDIR += cfengine315
     SUBDIR += cfengine316
     SUBDIR += cfengine317
@@ -221,6 +217,7 @@
     SUBDIR += cpdup
     SUBDIR += cpu-x
     SUBDIR += cpuburn
+    SUBDIR += cpufetch
     SUBDIR += cpuid
     SUBDIR += cpuid2cpuflags
     SUBDIR += cpulimit
@@ -1130,6 +1127,7 @@
     SUBDIR += rmlint
     SUBDIR += rocr
     SUBDIR += roct
+    SUBDIR += root-tail
     SUBDIR += rovclock
     SUBDIR += rpi-firmware
     SUBDIR += rset
@@ -1280,7 +1278,6 @@
     SUBDIR += shim
     SUBDIR += shlock
     SUBDIR += shmcat
-    SUBDIR += showbeastie
     SUBDIR += shuf
     SUBDIR += siegfried
     SUBDIR += signon-kwallet-extension

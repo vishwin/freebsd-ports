@@ -2,6 +2,7 @@
 
 PORTNAME=	gnome-shell
 PORTVERSION=	41.0
+PORTREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	GNOME/sources/${PORTNAME}/${PORTVERSION:C/^([0-9]+)\..*/\1/}
 DIST_SUBDIR=	gnome
@@ -67,11 +68,6 @@ CPE_VENDOR=	gnome
 
 GLIB_SCHEMAS=	00_org.gnome.shell.gschema.override \
 		org.gnome.shell.gschema.xml
-
-.if exists(/usr/bin/ld.lld) && ${/usr/bin/ld:L:tA} != /usr/bin/ld.lld
-# Work around "New rpath must not be longer than the old one."
-LDFLAGS+=	-fuse-ld=lld
-.endif
 
 post-extract:
 	${CP} ${FILESDIR}/*.xml ${WRKSRC}/data/dbus-interfaces
