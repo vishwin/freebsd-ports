@@ -90,8 +90,8 @@ bin/xscreensaver-hacks/galaxy
 bin/xscreensaver-hacks/gears
 bin/xscreensaver-hacks/geodesic
 bin/xscreensaver-hacks/geodesicgears
-bin/xscreensaver-hacks/gibson
 bin/xscreensaver-hacks/gflux
+bin/xscreensaver-hacks/gibson
 bin/xscreensaver-hacks/glblur
 bin/xscreensaver-hacks/glcells
 bin/xscreensaver-hacks/gleidescope
@@ -608,8 +608,8 @@ share/pixmaps/xscreensaver.xpm
 %%DATADIR%%/config/gears.xml
 %%DATADIR%%/config/geodesic.xml
 %%DATADIR%%/config/geodesicgears.xml
-%%DATADIR%%/config/gibson.xml
 %%DATADIR%%/config/gflux.xml
+%%DATADIR%%/config/gibson.xml
 %%DATADIR%%/config/glblur.xml
 %%DATADIR%%/config/glcells.xml
 %%DATADIR%%/config/gleidescope.xml
