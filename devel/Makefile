@@ -228,9 +228,15 @@
     SUBDIR += avro-cpp
     SUBDIR += awless
     SUBDIR += aws-c-common
+    SUBDIR += aws-c-compression
     SUBDIR += aws-c-event-stream
+    SUBDIR += aws-c-http
     SUBDIR += aws-c-io
+    SUBDIR += aws-c-mqtt
+    SUBDIR += aws-c-s3
+    SUBDIR += aws-c-sdkutils
     SUBDIR += aws-checksums
+    SUBDIR += aws-crt-cpp
     SUBDIR += aws-sdk-cpp
     SUBDIR += aws-sdk-php
     SUBDIR += awscli
@@ -4604,6 +4610,7 @@
     SUBDIR += py-iopath
     SUBDIR += py-ipaddr
     SUBDIR += py-ipdb
+    SUBDIR += py-ipykernel
     SUBDIR += py-ipykernel5
     SUBDIR += py-ipympl
     SUBDIR += py-ipyparallel
@@ -5812,6 +5819,7 @@
     SUBDIR += rubygem-aws-sdk-macie
     SUBDIR += rubygem-aws-sdk-macie2
     SUBDIR += rubygem-aws-sdk-managedblockchain
+    SUBDIR += rubygem-aws-sdk-managedgrafana
     SUBDIR += rubygem-aws-sdk-marketplacecatalog
     SUBDIR += rubygem-aws-sdk-marketplacecommerceanalytics
     SUBDIR += rubygem-aws-sdk-marketplaceentitlementservice
@@ -6114,7 +6122,6 @@
     SUBDIR += rubygem-celluloid-pool
     SUBDIR += rubygem-celluloid-supervision
     SUBDIR += rubygem-cf-uaa-lib
-    SUBDIR += rubygem-chef-provisioning
     SUBDIR += rubygem-cheffish
     SUBDIR += rubygem-childprocess
     SUBDIR += rubygem-childprocess3
@@ -6150,6 +6157,7 @@
     SUBDIR += rubygem-configuration
     SUBDIR += rubygem-console
     SUBDIR += rubygem-contracts
+    SUBDIR += rubygem-contracts016
     SUBDIR += rubygem-cookbook-omnifetch
     SUBDIR += rubygem-cool.io
     SUBDIR += rubygem-corefines
@@ -6373,7 +6381,6 @@
     SUBDIR += rubygem-graphql
     SUBDIR += rubygem-graphql-client
     SUBDIR += rubygem-graphql-docs
-    SUBDIR += rubygem-grit
     SUBDIR += rubygem-grpc-google-iam-v1
     SUBDIR += rubygem-guess_html_encoding
     SUBDIR += rubygem-gyoku
@@ -6412,6 +6419,7 @@
     SUBDIR += rubygem-io-nonblock
     SUBDIR += rubygem-io-wait
     SUBDIR += rubygem-iobuffer
+    SUBDIR += rubygem-iostruct
     SUBDIR += rubygem-irb
     SUBDIR += rubygem-iso8601
     SUBDIR += rubygem-jaeger-client
@@ -6540,6 +6548,7 @@
     SUBDIR += rubygem-oj
     SUBDIR += rubygem-oj310
     SUBDIR += rubygem-omniauth_crowd
+    SUBDIR += rubygem-omnibus
     SUBDIR += rubygem-open3
     SUBDIR += rubygem-open3_backport
     SUBDIR += rubygem-open4
@@ -6562,6 +6571,7 @@
     SUBDIR += rubygem-pathspec
     SUBDIR += rubygem-pathutil
     SUBDIR += rubygem-pdk
+    SUBDIR += rubygem-pedump
     SUBDIR += rubygem-peek
     SUBDIR += rubygem-peek-gc-rails52
     SUBDIR += rubygem-peek-host
@@ -6919,6 +6929,7 @@
     SUBDIR += rubygem-yui-compressor
     SUBDIR += rubygem-zeitwerk
     SUBDIR += rubygem-zentest
+    SUBDIR += rubygem-zhexdump
     SUBDIR += rubygem-zlib
     SUBDIR += rudeconfig
     SUBDIR += rudiments

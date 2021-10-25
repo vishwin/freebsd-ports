@@ -34,7 +34,6 @@
     SUBDIR += aslookup
     SUBDIR += asterisk-chan_sccp
     SUBDIR += asterisk-g72x
-    SUBDIR += asterisk13
     SUBDIR += asterisk16
     SUBDIR += asterisk18
     SUBDIR += astron
@@ -1136,6 +1135,7 @@
     SUBDIR += py-sshtunnel
     SUBDIR += py-sshuttle
     SUBDIR += py-stomp.py
+    SUBDIR += py-suds-community
     SUBDIR += py-suds-jurko
     SUBDIR += py-tacacs_plus
     SUBDIR += py-terminado
