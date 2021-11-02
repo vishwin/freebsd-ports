@@ -1,8 +1,8 @@
 # Created by: Gerald Pfeifer <gerald@FreeBSD.org>
 
 PORTNAME=	wine
-DISTVERSION=	6.19
-PORTREVISION=	3
+DISTVERSION=	6.20
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	SF/${PORTNAME}/Source \
@@ -69,7 +69,7 @@ SUB_FILES=	pkg-message
 
 PORTDATA=	wine.inf
 
-OPTIONS_DEFINE=	CUPS DOCS DOSBOX GNUTLS LDAP LIBXSLT MPG123 OPENAL STAGING V4L WINEMAKER X11 GECKO MONO
+OPTIONS_DEFINE=	CUPS DOCS DOSBOX GNUTLS LDAP LIBXSLT OPENAL STAGING V4L WINEMAKER X11 GECKO MONO
 OPTIONS_DEFAULT=GNUTLS OPENAL X11
 OPTIONS_SUB=	yes
 
@@ -98,9 +98,6 @@ LIBXSLT_LIB_DEPENDS=	libxslt.so:textproc/libxslt
 
 MONO_RUN_DEPENDS=	wine-mono-devel>0:emulators/wine-mono-devel
 
-MPG123_CONFIGURE_WITH=	mpg123
-MPG123_LIB_DEPENDS=	libmpg123.so:audio/mpg123
-
 OPENAL_CONFIGURE_WITH=	openal
 OPENAL_USES=		openal
 
@@ -109,7 +106,8 @@ STAGING_DIST=		v${DISTVERSION}.tar.gz
 STAGING_DISTFILES=	${STAGING_DIST}:staging
 STAGING_EXTRACT_DEPENDS=	bash:shells/bash \
 				git:devel/git \
-				autoconf>0:devel/autoconf
+				autoconf>0:devel/autoconf \
+				gawk:lang/gawk
 STAGING_LIB_DEPENDS=	libtxc_dxtn.so:graphics/s2tc
 
 V4L_CONFIGURE_WITH=	v4l2
@@ -160,6 +158,7 @@ PLIST_SUB+=		WINE32="" WINE64="@comment " WINEARCH="i386"
 
 post-extract-STAGING-on: fix-shebang
 	cd ${WRKSRC} && ${TAR} xf ${DISTDIR}/${STAGING_DIST} --strip-components 1
+	cd ${WRKSRC} && ${PATCH} -p0 < ${PATCHDIR}/extra-gitapply
 	cd ${WRKSRC} && bash ./patches/patchinstall.sh --backend=patch DESTDIR=${WRKSRC} --all
 
 pre-build:
