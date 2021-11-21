@@ -924,6 +924,7 @@
     SUBDIR += grcov
     SUBDIR += grex
     SUBDIR += grpc
+    SUBDIR += grpc130
     SUBDIR += grpc134
     SUBDIR += grv
     SUBDIR += gsettings-desktop-schemas
@@ -1521,6 +1522,7 @@
     SUBDIR += luv
     SUBDIR += lwp
     SUBDIR += lxqt-build-tools
+    SUBDIR += lyra
     SUBDIR += m17n-db
     SUBDIR += m17n-docs
     SUBDIR += m17n-inscript2
@@ -1776,6 +1778,7 @@
     SUBDIR += p5-Array-Iterator
     SUBDIR += p5-Array-Unique
     SUBDIR += p5-Array-Window
+    SUBDIR += p5-Asm-Preproc
     SUBDIR += p5-Async-Interrupt
     SUBDIR += p5-Async-MergePoint
     SUBDIR += p5-AtExit
@@ -1845,6 +1848,7 @@
     SUBDIR += p5-CPANPLUS
     SUBDIR += p5-CPANPLUS-Dist-Build
     SUBDIR += p5-CPS
+    SUBDIR += p5-CPU-Z80-Assembler
     SUBDIR += p5-Cache
     SUBDIR += p5-Cache-AgainstFile
     SUBDIR += p5-Cache-Cache
@@ -1859,6 +1863,7 @@
     SUBDIR += p5-Callback-Frame
     SUBDIR += p5-Canary-Stability
     SUBDIR += p5-Capture-Tiny
+    SUBDIR += p5-Capture-Tiny-Extended
     SUBDIR += p5-Carp
     SUBDIR += p5-Carp-Always
     SUBDIR += p5-Carp-Always-Color
@@ -2647,6 +2652,7 @@
     SUBDIR += p5-Iterator-IO
     SUBDIR += p5-Iterator-Misc
     SUBDIR += p5-Iterator-Simple
+    SUBDIR += p5-Iterator-Simple-Lookahead
     SUBDIR += p5-Iterator-Util
     SUBDIR += p5-JIRA-REST
     SUBDIR += p5-JQuery
@@ -2988,6 +2994,7 @@
     SUBDIR += p5-Object-Simple
     SUBDIR += p5-Object-Tiny
     SUBDIR += p5-Object-Tiny-Lvalue
+    SUBDIR += p5-Object-Tiny-RW
     SUBDIR += p5-Olson-Abbreviations
     SUBDIR += p5-Opcodes
     SUBDIR += p5-OrePAN2
@@ -7181,6 +7188,7 @@
     SUBDIR += xdg-user-dirs
     SUBDIR += xdg-utils
     SUBDIR += xdgpaths
+    SUBDIR += xelfviewer
     SUBDIR += xeus
     SUBDIR += xeus-cling
     SUBDIR += xfce4-dev-tools
@@ -7215,6 +7223,7 @@
     SUBDIR += z80-asm
     SUBDIR += z80asm
     SUBDIR += z80ex
+    SUBDIR += z88dk
     SUBDIR += zanata-cli
     SUBDIR += zanata-platform
     SUBDIR += zapcc
