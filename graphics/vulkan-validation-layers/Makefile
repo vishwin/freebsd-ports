@@ -26,6 +26,13 @@ CMAKE_ARGS=	-DGLSLANG_INSTALL_DIR:PATH="${LOCALBASE}" \
 		-DSPIRV_HEADERS_INSTALL_DIR:PATH="${WRKSRC_headers}"
 CFLAGS+=	${WITH_DEBUG:U-DNDEBUG}
 
+# https://github.com/KhronosGroup/Vulkan-ValidationLayers/issues/3585
+.if ${DISTVERSION:E} < 201
+GH_TUPLE+=	KhronosGroup:Vulkan-Headers:v1.2.200:vkheaders/Vulkan-Headers
+CMAKE_ARGS+=	-DVULKAN_HEADERS_INSTALL_DIR:PATH="${WRKSRC_vkheaders}"
+CFLAGS+=	-I${WRKSRC_vkheaders}/include -isystem${LOCALBASE}/include
+.endif
+
 OPTIONS_DEFINE=	WAYLAND XCB XLIB
 OPTIONS_DEFAULT=WAYLAND XCB XLIB
 
