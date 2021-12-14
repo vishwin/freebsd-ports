@@ -1,3 +1,114 @@
+  <vuln vid="0132ca5b-5d11-11ec-8be6-d4c9ef517024">
+    <topic>OpenSSL -- Certificate validation issue</topic>
+    <affects>
+      <package>
+	<name>openssl-devel</name>
+	<range><lt>3.0.1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The OpenSSL project reports:</p>
+	<blockquote cite="https://www.openssl.org/news/secadv/20211214.txt">
+	  <p>Invalid handling of X509_verify_cert() internal errors in libssl
+	    (Moderate)</p>
+	  <p>Internally libssl in OpenSSL calls X509_verify_cert() on the client
+	    side to verify a certificate supplied by a server. That function may
+	    return a negative return value to indicate an internal error (for
+	    example out of memory). Such a negative return value is mishandled by
+	    OpenSSL and will cause an IO function (such as SSL_connect() or
+	    SSL_do_handshake()) to not indicate success and a subsequent call to
+	    SSL_get_error() to return the value SSL_ERROR_WANT_RETRY_VERIFY.
+	    This return value is only supposed to be returned by OpenSSL if the
+	    application has previously called SSL_CTX_set_cert_verify_callback().
+	    Since most applications do not do this the
+	    SSL_ERROR_WANT_RETRY_VERIFY return value from SSL_get_error() will be
+	    totally unexpected and applications may not behave correctly as a
+	    result. The exact behaviour will depend on the application but it
+	    could result in crashes, infinite loops or other similar incorrect
+	    responses.</p>
+	  </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-4044</cvename>
+      <url>https://www.openssl.org/news/secadv/20211214.txt</url>
+    </references>
+    <dates>
+      <discovery>2021-12-14</discovery>
+      <entry>2021-12-14</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="515df85a-5cd7-11ec-a16d-001517a2e1a4">
+    <topic>bastillion -- log4j vulnerability</topic>
+    <affects>
+      <package>
+	<name>bastillion</name>
+	<range><lt>3.10.00_1</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>FreeBSD port maintainer reports:</p>
+	<blockquote>
+	  <p>Bastillion uses log4j.</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-44228</cvename>
+    </references>
+    <dates>
+      <discovery>2021-12-10</discovery>
+      <entry>2021-12-14</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="fb9ba490-5cc4-11ec-aac7-3065ec8fd3ec">
+    <topic>chromium -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>chromium</name>
+	<range><lt>96.0.4664.110</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Chrome Releases reports:</p>
+	<blockquote cite="https://chromereleases.googleblog.com/2021/12/stable-channel-update-for-desktop_13.html">
+	  <p>This release contains 5 security fixes, including:</p>
+	  <ul>
+	    <li>[1263457] Critical CVE-2021-4098: Insufficient data validation
+	      in Mojo. Reported by Sergei Glazunov of Google Project Zero on
+	      2021-10-26</li>
+	    <li>[1270658] High CVE-2021-4099: Use after free in Swiftshader.
+	      Reported by Aki Helin of Solita on 2021-11-16</li>
+	    <li>[1272068] High CVE-2021-4100: Object lifecycle issue in ANGLE.
+	      Reported by Aki Helin of Solita on 2021-11-19</li>
+	    <li>[1262080] High CVE-2021-4101: Heap buffer overflow in
+	      Swiftshader. Reported by Abraruddin Khan and Omair on
+	      2021-10-21</li>
+	    <li>[1278387] High CVE-2021-4102: Use after free in V8. Reported by
+	      Anonymous on 2021-12-09</li>
+	  </ul>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2021-4098</cvename>
+      <cvename>CVE-2021-4099</cvename>
+      <cvename>CVE-2021-4100</cvename>
+      <cvename>CVE-2021-4101</cvename>
+      <cvename>CVE-2021-4102</cvename>
+      <url>https://chromereleases.googleblog.com/2021/12/stable-channel-update-for-desktop_13.html</url>
+    </references>
+    <dates>
+      <discovery>2021-12-13</discovery>
+      <entry>2021-12-14</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="0dcf68fa-5c31-11ec-875e-901b0e9408dc">
     <topic>Matrix clients -- several vulnerabilities</topic>
     <affects>
