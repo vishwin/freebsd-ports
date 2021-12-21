@@ -830,6 +830,7 @@
     SUBDIR += gindent
     SUBDIR += gio-sharp
     SUBDIR += git
+    SUBDIR += git-arc
     SUBDIR += git-absorb
     SUBDIR += git-bug
     SUBDIR += git-cinnabar
@@ -4448,7 +4449,7 @@
     SUBDIR += py-deprecated
     SUBDIR += py-deprecation
     SUBDIR += py-devtools
-    SUBDIR += py-dexml
+    SUBDIR += py-dexml2
     SUBDIR += py-diazo
     SUBDIR += py-dill
     SUBDIR += py-dirspec
@@ -4535,6 +4536,7 @@
     SUBDIR += py-freezegun
     SUBDIR += py-frictionless
     SUBDIR += py-frozendict
+    SUBDIR += py-frozenlist
     SUBDIR += py-fs
     SUBDIR += py-fs2
     SUBDIR += py-fsspec
@@ -4626,6 +4628,7 @@
     SUBDIR += py-iniparse
     SUBDIR += py-installer
     SUBDIR += py-intbitset
+    SUBDIR += py-intelhex
     SUBDIR += py-intervals
     SUBDIR += py-intervaltree
     SUBDIR += py-invoke
