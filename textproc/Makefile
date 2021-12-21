@@ -332,6 +332,7 @@
     SUBDIR += jrefentry
     SUBDIR += jshon
     SUBDIR += json-yaml
+    SUBDIR += json2yaml
     SUBDIR += jtc
     SUBDIR += kdiff3
     SUBDIR += kepubify
@@ -1346,7 +1347,6 @@
     SUBDIR += py-mako
     SUBDIR += py-markdown
     SUBDIR += py-markdown-it-py
-    SUBDIR += py-markdown-math
     SUBDIR += py-markdown2
     SUBDIR += py-marko
     SUBDIR += py-markuppy
@@ -1354,6 +1354,7 @@
     SUBDIR += py-markupsafe
     SUBDIR += py-mathics-pygments
     SUBDIR += py-mdit-py-plugins
+    SUBDIR += py-mdurl
     SUBDIR += py-misaka
     SUBDIR += py-mistune
     SUBDIR += py-mkdocs
@@ -1423,6 +1424,7 @@
     SUBDIR += py-python-gettext
     SUBDIR += py-python-lsp-jsonrpc
     SUBDIR += py-python-lsp-server
+    SUBDIR += py-python-markdown-math
     SUBDIR += py-python-slugify
     SUBDIR += py-python-xmp-toolkit
     SUBDIR += py-pytidylib
