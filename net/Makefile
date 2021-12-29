@@ -408,6 +408,7 @@
     SUBDIR += librespeed-go
     SUBDIR += librsync
     SUBDIR += libsignal-protocol-c
+    SUBDIR += libslirp
     SUBDIR += libsrtp2
     SUBDIR += libstorj
     SUBDIR += libtnl
@@ -983,8 +984,11 @@
     SUBDIR += php74-sockets
     SUBDIR += php74-xmlrpc
     SUBDIR += php80-ldap
+    SUBDIR += php81-ldap
     SUBDIR += php80-soap
+    SUBDIR += php81-soap
     SUBDIR += php80-sockets
+    SUBDIR += php81-sockets
     SUBDIR += phpldapadmin
     SUBDIR += pichi
     SUBDIR += pimcommon

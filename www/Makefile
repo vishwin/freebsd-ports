@@ -196,6 +196,7 @@
     SUBDIR += glassfish
     SUBDIR += glassfish4
     SUBDIR += glpi
+    SUBDIR += glewlwyd
     SUBDIR += gnome-user-share
     SUBDIR += go-www
     SUBDIR += gobuffalo
@@ -395,6 +396,7 @@
     SUBDIR += mod_php73
     SUBDIR += mod_php74
     SUBDIR += mod_php80
+    SUBDIR += mod_php81
     SUBDIR += mod_proctitle
     SUBDIR += mod_proxy_xml
     SUBDIR += mod_qos
@@ -1382,8 +1384,11 @@
     SUBDIR += php74-session
     SUBDIR += php74-tidy
     SUBDIR += php80-opcache
+    SUBDIR += php81-opcache
     SUBDIR += php80-session
+    SUBDIR += php81-session
     SUBDIR += php80-tidy
+    SUBDIR += php81-tidy
     SUBDIR += phpbb
     SUBDIR += phpbb3
     SUBDIR += phpgroupware
@@ -2291,6 +2296,7 @@
     SUBDIR += typo3-9
     SUBDIR += uchiwa
     SUBDIR += ufdbguard
+    SUBDIR += ulfius
     SUBDIR += unit
     SUBDIR += unit-java
     SUBDIR += unit-perl
