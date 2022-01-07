@@ -300,6 +300,7 @@
     SUBDIR += byacc
     SUBDIR += byaccj
     SUBDIR += c2mdoc
+    SUBDIR += c4core
     SUBDIR += caf
     SUBDIR += calibrator
     SUBDIR += capnproto
@@ -5111,6 +5112,7 @@
     SUBDIR += py-python-application
     SUBDIR += py-python-bugzilla
     SUBDIR += py-python-dbusmock
+    SUBDIR += py-python-decouple
     SUBDIR += py-python-distutils-extra
     SUBDIR += py-python-dtrace
     SUBDIR += py-python-easyconfig
@@ -7205,6 +7207,7 @@
     SUBDIR += xopcodecalc
     SUBDIR += xorg-macros
     SUBDIR += xparam
+    SUBDIR += xpeviewer
     SUBDIR += xsd
     SUBDIR += xsimd
     SUBDIR += xtensa-esp32-elf
