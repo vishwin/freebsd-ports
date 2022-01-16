@@ -28,6 +28,7 @@
     SUBDIR += R-cran-chron
     SUBDIR += R-cran-classInt
     SUBDIR += R-cran-cli
+    SUBDIR += R-cran-cliapp
     SUBDIR += R-cran-clipr
     SUBDIR += R-cran-clisymbols
     SUBDIR += R-cran-covr
@@ -1550,7 +1551,6 @@
     SUBDIR += maven
     SUBDIR += maven-wrapper
     SUBDIR += maven3
-    SUBDIR += maven31
     SUBDIR += maven33
     SUBDIR += mcpp
     SUBDIR += mdb
@@ -7200,7 +7200,6 @@
     SUBDIR += wand-libconfig
     SUBDIR += wandio
     SUBDIR += wasi-compiler-rt11
-    SUBDIR += wasi-compiler-rt12
     SUBDIR += wasi-compiler-rt13
     SUBDIR += wasi-libc
     SUBDIR += wasi-libcxx
