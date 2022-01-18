@@ -44,6 +44,7 @@
     SUBDIR += cgribex
     SUBDIR += checkmol
     SUBDIR += chemical-mime-data
+    SUBDIR += chemicalfun
     SUBDIR += chemps2
     SUBDIR += chemtool
     SUBDIR += chemtool-devel
@@ -135,7 +136,9 @@
     SUBDIR += libint2
     SUBDIR += libkml
     SUBDIR += liblinear
+    SUBDIR += libmbd
     SUBDIR += libmsym
+    SUBDIR += libnegf
     SUBDIR += liboglappth
     SUBDIR += libquantum
     SUBDIR += libssm
@@ -364,6 +367,7 @@
     SUBDIR += simgrid
     SUBDIR += simint
     SUBDIR += simlib
+    SUBDIR += simple-dftd3
     SUBDIR += simsmith
     SUBDIR += smoldyn
     SUBDIR += sparta
@@ -371,6 +375,7 @@
     SUBDIR += step
     SUBDIR += svmlight
     SUBDIR += szip
+    SUBDIR += tblite
     SUBDIR += teem
     SUBDIR += tfel
     SUBDIR += tfel-edf

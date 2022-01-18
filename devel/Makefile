@@ -75,6 +75,7 @@
     SUBDIR += R-cran-microbenchmark
     SUBDIR += R-cran-mockery
     SUBDIR += R-cran-optparse
+    SUBDIR += R-cran-pak
     SUBDIR += R-cran-parallelly
     SUBDIR += R-cran-pillar
     SUBDIR += R-cran-pkgbuild
@@ -148,6 +149,7 @@
     SUBDIR += allegro5
     SUBDIR += alog
     SUBDIR += aml
+    SUBDIR += ammonite
     SUBDIR += amqp-cpp
     SUBDIR += android-tools-adb
     SUBDIR += android-tools-fastboot
@@ -548,7 +550,6 @@
     SUBDIR += dxa65
     SUBDIR += dyncall
     SUBDIR += e00compr
-    SUBDIR += e2fsprogs-libss
     SUBDIR += eastl
     SUBDIR += easyexif
     SUBDIR += easygit
