@@ -1,6 +1,6 @@
---- ext/nokogiri/extconf.rb.orig	2021-01-21 20:37:43 UTC
+--- ext/nokogiri/extconf.rb.orig	2022-01-26 09:35:58 UTC
 +++ ext/nokogiri/extconf.rb
-@@ -819,6 +819,43 @@ unless using_system_libraries?
+@@ -891,6 +891,43 @@ unless config_system_libraries?
    end
  end
  
@@ -43,4 +43,4 @@
 +
  create_makefile('nokogiri/nokogiri')
  
- if enable_config('clean', true)
+ if config_clean?
