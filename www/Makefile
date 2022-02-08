@@ -374,6 +374,7 @@
     SUBDIR += mod_cfg_ldap
     SUBDIR += mod_cloudflare
     SUBDIR += mod_dav_svn
+    SUBDIR += mod_defensible
     SUBDIR += mod_dnssd
     SUBDIR += mod_evasive
     SUBDIR += mod_fastcgi
@@ -2320,6 +2321,7 @@
     SUBDIR += vimb
     SUBDIR += visitors
     SUBDIR += volta
+    SUBDIR += vultr-cli
     SUBDIR += w3m
     SUBDIR += w3m-img
     SUBDIR += w3mir
