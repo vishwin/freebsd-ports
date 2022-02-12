@@ -1483,6 +1483,7 @@
     SUBDIR += llvm11
     SUBDIR += llvm12
     SUBDIR += llvm13
+    SUBDIR += llvm14
     SUBDIR += llvm70
     SUBDIR += llvm80
     SUBDIR += llvm90
@@ -5163,6 +5164,7 @@
     SUBDIR += py-qutip
     SUBDIR += py-ramlfications
     SUBDIR += py-rapidfuzz
+    SUBDIR += py-rapidfuzz-capi
     SUBDIR += py-ratelimiter
     SUBDIR += py-rauth
     SUBDIR += py-raven
