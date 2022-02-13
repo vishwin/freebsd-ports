@@ -1012,8 +1012,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # Most port authors should not need to understand anything after this point.
 #
 
-LANG=		C
-LC_ALL=		C
+LANG=		C.UTF-8
+LC_ALL=		C.UTF-8
 .export		LANG LC_ALL
 
 # These need to be absolute since we don't know how deep in the ports
