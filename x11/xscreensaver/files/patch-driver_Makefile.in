@@ -1,11 +1,11 @@
---- driver/Makefile.in.orig	2021-06-09 15:47:14 UTC
+--- driver/Makefile.in.orig	2021-10-12 01:04:31 UTC
 +++ driver/Makefile.in
 @@ -46,7 +46,7 @@ DEPEND_FLAGS	= @DEPEND_FLAGS@
  DEPEND_DEFINES	= @DEPEND_DEFINES@
  
  INSTALL		= @INSTALL@
 -SUID_FLAGS      = -o root -m 4755
-+SUID_FLAGS      = -m 755
++SUID_FLAGS      = -m 4555
  INSTALL_PROGRAM = @INSTALL_PROGRAM@
  INSTALL_SETUID	= $(INSTALL_PROGRAM) $(SUID_FLAGS)
  INSTALL_DATA	= @INSTALL_DATA@

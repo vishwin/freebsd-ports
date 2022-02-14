@@ -22,8 +22,7 @@ USES=		autoreconf cpe gettext gl gmake gnome jpeg localbase:ldflags perl5 \
 USE_GL=		gl glu
 USE_GNOME=	cairo gdkpixbuf2 gtk20 intltool libglade2 libxml2
 USE_PERL5=	run
-USE_XORG=	ice sm x11 xext xi xinerama xmu xpm xrandr xrender xt xxf86vm
-USE_CSTD=	gnu99
+USE_XORG=	ice sm x11 xext xi xinerama xmu xrandr xrender xt xxf86vm
 CPE_VENDOR=	xscreensaver_project
 
 CONFLICTS=	xscreensaver-gnome xscreensaver-gnome-hacks
@@ -45,22 +44,22 @@ CONFIGURE_ARGS=	--enable-locking \
 		--with-xf86gamma-ext \
 		--with-xf86vmode-ext \
 		--with-xinerama-ext \
-		--with-xpm \
 		--with-xshm-ext \
-		--without-kerberos \
-		--without-setuid-hacks
+		--without-kerberos
 MAKE_ARGS+=	install_prefix=${STAGEDIR}
 MAKE_JOBS_UNSAFE=	yes
 
 OPTIONS_DEFINE=		FIREF NLS NSFW PAM SETUID_HACKS XAOS1 XDALI XEARTH XFT \
 			XMOUN XPLANET XSNOW
-OPTIONS_DEFAULT=	PAM XFT
+OPTIONS_DEFAULT=	XFT
 OPTIONS_SUB=		yes
 
 PAM_CONFIGURE_WITH=	pam
-PAM_EXTRA_PATCHES_OFF=	${PATCHDIR}/extra-patch-drop-privileges
+PAM_BROKEN=	"Consequently, XScreenSaver does not support PAM on FreeBSD." \
+		Would otherwise need interfacing with pam_helper
 
 SETUID_HACKS_DESC=	Install sonar hack suid so it can ping
+SETUID_HACKS_CONFIGURE_WITH=	setuid-hacks
 
 FIREF_DESC=		Add extra port x11/fireflies
 FIREF_RUN_DEPENDS=	${LOCALBASE}/bin/xscreensaver-hacks/fireflies:x11/fireflies

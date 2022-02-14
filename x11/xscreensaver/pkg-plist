@@ -1,6 +1,4 @@
-%%NO_PAM%%@mode 4555
 bin/xscreensaver
-%%NO_PAM%%@mode
 bin/xscreensaver-command
 bin/xscreensaver-demo
 bin/xscreensaver-hacks/abstractile
@@ -206,9 +204,7 @@ bin/xscreensaver-hacks/xscreensaver-getimage-video
 bin/xscreensaver-hacks/xscreensaver-gfx
 bin/xscreensaver-hacks/xscreensaver-gl-visual
 bin/xscreensaver-hacks/xscreensaver-text
-%%SETUID_HACKS%%@mode 4555
 bin/xscreensaver-hacks/sonar
-%%SETUID_HACKS%%@mode
 bin/xscreensaver-hacks/speedmine
 bin/xscreensaver-hacks/sphereeversion
 bin/xscreensaver-hacks/spheremonics
