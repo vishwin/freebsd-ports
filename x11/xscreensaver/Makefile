@@ -25,8 +25,6 @@ USE_PERL5=	run
 USE_XORG=	ice sm x11 xext xi xinerama xmu xrandr xrender xt xxf86vm
 CPE_VENDOR=	xscreensaver_project
 
-CONFLICTS=	xscreensaver-gnome xscreensaver-gnome-hacks
-
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	PERL="${PERL}"
 CONFIGURE_ARGS=	--enable-locking \
@@ -51,12 +49,11 @@ MAKE_JOBS_UNSAFE=	yes
 
 OPTIONS_DEFINE=		FIREF NLS NSFW PAM SETUID_HACKS XAOS1 XDALI XEARTH XFT \
 			XMOUN XPLANET XSNOW
-OPTIONS_DEFAULT=	XFT
+OPTIONS_DEFAULT=	PAM XFT
 OPTIONS_SUB=		yes
 
-PAM_CONFIGURE_WITH=	pam
-PAM_BROKEN=	"Consequently, XScreenSaver does not support PAM on FreeBSD." \
-		Would otherwise need interfacing with pam_helper
+PAM_CONFIGURE_WITH=	passwd-helper=${PREFIX}/bin/pam_helper
+PAM_RUN_DEPENDS=	pam_helper:security/pam_helper
 
 SETUID_HACKS_DESC=	Install sonar hack suid so it can ping
 SETUID_HACKS_CONFIGURE_WITH=	setuid-hacks
@@ -100,8 +97,6 @@ post-patch:
 	${REINPLACE_CMD} -e "s|/etc/pam.d|${PREFIX}/etc/pam.d|g" \
 		${WRKSRC}/driver/passwd-pam.c \
 		${WRKSRC}/driver/xscreensaver.man
-	${CP} ${FILESDIR}/xscreensaver.pam \
-		${WRKSRC}/driver/xscreensaver.pam.in
 
 post-patch-NSFW-off:
 	${REINPLACE_CMD} -e 's|Dick Pix|Stuff|' ${WRKSRC}/hacks/bsod.c
@@ -111,5 +106,8 @@ post-install:
 	${INSTALL_DATA} ${FILESDIR}/x*.xml ${STAGEDIR}${DATADIR}/config/
 	${INSTALL_DATA} ${WRKDIR}/*.desktop ${STAGEDIR}${PREFIX}/share/applications/
 	${RM} ${STAGEDIR}${PREFIX}/etc/pam.d/xscreensaver.pam
+
+post-install-PAM-on:
+	${INSTALL_DATA} ${FILESDIR}/xscreensaver.pam ${STAGEDIR}${PREFIX}/etc/pam.d/xscreensaver
 
 .include <bsd.port.mk>
