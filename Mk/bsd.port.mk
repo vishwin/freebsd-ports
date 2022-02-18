@@ -1012,7 +1012,7 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # Most port authors should not need to understand anything after this point.
 #
 
-LANG=		C
+LANG=		C.UTF-8
 LC_ALL=		C.UTF-8
 .export		LANG LC_ALL
 
