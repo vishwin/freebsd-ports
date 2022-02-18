@@ -38,7 +38,7 @@ index af13d175..deaf73d2 100755
 +	GREP=/nxb-bin/usr/bin/grep
 +	GUNZIP_CMD=/nxb-bin/usr/bin/gunzip -f
 +	GZCAT=/nxb-bin/usr/bin/gzcat
-+	GZIP=/nxb-bin/usr/bin/gzip -nf ${GZIP}
++	GZIP_CMD=/nxb-bin/usr/bin/gzip -nf ${GZIP}
 +	ID=/nxb-bin/usr/bin/id
 +	LN=/nxb-bin/bin/ln
 +	LS=/nxb-bin/bin/ls
