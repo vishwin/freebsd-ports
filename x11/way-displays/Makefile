@@ -1,9 +1,6 @@
 PORTNAME=	way-displays
-DISTVERSION=	1.3.0
+DISTVERSION=	1.4.1
 CATEGORIES=	x11
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES+=	90081b314a75.patch:-p1 # https://github.com/alex-courtis/way-displays/pull/21
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Auto Manage Your Wayland Displays
@@ -18,14 +15,14 @@ LIB_DEPENDS=	libepoll-shim.so:devel/libepoll-shim \
 		libwayland-client.so:graphics/wayland \
 		libinput.so:x11/libinput
 
-USES=		compiler:c11 gmake localbase:ldflags
+USES=		compiler:c11 gmake pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	alex-courtis
+MAKEFILE=	GNUmakefile
 MAKE_ENV=	VERSION="${DISTVERSIONFULL}"
-MAKE_ARGS=	CC="${CC}" CXX="${CXX}" OFLAGS=
-CFLAGS+=	-isystem${LOCALBASE}/include/libepoll-shim
-LDFLAGS+=	-lepoll-shim -linotify
+MAKE_ARGS=	OFLAGS=
 PLIST_FILES=	bin/${PORTNAME} \
+		share/man/man1/${PORTNAME}.1.gz \
 		"@sample ${ETCDIR}/cfg.yaml.sample"
 
 post-patch:
