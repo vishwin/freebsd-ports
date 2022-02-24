@@ -422,6 +422,7 @@
     SUBDIR += kqtquickcharts
     SUBDIR += kquickimageeditor
     SUBDIR += krita
+    SUBDIR += kseexpr
     SUBDIR += ksnip
     SUBDIR += kxstitch
     SUBDIR += l2p
@@ -1054,6 +1055,7 @@
     SUBDIR += showimage
     SUBDIR += silgraphite
     SUBDIR += simage
+    SUBDIR += simple-scan
     SUBDIR += simpleviewer
     SUBDIR += skanlite
     SUBDIR += skanpage
