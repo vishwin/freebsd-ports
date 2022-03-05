@@ -96,6 +96,7 @@
     SUBDIR += csstidy
     SUBDIR += ctemplate
     SUBDIR += cutelyst
+    SUBDIR += darkhttpd
     SUBDIR += davical
     SUBDIR += davix
     SUBDIR += dddbl
@@ -158,6 +159,7 @@
     SUBDIR += ffsend
     SUBDIR += fgallery
     SUBDIR += filtron
+    SUBDIR += firedm
     SUBDIR += firefox
     SUBDIR += firefox-esr
     SUBDIR += flat-frog

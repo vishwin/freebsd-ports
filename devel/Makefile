@@ -167,6 +167,7 @@
     SUBDIR += api-sanity-autotest
     SUBDIR += apitrace
     SUBDIR += app-builder
+    SUBDIR += appstream
     SUBDIR += appstream-glib
     SUBDIR += apr1
     SUBDIR += arachne-pnr
@@ -1475,6 +1476,7 @@
     SUBDIR += llvm
     SUBDIR += llvm-cheri
     SUBDIR += llvm-devel
+    SUBDIR += llvm-morello
     SUBDIR += llvm10
     SUBDIR += llvm11
     SUBDIR += llvm12
