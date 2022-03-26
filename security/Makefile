@@ -810,6 +810,7 @@
     SUBDIR += php81-filter
     SUBDIR += php81-sodium
     SUBDIR += phpsecinfo
+    SUBDIR += picocrypt
     SUBDIR += picosha2
     SUBDIR += pidgin-encryption
     SUBDIR += pidgin-otr
@@ -1016,6 +1017,7 @@
     SUBDIR += py-taxii2-client
     SUBDIR += py-tls-parser
     SUBDIR += py-tlslite
+    SUBDIR += py-tlslite-ng
     SUBDIR += py-trezor
     SUBDIR += py-trustme
     SUBDIR += py-tuf
