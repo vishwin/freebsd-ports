@@ -13,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 USES=		python:2.7+
-USE_PYTHON=	allflavors autoplist concurrent distutils
+USE_PYTHON=	autoplist concurrent distutils
 
 NO_ARCH=	yes
 
