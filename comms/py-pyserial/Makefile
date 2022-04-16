@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 USES=		python:3.6+ shebangfix
 SHEBANG_FILES=	examples/*.py
 
-USE_PYTHON=	distutils autoplist concurrent
+USE_PYTHON=	allflavors distutils autoplist concurrent
 
 PORTEXAMPLES=   at_protocol.py port_publisher.py rfc2217_server.py \
 		setup-miniterm-py2exe.py setup-rfc2217_server-py2exe.py \
