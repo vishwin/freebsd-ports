@@ -89,7 +89,6 @@
     SUBDIR += gcc
     SUBDIR += gcc-ecj45
     SUBDIR += gcc10
-    SUBDIR += gcc10-devel
     SUBDIR += gcc11
     SUBDIR += gcc11-devel
     SUBDIR += gcc12-devel
@@ -331,6 +330,7 @@
     SUBDIR += solidity
     SUBDIR += spidermonkey17
     SUBDIR += spidermonkey78
+    SUBDIR += spidermonkey91
     SUBDIR += spl
     SUBDIR += squeak
     SUBDIR += squirrel
