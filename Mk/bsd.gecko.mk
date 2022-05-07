@@ -4,7 +4,6 @@
 # Date created:		12 Nov 2005
 # Whom:			Michael Johnson <ahze@FreeBSD.org>
 #
-#
 # 4 column tabs prevent hair loss and tooth decay!
 
 # bsd.gecko.mk abstracts the selection of gecko-based backends. It allows users
@@ -96,11 +95,7 @@ MOZ_OPTIONS+=	--with-libclang-path="${LOCALBASE}/llvm${LLVM_DEFAULT}/lib"
 .    if !exists(/usr/bin/llvm-objdump)
 MOZ_EXPORT+=	LLVM_OBJDUMP="${LOCALBASE}/bin/llvm-objdump${LLVM_DEFAULT}"
 .    endif
-# Ignore Mk/bsd.default-versions.mk but respect make.conf(5) unless LTO is enabled
-.    if !defined(DEFAULT_VERSIONS) || ! ${DEFAULT_VERSIONS:Mllvm*} || ${PORT_OPTIONS:MLTO}
-LLVM_DEFAULT=	13 # chase bundled LLVM in lang/rust for LTO
 LLVM_VERSION=	13.0.1 # keep in sync with devel/wasi-compiler-rt${LLVM_DEFAULT}
-.    endif
 # Require newer Clang than what's in base system unless user opted out
 .    if ${CC} == cc && ${CXX} == c++ && exists(/usr/lib/libc++.so)
 BUILD_DEPENDS+=	${LOCALBASE}/bin/clang${LLVM_DEFAULT}:devel/llvm${LLVM_DEFAULT}
