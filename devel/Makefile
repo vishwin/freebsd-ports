@@ -22,6 +22,7 @@
     SUBDIR += R-cran-brio
     SUBDIR += R-cran-broom
     SUBDIR += R-cran-caTools
+    SUBDIR += R-cran-checkmate
     SUBDIR += R-cran-callr
     SUBDIR += R-cran-caret
     SUBDIR += R-cran-chron
@@ -315,6 +316,7 @@
     SUBDIR += cargo-generate
     SUBDIR += cask
     SUBDIR += catch
+    SUBDIR += cbang
     SUBDIR += cbrowser
     SUBDIR += cc65
     SUBDIR += ccache
@@ -347,6 +349,7 @@
     SUBDIR += chrpath
     SUBDIR += chruby
     SUBDIR += cil
+    SUBDIR += cirrus-cli
     SUBDIR += cityhash
     SUBDIR += cjose
     SUBDIR += cl-alexandria
