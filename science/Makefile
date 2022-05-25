@@ -91,6 +91,7 @@
     SUBDIR += fvcom-mpi
     SUBDIR += gabedit
     SUBDIR += gamess-us
+    SUBDIR += gbtolib
     SUBDIR += gchemutils
     SUBDIR += gdma
     SUBDIR += getdp
@@ -393,6 +394,7 @@
     SUBDIR += thermofun
     SUBDIR += tinker
     SUBDIR += udunits
+    SUBDIR += ukrmol+
     SUBDIR += v_sim
     SUBDIR += vipster
     SUBDIR += vmd
