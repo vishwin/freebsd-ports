@@ -151,8 +151,7 @@
     SUBDIR += aml
     SUBDIR += ammonite
     SUBDIR += amqp-cpp
-    SUBDIR += android-tools-adb
-    SUBDIR += android-tools-fastboot
+    SUBDIR += android-tools
     SUBDIR += android-tools-simpleperf
     SUBDIR += anjuta
     SUBDIR += antlr
@@ -4062,15 +4061,25 @@
     SUBDIR += php80-sysvshm
     SUBDIR += php80-tokenizer
     SUBDIR += php81-ffi
+    SUBDIR += php82-ffi
     SUBDIR += php81-gettext
+    SUBDIR += php82-gettext
     SUBDIR += php81-intl
+    SUBDIR += php82-intl
     SUBDIR += php81-pcntl
+    SUBDIR += php82-pcntl
     SUBDIR += php81-readline
+    SUBDIR += php82-readline
     SUBDIR += php81-shmop
+    SUBDIR += php82-shmop
     SUBDIR += php81-sysvmsg
+    SUBDIR += php82-sysvmsg
     SUBDIR += php81-sysvsem
+    SUBDIR += php82-sysvsem
     SUBDIR += php81-sysvshm
+    SUBDIR += php82-sysvshm
     SUBDIR += php81-tokenizer
+    SUBDIR += php82-tokenizer
     SUBDIR += phpunit6
     SUBDIR += phpunit7
     SUBDIR += phpunit8
@@ -4712,6 +4721,7 @@
     SUBDIR += py-jmespath
     SUBDIR += py-joblib
     SUBDIR += py-jsbeautifier
+    SUBDIR += py-jschema-to-python
     SUBDIR += py-jsmin
     SUBDIR += py-json5
     SUBDIR += py-json_tricks
@@ -4749,7 +4759,7 @@
     SUBDIR += py-kitchen
     SUBDIR += py-knack
     SUBDIR += py-l18n
-    SUBDIR += py-lark-parser
+    SUBDIR += py-lark
     SUBDIR += py-launchpadlib
     SUBDIR += py-lazr.config
     SUBDIR += py-lazr.delegates
@@ -4926,6 +4936,7 @@
     SUBDIR += py-parallax
     SUBDIR += py-parameterized
     SUBDIR += py-parsedatetime
+    SUBDIR += py-parsley
     SUBDIR += py-parver
     SUBDIR += py-pastel
     SUBDIR += py-patch
@@ -5274,6 +5285,7 @@
     SUBDIR += py-rx1
     SUBDIR += py-saneyaml
     SUBDIR += py-sarge
+    SUBDIR += py-sarif-om
     SUBDIR += py-schedule
     SUBDIR += py-schema
     SUBDIR += py-schematics-patched
@@ -5396,6 +5408,7 @@
     SUBDIR += py-twine
     SUBDIR += py-twisted
     SUBDIR += py-txaio
+    SUBDIR += py-txi2p-tahoe
     SUBDIR += py-typechecks
     SUBDIR += py-typed-ast
     SUBDIR += py-typeguard
@@ -5414,6 +5427,7 @@
     SUBDIR += py-types-psycopg2
     SUBDIR += py-types-requests
     SUBDIR += py-types-termcolor
+    SUBDIR += py-types-toml
     SUBDIR += py-types-typed-ast
     SUBDIR += py-types-urllib3
     SUBDIR += py-types-xxhash
@@ -6889,8 +6903,10 @@
     SUBDIR += rubygem-shoulda-context
     SUBDIR += rubygem-shoulda-matchers
     SUBDIR += rubygem-sidekiq
+    SUBDIR += rubygem-sidekiq64
     SUBDIR += rubygem-sidekiq-bulk
     SUBDIR += rubygem-sidekiq-cron
+    SUBDIR += rubygem-sidekiq-cron-sidekiq64
     SUBDIR += rubygem-sidekiq-scheduler
     SUBDIR += rubygem-sidekiq-unique-jobs
     SUBDIR += rubygem-sidetiq
