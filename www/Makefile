@@ -1391,10 +1391,10 @@
     SUBDIR += php80-session
     SUBDIR += php80-tidy
     SUBDIR += php81-opcache
-    SUBDIR += php82-opcache
     SUBDIR += php81-session
-    SUBDIR += php82-session
     SUBDIR += php81-tidy
+    SUBDIR += php82-opcache
+    SUBDIR += php82-session
     SUBDIR += php82-tidy
     SUBDIR += phpbb
     SUBDIR += phpbb3
@@ -1548,6 +1548,7 @@
     SUBDIR += py-django-object-actions
     SUBDIR += py-django-otp
     SUBDIR += py-django-otp-yubikey
+    SUBDIR += py-django-permissionedforms
     SUBDIR += py-django-pglocks
     SUBDIR += py-django-photologue
     SUBDIR += py-django-picklefield
