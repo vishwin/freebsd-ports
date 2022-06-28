@@ -880,6 +880,7 @@
     SUBDIR += gitlist
     SUBDIR += gitolite
     SUBDIR += gitolite2
+    SUBDIR += gitqlient
     SUBDIR += gittrac
     SUBDIR += gitty
     SUBDIR += gitui
@@ -5622,7 +5623,6 @@
     SUBDIR += pythontidy
     SUBDIR += pytype
     SUBDIR += qbe
-    SUBDIR += qbs
     SUBDIR += qca
     SUBDIR += qconf
     SUBDIR += qcoro
