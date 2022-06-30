@@ -197,6 +197,7 @@
     SUBDIR += gpx2map
     SUBDIR += grafana7
     SUBDIR += grafana8
+    SUBDIR += grafana9
     SUBDIR += grails
     SUBDIR += gregarius
     SUBDIR += groupoffice
@@ -1661,7 +1662,6 @@
     SUBDIR += py-google-resumable-media
     SUBDIR += py-grafana-dashboard-manager
     SUBDIR += py-graphite-api
-    SUBDIR += py-graphite-web
     SUBDIR += py-grequests
     SUBDIR += py-grip
     SUBDIR += py-gunicorn
