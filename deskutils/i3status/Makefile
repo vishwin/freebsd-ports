@@ -1,6 +1,7 @@
 PORTNAME=	i3status
 PORTVERSION=	2.14
-CATEGORIES=	x11
+PORTREVISION=	1
+CATEGORIES=	deskutils
 MASTER_SITES=	http://i3wm.org/i3status/
 
 MAINTAINER=	bapt@FreeBSD.org
