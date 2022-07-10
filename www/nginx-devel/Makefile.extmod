@@ -82,7 +82,7 @@ GRIDFS_LIB_DEPENDS=	libbson-1.0.so:devel/libbson \
 			libmongoc-1.0.so:devel/mongo-c-driver
 GRIDFS_VARS=		DSO_EXTMODS+=gridfs GRIDFS_SUBDIR=/nginx-gridfs
 
-HEADERS_MORE_GH_TUPLE=		openresty:headers-more-nginx-module:55fbdab:headers_more
+HEADERS_MORE_GH_TUPLE=		openresty:headers-more-nginx-module:d502e41:headers_more
 HEADERS_MORE_VARS=		DSO_EXTMODS+=headers_more
 
 HTTP_ACCEPT_LANGUAGE_GH_TUPLE=	dvershinin:nginx_accept_language_module:5683967:accept_language
@@ -158,7 +158,7 @@ HTTP_NOTICE_VARS=		DSO_EXTMODS+=notice
 HTTP_PUSH_GH_TUPLE=		slact:nchan:v1.3.0:push
 HTTP_PUSH_VARS=			DSO_EXTMODS+=push
 
-HTTP_PUSH_STREAM_GH_TUPLE=	wandenberg:nginx-push-stream-module:0.5.4:pushstream
+HTTP_PUSH_STREAM_GH_TUPLE=	wandenberg:nginx-push-stream-module:8c02220:pushstream
 HTTP_PUSH_STREAM_VARS=		DSO_EXTMODS+=pushstream
 
 HTTP_REDIS_MASTER_SITES=	LOCAL/osa:redis
@@ -199,7 +199,7 @@ HTTP_UPSTREAM_FAIR_GH_TUPLE=		jaygooby:nginx-upstream-fair:10ecdcf:upstreamfair
 HTTP_UPSTREAM_FAIR_VARS=		DSO_EXTMODS+=upstreamfair
 
 HTTP_UPSTREAM_STICKY_IMPLIES=		HTTP_SSL
-HTTP_UPSTREAM_STICKY_GH_TUPLE=		ayty-adrianomartins:nginx-sticky-module-ng:c407e0d:upstreamsticky
+HTTP_UPSTREAM_STICKY_GH_TUPLE=		dvershinin:nginx-sticky-module-ng:2753211:upstreamsticky
 HTTP_UPSTREAM_STICKY_VARS=		DSO_EXTMODS+=upstreamsticky
 
 HTTP_VIDEO_THUMBEXTRACTOR_LIB_DEPENDS=	libavformat.so:multimedia/ffmpeg \
@@ -229,6 +229,7 @@ LUA_CONFIGURE_ENV=	LUAJIT_INC=${LOCALBASE}/include/luajit-2.1 \
 			LUAJIT_LIB=${LOCALBASE}/lib
 LUA_GH_TUPLE=		openresty:lua-nginx-module:v0.10.21:lua
 LUA_VARS=		DSO_EXTMODS+=lua
+LUA_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-lua-nginx-module:-p1
 
 LINK_GH_TUPLE=		Taymindis:nginx-link-function:3.2.4:link
 LINK_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-nginx-link-function-config \
@@ -243,9 +244,10 @@ MODSECURITY3_LIB_DEPENDS=	libmodsecurity.so:security/modsecurity3
 MODSECURITY3_GH_TUPLE=		SpiderLabs:ModSecurity-nginx:v1.0.3:modsecurity3
 MODSECURITY3_VARS=		DSO_EXTMODS+=modsecurity3
 
-NAXSI_NGINX_VER=	1.3
+NAXSI_NGINX_VER=	29793dc
 NAXSI_GH_TUPLE=		nbs-system:naxsi:${NAXSI_NGINX_VER}:naxsi
 NAXSI_VARS=		DSO_EXTMODS+=naxsi NAXSI_SUBDIR=/naxsi_src
+NAXSI_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-naxsi_runtime.c
 
 NJS_GH_TUPLE=		nginx:njs:0.7.5:njs
 NJS_VARS=		DSO_EXTMODS+=njs NJS_SUBDIR=/nginx
@@ -307,15 +309,14 @@ SMALL_LIGHT_LIB_DEPENDS=	libpcre.so:devel/pcre
 SMALL_LIGHT_GH_TUPLE=		kawakibi:ngx_small_light:2f5e1d0:small_light
 SMALL_LIGHT_VARS=		DSO_EXTMODS+=small_light
 
-SRCACHE_GH_TUPLE=	openresty:srcache-nginx-module:v0.32:srcache
+SRCACHE_GH_TUPLE=	openresty:srcache-nginx-module:be22ac0:srcache
 SRCACHE_VARS=		DSO_EXTMODS+=srcache
 
-VOD_GH_TUPLE=		kaltura:nginx-vod-module:1.29:vod
+VOD_GH_TUPLE=		kaltura:nginx-vod-module:1.30:vod
 VOD_LIB_DEPENDS=	libxml2.so:textproc/libxml2 \
 			libavutil.so:multimedia/ffmpeg
 VOD_USES=		iconv
 VOD_VARS=		DSO_EXTMODS+=vod
-VOD_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-nginx-vod-module-config
 
 VTS_GH_TUPLE=		vozlt:nginx-module-vts:v0.1.18:vts
 VTS_VARS=		DSO_EXTMODS+=vts
