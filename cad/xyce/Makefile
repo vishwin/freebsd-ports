@@ -9,7 +9,7 @@ DIST_SUBDIR=	${PORTNAME}-${DISTVERSION}
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Xyce electronic simulator
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libblas.so:math/blas \
@@ -24,11 +24,9 @@ LIB_DEPENDS=	libblas.so:math/blas \
 		libumfpack.so:math/suitesparse-umfpack
 TEST_DEPENDS=	git:devel/git \
 		${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}h5py>0:science/py-h5py@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR} \
-		# also needs pycompadre
+		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR}
 
-USES=		autoreconf bison gmake fortran libtool localbase perl5 python:test # GNU tools should be used for 7.5 and on until the cmake cbuild is declared stable
+USES=		autoreconf bison gmake fortran libtool localbase perl5 python:test # GNU tools should be used for 7.5 and on until the cmake build is declared stable
 USE_CXXSTD=	c++14 # otherwise configure fails because of c++14 features like std::conditional_t
 USE_LDCONFIG=	yes
 USE_PERL5=	test
@@ -46,7 +44,7 @@ INSTALL_TARGET=	install-strip
 
 BINARY_ALIAS=	python=${PYTHON_CMD} # only for tests
 
-do-test:
+do-test: # one test is known to fail, see https://github.com/Xyce/Xyce/issues/67#issuecomment-1179857728
 	# checkout tests
 	@cd ${WRKDIR} && \
 		${ECHO} "cloning git repository ..." && \
@@ -70,6 +68,7 @@ do-test:
 
 # Trilinos build instructions for Xyce: https://xyce.sandia.gov/documentation-tutorials/building-guide/#instTrilinos
 # Xyce build instructions: https://xyce.sandia.gov/documentation-tutorials/building-guide/
+# Xyce regression suite instructions: https://xyce.sandia.gov/documentation-tutorials/running-the-xyce-regression-suite/
 # docs are in https://xyce.sandia.gov/files/xyce/Xyce_Docs-7.5.tar.gz
 
 .include <bsd.port.mk>
