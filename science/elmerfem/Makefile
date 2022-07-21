@@ -9,6 +9,8 @@ COMMENT=	Multiphysical simulation software
 
 LICENSE=	GPLv2
 
+BROKEN=		does not build: /usr/local/bin/ld: cannot find -lMPI::MPI_C
+
 LIB_DEPENDS=	libblas.so:math/blas \
 		libhdf5.so:science/hdf5 \
 		libmetis.so:math/metis \
@@ -97,6 +99,10 @@ post-patch-OCC-on:
 		"${WRKSRC}/cmake/Modules/FindOCE.cmake"
 	@${REINPLACE_CMD} -e 's|$${INCLUDE}|${LOCALBASE}/include/OpenCASCADE|' \
 		"${WRKSRC}/cmake/Modules/FindOCE.cmake"
+
+post-configure:
+	# workaround for https://github.com/ElmerCSC/elmerfem/issues/334
+	@${REINPLACE_CMD} -e 's| -lMPI::MPI_C | |' ${BUILD_WRKSRC}/ElmerGUI/Application/CMakeFiles/ElmerGUI.dir/link.txt
 
 post-install:
 	${LN} -sf ElmerSolver_mpi ${STAGEDIR}${PREFIX}/bin/ElmerSolver
