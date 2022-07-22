@@ -9,8 +9,6 @@ COMMENT=	Multiphysical simulation software
 
 LICENSE=	GPLv2
 
-BROKEN=		does not build: /usr/local/bin/ld: cannot find -lMPI::MPI_C
-
 LIB_DEPENDS=	libblas.so:math/blas \
 		libhdf5.so:science/hdf5 \
 		libmetis.so:math/metis \
@@ -65,7 +63,8 @@ OCC_LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 			libvtksys-9.1.so:math/vtk9
 OCC_USES=		python
 OCC_CMAKE_BOOL=		WITH_OCC
-OCC_CMAKE_ON=		-DVTK_DIR=${LOCALBASE}/lib/cmake/vtk-9.0
+OCC_CMAKE_ON=		-DVTK_DIR=${LOCALBASE}/lib/cmake/vtk-9.0 \
+			-DPython3_EXECUTABLE=${PYTHON_CMD}
 
 _LIBSTAGEDIR=	${STAGEDIR}/${PREFIX}/lib/elmersolver
 _PYVERSION=	${PYTHON_VER}${PYTHON_ABIVER}
