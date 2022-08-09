@@ -855,6 +855,7 @@
     SUBDIR += py-cypari2
     SUBDIR += py-deap
     SUBDIR += py-dionysus
+    SUBDIR += py-docplex
     SUBDIR += py-ducc0
     SUBDIR += py-ecos
     SUBDIR += py-faiss
@@ -959,6 +960,7 @@
     SUBDIR += py-random2
     SUBDIR += py-roman
     SUBDIR += py-rpy2
+    SUBDIR += py-rustworkx
     SUBDIR += py-rvlib
     SUBDIR += py-scikit-umfpack
     SUBDIR += py-scs
