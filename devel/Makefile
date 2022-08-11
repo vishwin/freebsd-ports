@@ -1428,6 +1428,7 @@
     SUBDIR += llvm12
     SUBDIR += llvm13
     SUBDIR += llvm14
+    SUBDIR += llvm15
     SUBDIR += llvm70
     SUBDIR += llvm80
     SUBDIR += llvm90
@@ -4111,6 +4112,7 @@
     SUBDIR += py-anyconfig
     SUBDIR += py-anyio
     SUBDIR += py-anyjson
+    SUBDIR += py-anytree
     SUBDIR += py-apache_conf_parser
     SUBDIR += py-apipkg
     SUBDIR += py-apispec
@@ -4718,6 +4720,7 @@
     SUBDIR += py-libversion
     SUBDIR += py-libvirt
     SUBDIR += py-libzfs
+    SUBDIR += py-line-profiler
     SUBDIR += py-linear-tsv
     SUBDIR += py-linecache2
     SUBDIR += py-lineedit
@@ -4808,6 +4811,7 @@
     SUBDIR += py-nose-cov
     SUBDIR += py-nose-timer
     SUBDIR += py-nose2
+    SUBDIR += py-noseofyeti
     SUBDIR += py-nosexcover
     SUBDIR += py-notebook-shim
     SUBDIR += py-notify2
@@ -5393,6 +5397,7 @@
     SUBDIR += py-tzlocal
     SUBDIR += py-u-msgpack-python
     SUBDIR += py-ua_parser
+    SUBDIR += py-ubelt
     SUBDIR += py-uhid-freebsd
     SUBDIR += py-ujson
     SUBDIR += py-unearth
@@ -5461,6 +5466,7 @@
     SUBDIR += py-xcaplib
     SUBDIR += py-xdg
     SUBDIR += py-xdis
+    SUBDIR += py-xdoctest
     SUBDIR += py-xerox
     SUBDIR += py-xmltodict
     SUBDIR += py-xstatic
