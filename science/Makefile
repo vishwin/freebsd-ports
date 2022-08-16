@@ -286,9 +286,11 @@
     SUBDIR += py-dlib
     SUBDIR += py-dwave-cloud-client
     SUBDIR += py-dwave-greedy
+    SUBDIR += py-dwave-hybrid
     SUBDIR += py-dwave-inspector
     SUBDIR += py-dwave-neal
     SUBDIR += py-dwave-networkx
+    SUBDIR += py-dwave-ocean-sdk
     SUBDIR += py-dwave-preprocessing
     SUBDIR += py-dwave-samplers
     SUBDIR += py-dwave-system
