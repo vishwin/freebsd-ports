@@ -2824,6 +2824,7 @@
     SUBDIR += p5-Module-Version
     SUBDIR += p5-Module-Versions
     SUBDIR += p5-Module-Versions-Report
+    SUBDIR += p5-Mojo-Base-XS
     SUBDIR += p5-Mojolicious-Plugin-NYTProf
     SUBDIR += p5-Moo
     SUBDIR += p5-MooX-Aliases
@@ -5611,6 +5612,10 @@
     SUBDIR += qt5-scxml
     SUBDIR += qt5-testlib
     SUBDIR += qt5-uitools
+    SUBDIR += qt6-5compat
+    SUBDIR += qt6-base
+    SUBDIR += qt6-tools
+    SUBDIR += qt6-translations
     SUBDIR += qtcreator
     SUBDIR += quantum
     SUBDIR += quickcheck++
