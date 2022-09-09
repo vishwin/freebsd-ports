@@ -1,10 +1,12 @@
 PORTNAME?=	victoria-metrics
 PORTVERSION=	1.81.0		# don't forget to update BUILDINFO_TAG
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	danfe@FreeBSD.org
 COMMENT?=	Fast, cost-effective, and scalable time series database
+WWW=		https://victoriametrics.github.io/
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE

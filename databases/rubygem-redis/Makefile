@@ -1,10 +1,11 @@
 PORTNAME=	redis
-PORTVERSION=	5.0.1
+PORTVERSION=	5.0.2
 CATEGORIES=	databases rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Ruby client library for Redis, the key value storage server
+WWW=		https://github.com/redis/redis-rb
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE

@@ -1,10 +1,12 @@
 PORTNAME=	rclone
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.59.1
+PORTREVISION=	1
 CATEGORIES=	net
 
 MAINTAINER=	tremere@cainites.net
 COMMENT=	Sync files to and from various cloud services
+WWW=		https://rclone.org/
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/COPYING

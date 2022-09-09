@@ -1,10 +1,11 @@
 PORTNAME=	sonivox-eas
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.4.0
+DISTVERSION=	1.4.1
 CATEGORIES=	audio
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Sonivox EAS for Qt
+WWW=		https://github.com/pedrolcl/Linux-SonivoxEas
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE

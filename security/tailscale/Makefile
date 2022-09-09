@@ -1,10 +1,12 @@
 PORTNAME=	tailscale
 PORTVERSION=	1.30.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	security net-vpn
 
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Mesh VPN that makes it easy to connect your devices
+WWW=		https://tailscale.com/
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE

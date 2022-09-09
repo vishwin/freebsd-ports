@@ -1,10 +1,12 @@
 PORTNAME=	dendrite
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.9.6
+PORTREVISION=	1
 CATEGORIES=	net-im
 
 MAINTAINER=	ashish@FreeBSD.org
 COMMENT=	Matrix protocol homeserver
+WWW=		https://github.com/matrix-org/dendrite
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
