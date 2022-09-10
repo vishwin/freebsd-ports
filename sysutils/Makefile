@@ -129,6 +129,7 @@
     SUBDIR += bksh
     SUBDIR += bkt
     SUBDIR += boot-extract
+    SUBDIR += bottom
     SUBDIR += boxbackup-devel
     SUBDIR += bpytop
     SUBDIR += brasero

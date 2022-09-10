@@ -1,9 +1,8 @@
 PKGNAMESUFFIX=	-qt5
 
 COMMENT=	Qt5 modules of uim input method
-WWW=		https://github.com/uim/uim
 
-BUILD_DEPENDS=	cmake:devel/cmake
+BUILD_DEPENDS=	cmake:devel/cmake-core
 LIB_DEPENDS=	libuim.so:textproc/uim
 
 USES=		compiler:c++11-lang gl iconv kde:5 libtool qt:5
