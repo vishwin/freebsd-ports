@@ -4,6 +4,7 @@ CATEGORIES=	net kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Akonadi Calendar Integration
+WWW=		https://www.kde.org/
 
 LICENSE=	LGPL21
 
@@ -13,12 +14,12 @@ USE_KDE=	auth codecs completion config configwidgets coreaddons \
 		dbusaddons kdelibs4support i18n iconthemes itemmodels \
 		jobwidgets kio notifications service solid wallet \
 		widgetsaddons windowsystem xmlgui \
-		ecm_build
+		ecm:build
 # pim components
 USE_KDE+=	akonadi akonadicontacts akonadimime calendarcore calendarutils \
 		contacts grantleetheme identitymanagement mailtransport mime pimtextedit
 USE_QT=		concurrent core dbus gui network widgets xml \
-		buildtools_build qmake_build
+		buildtools:build qmake:build
 USE_XORG=	x11
 USE_LDCONFIG=	yes
 
