@@ -120,6 +120,7 @@
     SUBDIR += dehydrated
     SUBDIR += denyhosts
     SUBDIR += destroy
+    SUBDIR += diffcode
     SUBDIR += digestpp
     SUBDIR += dirbuster
     SUBDIR += dirmngr
@@ -1153,7 +1154,7 @@
     SUBDIR += rubygem-webauthn
     SUBDIR += rubygem-webpush
     SUBDIR += rustscan
-    SUBDIR += s2n
+    SUBDIR += s2n-tls
     SUBDIR += safesh
     SUBDIR += samhain
     SUBDIR += samhain-client
