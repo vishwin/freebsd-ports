@@ -138,6 +138,7 @@
     SUBDIR += bsd-splash-changer
     SUBDIR += bsdconfig
     SUBDIR += bsdcrashtar
+    SUBDIR += bsdebfetch
     SUBDIR += bsdfan
     SUBDIR += bsdhwmon
     SUBDIR += bsdinfo
@@ -1038,7 +1039,6 @@
     SUBDIR += pwsafe
     SUBDIR += pxattr
     SUBDIR += pxp-agent
-    SUBDIR += py-ansible-base
     SUBDIR += py-ansible-compat
     SUBDIR += py-ansible-core
     SUBDIR += py-ansible-core211

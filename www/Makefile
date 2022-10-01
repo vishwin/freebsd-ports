@@ -1789,7 +1789,6 @@
     SUBDIR += py-wikitools
     SUBDIR += py-woob
     SUBDIR += py-woob-qt
-    SUBDIR += py-ws4py
     SUBDIR += py-wsaccel
     SUBDIR += py-wsgidav
     SUBDIR += py-yarl
@@ -2247,6 +2246,7 @@
     SUBDIR += tomcat-devel
     SUBDIR += tomcat-native
     SUBDIR += tomcat10
+    SUBDIR += tomcat101
     SUBDIR += tomcat85
     SUBDIR += tomcat9
     SUBDIR += tomee
@@ -2255,7 +2255,6 @@
     SUBDIR += transmission-web
     SUBDIR += transproxy
     SUBDIR += tt-rss
-    SUBDIR += ttf2eot
     SUBDIR += tuifeed
     SUBDIR += tusc
     SUBDIR += tusd
