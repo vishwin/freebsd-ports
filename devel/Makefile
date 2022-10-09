@@ -279,6 +279,7 @@
     SUBDIR += blame
     SUBDIR += blitz
     SUBDIR += bloaty
+    SUBDIR += blueprint-compiler
     SUBDIR += bmake
     SUBDIR += bmkdep
     SUBDIR += bnf
@@ -4176,6 +4177,7 @@
     SUBDIR += py-autoprop
     SUBDIR += py-avro
     SUBDIR += py-awesomeversion
+    SUBDIR += py-aws-lambda-builders
     SUBDIR += py-aws-requests-auth
     SUBDIR += py-aws-sam-translator
     SUBDIR += py-aws-xray-sdk
@@ -5151,6 +5153,7 @@
     SUBDIR += py-pytest-plus
     SUBDIR += py-pytest-profiling
     SUBDIR += py-pytest-pycodestyle
+    SUBDIR += py-pytest-qt
     SUBDIR += py-pytest-randomly
     SUBDIR += py-pytest-regressions
     SUBDIR += py-pytest-regtest
