@@ -1,6 +1,6 @@
 PORTNAME=	vtk
 DISTVERSION=	9.1.0
-PORTREVISION=	6
+PORTREVISION=	8
 CATEGORIES=	math graphics
 MASTER_SITES=	https://vtk.org/files/release/${VTK_SHORT_VER}/
 PKGNAMESUFFIX=	9
@@ -19,8 +19,6 @@ LIB_DEPENDS=	\
 		libnetcdf.so:science/netcdf \
 		libpng.so:graphics/png \
 		libtiff.so:graphics/tiff
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mpi4py>0:net/py-mpi4py@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mpi4py>0:net/py-mpi4py@${PY_FLAVOR}
 
 USES=		alias cmake compiler:c++11-lang gl jpeg localbase xorg
 USE_LDCONFIG=	${PREFIX}/lib/vtk-${VTK_SHORT_VER}
@@ -37,6 +35,9 @@ CMAKE_ARGS=	-DVTK_INSTALL_LIBRARY_DIR=lib/vtk-${VTK_SHORT_VER} \
 		-DVTK_INSTALL_QT_DIR=/${QT_LIBDIR_REL}/plugins/designer \
 		-DSTAGEDIR=${STAGEDIR}
 		# all build options are documented here: https://gitlab.kitware.com/vtk/vtk/blob/master/Documentation/dev/build.md
+
+# disable finding Qt6
+CMAKE_ON+=	CMAKE_DISABLE_FIND_PACKAGE_Qt6
 
 VTK_SHORT_VER=	${PORTVERSION:R}
 
@@ -76,7 +77,9 @@ DESIGNER_USE=		QT=designer
 DESIGNER_IMPLIES=	QT5
 
 MPI_CMAKE_BOOL=		VTK_USE_MPI
-MPI_LIB_DEPENDS=	libmpi.so:net/mpich
+#MPI_USES=		mpi:openmpi # fails, needs investigation: The following options helpers are incorrectly set after bsd.port.options.mk and are ineffective: MPI_CFLAGS MPI_LIBS
+MPI_BUILD_DEPENDS=	openmpi>0:net/openmpi
+MPI_RUN_DEPENDS=	openmpi>0:net/openmpi
 MPI_CMAKE_ON=		-DMPIEXEC=${LOCALBASE}/mpi/openmpi/bin/mpiexec
 
 OSMESA_CMAKE_ON=	-DVTK_OPENGL_HAS_OSMESA:BOOL=ON \
@@ -110,6 +113,11 @@ EXAMPLES_CMAKE_BOOL=	BUILD_EXAMPLES
 .if !${PORT_OPTIONS:MOSMESA}
 USES+=		gl
 USE_GL=		gl glu
+.endif
+
+.if ${PORT_OPTIONS:MPYTHON} && ${PORT_OPTIONS:MMPI}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mpi4py>0:net/py-mpi4py@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mpi4py>0:net/py-mpi4py@${PY_FLAVOR}
 .endif
 
 CONFLICTS=	vtk6 vtk8
