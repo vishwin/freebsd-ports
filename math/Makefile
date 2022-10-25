@@ -549,6 +549,7 @@
     SUBDIR += octave-forge-ga
     SUBDIR += octave-forge-general
     SUBDIR += octave-forge-generate_html
+    SUBDIR += octave-forge-geographiclib
     SUBDIR += octave-forge-geometry
     SUBDIR += octave-forge-gnuplot
     SUBDIR += octave-forge-gsl
@@ -556,6 +557,7 @@
     SUBDIR += octave-forge-image
     SUBDIR += octave-forge-informationtheory
     SUBDIR += octave-forge-integration
+    SUBDIR += octave-forge-internal-fluid-flow
     SUBDIR += octave-forge-interval
     SUBDIR += octave-forge-io
     SUBDIR += octave-forge-irsa
@@ -586,6 +588,7 @@
     SUBDIR += octave-forge-optiminterp
     SUBDIR += octave-forge-outliers
     SUBDIR += octave-forge-parallel
+    SUBDIR += octave-forge-pde1dm
     SUBDIR += octave-forge-plot
     SUBDIR += octave-forge-ponchon-savarit
     SUBDIR += octave-forge-quaternion
@@ -601,6 +604,7 @@
     SUBDIR += octave-forge-special-matrix
     SUBDIR += octave-forge-splines
     SUBDIR += octave-forge-statistics
+    SUBDIR += octave-forge-statistics-bootstrap
     SUBDIR += octave-forge-stk
     SUBDIR += octave-forge-strings
     SUBDIR += octave-forge-struct

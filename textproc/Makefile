@@ -1272,6 +1272,7 @@
     SUBDIR += py-CommonMark
     SUBDIR += py-Morfessor
     SUBDIR += py-QDarkStyle
+    SUBDIR += py-RTFDE
     SUBDIR += py-Tempita
     SUBDIR += py-acora
     SUBDIR += py-aeidon
@@ -1313,6 +1314,7 @@
     SUBDIR += py-dominate
     SUBDIR += py-dparse
     SUBDIR += py-duecredit
+    SUBDIR += py-ebcdic
     SUBDIR += py-elasticsearch
     SUBDIR += py-elasticsearch-async
     SUBDIR += py-elasticsearch-curator
@@ -1325,6 +1327,7 @@
     SUBDIR += py-enchant
     SUBDIR += py-enrich
     SUBDIR += py-et_xmlfile
+    SUBDIR += py-extract-msg
     SUBDIR += py-fastavro
     SUBDIR += py-feedparser
     SUBDIR += py-fingerprints
