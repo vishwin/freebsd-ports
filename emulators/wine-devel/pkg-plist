@@ -595,6 +595,7 @@ include/wine/windows/mediaobj.h
 include/wine/windows/mediaobj.idl
 include/wine/windows/medparam.h
 include/wine/windows/medparam.idl
+include/wine/windows/memoryapi.h
 include/wine/windows/metahost.h
 include/wine/windows/metahost.idl
 include/wine/windows/mfapi.h
@@ -1404,6 +1405,7 @@ lib/wine/%%WINEARCH%%-unix/libuserenv.a
 lib/wine/%%WINEARCH%%-unix/libusp10.a
 lib/wine/%%WINEARCH%%-unix/libuuid.a
 lib/wine/%%WINEARCH%%-unix/libuxtheme.a
+lib/wine/%%WINEARCH%%-unix/libvcruntime140.a
 lib/wine/%%WINEARCH%%-unix/libvdmdbg.a
 lib/wine/%%WINEARCH%%-unix/libversion.a
 lib/wine/%%WINEARCH%%-unix/libvulkan-1.a
@@ -1929,6 +1931,7 @@ lib/wine/%%WINEARCH%%-windows/libuserenv.a
 lib/wine/%%WINEARCH%%-windows/libusp10.a
 lib/wine/%%WINEARCH%%-windows/libuuid.a
 lib/wine/%%WINEARCH%%-windows/libuxtheme.a
+lib/wine/%%WINEARCH%%-windows/libvcruntime140.a
 lib/wine/%%WINEARCH%%-windows/libvdmdbg.a
 lib/wine/%%WINEARCH%%-windows/libversion.a
 lib/wine/%%WINEARCH%%-windows/libvulkan-1.a

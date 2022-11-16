@@ -155,6 +155,7 @@
     SUBDIR += edje_viewer
     SUBDIR += egl-wayland
     SUBDIR += eglexternalplatform
+    SUBDIR += elastix
     SUBDIR += electricsheep
     SUBDIR += elementary-photos
     SUBDIR += embree
@@ -1050,7 +1051,6 @@
     SUBDIR += sane-epkowa
     SUBDIR += scale2x
     SUBDIR += scantailor
-    SUBDIR += sciplot
     SUBDIR += scr2png
     SUBDIR += scrot
     SUBDIR += scwm-icons
