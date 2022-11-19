@@ -885,6 +885,7 @@
     SUBDIR += ruby-tokyocabinet
     SUBDIR += ruby-xapian
     SUBDIR += rubygem-active_model_serializers
+    SUBDIR += rubygem-active_model_serializers61
     SUBDIR += rubygem-active_record_query_trace
     SUBDIR += rubygem-activemodel-serializers-xml
     SUBDIR += rubygem-activemodel4
@@ -927,6 +928,7 @@
     SUBDIR += rubygem-dbf
     SUBDIR += rubygem-dbi
     SUBDIR += rubygem-dbm
+    SUBDIR += rubygem-discard-rails61
     SUBDIR += rubygem-dm-aggregates
     SUBDIR += rubygem-dm-chunked_query
     SUBDIR += rubygem-dm-constraints
@@ -978,6 +980,7 @@
     SUBDIR += rubygem-pghero
     SUBDIR += rubygem-pghero-rails5
     SUBDIR += rubygem-pghero-rails50
+    SUBDIR += rubygem-pghero-rails61
     SUBDIR += rubygem-pl-puppetdb-ruby
     SUBDIR += rubygem-postgres_ext
     SUBDIR += rubygem-puppetdb_cli

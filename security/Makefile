@@ -1045,12 +1045,14 @@
     SUBDIR += rubygem-devise-two-factor-rails61
     SUBDIR += rubygem-devise-two-factor-rails70
     SUBDIR += rubygem-devise_pam_authenticatable2
+    SUBDIR += rubygem-devise_pam_authenticatable2-rails61
     SUBDIR += rubygem-digest
     SUBDIR += rubygem-digest-crc
     SUBDIR += rubygem-doorkeeper
     SUBDIR += rubygem-doorkeeper-openid_connect
     SUBDIR += rubygem-doorkeeper-rails5
     SUBDIR += rubygem-doorkeeper-rails50
+    SUBDIR += rubygem-doorkeeper-rails61
     SUBDIR += rubygem-ed25519
     SUBDIR += rubygem-ed2551912
     SUBDIR += rubygem-encryptor
@@ -1111,6 +1113,7 @@
     SUBDIR += rubygem-origami
     SUBDIR += rubygem-pbkdf2-ruby
     SUBDIR += rubygem-pundit
+    SUBDIR += rubygem-pundit61
     SUBDIR += rubygem-pyu-ruby-sasl
     SUBDIR += rubygem-rack-oauth2
     SUBDIR += rubygem-razorback-scriptNugget

@@ -47,6 +47,7 @@
     SUBDIR += airsaned
     SUBDIR += akira
     SUBDIR += alembic
+    SUBDIR += alizams
     SUBDIR += aloadimage
     SUBDIR += alpng
     SUBDIR += ampasACES-container
@@ -619,6 +620,7 @@
     SUBDIR += openorienteering-mapper
     SUBDIR += openrm
     SUBDIR += openshadinglanguage
+    SUBDIR += openslide
     SUBDIR += opensubdiv
     SUBDIR += openvkl
     SUBDIR += optar
@@ -890,6 +892,7 @@
     SUBDIR += py-opencolorio
     SUBDIR += py-openimageio
     SUBDIR += py-openshadinglanguage
+    SUBDIR += py-openslide-python
     SUBDIR += py-optimize-images
     SUBDIR += py-osmnet
     SUBDIR += py-pandana
@@ -1001,6 +1004,7 @@
     SUBDIR += ristretto
     SUBDIR += rlottie
     SUBDIR += ruby-gd
+    SUBDIR += rubygem-blurhash
     SUBDIR += rubygem-cairo
     SUBDIR += rubygem-captcha
     SUBDIR += rubygem-chunky_png

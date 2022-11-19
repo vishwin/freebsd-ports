@@ -253,9 +253,9 @@
     SUBDIR += janus
     SUBDIR += jericho-html
     SUBDIR += jesred
+    SUBDIR += jetty10
     SUBDIR += jetty8
     SUBDIR += jetty9
-    SUBDIR += jetty10
     SUBDIR += jira-cli
     SUBDIR += jitsi-meet
     SUBDIR += jmeter
@@ -1944,6 +1944,7 @@
     SUBDIR += rubygem-hamlit-rails
     SUBDIR += rubygem-hamlit-rails-rails5
     SUBDIR += rubygem-hamlit-rails-rails50
+    SUBDIR += rubygem-hamlit-rails-rails61
     SUBDIR += rubygem-hashicorp-checkpoint
     SUBDIR += rubygem-heroics
     SUBDIR += rubygem-heroku-api
