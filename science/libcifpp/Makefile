@@ -1,6 +1,7 @@
 PORTNAME=	libcifpp
 DISTVERSIONPREFIX=	v
-DISTVERSION=	5.0.3
+DISTVERSION=	5.0.3-1
+DISTVERSIONSUFFIX=	-gdffbf52
 CATEGORIES=	science
 MASTER_SITES=	ftp://ftp.wwpdb.org/pub/pdb/data/monomers/:components
 DISTFILES=	components.cif.gz:components
@@ -14,12 +15,10 @@ WWW=		https://github.com/PDB-REDO/libcifpp
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BROKEN_i386=	compilation fails: static_assert failed due to requirement 'sizeof(cif::item_value) == 16', see https://github.com/PDB-REDO/libcifpp/issues/25
-
 LIB_DEPENDS=	libboost_iostreams.so:devel/boost-libs
 RUN_DEPENDS=	bash:shells/bash
 
-USES=		cmake:testing compiler:c++17-lang shebangfix
+USES=		cmake:testing compiler:c++20-lang shebangfix
 USE_LDCONFIG=	yes
 
 USE_GITHUB=	yes
