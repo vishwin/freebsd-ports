@@ -1748,6 +1748,7 @@
     SUBDIR += py-secure-cookie
     SUBDIR += py-selector
     SUBDIR += py-selenium
+    SUBDIR += py-selenium-wire
     SUBDIR += py-semiphemeral
     SUBDIR += py-sentinelhub
     SUBDIR += py-slimit
@@ -2124,8 +2125,8 @@
     SUBDIR += rubygem-robots
     SUBDIR += rubygem-roda
     SUBDIR += rubygem-rqrcode
-    SUBDIR += rubygem-rqrcode2
     SUBDIR += rubygem-rqrcode-rails3
+    SUBDIR += rubygem-rqrcode2
     SUBDIR += rubygem-rqrcode_core
     SUBDIR += rubygem-rss
     SUBDIR += rubygem-rtlit
