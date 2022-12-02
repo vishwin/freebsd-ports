@@ -389,6 +389,7 @@
     SUBDIR += hs-penrose
     SUBDIR += hs-syfco
     SUBDIR += hsl
+    SUBDIR += hydrogen
     SUBDIR += ideep
     SUBDIR += ignition-math
     SUBDIR += igraph
@@ -1090,6 +1091,7 @@
     SUBDIR += slatec
     SUBDIR += sleef
     SUBDIR += slgrace
+    SUBDIR += slicot
     SUBDIR += snns
     SUBDIR += solitaire
     SUBDIR += sound-of-sorting

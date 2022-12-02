@@ -242,6 +242,7 @@
     SUBDIR += httpcore
     SUBDIR += httptunnel
     SUBDIR += httrack
+    SUBDIR += hurl
     SUBDIR += hypermail
     SUBDIR += igal2
     SUBDIR += ikiwiki
@@ -328,6 +329,7 @@
     SUBDIR += mediawiki135
     SUBDIR += mediawiki137
     SUBDIR += mediawiki138
+    SUBDIR += mediawiki139
     SUBDIR += mergelog
     SUBDIR += mhonarc
     SUBDIR += micro_httpd
