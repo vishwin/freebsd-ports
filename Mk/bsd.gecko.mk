@@ -93,8 +93,8 @@ MOZ_OPTIONS+=	--with-libclang-path="${LOCALBASE}/llvm${LLVM_DEFAULT}/lib"
 MOZ_EXPORT+=	LLVM_OBJDUMP="${LOCALBASE}/bin/llvm-objdump${LLVM_DEFAULT}"
 .    endif
 # Keep in sync with devel/wasi-* ports
-WASI_LLVM_DEFAULT=	14
-WASI_LLVM_VERSION=	14.0.6
+WASI_LLVM_DEFAULT=	15
+WASI_LLVM_VERSION=	15.0.6
 # Ignore Mk/bsd.default-versions.mk but respect make.conf(5) unless LTO is enabled
 .    if !defined(DEFAULT_VERSIONS) || ! ${DEFAULT_VERSIONS:Mllvm*} || ${PORT_OPTIONS:MLTO}
 LLVM_DEFAULT=	${WASI_LLVM_DEFAULT} # chase devel/wasi-* and bundled LLVM in lang/rust for LTO
