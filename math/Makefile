@@ -825,8 +825,6 @@
     SUBDIR += petanque
     SUBDIR += petiga
     SUBDIR += pffft
-    SUBDIR += php74-bcmath
-    SUBDIR += php74-gmp
     SUBDIR += php80-bcmath
     SUBDIR += php80-gmp
     SUBDIR += php81-bcmath
@@ -867,6 +865,8 @@
     SUBDIR += py-algopy
     SUBDIR += py-altgraph
     SUBDIR += py-amply
+    SUBDIR += py-animatplot
+    SUBDIR += py-animatplot-ng
     SUBDIR += py-apgl
     SUBDIR += py-arviz
     SUBDIR += py-arybo
@@ -1012,6 +1012,7 @@
     SUBDIR += py-secp256k1
     SUBDIR += py-seriate
     SUBDIR += py-simhash
+    SUBDIR += py-slepc4py
     SUBDIR += py-snuggs
     SUBDIR += py-spectral
     SUBDIR += py-spglm
@@ -1095,6 +1096,7 @@
     SUBDIR += sisl
     SUBDIR += slatec
     SUBDIR += sleef
+    SUBDIR += slepc
     SUBDIR += slgrace
     SUBDIR += slicot
     SUBDIR += snns
@@ -1169,7 +1171,6 @@
     SUBDIR += vinci
     SUBDIR += visualpolylib
     SUBDIR += vowpal_wabbit
-    SUBDIR += vtk6
     SUBDIR += vtk8
     SUBDIR += vtk9
     SUBDIR += wavelib

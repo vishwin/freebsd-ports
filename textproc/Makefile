@@ -1227,15 +1227,6 @@
     SUBDIR += peco
     SUBDIR += peg
     SUBDIR += perl2html
-    SUBDIR += php74-ctype
-    SUBDIR += php74-dom
-    SUBDIR += php74-enchant
-    SUBDIR += php74-pspell
-    SUBDIR += php74-simplexml
-    SUBDIR += php74-xml
-    SUBDIR += php74-xmlreader
-    SUBDIR += php74-xmlwriter
-    SUBDIR += php74-xsl
     SUBDIR += php80-ctype
     SUBDIR += php80-dom
     SUBDIR += php80-enchant
@@ -1296,6 +1287,7 @@
     SUBDIR += py-chameleon
     SUBDIR += py-chardet
     SUBDIR += py-charset-normalizer
+    SUBDIR += py-chevron
     SUBDIR += py-citeproc-py
     SUBDIR += py-citeproc-py-styles
     SUBDIR += py-cjkwrap
@@ -1623,7 +1615,6 @@
     SUBDIR += replaceit
     SUBDIR += resume
     SUBDIR += resume-extensions
-    SUBDIR += retext
     SUBDIR += rfcdiff
     SUBDIR += ripgrep
     SUBDIR += ripgrep-all
