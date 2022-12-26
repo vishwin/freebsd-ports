@@ -45,10 +45,10 @@ PLIST_DIRS=	/var/lib/xkb /var/lib
 
 DESCR=	${.CURDIR}/pkg-descr-${FLAVOR}
 
-BUILD_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/dri.pc:graphics/mesa
+BUILD_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/dri.pc:graphics/mesa-dri
 RUN_DEPENDS+=	xkeyboard-config>=2.5:x11/xkeyboard-config \
 		xkbcomp:x11/xkbcomp \
-		${LOCALBASE}/libdata/pkgconfig/dri.pc:graphics/mesa
+		${LOCALBASE}/libdata/pkgconfig/dri.pc:graphics/mesa-dri
 
 MESON_ARGS+=	-Dxwin=false \
 		-Dxquartz=false \
