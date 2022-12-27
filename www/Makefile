@@ -1690,6 +1690,7 @@
     SUBDIR += py-mwoauth
     SUBDIR += py-nevow
     SUBDIR += py-notebook
+    SUBDIR += py-onetimepass
     SUBDIR += py-openbrokerapi
     SUBDIR += py-pafy
     SUBDIR += py-paste
@@ -1818,6 +1819,7 @@
     SUBDIR += rearx
     SUBDIR += redmine42
     SUBDIR += redmine50
+    SUBDIR += remark42
     SUBDIR += rejik
     SUBDIR += reportmagic
     SUBDIR += repos-style
