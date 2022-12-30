@@ -1777,6 +1777,7 @@
     SUBDIR += p5-Attribute-Persistent
     SUBDIR += p5-AutoLoader
     SUBDIR += p5-AutoXS-Header
+    SUBDIR += p5-Avro
     SUBDIR += p5-B-C
     SUBDIR += p5-B-COW
     SUBDIR += p5-B-Compiling
@@ -5176,6 +5177,7 @@
     SUBDIR += py-pytest-profiling
     SUBDIR += py-pytest-pycodestyle
     SUBDIR += py-pytest-qt
+    SUBDIR += py-pytest-random-order
     SUBDIR += py-pytest-randomly
     SUBDIR += py-pytest-regressions
     SUBDIR += py-pytest-regtest
@@ -5349,6 +5351,7 @@
     SUBDIR += py-sh
     SUBDIR += py-shapely
     SUBDIR += py-shellingham
+    SUBDIR += py-shtab
     SUBDIR += py-signalr-client-aio
     SUBDIR += py-simpleeval
     SUBDIR += py-simplegeneric
@@ -5756,6 +5759,7 @@
     SUBDIR += robin-map
     SUBDIR += roboctl
     SUBDIR += robodoc
+    SUBDIR += root
     SUBDIR += ros-catkin
     SUBDIR += ros-catkin_pkg
     SUBDIR += ros-console_bridge
@@ -5927,8 +5931,6 @@
     SUBDIR += rubygem-aws-sdk-controltower
     SUBDIR += rubygem-aws-sdk-core
     SUBDIR += rubygem-aws-sdk-core2
-    SUBDIR += rubygem-aws-sdk-core3131
-    SUBDIR += rubygem-aws-sdk-core3159
     SUBDIR += rubygem-aws-sdk-costandusagereportservice
     SUBDIR += rubygem-aws-sdk-costexplorer
     SUBDIR += rubygem-aws-sdk-customerprofiles
@@ -6117,7 +6119,6 @@
     SUBDIR += rubygem-aws-sdk-route53recoveryreadiness
     SUBDIR += rubygem-aws-sdk-route53resolver
     SUBDIR += rubygem-aws-sdk-s3
-    SUBDIR += rubygem-aws-sdk-s31114
     SUBDIR += rubygem-aws-sdk-s3control
     SUBDIR += rubygem-aws-sdk-s3outposts
     SUBDIR += rubygem-aws-sdk-sagemaker
@@ -6418,6 +6419,7 @@
     SUBDIR += rubygem-cucumber-cucumber-expressions15
     SUBDIR += rubygem-cucumber-messages
     SUBDIR += rubygem-cucumber-messages18
+    SUBDIR += rubygem-cucumber-messages19
     SUBDIR += rubygem-cucumber-rails
     SUBDIR += rubygem-cucumber-tag-expressions
     SUBDIR += rubygem-cucumber-wire
@@ -6568,6 +6570,7 @@
     SUBDIR += rubygem-gettext
     SUBDIR += rubygem-gettext-setup
     SUBDIR += rubygem-gettext_i18n_rails
+    SUBDIR += rubygem-gettext_i18n_rails18
     SUBDIR += rubygem-gettext_i18n_rails_js-rails5
     SUBDIR += rubygem-gettext_i18n_rails_js-rails50
     SUBDIR += rubygem-gettext_i18n_rails_js-rails52
@@ -6603,8 +6606,8 @@
     SUBDIR += rubygem-google-apis-sqladmin_v1beta4
     SUBDIR += rubygem-google-apis-storage_v1
     SUBDIR += rubygem-google-gax
+    SUBDIR += rubygem-google-iam-v1
     SUBDIR += rubygem-google-protobuf
-    SUBDIR += rubygem-google-protobuf319
     SUBDIR += rubygem-googleapis-common-protos
     SUBDIR += rubygem-googleapis-common-protos-types
     SUBDIR += rubygem-graf
@@ -7103,6 +7106,7 @@
     SUBDIR += rubygem-tilt
     SUBDIR += rubygem-tilt1
     SUBDIR += rubygem-time
+    SUBDIR += rubygem-timecop
     SUBDIR += rubygem-timeliness
     SUBDIR += rubygem-timeout
     SUBDIR += rubygem-timers
@@ -7194,6 +7198,7 @@
     SUBDIR += rubygem-xdg5
     SUBDIR += rubygem-xorcist
     SUBDIR += rubygem-xpath
+    SUBDIR += rubygem-xxhash
     SUBDIR += rubygem-yajl-ruby
     SUBDIR += rubygem-yui-compressor
     SUBDIR += rubygem-zeitwerk
