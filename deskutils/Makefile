@@ -152,6 +152,7 @@
     SUBDIR += ktimetracker
     SUBDIR += kuserfeedback
     SUBDIR += latte-dock
+    SUBDIR += lazycli
     SUBDIR += libcprime
     SUBDIR += libkdepim
     SUBDIR += libportal
@@ -266,6 +267,7 @@
     SUBDIR += when
     SUBDIR += wmpinboard
     SUBDIR += x026
+    SUBDIR += xannotate
     SUBDIR += xcalendar
     SUBDIR += xcbautolock
     SUBDIR += xdg-desktop-portal
