@@ -400,6 +400,7 @@
     SUBDIR += cmph
     SUBDIR += cmunge
     SUBDIR += coccinelle
+    SUBDIR += cocogitto
     SUBDIR += codeblocks
     SUBDIR += codequery
     SUBDIR += codesearch-py
@@ -420,6 +421,7 @@
     SUBDIR += cons
     SUBDIR += cons-test
     SUBDIR += containers
+    SUBDIR += convco
     SUBDIR += cook
     SUBDIR += corrade
     SUBDIR += courier-unicode
