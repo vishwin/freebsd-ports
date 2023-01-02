@@ -7242,6 +7242,7 @@
     SUBDIR += sdlskk
     SUBDIR += sdts++
     SUBDIR += sedsed
+    SUBDIR += selene
     SUBDIR += sentry-cli
     SUBDIR += serd
     SUBDIR += serdisplib
@@ -7300,6 +7301,7 @@
     SUBDIR += spin
     SUBDIR += spirv-llvm-translator
     SUBDIR += splint
+    SUBDIR += spr
     SUBDIR += spread-sheet-widget
     SUBDIR += spyder
     SUBDIR += srecord
@@ -7373,6 +7375,7 @@
     SUBDIR += tex-synctex
     SUBDIR += tex-web2c
     SUBDIR += texlab
+    SUBDIR += the-way
     SUBDIR += thonny
     SUBDIR += thrift
     SUBDIR += thrift-c_glib
@@ -7414,6 +7417,7 @@
     SUBDIR += truc
     SUBDIR += tup
     SUBDIR += twiggy
+    SUBDIR += typeshare
     SUBDIR += ua_parser-core
     SUBDIR += uclcmd
     SUBDIR += ucommon
