@@ -87,6 +87,7 @@
     SUBDIR += clearsilver
     SUBDIR += closure-compiler
     SUBDIR += cntlm
+    SUBDIR += cobalt
     SUBDIR += codeigniter
     SUBDIR += colly
     SUBDIR += coppermine
@@ -1817,6 +1818,7 @@
     SUBDIR += qutebrowser
     SUBDIR += radicale
     SUBDIR += rearx
+    SUBDIR += reddsaver
     SUBDIR += redmine42
     SUBDIR += redmine50
     SUBDIR += rejik
@@ -2237,6 +2239,7 @@
     SUBDIR += srg
     SUBDIR += srt
     SUBDIR += stagit
+    SUBDIR += stork
     SUBDIR += subsonic-standalone
     SUBDIR += suphp
     SUBDIR += surf
