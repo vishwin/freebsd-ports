@@ -147,6 +147,7 @@
     SUBDIR += ald
     SUBDIR += allegro
     SUBDIR += allegro5
+    SUBDIR += amber
     SUBDIR += aml
     SUBDIR += ammonite
     SUBDIR += amqp-cpp
@@ -648,6 +649,7 @@
     SUBDIR += fmake
     SUBDIR += fnc
     SUBDIR += fnccheck
+    SUBDIR += fnm
     SUBDIR += folly
     SUBDIR += forge
     SUBDIR += forge-devel
@@ -828,6 +830,7 @@
     SUBDIR += gitlist
     SUBDIR += gitolite
     SUBDIR += gitolite2
+    SUBDIR += gitoxide
     SUBDIR += gitqlient
     SUBDIR += gittrac
     SUBDIR += gitty
@@ -3804,6 +3807,8 @@
     SUBDIR += papi
     SUBDIR += papilio-loader
     SUBDIR += parallel-hashmap
+    SUBDIR += parol
+    SUBDIR += parol-ls
     SUBDIR += pas2dox
     SUBDIR += pasm
     SUBDIR += patch
@@ -7350,6 +7355,7 @@
     SUBDIR += ta-lib
     SUBDIR += tablist
     SUBDIR += tabulate
+    SUBDIR += tagref
     SUBDIR += tailor
     SUBDIR += talloc
     SUBDIR += tarpaulin
@@ -7419,6 +7425,7 @@
     SUBDIR += transient-devel
     SUBDIR += transwarp
     SUBDIR += tree-sitter
+    SUBDIR += tree-sitter-graph
     SUBDIR += treefmt
     SUBDIR += treepy.el
     SUBDIR += trellis
