@@ -139,6 +139,7 @@
     SUBDIR += acme
     SUBDIR += acsccid
     SUBDIR += activitymail
+    SUBDIR += actor-framework
     SUBDIR += adacurses
     SUBDIR += aegis
     SUBDIR += agar
@@ -314,7 +315,6 @@
     SUBDIR += byaccj
     SUBDIR += c2mdoc
     SUBDIR += c4core
-    SUBDIR += caf
     SUBDIR += calibrator
     SUBDIR += caliper
     SUBDIR += capnproto
@@ -800,6 +800,7 @@
     SUBDIR += git-absorb
     SUBDIR += git-bug
     SUBDIR += git-cinnabar
+    SUBDIR += git-cliff
     SUBDIR += git-codereview
     SUBDIR += git-cola
     SUBDIR += git-cvs
@@ -817,6 +818,7 @@
     SUBDIR += git-subrepo
     SUBDIR += git-svn
     SUBDIR += git-town
+    SUBDIR += git-workspace
     SUBDIR += gitaly
     SUBDIR += gitflow
     SUBDIR += gitg
