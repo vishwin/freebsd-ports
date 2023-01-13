@@ -942,6 +942,7 @@
     SUBDIR += horde-content
     SUBDIR += horde-timeobjects
     SUBDIR += horde-whups
+    SUBDIR += hotspot
     SUBDIR += hp48cc
     SUBDIR += hp48xgcc
     SUBDIR += hpx
@@ -5258,6 +5259,7 @@
     SUBDIR += py-pythonfinder
     SUBDIR += py-pythran
     SUBDIR += py-pytimeparse
+    SUBDIR += py-pytoolconfig
     SUBDIR += py-pytools
     SUBDIR += py-pytrie
     SUBDIR += py-pytvmaze
@@ -5396,6 +5398,7 @@
     SUBDIR += py-speaklater
     SUBDIR += py-speg
     SUBDIR += py-spyder-kernels
+    SUBDIR += py-spyder-unittest
     SUBDIR += py-squint
     SUBDIR += py-sre-yield
     SUBDIR += py-srsly
@@ -6829,6 +6832,7 @@
     SUBDIR += rubygem-oci
     SUBDIR += rubygem-octopress-hooks
     SUBDIR += rubygem-oj
+    SUBDIR += rubygem-oj-introspect
     SUBDIR += rubygem-omniauth_crowd
     SUBDIR += rubygem-omnibus
     SUBDIR += rubygem-open3
@@ -7121,6 +7125,8 @@
     SUBDIR += rubygem-systemu
     SUBDIR += rubygem-table_print
     SUBDIR += rubygem-tdiff
+    SUBDIR += rubygem-telesign
+    SUBDIR += rubygem-telesignenterprise
     SUBDIR += rubygem-tempfile
     SUBDIR += rubygem-templater
     SUBDIR += rubygem-temple
