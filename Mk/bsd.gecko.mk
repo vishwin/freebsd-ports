@@ -93,7 +93,7 @@ MOZ_EXPORT+=	LLVM_OBJDUMP="${LOCALBASE}/bin/llvm-objdump${LLVM_VERSION}"
 .    endif
 # Keep in sync with devel/wasi-* ports
 WASI_LLVM_DEFAULT=	15
-WASI_LLVM_VERSION=	15.0.6
+WASI_LLVM_VERSION=	15.0.7
 # Ignore Mk/bsd.default-versions.mk but respect make.conf(5) unless LTO is enabled
 .    if !defined(DEFAULT_VERSIONS) || ! ${DEFAULT_VERSIONS:Mllvm*} || ${PORT_OPTIONS:MLTO}
 USES+=	llvm:${WASI_LLVM_DEFAULT}
