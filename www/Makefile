@@ -1728,6 +1728,7 @@
     SUBDIR += py-pyweblib
     SUBDIR += py-pywikibot
     SUBDIR += py-qt5-webengine
+    SUBDIR += py-qt6-webengine
     SUBDIR += py-quilt3
     SUBDIR += py-recaptcha
     SUBDIR += py-requests
@@ -2386,6 +2387,7 @@
     SUBDIR += webstone-ssl
     SUBDIR += webtrees
     SUBDIR += webtrees20
+    SUBDIR += webtrees21
     SUBDIR += wget2
     SUBDIR += wgetpaste
     SUBDIR += wiki-tui
