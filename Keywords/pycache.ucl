@@ -2,7 +2,7 @@
 
 arguments: true
 prepackaging: <<EOS
-  if #arg != 2 then
+  if #arg ~= 2 then
     io.stderr:write("@pycache expects 2 arguments, got " .. #arg .. "\n")
     return(1)
   end
