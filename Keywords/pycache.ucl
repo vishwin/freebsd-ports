@@ -1,0 +1,28 @@
+# MAINTAINER: python@FreeBSD.org
+
+arguments: true
+prepackaging: <<EOS
+  if #arg != 2 then
+    io.stderr:write("@pycache expects 2 arguments, got " .. #arg .. "\n")
+    return(1)
+  end
+EOS
+
+post-install-lua: <<EOS
+  args = {}
+  for arg in string.gmatch("%@", "%S+") do
+    table.insert(args, arg)
+  end
+  python_cmd = pkg.prefixed_path("bin/" .. args[2])
+  script = [[
+from pathlib import Path
+import csv
+import compileall
+
+record = Path("]] .. pkg.prefixed_path(args[1]) .. [[")
+if record.is_file():
+    for file in (record.parents[1].joinpath(row[0]) for row in csv.reader(record.read_text().splitlines()) if Path(row[0]).match("*.py")):
+        compileall.compile_file(file)
+  ]]
+  pkg.exec({python_cmd, "-c", script})
+EOS
