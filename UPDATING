@@ -5,6 +5,33 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20230215:
+  AFFECTS: users of python
+  AUTHOR: vishwin@FreeBSD.org
+
+  A trigger has been added to the lang/python3* ports to compile,
+  write and remove bytecode files (.pyc) in site-packages after all
+  pkg transactions have been completed. pkg will no longer manage
+  such files directly, as they are meant to be generated after
+  installation.
+
+  For those ports/packages that still package bytecode, some package
+  checksum mismatches on those files may occur. This is harmless
+  and will be rectified.
+
+  Technical details available at:
+        https://wiki.freebsd.org/Python/CompiledPackages
+
+20230213:
+  Affects: users of sysutils/nut*
+  AUTHOR: cy@FreeBSD.org
+
+  The nut file ownership fixups due to the UID/GID change from uucp/uucp
+  to nut/nut may not be desireable for all users. Some users with custom
+  file ownership may wish ownership to remain untouched. This revision
+  to the nut family of ports/packages allows users to optionally disable
+  automatic fixup of nut file ownership.
+
 20230213:
   AFFECTS: users of security/logcheck
   AUTHOR: yasu@FreeBSD.org
