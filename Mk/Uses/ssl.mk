@@ -89,7 +89,10 @@ OPENSSLBASE=		${LOCALBASE}
 OPENSSL_PORT=		security/${SSL_DEFAULT}
 
 # Get OPENSSL_SHLIBVER from the port
-.sinclude <${.CURDIR}/../../${OPENSSL_PORT}/version.mk>
+.sinclude <${PORTSDIR}/${OPENSSL_PORT}/version.mk>
+.    for odir in ${OVERLAYS}
+.sinclude <${odir}/${OPENSSL_PORT}/version.mk>
+.    endfor
 
 .    if !defined(OPENSSL_SHLIBVER)
 .error You are using an unsupported SSL provider ${SSL_DEFAULT}
