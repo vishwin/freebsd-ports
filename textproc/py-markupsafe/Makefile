@@ -1,9 +1,8 @@
-PORTNAME=	markupsafe
+PORTNAME=	MarkupSafe
 PORTVERSION=	2.1.2
 CATEGORIES=	textproc python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	MarkupSafe-${PORTVERSION}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Implements XML/HTML/XHTML Markup safe string for Python
