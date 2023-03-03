@@ -1,10 +1,9 @@
-PORTNAME=	openssl
+PORTNAME=	pyOpenSSL
 PORTVERSION=	20.0.1
 PORTEPOCH=	1
 CATEGORIES=	security python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	pyOpenSSL-${PORTVERSION}
 
 MAINTAINER=	sbz@FreeBSD.org
 COMMENT=	Python interface to the OpenSSL library
@@ -26,7 +25,7 @@ USE_PYTHON=	autoplist concurrent distutils pythonprefix
 NO_ARCH=	yes
 
 CPE_VENDOR=	jean-paul_calderone
-CPE_PRODUCT=	py${PORTNAME}
+CPE_PRODUCT=	${PORTNAME}
 
 # Use options.mk to use OSVERSION and handle redefine PORTEPOCH
 .include <bsd.port.options.mk>
