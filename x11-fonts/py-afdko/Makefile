@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=0:devel/py-setuptools_scm@
 # x11-fonts/py-defcon[pens]: print/py-fontpens
 RUN_DEPENDS=	afdko>=${PORTVERSION}<${PORTVERSION}_99:x11-fonts/afdko \
 		${PYTHON_PKGNAMEPREFIX}booleanOperations>=0:x11-fonts/py-booleanOperations@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}brotli>=1.0.1:archivers/py-brotli@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Brotli>=1.0.1:archivers/py-brotli@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}defcon>=0:x11-fonts/py-defcon@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}fontMath>=0:x11-fonts/py-fontMath@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}fontpens>=0.1.0:print/py-fontpens@${PY_FLAVOR} \

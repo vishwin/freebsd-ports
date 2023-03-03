@@ -12,7 +12,7 @@ LICENSE=	BSD3CLAUSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-runner>=0.1:devel/py-pytest-runner@${PY_FLAVOR}	\
 		${PYTHON_PKGNAMEPREFIX}flit>=3.8:devel/py-flit@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}brotli>=1.0.9:archivers/py-brotli@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Brotli>=1.0.9:archivers/py-brotli@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cairo>=1.15.4:graphics/py-cairo@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cairocffi>=0.9.0:graphics/py-cairocffi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cairosvg>=2.4.0:graphics/py-cairosvg@${PY_FLAVOR} \
