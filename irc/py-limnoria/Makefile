@@ -48,7 +48,7 @@ TIME_DESC=	Time Plugin: Extra time features (via dateutil/pytz)
 SQLALCHEMY_DESC=	SQLAlchemy database support
 
 ECDSA_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ecdsa>0:security/py-ecdsa@${PY_FLAVOR}
-PROXY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pysocks>=0:net/py-pysocks@${PY_FLAVOR}
+PROXY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PySocks>=0:net/py-pysocks@${PY_FLAVOR}
 
 ENCODING_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}chardet>=0:textproc/py-chardet@${PY_FLAVOR}
 GPG_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-gnupg>=0:security/py-python-gnupg@${PY_FLAVOR}

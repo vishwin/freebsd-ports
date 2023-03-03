@@ -21,6 +21,6 @@ OPTIONS_DEFINE=	RTMPDUMP SOCKS
 SOCKS_DESC=	SOCKS support
 
 RTMPDUMP_RUN_DEPENDS=	rtmpdump:multimedia/rtmpdump
-SOCKS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pysocks>=0:net/py-pysocks@${PY_FLAVOR}
+SOCKS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PySocks>=0:net/py-pysocks@${PY_FLAVOR}
 
 .include <bsd.port.mk>
