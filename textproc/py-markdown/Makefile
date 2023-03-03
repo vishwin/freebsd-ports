@@ -1,9 +1,8 @@
-PORTNAME=	markdown
+PORTNAME=	Markdown
 PORTVERSION=	3.3.7
 CATEGORIES=	textproc python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	Markdown-${PORTVERSION}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Python implementation of Markdown
