@@ -14,7 +14,7 @@ WWW=		https://github.com/ElementsProject/lightning
 LICENSE=	MIT
 
 BUILD_DEPENDS=	bash:shells/bash \
-		${PYTHON_PKGNAMEPREFIX}mako>=1.0.14:textproc/py-mako@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Mako>=1.0.14:textproc/py-mako@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mrkd>=0.2.0_1:devel/py-mrkd@${PY_FLAVOR}
 LIB_DEPENDS=	libgmp.so:math/gmp \
 		libsodium.so:security/libsodium \

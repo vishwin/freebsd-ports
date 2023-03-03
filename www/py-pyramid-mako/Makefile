@@ -14,7 +14,7 @@ LICENSE_NAME=	Repoze Public License
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LICENSE_PERMS=	auto-accept dist-mirror dist-sell pkg-mirror pkg-sell
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mako>=0.8:textproc/py-mako@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Mako>=0.8:textproc/py-mako@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyramid>=0:www/py-pyramid@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=0:devel/py-coverage@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}nose>=0:devel/py-nose@${PY_FLAVOR} \

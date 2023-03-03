@@ -19,7 +19,7 @@ LIB_DEPENDS=	${PY_BOOST} \
 		libOpenCL.so:devel/ocl-icd
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}appdirs>=1.4.0:devel/py-appdirs@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}decorator>=3.2.0:devel/py-decorator@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mako>=0.3.6:textproc/py-mako@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Mako>=0.3.6:textproc/py-mako@${PY_FLAVOR} \
 		${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pytools>=2017.6:devel/py-pytools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${PY_FLAVOR}

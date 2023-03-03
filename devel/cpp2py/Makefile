@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 PY_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}h5py>0:science/py-h5py@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Mako>0:textproc/py-mako@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR}
 BUILD_DEPENDS=	${PY_DEPENDS} \
 		llvm${LLVM_VER}>0:devel/llvm${LLVM_VER}
