@@ -11,7 +11,7 @@ WWW=		https://github.com/multiSnow/mcomix3
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>=5.2.0:graphics/py-pillow@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pillow>=5.2.0:graphics/py-pillow@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}
 
 USES=		desktop-file-utils gnome python:3.8+ shebangfix

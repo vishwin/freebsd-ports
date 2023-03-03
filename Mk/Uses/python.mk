@@ -763,7 +763,7 @@ PYNUMPY=	${PYTHON_PKGNAMEPREFIX}numpy>=1.16,1<1.25,1:math/py-numpy@${PY_FLAVOR}
 # Common Python modules that can be needed but only for some versions of Python.
 .  if ${PYTHON_REL} < 30500
 .  else
-PY_PILLOW=	${PYTHON_PKGNAMEPREFIX}pillow>=7.0.0:graphics/py-pillow@${PY_FLAVOR}
+PY_PILLOW=	${PYTHON_PKGNAMEPREFIX}Pillow>=7.0.0:graphics/py-pillow@${PY_FLAVOR}
 .  endif
 
 .  if ${PYTHON_VER} != ${PYTHON_DEFAULT}
