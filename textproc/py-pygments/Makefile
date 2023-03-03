@@ -1,9 +1,8 @@
-PORTNAME=	pygments
+PORTNAME=	Pygments
 DISTVERSION=	2.14.0
 CATEGORIES=	textproc python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	Pygments-${PORTVERSION}
 
 MAINTAINER=	nivit@FreeBSD.org
 COMMENT=	Syntax highlighter written in Python
@@ -12,16 +11,11 @@ WWW=		https://pygments.org/
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR}
-
-USES=		cpe python:3.6+
-USE_PYTHON=	autoplist concurrent distutils
+USES=		cpe python
+USE_PYTHON=	autoplist concurrent distutils pytest
 
 CONFLICTS_INSTALL=	py??-pygments-25
 
 NO_ARCH=	yes
-
-do-test:
-	(cd ${TEST_WRKSRC} && ${PYTHON_CMD} -m pytest -v -rs -o addopts=)
 
 .include <bsd.port.mk>
