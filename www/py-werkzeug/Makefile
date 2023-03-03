@@ -13,7 +13,7 @@ WWW=		https://palletsprojects.com/p/werkzeug/ \
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markupsafe>=2.1.1:textproc/py-markupsafe@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MarkupSafe>=2.1.1:textproc/py-markupsafe@${PY_FLAVOR}
 
 USES=		cpe python:3.7+
 USE_PYTHON=	autoplist concurrent distutils
