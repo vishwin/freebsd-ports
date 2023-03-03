@@ -1,9 +1,8 @@
-PORTNAME=	xdg
+PORTNAME=	pyxdg
 PORTVERSION=	0.28
 CATEGORIES=	devel python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	py${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Python library to access freedesktop.org standards
