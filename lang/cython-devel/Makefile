@@ -1,4 +1,4 @@
-PORTNAME=	cython
+PORTNAME=	Cython
 DISTVERSION=	3.0.0a11
 CATEGORIES=	lang python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ USES=		compiler:c11 python
 USE_PYTHON=	allflavors autoplist concurrent distutils
 USE_GITHUB=	yes
 
-CONFLICTS_INSTALL=	py*-cython # bin/cygdb bin/cygdb-3.8 bin/cython bin/cython-3.8 bin/cythonize bin/cythonize-3.8
+CONFLICTS_INSTALL=	py*-Cython # bin/cygdb bin/cygdb-3.8 bin/cython bin/cython-3.8 bin/cythonize bin/cythonize-3.8
 
 post-install:
 	${FIND} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/Cython -name '*.so' -exec ${STRIP_CMD} {} +

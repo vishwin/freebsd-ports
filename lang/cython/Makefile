@@ -1,9 +1,8 @@
-PORTNAME=	cython
+PORTNAME=	Cython
 PORTVERSION=	0.29.33
 CATEGORIES=	lang python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	Cython-${PORTVERSION}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Compiler for Writing C Extensions for the Python Language
@@ -17,7 +16,7 @@ USES=		compiler:c11 python:2.7+
 USE_PYTHON=	allflavors autoplist concurrent distutils
 
 # bin/cygdb bin/cython bin/cythonize
-CONFLICTS_INSTALL=	py*-cython-devel
+CONFLICTS_INSTALL=	py*-Cython-devel
 
 post-install:
 	${FIND} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/Cython -name '*.so' -exec ${STRIP_CMD} {} +
