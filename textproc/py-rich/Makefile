@@ -11,7 +11,7 @@ WWW=		https://github.com/Textualize/rich
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown-it-py>=2.1.0<3.0.0:textproc/py-markdown-it-py@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Markdown-it-py>=2.1.0<3.0.0:textproc/py-markdown-it-py@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Pygments>=2.14.0<3.0.0:textproc/py-pygments@${PY_FLAVOR}
 
 NO_ARCH=	yes

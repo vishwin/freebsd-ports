@@ -12,7 +12,7 @@ WWW=		https://github.com/facelessuser/pymdown-extensions
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown>=3.2:textproc/py-markdown@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Markdown>=3.2:textproc/py-markdown@${PY_FLAVOR}
 
 USES=		python:3.7+
 USE_PYTHON=	autoplist distutils
