@@ -44,6 +44,6 @@ SOCKS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PySocks>=1.5.6<2.0:net/py-pysocks@${PY
 SSL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>=0:security/py-certifi@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}cryptography>=1.3.4,1:security/py-cryptography@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}idna>=2.0.0:dns/py-idna@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}openssl>=0.14:security/py-openssl@${PY_FLAVOR}
+			${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=0.14:security/py-openssl@${PY_FLAVOR}
 
 .include <bsd.port.mk>

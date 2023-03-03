@@ -37,6 +37,6 @@ GSSAPI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gssapi>=1.2.0:security/py-gssapi@${PY
 LIBNACL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libnacl>=1.4.2:security/py-libnacl@${PY_FLAVOR}
 NETTLE_LIB_DEPENDS=	libnettle.so:security/nettle
 PKCS11_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-pkcs11>=0.7.0:security/py-python-pkcs11@${PY_FLAVOR}
-PYOPENSSL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>=17.0.0:security/py-openssl@${PY_FLAVOR}
+PYOPENSSL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=17.0.0:security/py-openssl@${PY_FLAVOR}
 
 .include <bsd.port.mk>

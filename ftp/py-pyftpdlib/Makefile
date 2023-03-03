@@ -21,7 +21,7 @@ SENDFILE_DESC=		Enable sendfile(2) support
 OPENSSL_DESC=		Enable FTP over SSL/TLS (RFC4217)
 
 SENDFILE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pysendfile>0:net/py-pysendfile@${PY_FLAVOR}
-OPENSSL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openssl>0:security/py-openssl@${PY_FLAVOR}
+OPENSSL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyOpenSSL>0:security/py-openssl@${PY_FLAVOR}
 
 EXAMPLESDIR=	${PREFIX}/share/examples/py-${PORTNAME}
 PORTEXAMPLES=	*

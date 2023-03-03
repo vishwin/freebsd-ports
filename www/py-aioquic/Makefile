@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>=0:security/py-certifi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cryptography>=3.1:security/py-cryptography@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pylsqpack>=0.3.3<0.4.0:www/py-pylsqpack@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}openssl>=20:security/py-openssl@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=20:security/py-openssl@${PY_FLAVOR}
 
 USES=		python:3.7+ ssl
 USE_PYTHON=	autoplist concurrent distutils

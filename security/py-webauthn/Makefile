@@ -16,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}asn1crypto>=0.24.0:devel/py-asn1crypto@${PY_
 		${PYTHON_PKGNAMEPREFIX}cattrs>=1.8.0:devel/py-cattrs@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cbor2>=4.0.1:devel/py-cbor2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cryptography>=3.4.7:security/py-cryptography@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}openssl>=20.0.1,1:security/py-openssl@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=20.0.1,1:security/py-openssl@${PY_FLAVOR}
 
 USES=		python:3.7+
 USE_PYTHON=	autoplist concurrent distutils unittest
