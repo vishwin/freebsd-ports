@@ -16,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jupyter-client>=0:devel/py-jupyter-client@${
 		${PYTHON_PKGNAMEPREFIX}ipython>=7.0.0:devel/ipython@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ipykernel>=5.0.0:devel/py-ipykernel@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}prompt-toolkit>=2.0.0<3.1.0:devel/py-prompt-toolkit@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pygments>=1.6:textproc/py-pygments@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}Pygments>=1.6:textproc/py-pygments@${PY_FLAVOR}
 
 USES=		python:3.7+
 
