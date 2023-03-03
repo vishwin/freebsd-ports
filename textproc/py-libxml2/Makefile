@@ -9,6 +9,7 @@ USES+=		gettext-runtime gnome python shebangfix
 USE_GNOME=	libxml2
 USE_PYTHON=	autoplist distutils
 SHEBANG_FILES=	*.py doc/*.py python/*.py python/tests/*.py
+WHEEL_PKGNAME=	${PORTNAME}_python
 
 OPTIONS_EXCLUDE=	${OPTIONS_DEFINE}
 
