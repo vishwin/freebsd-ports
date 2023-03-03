@@ -1,9 +1,8 @@
-PORTNAME=	beaker
+PORTNAME=	Beaker
 PORTVERSION=	1.12.0
 CATEGORIES=	www python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	Beaker-${PORTVERSION}
 
 MAINTAINER=	python@FreeBSD.org
 COMMENT=	Session and Caching library with WSGI Middleware
