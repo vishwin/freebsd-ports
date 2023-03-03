@@ -42,7 +42,7 @@ TWISTED_DESC=		Twisted network backend support
 
 ACCELERATE_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}wsaccel>=0.6.2:www/py-wsaccel@${PY_FLAVOR}
 ENCRYPTION_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=16.2.0:security/py-openssl@${PY_FLAVOR} \
-				${PYTHON_PKGNAMEPREFIX}pynacl>=1.0.1:security/py-pynacl@${PY_FLAVOR} \
+				${PYTHON_PKGNAMEPREFIX}PyNaCl>=1.0.1:security/py-pynacl@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}pyqrcode>=1.1:graphics/py-pyqrcode@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}pytrie>=0.2:devel/py-pytrie@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}service_identity>=18.1.0:security/py-service_identity@${PY_FLAVOR}

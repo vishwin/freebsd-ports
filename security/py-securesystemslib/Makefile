@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hatchling>0:devel/py-hatchling@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=3.3.2:security/py-cryptography@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pynacl>1.2.0:security/py-pynacl@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}PyNaCl>1.2.0:security/py-pynacl@${PY_FLAVOR}
 TEST_DEPENDS=	${LOCALBASE}/bin/gpg:security/gnupg
 
 USES=		python:3.7+ pytest shebangfix
