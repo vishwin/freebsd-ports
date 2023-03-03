@@ -1,10 +1,9 @@
-PORTNAME=	pystemmer
+PORTNAME=	PyStemmer
 PORTVERSION=	2.0.1
 CATEGORIES=	textproc python
 MASTER_SITES=	PYPI \
 		http://snowball.tartarus.org/wrappers/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	PyStemmer-${PORTVERSION}
 
 MAINTAINER=	dbaio@FreeBSD.org
 COMMENT=	Snowball Stemming Algorithms for Information Retrieval
