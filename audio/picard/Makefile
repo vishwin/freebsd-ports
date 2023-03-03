@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}discid>=1.0:audio/py-discid@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}fasteners>=0.14:devel/py-fasteners@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}yaml>=5.1:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Markdown>=3.2:textproc/py-markdown@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyjwt>=2.0:www/py-pyjwt@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}PyJWT>=2.0:www/py-pyjwt@${PY_FLAVOR}
 
 USES=		gettext pyqt:5 python:3.7+ desktop-file-utils
 USE_LOCALE=	en_US.UTF-8

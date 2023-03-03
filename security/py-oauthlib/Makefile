@@ -28,7 +28,7 @@ SIGNEDTOKEN_DESC=	Signed token support
 RSA_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}cryptography>=3.0.0:security/py-cryptography@${PY_FLAVOR}
 SIGNALS_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}blinker>=1.4.0:devel/py-blinker@${PY_FLAVOR}
 SIGNEDTOKEN_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cryptography>=3.0.0:security/py-cryptography@${PY_FLAVOR} \
-				${PYTHON_PKGNAMEPREFIX}pyjwt>=2.0.0<3:www/py-pyjwt@${PY_FLAVOR}
+				${PYTHON_PKGNAMEPREFIX}PyJWT>=2.0.0<3:www/py-pyjwt@${PY_FLAVOR}
 
 do-test:
 	cd ${WRKSRC} && ${PYTHON_CMD} -m pytest -rs -v

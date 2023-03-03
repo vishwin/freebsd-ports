@@ -13,7 +13,7 @@ LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.14.0:www/py-requests@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyjwt>=2.0:www/py-pyjwt@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}PyJWT>=2.0:www/py-pyjwt@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}deprecated>0:devel/py-deprecated@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pynacl>=1.4.0:security/py-pynacl@${PY_FLAVOR}
 
