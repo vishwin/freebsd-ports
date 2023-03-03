@@ -58,7 +58,7 @@ WAYLAND_CONFIGURE_ENABLE=	wayland
 GUI_USES=		python:3.6+
 GUI_CONFIGURE_ENABLE=	gui
 GUI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gobject3>0:devel/py-gobject3@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}xdg>0:devel/py-xdg@${PY_FLAVOR}
+			${PYTHON_PKGNAMEPREFIX}pyxdg>0:devel/py-xdg@${PY_FLAVOR}
 
 GEO_CONFIGURE_ON=	--enable-geoclue2
 GEO_CONFIGURE_OFF=	--disable-geoclue2

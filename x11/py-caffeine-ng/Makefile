@@ -19,7 +19,7 @@ LIB_DEPENDS=	libappindicator3.so:devel/libappindicator \
 		libnotify.so:devel/libnotify
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click7>=7.1:devel/py-click7@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ewmh>=0.1.4:devel/py-ewmh@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}xdg>=0.25:devel/py-xdg@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyxdg>=0.25:devel/py-xdg@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}setproctitle>=1.1.10:devel/py-setproctitle@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wheel>=0.29.0:devel/py-wheel@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pulsectl>0:audio/py-pulsectl@${PY_FLAVOR} \
