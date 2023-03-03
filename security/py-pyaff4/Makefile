@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}future>=0:devel/py-future@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyblake2>=0.9.3:security/py-pyblake2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}expiringdict>=1.1.4:devel/py-expiringdict@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}html5lib>=0:www/py-html5lib@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}PyYAML>=0:devel/py-yaml@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:3.6+ zip

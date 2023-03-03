@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aws-sam-translator>=1.55.0:devel/py-aws-sam-
 		${PYTHON_PKGNAMEPREFIX}junit-xml>=1.9:textproc/py-junit-xml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}networkx>=2.4:math/py-networkx@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sarif-om>=1.0.4:devel/py-sarif-om@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>5.4:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}PyYAML>5.4:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python:3.7+
 USE_PYTHON=	autoplist concurrent distutils

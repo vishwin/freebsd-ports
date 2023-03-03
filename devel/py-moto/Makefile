@@ -32,7 +32,7 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aws-xray-sdk>=0.93:devel/py-aws-xray-sdk@${
 		${PYTHON_PKGNAMEPREFIX}pyparsing>=3.0.7:devel/py-pyparsing@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}python-jose>=3.1.0<4.0.0:security/py-python-jose@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sshpubkeys>=3.1.0:security/py-sshpubkeys@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>=5.1:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}PyYAML>=5.1:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python:3.7+
 USE_PYTHON=	autoplist concurrent distutils pytest

@@ -46,7 +46,7 @@ BUILD_DEPENDS=	\
 		${PYTHON_PKGNAMEPREFIX}starlette>=0.17.1:www/py-starlette@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ujson>=4.3.0:devel/py-ujson@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}uvicorn>=0.16.0:www/py-uvicorn@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>=5.4.1:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}PyYAML>=5.4.1:devel/py-yaml@${PY_FLAVOR}
 #pytest-cov==3.0.0
 #python-graphql-client==0.4.2
 TEST_DEPENDS=	\

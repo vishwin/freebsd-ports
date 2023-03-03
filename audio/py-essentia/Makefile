@@ -17,7 +17,7 @@ BUILD_DEPENDS=	${PYNUMPY} \
 LIB_DEPENDS=	libessentia.so:audio/essentia
 RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}PyYAML>0:devel/py-yaml@${PY_FLAVOR}
 
 USES=		eigen:3 pkgconfig python
 USE_PYTHON=	pytest

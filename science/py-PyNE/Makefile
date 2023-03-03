@@ -28,7 +28,7 @@ BROKEN_armv7=	clang runs out of memory
 PY_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}tables>0:devel/py-tables@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}PyYAML>0:devel/py-yaml@${PY_FLAVOR}
 BUILD_DEPENDS=	cmake:devel/cmake-core \
 		${PY_DEPENDS}
 LIB_DEPENDS=	libhdf5.so:science/hdf5 \

@@ -16,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>0:devel/py-dateutil@${PY_FLA
 		${PYTHON_PKGNAMEPREFIX}ripe.atlas.cousteau>=1.0.4:net/py-ripe.atlas.cousteau@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ripe.atlas.sagan>=1.1.4:net/py-ripe.atlas.sagan@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tzlocal>0:devel/py-tzlocal@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}PyYAML>0:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=0.13:security/py-openssl@${PY_FLAVOR}
 
 USES=		python:3.6+

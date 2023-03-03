@@ -11,7 +11,7 @@ WWW=		https://github.com/hubmapconsortium/tableschema-to-template
 LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}jsonschema>=1.0.0:devel/py-jsonschema@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}yaml>=3.13:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}PyYAML>=3.13:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}XlsxWriter>=1.2.8:textproc/py-xlsxwriter@${PY_FLAVOR}
 
 USES=		python:3.6+
