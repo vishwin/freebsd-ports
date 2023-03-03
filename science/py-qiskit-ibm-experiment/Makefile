@@ -12,7 +12,7 @@ WWW=		https://qiskit.org/
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=2.8.0:devel/py-dateutil@${PY_FLAVOR} \
+PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>=2.8.0:devel/py-dateutil@${PY_FLAVOR} \
 		${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pandas>0:math/py-pandas@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}qiskit-terra>=0.18.0:science/py-qiskit-terra@${PY_FLAVOR} \

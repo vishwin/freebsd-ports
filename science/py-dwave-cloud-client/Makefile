@@ -11,7 +11,7 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=7:devel/py-click@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dateutil>=2.7:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-dateutil>=2.7:devel/py-dateutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dimod>=0.10.5:science/py-dimod@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}diskcache>=5.2.1:devel/py-diskcache@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}homebase>=1.0:devel/py-homebase@${PY_FLAVOR} \
