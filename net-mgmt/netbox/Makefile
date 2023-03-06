@@ -43,7 +43,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django41>=4.1.7<4.2:www/py-django41@${PY_FLA
 		${PYTHON_PKGNAMEPREFIX}bleach>=5.0.1<6:www/py-bleach@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=3.1.2<4:devel/py-Jinja2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Markdown>=3.3.7<3.4:textproc/py-markdown@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Markdown-include>=0.7.0<1:textproc/py-markdown-include@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}markdown-include>=0.7.0<1:textproc/py-markdown-include@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mkdocs-material>=8.5.11<10:textproc/py-mkdocs-material@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mkdocstrings>=0.17.0<1:textproc/py-mkdocstrings@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}netaddr>=0.8.0<1:net/py-netaddr@${PY_FLAVOR} \
