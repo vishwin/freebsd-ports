@@ -1,9 +1,8 @@
-PORTNAME=	deprecated
+PORTNAME=	Deprecated
 PORTVERSION=	1.2.13
 CATEGORIES=	devel python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	Deprecated-${PORTVERSION}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	@deprecated decorator to deprecate old python classes, functions or methods
