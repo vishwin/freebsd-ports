@@ -17,7 +17,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pastedeploy>=1.5.0:www/py-pastedeploy@${PY
 		${PYTHON_PKGNAMEPREFIX}repoze.lru>=0.4:devel/py-repoze.lru@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}translationstring>=0.4:textproc/py-translationstring@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}venusian>=1.0,1:devel/py-venusian@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}webob>=1.3.1:www/py-webob@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}WebOb>=1.3.1:www/py-webob@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zope.deprecation>=3.5.0:devel/py-zope.deprecation@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zope.interface>=3.8.0:devel/py-zope.interface@${PY_FLAVOR}
 RUN_DEPENDS:=	${BUILD_DEPENDS}

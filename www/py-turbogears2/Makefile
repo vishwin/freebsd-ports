@@ -12,7 +12,7 @@ WWW=		https://www.turbogears.org/
 LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}crank>=0:devel/py-crank@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}webob>=1.2:www/py-webob@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}WebOb>=1.2:www/py-webob@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=0:textproc/py-markupsafe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}repoze.lru>=0:devel/py-repoze.lru@${PY_FLAVOR}
 

@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PY_PILLOW} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>=0:math/py-matplotlib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}PyOpenGL>=0:graphics/py-PyOpenGL@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}webob>=1.4:www/py-webob@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}WebOb>=1.4:www/py-webob@${PY_FLAVOR}
 
 USES=		pyqt:6 python shebangfix
 USE_PYQT=	pyqt6:run sip:run webengine:run
