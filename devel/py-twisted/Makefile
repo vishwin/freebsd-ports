@@ -1,10 +1,9 @@
-PORTNAME=	twisted
+PORTNAME=	Twisted
 PORTVERSION=	22.10.0
 PORTREVISION=	1
 CATEGORIES=	devel net python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	Twisted-${PORTVERSION}
 
 MAINTAINER=	python@FreeBSD.org
 COMMENT=	Asynchronous networking framework written in Python
