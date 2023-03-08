@@ -37,7 +37,7 @@ PORTEXAMPLES=	*
 OPTIONS_DEFINE=	EXAMPLES
 
 EXAMPLES_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlobject>=1.5.1:databases/py-sqlobject@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}cheetah3>0:devel/py-cheetah3@${PY_FLAVOR}
+			${PYTHON_PKGNAMEPREFIX}Cheetah3>0:devel/py-cheetah3@${PY_FLAVOR}
 
 post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
