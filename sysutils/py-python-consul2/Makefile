@@ -29,6 +29,6 @@ TWISTED_DESC=	Twisted support
 ASYNCIO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aiohttp>=0:www/py-aiohttp@${PY_FLAVOR}
 TORNADO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tornado>=0:www/py-tornado@${PY_FLAVOR}
 TWISTED_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}treq>=0:www/py-treq@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
+			${PYTHON_PKGNAMEPREFIX}Twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 .include <bsd.port.mk>

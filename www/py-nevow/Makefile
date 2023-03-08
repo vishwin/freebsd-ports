@@ -13,7 +13,7 @@ WWW=		https://pypi.org/project/Nevow/
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 USE_PYTHON=	autoplist distutils
 USES=		gettext python:3.6+

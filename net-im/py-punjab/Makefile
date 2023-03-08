@@ -8,7 +8,7 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	HTTP XMPP client interface
 WWW=		https://github.com/twonds/punjab
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python:3.6+

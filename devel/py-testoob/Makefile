@@ -20,6 +20,6 @@ NO_ARCH=	yes
 USES=		dos2unix python:3.6+ tar:bzip2
 USE_PYTHON=	autoplist distutils
 
-TWISTED_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR}
+TWISTED_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Twisted>=0:devel/py-twisted@${PY_FLAVOR}
 
 .include <bsd.port.mk>

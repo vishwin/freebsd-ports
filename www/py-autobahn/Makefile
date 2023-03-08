@@ -56,7 +56,7 @@ SERIALIZATION_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cbor2>=5.0.1:devel/py-cbor2@${
 				${PYTHON_PKGNAMEPREFIX}py-ubjson>=0.8.4:devel/py-py-ubjson@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}ujson>=1.35:devel/py-ujson@${PY_FLAVOR}
 TWISTED_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}attrs>=19.2.0:devel/py-attrs@${PY_FLAVOR} \
-				${PYTHON_PKGNAMEPREFIX}twisted>=20.3.0:devel/py-twisted@${PY_FLAVOR} \
+				${PYTHON_PKGNAMEPREFIX}Twisted>=20.3.0:devel/py-twisted@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}zope.interface>=3.6.0:devel/py-zope.interface@${PY_FLAVOR}
 
 .include <bsd.port.options.mk>

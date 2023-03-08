@@ -23,7 +23,7 @@ OPTIONS_DEFAULT=	TWISTED
 
 TWISTED_DESC=	Twisted network backend support
 
-TWISTED_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}twisted>=20.3.0:devel/py-twisted@${PY_FLAVOR} \
+TWISTED_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Twisted>=20.3.0:devel/py-twisted@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}zope.interface>=5.2.0:devel/py-zope.interface@${PY_FLAVOR}
 
 do-test:

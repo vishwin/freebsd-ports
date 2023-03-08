@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=0:security/py-openssl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}twisted>=16.0.0:devel/py-twisted@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}Twisted>=16.0.0:devel/py-twisted@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mock>=0:devel/py-mock@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}txi2p-tahoe>=0.3.2:devel/py-txi2p-tahoe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}txtorcon>=19.0.0:security/py-txtorcon@${PY_FLAVOR}

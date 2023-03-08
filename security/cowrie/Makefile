@@ -26,7 +26,7 @@ RUN_DEPENDS=	bash:shells/bash \
 		${PYTHON_PKGNAMEPREFIX}pyparsing>0:devel/py-pyparsing@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}service_identity>0:security/py-service_identity@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tftpy>0:ftp/py-tftpy@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}twisted>0:devel/py-twisted@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}Twisted>0:devel/py-twisted@${PY_FLAVOR}
 
 USES=		python shebangfix
 SHEBANG_FILES=	bin/cowrie

@@ -54,7 +54,7 @@ TEST_DEPENDS=	\
 		${PYTHON_PKGNAMEPREFIX}pytest-cov>=2.9.0:devel/py-pytest-cov@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-env>=0.6.2:devel/py-pytest-env@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest>=7.0.1:devel/py-pytest@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}twisted>=22.2.0:devel/py-twisted@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}Twisted>=22.2.0:devel/py-twisted@${PY_FLAVOR}
 
 USES=		python:3.6+
 USE_GITHUB=	yes

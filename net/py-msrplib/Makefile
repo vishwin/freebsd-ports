@@ -15,7 +15,7 @@ LICENSE=	LGPL21+
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}eventlib>=0:devel/py-eventlib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}gnutls>=3.0.0:security/py-gnutls@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}python-application>=1.2.8:devel/py-python-application@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}twisted>=0:devel/py-twisted@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Twisted>=0:devel/py-twisted@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zope.interface>=0:devel/py-zope.interface@${PY_FLAVOR}
 
 USES=		python:3.5+
