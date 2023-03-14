@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.2.8:devel/py-lxml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}html5lib>=1.0.1:www/py-html5lib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}kitchen>=1.2.6:devel/py-kitchen@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}appdirs>=1.4.4:devel/py-appdirs@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}configargparse>=1.2.3:devel/py-configargparse@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}ConfigArgParse>=1.2.3:devel/py-configargparse@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=2.11:devel/py-Jinja2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}PyYAML>=5.3.1:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}setuptools>=24.2.0:devel/py-setuptools@${PY_FLAVOR}
