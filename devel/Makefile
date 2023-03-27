@@ -4651,6 +4651,7 @@
     SUBDIR += py-git-up
     SUBDIR += py-git-url-parse
     SUBDIR += py-gitdb
+    SUBDIR += py-gitlab-webhook-handler
     SUBDIR += py-gitless
     SUBDIR += py-gitpython
     SUBDIR += py-giturlparse
@@ -5534,6 +5535,7 @@
     SUBDIR += py-transaction
     SUBDIR += py-transitions
     SUBDIR += py-tree-format
+    SUBDIR += py-treelib
     SUBDIR += py-trimesh
     SUBDIR += py-trove-classifiers
     SUBDIR += py-ttictoc
