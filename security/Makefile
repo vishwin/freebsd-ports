@@ -406,7 +406,6 @@
     SUBDIR += openiked-portable
     SUBDIR += opensaml
     SUBDIR += opensc
-    SUBDIR += openscep
     SUBDIR += openssh-askpass
     SUBDIR += openssh-portable
     SUBDIR += openssl
@@ -423,7 +422,6 @@
     SUBDIR += openvpn-auth-radius
     SUBDIR += openvpn-auth-script
     SUBDIR += openvpn-devel
-    SUBDIR += openvpn25
     SUBDIR += ophcrack
     SUBDIR += opie
     SUBDIR += ossec-hids
@@ -822,7 +820,6 @@
     SUBDIR += plasma5-kwallet-pam
     SUBDIR += please
     SUBDIR += poly1305aes
-    SUBDIR += portsentry
     SUBDIR += proftpd-mod_clamav
     SUBDIR += proxycheck
     SUBDIR += proxytunnel
@@ -1271,7 +1268,6 @@
     SUBDIR += tclsasl
     SUBDIR += tcpcrypt
     SUBDIR += teleport
-    SUBDIR += teleport5
     SUBDIR += testssl.sh
     SUBDIR += tfhe
     SUBDIR += tfsec
