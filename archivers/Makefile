@@ -184,6 +184,7 @@
     SUBDIR += py-bup
     SUBDIR += py-bz2file
     SUBDIR += py-compressed-rtf
+    SUBDIR += py-cramjam
     SUBDIR += py-libarchive-c
     SUBDIR += py-lz4
     SUBDIR += py-lzma
@@ -195,6 +196,7 @@
     SUBDIR += py-rarfile
     SUBDIR += py-rcssmin
     SUBDIR += py-rjsmin
+    SUBDIR += py-sozipfile
     SUBDIR += py-warctools
     SUBDIR += py-xopen
     SUBDIR += py-zopfli
