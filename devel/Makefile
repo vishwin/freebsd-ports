@@ -4493,6 +4493,7 @@
     SUBDIR += py-dataclasses-json
     SUBDIR += py-datadog
     SUBDIR += py-datapackage
+    SUBDIR += py-datasette
     SUBDIR += py-datatest
     SUBDIR += py-dateparser
     SUBDIR += py-dateutil
@@ -4857,6 +4858,7 @@
     SUBDIR += py-linecache2
     SUBDIR += py-lineedit
     SUBDIR += py-littleutils
+    SUBDIR += py-livemark
     SUBDIR += py-llfuse
     SUBDIR += py-llvmcpy
     SUBDIR += py-llvmlite
@@ -4976,6 +4978,7 @@
     SUBDIR += py-opendht
     SUBDIR += py-opengrok-tools
     SUBDIR += py-openstacksdk
+    SUBDIR += py-opentelemetry-api
     SUBDIR += py-opentracing
     SUBDIR += py-opster
     SUBDIR += py-optik
