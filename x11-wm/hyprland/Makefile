@@ -1,8 +1,13 @@
 PORTNAME=	hyprland
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.24.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-wm wayland
+
+PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
+PATCHFILES+=	efee6a1cda27.patch:-p1 # https://github.com/hyprwm/Hyprland/pull/2026
+PATCHFILES+=	8944db49be38.patch:-p1 # https://github.com/hyprwm/Hyprland/issues/2065
+PATCHFILES+=	63841c8aac8c.patch:-p1 # https://github.com/hyprwm/Hyprland/pull/2066
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Dynamic tiling Wayland compositor that doesn't sacrifice on its looks #'
@@ -63,12 +68,12 @@ post-install:
 .if ${CXX} == c++ && exists(/usr/lib/libc++.so)
 .if !exists(/usr/include/c++/v1/__ranges/as_rvalue_view.h) || make(makesum) || make(fetch)
 USES+=		llvm:min=16,build
+PATH:=		${LLVM_PREFIX}/bin:${PATH} # XXX _CMAKE_TOOLCHAIN_SUFFIX vs. devel/llvm*
 CC=		clang${LLVM_VERSION}
 CXX=		clang++${LLVM_VERSION}
 CPP=		clang-cpp${LLVM_VERSION}
 CONFIGURE_ENV+=	CC="${CC}" CXX="${CXX}" CPP="${CPP}"
 CMAKE_BIN=	${LOCALBASE}/bin/cmake
-CMAKE_ARGS+=	-GNinja
 
 # XXX Move into separate port and standardize via USES
 GH_TUPLE+=	llvm:llvm-project:llvmorg-16.0.1:libcxx
@@ -78,7 +83,7 @@ CXXFLAGS+=	-nostdinc++ -isystem${WRKDIR}/libcxx_prefix/include/c++/v1
 
 pre-configure:	bundled-libcxx
 bundled-libcxx:
-	@${SETENV} ${CONFIGURE_ENV} ${CMAKE_BIN} ${CMAKE_ARGS:M*Ninja*} \
+	@${SETENV} ${CONFIGURE_ENV} ${CMAKE_BIN} ${CMAKE_ARGS} \
 		-DLIBCXX_INCLUDE_BENCHMARKS:BOOL=OFF \
 		-DCMAKE_INSTALL_PREFIX:PATH=${WRKDIR}/libcxx_prefix \
 		-B ${WRKDIR}/libcxx_build -S ${WRKSRC_libcxx}/libcxx
