@@ -17574,18 +17574,15 @@ devel/py-spyder|devel/spyder|2022-11-06|Spyder is an application, and not a libr
 www/grafana7||2022-11-07|Has expired: EOLed upstream, unfixed vulnerabilities
 devel/cppcheck-gui|devel/cppcheck|2022-11-07|GUI is now included in devel/cppcheck port
 devel/py-types-termcolor||2022-11-11|No longer needed, type annotations are now available in termcolor module
-x11-toolkits/wlroots-devel|x11-toolkits/wlroots|2022-11-11|Out of date: use x11-toolkits/wlroots for now
 multimedia/mpv034||2022-11-14|No longer needed
 devel/py-types-xxhash||2022-11-15|No longer needed, type annotations are now available in xxhash module
 devel/awscli|devel/py-awscli|2022-11-15|Renamed comply with Python Ports Policy and flavored
 graphics/sciplot|science/sciplot|2022-11-15|Move to avoid conflict with graphics/SciPlot
-x11-wm/hyprland-devel|x11-wm/hyprland|2022-11-16|Updated to the latest stable version
 net/rabbitmq-c-devel|net/rabbitmq-c|2022-11-16|Remove obsolete devel port, use net/rabbitmq-c instead
 databases/foundationdb-devel|databases/foundationdb|2022-11-16|Remove obsolete devel port, use databases/foundationdb instead
 devel/py-pytest4-asyncio||2022-11-19|Has expired: legacy version for pytest4 no longer used by any port
 devel/tokamak||2022-11-20|Has expired: Last release in 2008, abandoned upstream, not used, website disappeared
 net/libutp|net-p2p/libutp|2022-11-20|Moved to a more adequated category
-x11-wm/sway-devel|x11-wm/sway|2022-11-26|Out of date: use x11-wm/sway for now
 math/suitesparse-slip_lu|math/suitesparse-spex|2022-11-26|Renamed by upstream
 graphics/giblib||2022-11-27|Has expired: Last release in 2004, abandoned upstream, not used, website disappeared
 www/typo3-10||2022-11-29|Requires php74 which was EOL on 2022-11-28
