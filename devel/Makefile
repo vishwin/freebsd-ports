@@ -24,6 +24,7 @@
     SUBDIR += R-cran-callr
     SUBDIR += R-cran-caret
     SUBDIR += R-cran-checkmate
+    SUBDIR += R-cran-chk
     SUBDIR += R-cran-chron
     SUBDIR += R-cran-classInt
     SUBDIR += R-cran-cli
@@ -597,6 +598,7 @@
     SUBDIR += electron19
     SUBDIR += electron21
     SUBDIR += electron22
+    SUBDIR += electron23
     SUBDIR += elf
     SUBDIR += elf-dissector
     SUBDIR += elfcat
@@ -927,6 +929,7 @@
     SUBDIR += gtranslator
     SUBDIR += guichan
     SUBDIR += guile-lib
+    SUBDIR += gum
     SUBDIR += gumbo
     SUBDIR += gvfs
     SUBDIR += gvp
