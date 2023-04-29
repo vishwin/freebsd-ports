@@ -1,12 +1,11 @@
 PORTNAME=	gcc
-PORTVERSION=	11.3.1.s20230427
+PORTVERSION=	13.1.0
 CATEGORIES=	lang
-MASTER_SITES=	GCC/snapshots/${DIST_VERSION}
-PKGNAMESUFFIX=	${SUFFIX}-devel
-DISTNAME=	gcc-${DIST_VERSION}
+MASTER_SITES=	GCC
+PKGNAMESUFFIX=	${SUFFIX}
 
 MAINTAINER=	salvadore@FreeBSD.org
-COMMENT=	GNU Compiler Collection 11
+COMMENT=	GNU Compiler Collection 13
 WWW=		https://gcc.gnu.org
 
 LICENSE=	GPLv3 GPLv3RLE
@@ -27,17 +26,12 @@ USES=		compiler:c++11-lang cpe gmake iconv libtool makeinfo perl5 tar:xz
 USE_BINUTILS=	yes
 USE_PERL5=	build
 
-CONFLICTS=	gcc11
+CONFLICTS=	gcc13-devel
 
 CPE_VENDOR=	gnu
 CPE_VERSION=	${GCC_VERSION}
 
-# DIST_VERSION relates to downloads, GCC_VERSION and SUFFIX to names
-# of executables and directories once installed.  A PORTVERSION of
-# Y.2.1.s20140817 results in values of Y-20140817, Y.2.1, and Y
-# for these three.
-DIST_VERSION=	${PORTVERSION:C/([0-9]+).*\.s([0-9]+)/\1-\2/}
-GCC_VERSION=	${PORTVERSION:C/(.+)\.s[0-9]{8}/\1/}
+GCC_VERSION=	${PORTVERSION}
 SUFFIX=		${PORTVERSION:C/([0-9]+).*/\1/}
 CFLAGS:=	${CFLAGS:N-mretpoline}
 CXXFLAGS:=	${CXXFLAGS:N-mretpoline}
@@ -73,9 +67,13 @@ CONFIGURE_TARGET=	x86_64-portbld-${OPSYS:tl}${OSREL}
 
 .elif defined(PPC_ABI) && ${PPC_ABI} == ELFv2
 CONFIGURE_ARGS+=	--with-abi=elfv2
+USE_GCC=	yes
+
+.elif ${ARCH} == powerpc64le
+USE_GCC=	yes
 .endif
 
-LANGUAGES:=	c,c++,d,objc,fortran,jit
+LANGUAGES:=	c,c++,objc,fortran,jit
 TARGLIB=	${PREFIX}/lib/gcc${SUFFIX}
 TARGLIB32=	${PREFIX}/lib32	# The version information is added later
 LIBEXEC=	${PREFIX}/libexec/gcc${SUFFIX}
@@ -122,16 +120,12 @@ INFO=		gcc${SUFFIX}/cpp \
 		gcc${SUFFIX}/gcc \
 		gcc${SUFFIX}/gccinstall \
 		gcc${SUFFIX}/gccint \
-		gcc${SUFFIX}/gdc \
 		gcc${SUFFIX}/gfortran \
 		gcc${SUFFIX}/libgccjit \
 		gcc${SUFFIX}/libgomp
-.if ${ARCH} == amd64 || ${ARCH} == i386
-INFO+=		gcc${SUFFIX}/libquadmath
-.endif
-.if ${ARCH} == amd64 || ${ARCH} == i386 || ${ARCH} == aarch64
-INFO+=		gcc${SUFFIX}/libitm
-.endif
+# Release tarballs (as opposed to snapshots) always carry this.
+INFO+=		gcc${SUFFIX}/libquadmath \
+		gcc${SUFFIX}/libitm
 SUB_FILES=	pkg-message
 SUB_LIST+=	TARGLIB=${TARGLIB}
 
