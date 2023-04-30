@@ -446,7 +446,6 @@
     SUBDIR += lt-aspell
     SUBDIR += lt-hyphen
     SUBDIR += lttoolbox
-    SUBDIR += ltxml
     SUBDIR += lua-icu-utils
     SUBDIR += lua-lyaml
     SUBDIR += luaexpat
@@ -1320,7 +1319,10 @@
     SUBDIR += py-docstring-parser
     SUBDIR += py-docstring-to-markdown
     SUBDIR += py-docutils
+    SUBDIR += py-docx-generator
     SUBDIR += py-docx2txt
+    SUBDIR += py-docxcompose
+    SUBDIR += py-docxtpl
     SUBDIR += py-dominate
     SUBDIR += py-dparse
     SUBDIR += py-duecredit
