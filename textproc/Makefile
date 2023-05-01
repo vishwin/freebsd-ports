@@ -194,6 +194,7 @@
     SUBDIR += es-mythes
     SUBDIR += estraier
     SUBDIR += et-aspell
+    SUBDIR += evtx
     SUBDIR += exempi
     SUBDIR += expat2
     SUBDIR += extract_url
@@ -1339,6 +1340,7 @@
     SUBDIR += py-enchant
     SUBDIR += py-enrich
     SUBDIR += py-et_xmlfile
+    SUBDIR += py-evtx2splunk
     SUBDIR += py-extract-msg
     SUBDIR += py-fastavro
     SUBDIR += py-feedparser
@@ -1556,6 +1558,7 @@
     SUBDIR += py-sphinxcontrib-websupport
     SUBDIR += py-sphinxemoji
     SUBDIR += py-sphinxext-opengraph
+    SUBDIR += py-splunk-hec
     SUBDIR += py-spylls
     SUBDIR += py-stemming
     SUBDIR += py-tableschema-to-template
