@@ -561,6 +561,7 @@
     SUBDIR += octave-forge-fda
     SUBDIR += octave-forge-femoctave
     SUBDIR += octave-forge-fenv
+    SUBDIR += octave-forge-fileio
     SUBDIR += octave-forge-financial
     SUBDIR += octave-forge-fits
     SUBDIR += octave-forge-fpl
@@ -602,6 +603,7 @@
     SUBDIR += octave-forge-nnet
     SUBDIR += octave-forge-nurbs
     SUBDIR += octave-forge-oct2mat
+    SUBDIR += octave-forge-octave-pool
     SUBDIR += octave-forge-octclip
     SUBDIR += octave-forge-octproj
     SUBDIR += octave-forge-odebvp
@@ -918,6 +920,7 @@
     SUBDIR += py-formulaic
     SUBDIR += py-fpylll
     SUBDIR += py-fraction
+    SUBDIR += py-fsph
     SUBDIR += py-fvcore
     SUBDIR += py-gau2grid
     SUBDIR += py-gimmik
