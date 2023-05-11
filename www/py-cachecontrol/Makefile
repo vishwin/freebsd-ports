@@ -1,4 +1,4 @@
-PORTNAME=	cachecontrol
+PORTNAME=	CacheControl
 DISTVERSION=	0.12.12
 PORTREVISION=	1
 CATEGORIES=	www python
