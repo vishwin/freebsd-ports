@@ -74,7 +74,7 @@ BINARY_ALIAS+=	python3=${PYTHON_CMD}
 
 BUNDLE_LIBS=	yes
 
-BUILD_DEPENDS+=	llvm${LLVM_DEFAULT}>0:devel/llvm${LLVM_DEFAULT} \
+BUILD_DEPENDS+=	llvm${LLVM_VERSION}>0:${LLVM_PORT} \
 				rust-cbindgen>=0.24.3:devel/rust-cbindgen \
 				${RUST_DEFAULT}>=1.69.0:lang/${RUST_DEFAULT} \
 				node:www/node
@@ -91,13 +91,6 @@ MOZ_MK_OPTIONS+=MOZ_OBJDIR="${BUILD_WRKSRC}"
 MOZ_OPTIONS+=	--with-libclang-path="${LLVM_PREFIX}/lib"
 .    if !exists(/usr/bin/llvm-objdump)
 MOZ_EXPORT+=	LLVM_OBJDUMP="${LOCALBASE}/bin/llvm-objdump${LLVM_VERSION}"
-.    endif
-# Keep in sync with devel/wasi-* ports
-WASI_LLVM_DEFAULT=	15
-WASI_LLVM_VERSION=	15.0.7
-# Ignore Mk/bsd.default-versions.mk but respect make.conf(5) unless LTO is enabled
-.    if !defined(DEFAULT_VERSIONS) || ! ${DEFAULT_VERSIONS:Mllvm*} || ${PORT_OPTIONS:MLTO}
-USES+=	llvm:${WASI_LLVM_DEFAULT}
 .    endif
 # Require newer Clang than what's in base system unless user opted out
 .    if ${CC} == cc && ${CXX} == c++ && exists(/usr/lib/libc++.so)
