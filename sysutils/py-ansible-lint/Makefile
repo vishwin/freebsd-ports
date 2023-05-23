@@ -1,5 +1,5 @@
 PORTNAME=	ansible-lint
-PORTVERSION=	6.16.1
+PORTVERSION=	6.16.2
 CATEGORIES=	sysutils python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -40,12 +40,13 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage_enable_subprocess>=0:devel/py-cove
 		${PYTHON_PKGNAMEPREFIX}ruamel.yaml.clib>=0:devel/py-ruamel.yaml.clib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}spdx-tools>=0.7.1:misc/py-spdx-tools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}types-jsonschema>=0:devel/py-types-jsonschema@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}types-PyYAML>=0:devel/py-types-PyYAML@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}types-PyYAML>=0:devel/py-types-PyYAML@${PY_FLAVOR} \
+		bash:shells/bash
 
 USES=		python:3.9+
 USE_PYTHON=	autoplist concurrent pep517 pytest
 
-TEST_ENV=	LC_ALL=C.UTF-8 PYTHONPATH=${WRKSRC}/src
+TEST_ENV=	LC_ALL=C.UTF-8 PYTHONPATH=${WRKSRC}/src TMPDIR=${WRKDIR}/
 NO_ARCH=	yes
 
 .include <bsd.port.mk>
