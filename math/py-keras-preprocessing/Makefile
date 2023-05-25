@@ -1,4 +1,4 @@
-PORTNAME=	keras-preprocessing
+PORTNAME=	Keras-Preprocessing
 DISTVERSION=	1.1.2
 PORTREVISION=	1
 CATEGORIES=	math python
