@@ -16,12 +16,12 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}h5py>=0:science/py-h5py@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pandas>=1.3.5:math/py-pandas@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Pillow>=9.2.0:graphics/py-pillow@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}keras-preprocessing>=1.1.0:math/py-keras-preprocessing@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}Keras-Preprocessing>=1.1.0:math/py-keras-preprocessing@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}scipy>=0.14:science/py-scipy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.9.0:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}protobuf>=3.13.0:devel/py-protobuf@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}keras-applications>=1.0.8:math/py-keras-applications@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}keras-preprocessing>=1.1.1:math/py-keras-preprocessing@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}Keras-Preprocessing>=1.1.1:math/py-keras-preprocessing@${PY_FLAVOR}
 
 BUILD_DEPENDS=	${RUN_DEPENDS} \
 		${PYTHON_PKGNAMEPREFIX}tensorflow>=2.9.0:science/py-tensorflow@${PY_FLAVOR} \
