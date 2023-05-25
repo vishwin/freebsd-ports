@@ -2,7 +2,9 @@ PORTNAME=	Keras-Preprocessing
 DISTVERSION=	1.1.2
 PORTREVISION=	1
 CATEGORIES=	math python
+MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+DISTNAME=	Keras_Preprocessing-${DISTVERSION}
 
 MAINTAINER=	rm@FreeBSD.org
 COMMENT=	Easy data preprocessing and data augmentation for DL models
@@ -15,8 +17,6 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR}
 
 USES=		python:3.6+
-USE_GITHUB=	yes
-GH_ACCOUNT=	keras-team
 USE_PYTHON=	autoplist distutils
 
 NO_ARCH=	yes
