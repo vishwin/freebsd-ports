@@ -517,7 +517,6 @@
     SUBDIR += openjade
     SUBDIR += opensearch
     SUBDIR += opensearch-dashboards
-    SUBDIR += opensearch-dashboards13
     SUBDIR += opensearch13
     SUBDIR += opensp
     SUBDIR += openvanilla-framework
@@ -1656,7 +1655,6 @@
     SUBDIR += ro-hunspell
     SUBDIR += ro-hyphen
     SUBDIR += ro-mythes
-    SUBDIR += rtf2html
     SUBDIR += rtfreader
     SUBDIR += ruby-escape
     SUBDIR += ruby-format

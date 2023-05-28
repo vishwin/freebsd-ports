@@ -7571,3 +7571,15 @@ textproc/rubygem-loofah219|textproc/rubygem-loofah|2023-05-27|Remove obsoleted p
 www/rubygem-asana0|www/rubygem-asana|2023-05-27|Remove obsoleted port. Use www/rubygem-asana instead
 www/rubygem-jwt25|www/rubygem-jwt|2023-05-27|Remove obsoleted port. Use www/rubygem-jwt instead
 www/rubygem-webrick17|www/rubygem-webrick|2023-05-27|Remove obsoleted port. Use www/rubygem-webrick instead
+textproc/rtf2html||2023-05-28|Has expired: Abandonware, please use something modern like markdown
+databases/mariadb103-server|databases/mariadb106-server|2023-05-28|Has expired: Use databases/mariadb106-server
+databases/mariadb103-client|databases/mariadb106-client|2023-05-28|Has expired: Use databases/mariadb106-server
+net-mgmt/chronograf||2023-05-28|Has expired: Requires upstream EOL node14
+textproc/opensearch-dashboards13|textproc/opensearch-dashboards|2023-05-28|Has expired: Requires upstream EOL node14
+www/yarn-node14||2023-05-28|Has expired: Requires upstream EOL node14
+www/npm-node14||2023-05-28|Has expired: Requires upstream EOL www/node14
+www/node14||2023-05-28|Has expired: Consider using www/node16 or later as Upstream EOL on 2023-04-30
+security/p5-Net-SAML||2023-05-28|Has expired: Depends on deprecated security/zxid
+security/zxid||2023-05-28|Has expired: Do not build with OpenSSL 1.1.1e and later
+security/keynote||2023-05-28|Has expired: Upstream last release in 2000
+security/esteidfirefoxplugin||2023-05-28|Has expired: Upstream last release in 2013 and has been migrated into other products of upstream
