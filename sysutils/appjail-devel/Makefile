@@ -1,6 +1,6 @@
 PORTNAME=	appjail
 DISTVERSIONPREFIX=	v
-DISTVERSION=	g20230518
+DISTVERSION=	g20230531
 CATEGORIES=	sysutils
 PKGNAMESUFFIX= -devel
 
@@ -16,7 +16,7 @@ CONFLICTS=	appjail
 USE_GITHUB=	yes
 GH_ACCOUNT=	DtxdF
 GH_PROJECT=	AppJail
-GH_TAGNAME=	357c296ed3d9e1b5e0bca0caec726c14bc79d35b
+GH_TAGNAME=	f395e284ca132b29b76075bfcbbec0f4909ad74b
 
 ALL_TARGET=	utils-strip
 
@@ -37,6 +37,6 @@ do-install-DOCS-on:
 
 post-install:
 	${MKDIR} ${STAGEDIR}/${ETCDIR}
-	${INSTALL_DATA} ${WRKSRC}/share/appjail/files/default.conf ${STAGEDIR}/${ETCDIR}/appjail.conf.sample
+	${INSTALL_DATA} ${WRKSRC}/share/examples/appjail/appjail.conf ${STAGEDIR}/${ETCDIR}/appjail.conf.sample
 
 .include <bsd.port.mk>
