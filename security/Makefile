@@ -1011,7 +1011,6 @@
     SUBDIR += py-scrypt
     SUBDIR += py-secure
     SUBDIR += py-securesystemslib
-    SUBDIR += py-sequoia
     SUBDIR += py-service_identity
     SUBDIR += py-signedjson
     SUBDIR += py-social-auth-core
@@ -1216,6 +1215,7 @@
     SUBDIR += secure_delete
     SUBDIR += sedutil
     SUBDIR += sequoia
+    SUBDIR += sequoia-sq
     SUBDIR += setaudit
     SUBDIR += sha1collisiondetection
     SUBDIR += sha2wordlist
