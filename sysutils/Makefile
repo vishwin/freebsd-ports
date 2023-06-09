@@ -277,6 +277,7 @@
     SUBDIR += devcpu-data-amd
     SUBDIR += devcpu-data-intel
     SUBDIR += devctl-jail-kmod
+    SUBDIR += devedeng
     SUBDIR += devstat
     SUBDIR += dfc
     SUBDIR += di
@@ -1323,6 +1324,7 @@
     SUBDIR += savelogs
     SUBDIR += scalpel
     SUBDIR += scan_ffs
+    SUBDIR += scanbd
     SUBDIR += scanbuttond
     SUBDIR += scanmem
     SUBDIR += scct
