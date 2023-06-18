@@ -60,7 +60,7 @@ MOZILLA?=	${PORTNAME}
 MOZILLA_VER?=	${PORTVERSION}
 MOZILLA_BIN?=	${PORTNAME}-bin
 MOZILLA_EXEC_NAME?=${MOZILLA}
-USES+=		compiler:c++17-lang cpe gl gmake gnome iconv llvm:max=15 localbase perl5 \
+USES+=		compiler:c++17-lang cpe gl gmake gnome iconv llvm localbase perl5 \
 			pkgconfig python:build desktop-file-utils
 CPE_VENDOR?=mozilla
 USE_GL=		gl
