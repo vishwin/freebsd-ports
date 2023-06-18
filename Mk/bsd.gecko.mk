@@ -74,8 +74,7 @@ BINARY_ALIAS+=	python3=${PYTHON_CMD}
 
 BUNDLE_LIBS=	yes
 
-BUILD_DEPENDS+=	llvm${LLVM_VERSION}>0:${LLVM_PORT} \
-				rust-cbindgen>=0.24.3:devel/rust-cbindgen \
+BUILD_DEPENDS+=	rust-cbindgen>=0.24.3:devel/rust-cbindgen \
 				${RUST_DEFAULT}>=1.70.0:lang/${RUST_DEFAULT} \
 				node:www/node
 LIB_DEPENDS+=	libdrm.so:graphics/libdrm
@@ -88,7 +87,7 @@ MOZ_EXPORT+=	${CONFIGURE_ENV} \
 MOZ_OPTIONS+=	--prefix="${PREFIX}"
 MOZ_MK_OPTIONS+=MOZ_OBJDIR="${BUILD_WRKSRC}"
 
-MOZ_OPTIONS+=	--with-libclang-path="${LLVM_PREFIX}/lib"
+MOZ_OPTIONS+=	--with-libclang-path="${LLVM_PREFIX:S/${PREFIX}/${LOCALBASE}/}/lib"
 .    if !exists(/usr/bin/llvm-objdump)
 MOZ_EXPORT+=	LLVM_OBJDUMP="${LOCALBASE}/bin/llvm-objdump${LLVM_VERSION}"
 .    endif
