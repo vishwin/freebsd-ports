@@ -4229,6 +4229,7 @@
     SUBDIR += py-asgi-lifespan
     SUBDIR += py-asn1
     SUBDIR += py-asn1crypto
+    SUBDIR += py-aspectlib
     SUBDIR += py-aspy.yaml
     SUBDIR += py-ast-decompiler
     SUBDIR += py-asteval
@@ -5851,6 +5852,8 @@
     SUBDIR += pyotherside-qt5
     SUBDIR += pyside2
     SUBDIR += pyside2-tools
+    SUBDIR += pyside6
+    SUBDIR += pyside6-tools
     SUBDIR += pystring
     SUBDIR += pysvn
     SUBDIR += pythontidy
@@ -7505,6 +7508,7 @@
     SUBDIR += shflags
     SUBDIR += shfmt
     SUBDIR += shiboken2
+    SUBDIR += shiboken6
     SUBDIR += shmap
     SUBDIR += shroud
     SUBDIR += shtk
