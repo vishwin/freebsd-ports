@@ -364,9 +364,9 @@ post-patch:
 	    -e 's|lit\.|${LIT_MOD_NAME}.|g' \
 	    ${WRKSRC}/llvm/utils/lit/lit.py \
 	    ${WRKSRC}/llvm/utils/lit/lit/*.py \
-	    ${WRKSRC}/llvm/utils/lit/lit/builtin_commands/*.py
-	    ${WRKSRC}/llvm/utils/lit/lit/formats/*.py
-	    ${WRKSRC}/llvm/utils/lit/lit/llcm/*.py
+	    ${WRKSRC}/llvm/utils/lit/lit/builtin_commands/*.py \
+	    ${WRKSRC}/llvm/utils/lit/lit/formats/*.py \
+	    ${WRKSRC}/llvm/utils/lit/lit/llvm/*.py
 
 post-patch-CLANG-on:
 	${REINPLACE_CMD} -e 's|%%LLVM_PREFIX%%|${LLVM_PREFIX}|' \
