@@ -1,5 +1,6 @@
-PORTNAME=	libunrar6
+PORTNAME=	libunrar
 PORTVERSION=	6.2.8
+PORTEPOCH=	1
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.rarlab.com/rar/
 DISTNAME=	unrarsrc-${PORTVERSION}
@@ -15,8 +16,6 @@ LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
 USES=		compiler:c++11-lang gmake
 USE_LDCONFIG=	yes
-
-CONFLICTS_INSTALL=	libunrar # lib/libunrar.so
 
 ALL_TARGET=	lib
 MAKEFILE=	makefile
