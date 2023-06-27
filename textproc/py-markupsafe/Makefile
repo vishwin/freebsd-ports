@@ -11,7 +11,7 @@ WWW=		https://github.com/pallets/markupsafe
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-USES=		python:3.7+
+USES=		python
 USE_PYTHON=	autoplist concurrent distutils
 
 post-install:
