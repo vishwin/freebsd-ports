@@ -7739,3 +7739,11 @@ audio/libgroove||2023-06-30|Has expired: Fails to build with FFmpeg 6 and very l
 multimedia/py-mlt6||2023-06-30|Has expired: Deprecated and unsupported upstream, please consider using multimedia/mlt7 instead
 multimedia/mlt6-qt5|multimedia/mlt7-qt|2023-06-30|Has expired: Deprecated and unsupported upstream, please consider using multimedia/mlt7 instead
 multimedia/mlt6|multimedia/mlt7|2023-06-30|Has expired: Deprecated and unsupported upstream, please consider using multimedia/mlt7 instead
+devel/electron19||2023-06-30|Has expired: EOLed upstream, switch to newer version
+devel/electron21||2023-06-30|Has expired: EOLed upstream, switch to newer version
+devel/ccache-memcached||2023-06-30|Has expired: Unmaintained fork that targets a very old version of ccache
+devel/ccache-memcached-static||2023-06-30|Has expired: Unmaintained fork that targets a very old version of ccache
+devel/libdlna||2023-06-30|Has expired: Abandonware, development discontinued
+textproc/rubygem-ferret||2023-06-30|Has expired: Broken with all supported Ruby versions
+databases/py-pg8000-112|databases/py-pg8000|2023-06-30|Has expired: EOLd, use www/py-pg8000 instead
+databases/caterva|archivers/c-blosc2|2023-06-30|Has expired: Use archivers/c-blosc2 instead. All the features of Caterva have been included in the C-Blosc2 NDim object

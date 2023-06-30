@@ -343,8 +343,6 @@
     SUBDIR += cbrowser
     SUBDIR += cc65
     SUBDIR += ccache
-    SUBDIR += ccache-memcached
-    SUBDIR += ccache-memcached-static
     SUBDIR += ccache-static
     SUBDIR += ccache4
     SUBDIR += cccc
@@ -598,8 +596,6 @@
     SUBDIR += efl
     SUBDIR += egypt
     SUBDIR += eiffelstudio
-    SUBDIR += electron19
-    SUBDIR += electron21
     SUBDIR += electron22
     SUBDIR += electron23
     SUBDIR += electron24
@@ -1203,7 +1199,6 @@
     SUBDIR += libdispatch
     SUBDIR += libdistance
     SUBDIR += libdlmalloc
-    SUBDIR += libdlna
     SUBDIR += libdnsres
     SUBDIR += libdombey
     SUBDIR += libdparse
