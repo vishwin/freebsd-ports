@@ -10,7 +10,7 @@ WWW=		https://github.com/scp-fs2open/wxLauncher
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/GPLv2.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Markdown>0:textproc/py-markdown@${PY_FLAVOR} \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>0:databases/py-sqlite3@${PY_FLAVOR}
 
 USES=		cmake openal pkgconfig python:build sdl

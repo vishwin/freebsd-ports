@@ -344,9 +344,9 @@ AD_DC_BUILD_DEPENDS=		${SAMBA4_LMDB_DEPENDS}
 AD_DC_RUN_DEPENDS=		${SAMBA4_LMDB_DEPENDS}
 AD_DC_VARS=			PLIST+=${PKGDIR}/pkg-plist.ad_dc
 # samba-tool requires those for *upgrade
-AD_DC_BUILD_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}Markdown>=3.3.7:textproc/py-markdown@${PY_FLAVOR} \
+AD_DC_BUILD_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}markdown>=3.3.7:textproc/py-markdown@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}dnspython>=2.2.1:dns/py-dnspython@${PY_FLAVOR}
-AD_DC_RUN_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}Markdown>=3.3.7:textproc/py-markdown@${PY_FLAVOR} \
+AD_DC_RUN_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}markdown>=3.3.7:textproc/py-markdown@${PY_FLAVOR} \
 				${PYTHON_PKGNAMEPREFIX}dnspython>=2.2.1:dns/py-dnspython@${PY_FLAVOR}
 
 ADS_IMPLIES=			LDAP

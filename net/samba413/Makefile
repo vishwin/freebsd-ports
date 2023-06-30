@@ -469,7 +469,7 @@ SAMBA4_BUNDLED_LIBS+=		!pyldb !pyldb-util
 # samba-tool requires those for *upgrade
 .	if ${PORT_OPTIONS:MAD_DC}
 RUN_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}dnspython>=1.15.0:dns/py-dnspython@${PY_FLAVOR}
-RUN_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}Markdown>=2.6.11:textproc/py-markdown@${PY_FLAVOR}
+RUN_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}markdown>=2.6.11:textproc/py-markdown@${PY_FLAVOR}
 .		if ${PORT_OPTIONS:MGPGME}
 RUN_DEPENDS+=			${PYTHON_PKGNAMEPREFIX}gpgme>=1.14.0:security/py-gpgme@${PY_FLAVOR}
 .		endif

@@ -10,7 +10,7 @@ WWW=		https://github.com/cmacmackin/markdown-include
 
 LICENSE=	GPLv3+
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Markdown>0:textproc/py-markdown@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markdown>0:textproc/py-markdown@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

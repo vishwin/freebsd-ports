@@ -1,4 +1,4 @@
-PORTNAME=	Markdown
+PORTNAME=	markdown
 PORTVERSION=	3.3.7
 PORTREVISION=	1
 CATEGORIES=	textproc python
