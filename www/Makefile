@@ -1449,6 +1449,8 @@
     SUBDIR += py-bottle
     SUBDIR += py-bottle-cork
     SUBDIR += py-branca
+    SUBDIR += py-bravado
+    SUBDIR += py-bravado-core
     SUBDIR += py-cachecontrol
     SUBDIR += py-cachelib
     SUBDIR += py-caldav

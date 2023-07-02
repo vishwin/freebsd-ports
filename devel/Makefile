@@ -4508,6 +4508,7 @@
     SUBDIR += py-curio
     SUBDIR += py-cursive
     SUBDIR += py-curtsies
+    SUBDIR += py-custodian
     SUBDIR += py-cvss
     SUBDIR += py-cwcwidth
     SUBDIR += py-cxx
@@ -4648,6 +4649,7 @@
     SUBDIR += py-flask-babel
     SUBDIR += py-flatbuffers
     SUBDIR += py-flatdict
+    SUBDIR += py-flatten-dict
     SUBDIR += py-flex
     SUBDIR += py-flexmock
     SUBDIR += py-flit
