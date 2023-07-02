@@ -895,7 +895,6 @@
     SUBDIR += golangci-lint
     SUBDIR += golint
     SUBDIR += google-cloud-cpp
-    SUBDIR += google-cloud-cpp117
     SUBDIR += google-perftools
     SUBDIR += google-styleguide
     SUBDIR += googletest
@@ -1451,7 +1450,6 @@
     SUBDIR += libzvbi
     SUBDIR += lightning
     SUBDIR += linenoise-ng
-    SUBDIR += linux-c7-dbus-glib
     SUBDIR += linux-c7-dbus-libs
     SUBDIR += linux-c7-devtools
     SUBDIR += linux-c7-elfutils-libelf

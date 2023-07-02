@@ -278,7 +278,6 @@
     SUBDIR += kineto
     SUBDIR += kiwix-tools
     SUBDIR += kohana
-    SUBDIR += kristall
     SUBDIR += lagrange
     SUBDIR += larbin
     SUBDIR += libapreq2
@@ -335,6 +334,7 @@
     SUBDIR += mediawiki135
     SUBDIR += mediawiki138
     SUBDIR += mediawiki139
+    SUBDIR += mediawiki140
     SUBDIR += mergelog
     SUBDIR += mhonarc
     SUBDIR += micro_httpd
