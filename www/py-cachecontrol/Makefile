@@ -1,4 +1,4 @@
-PORTNAME=	CacheControl
+PORTNAME=	cachecontrol
 DISTVERSION=	0.13.1
 CATEGORIES=	www python
 MASTER_SITES=	PYPI
