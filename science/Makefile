@@ -461,6 +461,8 @@
     SUBDIR += rubygem-rgeo-proj4
     SUBDIR += rubygem-rgeo-shapefile
     SUBDIR += rubygem-ruby-netcdf
+    SUBDIR += salome-configuration
+    SUBDIR += salome-kernel
     SUBDIR += scidavis
     SUBDIR += sciplot
     SUBDIR += segyio
