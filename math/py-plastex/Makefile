@@ -13,7 +13,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Jinja2>=2.10.1:devel/py-Jinja2@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>=7:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=7:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}typing-extensions>=3.7:devel/py-typing-extensions@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}unidecode>=0.4.21:converters/py-unidecode@${PY_FLAVOR}
 

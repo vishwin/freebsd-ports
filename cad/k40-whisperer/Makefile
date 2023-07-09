@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/gpl-3.0.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>0:devel/py-lxml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyusb>0:devel/py-pyusb@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>=7.0.0:graphics/py-pillow@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pillow>=7.0.0:graphics/py-pillow@${PY_FLAVOR}
 
 USES=		python:run shebangfix zip
 SHEBANG_FILES=	*.py

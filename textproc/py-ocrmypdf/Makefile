@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coloredlogs>=14.0:devel/py-coloredlogs@${PY_
 		${PYTHON_PKGNAMEPREFIX}deprecation>=2.1.0:devel/py-deprecation@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}img2pdf>=0.3.0:graphics/py-img2pdf@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}packaging>=20:devel/py-packaging@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>=8.2.0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=8.2.0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tqdm>=4:misc/py-tqdm@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}reportlab>=3.5.66:print/py-reportlab@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pdfminer.six>=20201018:textproc/py-pdfminer.six@${PY_FLAVOR} \

@@ -13,7 +13,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}arabic-reshaper>=3.0.0:textproc/py-arabic-reshaper@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}html5lib>=1.0.1:www/py-html5lib@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>=8.1.1:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=8.1.1:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyhanko>=0.12.1:security/py-pyhanko@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyhanko-certvalidator>=0.19.5:security/py-pyhanko-certvalidator@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pypdf>=3.1.0:print/py-pypdf@${PY_FLAVOR} \

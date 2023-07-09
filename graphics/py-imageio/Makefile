@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 # Note: www/py-requests comes from devel/py-fsspec[github]
 LIB_DEPENDS=	libfreeimage.so:graphics/freeimage
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=0,1:math/py-numpy@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>=8.3.2:graphics/py-pillow@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pillow>=8.3.2:graphics/py-pillow@${PY_FLAVOR}
 TEST_DEPENDS=	opencv>=0:graphics/opencv \
 		${PYTHON_PKGNAMEPREFIX}astropy>=0:astro/py-astropy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}av>=0:multimedia/py-av@${PY_FLAVOR} \

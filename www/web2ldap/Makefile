@@ -15,7 +15,7 @@ RUN_DEPENDS=	\
 		${PYTHON_PKGNAMEPREFIX}paramiko>0:security/py-paramiko@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dnspython>=2.0.0:dns/py-dnspython@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}xlwt>0:textproc/py-xlwt@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ldap0>=1.4.7:net/py-ldap0@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}iso3166>=1.0.1:textproc/py-iso3166@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}defusedxml>0:devel/py-defusedxml@${PY_FLAVOR} \

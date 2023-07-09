@@ -51,7 +51,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django41>=4.1.9<4.2:www/py-django41@${PY_FLA
 		${PYTHON_PKGNAMEPREFIX}mkdocs-material>=9.1.16<10:textproc/py-mkdocs-material@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mkdocstrings>=0.17.0<1:textproc/py-mkdocstrings@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}netaddr>=0.8.0<1:net/py-netaddr@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>=9.5.0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=9.5.0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}psycopg2>=2.9.6<3:databases/py-psycopg2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sentry-sdk>=1.21.1<2:devel/py-sentry-sdk@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}social-auth-app-django>=5.2.0<6:www/py-social-auth-app-django@${PY_FLAVOR} \

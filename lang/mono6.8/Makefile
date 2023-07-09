@@ -19,7 +19,7 @@ BUILD_DEPENDS=	p5-XML-Parser>=0:textproc/p5-XML-Parser \
 		bash:shells/bash \
 		cmake-core>0:devel/cmake-core
 LIB_DEPENDS=	libinotify.so:devel/libinotify
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pillow>=0:graphics/py-pillow@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR} \
 		ca_root_nss>=0:security/ca_root_nss \
 		sqlite3>0:databases/sqlite3 \
 		zip>=0:archivers/zip

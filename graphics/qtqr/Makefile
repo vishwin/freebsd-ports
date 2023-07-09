@@ -14,7 +14,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
 RUN_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zbar-py>=1.0.4:graphics/py-zbar-py@${PY_FLAVOR}
 
 USES=		desktop-file-utils pyqt:5 python shebangfix

@@ -28,7 +28,7 @@ OPTIONS_DEFAULT=	MONOLITE X11
 OPTIONS_SUB=	yes
 
 HEAPVIZ_DESC=		Install mono-heapviz debug tool (requires py-pillow)
-HEAPVIZ_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pillow>=0:graphics/py-pillow@${PY_FLAVOR}
+HEAPVIZ_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR}
 
 MONOLITE_DESC=		Use monolite to bootstrap mcs (otherwise use installed mcs)
 MONOLITE_DISTFILES=	monolite-linux-${MONOLITE_VERSION}-latest.tar.gz:monolite

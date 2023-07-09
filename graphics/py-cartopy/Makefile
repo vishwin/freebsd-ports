@@ -32,9 +32,9 @@ OWS_DESC=	OGC Web Service support
 PLOTTING_DESC=	Plotting support
 
 OWS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}OWSLib>=0.18.0:graphics/py-OWSLib@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}Pillow>=6.1.0:graphics/py-pillow@${PY_FLAVOR}
+			${PYTHON_PKGNAMEPREFIX}pillow>=6.1.0:graphics/py-pillow@${PY_FLAVOR}
 PLOTTING_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdal>=2.3.2:graphics/py-gdal@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}Pillow>=6.1.0:graphics/py-pillow@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}pillow>=6.1.0:graphics/py-pillow@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}scipy>=1.3.1:science/py-scipy@${PY_FLAVOR}
 
 post-install:

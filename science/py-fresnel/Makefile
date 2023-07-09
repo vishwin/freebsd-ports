@@ -17,7 +17,7 @@ BUILD_DEPENDS=	pybind11>0:devel/pybind11
 LIB_DEPENDS=	libembree3.so:graphics/embree \
 		libqhull_r.so:math/qhull \
 		libtbb.so:devel/onetbb
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pillow>0:graphics/py-pillow@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 
 USES=		cmake:testing compiler:c++14-lang python
 

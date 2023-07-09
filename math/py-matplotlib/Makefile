@@ -12,7 +12,7 @@ WWW=		https://matplotlib.org/
 LICENSE=	PSFL
 
 BUILD_DEPENDS=	${PYNUMPY} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>=6.2:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=6.2:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyparsing>=0:devel/py-pyparsing@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}certifi>=0.10:security/py-certifi@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/pybind11:devel/py-pybind11@${PY_FLAVOR} \
@@ -31,7 +31,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pyparsing>=2.3.1:devel/py-pyparsing@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tornado>0:www/py-tornado@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pluggy>0:devel/py-pluggy@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>=6.2.0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=6.2.0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyparsing>=0:devel/py-pyparsing@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}certifi>=0.10:security/py-certifi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}kiwisolver>=1.0.1:math/py-kiwisolver@${PY_FLAVOR} \

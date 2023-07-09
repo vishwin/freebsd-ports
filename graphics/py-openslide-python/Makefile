@@ -11,7 +11,7 @@ WWW=		https://openslide.org/
 LICENSE=	LGPL21
 
 RUN_DEPENDS=	openslide>0:graphics/openslide \
-		${PYTHON_PKGNAMEPREFIX}Pillow>0:graphics/py-pillow@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

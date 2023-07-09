@@ -32,7 +32,7 @@ BENCHMARK_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gym>=0.12.1:math/py-gym@${PY_FLAVO
 			${PYTHON_PKGNAMEPREFIX}matplotlib>=2.2.3:math/py-matplotlib@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}mixsimulator>=0.2.9.5:math/py-mixsimulator@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}pandas>=0.23.4,1:math/py-pandas@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}Pillow>=0:graphics/py-pillow@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}Pyomo>=5.7:math/py-Pyomo@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}pyproj>=2.6.1:graphics/py-pyproj@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}requests>=2.21.0:www/py-requests@${PY_FLAVOR} \

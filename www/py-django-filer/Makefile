@@ -16,7 +16,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django32>=2.2<4.0:www/py-django32@${PY_FLAVO
 		${PYTHON_PKGNAMEPREFIX}django-easy-thumbnails>=2.8.0:graphics/py-django-easy-thumbnails@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}django-mptt>=0.6<1.0:www/py-django-mptt@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}django-polymorphic>=2:www/py-django-polymorphic@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}unidecode>=0.04<1.2:converters/py-unidecode@${PY_FLAVOR}
 
 USES=		python

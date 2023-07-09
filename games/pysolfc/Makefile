@@ -45,7 +45,7 @@ PILLOW_DESC=	Enhanced graphics support
 
 NLS_USES=	gettext
 
-PILLOW_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pillow>0:graphics/py-pillow@${PY_FLAVOR}
+PILLOW_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 SOUND_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}game>0:devel/py-game@${PY_FLAVOR}
 
 PYSOLFCDIR=	PySolFC-${DISTVERSION}

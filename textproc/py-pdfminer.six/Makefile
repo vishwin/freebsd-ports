@@ -24,7 +24,7 @@ OPTIONS_DEFINE=		IMAGE
 OPTIONS_DEFAULT=	IMAGE
 
 IMAGE_DESC=	Enable support for image extraction
-IMAGE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pillow>0:graphics/py-pillow@${PY_FLAVOR}
+IMAGE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR}
 
 post-extract:
 	@cd ${WRKSRC} && ${MV} tools/dumppdf.py tools/dumppdf

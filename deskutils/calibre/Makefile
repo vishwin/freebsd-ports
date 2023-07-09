@@ -38,7 +38,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVO
 		${PYTHON_PKGNAMEPREFIX}msgpack>=0.3:devel/py-msgpack@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}regex>=0:textproc/py-regex@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}html5-parser>=0.4.3:www/py-html5-parser@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>=7.0.0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=7.0.0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyicu>0:devel/py-pyicu@${PY_FLAVOR} \
 		${LOCALBASE}/bin/cmake:devel/cmake-core \
@@ -63,7 +63,7 @@ RUN_DEPENDS=	xdg-open:devel/xdg-utils \
 		${PYTHON_PKGNAMEPREFIX}html5-parser>=0.4.3:www/py-html5-parser@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}feedparser>=6.0.8:textproc/py-feedparser@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jeepney>=0.6:devel/py-jeepney@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pillow>=7.0.0:graphics/py-pillow@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pillow>=7.0.0:graphics/py-pillow@${PY_FLAVOR} \
 		pdftohtml:graphics/poppler-utils \
 		${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycryptodome>0:security/py-pycryptodome@${PY_FLAVOR} \
