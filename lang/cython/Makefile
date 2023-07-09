@@ -1,7 +1,8 @@
 PORTNAME=	Cython
-PORTVERSION=	0.29.35
+PORTVERSION=	0.29.36
 CATEGORIES=	lang python
-MASTER_SITES=	PYPI
+MASTER_SITES=	PYPI \
+		https://github.com/cython/cython/releases/download/${PORTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
