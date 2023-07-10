@@ -4,15 +4,14 @@ PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	GNOME
 
-PATCH_SITES=	https://gitlab.gnome.org/GNOME/gexiv2/-/commit/
-PATCHFILES=	06adc8fb70cb8c77c0cd364195d8251811106ef8.patch:-p1
-
 MAINTAINER=	cmt@FreeBSD.org
 COMMENT=	GObject-based wrapper around Exiv2 library
 WWW=		https://wiki.gnome.org/Projects/gexiv2
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_i386=	fails to build with exiv2 0.28
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gobject3>=0:devel/py-gobject3@${PY_FLAVOR}
 LIB_DEPENDS=	libexiv2.so:graphics/exiv2
