@@ -1,5 +1,5 @@
 PORTNAME=	gromacs
-DISTVERSION=	2023.1
+DISTVERSION=	2023.2
 CATEGORIES=	science
 MASTER_SITES=	ftp://ftp.gromacs.org/pub/gromacs/
 
@@ -14,6 +14,7 @@ BROKEN_i386=	undefined reference to `__atomic_load' and `__atomic_compare_exchan
 
 BUILD_DEPENDS=	boost-libs>=1.44:devel/boost-libs
 LIB_DEPENDS=	libhwloc.so:devel/hwloc2
+TEST_DEPENDS=	googletest>0:devel/googletest
 
 USES=		cmake compiler:c++17-lang fortran gnome perl5 pkgconfig python:build shebangfix xorg
 USE_GNOME=	libxml2
@@ -88,14 +89,12 @@ THREAD_MPI_CMAKE_BOOL=	GMX_THREAD_MPI
 THREAD_MPI_PLIST_SUB=	SUFFIX_MPI=""
 
 post-patch:
-	@${FIND} ${WRKSRC} -name "CMakeLists.txt" | ${XARGS} \
-		${REINPLACE_CMD} -e \
-		's|share/man|man| ; \
-		 /pkgconfig/s|LIB_INSTALL_DIR}|CMAKE_INSTALL_PREFIX}/libdata|'
 	@${FIND} ${WRKSRC} -name "GMXRC.*" | ${XARGS} ${REINPLACE_CMD} -e \
 		's|LDLIB/pkgconfig|LDLIB/../libdata/pkgconfig| ; \
 		 s|LDLIB}/pkgconfig|LDLIB}/../libdata/pkgconfig|'
 	@${REINPLACE_CMD} -e '/CMAKE_REQUIRED_LIBRARIES/d' \
 		${WRKSRC}/cmake/gmxTestdlopen.cmake
+
+# tests fail to compile, see https://gitlab.com/gromacs/gromacs/-/issues/4825
 
 .include <bsd.port.mk>
