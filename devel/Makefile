@@ -5921,6 +5921,7 @@
     SUBDIR += qt6-5compat
     SUBDIR += qt6-base
     SUBDIR += qt6-languageserver
+    SUBDIR += qt6-location
     SUBDIR += qt6-positioning
     SUBDIR += qt6-remoteobjects
     SUBDIR += qt6-scxml
@@ -7724,6 +7725,7 @@
     SUBDIR += undead
     SUBDIR += unibilium
     SUBDIR += universal-ctags
+    SUBDIR += unordered-dense
     SUBDIR += upnp
     SUBDIR += upp
     SUBDIR += upslug
