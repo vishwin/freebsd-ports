@@ -2680,7 +2680,6 @@ games/quake3-ra3||2019-10-16|Has expired: Unfetchable, unmaintained
 games/sdlCC||2019-10-16|Has expired: Unfetchable, unmaintained
 games/speyes||2019-10-16|Has expired: Unfetchable, unmaintained
 games/vodovod||2019-10-16|Has expired: Unfetchable, unmaintained
-games/wmeyes||2019-10-16|Has expired: Unfetchable, unmaintained
 games/wmshuffle||2019-10-16|Has expired: Unfetchable, unmaintained
 games/xabacus||2019-10-16|Has expired: Unfetchable, unmaintained
 games/xpacman||2019-10-16|Has expired: Unfetchable, unmaintained
@@ -7775,3 +7774,4 @@ devel/capstone5|devel/capstone|2023-07-15|Keep the latest version without any pk
 games/naev-data||2023-07-15|Remove obsoleted port. Now games/naev installs data files
 graphics/pecl-imagick-im7|graphics/pecl-imagick|2023-07-19|Merged into master port
 x11-toolkits/fox14||2023-07-27|Has expired: Obsolete leaf port, use x11-toolkits/fox(16,17) instead
+x11-wm/cage-devel|x11-wm/cage|2023-07-27|Out of date: use x11-wm/cage for now
