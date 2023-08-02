@@ -1441,6 +1441,7 @@
     SUBDIR += libvshadow
     SUBDIR += libvslvm
     SUBDIR += libvterm
+    SUBDIR += libwasmtime
     SUBDIR += libwfut
     SUBDIR += libx86
     SUBDIR += libxalloc
@@ -5725,6 +5726,7 @@
     SUBDIR += py-venusian
     SUBDIR += py-verboselogs
     SUBDIR += py-versioneer
+    SUBDIR += py-versioneer-518
     SUBDIR += py-versioningit
     SUBDIR += py-versiontools
     SUBDIR += py-verspec
