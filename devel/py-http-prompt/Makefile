@@ -15,7 +15,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=5.0:devel/py-click@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}httpie>=2.4.0:www/py-httpie@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}parsimonious>=0.6.2:textproc/py-parsimonious@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}prompt-toolkit2>=2.0.0<3.0.0:devel/py-prompt-toolkit2@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pygments>=2.1.0:textproc/py-pygments@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygments>=2.1.0:textproc/py-pygments@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}PyYAML>=3.0:devel/py-yaml@${PY_FLAVOR} \
 
 USES=		python

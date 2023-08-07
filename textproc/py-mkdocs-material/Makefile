@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}colorama>=0.4:devel/py-colorama@${PY_FLAVOR}
 		${PYTHON_PKGNAMEPREFIX}markdown>=3.2:textproc/py-markdown@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mkdocs>=1.4.2:textproc/py-mkdocs@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mkdocs-material-extensions>=1.1:textproc/py-mkdocs-material-extensions@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pygments>=2.14:textproc/py-pygments@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygments>=2.14:textproc/py-pygments@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pymdown-extensions>=9.9.1:textproc/py-pymdown-extensions@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}regex>=2022.4.24:textproc/py-regex@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.26:www/py-requests@${PY_FLAVOR}

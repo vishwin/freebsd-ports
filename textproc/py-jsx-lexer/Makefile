@@ -11,7 +11,7 @@ WWW=		https://github.com/fcurella/jsx-lexer
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pygments>=2.9.0:textproc/py-pygments@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>=2.9.0:textproc/py-pygments@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

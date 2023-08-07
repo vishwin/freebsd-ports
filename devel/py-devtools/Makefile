@@ -23,6 +23,6 @@ NO_ARCH=	yes
 OPTIONS_DEFINE=	PYGMENTS
 PYGMENTS_DESC=	Highlighted output support
 
-PYGMENTS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pygments>=2.2.0:textproc/py-pygments@${PY_FLAVOR}
+PYGMENTS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>=2.2.0:textproc/py-pygments@${PY_FLAVOR}
 
 .include <bsd.port.mk>

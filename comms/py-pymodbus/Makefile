@@ -24,7 +24,7 @@ DATASTORE_SQL_DESC=	Use database for server data (via SQLAlchemy)
 REPL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aiohttp>=3.8.1:www/py-aiohttp@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}prompt-toolkit>=3.0.8:devel/py-prompt-toolkit@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}typer>=0.6.1:devel/py-typer@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}Pygments>0:textproc/py-pygments@${PY_FLAVOR}
+			${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments@${PY_FLAVOR}
 REPL_EXTRA_PATCHES_OFF=	${PATCHDIR}/extra-patch-NO_REPL
 
 SERIAL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyserial>=3.5:comms/py-pyserial@${PY_FLAVOR} \

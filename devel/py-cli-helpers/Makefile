@@ -26,6 +26,6 @@ OPTIONS_DEFINE=	STYLES
 OPTIONS_DEFAULT=STYLES
 STYLES_DESC=	Style formatted output/tables via Pygments
 
-STYLES_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pygments>=1.6:textproc/py-pygments@${PY_FLAVOR}
+STYLES_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>=1.6:textproc/py-pygments@${PY_FLAVOR}
 
 .include <bsd.port.mk>

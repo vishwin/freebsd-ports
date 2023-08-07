@@ -31,7 +31,7 @@ NO_ARCH=	yes
 OPTIONS_DEFINE=		QT5
 OPTIONS_DEFAULT=	QT5
 
-QT5_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Pygments>0:textproc/py-pygments@${PY_FLAVOR}
+QT5_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments@${PY_FLAVOR}
 QT5_USES=		pyqt:5
 QT5_USE=		PYQT=pyqt5:run
 

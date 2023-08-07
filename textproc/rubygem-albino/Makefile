@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	rubygem-posix-spawn>=0.3.6:devel/rubygem-posix-spawn \
-		${PYTHON_PKGNAMEPREFIX}Pygments>=0.8:textproc/py-pygments@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pygments>=0.8:textproc/py-pygments@${PY_FLAVOR}
 
 USES=		gem python shebangfix
 

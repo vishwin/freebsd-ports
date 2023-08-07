@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}capstone>=3.0.5rc2:devel/py-capstone@${PY_FL
 		${PYTHON_PKGNAMEPREFIX}pip>=6.0.8:devel/py-pip@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}psutil>=3.3.0:sysutils/py-psutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyelftools>=0.2.4:devel/py-pyelftools@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pygments>=2.9:textproc/py-pygments@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygments>=2.9:textproc/py-pygments@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyserial>=2.7:comms/py-pyserial@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}PySocks>0:net/py-pysocks@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.0:www/py-requests@${PY_FLAVOR} \

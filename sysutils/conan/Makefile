@@ -22,7 +22,7 @@ PY_DEPENDS=	\
 		${PYTHON_PKGNAMEPREFIX}node-semver>=0.6.1:devel/py-node-semver@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}patch-ng>=1.17.4<1.18:devel/py-patch-ng@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pluginbase>=0.5:devel/py-pluginbase@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pygments>=2.0<3.0:textproc/py-pygments@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygments>=2.0<3.0:textproc/py-pygments@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyjwt>=2.4.0<3.0.0:www/py-pyjwt@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.25<3.0.0:www/py-requests@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.10.0<=1.16.0:devel/py-six@${PY_FLAVOR} \

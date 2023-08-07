@@ -12,7 +12,7 @@ WWW=		https://pypi.org/project/WebError/
 LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Paste>=1.7:www/py-paste@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Pygments>=0:textproc/py-pygments@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pygments>=0:textproc/py-pygments@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Tempita>=0.3:textproc/py-Tempita@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}WebOb>=0.9.6.1:www/py-webob@${PY_FLAVOR}
 
