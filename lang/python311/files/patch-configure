@@ -1,11 +1,41 @@
 --- configure.orig	2022-12-07 13:31:07 UTC
 +++ configure
-@@ -7630,7 +7630,7 @@ if test "$Py_LTO" = 'true' ; then
+
+@@ -8336,7 +8336,7 @@ fi
  
  if test "$Py_LTO" = 'true' ; then
    case $CC in
 -    *clang*)
 +    *clang*|cc)
        LDFLAGS_NOLTO="-fno-lto"
-                   { $as_echo "$as_me:${as_lineno-$LINENO}: checking whether C compiler accepts -flto=thin" >&5
- $as_echo_n "checking whether C compiler accepts -flto=thin... " >&6; }
+                   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking whether C compiler accepts -flto=thin" >&5
+ printf %s "checking whether C compiler accepts -flto=thin... " >&6; }
+@@ -10629,6 +10629,7 @@ fi
+ 
+ 
+ # On Linux, netlink.h requires asm/types.h
++# On FreeBSD, netlink.h is located in netlink/netlink.h
+ ac_fn_c_check_header_compile "$LINENO" "linux/netlink.h" "ac_cv_header_linux_netlink_h" "
+ #ifdef HAVE_ASM_TYPES_H
+ #include <asm/types.h>
+@@ -10643,6 +10644,20 @@ then :
+   printf "%s\n" "#define HAVE_LINUX_NETLINK_H 1" >>confdefs.h
+ 
+ fi
++ac_fn_c_check_header_compile "$LINENO" "netlink/netlink.h" "ac_cv_header_netlink_netlink_h" "
++#ifdef HAVE_ASM_TYPES_H
++#include <asm/types.h>
++#endif
++#ifdef HAVE_SYS_SOCKET_H
++#include <sys/socket.h>
++#endif
++
++"
++if test "x$ac_cv_header_netlink_netlink_h" = xyes
++then :
++  printf "%s\n" "#define HAVE_NETLINK_NETLINK_H 1" >>confdefs.h
++
++fi
+ 
+ 
+ # On Linux, qrtr.h requires asm/types.h
