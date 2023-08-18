@@ -581,6 +581,7 @@
     SUBDIR += pgpool-II-41
     SUBDIR += pgpool-II-42
     SUBDIR += pgpool-II-43
+    SUBDIR += pgpool-II-44
     SUBDIR += pgreplay
     SUBDIR += pgroonga
     SUBDIR += pgrouting
@@ -863,6 +864,7 @@
     SUBDIR += redis-devel
     SUBDIR += redis6
     SUBDIR += redis62
+    SUBDIR += redis70
     SUBDIR += redis_exporter
     SUBDIR += redisdesktopmanager
     SUBDIR += redisjson

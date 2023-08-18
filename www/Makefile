@@ -57,7 +57,6 @@
     SUBDIR += badwolf
     SUBDIR += baikal
     SUBDIR += bareos-webui
-    SUBDIR += bareos18-webui
     SUBDIR += bareos19-webui
     SUBDIR += bareos20-webui
     SUBDIR += bareos21-webui
@@ -1856,6 +1855,7 @@
     SUBDIR += qt6-httpserver
     SUBDIR += qt6-webchannel
     SUBDIR += qt6-webengine
+    SUBDIR += qt6-webview
     SUBDIR += qt6-websockets
     SUBDIR += quark
     SUBDIR += qutebrowser
@@ -2399,6 +2399,7 @@
     SUBDIR += vdradmin-am
     SUBDIR += vertx
     SUBDIR += vger
+    SUBDIR += vigil
     SUBDIR += vimb
     SUBDIR += visitors
     SUBDIR += volta
