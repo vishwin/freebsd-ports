@@ -1531,7 +1531,6 @@
     SUBDIR += lua-cjson
     SUBDIR += lua-cqueues
     SUBDIR += lua-gettext
-    SUBDIR += lua-language-server
     SUBDIR += lua-lgi
     SUBDIR += lua-libevent
     SUBDIR += lua-lpeg
@@ -2123,6 +2122,7 @@
     SUBDIR += p5-Data-DumpXML
     SUBDIR += p5-Data-Dumper
     SUBDIR += p5-Data-Dumper-Concise
+    SUBDIR += p5-Data-Dumper-Interp
     SUBDIR += p5-Data-Dumper-Perltidy
     SUBDIR += p5-Data-Dumper-Simple
     SUBDIR += p5-Data-Flow
@@ -5349,7 +5349,6 @@
     SUBDIR += py-pytest-flakes
     SUBDIR += py-pytest-flask
     SUBDIR += py-pytest-forked
-    SUBDIR += py-pytest-freezegun
     SUBDIR += py-pytest-freezer
     SUBDIR += py-pytest-helpers-namespace
     SUBDIR += py-pytest-html
@@ -7801,6 +7800,7 @@
     SUBDIR += xbyak
     SUBDIR += xc3sprog
     SUBDIR += xcscope.el
+    SUBDIR += xdg-dbus-proxy
     SUBDIR += xdg-user-dirs
     SUBDIR += xdg-utils
     SUBDIR += xdgpaths
