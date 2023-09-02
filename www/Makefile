@@ -183,6 +183,7 @@
     SUBDIR += fusionpbx
     SUBDIR += g-cows
     SUBDIR += g-gcl
+    SUBDIR += galene
     SUBDIR += gallery-dl
     SUBDIR += gallery2
     SUBDIR += garage
@@ -2284,7 +2285,6 @@
     SUBDIR += spreadlogd
     SUBDIR += sqstat
     SUBDIR += squid
-    SUBDIR += squid-devel
     SUBDIR += squid-langpack
     SUBDIR += squid_radius_auth
     SUBDIR += squidanalyzer
@@ -2386,6 +2386,7 @@
     SUBDIR += unit-php
     SUBDIR += unit-python
     SUBDIR += unit-ruby
+    SUBDIR += unit-wasm
     SUBDIR += unitc
     SUBDIR += uwebsockets
     SUBDIR += uwsgi

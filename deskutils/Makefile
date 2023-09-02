@@ -54,6 +54,7 @@
     SUBDIR += elementary-calendar
     SUBDIR += fasd
     SUBDIR += fbreader
+    SUBDIR += feathernotes
     SUBDIR += fet
     SUBDIR += fff
     SUBDIR += flameshot
@@ -273,6 +274,7 @@
     SUBDIR += ultralist
     SUBDIR += virt-manager
     SUBDIR += vit
+    SUBDIR += vnote
     SUBDIR += vym
     SUBDIR += walld
     SUBDIR += when
