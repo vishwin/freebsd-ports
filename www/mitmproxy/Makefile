@@ -15,7 +15,7 @@ BROKEN=		incorrect depends: depends on package: py38-asgiref>=3.2.10<3.5, py38-w
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}asgiref>=3.2.10<3.5:www/py-asgiref@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}blinker>=1.4<1.5:devel/py-blinker@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Brotli>=1.0<1.1:archivers/py-brotli@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}brotli>=1.0<1.1:archivers/py-brotli@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}certifi>=2019.9.11:security/py-certifi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}click>=7.0<8.1:devel/py-click@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Flask>=1.1.1<2.1:www/py-flask@${PY_FLAVOR} \

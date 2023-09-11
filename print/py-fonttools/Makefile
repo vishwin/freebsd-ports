@@ -35,7 +35,7 @@ PLOT_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}matplotlib>=0:math/py-matplotlib@${PY_F
 REPACKER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}uharfbuzz>=0.23.0:print/py-uharfbuzz@${PY_FLAVOR}
 SYMFONT_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sympy>=0:math/py-sympy@${PY_FLAVOR}
 UFO_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fs2>=2.2.0<3:devel/py-fs2@${PY_FLAVOR}
-WOFF_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Brotli>=1.0.1:archivers/py-brotli@${PY_FLAVOR} \
+WOFF_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}brotli>=1.0.1:archivers/py-brotli@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}zopfli>=0.1.4:archivers/py-zopfli@${PY_FLAVOR}
 
 .include <bsd.port.pre.mk>

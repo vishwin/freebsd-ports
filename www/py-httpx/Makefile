@@ -31,7 +31,7 @@ BROTLI_DESC=	Brotli support
 CLI_DESC=	Command-line interface support
 HTTP2_DESC=	HTTP/2 support
 
-BROTLI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Brotli>=0:archivers/py-brotli@${PY_FLAVOR}
+BROTLI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}brotli>=0:archivers/py-brotli@${PY_FLAVOR}
 CLI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=8<9:devel/py-click@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}pygments>=2<3:textproc/py-pygments@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}rich>=10<14:textproc/py-rich@${PY_FLAVOR}

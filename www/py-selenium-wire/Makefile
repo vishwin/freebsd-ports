@@ -12,7 +12,7 @@ LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}blinker>=1.4:devel/py-blinker@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Brotli>=1.0.9:archivers/py-brotli@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}brotli>=1.0.9:archivers/py-brotli@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}certifi>=2019.9.1:security/py-certifi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}h2>=4.0:www/py-h2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}hyperframe>=6.0:www/py-hyperframe@${PY_FLAVOR} \
