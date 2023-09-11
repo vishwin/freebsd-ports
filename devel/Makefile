@@ -1292,6 +1292,7 @@
     SUBDIR += libisofs
     SUBDIR += libixp
     SUBDIR += libjitterentropy
+    SUBDIR += libjodycode
     SUBDIR += libk8055
     SUBDIR += libkiwix
     SUBDIR += libklel
@@ -1571,8 +1572,10 @@
     SUBDIR += marl
     SUBDIR += massif-visualizer
     SUBDIR += mate-common
+    SUBDIR += matreshka
     SUBDIR += maven
     SUBDIR += maven-wrapper
+    SUBDIR += maven39
     SUBDIR += maven363
     SUBDIR += mcpp
     SUBDIR += mdb
@@ -1715,6 +1718,8 @@
     SUBDIR += opendht
     SUBDIR += opengrok
     SUBDIR += openocd
+    SUBDIR += opentelemetry-cpp
+    SUBDIR += opentelemetry-proto
     SUBDIR += openwince-include
     SUBDIR += orc
     SUBDIR += orcania
@@ -2996,6 +3001,7 @@
     SUBDIR += p5-MooseX-Singleton
     SUBDIR += p5-MooseX-Storage
     SUBDIR += p5-MooseX-StrictConstructor
+    SUBDIR += p5-MooseX-Test-Role
     SUBDIR += p5-MooseX-TraitFor-Meta-Class-BetterAnonClassNames
     SUBDIR += p5-MooseX-Traits
     SUBDIR += p5-MooseX-Traits-Pluggable
@@ -4227,6 +4233,7 @@
     SUBDIR += py-antlr4-python3-runtime
     SUBDIR += py-anyconfig
     SUBDIR += py-anyio
+    SUBDIR += py-anyio3
     SUBDIR += py-anyjson
     SUBDIR += py-anytree
     SUBDIR += py-apache_conf_parser
@@ -4590,6 +4597,8 @@
     SUBDIR += py-distributed
     SUBDIR += py-dj41-django-rq
     SUBDIR += py-dj41-graphene-django
+    SUBDIR += py-dj42-django-rq
+    SUBDIR += py-dj42-graphene-django
     SUBDIR += py-django-rq
     SUBDIR += py-dockerpty
     SUBDIR += py-docopt
@@ -5609,6 +5618,7 @@
     SUBDIR += py-streamparse
     SUBDIR += py-strenum
     SUBDIR += py-strict-rfc3339
+    SUBDIR += py-strictyaml
     SUBDIR += py-stringbrewer
     SUBDIR += py-stringcase
     SUBDIR += py-structlog
@@ -6303,6 +6313,7 @@
     SUBDIR += rubygem-aws-sdk-mturk
     SUBDIR += rubygem-aws-sdk-mwaa
     SUBDIR += rubygem-aws-sdk-neptune
+    SUBDIR += rubygem-aws-sdk-neptunedata
     SUBDIR += rubygem-aws-sdk-networkfirewall
     SUBDIR += rubygem-aws-sdk-networkmanager
     SUBDIR += rubygem-aws-sdk-nimblestudio
@@ -6318,6 +6329,7 @@
     SUBDIR += rubygem-aws-sdk-panorama
     SUBDIR += rubygem-aws-sdk-paymentcryptography
     SUBDIR += rubygem-aws-sdk-paymentcryptographydata
+    SUBDIR += rubygem-aws-sdk-pcaconnectorad
     SUBDIR += rubygem-aws-sdk-personalize
     SUBDIR += rubygem-aws-sdk-personalizeevents
     SUBDIR += rubygem-aws-sdk-personalizeruntime
@@ -6578,6 +6590,7 @@
     SUBDIR += rubygem-bacon
     SUBDIR += rubygem-baf
     SUBDIR += rubygem-batch-loader
+    SUBDIR += rubygem-bcp47_spec
     SUBDIR += rubygem-benelux
     SUBDIR += rubygem-better_html-rails61
     SUBDIR += rubygem-bin_utils
@@ -6664,9 +6677,7 @@
     SUBDIR += rubygem-cucumber-ci-environment
     SUBDIR += rubygem-cucumber-core
     SUBDIR += rubygem-cucumber-cucumber-expressions
-    SUBDIR += rubygem-cucumber-cucumber-expressions15
     SUBDIR += rubygem-cucumber-messages
-    SUBDIR += rubygem-cucumber-messages18
     SUBDIR += rubygem-cucumber-rails
     SUBDIR += rubygem-cucumber-tag-expressions
     SUBDIR += rubygem-cucumber-tag-expressions4
@@ -6708,6 +6719,7 @@
     SUBDIR += rubygem-devise-rails60
     SUBDIR += rubygem-devise-rails61
     SUBDIR += rubygem-devise-rails70
+    SUBDIR += rubygem-devise48-rails70
     SUBDIR += rubygem-did_you_mean
     SUBDIR += rubygem-dig_rb
     SUBDIR += rubygem-directory_watcher
@@ -6821,6 +6833,7 @@
     SUBDIR += rubygem-gettext
     SUBDIR += rubygem-gettext-setup
     SUBDIR += rubygem-gettext_i18n_rails
+    SUBDIR += rubygem-gettext_i18n_rails111
     SUBDIR += rubygem-gettext_i18n_rails18
     SUBDIR += rubygem-gettext_i18n_rails_js-rails5
     SUBDIR += rubygem-gettext_i18n_rails_js-rails50
@@ -6890,6 +6903,7 @@
     SUBDIR += rubygem-grape-route-helpers
     SUBDIR += rubygem-grape-swagger
     SUBDIR += rubygem-grape-swagger-entity
+    SUBDIR += rubygem-grape17
     SUBDIR += rubygem-grape_logging
     SUBDIR += rubygem-graphiql-rails
     SUBDIR += rubygem-graphlient
@@ -6907,6 +6921,7 @@
     SUBDIR += rubygem-hashie-forbidden_attributes
     SUBDIR += rubygem-hashie4
     SUBDIR += rubygem-health_check
+    SUBDIR += rubygem-health_check-rails70
     SUBDIR += rubygem-heapy
     SUBDIR += rubygem-highline
     SUBDIR += rubygem-highline1
@@ -7575,6 +7590,7 @@
     SUBDIR += smooth
     SUBDIR += smv
     SUBDIR += snazy
+    SUBDIR += snitch
     SUBDIR += soapui
     SUBDIR += sobjectizer
     SUBDIR += socket_wrapper
