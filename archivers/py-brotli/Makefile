@@ -1,4 +1,4 @@
-PORTNAME=	Brotli
+PORTNAME=	brotli
 PORTVERSION=	1.1.0
 CATEGORIES=	archivers python
 MASTER_SITES=	PYPI
