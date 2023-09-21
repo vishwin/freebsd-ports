@@ -1,6 +1,6 @@
 PORTNAME=	libxml2
-DISTVERSION=	2.10.4
-PORTREVISION?=	1
+DISTVERSION=	2.11.5
+PORTREVISION?=	0
 CATEGORIES?=	textproc gnome
 MASTER_SITES=	GNOME/sources/${PORTNAME}/${DISTVERSION:R}/
 DIST_SUBDIR=	gnome
@@ -11,16 +11,8 @@ WWW=		http://xmlsoft.org/
 
 LICENSE=	MIT
 
-# Upstream offers CMake in addition to autotools, but we use the latter.
-# CMake is a heavy build system, heavier than autotools, and this
-# port has many consumers of its core functionality. Some such
-# consumers, especially when optioned appropriately (and users have
-# a right to do so), may become dependencies of dependencies of CMake.
-# Additionally, some consumers rely on symbol versioning that CMake
-# does not support (as of Q2 2022) without a hack. Please consider the
-# effects of the ecosystem and technical merits before considering
-# switching build systems again. Any changes to this end not dogfooded
-# thoroughly may be reverted.
+# Upstream offers autotools and CMake, but CMake support is incomplete
+# on Unix-like systems
 USES+=		cpe iconv libtool localbase pathfix pkgconfig tar:xz
 CPE_VENDOR=	xmlsoft
 USE_LDCONFIG=	yes

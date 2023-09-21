@@ -86,3 +86,8 @@ CONFIGURE_ENV+=	LLVM_CONFIG=llvm-config${LLVM_VERSION}
 
 LDFLAGS+=	-Wl,-rpath=${LOCALBASE}/llvm${LLVM_VERSION}/lib
 MESON_ARGS+=	-Dllvm=enabled
+
+# Some symbols in mesa's linker version scripts are not always defined,
+# depending on configuration options. Suppress errors with lld >= 17 due to
+# these undefined symbols.
+LDFLAGS+=	-Wl,--undefined-version
