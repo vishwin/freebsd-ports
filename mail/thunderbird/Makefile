@@ -35,8 +35,6 @@ USE_MOZILLA=	-icu -sqlite
 CFLAGS_powerpc64le=	-DSQLITE_BYTEORDER=1234
 
 USES=		tar:xz
-# remove when updated to 115
-USES+=		llvm:max=15
 
 MOZ_OPTIONS=	--enable-application=comm/mail --enable-official-branding
 MOZ_OPTIONS+=	--with-system-bz2 --with-system-jsonc --with-system-botan
