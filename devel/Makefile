@@ -1461,6 +1461,7 @@
     SUBDIR += linenoise-ng
     SUBDIR += linux-c7-dbus-libs
     SUBDIR += linux-c7-devtools
+    SUBDIR += linux-c7-devtoolset
     SUBDIR += linux-c7-elfutils-libelf
     SUBDIR += linux-c7-elfutils-libs
     SUBDIR += linux-c7-icu
@@ -4081,7 +4082,6 @@
     SUBDIR += phasar
     SUBDIR += php-Psr_Log
     SUBDIR += php-composer
-    SUBDIR += php-composer2
     SUBDIR += php-geshi
     SUBDIR += php-ice37
     SUBDIR += php-libawl
@@ -5857,6 +5857,7 @@
     SUBDIR += py-ypy-websocket
     SUBDIR += py-yunomi
     SUBDIR += py-zarr
+    SUBDIR += py-zc.lockfile
     SUBDIR += py-zclockfile
     SUBDIR += py-zconfig
     SUBDIR += py-zfp
@@ -5876,6 +5877,7 @@
     SUBDIR += pycanberra
     SUBDIR += pycharm-ce
     SUBDIR += pycharm-pro
+    SUBDIR += pycomposefile
     SUBDIR += pycos
     SUBDIR += pycount
     SUBDIR += pydbus-common
@@ -5884,6 +5886,7 @@
     SUBDIR += pyenv
     SUBDIR += pygobject3-common
     SUBDIR += pylint
+    SUBDIR += pymsteams
     SUBDIR += pyobfuscate
     SUBDIR += pyotherside-qt5
     SUBDIR += pyside2
