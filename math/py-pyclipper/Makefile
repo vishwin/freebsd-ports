@@ -11,7 +11,7 @@ WWW=		https://github.com/greginvm/pyclipper
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>=1.11.1:devel/py-setuptools_scm@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools-scm>=1.11.1:devel/py-setuptools_scm@${PY_FLAVOR}
 
 USES=		python zip
 USE_PYTHON=	distutils cython autoplist

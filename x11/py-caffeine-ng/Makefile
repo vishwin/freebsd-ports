@@ -14,7 +14,7 @@ LICENSE_COMB=	multi
 LICENSE_FILE_GPLv3+ =	${WRKSRC}/LICENCE
 LICENSE_FILE_LGPL3+ =	${WRKSRC}/LGPL
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools_scm>0:devel/py-setuptools_scm@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools-scm>0:devel/py-setuptools_scm@${PY_FLAVOR}
 LIB_DEPENDS=	libappindicator3.so:devel/libappindicator \
 		libnotify.so:devel/libnotify
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click7>=7.1:devel/py-click7@${PY_FLAVOR} \
