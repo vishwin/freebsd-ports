@@ -28,6 +28,7 @@ USES=		compiler:c++14-lang cpe fortran pkgconfig python shebangfix
 USE_PYTHON=	autoplist concurrent cython pep517
 
 BINARY_ALIAS=	cython=cython-${PYTHON_VER} \
+		pybind11-config=pybind11-config-${PYTHON_VER} \
 		pythran=pythran-${PYTHON_VER}
 
 FFLAGS+=	-std=legacy
