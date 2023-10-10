@@ -1,10 +1,9 @@
-PORTNAME=	hglib
+PORTNAME=	python-hglib
 PORTVERSION=	2.6.2
 PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	python-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	delphij@FreeBSD.org
 COMMENT=	Library with a fast, convenient interface to Mercurial
