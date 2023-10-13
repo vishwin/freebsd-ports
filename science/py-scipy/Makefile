@@ -20,8 +20,7 @@ BUILD_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}meson-python>=0.12.1:devel/meson-python@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pybind11>=2.10.4:devel/py-pybind11@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pythran>=0.12.0:devel/py-pythran@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${PY_FLAVOR} \
-		unzip:archivers/unzip
+		${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${PY_FLAVOR}
 RUN_DEPENDS=	${PYNUMPY}
 
 USES=		compiler:c++14-lang cpe fortran pkgconfig python shebangfix
@@ -54,7 +53,7 @@ post-install:
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
-	@${UNZIP_CMD} -d ${STAGEDIR}${DOCSDIR} ${DISTDIR}/scipy-html-${DISTVERSION}.zip
+	@${UNZIP_NATIVE_CMD} -d ${STAGEDIR}${DOCSDIR} ${DISTDIR}/scipy-html-${DISTVERSION}.zip
 	@${RM} ${STAGEDIR}${PREFIX}/share/doc/${PYTHON_PKGNAMEPREFIX}${PORTNAME}/.buildinfo
 
 .include <bsd.port.mk>
