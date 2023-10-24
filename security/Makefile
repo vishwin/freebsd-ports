@@ -193,6 +193,7 @@
     SUBDIR += gonepass
     SUBDIR += gopass
     SUBDIR += gorilla
+    SUBDIR += gosec
     SUBDIR += gost-engine
     SUBDIR += gostsum
     SUBDIR += gpa
@@ -1324,6 +1325,7 @@
     SUBDIR += trezord
     SUBDIR += tripwire
     SUBDIR += trousers
+    SUBDIR += trufflehog
     SUBDIR += tthsum
     SUBDIR += u2f-devd
     SUBDIR += uacme
