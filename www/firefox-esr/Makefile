@@ -36,8 +36,6 @@ CFLAGS_powerpc64le=	-DSQLITE_BYTEORDER=1234
 CONFIGURE_ENV+=	BINDGEN_CFLAGS="-I${LOCALBASE}/include"
 
 USES=		tar:xz
-# remove when updated to 115
-USES+=		llvm:max=15
 
 FIREFOX_ICON=		${MOZILLA}.png
 FIREFOX_ICON_SRC=	${PREFIX}/lib/${MOZILLA}/browser/chrome/icons/default/default48.png
