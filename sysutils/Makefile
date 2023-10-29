@@ -88,6 +88,7 @@
     SUBDIR += backuppc-devel
     SUBDIR += backuppc4
     SUBDIR += backupuser
+    SUBDIR += bacnet-stack-apps
     SUBDIR += bacula-libs3
     SUBDIR += bacula11-client
     SUBDIR += bacula11-client-static
@@ -374,6 +375,7 @@
     SUBDIR += exa
     SUBDIR += exfat-utils
     SUBDIR += extipl
+    SUBDIR += eza
     SUBDIR += ezjail
     SUBDIR += f2
     SUBDIR += f3
@@ -1045,6 +1047,7 @@
     SUBDIR += procenv
     SUBDIR += process-viewer
     SUBDIR += procmap
+    SUBDIR += procs
     SUBDIR += progsreiserfs
     SUBDIR += pslist
     SUBDIR += psmisc

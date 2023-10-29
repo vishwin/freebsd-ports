@@ -73,6 +73,8 @@
     SUBDIR += ficl
     SUBDIR += fpc
     SUBDIR += fpc-base
+    SUBDIR += fpc-devel
+    SUBDIR += fpc-devel-source
     SUBDIR += fpc-docs
     SUBDIR += fpc-lua
     SUBDIR += fpc-pastojs
@@ -330,6 +332,7 @@
     SUBDIR += rust
     SUBDIR += rust-bootstrap
     SUBDIR += rust-nightly
+    SUBDIR += s7
     SUBDIR += sagittarius-scheme
     SUBDIR += sather-specification
     SUBDIR += sather-tutorial
