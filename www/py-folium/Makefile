@@ -1,5 +1,5 @@
 PORTNAME=	folium
-PORTVERSION=	0.14.0
+PORTVERSION=	0.15.0
 MASTER_SITES=	PYPI
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -26,4 +26,3 @@ USE_PYTHON=	autoplist concurrent pep517
 NO_ARCH=	yes
 
 .include <bsd.port.mk>
-

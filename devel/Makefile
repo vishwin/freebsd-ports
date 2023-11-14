@@ -6278,6 +6278,7 @@
     SUBDIR += rubygem-aws-sdk-lakeformation
     SUBDIR += rubygem-aws-sdk-lambda
     SUBDIR += rubygem-aws-sdk-lambdapreview
+    SUBDIR += rubygem-aws-sdk-launchwizard
     SUBDIR += rubygem-aws-sdk-lex
     SUBDIR += rubygem-aws-sdk-lexmodelbuildingservice
     SUBDIR += rubygem-aws-sdk-lexmodelsv2
@@ -6688,6 +6689,7 @@
     SUBDIR += rubygem-cucumber-core
     SUBDIR += rubygem-cucumber-cucumber-expressions
     SUBDIR += rubygem-cucumber-messages
+    SUBDIR += rubygem-cucumber-messages22
     SUBDIR += rubygem-cucumber-rails
     SUBDIR += rubygem-cucumber-tag-expressions
     SUBDIR += rubygem-cucumber-tag-expressions5
@@ -6916,6 +6918,7 @@
     SUBDIR += rubygem-grape-route-helpers
     SUBDIR += rubygem-grape-swagger
     SUBDIR += rubygem-grape-swagger-entity
+    SUBDIR += rubygem-grape1
     SUBDIR += rubygem-grape17
     SUBDIR += rubygem-grape_logging
     SUBDIR += rubygem-graphiql-rails
@@ -7777,6 +7780,7 @@
     SUBDIR += upslug
     SUBDIR += urjtag
     SUBDIR += utf8cpp
+    SUBDIR += utf8cpp3
     SUBDIR += uthash
     SUBDIR += util-linux
     SUBDIR += valgrind
