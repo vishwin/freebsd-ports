@@ -197,6 +197,7 @@ CMAKE_ARGS+=		-DCMAKE_INSTALL_PREFIX=${PREFIX} \
 			-DINSTALL_DESCRIPTIONSDIR=${PREFIX}/${QT_DESCRIPTIONSDIR_REL} \
 			-DQT_QMAKE_TARGET_MKSPEC:String=freebsd-clang \
 			--log-level=TRACE
+NO_CCACHE=		yes
 .  endif
 
 # Build setup for Qt5
