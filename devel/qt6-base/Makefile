@@ -83,8 +83,6 @@ USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 # zstd from base fails to compress files during the build (error 11: unsupported argument)
 BINARY_ALIAS=	zstd=${LOCALBASE}/bin/zstd
 
-NO_CCACHE=	yes
-
 OPTIONS_DEFINE=		CUPS X11
 OPTIONS_DEFAULT=	CUPS X11
 OPTIONS_SUB=		yes
