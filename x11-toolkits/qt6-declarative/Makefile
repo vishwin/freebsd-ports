@@ -33,8 +33,6 @@ USE_QT=		base shadertools languageserver
 USE_XORG=	x11 xau xcb xdmcp
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 
-NO_CCACHE=	yes
-
 .include <bsd.port.options.mk>
 
 .if ${ARCH} == aarch64 || ${ARCH} == amd64 || ${ARCH:Marmv?} || ${ARCH} == i386
