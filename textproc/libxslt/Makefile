@@ -1,6 +1,5 @@
 PORTNAME=	libxslt
-DISTVERSION=	1.1.37
-PORTREVISION=	1
+DISTVERSION=	1.1.39
 CATEGORIES=	textproc gnome
 MASTER_SITES=	GNOME/sources/${PORTNAME}/${DISTVERSION:R}/
 DIST_SUBDIR=	gnome
@@ -42,9 +41,5 @@ CRYPTO_CONFIGURE_WITH=	crypto
 MEM_DEBUG_CONFIGURE_WITH=	mem-debug
 
 STATIC_CONFIGURE_ENABLE=	static
-
-post-patch:
-	@${REINPLACE_CMD} -e '/^install-data-am:/ s|install-data-local||' \
-		${WRKSRC}/doc/Makefile.in
 
 .include <bsd.port.mk>
