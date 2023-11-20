@@ -130,6 +130,7 @@
     SUBDIR += downzemall
     SUBDIR += dpdk
     SUBDIR += dpdk-20.11
+    SUBDIR += dpdk-22.11
     SUBDIR += dpinger
     SUBDIR += drawterm
     SUBDIR += drive
@@ -1554,6 +1555,7 @@
     SUBDIR += trafshow3
     SUBDIR += trickle
     SUBDIR += trippy
+    SUBDIR += ts-warp
     SUBDIR += tsclient
     SUBDIR += tsctp
     SUBDIR += tsocks
