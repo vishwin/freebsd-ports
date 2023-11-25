@@ -684,6 +684,7 @@
     SUBDIR += fp16
     SUBDIR += fpp
     SUBDIR += freebsd-gcc12
+    SUBDIR += freebsd-gcc13
     SUBDIR += freebsd-gcc9
     SUBDIR += freebsd-git-devtools
     SUBDIR += freebsd-sysroot
@@ -7569,7 +7570,6 @@
     SUBDIR += sdlmm
     SUBDIR += sdlskk
     SUBDIR += sdsl-lite
-    SUBDIR += sdts++
     SUBDIR += sedsed
     SUBDIR += seer-gdb
     SUBDIR += selene
