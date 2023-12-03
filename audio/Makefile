@@ -227,7 +227,6 @@
     SUBDIR += gonic
     SUBDIR += goobox
     SUBDIR += gqradio
-    SUBDIR += gradio
     SUBDIR += gramofile
     SUBDIR += grip
     SUBDIR += gsequencer
@@ -462,14 +461,12 @@
     SUBDIR += mixer.app
     SUBDIR += mixertui
     SUBDIR += mixxx
-    SUBDIR += mixxx22
     SUBDIR += mkcue
     SUBDIR += mmtc
     SUBDIR += moc
     SUBDIR += modplug-tools
     SUBDIR += moodbar
     SUBDIR += moony-lv2
-    SUBDIR += mous
     SUBDIR += mousai
     SUBDIR += mp-player
     SUBDIR += mp3-archive-tools
@@ -602,6 +599,10 @@
     SUBDIR += plasma5-kpipewire
     SUBDIR += plasma5-oxygen-sounds
     SUBDIR += plasma5-plasma-pa
+    SUBDIR += plasma6-kpipewire
+    SUBDIR += plasma6-ocean-sound-theme
+    SUBDIR += plasma6-oxygen-sounds
+    SUBDIR += plasma6-plasma-pa
     SUBDIR += play
     SUBDIR += playgsf
     SUBDIR += playmidi
