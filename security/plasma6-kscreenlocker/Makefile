@@ -1,5 +1,6 @@
 PORTNAME=	kscreenlocker
 DISTVERSION=	${KDE_PLASMA_VERSION}
+PORTREVISION=	1
 CATEGORIES=	security kde kde-plasma
 
 MAINTAINER=	kde@FreeBSD.org
@@ -20,7 +21,7 @@ USE_KDE=	colorscheme config configwidgets coreaddons crash globalaccel \
 		xmlgui \
 		ecm:build
 USE_GL=		gl opengl
-USE_QT=		base
+USE_QT=		base declarative
 USE_XORG=	x11 xcb xext xi
 
 SHEBANG_FILES=	updaters/ksreenlocker_5_3_separate_autologin.pl

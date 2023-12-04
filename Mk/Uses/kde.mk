@@ -342,10 +342,13 @@ _USE_KDEPIM5_ALL=	akonadicontacts akonadiimportwizard akonadimime akonadinotes \
 			kalarm kmail-account-wizard kmail knotes kontact \
 			korganizer pim-data-exporter ktextaddons
 
+_USE_PHONON_ALL=	phonon phonon-backend
+
 _USE_KDE5_ALL=		${_USE_FRAMEWORKS_ALL} \
 			${_USE_PLASMA_ALL} \
 			${_USE_KDEPIM5_ALL} \
-			${_USE_KDE_BOTH}
+			${_USE_KDE_BOTH} \
+			${_USE_PHONON_ALL}
 # TODO: fix
 _USE_KDE6_ALL=		ecm colorscheme \
 			svg \
@@ -353,7 +356,8 @@ _USE_KDE6_ALL=		ecm colorscheme \
 			mediaplayer \
 			${_USE_FRAMEWORKS_ALL}  \
 			${_USE_PLASMA_ALL} \
-			plasma5support activities activities-stats kpipewire wayland globalacceld libplasma 
+			plasma5support activities activities-stats kpipewire wayland globalacceld libplasma \
+			${_USE_PHONON_ALL}
 
 # ====================== frameworks components =================================
 kde-activities_PORT5=		x11/kf${_KDE_VERSION}-kactivities
@@ -687,7 +691,7 @@ kde-kdeplasma-addons_LIB=	libplasmapotdprovidercore.so
 kde-kgamma5_PORT5=		x11/plasma${_KDE_VERSION}-kgamma5
 kde-kgamma5_PORT6=		x11/plasma${_KDE_VERSION}-kgamma
 kde-kgamma5_PORT=		${kde-kgamma5_PORT${_KDE_VERSION}}
-kde-kgamma5_PATH=		${QT_PLUGINDIR}/plasma/kcms/systemsettings/kcm_kgamma.so
+kde-kgamma5_PATH5=		${QT_PLUGINDIR}/plasma/kcms/systemsettings/kcm_kgamma.so
 kde-kgamma5_PATH6=		${QT_PLUGINDIR}/plasma/kcms/systemsettings_qwidgets/kcm_kgamma.so
 kde-kgamma5_PATH=		${kde-kgamma5_PATH${_KDE_VERSION}}
 
@@ -987,6 +991,12 @@ kde-kosm_LIB=			libKOSM.so
 
 kde-okular5_PORT=		graphics/okular
 kde-okular5_LIB=		libOkular5Core.so
+
+kde-phonon_PORT=		multimedia/phonon@${_QT_RELNAME}
+kde-phonon_LIB=			libphonon4${_QT_RELNAME}.so
+
+kde-phonon-backend_PORT=	multimedia/phonon-vlc@${_QT_RELNAME}
+kde-phonon-backend_PATH=	${QT_PLUGINDIR}/phonon4${_QT_RELNAME}_backend/phonon_vlc_${_QT_RELNAME}.so
 # ====================== end of multiversion components ========================
 
 # ====================== select the proper multiversion component ==============

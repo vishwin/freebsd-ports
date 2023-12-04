@@ -575,6 +575,7 @@
     SUBDIR += doctest
     SUBDIR += doctorj
     SUBDIR += dolphin-plugins
+    SUBDIR += dolphin-plugins-devel
     SUBDIR += dotconf
     SUBDIR += double-conversion
     SUBDIR += doxygen
@@ -607,7 +608,6 @@
     SUBDIR += efl
     SUBDIR += egypt
     SUBDIR += eiffelstudio
-    SUBDIR += electron24
     SUBDIR += electron25
     SUBDIR += electron26
     SUBDIR += elf
