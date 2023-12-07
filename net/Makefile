@@ -385,7 +385,6 @@
     SUBDIR += libiscsi
     SUBDIR += libkgapi
     SUBDIR += libksieve
-    SUBDIR += libkvkontakte
     SUBDIR += liblinphone
     SUBDIR += libmaia
     SUBDIR += libmateweather
@@ -425,6 +424,7 @@
     SUBDIR += librsync
     SUBDIR += libsignal-protocol-c
     SUBDIR += libslirp
+    SUBDIR += libsockpp
     SUBDIR += libsrtp2
     SUBDIR += libtnl
     SUBDIR += libtrace
