@@ -127,6 +127,7 @@
     SUBDIR += exim-sa-exim
     SUBDIR += exim-sqlite
     SUBDIR += exipick
+    SUBDIR += exmh-devel
     SUBDIR += exmh2
     SUBDIR += ez-pine-gpg
     SUBDIR += ezmlm
@@ -571,12 +572,14 @@
     SUBDIR += roundcube-carddav
     SUBDIR += roundcube-classic
     SUBDIR += roundcube-contextmenu
+    SUBDIR += roundcube-gravatar
     SUBDIR += roundcube-html5_notifier
     SUBDIR += roundcube-identity_smtp
     SUBDIR += roundcube-larry
     SUBDIR += roundcube-login_info
     SUBDIR += roundcube-sauserprefs
     SUBDIR += roundcube-thunderbird_labels
+    SUBDIR += roundcube-tls_icon
     SUBDIR += roundcube-twofactor_gauthenticator
     SUBDIR += roundcube-veximaccountadmin
     SUBDIR += roundcube-yubikey_auth

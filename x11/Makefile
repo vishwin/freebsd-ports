@@ -137,6 +137,7 @@
     SUBDIR += kb2mb2
     SUBDIR += kde-baseapps
     SUBDIR += kde5
+    SUBDIR += kde6
     SUBDIR += kdisplay
     SUBDIR += keybinder
     SUBDIR += keybinder-gtk3
@@ -381,6 +382,7 @@
     SUBDIR += setlayout
     SUBDIR += setxkbmap
     SUBDIR += sfwbar
+    SUBDIR += shaderbg
     SUBDIR += shikane
     SUBDIR += shotman
     SUBDIR += showkeys
@@ -475,6 +477,7 @@
     SUBDIR += wob
     SUBDIR += wofi
     SUBDIR += workrave
+    SUBDIR += wscreensaver
     SUBDIR += wshowkeys
     SUBDIR += wtype
     SUBDIR += wvkbd
@@ -563,6 +566,7 @@
     SUBDIR += xkbctrl
     SUBDIR += xkbevd
     SUBDIR += xkbind
+    SUBDIR += xkblayout-state
     SUBDIR += xkbprint
     SUBDIR += xkbset
     SUBDIR += xkbutils

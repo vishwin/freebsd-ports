@@ -1034,7 +1034,6 @@
     SUBDIR += py-aiohttp-socks
     SUBDIR += py-amqp
     SUBDIR += py-amqplib
-    SUBDIR += py-anonfile
     SUBDIR += py-avahi
     SUBDIR += py-blobfile
     SUBDIR += py-bonsai
@@ -1455,6 +1454,7 @@
     SUBDIR += shmux
     SUBDIR += sie-nmsg
     SUBDIR += simpleproxy
+    SUBDIR += sing-box
     SUBDIR += siproxd
     SUBDIR += sipsak
     SUBDIR += skstream

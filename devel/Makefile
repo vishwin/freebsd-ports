@@ -4248,6 +4248,7 @@
     SUBDIR += py-argh
     SUBDIR += py-argparse
     SUBDIR += py-args
+    SUBDIR += py-ariadne
     SUBDIR += py-arpeggio
     SUBDIR += py-array-api-compat
     SUBDIR += py-arrow
@@ -4811,6 +4812,7 @@
     SUBDIR += py-immutables
     SUBDIR += py-importlab
     SUBDIR += py-importlib-metadata
+    SUBDIR += py-importlib-metadata6
     SUBDIR += py-importlib-resources
     SUBDIR += py-incremental
     SUBDIR += py-infinity
