@@ -1,5 +1,5 @@
 PORTNAME=	linearmodels
-DISTVERSION=	5.2
+DISTVERSION=	5.3
 CATEGORIES=	math python # statistics
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -11,7 +11,7 @@ WWW=		https://bashtage.github.io/linearmodels/
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}formulaic>=0.6.1:math/py-formulaic@${PY_FLAVOR} \
+PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}formulaic>=0.6.5:math/py-formulaic@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mypy_extensions>=0.4:devel/py-mypy_extensions@${PY_FLAVOR} \
 		${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pandas>=1.1.0:math/py-pandas@${PY_FLAVOR} \
