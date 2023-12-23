@@ -661,6 +661,7 @@
     SUBDIR += onednn252
     SUBDIR += openblas
     SUBDIR += openfst
+    SUBDIR += openfst-vosk
     SUBDIR += openlibm
     SUBDIR += openmesh
     SUBDIR += openscop
@@ -876,6 +877,7 @@
     SUBDIR += py-Diofant
     SUBDIR += py-GridDataFormats
     SUBDIR += py-MutatorMath
+    SUBDIR += py-POT
     SUBDIR += py-PuLP
     SUBDIR += py-Py-BOBYQA
     SUBDIR += py-PyMetis
