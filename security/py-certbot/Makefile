@@ -7,7 +7,9 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	python@FreeBSD.org
 COMMENT=	Let's Encrypt client #'
-WWW=		https://github.com/certbot/certbot
+WWW=		https://certbot.eff.org/ \
+		https://github.com/certbot/certbot \
+		https://github.com/certbot/certbot/tree/master/certbot
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
