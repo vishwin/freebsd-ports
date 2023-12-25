@@ -2875,6 +2875,7 @@
     SUBDIR += p5-Module-Depends
     SUBDIR += p5-Module-Extract
     SUBDIR += p5-Module-Extract-Use
+    SUBDIR += p5-Module-Extract-VERSION
     SUBDIR += p5-Module-ExtractUse
     SUBDIR += p5-Module-Find
     SUBDIR += p5-Module-Functions
@@ -4650,6 +4651,7 @@
     SUBDIR += py-exam
     SUBDIR += py-exceptiongroup
     SUBDIR += py-executing
+    SUBDIR += py-expandvars
     SUBDIR += py-expiringdict
     SUBDIR += py-extras
     SUBDIR += py-extremes
@@ -5092,6 +5094,7 @@
     SUBDIR += py-opentracing
     SUBDIR += py-opster
     SUBDIR += py-optik
+    SUBDIR += py-optree
     SUBDIR += py-orange-canvas-core
     SUBDIR += py-orange-widget-base
     SUBDIR += py-orca
@@ -6377,6 +6380,7 @@
     SUBDIR += rubygem-aws-sdk-mwaa
     SUBDIR += rubygem-aws-sdk-neptune
     SUBDIR += rubygem-aws-sdk-neptunedata
+    SUBDIR += rubygem-aws-sdk-neptunegraph
     SUBDIR += rubygem-aws-sdk-networkfirewall
     SUBDIR += rubygem-aws-sdk-networkmanager
     SUBDIR += rubygem-aws-sdk-nimblestudio
