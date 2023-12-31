@@ -1288,6 +1288,7 @@
     SUBDIR += py-Morfessor
     SUBDIR += py-QDarkStyle
     SUBDIR += py-RTFDE
+    SUBDIR += py-TatSu
     SUBDIR += py-Tempita
     SUBDIR += py-accessible-pygments
     SUBDIR += py-acora
@@ -1364,7 +1365,6 @@
     SUBDIR += py-genshi
     SUBDIR += py-gensim
     SUBDIR += py-gi-docgen
-    SUBDIR += py-grako
     SUBDIR += py-grapheme
     SUBDIR += py-griffe
     SUBDIR += py-guess-language
