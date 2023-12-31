@@ -84,7 +84,6 @@
     SUBDIR += br-aspell
     SUBDIR += bsd-spell
     SUBDIR += bsddiff
-    SUBDIR += bsdgrep
     SUBDIR += btparse
     SUBDIR += c2html
     SUBDIR += c2man
@@ -898,6 +897,7 @@
     SUBDIR += p5-Text-Decorator
     SUBDIR += p5-Text-Delimited
     SUBDIR += p5-Text-Diff
+    SUBDIR += p5-Text-Diff-FormattedHTML
     SUBDIR += p5-Text-Diff-HTML
     SUBDIR += p5-Text-Diff-Parser
     SUBDIR += p5-Text-Diff3
@@ -1249,15 +1249,6 @@
     SUBDIR += peco
     SUBDIR += peg
     SUBDIR += perl2html
-    SUBDIR += php80-ctype
-    SUBDIR += php80-dom
-    SUBDIR += php80-enchant
-    SUBDIR += php80-pspell
-    SUBDIR += php80-simplexml
-    SUBDIR += php80-xml
-    SUBDIR += php80-xmlreader
-    SUBDIR += php80-xmlwriter
-    SUBDIR += php80-xsl
     SUBDIR += php81-ctype
     SUBDIR += php81-dom
     SUBDIR += php81-enchant
@@ -1373,7 +1364,6 @@
     SUBDIR += py-genshi
     SUBDIR += py-gensim
     SUBDIR += py-gi-docgen
-    SUBDIR += py-googletrans
     SUBDIR += py-grako
     SUBDIR += py-grapheme
     SUBDIR += py-griffe
