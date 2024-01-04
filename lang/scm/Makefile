@@ -1,31 +1,28 @@
 PORTNAME=	scm
-PORTVERSION=	5f2
-PORTREVISION=	10
+PORTVERSION=	5f3
 CATEGORIES=	lang scheme
 MASTER_SITES=	http://groups.csail.mit.edu/mac/ftpdir/scm/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. OLD
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} slib-3b5.zip slib-psd1-3.tar.gz
-EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} slib-3b5.zip
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} slib-3b7.zip slib-psd1-3.tar.gz
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} slib-3b7.zip
 
 MAINTAINER=	mi@aldan.algebra.com
 COMMENT=	Scheme interpreter
 WWW=		https://people.csail.mit.edu/jaffer/SCM
 
-LICENSE=	LGPL21
+LICENSE=	LGPL3+
+LICENSE_FILES=	${WRKSRC}/COPYING.LESSER
 
-BROKEN_aarch64=		fails to link: missing sbrk
-BROKEN_riscv64=		fails to link: missing sbrk
-
-LIB_DEPENDS=	libgnuregex.so.[6-9]:devel/libgnuregex
-
-WRKSRC=		${WRKDIR}/${PORTNAME}
+LIB_DEPENDS=	libgnuregex.so:devel/libgnuregex
 
 USES=		readline zip
+
+WRKSRC=		${WRKDIR}/${PORTNAME}
 HAS_CONFIGURE=	yes
 CONFIGURE_ENV=	--prefix=${PREFIX}
 MAKE_JOBS_UNSAFE=	yes
 
-CFLAGS:=	${CFLAGS:N-O*} -O0
+#CFLAGS:=	${CFLAGS:N-O*} -O0
 CFLAGS+=	-Wall -Wwrite-strings -Wmissing-declarations -Wredundant-decls -Wcast-qual
 CFLAGS+=	-Wno-unused-label -Wno-uninitialized
 
@@ -42,14 +39,15 @@ OPTIONS_SUB=		yes
 
 X11_USES=		xorg
 X11_USE=		xorg=ice,sm,x11,xext
+TEST_TARGET=	check checkmacro
 
 SCM_DATA=	COPYING COPYING.LESSER Iedline.scm Idiffer.scm \
 		Init${PORTVERSION}.scm Link.scm Macexp.scm Macro.scm \
 		Transcen.scm Tscript.scm build build.scm compile.scm \
 		hobbit.scm mkimpcat.scm patchlvl.h \
-		r4rstest.scm rwb-isam.scm scmhob.h scmhob.scm wbtab.scm
+		r4rstest.scm scmhob.h scmhob.scm
 SCM_DATA_X11=	keysymdef.scm x11.scm xatoms.scm xevent.scm
-SCM_MODULES=	byte.so bytenumb.so crs.so differ.so edline.so gsubr.so \
+SCM_MODULES=	byte.so bytenumb.so differ.so edline.so gsubr.so \
 		ioext.so posix.so ramap.so record.so rgx.so sc2.so \
 		socket.so unix.so
 SCM_MODULES_X11=x.so
@@ -58,6 +56,10 @@ SCM_MODULES_X11=x.so
 
 .if ${ARCH:Mpowerpc64*}
 USES+=		compiler:gcc-c++11-lib
+.endif
+
+.if ${ARCH} == aarch64 || ${ARCH} == riscv64
+CFLAGS+=	-DLACK_SBRK
 .endif
 
 .include <bsd.port.pre.mk>
