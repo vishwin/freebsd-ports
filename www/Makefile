@@ -1628,6 +1628,7 @@
     SUBDIR += py-fastapi
     SUBDIR += py-fastapi-users
     SUBDIR += py-feedgenerator
+    SUBDIR += py-flasgger
     SUBDIR += py-flask
     SUBDIR += py-flask-admin
     SUBDIR += py-flask-api
@@ -1642,6 +1643,7 @@
     SUBDIR += py-flask-cors
     SUBDIR += py-flask-flatpages
     SUBDIR += py-flask-json
+    SUBDIR += py-flask-jwt
     SUBDIR += py-flask-jwt-extended
     SUBDIR += py-flask-limiter
     SUBDIR += py-flask-login
