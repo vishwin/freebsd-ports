@@ -145,6 +145,7 @@
     SUBDIR += domoticz
     SUBDIR += dooble
     SUBDIR += dot-http
+    SUBDIR += dpp
     SUBDIR += drill
     SUBDIR += drupal10
     SUBDIR += drupal7
@@ -2360,6 +2361,9 @@
     SUBDIR += tomee
     SUBDIR += tor-browser
     SUBDIR += trac
+    SUBDIR += trac-accountmanager
+    SUBDIR += trac-spamfilter
+    SUBDIR += trac-tocmacro
     SUBDIR += trafficserver
     SUBDIR += transproxy
     SUBDIR += trunk
