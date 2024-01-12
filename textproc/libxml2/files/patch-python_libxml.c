@@ -1,6 +1,3 @@
-# Workaround https://bugzilla.gnome.org/show_bug.cgi?id=789714
-# Obtained from openSuse / Fedora
-
 --- python/libxml.c.orig	2023-08-11 20:30:35 UTC
 +++ python/libxml.c
 @@ -1606,12 +1606,19 @@ libxml_xmlErrorFuncHandler(ATTRIBUTE_UNUSED void *ctx,
