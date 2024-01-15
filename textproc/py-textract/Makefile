@@ -55,7 +55,7 @@ FFMPEG_RUN_DEPENDS=	ffmpeg>0:multimedia/ffmpeg
 FLAC_RUN_DEPENDS=	flac>0:audio/flac
 JPEG_TURBO_RUN_DEPENDS=	jpeg-turbo>0:graphics/jpeg-turbo
 LAME_RUN_DEPENDS=	lame>0:audio/lame
-LIBXML2_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libxml2>0:textproc/py-libxml2@${PY_FLAVOR}
+LIBXML2_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libxml2-python>0:textproc/libxml2-python@${PY_FLAVOR}
 LIBXSLT_RUN_DEPENDS=	libxslt>=1.1.15:textproc/libxslt
 MSG_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}extract-msg>=0.29:textproc/py-extract-msg@${PY_FLAVOR}
 PDFMINER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pdfminer.six>=20191110:textproc/py-pdfminer.six@${PY_FLAVOR}
