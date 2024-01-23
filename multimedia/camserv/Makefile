@@ -1,6 +1,6 @@
 PORTNAME=	camserv
 PORTVERSION=	0.5.1
-PORTREVISION=	22
+PORTREVISION=	23
 PORTEPOCH=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	SF/cserv/${PORTNAME}/${PORTVERSION}
@@ -11,6 +11,9 @@ WWW=		https://cserv.sourceforge.net/
 
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+DEPRECATED=	Last upstream release was in 2002, reconsider using multimedia/ustreamer or multimedia/ffmpeg
+EXPIRATION_DATE=	2024-02-29
 
 LIB_DEPENDS=	libltdl.so:devel/libltdl
 

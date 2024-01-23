@@ -1,3 +1,92 @@
+  <vuln vid="9532a361-b84d-11ee-b0d7-84a93843eb75">
+    <topic>TinyMCE -- mXSS in multiple plugins</topic>
+    <affects>
+      <package>
+	<name>tinymce</name>
+	<range><lt>6.7.3</lt></range>
+      </package>
+      <package>
+	<name>roundcube</name>
+	<range><lt>1.6.6,1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>TinyMCE reports:</p>
+	<blockquote cite="https://github.com/tinymce/tinymce/security/advisories/GHSA-v626-r774-j7f8">
+	  <p>Special characters in unescaped text nodes can trigger mXSS
+	    when using TinyMCE undo/redo, getContentAPI, resetContentAPI,
+	    and Autosave plugin</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2023-48219</cvename>
+      <url>https://github.com/tinymce/tinymce/security/advisories/GHSA-v626-r774-j7f8</url>
+      <url>https://github.com/roundcube/roundcubemail/releases/tag/1.6.6</url>
+    </references>
+    <dates>
+      <discovery>2023-11-15</discovery>
+      <entry>2024-01-23</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="fedf7e71-61bd-49ec-aaf0-6da14bdbb319">
+    <topic>zeek -- potential DoS vulnerability</topic>
+    <affects>
+      <package>
+	<name>zeek</name>
+	<range><lt>6.0.3</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Tim Wojtulewicz of Corelight reports:</p>
+	<blockquote cite="https://github.com/zeek/zeek/releases/tag/v6.0.3">
+	  <p>A specially-crafted series of packets containing nested
+	  MIME entities can cause Zeek to spend large amounts of
+	  time parsing the entities. </p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/zeek/zeek/releases/tag/v6.0.3</url>
+    </references>
+    <dates>
+      <discovery>2024-01-22</discovery>
+      <entry>2024-01-22</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="2264566a-a890-46eb-a895-7881dd220bd0">
+    <topic>electron26 -- Out of bounds memory access in V8</topic>
+    <affects>
+      <package>
+	<name>electron26</name>
+	<range><lt>26.6.7</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Electron developers report:</p>
+	<blockquote cite="https://github.com/electron/electron/releases/tag/v26.6.7">
+	  <p>This update fixes the following vulnerability:</p>
+	  <ul>
+	    <li>Security: backported fix for CVE-2024-0519.</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2024-0519</cvename>
+      <url>https://github.com/advisories/GHSA-vg6w-jr5m-86c8</url>
+    </references>
+    <dates>
+      <discovery>2024-01-18</discovery>
+      <entry>2024-01-19</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="a8326b61-eda0-4c03-9a5b-49ebd8f41c1a">
     <topic>electron{26,27} -- multiple vulnerabilities</topic>
     <affects>

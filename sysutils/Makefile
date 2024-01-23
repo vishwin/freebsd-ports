@@ -113,6 +113,9 @@
     SUBDIR += bareos21-client
     SUBDIR += bareos21-server
     SUBDIR += bareos21-traymonitor
+    SUBDIR += bareos22-client
+    SUBDIR += bareos22-server
+    SUBDIR += bareos22-traymonitor
     SUBDIR += barrier
     SUBDIR += bashtop
     SUBDIR += bastille
@@ -1534,6 +1537,7 @@
     SUBDIR += u-boot-sinovoip-bpi-m3
     SUBDIR += u-boot-sopine
     SUBDIR += u-boot-sopine-spi
+    SUBDIR += u-boot-starfive-visionfive2
     SUBDIR += u-boot-tools
     SUBDIR += u-boot-wandboard
     SUBDIR += ua
