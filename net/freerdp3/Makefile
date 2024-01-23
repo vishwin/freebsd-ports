@@ -82,7 +82,7 @@ SDL_DESC=		Build FreeRDP SDL client
 SDL_LIB_DEPENDS=	libatk-1.0.so:accessibility/at-spi2-core \
 			libsoup-2.4.so:devel/libsoup \
 			libharfbuzz.so:print/harfbuzz \
-			libwebkit2gtk-4.0.so:www/webkit2-gtk3
+			libwebkit2gtk-4.0.so:www/webkit2-gtk@40
 SDL_CMAKE_BOOL=		WITH_CLIENT_SDL WITH_SDL_IMAGE_DIALOGS
 SDL_USES=		gettext gnome sdl
 SDL_USE=		gnome=cairo,gdkpixbuf2,glib20,gtk30,pango sdl=sdl2,ttf2,image2

@@ -19,7 +19,7 @@ LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
 		libharfbuzz.so:print/harfbuzz \
 		libsoup-2.4.so:devel/libsoup \
 		libfreetype.so:print/freetype2 \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
+		libwebkit2gtk-4.0.so:www/webkit2-gtk@40 \
 		libfontconfig.so:x11-fonts/fontconfig
 RUN_DEPENDS=	${LUA_PKGNAMEPREFIX}luafilesystem>=0:devel/luafilesystem@${LUA_FLAVOR}
 

@@ -98,7 +98,7 @@ SUBVERSION_LIB_DEPENDS=	libapr-1.so:devel/apr1 \
 SUBVERSION_CONFIGURE_ENABLE=	plugin-subversion
 
 DEVHELP_LIB_DEPENDS=	libsoup-2.4.so:devel/libsoup \
-			libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
+			libwebkit2gtk-4.0.so:www/webkit2-gtk@40 \
 			libdevhelp-3.so:devel/devhelp
 DEVHELP_CONFIGURE_ENABLE=	plugin-devhelp
 

@@ -20,7 +20,7 @@ LIB_DEPENDS=	libeditorconfig.so:editors/editorconfig-core-c \
 		libpeas-1.0.so:devel/libpeas \
 		libpeas-gtk-1.0.so:devel/libpeas \
 		libsoup-2.4.so:devel/libsoup \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3
+		libwebkit2gtk-4.0.so:www/webkit2-gtk@40
 RUN_DEPENDS=	droid-fonts-ttf>0:x11-fonts/droid-fonts-ttf \
 		pkcheck:sysutils/polkit
 

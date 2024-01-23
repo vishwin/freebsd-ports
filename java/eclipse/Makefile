@@ -21,7 +21,7 @@ BUILD_DEPENDS=	git:devel/git@lite \
 		${LOCALBASE}/share/java/apache-maven-3.8/bin/mvn:devel/maven \
 		zip:archivers/zip
 LIB_DEPENDS=	libsecret-1.so:security/libsecret \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3
+		libwebkit2gtk-4.0.so:www/webkit2-gtk@40
 
 PORTSCOUT=	ignore:1
 

@@ -23,7 +23,7 @@ LIB_DEPENDS=	libexif.so:graphics/libexif \
 		libraw.so:graphics/libraw \
 		librest-0.7.so:devel/librest \
 		libsoup-2.4.so:devel/libsoup \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
+		libwebkit2gtk-4.0.so:www/webkit2-gtk@40 \
 		libwebp.so:graphics/webp
 
 USES=		compiler:c11 desktop-file-utils gettext gnome gstreamer meson \

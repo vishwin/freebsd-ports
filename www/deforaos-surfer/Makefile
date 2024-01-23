@@ -15,7 +15,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libSystem.so:devel/deforaos-libsystem \
 		libDesktop.so:x11/deforaos-libdesktop \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
+		libwebkit2gtk-4.0.so:www/webkit2-gtk@40 \
 		libharfbuzz.so:print/harfbuzz \
 		libsoup-2.4.so:devel/libsoup
 

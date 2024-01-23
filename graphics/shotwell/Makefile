@@ -29,7 +29,7 @@ LIB_DEPENDS=	libportal.so:deskutils/libportal \
 		libgphoto2.so:graphics/libgphoto2 \
 		libraw.so:graphics/libraw \
 		libgcr-ui-3.so:security/gcr \
-		libwebkit2gtk-4.0.so:www/webkit2-gtk3 \
+		libwebkit2gtk-4.0.so:www/webkit2-gtk@40 \
 		libxml2.so:textproc/libxml2
 
 USES=		compiler:c++11-lib cpe desktop-file-utils gettext gnome gstreamer meson \
