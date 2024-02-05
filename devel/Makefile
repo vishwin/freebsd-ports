@@ -351,6 +351,7 @@
     SUBDIR += catch2
     SUBDIR += cbang
     SUBDIR += cbfmt
+    SUBDIR += cbmc
     SUBDIR += cbrowser
     SUBDIR += cc65
     SUBDIR += ccache
@@ -4488,6 +4489,7 @@
     SUBDIR += py-cligj
     SUBDIR += py-clikit
     SUBDIR += py-clint
+    SUBDIR += py-clldutils
     SUBDIR += py-cloudpickle
     SUBDIR += py-cluster
     SUBDIR += py-cmd2
