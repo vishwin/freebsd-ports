@@ -1,3 +1,62 @@
+  <vuln vid="388eefc0-c93f-11ee-92ce-4ccc6adda413">
+    <topic>readstat -- Heap buffer overflow in readstat_convert</topic>
+    <affects>
+      <package>
+	<name>readstat</name>
+	<range><lt>1.1.9</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Google reports:</p>
+	<blockquote cite="https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33991">
+	  <p>A heap buffer overflow exists in readstat_convert.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=33991</url>
+      <url>https://osv.dev/vulnerability/OSV-2021-732</url>
+      <url>https://github.com/WizardMac/ReadStat/issues/285</url>
+    </references>
+    <dates>
+      <discovery>2021-05-05</discovery>
+      <entry>2024-02-12</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="cb22a9a6-c907-11ee-8d1c-40b034429ecf">
+    <topic>p5-Spreadsheet-ParseExcel -- Remote Code Execution Vulnerability</topic>
+    <affects>
+      <package>
+	<name>p5-Spreadsheet-ParseExcel</name>
+	<range><lt>0.66</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Spreadsheet-ParseExcel reports:</p>
+	<blockquote cite="https://nvd.nist.gov/vuln/detail/CVE-2023-7101">
+	  <p>
+	    Spreadsheet::ParseExcel version 0.65 is a Perl module used for parsing Excel files.
+	    Spreadsheet::ParseExcel is vulnerable to an arbitrary code execution (ACE) vulnerability
+	    due to passing unvalidated input from a file into a string-type eval "eval".
+	    Specifically, the issue stems from the evaluation of Number format strings
+	    (not to be confused with printf-style format strings) within the Excel parsing logic.
+	  </p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2023-7101</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2023-7101</url>
+    </references>
+    <dates>
+      <discovery>2023-12-29</discovery>
+      <entry>2024-02-11</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="19e6dd1b-c6a5-11ee-9cd0-6cc21735f730">
     <topic>postgresql-server -- non-owner REFRESH MATERIALIZED VIEW CONCURRENTLY executes arbitrary SQL</topic>
     <affects>
