@@ -6,7 +6,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Extensions to the standard Python datetime module
-WWW=		https://github.com/dateutil/dateutil
+WWW=		https://dateutil.readthedocs.io/en/stable/ \
+		https://github.com/dateutil/dateutil
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE

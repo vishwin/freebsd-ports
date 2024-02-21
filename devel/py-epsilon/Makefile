@@ -24,7 +24,6 @@ USE_PYTHON=	autoplist concurrent pep517
 
 NO_ARCH=	yes
 
-# bin/benchmark
-CONFLICTS_INSTALL=	brlcad
+CONFLICTS_INSTALL=	brlcad # bin/benchmark
 
 .include <bsd.port.mk>
