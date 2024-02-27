@@ -45,4 +45,10 @@ post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/g* \
 		${STAGEDIR}${PREFIX}/libexec/coreutils/libstdbuf.so
 
+.include <bsd.port.options.mk>
+
+.if ${ARCH} == i386
+CONFIGURE_ARGS+=	--disable-year2038
+.endif
+
 .include <bsd.port.mk>
