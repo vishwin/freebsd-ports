@@ -433,7 +433,6 @@
     SUBDIR += codeblocks
     SUBDIR += codequery
     SUBDIR += codesearch-py
-    SUBDIR += codeville
     SUBDIR += codeworker
     SUBDIR += collada-dom
     SUBDIR += color
@@ -4190,7 +4189,6 @@
     SUBDIR += pthsem
     SUBDIR += ptl
     SUBDIR += ptlib
-    SUBDIR += ptypes
     SUBDIR += publib
     SUBDIR += purescript-language-server
     SUBDIR += pushmi
