@@ -168,6 +168,7 @@
     SUBDIR += bvm
     SUBDIR += byobu
     SUBDIR += calamares
+    SUBDIR += cardano-cli
     SUBDIR += catatonit
     SUBDIR += catfish
     SUBDIR += catsit
@@ -1048,8 +1049,7 @@
     SUBDIR += podman-suite
     SUBDIR += polkit
     SUBDIR += polkit-gnome
-    SUBDIR += polkit-qt
-    SUBDIR += polkit-qt-1-devel
+    SUBDIR += polkit-qt-1
     SUBDIR += pot
     SUBDIR += potnet
     SUBDIR += poweralertd
