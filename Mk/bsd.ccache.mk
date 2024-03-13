@@ -82,7 +82,7 @@ BUILD_DEPENDS+=		${CCACHE_BIN}:devel/ccache
 
 .    if exists(${CCACHE_WRAPPER_PATH})
 # Prepend the ccache dir into the PATH and setup ccache env
-PATH:=	${CCACHE_WRAPPER_PATH}:${PATH}
+PATH:=	${CCACHE_WRAPPER_PATH}:${CCACHE_PKG_PREFIX}/bin:${PATH}
 #.MAKEFLAGS:		PATH=${PATH}
 .      if !${MAKE_ENV:MPATH=*} && !${CONFIGURE_ENV:MPATH=*}
 MAKE_ENV+=			PATH=${PATH}
