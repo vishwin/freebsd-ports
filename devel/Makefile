@@ -1387,6 +1387,7 @@
     SUBDIR += libs11n
     SUBDIR += libsavitar
     SUBDIR += libscca
+    SUBDIR += libscfg
     SUBDIR += libsearpc
     SUBDIR += libserdes
     SUBDIR += libserialport
@@ -1731,6 +1732,7 @@
     SUBDIR += okteta
     SUBDIR += omake
     SUBDIR += omniORB
+    SUBDIR += omnilinter
     SUBDIR += onetbb
     SUBDIR += oniguruma
     SUBDIR += open-beagle
