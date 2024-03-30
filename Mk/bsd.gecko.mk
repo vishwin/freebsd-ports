@@ -112,9 +112,8 @@ RUSTFLAGS+=	${CFLAGS:M-mcpu=*:S/-mcpu=/-C target-cpu=/:S/power/pwr/}
 RUSTFLAGS+=	${CFLAGS:M-mcpu=*:S/-mcpu=/-C target-cpu=/}
 .    endif
 
-.if defined(WITH_CCACHE_BUILD)
+.if defined(WITH_CCACHE_BUILD) && !defined(NO_CCACHE)
 MOZ_OPTIONS+=	--with-ccache
-BUILD_DEPENDS+=	ccache:devel/ccache # XXX host ccache not detected/honoured
 .endif
 
 # Standard depends
