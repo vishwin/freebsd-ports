@@ -38,8 +38,8 @@ USES=		tar:xz
 
 MOZ_OPTIONS=	--enable-application=comm/mail --enable-official-branding
 MOZ_OPTIONS+=	--with-system-bz2 --with-system-jsonc --with-system-botan
-MOZ_MK_OPTIONS=	MOZ_THUNDERBIRD=1 MAIL_PKG_SHARED=1
-MOZ_EXPORT=		MOZ_THUNDERBIRD=1 MAIL_PKG_SHARED=1
+MOZ_MK_OPTIONS+=	MOZ_THUNDERBIRD=1 MAIL_PKG_SHARED=1
+MOZ_EXPORT+=		MOZ_THUNDERBIRD=1 MAIL_PKG_SHARED=1
 
 PORTNAME_ICON=	${MOZILLA}.png
 PORTNAME_ICON_SRC=	${PREFIX}/lib/${MOZILLA}/chrome/icons/default/default48.png
