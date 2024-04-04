@@ -79,7 +79,7 @@ BUILD_DEPENDS+=	rust-cbindgen>=0.26.0:devel/rust-cbindgen \
 LIB_DEPENDS+=	libdrm.so:graphics/libdrm
 RUN_DEPENDS+=	${LOCALBASE}/lib/libpci.so:devel/libpci
 LIB_DEPENDS+=	libepoll-shim.so:devel/libepoll-shim
-MOZ_EXPORT+=	${CONFIGURE_ENV} \
+MOZ_EXPORT+=	${CONFIGURE_ENV:NPATH=*} \
 				PYTHON3="${PYTHON_CMD}" \
 				RUSTFLAGS="${RUSTFLAGS}"
 MOZ_OPTIONS+=	--prefix="${PREFIX}"
