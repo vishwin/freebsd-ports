@@ -1303,7 +1303,6 @@
     SUBDIR += rubygem-tmuxinator
     SUBDIR += rubygem-vagrant-bhyve
     SUBDIR += rubygem-vagrant-mutate
-    SUBDIR += rubygem-vagrant-vbguest
     SUBDIR += rubygem-vagrant_cloud
     SUBDIR += rubygem-vmstat
     SUBDIR += rubygem-win32-file
@@ -1348,6 +1347,7 @@
     SUBDIR += schedutils
     SUBDIR += schilyutils
     SUBDIR += screen
+    SUBDIR += screen-devel
     SUBDIR += screenfetch
     SUBDIR += screenie
     SUBDIR += scterc
@@ -1555,7 +1555,6 @@
     SUBDIR += ucspi-tcp
     SUBDIR += ucspi-unix
     SUBDIR += udfclient
-    SUBDIR += uefi-edk2-bhyve-csm
     SUBDIR += ufetch
     SUBDIR += ufs_copy
     SUBDIR += uhidd
