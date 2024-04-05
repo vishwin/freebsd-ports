@@ -558,6 +558,7 @@
     SUBDIR += dfuife-curses
     SUBDIR += dia2code
     SUBDIR += dia2code+
+    SUBDIR += dill
     SUBDIR += ding-libs
     SUBDIR += dispy
     SUBDIR += distcc
@@ -4639,6 +4640,7 @@
     SUBDIR += py-dodgy
     SUBDIR += py-dogpile.cache
     SUBDIR += py-doit
+    SUBDIR += py-domdf-python-tools
     SUBDIR += py-donut-shellcode
     SUBDIR += py-dotted
     SUBDIR += py-dotty-dict
@@ -4892,6 +4894,7 @@
     SUBDIR += py-jaraco.functools
     SUBDIR += py-jaraco.itertools
     SUBDIR += py-jaraco.logging
+    SUBDIR += py-jaraco.packaging
     SUBDIR += py-jaraco.stream
     SUBDIR += py-jaraco.text
     SUBDIR += py-jaraco.timing
@@ -5057,6 +5060,7 @@
     SUBDIR += py-msal
     SUBDIR += py-msal-extensions
     SUBDIR += py-msgpack
+    SUBDIR += py-msgspec
     SUBDIR += py-mulpyplexer
     SUBDIR += py-multi_key_dict
     SUBDIR += py-multipart
@@ -5424,6 +5428,7 @@
     SUBDIR += py-pytest-cpp
     SUBDIR += py-pytest-datadir
     SUBDIR += py-pytest-django
+    SUBDIR += py-pytest-doctestplus
     SUBDIR += py-pytest-drop-dup-tests
     SUBDIR += py-pytest-enabler
     SUBDIR += py-pytest-env
@@ -5464,6 +5469,7 @@
     SUBDIR += py-pytest-regressions
     SUBDIR += py-pytest-regtest
     SUBDIR += py-pytest-relaxed
+    SUBDIR += py-pytest-remotedata
     SUBDIR += py-pytest-rerunfailures
     SUBDIR += py-pytest-runner
     SUBDIR += py-pytest-services
@@ -6283,6 +6289,7 @@
     SUBDIR += rubygem-aws-sdk-datasync
     SUBDIR += rubygem-aws-sdk-datazone
     SUBDIR += rubygem-aws-sdk-dax
+    SUBDIR += rubygem-aws-sdk-deadline
     SUBDIR += rubygem-aws-sdk-detective
     SUBDIR += rubygem-aws-sdk-devicefarm
     SUBDIR += rubygem-aws-sdk-devopsguru
