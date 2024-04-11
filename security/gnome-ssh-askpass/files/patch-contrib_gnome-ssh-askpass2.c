@@ -1,12 +1,13 @@
---- contrib/gnome-ssh-askpass2.c.orig	2009-11-18 06:51:59 UTC
+--- contrib/gnome-ssh-askpass2.c.orig	2020-02-14 00:40:54 UTC
 +++ contrib/gnome-ssh-askpass2.c
-@@ -88,12 +88,13 @@ passphrase_dialog(char *message)
+@@ -90,13 +90,14 @@ passphrase_dialog(char *message, int prompt_type)
  {
  	const char *failed;
  	char *passphrase, *local;
 -	int result, grab_tries, grab_server, grab_pointer;
 +	int result, grab_tries, grab_server, grab_pointer, grab_keyboard;
- 	GtkWidget *dialog, *entry;
+ 	int buttons, default_response;
+ 	GtkWidget *parent_window, *dialog, *entry;
  	GdkGrabStatus status;
  
  	grab_server = (getenv("GNOME_SSH_ASKPASS_GRAB_SERVER") != NULL);
@@ -14,40 +15,42 @@
 +	grab_keyboard = (getenv("GNOME_SSH_ASKPASS_GRAB_KEYBOARD") != NULL);
  	grab_tries = 0;
  
- 	dialog = gtk_message_dialog_new(NULL, 0,
-@@ -138,17 +139,21 @@ passphrase_dialog(char *message)
+ 	/* Create an invisible parent window so that GtkDialog doesn't
+@@ -156,18 +157,20 @@ passphrase_dialog(char *message, int prompt_type)
  			}
  		}
  	}
 -	for(;;) {
--		status = gdk_keyboard_grab((GTK_WIDGET(dialog))->window,
--		   FALSE, GDK_CURRENT_TIME);
+-		status = gdk_keyboard_grab(
+-		    gtk_widget_get_window(GTK_WIDGET(dialog)), FALSE,
+-		    GDK_CURRENT_TIME);
 -		if (status == GDK_GRAB_SUCCESS)
 -			break;
 -		usleep(GRAB_WAIT * 1000);
 -		if (++grab_tries > GRAB_TRIES) {
 -			failed = "keyboard";
 -			goto nograbkb;
-+
-+	if (grab_keyboard) {
-+		for(;;) {
-+			status = gdk_keyboard_grab((GTK_WIDGET(dialog))->window,
-+			   FALSE, GDK_CURRENT_TIME);
-+			if (status == GDK_GRAB_SUCCESS)
-+				break;
-+			usleep(GRAB_WAIT * 1000);
-+			if (++grab_tries > GRAB_TRIES) {
-+				failed = "keyboard";
-+				goto nograbkb;
-+			}
- 		}
- 	}
-+
+-		}
+-	}
++    if (grab_keyboard) {
++	    for(;;) {
++		    status = gdk_keyboard_grab(
++		        gtk_widget_get_window(GTK_WIDGET(dialog)), FALSE,
++		        GDK_CURRENT_TIME);
++		    if (status == GDK_GRAB_SUCCESS)
++			    break;
++		    usleep(GRAB_WAIT * 1000);
++		    if (++grab_tries > GRAB_TRIES) {
++			    failed = "keyboard";
++			    goto nograbkb;
++		    }
++	    }
++    }
  	if (grab_server) {
  		gdk_x11_grab_server();
  	}
-@@ -160,7 +165,8 @@ passphrase_dialog(char *message)
- 		XUngrabServer(GDK_DISPLAY());
+@@ -179,7 +182,8 @@ passphrase_dialog(char *message, int prompt_type)
+ 		XUngrabServer(gdk_x11_get_default_xdisplay());
  	if (grab_pointer)
  		gdk_pointer_ungrab(GDK_CURRENT_TIME);
 -	gdk_keyboard_ungrab(GDK_CURRENT_TIME);

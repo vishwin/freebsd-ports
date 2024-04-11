@@ -1,3 +1,3 @@
-TIMESTAMP = 1712235662
-SHA256 (openssh-7.3p1.tar.gz) = 3ffb989a6dcaa69594c3b550d4855a5a2e1718ccdde7f5e36387b424220fbecc
-SIZE (openssh-7.3p1.tar.gz) = 1522617
+TIMESTAMP = 1712763424
+SHA256 (openssh-8.2p1.tar.gz) = 43925151e6cf6cee1450190c0e9af4dc36b41c12737619edff8bcebdff64e671
+SIZE (openssh-8.2p1.tar.gz) = 1701197

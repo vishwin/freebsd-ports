@@ -1,5 +1,6 @@
 PORTNAME=	acme
 PORTVERSION=	${ACME_VERSION}
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	security python
 MASTER_SITES=	PYPI
@@ -14,6 +15,8 @@ WWW=		https://certbot.eff.org/ \
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=0:devel/py-setuptools@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}josepy>=1.13.0:security/py-josepy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=17.5.0:security/py-openssl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyRFC3339>=0:devel/py-pyrfc3339@${PY_FLAVOR} \
@@ -21,7 +24,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}josepy>=1.13.0:security/py-josepy@${PY_FLAVO
 		${PYTHON_PKGNAMEPREFIX}requests>=2.20.0:www/py-requests@${PY_FLAVOR}
 
 USES=		python
-USE_PYTHON=	autoplist cryptography distutils pytest
+USE_PYTHON=	autoplist cryptography pep517 pytest
 
 NO_ARCH=	yes
 

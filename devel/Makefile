@@ -33,6 +33,7 @@
     SUBDIR += R-cran-clisymbols
     SUBDIR += R-cran-clock
     SUBDIR += R-cran-collapse
+    SUBDIR += R-cran-conflicted
     SUBDIR += R-cran-covr
     SUBDIR += R-cran-cpp11
     SUBDIR += R-cran-crayon
@@ -51,6 +52,7 @@
     SUBDIR += R-cran-foreach
     SUBDIR += R-cran-future
     SUBDIR += R-cran-future.apply
+    SUBDIR += R-cran-gargle
     SUBDIR += R-cran-gbRd
     SUBDIR += R-cran-gbm
     SUBDIR += R-cran-gdata
@@ -62,10 +64,13 @@
     SUBDIR += R-cran-globals
     SUBDIR += R-cran-glue
     SUBDIR += R-cran-gmodels
+    SUBDIR += R-cran-googledrive
+    SUBDIR += R-cran-googlesheets4
     SUBDIR += R-cran-gsubfn
     SUBDIR += R-cran-gtools
     SUBDIR += R-cran-hardhat
     SUBDIR += R-cran-hms
+    SUBDIR += R-cran-ids
     SUBDIR += R-cran-ini
     SUBDIR += R-cran-iterators
     SUBDIR += R-cran-itertools
@@ -80,6 +85,8 @@
     SUBDIR += R-cran-microbenchmark
     SUBDIR += R-cran-mlbench
     SUBDIR += R-cran-mockery
+    SUBDIR += R-cran-mockr
+    SUBDIR += R-cran-modelr
     SUBDIR += R-cran-msm
     SUBDIR += R-cran-multicool
     SUBDIR += R-cran-optparse
@@ -125,11 +132,13 @@
     SUBDIR += R-cran-sfsmisc
     SUBDIR += R-cran-sourcetools
     SUBDIR += R-cran-sys
+    SUBDIR += R-cran-systemfonts
     SUBDIR += R-cran-testit
     SUBDIR += R-cran-testthat
     SUBDIR += R-cran-tibble
     SUBDIR += R-cran-tidyr
     SUBDIR += R-cran-tidyselect
+    SUBDIR += R-cran-tidyverse
     SUBDIR += R-cran-timechange
     SUBDIR += R-cran-tinytest
     SUBDIR += R-cran-tzdb
@@ -276,7 +285,6 @@
     SUBDIR += bats-core
     SUBDIR += bazel
     SUBDIR += bazel-buildtools
-    SUBDIR += bazel029
     SUBDIR += bazel5
     SUBDIR += bbparse
     SUBDIR += bcc
@@ -569,7 +577,6 @@
     SUBDIR += dmake
     SUBDIR += dmalloc
     SUBDIR += dmlc-core
-    SUBDIR += dmucs
     SUBDIR += docopt.cpp
     SUBDIR += doctest
     SUBDIR += doctorj
@@ -581,7 +588,6 @@
     SUBDIR += dparser
     SUBDIR += dra
     SUBDIR += dragon
-    SUBDIR += ds2
     SUBDIR += dsymbol
     SUBDIR += dtool
     SUBDIR += dub
@@ -3675,6 +3681,7 @@
     SUBDIR += p5-Test2-Suite
     SUBDIR += p5-Test2-Tools-Explain
     SUBDIR += p5-Test2-Tools-FFI
+    SUBDIR += p5-Test2-Tools-LoadModule
     SUBDIR += p5-Test2-Tools-MemoryCycle
     SUBDIR += p5-Text-Levenshtein
     SUBDIR += p5-Text-Levenshtein-Damerau
@@ -4240,6 +4247,7 @@
     SUBDIR += py-aioitertools
     SUBDIR += py-aiologger
     SUBDIR += py-aiorpcX
+    SUBDIR += py-aiorpcX-legacy
     SUBDIR += py-aiortc
     SUBDIR += py-aiorwlock
     SUBDIR += py-aiosignal
@@ -4410,6 +4418,7 @@
     SUBDIR += py-backports.cached-property
     SUBDIR += py-backports.csv
     SUBDIR += py-backports.entry-points-selectable
+    SUBDIR += py-backports.tarfile
     SUBDIR += py-backports.zoneinfo
     SUBDIR += py-banal
     SUBDIR += py-bandit
@@ -4634,6 +4643,7 @@
     SUBDIR += py-dj42-django-rq
     SUBDIR += py-dj42-graphene-django
     SUBDIR += py-django-rq
+    SUBDIR += py-dm-tree
     SUBDIR += py-docformatter
     SUBDIR += py-dockerpty
     SUBDIR += py-docopt
@@ -4812,6 +4822,8 @@
     SUBDIR += py-gtfslib
     SUBDIR += py-guppy3
     SUBDIR += py-gyp
+    SUBDIR += py-hacking
+    SUBDIR += py-hammett
     SUBDIR += py-hash_ring
     SUBDIR += py-hatch
     SUBDIR += py-hatch-autorun
@@ -5056,6 +5068,7 @@
     SUBDIR += py-monotonic
     SUBDIR += py-monty
     SUBDIR += py-more-itertools
+    SUBDIR += py-moreorless
     SUBDIR += py-moto
     SUBDIR += py-mox
     SUBDIR += py-mrkd
@@ -5701,7 +5714,9 @@
     SUBDIR += py-statgrab
     SUBDIR += py-statsd
     SUBDIR += py-stdlib-list
+    SUBDIR += py-stdlibs
     SUBDIR += py-stdnum
+    SUBDIR += py-stestr
     SUBDIR += py-stevedore
     SUBDIR += py-stone
     SUBDIR += py-stopit
@@ -5770,6 +5785,7 @@
     SUBDIR += py-toposort
     SUBDIR += py-tox
     SUBDIR += py-traceback2
+    SUBDIR += py-trailrunner
     SUBDIR += py-traitlets
     SUBDIR += py-traits
     SUBDIR += py-traittypes
@@ -5822,6 +5838,7 @@
     SUBDIR += py-u-msgpack-python
     SUBDIR += py-ua_parser
     SUBDIR += py-ubelt
+    SUBDIR += py-ufmt
     SUBDIR += py-uhid-freebsd
     SUBDIR += py-ujson
     SUBDIR += py-undefined
@@ -5842,6 +5859,7 @@
     SUBDIR += py-us
     SUBDIR += py-user_agents
     SUBDIR += py-userpath
+    SUBDIR += py-usort
     SUBDIR += py-uvloop
     SUBDIR += py-validate-pyproject
     SUBDIR += py-validators
@@ -6278,6 +6296,7 @@
     SUBDIR += rubygem-aws-sdk-connectcontactlens
     SUBDIR += rubygem-aws-sdk-connectparticipant
     SUBDIR += rubygem-aws-sdk-connectwisdomservice
+    SUBDIR += rubygem-aws-sdk-controlcatalog
     SUBDIR += rubygem-aws-sdk-controltower
     SUBDIR += rubygem-aws-sdk-core
     SUBDIR += rubygem-aws-sdk-core2
@@ -7586,6 +7605,7 @@
     SUBDIR += rubygem-trailblazer-option
     SUBDIR += rubygem-transaction-simple
     SUBDIR += rubygem-travis
+    SUBDIR += rubygem-travis-gh
     SUBDIR += rubygem-treetop
     SUBDIR += rubygem-trollop
     SUBDIR += rubygem-trollop1
