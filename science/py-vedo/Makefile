@@ -11,7 +11,7 @@ WWW=		https://vedo.embl.es/
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Deprecated>0:devel/py-deprecated@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}deprecated>0:devel/py-deprecated@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pygments>0:textproc/py-pygments@${PY_FLAVOR} \
 		${PYNUMPY} \
 		vtk${VTK_VER:R}>0:math/vtk${VTK_VER:R} \

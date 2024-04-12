@@ -11,7 +11,7 @@ WWW=		https://pyqubo.readthedocs.io/en/latest/
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Deprecated>=1.2.10:devel/py-deprecated@${PY_FLAVOR} \
+PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}deprecated>=1.2.10:devel/py-deprecated@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dimod>=0.9.14:science/py-dimod@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dwave-neal>=0.5.7:science/py-dwave-neal@${PY_FLAVOR} \
 		${PYNUMPY} \
