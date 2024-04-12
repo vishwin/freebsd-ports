@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=4.9.0:devel/py-lxml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}country>=22.3.5:devel/py-country@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}intervaltree>=3.1.0:devel/py-intervaltree@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}google-i18n-address>=3.0.0:devel/py-google-i18n-address@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ConfigArgParse>=1.2.3:devel/py-configargparse@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}configargparse>=1.2.3:devel/py-configargparse@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=3.1.2:devel/py-Jinja2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}PyYAML>=5.3.1:devel/py-yaml@${PY_FLAVOR} \
 		${PY_SETUPTOOLS} \

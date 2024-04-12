@@ -12,7 +12,7 @@ LICENSE=	MIT
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}appdirs>0:devel/py-appdirs@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}connection_pool>=0.0.3>0:devel/py-connection_pool@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}ConfigArgParse>0:devel/py-configargparse@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}configargparse>0:devel/py-configargparse@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}datrie>0:devel/py-datrie@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}filelock>0:sysutils/py-filelock@${PY_FLAVOR} \
