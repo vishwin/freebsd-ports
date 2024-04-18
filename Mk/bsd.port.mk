@@ -1324,19 +1324,23 @@ LDCONFIG32_DIR=	libdata/ldconfig32
 TMPDIR?=	/tmp
 .    endif # defined(PACKAGE_BUILDING)
 
+# Enable default features unless they have been disabled by the user, and cleanup
+.    for feature in ${_DEFAULT_WITH_FEATURES}
+.      if !defined(WITHOUT_${feature:tu})
+WITH_${feature:tu}=		yes
+.undef WITHOUT_${feature:tu}
+.      endif
+.    endfor
+
 # For each Feature we support, process the
 # WITH_FEATURE_PORTS and WITHOUT_FEATURE_PORTS variables
 .    for feature in ${_LIST_OF_WITH_FEATURES}
-.      if ${_DEFAULT_WITH_FEATURES:M${feature}}
-_WITH_OR_WITHOUT=	WITHOUT
-.      else
-_WITH_OR_WITHOUT=	WITH
-.      endif
-
-.      if defined(${_WITH_OR_WITHOUT}_${feature:tu}_PORTS)
-.        if ${${_WITH_OR_WITHOUT}_${feature:tu}_PORTS:M${PKGORIGIN}}
-${_WITH_OR_WITHOUT}_${feature:tu}=	yes
-.        endif
+.      if defined(WITHOUT_${feature:tu}_PORTS) && ${WITHOUT_${feature:tu}_PORTS:M${PKGORIGIN}}
+# Feature disabled for this port, remove WITH_<feat>
+.undef WITH_${feature:tu}
+.      elif defined(WITH_${feature:tu}_PORTS) && ${WITH_${feature:tu}_PORTS:M${PKGORIGIN}}
+# Feature enabled for this port, set WITH_<feat>
+WITH_${feature:tu}=	yes
 .      endif
 .    endfor
 
@@ -1800,7 +1804,7 @@ CFLAGS:=	${CFLAGS:C/${_CPUCFLAGS}//}
 .    endif
 
 .    for f in ${_LIST_OF_WITH_FEATURES}
-.      if defined(WITH_${f:tu}) || ( ${_DEFAULT_WITH_FEATURES:M${f}} &&  !defined(WITHOUT_${f:tu}) )
+.      if defined(WITH_${f:tu})
 .include "${PORTSDIR}/Mk/Features/$f.mk"
 .      endif
 .    endfor

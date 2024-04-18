@@ -1,6 +1,7 @@
+# CAVEAT cross-compilation (ex. CPUTYPE=znver3) fails, upstream needs to fix this: https://github.com/DISTRHO/Cardinal/issues/646
+
 PORTNAME=	cardinal
-DISTVERSION=	23.10
-PORTREVISION=	2
+DISTVERSION=	24.04
 CATEGORIES=	audio
 MASTER_SITES=	https://github.com/DISTRHO/Cardinal/releases/download/${DISTVERSION}/
 
@@ -10,8 +11,6 @@ WWW=		https://cardinal.kx.studio/
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-BROKEN_i386=	compilation breaks: use of overloaded operator '[]' is ambiguous, see https://github.com/DISTRHO/Cardinal/issues/613
 
 BUILD_DEPENDS=	${LOCALBASE}/include/FuzzySearchDatabase.hpp:textproc/fuzzysearchdatabase \
 		bash:shells/bash \
@@ -26,7 +25,7 @@ LIB_DEPENDS=	libasound.so:audio/alsa-lib \
 		libsndfile.so:audio/libsndfile \
 		libspeexdsp.so:audio/speexdsp
 
-USES=		compiler:c++11-lang gl gmake libarchive localbase:ldflags pkgconfig python sdl shebangfix tar:xz xorg
+USES=		compiler:c++17-lang gl gmake libarchive localbase:ldflags pkgconfig python sdl shebangfix tar:xz xorg
 USE_XORG=	x11 xcursor xext xrandr
 USE_GL=		gl
 USE_SDL=	sdl2
@@ -37,7 +36,7 @@ CXXFLAGS+=	-I${LOCALBASE}/include/pffft
 CXXFLAGS_powerpc64le=	-DNO_WARN_X86_INTRINSICS
 LDFLAGS+=	-lpffft -lexecinfo
 
-MAKE_ENV=	LD_PRELOAD=/usr/lib/libpthread.so # workaround for https://github.com/DISTRHO/Cardinal/issues/128#issuecomment-1030817359
+#MAKE_ENV=	LD_PRELOAD=/usr/lib/libpthread.so # workaround for https://github.com/DISTRHO/Cardinal/issues/128#issuecomment-1030817359
 MAKE_ARGS=	SYSDEPS=true
 
 BINARY_ALIAS=	gcc-ar=ar \
@@ -59,6 +58,7 @@ LTO_BROKEN=		Fails to build with LTO because it is gcc-centered
 
 .include <bsd.port.options.mk>
 
+# workaround for ld: error: undefined symbol: roundevenf
 .if ${OPSYS} == FreeBSD && ( ${OSVERSION} >= 1400091 || ( ${OSVERSION} >= 1302505 && ${OSVERSION} < 1400000 ))
 USES+=	llvm:max=15
 .endif

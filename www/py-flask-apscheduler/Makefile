@@ -1,5 +1,6 @@
 PORTNAME=	flask-apscheduler
 PORTVERSION=	1.13.1
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	PYPI \
 		https://github.com/viniciuschiele/flask-apscheduler/releases/download/${PORTVERSION}/

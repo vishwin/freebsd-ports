@@ -1,6 +1,6 @@
 PORTNAME=	datadog-integrations
 DISTVERSION=	7.24.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 
 MAINTAINER=	uros@gruber.si

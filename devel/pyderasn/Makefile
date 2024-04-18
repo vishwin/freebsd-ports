@@ -1,5 +1,6 @@
 PORTNAME=	pyderasn
 PORTVERSION=	9.3
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.pyderasn.cypherpunks.ru/download/ \
 		http://www.grosbein.net/freebsd/distfiles/ \
