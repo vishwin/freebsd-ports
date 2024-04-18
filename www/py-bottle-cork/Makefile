@@ -11,7 +11,7 @@ WWW=		https://cork.readthedocs.io
 LICENSE=	LGPL3
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}bottle>0:www/py-bottle@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Beaker>0:www/py-beaker@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}beaker>0:www/py-beaker@${PY_FLAVOR}
 
 USES=		python
 
