@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools-scm>0:devel/py-setuptools-scm@$
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}atomicwrites>0:devel/py-atomicwrites@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}click-log>=0.2.1:devel/py-click-log@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}click>=7.1<9.0:devel/py-click@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}python-dateutil>0:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-dateutil>0:devel/py-python-dateutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}humanize>0:devel/py-humanize@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}icalendar>=4.0.3:devel/py-icalendar@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}parsedatetime>0:devel/py-parsedatetime@${PY_FLAVOR} \

@@ -27,7 +27,7 @@ RUN_DEPENDS=	libcaes>=a:security/libcaes \
 		${PYTHON_PKGNAMEPREFIX}artifacts>=0:security/py-artifacts@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}bencode.py>=0:converters/py-bencode.py@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}certifi>=0:security/py-certifi@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}python-dateutil>=0:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-dateutil>=0:devel/py-python-dateutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}defusedxml>=0:devel/py-defusedxml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dfdatetime>=0:security/py-dfdatetime@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dfvfs>=0:security/py-dfvfs@${PY_FLAVOR} \

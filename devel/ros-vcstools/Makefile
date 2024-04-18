@@ -10,7 +10,7 @@ WWW=		https://wiki.ros.org/vcstools
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>=2:devel/py-dateutil@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>=2:devel/py-python-dateutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}PyYAML>=3:devel/py-yaml@${PY_FLAVOR}
 
 USES=	python

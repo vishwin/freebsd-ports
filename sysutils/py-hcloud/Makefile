@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${PY_SETUPTOOLS} \
 		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR}
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=2.20,<3:www/py-requests@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dateutil>=2.7.5:devel/py-dateutil@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}python-dateutil>=2.7.5:devel/py-python-dateutil@${PY_FLAVOR}
 
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=7.4:devel/py-coverage@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pylint>=3.0.0:devel/pylint@${PY_FLAVOR} \

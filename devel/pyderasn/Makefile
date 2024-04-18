@@ -14,7 +14,7 @@ WWW=		http://www.pyderasn.cypherpunks.ru/
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING.LESSER
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dateutil>=2.7:devel/py-dateutil@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>=2.7:devel/py-python-dateutil@${PY_FLAVOR}
 
 USES=		tar:zst python
 USE_PYTHON=	autoplist concurrent distutils optsuffix

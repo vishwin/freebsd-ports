@@ -20,7 +20,7 @@ OPTIONS_DEFAULT=	MAGIC
 MAGIC_DESC=		Use devel/py-magic
 PYTHON_MAGIC_DESC=	Use devel/py-python-magic
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>0:devel/py-dateutil@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>0:devel/py-python-dateutil@${PY_FLAVOR}
 
 MAGIC_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}magic>0:devel/py-magic@${PY_FLAVOR}
 PYTHON_MAGIC_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-magic>0:devel/py-python-magic@${PY_FLAVOR}

@@ -10,7 +10,7 @@ WWW=		https://pypi.org/project/croniter/
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>=1.5:devel/py-dateutil@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>=1.5:devel/py-python-dateutil@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

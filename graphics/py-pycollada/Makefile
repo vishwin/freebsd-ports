@@ -12,7 +12,7 @@ WWW=		https://pycollada.readthedocs.org/
 LICENSE=	BSD3CLAUSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}python-dateutil>=2.0:devel/py-dateutil@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}python-dateutil>=2.0:devel/py-python-dateutil@${PY_FLAVOR}
 
 NO_ARCH=	yes
 USES=		python

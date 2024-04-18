@@ -15,7 +15,7 @@ USES=		python
 USE_PYTHON=	autoplist distutils
 
 BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}python-dateutil>0:devel/py-dateutil@${PY_FLAVOR}
+BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}python-dateutil>0:devel/py-python-dateutil@${PY_FLAVOR}
 
 NO_ARCH=	yes
 

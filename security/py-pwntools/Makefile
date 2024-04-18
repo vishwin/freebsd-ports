@@ -13,7 +13,7 @@ LICENSE_COMB=	multi
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}capstone>=3.0.5rc2:devel/py-capstone@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}colored-traceback>0:devel/py-colored-traceback@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}python-dateutil>0:devel/py-dateutil@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}python-dateutil>0:devel/py-python-dateutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}intervaltree>=3.0:devel/py-intervaltree@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Mako>=1.0.0:textproc/py-mako@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}packaging>=0:devel/py-packaging@${PY_FLAVOR} \

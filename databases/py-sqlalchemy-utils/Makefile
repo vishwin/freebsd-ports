@@ -41,7 +41,7 @@ INTERVALS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}intervals>=0.7.1:net/py-intervals@
 PASSWORD_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}passlib>=1.6<2.0:security/py-passlib@${PY_FLAVOR}
 PENDULUM_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pendulum>=2.0.5:devel/py-pendulum@${PY_FLAVOR}
 PHONE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}phonenumbers>=5.9.2:devel/py-phonenumbers@${PY_FLAVOR}
-TIMEZONE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>=0:devel/py-dateutil@${PY_FLAVOR}
+TIMEZONE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-dateutil>=0:devel/py-python-dateutil@${PY_FLAVOR}
 URL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}furl>=0.4.1:devel/py-furl@${PY_FLAVOR}
 
 .include <bsd.port.mk>
