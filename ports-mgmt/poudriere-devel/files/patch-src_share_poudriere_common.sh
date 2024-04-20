@@ -1,11 +1,11 @@
 diff --git src/share/poudriere/common.sh src/share/poudriere/common.sh
-index af13d175..deaf73d2 100755
+index 9b4ffe3d..8de0ce52 100755
 --- src/share/poudriere/common.sh
 +++ src/share/poudriere/common.sh
-@@ -2742,21 +2742,57 @@ setup_xdev() {
+@@ -3207,21 +3207,57 @@ setup_xdev() {
  
  	msg_n "Setting up native-xtools environment in jail..."
- 	cat > "${mnt}/etc/make.nxb.conf" <<-EOF
+ 	cat > "${mnt:?}/etc/make.nxb.conf" <<-EOF
 -	CC=/nxb-bin/usr/bin/cc
 -	CPP=/nxb-bin/usr/bin/cpp
 -	CXX=/nxb-bin/usr/bin/c++
@@ -38,7 +38,7 @@ index af13d175..deaf73d2 100755
 +	GREP=/nxb-bin/usr/bin/grep
 +	GUNZIP_CMD=/nxb-bin/usr/bin/gunzip -f
 +	GZCAT=/nxb-bin/usr/bin/gzcat
-+	GZIP_CMD=/nxb-bin/usr/bin/gzip -nf ${GZIP}
++	GZIP=/nxb-bin/usr/bin/gzip -nf ${GZIP}
 +	ID=/nxb-bin/usr/bin/id
 +	LN=/nxb-bin/bin/ln
 +	LS=/nxb-bin/bin/ls
@@ -68,7 +68,7 @@ index af13d175..deaf73d2 100755
  	EOF
  
  	# as(1) has been removed in FreeBSD 13.0.  Just check if it's present
-@@ -2775,7 +2811,7 @@ setup_xdev() {
+@@ -3240,7 +3276,7 @@ setup_xdev() {
  			usr/bin/find usr/bin/gzcat usr/bin/awk \
  			usr/bin/touch usr/bin/sed usr/bin/patch \
  			usr/bin/install usr/bin/gunzip \
