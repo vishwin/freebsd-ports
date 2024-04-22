@@ -71,7 +71,7 @@ PLIST_DIRS+=	%%PACMAN_ROOT%%/var/cache \
 		/compat
 .endif
 
-.include <bsd.port.pre.mk>
+.include <bsd.port.options.mk>
 
 post-patch:
 .if ${ARCH} == "i386"
@@ -88,4 +88,4 @@ post-install-EXAMPLES-on:
 	@${MKDIR} ${STAGEDIR}${EXAMPLESDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/PKGBUILD-example.txt ${STAGEDIR}${EXAMPLESDIR}/
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
