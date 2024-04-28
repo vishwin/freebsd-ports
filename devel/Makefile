@@ -813,6 +813,7 @@
     SUBDIR += git-modes
     SUBDIR += git-p4
     SUBDIR += git-prev-next
+    SUBDIR += git-repo-manager
     SUBDIR += git-review
     SUBDIR += git-subrepo
     SUBDIR += git-svn
@@ -5399,6 +5400,7 @@
     SUBDIR += py-pymsgbox
     SUBDIR += py-pymtbl
     SUBDIR += py-pynest2d
+    SUBDIR += py-pynvml
     SUBDIR += py-pyopencl
     SUBDIR += py-pyparsing
     SUBDIR += py-pyparsing2
