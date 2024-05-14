@@ -10,7 +10,7 @@ WWW=		https://github.com/mattrobenolt/jinja2-cli
 LICENSE=		BSD2CLAUSE
 LICENSE_FILE=		${WRKSRC}/LICENSE
 
-RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}MarkupSafe>0:textproc/py-markupsafe@${PY_FLAVOR} \
+RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}markupsafe>0:textproc/py-markupsafe@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}Jinja2>0:devel/py-Jinja2@${PY_FLAVOR}
 TEST_DEPENDS=		${PYTHON_PKGNAMEPREFIX}tox>0:devel/py-tox@${PY_FLAVOR}
 

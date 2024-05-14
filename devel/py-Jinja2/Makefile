@@ -12,8 +12,8 @@ WWW=		https://jinja.palletsprojects.com/en/3.1.x/
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MarkupSafe>=2.0.0:textproc/py-markupsafe@${PY_FLAVOR}
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}MarkupSafe>=2.0.0:textproc/py-markupsafe@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markupsafe>=2.0.0:textproc/py-markupsafe@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}markupsafe>=2.0.0:textproc/py-markupsafe@${PY_FLAVOR}
 
 NO_ARCH=	yes
 .if empty(PKGNAMESUFFIX)

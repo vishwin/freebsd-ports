@@ -18,7 +18,7 @@ BUILD_DEPENDS=	gpsbabel>=1.7.0:astro/gpsbabel \
 		${PYTHON_PKGNAMEPREFIX}httplib2>=0.20.2:www/py-httplib2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jedi>=0.18.1:devel/py-jedi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=3.1.2:devel/py-Jinja2@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=2.1.1:textproc/py-markupsafe@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}markupsafe>=2.1.1:textproc/py-markupsafe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>=3.4.3:math/py-matplotlib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mock>=4.0.3:devel/py-mock@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}OWSLib>=0.27.2:graphics/py-OWSLib@${PY_FLAVOR} \
@@ -73,7 +73,7 @@ RUN_DEPENDS=	astyle:devel/astyle \
 		${PYTHON_PKGNAMEPREFIX}jedi>=0.18.1:devel/py-jedi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=3.1.2:devel/py-Jinja2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}laspy>=2.5.1:misc/py-laspy@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=2.1.1:textproc/py-markupsafe@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}markupsafe>=2.1.1:textproc/py-markupsafe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}matplotlib>=3.4.3:math/py-matplotlib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mock>=4.0.3:devel/py-mock@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}nbformat>=5.7.0:devel/py-nbformat@${PY_FLAVOR} \

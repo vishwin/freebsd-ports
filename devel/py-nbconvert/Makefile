@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}beautifulsoup>=0:www/py-beautifulsoup@${PY_F
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=3.0:devel/py-Jinja2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jupyter-core>=4.7:devel/py-jupyter-core@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jupyterlab-pygments>=0:textproc/py-jupyterlab-pygments@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=2.0:textproc/py-markupsafe@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}markupsafe>=2.0:textproc/py-markupsafe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mistune>=2.0.3<4:textproc/py-mistune@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}nbclient>=0.5.0:devel/py-nbclient@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}nbformat>=5.7:devel/py-nbformat@${PY_FLAVOR} \

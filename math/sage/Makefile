@@ -58,7 +58,7 @@ BUILD_DEPENDS=	bash:shells/bash		\
 		${PYTHON_PKGNAMEPREFIX}jupyter-core>0:devel/py-jupyter-core@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}jupyter-client>0:devel/py-jupyter-client@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}kiwisolver>0:math/py-kiwisolver@${PY_FLAVOR}\
-		${PYTHON_PKGNAMEPREFIX}MarkupSafe>0:textproc/py-markupsafe@${PY_FLAVOR}\
+		${PYTHON_PKGNAMEPREFIX}markupsafe>0:textproc/py-markupsafe@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}mistune>0:textproc/py-mistune@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}mpmath>0:math/py-mpmath@${PY_FLAVOR}\
@@ -253,7 +253,7 @@ RUN_DEPENDS=	bash:shells/bash		\
 		${PYTHON_PKGNAMEPREFIX}jupyter-core>0:devel/py-jupyter-core@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}jupyter-client>0:devel/py-jupyter-client@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}kiwisolver>0:math/py-kiwisolver@${PY_FLAVOR}\
-		${PYTHON_PKGNAMEPREFIX}MarkupSafe>0:textproc/py-markupsafe@${PY_FLAVOR}\
+		${PYTHON_PKGNAMEPREFIX}markupsafe>0:textproc/py-markupsafe@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}matplotlib>0:math/py-matplotlib@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}mistune0>0:textproc/py-mistune0@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}mpmath>0:math/py-mpmath@${PY_FLAVOR}\

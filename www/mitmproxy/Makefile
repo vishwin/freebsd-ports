@@ -24,7 +24,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}asgiref>=3.2.10<3.5:www/py-asgiref@${PY_FLAV
 		${PYTHON_PKGNAMEPREFIX}hyperframe>=6.0<7:www/py-hyperframe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}kaitaistruct>=0.7<0.10:devel/py-kaitaistruct@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ldap3>=2.8<2.10:net/py-ldap3@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=2.0.0:textproc/py-markupsafe@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}markupsafe>=2.0.0:textproc/py-markupsafe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}msgpack>=1.0.0<1.1.0:devel/py-msgpack@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=20.0<20.1:security/py-openssl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}passlib>=1.6.5<1.8:security/py-passlib@${PY_FLAVOR} \

@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}CommonMark>=0.9.1:textproc/py-CommonMark@${P
 		${PYTHON_PKGNAMEPREFIX}flask>=2:www/py-flask@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}Jinja2>=3:devel/py-Jinja2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}itsdangerous>=2:security/py-itsdangerous@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}MarkupSafe>=2:textproc/py-markupsafe@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}markupsafe>=2:textproc/py-markupsafe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}packaging>=21.3:devel/py-packaging@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyparsing>=3.0.9:devel/py-pyparsing@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pypuppetdb>=0.3.3:databases/py-pypuppetdb@${PY_FLAVOR} \
