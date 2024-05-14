@@ -24,7 +24,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}capstone>=3.0.5rc2:devel/py-capstone@${PY_FL
 		${PYTHON_PKGNAMEPREFIX}pyelftools>=0.2.4:devel/py-pyelftools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pygments>=2.9:textproc/py-pygments@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyserial>=2.7:comms/py-pyserial@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PySocks>0:net/py-pysocks@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pysocks>0:net/py-pysocks@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.0:www/py-requests@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ropgadget>0:security/py-ropgadget@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}rpyc>0:devel/py-RPyC@${PY_FLAVOR} \

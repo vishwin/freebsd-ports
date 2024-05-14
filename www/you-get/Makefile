@@ -24,6 +24,6 @@ NO_ARCH=	yes
 OPTIONS_DEFINE=	SOCKS
 SOCKS_DESC=	SOCKS support
 
-SOCKS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PySocks>=0:net/py-pysocks@${PY_FLAVOR}
+SOCKS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pysocks>=0:net/py-pysocks@${PY_FLAVOR}
 
 .include <bsd.port.mk>

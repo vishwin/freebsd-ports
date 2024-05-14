@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}certifi>0:security/py-certifi@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}isodate>0:devel/py-isodate@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}lxml>=4.6.4:devel/py-lxml@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}pycryptodome>=3.4.3:security/py-pycryptodome@${PY_FLAVOR}\
-		${PYTHON_PKGNAMEPREFIX}PySocks>1.5.7:net/py-pysocks@${PY_FLAVOR}\
+		${PYTHON_PKGNAMEPREFIX}pysocks>1.5.7:net/py-pysocks@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}requests>2.26.0:www/py-requests@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}trio>=0.22.0:net/py-trio@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}trio-websocket>=0.9.0:net/py-trio-websocket@${PY_FLAVOR}\

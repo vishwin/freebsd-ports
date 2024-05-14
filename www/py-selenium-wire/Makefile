@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}blinker>=1.4:devel/py-blinker@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=19.1.0:security/py-openssl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyasn1>=0.3.1:devel/py-pyasn1@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyparsing>=2.4.2:devel/py-pyparsing@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PySocks>=1.7.1:net/py-pysocks@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pysocks>=1.7.1:net/py-pysocks@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}selenium>=3.4.0:www/py-selenium@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wsproto>0.14:net/py-wsproto@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zstandard>=0.14.1:archivers/py-zstandard@${PY_FLAVOR}

@@ -12,7 +12,7 @@ LICENSE=	CC0-1.0
 LICENSE_FILE=	${WRKSRC}/LICENSE.rst
 
 		# pysocks: indirect dependency via requests[socks]
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PySocks>=1.6.8:net/py-pysocks@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pysocks>=1.6.8:net/py-pysocks@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=2.18.4:www/py-requests@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}stem>=1.7.0:security/py-stem@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}psutil>=5.5:sysutils/py-psutil@${PY_FLAVOR} \

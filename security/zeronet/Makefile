@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coincurve>0:security/py-coincurve@${PY_FLAVO
 		${PYTHON_PKGNAMEPREFIX}merkletools>0:security/py-merkletools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyasn1>0:devel/py-pyasn1@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyelliptic>0:security/py-pyelliptic@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PySocks>0:net/py-pysocks@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pysocks>0:net/py-pysocks@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}python-bitcoinlib>0:finance/py-python-bitcoinlib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}rsa>0:security/py-rsa@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}stem>0:security/py-stem@${PY_FLAVOR} \
