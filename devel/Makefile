@@ -328,6 +328,7 @@
     SUBDIR += bsdcflow
     SUBDIR += bsddialog
     SUBDIR += bsdowl
+    SUBDIR += buf
     SUBDIR += bugzilla44
     SUBDIR += bugzilla50
     SUBDIR += build
@@ -348,12 +349,19 @@
     SUBDIR += capslock
     SUBDIR += capstone
     SUBDIR += capstone4
+    SUBDIR += cargo-about
     SUBDIR += cargo-bloat
     SUBDIR += cargo-c
+    SUBDIR += cargo-cache
     SUBDIR += cargo-depgraph
+    SUBDIR += cargo-edit
     SUBDIR += cargo-generate
+    SUBDIR += cargo-hack
     SUBDIR += cargo-leptos
+    SUBDIR += cargo-llvm-cov
     SUBDIR += cargo-mutants
+    SUBDIR += cargo-tarpaulin
+    SUBDIR += cargo-udeps
     SUBDIR += cask
     SUBDIR += catch
     SUBDIR += catch2
@@ -963,6 +971,7 @@
     SUBDIR += hs-threadscope
     SUBDIR += htable
     SUBDIR += hub
+    SUBDIR += hvm
     SUBDIR += hwloc
     SUBDIR += hwloc2
     SUBDIR += hyperscan
@@ -1526,6 +1535,7 @@
     SUBDIR += listserialc
     SUBDIR += liteide
     SUBDIR += llbuild
+    SUBDIR += lldb-mi
     SUBDIR += llnextgen
     SUBDIR += llvm
     SUBDIR += llvm-cheri
@@ -1940,6 +1950,7 @@
     SUBDIR += p5-CPAN-Recent-Uploads
     SUBDIR += p5-CPAN-Reporter
     SUBDIR += p5-CPAN-Reporter-Smoker
+    SUBDIR += p5-CPAN-Requirements-Dynamic
     SUBDIR += p5-CPAN-SQLite
     SUBDIR += p5-CPAN-Site
     SUBDIR += p5-CPAN-Testers-Common-Client
@@ -4311,6 +4322,7 @@
     SUBDIR += py-aspy.yaml
     SUBDIR += py-assertpy
     SUBDIR += py-ast-decompiler
+    SUBDIR += py-ast2json
     SUBDIR += py-asteval
     SUBDIR += py-astor
     SUBDIR += py-astroid
@@ -5429,6 +5441,7 @@
     SUBDIR += py-pyproject-api
     SUBDIR += py-pyproject-flake8
     SUBDIR += py-pyproject-fmt
+    SUBDIR += py-pyproject-fmt-rust
     SUBDIR += py-pyproject-metadata
     SUBDIR += py-pyproject_hooks
     SUBDIR += py-pypugjs
@@ -6544,6 +6557,7 @@
     SUBDIR += rubygem-aws-sdk-rolesanywhere
     SUBDIR += rubygem-aws-sdk-route53
     SUBDIR += rubygem-aws-sdk-route53domains
+    SUBDIR += rubygem-aws-sdk-route53profiles
     SUBDIR += rubygem-aws-sdk-route53recoverycluster
     SUBDIR += rubygem-aws-sdk-route53recoverycontrolconfig
     SUBDIR += rubygem-aws-sdk-route53recoveryreadiness
@@ -6973,6 +6987,7 @@
     SUBDIR += rubygem-ffi-yajl
     SUBDIR += rubygem-fiber-annotation
     SUBDIR += rubygem-fiber-local
+    SUBDIR += rubygem-fiber-storage
     SUBDIR += rubygem-fiddle
     SUBDIR += rubygem-figaro
     SUBDIR += rubygem-file-tail
@@ -7098,6 +7113,7 @@
     SUBDIR += rubygem-grape-route-helpers
     SUBDIR += rubygem-grape-swagger
     SUBDIR += rubygem-grape-swagger-entity
+    SUBDIR += rubygem-grape-swagger20
     SUBDIR += rubygem-grape1
     SUBDIR += rubygem-grape_logging
     SUBDIR += rubygem-graphiql-rails
@@ -7141,9 +7157,11 @@
     SUBDIR += rubygem-instance_storage
     SUBDIR += rubygem-interact
     SUBDIR += rubygem-io-console
+    SUBDIR += rubygem-io-endpoint
     SUBDIR += rubygem-io-event
     SUBDIR += rubygem-io-like
     SUBDIR += rubygem-io-nonblock
+    SUBDIR += rubygem-io-stream
     SUBDIR += rubygem-io-wait
     SUBDIR += rubygem-io-wait01
     SUBDIR += rubygem-iobuffer
@@ -7188,6 +7206,7 @@
     SUBDIR += rubygem-kt-paperclip-rails61
     SUBDIR += rubygem-language_server-protocol
     SUBDIR += rubygem-launchy
+    SUBDIR += rubygem-launchy2
     SUBDIR += rubygem-lazy_priority_queue
     SUBDIR += rubygem-libdatadog
     SUBDIR += rubygem-libddprof
@@ -7503,6 +7522,7 @@
     SUBDIR += rubygem-semver_dialects
     SUBDIR += rubygem-semver_dialects1
     SUBDIR += rubygem-semver_dialects12
+    SUBDIR += rubygem-semver_dialects2
     SUBDIR += rubygem-semverse
     SUBDIR += rubygem-sentry-rails
     SUBDIR += rubygem-sentry-raven
@@ -7883,7 +7903,6 @@
     SUBDIR += tagref
     SUBDIR += tailor
     SUBDIR += talloc
-    SUBDIR += tarpaulin
     SUBDIR += taskctl
     SUBDIR += taskflow
     SUBDIR += tass64
