@@ -565,7 +565,6 @@
     SUBDIR += hostctl
     SUBDIR += hourglass
     SUBDIR += hpacucli
-    SUBDIR += hploscripts
     SUBDIR += hptcli
     SUBDIR += hs-cputype
     SUBDIR += hstr
@@ -1325,6 +1324,7 @@
     SUBDIR += rust-coreutils
     SUBDIR += rust-findutils
     SUBDIR += rw
+    SUBDIR += rw-tui
     SUBDIR += s-tui
     SUBDIR += s6
     SUBDIR += s6-rc

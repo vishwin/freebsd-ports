@@ -361,6 +361,7 @@
     SUBDIR += cargo-leptos
     SUBDIR += cargo-llvm-cov
     SUBDIR += cargo-mutants
+    SUBDIR += cargo-spellcheck
     SUBDIR += cargo-tarpaulin
     SUBDIR += cargo-udeps
     SUBDIR += cask
@@ -873,6 +874,7 @@
     SUBDIR += go-bindata
     SUBDIR += go-bindata-assetfs
     SUBDIR += go-git
+    SUBDIR += go-mode.el
     SUBDIR += go-perf
     SUBDIR += go-protobuf
     SUBDIR += go-tools
@@ -4865,7 +4867,6 @@
     SUBDIR += py-grpcio-status
     SUBDIR += py-grpcio-tools
     SUBDIR += py-gs_api_client
-    SUBDIR += py-gtfslib
     SUBDIR += py-guppy3
     SUBDIR += py-gyp
     SUBDIR += py-hacking
@@ -7055,7 +7056,6 @@
     SUBDIR += rubygem-gettext
     SUBDIR += rubygem-gettext-setup
     SUBDIR += rubygem-gettext_i18n_rails
-    SUBDIR += rubygem-gettext_i18n_rails111
     SUBDIR += rubygem-gettext_i18n_rails_js
     SUBDIR += rubygem-gettext_i18n_rails_js-rails5
     SUBDIR += rubygem-gettext_i18n_rails_js-rails50
@@ -7819,6 +7819,7 @@
     SUBDIR += sdl12-compat
     SUBDIR += sdl20
     SUBDIR += sdl2pp
+    SUBDIR += sdl3
     SUBDIR += sdl_console
     SUBDIR += sdlmm
     SUBDIR += sdlskk
