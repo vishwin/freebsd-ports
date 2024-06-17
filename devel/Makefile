@@ -623,7 +623,6 @@
     SUBDIR += efl
     SUBDIR += egypt
     SUBDIR += eiffelstudio
-    SUBDIR += electron25
     SUBDIR += electron27
     SUBDIR += electron28
     SUBDIR += electron29
@@ -982,6 +981,7 @@
     SUBDIR += hwloc2
     SUBDIR += hyperscan
     SUBDIR += hyprlang
+    SUBDIR += hyprutils
     SUBDIR += hyprwayland-scanner
     SUBDIR += ice
     SUBDIR += ice37
@@ -1226,6 +1226,7 @@
     SUBDIR += libdatovka
     SUBDIR += libdatrie
     SUBDIR += libdbusmenu
+    SUBDIR += libdbusmenu-lxqt
     SUBDIR += libdbusmenu-qt
     SUBDIR += libddoc
     SUBDIR += libddwaf
@@ -1387,6 +1388,7 @@
     SUBDIR += libqb
     SUBDIR += libqcow
     SUBDIR += libqsbr
+    SUBDIR += libqt6xdg
     SUBDIR += libqtxdg
     SUBDIR += libr3
     SUBDIR += librcc
@@ -1608,6 +1610,7 @@
     SUBDIR += luv
     SUBDIR += lwp
     SUBDIR += lxqt-build-tools
+    SUBDIR += lxqt2-build-tools
     SUBDIR += lyra
     SUBDIR += m17n-db
     SUBDIR += m17n-docs
@@ -4274,10 +4277,10 @@
     SUBDIR += py-PyExecJS
     SUBDIR += py-PyGithub
     SUBDIR += py-PyLD
+    SUBDIR += py-PyPubSub
     SUBDIR += py-PyUtilib
     SUBDIR += py-QtPy
     SUBDIR += py-RPyC
-    SUBDIR += py-ZopeUndo
     SUBDIR += py-about-time
     SUBDIR += py-absl
     SUBDIR += py-absl-py
@@ -4688,7 +4691,6 @@
     SUBDIR += py-diskcache
     SUBDIR += py-distlib
     SUBDIR += py-distributed
-    SUBDIR += py-dj42-django-rq
     SUBDIR += py-django-rq
     SUBDIR += py-dm-tree
     SUBDIR += py-docformatter
@@ -4976,6 +4978,7 @@
     SUBDIR += py-johnnydep
     SUBDIR += py-jsbeautifier
     SUBDIR += py-jschema-to-python
+    SUBDIR += py-jschon
     SUBDIR += py-jsmin
     SUBDIR += py-json5
     SUBDIR += py-json_tricks

@@ -378,6 +378,7 @@
     SUBDIR += tuareg-mode.el
     SUBDIR += twelf
     SUBDIR += typstfmt
+    SUBDIR += typstyle
     SUBDIR += ucc
     SUBDIR += urweb
     SUBDIR += v
@@ -391,8 +392,6 @@
     SUBDIR += ypsilon
     SUBDIR += zephir
     SUBDIR += zig
-    SUBDIR += zig-devel
     SUBDIR += zig010
-    SUBDIR += zig011
 
 .include <bsd.port.subdir.mk>
