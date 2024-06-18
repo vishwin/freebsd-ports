@@ -1,5 +1,5 @@
 diff --git src/share/poudriere/common.sh src/share/poudriere/common.sh
-index 9b4ffe3d..8de0ce52 100755
+index a4907362..48b9d609 100755
 --- src/share/poudriere/common.sh
 +++ src/share/poudriere/common.sh
 @@ -3207,21 +3207,57 @@ setup_xdev() {
@@ -38,7 +38,7 @@ index 9b4ffe3d..8de0ce52 100755
 +	GREP=/nxb-bin/usr/bin/grep
 +	GUNZIP_CMD=/nxb-bin/usr/bin/gunzip -f
 +	GZCAT=/nxb-bin/usr/bin/gzcat
-+	GZIP=/nxb-bin/usr/bin/gzip -nf ${GZIP}
++	GZIP_CMD=/nxb-bin/usr/bin/gzip -nf ${GZIP}
 +	ID=/nxb-bin/usr/bin/id
 +	LN=/nxb-bin/bin/ln
 +	LS=/nxb-bin/bin/ls
