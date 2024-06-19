@@ -1,6 +1,7 @@
 PORTNAME=	ruff
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.4.9
+PORTREVISION=	1
 CATEGORIES=	devel python
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -18,7 +19,7 @@ LIB_DEPENDS=	libzstd.so:archivers/zstd
 USES=		cargo
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	charliermarsh
+GH_ACCOUNT=	astral-sh
 
 #CARGO_BUILD_ARGS=	--package=file://${WRKSRC}/crates/ruff_cli
 CARGO_INSTALL_PATH=	crates/ruff_cli
