@@ -1,25 +1,26 @@
-PORTNAME=	scintilla
-DISTVERSION=	5.5.0
-CATEGORIES=	x11-toolkits
+PORTNAME=	lexilla
+DISTVERSION=	5.3.2
+CATEGORIES=	textproc
 MASTER_SITES=	https://www.scintilla.org/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}
 
 MAINTAINER=	cyberbotx@cyberbotx.com
-COMMENT=	Full-featured free source code editing component for GTK
-WWW=		https://www.scintilla.org/
+COMMENT=	Free library of language lexers
+WWW=		https://www.scintilla.org/Lexilla.html
 
 LICENSE=	SCINTILLA
 LICENSE_NAME=	License for Lexilla, Scintilla and SciTE
 LICENSE_FILE=	${WRKSRC}/../License.txt
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
+#LIB_DEPENDS=	libscintilla.so:x11-toolkits/scintilla
+BUILD_DEPENDS=	scintilla>0:x11-toolkits/scintilla
+
 USES=		compiler:c++17-lang cpe gmake gnome iconv pkgconfig tar:tgz
 
-USE_GNOME=	cairo gdkpixbuf2 gtk30
 USE_LDCONFIG=	yes
 
 MAKEFILE=	makefile
-MAKE_ARGS=	GTK3=1
 .if defined(WITH_DEBUG)
 MAKE_ARGS+=	DEBUG=1
 .endif
@@ -28,7 +29,11 @@ MAKE_ENV=	LDFLAGS="${LDFLAGS}"
 CFLAGS+=	-DPIC -fpic
 
 PATCH_WRKSRC=	${WRKDIR}/${PORTNAME}
-WRKSRC=		${WRKDIR}/${PORTNAME}/gtk
+WRKSRC=		${WRKDIR}/${PORTNAME}/src
+
+PLIST_FILES=	include/lexilla/Lexilla.h \
+		include/lexilla/SciLexer.h \
+		lib/liblexilla.so
 
 .include <bsd.port.pre.mk>
 
@@ -37,9 +42,9 @@ MAKE_ARGS+=	CLANG=1
 .endif
 
 do-install:
-	@${MKDIR} ${STAGEDIR}${PREFIX}/include/scintilla
+	@${MKDIR} ${STAGEDIR}${PREFIX}/include/lexilla
 	${INSTALL_DATA} ${WRKSRC}/../include/*.h \
-		${STAGEDIR}${PREFIX}/include/scintilla
+		${STAGEDIR}${PREFIX}/include/lexilla
 	${INSTALL_LIB} ${WRKSRC}/../bin/*.so \
 		${STAGEDIR}${PREFIX}/lib
 
