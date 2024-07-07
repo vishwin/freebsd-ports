@@ -17,7 +17,7 @@ LIB_DEPENDS=	libjson-c.so:devel/json-c \
 		libuuid.so:misc/e2fsprogs-libuuid \
 		libuv.so:devel/libuv
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urllib3>0:net/py-urllib3@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyYAML>0:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR} \
 		bash:shells/bash \
 		curl:ftp/curl
 

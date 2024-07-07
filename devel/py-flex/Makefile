@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>=3.3:devel/py-click@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=1.7.3:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}strict-rfc3339>=0.7:devel/py-strict-rfc3339@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}validate_email>=1.2:mail/py-validate_email@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyYAML>=3.11:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist

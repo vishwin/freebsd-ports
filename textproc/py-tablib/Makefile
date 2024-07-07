@@ -37,6 +37,6 @@ PANDAS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pandas>=0:math/py-pandas@${PY_FLAVOR}
 XLS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}xlrd>=0:textproc/py-xlrd@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}xlwt>=0:textproc/py-xlwt@${PY_FLAVOR}
 XLSX_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}openpyxl>=2.6.0:textproc/py-openpyxl@${PY_FLAVOR}
-YAML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyYAML>=0:devel/py-yaml@${PY_FLAVOR}
+YAML_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${PY_FLAVOR}
 
 .include <bsd.port.mk>

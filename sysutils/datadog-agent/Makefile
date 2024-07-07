@@ -313,7 +313,7 @@ DOGSTATSD_VARS=	use_rc_subr+=datadog-dogstatsd
 
 OPTIONS_SUB=	yes
 
-PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyYAML>0:devel/py-yaml@${PY_FLAVOR}
+PYTHON_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
 
 ALL_TARGET=		./cmd/agent
 APM_ALL_TARGET=		./cmd/trace-agent

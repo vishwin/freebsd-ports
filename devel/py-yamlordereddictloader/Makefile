@@ -11,7 +11,7 @@ WWW=		https://pypi.python.org/pypi/yamlordereddictloader
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyYAML>=5.1:devel/py-yaml@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>=5.1:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

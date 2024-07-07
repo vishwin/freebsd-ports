@@ -11,7 +11,7 @@ WWW=		https://github.com/RussellLuo/easyconfig
 
 LICENSE=	MIT
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyYAML>3.10:devel/py-yaml@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>3.10:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>1.9.0:devel/py-six@${PY_FLAVOR}
 
 USES=		python

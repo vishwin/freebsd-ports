@@ -28,7 +28,7 @@ CHART_DESC=	Chart support
 FODT_DESC=	OpenDocument support
 
 CHART_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pycha>=0.4.0:graphics/py-pycha@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}PyYAML>=0:devel/py-yaml@${PY_FLAVOR}
+			${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${PY_FLAVOR}
 FODT_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-magic>=0:devel/py-python-magic@${PY_FLAVOR}
 
 .include <bsd.port.mk>

@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=5.7.0:sysutils/py-psutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyxdg>0:devel/py-xdg@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyYAML>=3.11:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR} \
 		dunst:sysutils/dunst \
 		font-bh-lucidatypewriter-100dpi>0:x11-fonts/font-bh-lucidatypewriter-100dpi \
 		fvwm2:x11-wm/fvwm2 \
@@ -32,7 +32,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=5.7.0:sysutils/py-psutil@${PY_FLAV
 		xterm:x11/xterm
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=5.7.0:sysutils/py-psutil@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyxdg>0:devel/py-xdg@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyYAML>=3.11:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>=3.11:devel/py-yaml@${PY_FLAVOR} \
 		dunst:sysutils/dunst \
 		font-bh-lucidatypewriter-100dpi>0:x11-fonts/font-bh-lucidatypewriter-100dpi \
 		fvwm2:x11-wm/fvwm2 \

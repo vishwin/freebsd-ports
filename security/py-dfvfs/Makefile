@@ -40,7 +40,7 @@ RUN_DEPENDS=	libbde>=a:devel/libbde \
 		${PYTHON_PKGNAMEPREFIX}pytsk>=0:sysutils/py-pytsk@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}xattr>=0:devel/py-xattr@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyYAML>=3.10:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}yaml>=3.10:devel/py-yaml@${PY_FLAVOR}
 
 USES=		python
 USE_LOCALE=	en_US.UTF-8

@@ -27,7 +27,7 @@ FULL_DESC=	Full dependencies
 FULL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}itsdangerous>=0:security/py-itsdangerous@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}Jinja2>=0:devel/py-Jinja2@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}python-multipart>=0.0.7:www/py-python-multipart@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}PyYAML>=0:devel/py-yaml@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}yaml>=0:devel/py-yaml@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR}
 
 .include <bsd.port.pre.mk>

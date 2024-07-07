@@ -18,7 +18,7 @@ BUILD_DEPENDS=	${PYNUMPY} \
 LIB_DEPENDS=	libessentia.so:audio/essentia
 RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyYAML>0:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
 
 MASTER_SITES=	https://raw.githubusercontent.com/MTG/essentia/d02b6c752046802a711530e2bcd5feafca42247d/
 DISTFILES=	waf

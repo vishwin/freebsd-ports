@@ -9,7 +9,7 @@ WWW=		https://crawl.develz.org/
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/../../LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}PyYAML>0:devel/py-yaml@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}yaml>0:devel/py-yaml@${PY_FLAVOR}
 
 FLAVORS=	console sdl
 FLAVOR?=	${FLAVORS[1]}

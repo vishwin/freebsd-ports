@@ -26,7 +26,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ansi2html>=1.8.0:textproc/py-ansi2html@${PY_
 		${PYTHON_PKGNAMEPREFIX}packaging>0:devel/py-packaging@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pluggy>=0.7.1:devel/py-pluggy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}rich>=9.5.1:textproc/py-rich@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyYAML>=5.1:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}yaml>=5.1:devel/py-yaml@${PY_FLAVOR}
 # ansi2html >= 1.6.0
 # pytest-cov >= 2.10.1
 # pytest-testinfra >= 6.1.0

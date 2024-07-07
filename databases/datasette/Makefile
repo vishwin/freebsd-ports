@@ -25,7 +25,7 @@ PY_DEPENDS=	\
 		${PYTHON_PKGNAMEPREFIX}pint>=0.9:devel/py-pint@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pluggy>=1.0:devel/py-pluggy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}uvicorn>=0.11:www/py-uvicorn@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyYAML>=5.3:devel/py-yaml@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}yaml>=5.3:devel/py-yaml@${PY_FLAVOR}
 BUILD_DEPENDS=	${PY_DEPENDS} \
 		${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-runner>0:devel/py-pytest-runner@${PY_FLAVOR} \

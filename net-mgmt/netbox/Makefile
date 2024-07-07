@@ -58,7 +58,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django42>=4.2.11<4.3:www/py-django42@${PY_FL
 		${PYTHON_PKGNAMEPREFIX}svgwrite>=1.4.3<2:graphics/py-svgwrite@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tablib>=3.6.1<4:textproc/py-tablib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tzdata>=2024.1:devel/py-tzdata@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyYAML>=6.0.1<7:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>=6.0.1<7:devel/py-yaml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}gunicorn>=21.2.0<23:www/py-gunicorn@${PY_FLAVOR}
 
 USES=		cpe pgsql:12+ python

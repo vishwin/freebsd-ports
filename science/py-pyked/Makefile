@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}habanero>=0.6.0:www/py-habanero@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pint>=0.7.2:devel/py-pint@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}uncertainties>=3.0.1:math/py-uncertainties@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyYAML>=3.12:devel/py-yaml@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}yaml>=3.12:devel/py-yaml@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist
