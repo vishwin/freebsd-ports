@@ -705,6 +705,7 @@
     SUBDIR += fpp
     SUBDIR += freebsd-gcc12
     SUBDIR += freebsd-gcc13
+    SUBDIR += freebsd-gcc14
     SUBDIR += freebsd-git-devtools
     SUBDIR += freebsd-sysroot
     SUBDIR += frink
@@ -7168,7 +7169,7 @@
     SUBDIR += rubygem-google-iam-credentials-v1
     SUBDIR += rubygem-google-iam-v1
     SUBDIR += rubygem-google-protobuf
-    SUBDIR += rubygem-google-protobuf4
+    SUBDIR += rubygem-google-protobuf3
     SUBDIR += rubygem-googleapis-common-protos
     SUBDIR += rubygem-googleapis-common-protos-types
     SUBDIR += rubygem-graf
