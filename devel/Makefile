@@ -2520,6 +2520,8 @@
     SUBDIR += p5-Exporter-Tidy
     SUBDIR += p5-Exporter-Tiny
     SUBDIR += p5-ExtUtils-AutoInstall
+    SUBDIR += p5-ExtUtils-Builder
+    SUBDIR += p5-ExtUtils-Builder-Compiler
     SUBDIR += p5-ExtUtils-CBuilder
     SUBDIR += p5-ExtUtils-CChecker
     SUBDIR += p5-ExtUtils-Config
@@ -5206,6 +5208,7 @@
     SUBDIR += py-offtrac
     SUBDIR += py-olefile
     SUBDIR += py-oletools
+    SUBDIR += py-ollama
     SUBDIR += py-omnijson
     SUBDIR += py-omniorb
     SUBDIR += py-onigurumacffi

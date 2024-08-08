@@ -1,3 +1,89 @@
+  <vuln vid="48e6d514-5568-11ef-af48-6cc21735f730">
+    <topic>PostgreSQL -- Prevent unauthorized code execution during pg_dump</topic>
+    <affects>
+      <package>
+	<name>postgresql-client</name>
+	<range><lt>16.4</lt></range>
+	<range><lt>15.8</lt></range>
+	<range><lt>14.13</lt></range>
+	<range><lt>13.16</lt></range>
+	<range><lt>12.20</lt></range>
+      </package>
+      <package>
+	<name>postgresql-server</name>
+	<range><lt>16.4</lt></range>
+	<range><lt>15.8</lt></range>
+	<range><lt>14.13</lt></range>
+	<range><lt>13.16</lt></range>
+	<range><lt>12.20</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>PostgreSQL project reports:</p>
+	<blockquote cite="https://www.postgresql.org/support/security/CVE-2024-7348/">
+	   <p>
+	     An attacker able to create and drop non-temporary objects could
+	     inject SQL code that would be executed by a concurrent pg_dump
+	     session with the privileges of the role running pg_dump
+	     (which is often a superuser). The attack involves replacing a
+	     sequence or similar object with a view or foreign table that will
+	     execute malicious code. To prevent this, introduce a new server
+	     parameter restrict_nonsystem_relation_kind that can disable
+	     expansion of non-builtin views as well as access to foreign
+	     tables, and teach pg_dump to set it when available. Note that the
+	     attack is prevented only if both pg_dump and the server it is
+	     dumping from are new enough to have this fix.
+	   </p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2024-7348</cvename>
+      <url>https://www.postgresql.org/support/security/CVE-2024-7348/</url>
+    </references>
+    <dates>
+      <discovery>2024-08-08</discovery>
+      <entry>2024-08-08</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="db8fa362-0ccb-4aa8-9220-72b7763e9a4a">
+    <topic>jenkins -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>jenkins</name>
+	<range><lt>2.471</lt></range>
+      </package>
+      <package>
+	<name>jenkins-lts</name>
+	<range><lt>2.462.1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Jenkins Security Advisory:</p>
+	<blockquote cite="https://www.jenkins.io/security/advisory/2024-08-07/">
+	  <h1>Description</h1>
+	  <h5>(Critical) SECURITY-3430 / CVE-2024-43044</h5>
+	  <p>Arbitrary file read vulnerability through agent connections can lead to RCE</p>
+	  <h1>Description</h1>
+	  <h5>(Medium) SECURITY-3349 / CVE-2024-43045</h5>
+	  <p>Missing permission check allows accessing other users' "My Views"</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2024-43044</cvename>
+      <cvename>CVE-2024-43045</cvename>
+      <url>https://www.jenkins.io/security/advisory/2024-08-07/</url>
+    </references>
+    <dates>
+      <discovery>2024-08-07</discovery>
+      <entry>2024-08-07</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="729008b9-54bf-11ef-a61b-2cf05da270f3">
     <topic>Gitlab -- Vulnerabilities</topic>
     <affects>
@@ -406,7 +492,7 @@
 	<range><lt>8.1.1</lt></range>
       </package>
       <package>
-	<name>mysql80-server</name>
+	<name>mysql81-server</name>
 	<range><lt>8.1.1</lt></range>
       </package>
       <package>
