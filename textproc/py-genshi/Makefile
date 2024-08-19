@@ -20,7 +20,7 @@ USE_PYTHON=	autoplist pep517
 OPTIONS_DEFINE=	BABEL
 BABEL_DESC=	I18n support through the Babel plugin
 
-BABEL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=0.8:devel/py-babel@${PY_FLAVOR}
+BABEL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}babel>=0.8:devel/py-babel@${PY_FLAVOR}
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PYTHON_SITELIBDIR}/genshi/_speedups${PYTHON_EXT_SUFFIX}.so

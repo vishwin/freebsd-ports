@@ -33,7 +33,7 @@ OPTIONS_DEFINE?=	BABEL EXAMPLES
 OPTIONS_DEFAULT?=	BABEL
 BABEL_DESC=		Enable Babel extension
 
-BABEL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=2.7:devel/py-babel@${PY_FLAVOR}
+BABEL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}babel>=2.7:devel/py-babel@${PY_FLAVOR}
 
 .include <bsd.port.pre.mk>
 

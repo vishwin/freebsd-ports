@@ -13,7 +13,7 @@ LICENSE_NAME=	BSD Modification Variant
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LICENSE_PERMS=	dist-mirror dist-sell pkg-mirror pkg-sell auto-accept
 
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Babel>=1.3:devel/py-babel@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}babel>=1.3:devel/py-babel@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist

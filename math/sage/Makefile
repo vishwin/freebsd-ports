@@ -26,7 +26,7 @@ BUILD_DEPENDS=	bash:shells/bash		\
 		dreadnaut:math/nauty		\
 		${PYTHON_PKGNAMEPREFIX}alabaster>0:textproc/py-alabaster@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}attrs>0:devel/py-attrs@${PY_FLAVOR}\
-		${PYTHON_PKGNAMEPREFIX}Babel>0:devel/py-babel@${PY_FLAVOR}\
+		${PYTHON_PKGNAMEPREFIX}babel>0:devel/py-babel@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}backcall>0:devel/py-backcall@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}bleach>0:www/py-bleach@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}brial>0:math/py-brial@${PY_FLAVOR}\
@@ -221,7 +221,7 @@ RUN_DEPENDS=	bash:shells/bash		\
 		dreadnaut:math/nauty		\
 		${PYTHON_PKGNAMEPREFIX}alabaster>0:textproc/py-alabaster@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}attrs>0:devel/py-attrs@${PY_FLAVOR}\
-		${PYTHON_PKGNAMEPREFIX}Babel>0:devel/py-babel@${PY_FLAVOR}\
+		${PYTHON_PKGNAMEPREFIX}babel>0:devel/py-babel@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}backcall>0:devel/py-backcall@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}bleach>0:www/py-bleach@${PY_FLAVOR}\
 		${PYTHON_PKGNAMEPREFIX}brial>0:math/py-brial@${PY_FLAVOR}\
