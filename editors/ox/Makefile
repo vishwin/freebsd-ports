@@ -1,5 +1,6 @@
 PORTNAME=	ox
 DISTVERSION=	0.4.6
+PORTREVISION=	1
 CATEGORIES=	editors
 PKGNAMESUFFIX=	-text-editor
 
@@ -16,8 +17,5 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	curlpipe
 
 PLIST_FILES=	bin/${PORTNAME}
-
-post-install:
-	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>
