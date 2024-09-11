@@ -5269,6 +5269,7 @@
     SUBDIR += py-ordered-set
     SUBDIR += py-ordereddict
     SUBDIR += py-orderedmultidict
+    SUBDIR += py-orderly-set
     SUBDIR += py-orjson
     SUBDIR += py-os-brick
     SUBDIR += py-os-client-config
@@ -7239,7 +7240,6 @@
     SUBDIR += rubygem-grape-route-helpers
     SUBDIR += rubygem-grape-swagger
     SUBDIR += rubygem-grape-swagger-entity
-    SUBDIR += rubygem-grape-swagger20
     SUBDIR += rubygem-grape1
     SUBDIR += rubygem-grape20
     SUBDIR += rubygem-grape_logging
@@ -7318,7 +7318,6 @@
     SUBDIR += rubygem-json-canonicalization
     SUBDIR += rubygem-json-schema
     SUBDIR += rubygem-json1
-    SUBDIR += rubygem-json26
     SUBDIR += rubygem-json_pure
     SUBDIR += rubygem-json_pure1
     SUBDIR += rubygem-json_schema
@@ -7684,7 +7683,6 @@
     SUBDIR += rubygem-semi_semantic
     SUBDIR += rubygem-semver2
     SUBDIR += rubygem-semver_dialects
-    SUBDIR += rubygem-semver_dialects2
     SUBDIR += rubygem-semverse
     SUBDIR += rubygem-sentry-rails
     SUBDIR += rubygem-sentry-raven
