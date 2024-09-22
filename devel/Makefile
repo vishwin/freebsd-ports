@@ -1541,6 +1541,7 @@
     SUBDIR += linux-rl9-libsigsegv
     SUBDIR += linux-rl9-libsoup
     SUBDIR += linux-rl9-libthai
+    SUBDIR += linux-rl9-libtool-ltdl
     SUBDIR += linux-rl9-libunistring
     SUBDIR += linux-rl9-llvm
     SUBDIR += linux-rl9-nspr
@@ -4842,6 +4843,7 @@
     SUBDIR += py-flask-babel
     SUBDIR += py-flatbuffers
     SUBDIR += py-flatdict
+    SUBDIR += py-flatland
     SUBDIR += py-flatten-dict
     SUBDIR += py-flex
     SUBDIR += py-flexmock
@@ -6086,6 +6088,8 @@
     SUBDIR += py-xstatic-angular-gettext
     SUBDIR += py-xstatic-angular-lrdragndrop
     SUBDIR += py-xstatic-angular-schema-form
+    SUBDIR += py-xstatic-bootstrap
+    SUBDIR += py-xstatic-bootstrap3
     SUBDIR += py-xstatic-bootstrap-datepicker
     SUBDIR += py-xstatic-bootstrap-scss
     SUBDIR += py-xstatic-bootswatch
