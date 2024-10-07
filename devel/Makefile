@@ -4924,6 +4924,7 @@
     SUBDIR += py-graphql-relay
     SUBDIR += py-graphql-relay2
     SUBDIR += py-greenlet
+    SUBDIR += py-grimoirelab-toolkit
     SUBDIR += py-grizzled
     SUBDIR += py-grpc-google-iam-v1
     SUBDIR += py-grpc-stubs
@@ -6121,8 +6122,8 @@
     SUBDIR += py-xstatic-rickshaw
     SUBDIR += py-xstatic-roboto-fontface
     SUBDIR += py-xstatic-smart-table
-    SUBDIR += py-xstatic-svg-edit-moin
     SUBDIR += py-xstatic-spin
+    SUBDIR += py-xstatic-svg-edit-moin
     SUBDIR += py-xstatic-term.js
     SUBDIR += py-xstatic-tv4
     SUBDIR += py-xxhash
