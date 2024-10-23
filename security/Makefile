@@ -39,6 +39,7 @@
     SUBDIR += aws-c-auth
     SUBDIR += aws-c-cal
     SUBDIR += aws-iam-authenticator
+    SUBDIR += aws-lc
     SUBDIR += aws-vault
     SUBDIR += axc
     SUBDIR += barnyard2
@@ -159,7 +160,6 @@
     SUBDIR += fizz
     SUBDIR += flawfinder
     SUBDIR += flawz
-    SUBDIR += fprint_demo
     SUBDIR += fprintd
     SUBDIR += fragroute
     SUBDIR += fragrouter
@@ -750,7 +750,6 @@
     SUBDIR += pam-modules
     SUBDIR += pam-mysql
     SUBDIR += pam-pgsql
-    SUBDIR += pam_fprint
     SUBDIR += pam_google_authenticator
     SUBDIR += pam_helper
     SUBDIR += pam_howdy

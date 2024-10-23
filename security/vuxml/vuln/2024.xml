@@ -1,3 +1,92 @@
+  <vuln vid="dbe8c5bd-8d3f-11ef-8d2e-a04a5edf46d9">
+    <topic>oauth2-proxy -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>oauth2-proxy</name>
+	<range><lt>7.7.0</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The oauth2-proxy project reports:</p>
+	<blockquote cite="https://github.com/oauth2-proxy/oauth2-proxy/releases/tag/v7.7.0">
+	  <p>Vulnerabilities have been addressed:</p>
+	  <ul>
+	    <li>CVE-2024-24786</li>
+	    <li>CVE-2024-24791</li>
+	    <li>CVE-2024-24790</li>
+	    <li>CVE-2024-24784</li>
+	    <li>CVE-2024-28180</li>
+	    <li>CVE-2023-45288</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2024-24786</cvename>
+      <cvename>CVE-2024-24791</cvename>
+      <cvename>CVE-2024-24790</cvename>
+      <cvename>CVE-2024-24784</cvename>
+      <cvename>CVE-2024-28180</cvename>
+      <cvename>CVE-2024-45288</cvename>
+      <url>https://github.com/oauth2-proxy/oauth2-proxy/releases/tag/v7.7.0</url>
+    </references>
+    <dates>
+      <discovery>2024-10-02</discovery>
+      <entry>2024-10-18</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="c6f4177c-8e29-11ef-98e7-84a93843eb75">
+    <topic>OpenSSL -- OOB memory access vulnerability</topic>
+    <affects>
+      <package>
+	<name>openssl</name>
+	<range><lt>3.0.15_1,1</lt></range>
+      </package>
+      <package>
+	<name>openssl31</name>
+	<range><lt>3.1.7_1</lt></range>
+      </package>
+      <package>
+	<name>openssl32</name>
+	<range><lt>3.2.3_1</lt></range>
+      </package>
+      <package>
+	<name>openssl33</name>
+	<range><lt>3.3.2_1</lt></range>
+      </package>
+      <package>
+	<name>openssl-quictls</name>
+	<range><lt>3.0.15_1,1</lt></range>
+      </package>
+      <package>
+	<name>openssl31-quictls</name>
+	<range><lt>3.1.7_1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The OpenSSL project reports:</p>
+	<blockquote cite="https://openssl-library.org/news/secadv/20241016.txt">
+	  <p>Low-level invalid GF(2^m) parameters lead to OOB memory access
+	   (CVE-2024-9143) (Low)</p>
+	  <p> Use of the low-level GF(2^m) elliptic curve APIs with untrusted
+	    explicit values for the field polynomial can lead to out-of-bounds
+	    memory reads or writes.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2024-9143</cvename>
+      <url>https://openssl-library.org/news/secadv/20241016.txt</url>
+    </references>
+    <dates>
+      <discovery>2024-10-16</discovery>
+      <entry>2024-10-19</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="815bf172-ab9e-4c4b-9662-d18b0054330d">
     <topic>electron{31,32} -- multiple vulnerabilities</topic>
     <affects>
