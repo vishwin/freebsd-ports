@@ -5098,7 +5098,9 @@
     SUBDIR += py-jupyter
     SUBDIR += py-jupyter-client
     SUBDIR += py-jupyter-collaboration
+    SUBDIR += py-jupyter-collaboration-ui
     SUBDIR += py-jupyter-core
+    SUBDIR += py-jupyter-docprovider
     SUBDIR += py-jupyter-events
     SUBDIR += py-jupyter-kernel-test
     SUBDIR += py-jupyter-lsp
@@ -5108,6 +5110,7 @@
     SUBDIR += py-jupyter-server-fileid
     SUBDIR += py-jupyter-server-mathjax
     SUBDIR += py-jupyter-server-terminals
+    SUBDIR += py-jupyter-server-ydoc
     SUBDIR += py-jupyter-telemetry
     SUBDIR += py-jupyter-ydoc
     SUBDIR += py-jupyter_console
