@@ -693,7 +693,6 @@
     SUBDIR += firmware-utils
     SUBDIR += fistgen
     SUBDIR += flatbuffers
-    SUBDIR += flatbuffers205
     SUBDIR += flatcc
     SUBDIR += flatzebra
     SUBDIR += flex-sdk
@@ -5654,6 +5653,8 @@
     SUBDIR += py-pytest-qt
     SUBDIR += py-pytest-random-order
     SUBDIR += py-pytest-randomly
+    SUBDIR += py-pytest-recorder
+    SUBDIR += py-pytest-recording
     SUBDIR += py-pytest-regressions
     SUBDIR += py-pytest-regtest
     SUBDIR += py-pytest-relaxed
