@@ -1,6 +1,6 @@
 PORTNAME=	mesa
-DISTVERSION=	24.3-branchpoint-84-gae9d3656860
-DISTVERSIONSUFFIX=	-g7e0e4334820
+DISTVERSION=	24.3-branchpoint-153
+DISTVERSIONSUFFIX=	-gb36a7ce0f19
 CATEGORIES=	graphics
 PKGNAMESUFFIX=	-devel
 
@@ -10,6 +10,8 @@ PATCH_SITES+=	${GL_SITE}/${GL_ACCOUNT}/${GL_PROJECT}/-/commit/
 PATCHFILES+=	2930dcbb3329.patch:-p1 # https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/22246
 PATCHFILES+=	11aaf934112c.patch:-p1 # https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/22941
 PATCHFILES+=	5d48fb19553c.patch:-p1 # https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/31931
+PATCHFILES+=	36fa5115829c.patch:-p1 # https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/32078
+PATCHFILES+=	582a0b01494c.patch:-p1 # https://gitlab.freedesktop.org/mesa/mesa/-/merge_requests/32078
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	Bleeding edge Mesa drivers (OpenCL, OpenGL, Vulkan)
@@ -151,8 +153,6 @@ post-patch:
 		${WRKSRC}/bin/git_sha1_gen.py
 
 post-patch-COINST-on:
-	@${MV} ${WRKSRC}/src/gallium/targets/opencl/MesaOpenCL.def.in \
-		${WRKSRC}/src/gallium/targets/opencl/MesaOpenCL${PKGNAMESUFFIX}.def.in
 	@${MV} ${WRKSRC}/src/util/00-${PORTNAME}-defaults.conf \
 		${WRKSRC}/src/util/00-${PKGBASE}-defaults.conf
 	@${MV} ${WRKSRC}/src/util/00-radv-defaults.conf \
