@@ -1,6 +1,7 @@
 PORTNAME=	alsa-plugins
 PORTVERSION=	1.2.7.1
 DISTVERSIONSUFFIX=	-1.el9
+PORTREVISION=	2
 CATEGORIES=	audio linux
 PKGNAMESUFFIX=	-oss
 
@@ -14,13 +15,18 @@ USES=		linux:rl9
 USE_LDCONFIG=	yes
 USE_LINUX=	alsalib pulseaudio-libs
 USE_LINUX_RPM=	yes
+WANT_LINUX32=	yes
 
 LIB_DISTNAMES=	${PORTNAME}${PKGNAMESUFFIX}-${DISTVERSIONFULL}
 
 CONFLICTS=	linux-c7-${PORTNAME}${PKGNAMESUFFIX}
-DESCR=		${.CURDIR}/../${PORTNAME}/pkg-descr
+DESCR=		${PORTSDIR}/${PKGCATEGORY}/${PORTNAME}/pkg-descr
 DOCSDIR=	${PREFIX}/usr/share/doc/${PORTNAME}${PKGNAMESUFFIX}
 
 OPTIONS_DEFINE=	DOCS
+
+post-patch:
+	@${LN} -sf ../../../usr/share/alsa/alsa.conf.d/50-oss.conf \
+		${WRKSRC}/etc/alsa/conf.d
 
 .include <bsd.port.mk>

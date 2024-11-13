@@ -1,3 +1,256 @@
+  <vuln vid="ce0f52e1-a174-11ef-9a62-002590c1f29c">
+    <topic>FreeBSD -- Certificate revocation list fetch(1) option fails</topic>
+    <affects>
+      <package>
+	<name>FreeBSD</name>
+	<range><ge>14.1</ge><lt>14.1_6</lt></range>
+	<range><ge>13.4</ge><lt>13.4_2</lt></range>
+	<range><ge>13.3</ge><lt>13.3_8</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	<p>The fetch(3) library uses environment variables for passing
+	certain information, including the revocation file pathname.  The
+	environment variable name used by fetch(1) to pass the filename to
+	the library was incorrect, in effect ignoring the option.</p>
+	<h1>Impact:</h1>
+	<p>Fetch would still connect to a host presenting a certificate
+	included in the revocation file passed to the --crl option.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2024-45289</cvename>
+      <freebsdsa>SA-24:19.fetch</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2024-10-29</discovery>
+      <entry>2024-11-13</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="8caa5d60-a174-11ef-9a62-002590c1f29c">
+    <topic>FreeBSD -- Unbounded allocation in ctl(4) CAM Target Layer</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>14.1</ge><lt>14.1_6</lt></range>
+	<range><ge>13.4</ge><lt>13.4_2</lt></range>
+	<range><ge>13.3</ge><lt>13.3_8</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	<p>The command ctl_persistent_reserve_out allows the caller to
+	specify an arbitrary size which will be passed to the kernel's
+	memory allocator.</p>
+	<h1>Impact:</h1>
+	<p>A malicious guest could cause a Denial of Service (DoS) on the
+	host.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2024-39281</cvename>
+      <freebsdsa>SA-24:18.ctl</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2024-10-29</discovery>
+      <entry>2024-11-13</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="eb5c615d-a173-11ef-9a62-002590c1f29c">
+    <topic>FreeBSD -- Multiple issues in the bhyve hypervisor</topic>
+    <affects>
+      <package>
+	<name>FreeBSD</name>
+	<range><ge>14.1</ge><lt>14.1_6</lt></range>
+	<range><ge>13.4</ge><lt>13.4_2</lt></range>
+	<range><ge>13.3</ge><lt>13.3_8</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	<p>Several vulnerabilities were found in the bhyve hypervisor's
+	device models.</p>
+	<p>The NVMe driver function nvme_opc_get_log_page is vulnerable to a
+	buffer over- read from a guest-controlled value.  (CVE-2024-51562)</p>
+	<p>The virtio_vq_recordon function is subject to a time-of-check to
+	time-of-use (TOCTOU) race condition.  (CVE-2024-51563)</p>
+	<p>A guest can trigger an infinite loop in the hda audio driver.
+	(CVE-2024-51564)</p>
+	<p>The hda driver is vulnerable to a buffer over-read from a
+	guest-controlled value.  (CVE-2024-51565)</p>
+	<p>The NVMe driver queue processing is vulernable to guest-induced
+	infinite loops.  (CVE-2024-51566)</p>
+	<h1>Impact:</h1>
+	<p>Malicious guest virtual machines may be able to perform a denial
+	of service (DoS) of the bhyve host, and may read memory within the
+	bhyve process that they should not be able to access.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2024-51562</cvename>
+      <cvename>CVE-2024-51563</cvename>
+      <cvename>CVE-2024-51564</cvename>
+      <cvename>CVE-2024-51565</cvename>
+      <cvename>CVE-2024-51566</cvename>
+      <freebsdsa>SA-24:17.bhyve</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2024-10-29</discovery>
+      <entry>2024-11-13</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="ab4e6f65-a142-11ef-84e9-901b0e9408dc">
+    <topic>element-web -- several vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>element-web</name>
+	<range><lt>1.11.85</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Element team reports:</p>
+	<blockquote cite="https://github.com/element-hq/element-web/security/advisories/GHSA-5486-384g-mcx2">
+	  <p>Versions of Element Web and Desktop earlier than 1.11.85 do
+	  not check if thumbnails for attachments, stickers and images
+	  are coherent. It is possible to add thumbnails to events
+	  trigger a file download once clicked.</p>
+	</blockquote>
+	<blockquote cite="https://github.com/element-hq/element-web/security/advisories/GHSA-w36j-v56h-q9pc">
+	  <p>A malicious homeserver can send invalid messages over
+	  federation which can prevent Element Web and Desktop from
+	  rendering single messages or the entire room containing
+	  them.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2024-51749</cvename>
+      <cvename>CVE-2024-51750</cvename>
+      <url>https://github.com/element-hq/element-web/security/advisories/GHSA-5486-384g-mcx2</url>
+      <url>https://github.com/element-hq/element-web/security/advisories/GHSA-w36j-v56h-q9pc</url>
+    </references>
+    <dates>
+      <discovery>2024-11-12</discovery>
+      <entry>2024-11-12</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="574f7bc9-a141-11ef-84e9-901b0e9408dc">
+    <topic>Matrix clients -- mxc uri validation in js sdk</topic>
+    <affects>
+      <package>
+	<name>cinny</name>
+	<range><lt>4.2.3</lt></range>
+      </package>
+      <package>
+	<name>element-web</name>
+	<range><lt>1.11.85</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>matrix-js-sdk upstream reports:</p>
+	<blockquote cite="https://github.com/matrix-org/matrix-js-sdk/security/advisories/GHSA-xvg8-m4x3-w6xr">
+	  <p>matrix-js-sdk before 34.11.0 is vulnerable to client-side
+	  path traversal via crafted MXC URIs. A malicious room member
+	  can trigger clients based on the matrix-js-sdk to issue
+	  arbitrary authenticated GET requests to the client's
+	  homeserver.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2024-50336</cvename>
+      <url>https://github.com/matrix-org/matrix-js-sdk/security/advisories/GHSA-xvg8-m4x3-w6xr</url>
+    </references>
+    <dates>
+      <discovery>2024-11-12</discovery>
+      <entry>2024-11-12</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="0a82bc4d-a129-11ef-8351-589cfc0f81b0">
+    <topic>icinga2 -- TLS Certificate Validation Bypass</topic>
+    <affects>
+      <package>
+	<name>icinga2</name>
+	<range><lt>2.14.3</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Icinga project reports:</p>
+	<blockquote cite="https://github.com/Icinga/icinga2/commit/0419a2c36de408e9a703aec0962061ec9a285d3c">
+	  <p>Icinga is a monitoring system which checks the availability of
+	network resources, notifies users of outages, and generates performance
+	data for reporting.  The TLS certificate validation in all Icinga
+	2 versions starting from 2.4.0 was flawed, allowing an attacker to
+	impersonate both trusted cluster nodes as well as any API users
+	that use TLS client certificates for authentication (ApiUser objects
+	with the client_cn attribute set).  This vulnerability has been
+	fixed in v2.14.3, v2.13.10, v2.12.11, and v2.11.12.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2024-49369</cvename>
+      <url>https://icinga.com/blog/2024/11/12/critical-icinga-2-security-releases-2-14-3/</url>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2024-49369</url>
+    </references>
+    <dates>
+      <discovery>2024-11-12</discovery>
+      <entry>2024-11-12</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="33236f80-a11d-11ef-a964-1c697a616631">
+    <topic>Intel CPUs -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>cpu-microcode-intel</name>
+	<range><lt>20241112</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Intel reports:</p>
+	<blockquote cite="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01101.html">
+	 <p>
+	  A potential security vulnerability in some 4th and 5th Generation
+	  Intel Xeon Processors may allow denial of service. Intel released
+	  microcode updates to mitigate this potential vulnerability.
+	 </p>
+	</blockquote>
+	<blockquote cite="https://www.intel.com/content/www/us/en/security-center/advisory/intel-sa-01079.html">
+	 <p>
+	  Potential security vulnerabilities in some Intel Xeon processors using
+	  Intel Software Guard Extensions (Intel SGX) may allow escalation of
+	  privilege.  Intel released firmware updates to mitigate these
+	  potential vulnerabilities.
+	 </p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2024-21853</cvename>
+      <cvename>CVE-2024-23918</cvename>
+      <cvename>CVE-2024-21820</cvename>
+      <url>https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/tag/microcode-20241112</url>
+    </references>
+    <dates>
+      <discovery>2024-09-10</discovery>
+      <entry>2024-09-10</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="305ceb2c-9df8-11ef-a660-d85ed309193e">
     <topic>x11vnc -- access to shared memory segments</topic>
     <affects>
@@ -2076,7 +2329,7 @@
     <affects>
       <package>
 	<name>cpu-microcode-intel</name>
-	<range><lt>20240910</lt></range>
+	<range><lt>20241112</lt></range>
       </package>
     </affects>
     <description>
@@ -2107,6 +2360,7 @@
     <dates>
       <discovery>2024-09-10</discovery>
       <entry>2024-09-10</entry>
+      <modified>2024-11-12</modified>
     </dates>
   </vuln>
 
