@@ -32,6 +32,7 @@
     SUBDIR += gitfs
     SUBDIR += gphotofs
     SUBDIR += gvfs
+    SUBDIR += hammer2
     SUBDIR += hfsexplorer
     SUBDIR += hfsfuse
     SUBDIR += hfsutils
@@ -77,6 +78,7 @@
     SUBDIR += ntfs
     SUBDIR += ntfs-compression
     SUBDIR += ntfs2btrfs
+    SUBDIR += ods2
     SUBDIR += openzfs
     SUBDIR += openzfs-kmod
     SUBDIR += p5-Filesys-Statvfs
@@ -139,6 +141,7 @@
     SUBDIR += zisofs-tools
     SUBDIR += zrepl
     SUBDIR += zrepl-dsh2dsh
+    SUBDIR += ztop
     SUBDIR += zxfer
 
 .include <bsd.port.subdir.mk>

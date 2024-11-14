@@ -282,7 +282,6 @@
     SUBDIR += aws-sdk-php
     SUBDIR += axmldec
     SUBDIR += ayatana-ido
-    SUBDIR += b2
     SUBDIR += babelflow
     SUBDIR += babeltrace
     SUBDIR += bacnet-stack
@@ -1221,6 +1220,7 @@
     SUBDIR += libcdb
     SUBDIR += libcds
     SUBDIR += libcfu
+    SUBDIR += libchdr
     SUBDIR += libchipcard
     SUBDIR += libcidr
     SUBDIR += libcii
@@ -4524,6 +4524,7 @@
     SUBDIR += py-azure-synapse-artifacts
     SUBDIR += py-azure-synapse-managedprivateendpoints
     SUBDIR += py-azure-synapse-spark
+    SUBDIR += py-b2
     SUBDIR += py-b2sdk
     SUBDIR += py-babel
     SUBDIR += py-babelfish
