@@ -4603,6 +4603,7 @@
     SUBDIR += py-cerberus
     SUBDIR += py-cereslib
     SUBDIR += py-certsrv
+    SUBDIR += py-cf-xarray
     SUBDIR += py-cffi
     SUBDIR += py-cfgv
     SUBDIR += py-cfn-lint
@@ -5929,6 +5930,7 @@
     SUBDIR += py-sysv_ipc
     SUBDIR += py-tables
     SUBDIR += py-tabulate
+    SUBDIR += py-tabulate2
     SUBDIR += py-tabulator
     SUBDIR += py-tailer
     SUBDIR += py-tapi
@@ -6554,6 +6556,7 @@
     SUBDIR += rubygem-aws-sdk-ecr
     SUBDIR += rubygem-aws-sdk-ecrpublic
     SUBDIR += rubygem-aws-sdk-ecs
+    SUBDIR += rubygem-aws-sdk-efs
     SUBDIR += rubygem-aws-sdk-eks
     SUBDIR += rubygem-aws-sdk-eksauth
     SUBDIR += rubygem-aws-sdk-elasticache
