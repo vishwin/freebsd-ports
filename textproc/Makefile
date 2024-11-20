@@ -1647,6 +1647,7 @@
     SUBDIR += py-sphinxcontrib-qthelp
     SUBDIR += py-sphinxcontrib-seqdiag
     SUBDIR += py-sphinxcontrib-serializinghtml
+    SUBDIR += py-sphinxcontrib-spelling
     SUBDIR += py-sphinxcontrib-svg2pdfconverter
     SUBDIR += py-sphinxcontrib-towncrier
     SUBDIR += py-sphinxcontrib-websupport
@@ -2024,6 +2025,7 @@
     SUBDIR += sdom
     SUBDIR += senna
     SUBDIR += sentencepiece
+    SUBDIR += sexp
     SUBDIR += sgmlformat
     SUBDIR += sgmls
     SUBDIR += sgrep
