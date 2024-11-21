@@ -1530,6 +1530,7 @@
     SUBDIR += py-pyexcel-ods3
     SUBDIR += py-pyexcel-xls
     SUBDIR += py-pyexcel-xlsx
+    SUBDIR += py-pyfzf
     SUBDIR += py-pygccxml
     SUBDIR += py-pygments
     SUBDIR += py-pygtail
@@ -1660,6 +1661,7 @@
     SUBDIR += py-tabletext
     SUBDIR += py-tablib
     SUBDIR += py-terminaltables
+    SUBDIR += py-text2digits
     SUBDIR += py-textdistance
     SUBDIR += py-textfsm
     SUBDIR += py-textract
@@ -1699,6 +1701,7 @@
     SUBDIR += py-whoosh
     SUBDIR += py-wordcloud
     SUBDIR += py-wordnet
+    SUBDIR += py-wordninja
     SUBDIR += py-wstools
     SUBDIR += py-wtf-peewee
     SUBDIR += py-wtforms
