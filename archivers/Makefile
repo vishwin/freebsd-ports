@@ -193,6 +193,7 @@
     SUBDIR += py-brotlipy
     SUBDIR += py-bup
     SUBDIR += py-bz2file
+    SUBDIR += py-comicapi
     SUBDIR += py-compressed-rtf
     SUBDIR += py-cramjam
     SUBDIR += py-laszip
@@ -201,7 +202,9 @@
     SUBDIR += py-lzma
     SUBDIR += py-lzstring
     SUBDIR += py-patool
+    SUBDIR += py-pybcj
     SUBDIR += py-pyminizip
+    SUBDIR += py-pyppmd
     SUBDIR += py-python-lhafile
     SUBDIR += py-python-lzo
     SUBDIR += py-python-rpm-packaging
