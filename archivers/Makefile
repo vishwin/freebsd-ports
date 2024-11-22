@@ -196,11 +196,13 @@
     SUBDIR += py-comicapi
     SUBDIR += py-compressed-rtf
     SUBDIR += py-cramjam
+    SUBDIR += py-inflate64
     SUBDIR += py-laszip
     SUBDIR += py-libarchive-c
     SUBDIR += py-lz4
     SUBDIR += py-lzma
     SUBDIR += py-lzstring
+    SUBDIR += py-multivolumefile
     SUBDIR += py-patool
     SUBDIR += py-pybcj
     SUBDIR += py-pyminizip
@@ -210,6 +212,7 @@
     SUBDIR += py-python-rpm-packaging
     SUBDIR += py-python-snappy
     SUBDIR += py-pyunpack
+    SUBDIR += py-pyzstd
     SUBDIR += py-rarfile
     SUBDIR += py-rcssmin
     SUBDIR += py-rjsmin
