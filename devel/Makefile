@@ -5822,6 +5822,7 @@
     SUBDIR += py-rply
     SUBDIR += py-rq
     SUBDIR += py-rq-scheduler
+    SUBDIR += py-rq1
     SUBDIR += py-rstr
     SUBDIR += py-rtree
     SUBDIR += py-rtslib-fb
@@ -8197,6 +8198,7 @@
     SUBDIR += termbox
     SUBDIR += termcolor
     SUBDIR += terminality
+    SUBDIR += terraform-ls
     SUBDIR += test-drive
     SUBDIR += tevent
     SUBDIR += tex-kpathsea
