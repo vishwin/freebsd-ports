@@ -436,8 +436,6 @@
     SUBDIR += clisp-hyperspec
     SUBDIR += clixon
     SUBDIR += clojure-cider
-    SUBDIR += cloudabi
-    SUBDIR += cloudabi-toolchain
     SUBDIR += clthreads
     SUBDIR += cltune
     SUBDIR += clxclient
