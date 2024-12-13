@@ -4383,6 +4383,7 @@
     SUBDIR += py-apipkg
     SUBDIR += py-apispec
     SUBDIR += py-apispec-webframeworks
+    SUBDIR += py-app-model
     SUBDIR += py-appdirs
     SUBDIR += py-applicationinsights
     SUBDIR += py-apptools
@@ -5001,6 +5002,7 @@
     SUBDIR += py-importlib-metadata6
     SUBDIR += py-importlib-metadata7
     SUBDIR += py-importlib-resources
+    SUBDIR += py-in-n-out
     SUBDIR += py-incremental
     SUBDIR += py-infinity
     SUBDIR += py-inflect
@@ -5510,10 +5512,12 @@
     SUBDIR += py-pycognito
     SUBDIR += py-pycompilation
     SUBDIR += py-pycomplete
+    SUBDIR += py-pyconify
     SUBDIR += py-pycparser
     SUBDIR += py-pycrdt
     SUBDIR += py-pycrdt-websocket
     SUBDIR += py-pydantic
+    SUBDIR += py-pydantic-compat
     SUBDIR += py-pydantic-core
     SUBDIR += py-pydantic-extra-types
     SUBDIR += py-pydantic-settings
