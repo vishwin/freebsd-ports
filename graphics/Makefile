@@ -943,6 +943,8 @@
     SUBDIR += py-momepy
     SUBDIR += py-mpl-interactions
     SUBDIR += py-mpl-scatter-density
+    SUBDIR += py-napari-console
+    SUBDIR += py-napari-plugin-engine
     SUBDIR += py-nwdiag
     SUBDIR += py-opencolorio
     SUBDIR += py-openimageio
