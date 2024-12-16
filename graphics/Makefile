@@ -1120,6 +1120,8 @@
     SUBDIR += rubygem-ruby-graphviz
     SUBDIR += rubygem-ruby-vips
     SUBDIR += rubygem-scruffy
+    SUBDIR += rubygem-svg_optimizer
+    SUBDIR += rubygem-svg_sprite
     SUBDIR += rubygem-tanuki_emoji
     SUBDIR += rx
     SUBDIR += s10sh
