@@ -4211,6 +4211,7 @@
     SUBDIR += pecl-json_post
     SUBDIR += pecl-msgpack
     SUBDIR += pecl-mustache
+    SUBDIR += pecl-pcov
     SUBDIR += pecl-protobuf
     SUBDIR += pecl-psr
     SUBDIR += pecl-raphf2
@@ -8292,6 +8293,7 @@
     SUBDIR += umlgraph
     SUBDIR += undead
     SUBDIR += unibilium
+    SUBDIR += unit-otel
     SUBDIR += universal-ctags
     SUBDIR += unordered-dense
     SUBDIR += upnp

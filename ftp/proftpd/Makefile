@@ -1,6 +1,7 @@
 PORTNAME?=	proftpd
 .if !defined(DISTVERSION)
 PORTVERSION?=	${PROFTPD_VERSION}
+PORTREVISION?=	1
 .endif
 CATEGORIES?=	ftp
 MASTER_SITES=	ftp://ftp.proftpd.org/distrib/source/ \
@@ -47,7 +48,7 @@ PORTDOCS=	*
 .endif
 
 MAKE_JOBS_UNSAFE=	yes
-USES=		gmake libtool perl5
+USES+=		gmake libtool perl5
 USE_PERL5=	run
 GNU_CONFIGURE=	yes
 GNU_CONFIGURE_MANPREFIX=	${PREFIX}/share
