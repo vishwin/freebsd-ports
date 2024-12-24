@@ -75,6 +75,7 @@
     SUBDIR += bareos20-webui
     SUBDIR += bareos21-webui
     SUBDIR += bareos22-webui
+    SUBDIR += bareos23-webui
     SUBDIR += beehive
     SUBDIR += bluefish
     SUBDIR += bozohttpd
@@ -2385,7 +2386,6 @@
     SUBDIR += serf
     SUBDIR += servlet-api
     SUBDIR += sfeed
-    SUBDIR += shellinabox
     SUBDIR += shiori
     SUBDIR += silicon
     SUBDIR += simple-web-server
