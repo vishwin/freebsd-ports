@@ -1720,6 +1720,7 @@
     SUBDIR += py-google-cloud-audit-log
     SUBDIR += py-google-cloud-bigquery
     SUBDIR += py-google-cloud-bigtable
+    SUBDIR += py-google-cloud-compute
     SUBDIR += py-google-cloud-core
     SUBDIR += py-google-cloud-datastore
     SUBDIR += py-google-cloud-dlp
@@ -1758,10 +1759,10 @@
     SUBDIR += py-httpretty
     SUBDIR += py-httptools
     SUBDIR += py-httpx
-    SUBDIR += py-httpx_gssapi
     SUBDIR += py-httpx-oauth
     SUBDIR += py-httpx-socks
     SUBDIR += py-httpx-ws
+    SUBDIR += py-httpx_gssapi
     SUBDIR += py-hypercorn
     SUBDIR += py-hyperframe
     SUBDIR += py-hyperlink
