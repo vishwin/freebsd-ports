@@ -1945,6 +1945,7 @@
     SUBDIR += rubygem-representable
     SUBDIR += rubygem-reverse_markdown
     SUBDIR += rubygem-rexml
+    SUBDIR += rubygem-rexml-gitlab
     SUBDIR += rubygem-rexml32
     SUBDIR += rubygem-rexml33
     SUBDIR += rubygem-ri_cal
@@ -2008,6 +2009,7 @@
     SUBDIR += rubygem-wikicloth
     SUBDIR += rubygem-wikicloth081
     SUBDIR += rubygem-xml-simple
+    SUBDIR += rubygem-xml-simple-gitlab
     SUBDIR += rubygem-ya2yaml
     SUBDIR += rubygem-yard
     SUBDIR += rubygem-yard-chef
