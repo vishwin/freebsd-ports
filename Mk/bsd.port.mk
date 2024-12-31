@@ -357,18 +357,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 ##
 # LDFLAGS_${ARCH} Append the ldflags to LDFLAGS only on the specified architecture
 ##
-# USE_OPENLDAP	- If set, this port uses the OpenLDAP libraries.
-#				  Implies: WANT_OPENLDAP_VER?=24
-# WANT_OPENLDAP_VER
-#				- Legal values are: 24
-#				  If set to an unknown value, the port is marked BROKEN.
-##
-# USE_JAVA		- If set, this port relies on the Java language.
-#				  Implies inclusion of bsd.java.mk.  (Also see
-#				  that file for more information on USE_JAVA_*).
-# USE_OCAML		- If set, this port relies on the OCaml language.
-#				  Implies inclusion of bsd.ocaml.mk.  (Also see
-#				  that file for more information on USE_OCAML*).
 ##
 # USE_GECKO		- If set, this port uses the Gecko/Mozilla product.
 #				  See bsd.gecko.mk for more details.
@@ -384,9 +372,6 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  program).
 #				  Implies NO_LICENSES_INSTALL=yes, NO_MTREE=yes, and causes
 #				  Linux ldconfig to be used when USE_LDCONFIG is defined.
-##
-# USE_TEX			- A list of the TeX dependencies the port has.
-#
 ##
 # USE_RC_SUBR	- If set, the ports startup/shutdown script uses the common
 #				  routines found in /etc/rc.subr.
@@ -1414,14 +1399,6 @@ PKGCOMPATDIR?=		${LOCALBASE}/lib/compat/pkg
 .sinclude "${odir}/Mk/bsd.overlay.mk"
 .    endfor
 
-.    if defined(USE_JAVA)
-.include "${PORTSDIR}/Mk/bsd.java.mk"
-.    endif
-
-.    if defined(USE_OCAML)
-.include "${PORTSDIR}/Mk/bsd.ocaml.mk"
-.    endif
-
 .    if defined(USE_APACHE_BUILD)
 USES+=	apache:build,${USE_APACHE_BUILD:C/2([0-9])/2.\1/g}
 .    elif defined(USE_APACHE_RUN)
@@ -1940,14 +1917,6 @@ PKGPOSTDEINSTALL?=	${PKGDIR}/pkg-post-deinstall
 .    for odir in ${OVERLAYS}
 .sinclude "${odir}/Mk/bsd.overlay.mk"
 .    endfor
-
-.    if defined(USE_JAVA)
-.include "${PORTSDIR}/Mk/bsd.java.mk"
-.    endif
-
-.    if defined(USE_OCAML)
-.include "${PORTSDIR}/Mk/bsd.ocaml.mk"
-.    endif
 
 .    if defined(USE_WX) || defined(USE_WX_NOT)
 .include "${PORTSDIR}/Mk/bsd.wx.mk"
@@ -2585,8 +2554,8 @@ check-categories:
 VALID_CATEGORIES+= accessibility afterstep arabic archivers astro audio \
 	benchmarks biology budgie cad chinese comms converters \
 	databases deskutils devel dns docs \
-	editors education elisp emulators enlightenment finance french ftp \
-	filesystems \
+	editors education elisp emulators enlightenment \
+	filesystems finance french ftp \
 	games geography german gnome gnustep graphics \
 	hamradio haskell hebrew hungarian irc japanese java \
 	kde ${_KDE_CATEGORIES_SUPPORTED} kld korean \

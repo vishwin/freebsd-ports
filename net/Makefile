@@ -1191,6 +1191,7 @@
     SUBDIR += py-url-normalize
     SUBDIR += py-urlextract
     SUBDIR += py-urllib3
+    SUBDIR += py-urllib3-future
     SUBDIR += py-whois
     SUBDIR += py-wmi-query
     SUBDIR += py-wsdd
@@ -1354,7 +1355,6 @@
     SUBDIR += rubygem-google-cloud-spanner-v1
     SUBDIR += rubygem-google-cloud-storage
     SUBDIR += rubygem-google-cloud-storage-gitlab
-    SUBDIR += rubygem-google-cloud-storage145
     SUBDIR += rubygem-google-cloud-storage_transfer
     SUBDIR += rubygem-google-cloud-storage_transfer-gitlab
     SUBDIR += rubygem-google-cloud-storage_transfer-v1
@@ -1398,7 +1398,6 @@
     SUBDIR += rubygem-octokit
     SUBDIR += rubygem-octokit-gitlab
     SUBDIR += rubygem-octokit4
-    SUBDIR += rubygem-octokit8
     SUBDIR += rubygem-octopress-deploy
     SUBDIR += rubygem-omniauth-auth0
     SUBDIR += rubygem-omniauth-auth0-gitlab

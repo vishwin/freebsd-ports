@@ -1769,6 +1769,7 @@
     SUBDIR += py-inlinestyler
     SUBDIR += py-instabot
     SUBDIR += py-internetarchive
+    SUBDIR += py-jh2
     SUBDIR += py-jonpy
     SUBDIR += py-jsonfield
     SUBDIR += py-kiss-headers
@@ -1787,6 +1788,7 @@
     SUBDIR += py-nicegui
     SUBDIR += py-nicegui-highcharts
     SUBDIR += py-nicegui-nogui
+    SUBDIR += py-niquests
     SUBDIR += py-notebook
     SUBDIR += py-onetimepass
     SUBDIR += py-openbrokerapi
@@ -1880,8 +1882,6 @@
     SUBDIR += py-textile
     SUBDIR += py-ticketutil
     SUBDIR += py-tornado
-    SUBDIR += py-tornado4
-    SUBDIR += py-tornado5
     SUBDIR += py-treq
     SUBDIR += py-ttrv
     SUBDIR += py-tuir
@@ -2119,7 +2119,6 @@
     SUBDIR += rubygem-http4
     SUBDIR += rubygem-http_router
     SUBDIR += rubygem-httparty
-    SUBDIR += rubygem-httparty020
     SUBDIR += rubygem-httparty021
     SUBDIR += rubygem-httpclient
     SUBDIR += rubygem-httpi
@@ -2150,6 +2149,7 @@
     SUBDIR += rubygem-json-jwt-gitlab
     SUBDIR += rubygem-jsonb_accessor
     SUBDIR += rubygem-jwt
+    SUBDIR += rubygem-jwt29
     SUBDIR += rubygem-kaminari
     SUBDIR += rubygem-kaminari-actionview
     SUBDIR += rubygem-kaminari-actionview-rails5
