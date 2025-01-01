@@ -686,7 +686,6 @@
     SUBDIR += openlibm
     SUBDIR += openmesh
     SUBDIR += openscop
-    SUBDIR += opensolaris-libm
     SUBDIR += openturns
     SUBDIR += optpp
     SUBDIR += or-tools
@@ -1157,7 +1156,6 @@
     SUBDIR += rubygem-rb-gsl
     SUBDIR += rumur
     SUBDIR += saga
-    SUBDIR += sage
     SUBDIR += savage
     SUBDIR += sc
     SUBDIR += sc-im

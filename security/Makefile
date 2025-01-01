@@ -135,7 +135,6 @@
     SUBDIR += diffcode
     SUBDIR += digestpp
     SUBDIR += dirbuster
-    SUBDIR += dirmngr
     SUBDIR += distcache
     SUBDIR += diswall
     SUBDIR += doas
@@ -182,7 +181,6 @@
     SUBDIR += globalprotect-openconnect
     SUBDIR += gnome-keyring
     SUBDIR += gnome-keyring-sharp
-    SUBDIR += gnome-ssh-askpass
     SUBDIR += gnupg
     SUBDIR += gnupg-pkcs11-scd
     SUBDIR += gnupg1
@@ -220,6 +218,7 @@
     SUBDIR += heimdal-devel
     SUBDIR += helib
     SUBDIR += hexl
+    SUBDIR += hidden-lake
     SUBDIR += highwayhash
     SUBDIR += hitch
     SUBDIR += hockeypuck
@@ -375,7 +374,6 @@
     SUBDIR += lxqt-sudo
     SUBDIR += lynis
     SUBDIR += mac-robber
-    SUBDIR += maia
     SUBDIR += mailzu
     SUBDIR += makepasswd
     SUBDIR += maltrail
@@ -940,7 +938,6 @@
     SUBDIR += py-exscript
     SUBDIR += py-fail2ban
     SUBDIR += py-fido2
-    SUBDIR += py-first-server
     SUBDIR += py-flask-bcrypt
     SUBDIR += py-flask-httpauth
     SUBDIR += py-flask-kerberos
@@ -1328,7 +1325,6 @@
     SUBDIR += sslproxy
     SUBDIR += sslscan
     SUBDIR += sslsplit
-    SUBDIR += sssd
     SUBDIR += sssd2
     SUBDIR += ssss
     SUBDIR += sst

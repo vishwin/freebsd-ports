@@ -3802,3 +3802,55 @@ textproc/rubygem-terser11|textproc/rubygem-terser|2024-12-31|Remove obsoleted po
 www/rubygem-httparty020|www/rubygem-httparty|2024-12-31|Remove obsoleted port. Use www/rubygem-httparty instead
 devel/rubygem-fog-core220|devel/rubygem-fog-core|2024-12-31|Remove obsoleted port. Use devel/rubygem-fog-core instead
 devel/rubygem-childprocess41|devel/rubygem-childprocess|2024-12-31|Remove obsoleted port. Use devel/rubygem-childprocess instead
+multimedia/recmpeg|multimedia/ffmpeg|2025-01-01|Has expired: Depends on deprecated and obsolete library libfame, consider migrating to multimedia/ffmpeg
+net-mgmt/zabbix64-java||2025-01-01|Has expired: Zabbix 6.4 is expected to reach EoL on December 31, 2024
+net-mgmt/zabbix64-agent||2025-01-01|Has expired: Zabbix 6.4 is expected to reach EoL on December 31, 2024
+net-mgmt/zabbix64-proxy||2025-01-01|Has expired: Zabbix 6.4 is expected to reach EoL on December 31, 2024
+net-mgmt/zabbix64-frontend||2025-01-01|Has expired: Zabbix 6.4 is expected to reach EoL on December 31, 2024
+net-mgmt/zabbix64-server||2025-01-01|Has expired: Zabbix 6.4 is expected to reach EoL on December 31, 2024
+www/webtrees20|www/webtrees21|2025-01-01|Has expired: Uses obsolete PHP version; use www/webtrees21 or www/webtrees22 instead
+dns/py-idna_ssl||2025-01-01|Has expired: Upstream repository has been archived on Oct 22, 2020
+science/py-nilearn||2025-01-01|Has expired: Depends on expired devel/py-codecov
+biology/ncbi-vdb||2025-01-01|Has expired: Very outdated, unmaintained and unsupported upstream
+www/grafana9|www/grafana|2025-01-01|Has expired: EOLed upstream
+textproc/cl-meta-sbcl||2025-01-01|Removed, depends on expired and unfetchable textproc/cl-meta
+textproc/cl-meta||2025-01-01|Has expired: Upstream is gone
+databases/postgis32||2025-01-01|Has expired: Please use newer versions
+math/sage||2025-01-01|Has expired: Broken for more than two years
+security/gnome-ssh-askpass||2025-01-01|Has expired: Uses deprecated gtk2 library
+comms/concordance||2025-01-01|Has expired: Logitech Harmony were officially discontinued in 2021, last major product in 2019
+lang/parrot||2025-01-01|Has expired: Development stopped in 2017
+net-im/purple-plugin-pack||2025-01-01|Has expired: Uses deprecated gtk2 libraries
+security/sssd|security/sssd2|2025-01-01|Has expired: Not supported, please use deve/sssd2
+databases/ldb22||2025-01-01|Has expired: Required only by security/sssd, which expires on 2024-12-31
+databases/postgresql12-contrib||2025-01-01|Has expired: PostgreSQL-12 is end-of-life
+databases/postgresql12-client||2025-01-01|Has expired: PostgreSQL-12 is end-of-life
+databases/postgresql12-plperl||2025-01-01|Has expired: PostgreSQL-12 is end-of-life
+databases/postgresql12-pltcl||2025-01-01|Has expired: PostgreSQL-12 is end-of-life
+databases/postgresql12-plpython||2025-01-01|Has expired: PostgreSQL-12 is end-of-life
+databases/postgresql12-docs||2025-01-01|Has expired: PostgreSQL-12 is end-of-life
+databases/postgresql12-pgtcl||2025-01-01|Removed, PostgreSQL-12 is end-of-life
+databases/postgresql12-server||2025-01-01|Has expired: PostgreSQL-12 is end-of-life
+devel/kdesvn||2025-01-01|Has expired: Dwindling amount of users and streamlining of ports for the KDE Team to maintain
+databases/compass||2025-01-01|Has expired: Depends on expired devel/electron29
+security/dirmngr|security/gnupg|2025-01-01|Has expired: Obsolete, now maintained within GNU Privacy Guard (GnuPG). Please use security/gnupg
+math/opensolaris-libm||2025-01-01|Has expired: Obsolete, consider using libm in base or math/openlibm
+textproc/sgrep||2025-01-01|Has expired: Abandonware, primary site is dead and according to website not touched in 20 years. Consider migrating to textproc/p5-ack
+devel/gitflow||2025-01-01|Has expired: Upstream repo archived Jun 19, 2023
+filesystems/sqlfs||2025-01-01|Has expired: Abandoned upstream, superseded by forks
+filesystems/gitfs||2025-01-01|Has expired: Abandonware, last release on 2019
+filesystems/httpfs||2025-01-01|Has expired: Abandonware, last release in 2012 and there are multiple issues unresolved
+multimedia/dumpmpeg|multimedia/ffmpeg|2025-01-01|Has expired: Obsolete utility, consider using multimedia/ffmpeg
+devel/cquery|devel/ccls|2025-01-01|Has expired: Abandonware, upstream repo archived Jul 30, 2020. Consider using migrating to devel/ccls
+security/py-first-server||2025-01-01|Has expired: Upstream project has been archived
+security/maia||2025-01-01|Has expired: Depends on deprecated dependencies and doesn't work with PHP 8
+devel/grv||2025-01-01|Has expired: Unmaintained for years, outdated
+deskutils/basket||2025-01-01|Has expired: Unmaintained for years, fails to build with libgit 1.8.1
+www/Stikked||2025-01-01|Has expired: Broken with PHP 8+ (see PR 281858)
+databases/pgpool-II-41||2025-01-01|Has expired: Upstream EOL reaches on 2024-10-31
+devel/electron29||2025-01-01|Has expired: EOLed upstream, switch to newer version
+devel/electron30||2025-01-01|Has expired: EOLed upstream, switch to newer version
+comms/libconcord||2025-01-01|Has expired: Logitech Harmony were officially discontinued in 2021, last major product in 2019
+japanese/onew||2025-01-01|Has expired: Unfetchabled and listed BROKEN for over year
+lang/twelf||2025-01-01|Has expired: Dead upstream and fails to build
+devel/py-codecov||2025-01-01|Has expired: Deprecated by upstream. On February 1, 2022 this uploader will be completely deprecated and will no longer be able to upload coverage to Codecov

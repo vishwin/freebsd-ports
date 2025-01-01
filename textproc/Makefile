@@ -100,8 +100,6 @@
     SUBDIR += chkascii
     SUBDIR += choose
     SUBDIR += chpp
-    SUBDIR += cl-meta
-    SUBDIR += cl-meta-sbcl
     SUBDIR += cl-ppcre
     SUBDIR += cl-ppcre-ccl
     SUBDIR += cl-ppcre-clisp
@@ -2038,7 +2036,6 @@
     SUBDIR += sexp
     SUBDIR += sgmlformat
     SUBDIR += sgmls
-    SUBDIR += sgrep
     SUBDIR += sgrep2
     SUBDIR += sift
     SUBDIR += sigil

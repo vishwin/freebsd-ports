@@ -513,7 +513,6 @@
     SUBDIR += cproto
     SUBDIR += cpu_features
     SUBDIR += cpu_rec_rs
-    SUBDIR += cquery
     SUBDIR += cram
     SUBDIR += crc32c
     SUBDIR += creduce
@@ -653,8 +652,6 @@
     SUBDIR += efl
     SUBDIR += egypt
     SUBDIR += eiffelstudio
-    SUBDIR += electron29
-    SUBDIR += electron30
     SUBDIR += electron31
     SUBDIR += electron32
     SUBDIR += electron33
@@ -863,7 +860,6 @@
     SUBDIR += git-workspace
     SUBDIR += gitaly
     SUBDIR += gitea-act_runner
-    SUBDIR += gitflow
     SUBDIR += gitg
     SUBDIR += github-backup-utils
     SUBDIR += gitinspector
@@ -949,7 +945,6 @@
     SUBDIR += grcov
     SUBDIR += grex
     SUBDIR += grpc
-    SUBDIR += grv
     SUBDIR += gsettings-desktop-schemas
     SUBDIR += gsoap
     SUBDIR += gstreamer1-plugins-soup
@@ -1105,7 +1100,6 @@
     SUBDIR += kdesdk
     SUBDIR += kdesdk-kio
     SUBDIR += kdesdk-thumbnailers
-    SUBDIR += kdesvn
     SUBDIR += kdev-php
     SUBDIR += kdev-python
     SUBDIR += kdevelop
@@ -4676,7 +4670,6 @@
     SUBDIR += py-cmd2
     SUBDIR += py-cmdtest
     SUBDIR += py-cobble
-    SUBDIR += py-codecov
     SUBDIR += py-codegen
     SUBDIR += py-cog
     SUBDIR += py-collective.monkeypatcher
@@ -5517,6 +5510,7 @@
     SUBDIR += py-py3nvml
     SUBDIR += py-pyTooling
     SUBDIR += py-py_interface
+    SUBDIR += py-pyairtable
     SUBDIR += py-pyaml-env
     SUBDIR += py-pyasn1
     SUBDIR += py-pyasn1-modules

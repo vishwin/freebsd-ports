@@ -18,6 +18,9 @@ WWW=		https://github.com/WerWolv/ImHex
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+DEPRECATED=	Depends on expired security/mbedtls
+EXPIRATION_DATE=2025-03-31
+
 NOT_FOR_ARCHS=	i386 powerpc
 NOT_FOR_ARCHS_REASON=	__uint128_t and __int128_t are not supported
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} \
@@ -137,8 +140,7 @@ post-extract:
 	${CP} -R ${WRKDIR}/imhex-bastion-pats-${GL_TAG_IMHEX_BASTION_PATS}/* ${WRKDIR}/.build/_deps/imhex_patterns_src/patterns/bastion
 	${CP} -R ${WRKDIR}/imhex-ffx-pats-${GL_TAG_IMHEX_FFX_PATS}/* ${WRKDIR}/.build/_deps/imhex_patterns_src/patterns/ffx
 # Before LLVM 18 import into the base system
-.if ((${OSREL:R} == 15 && ${OSVERSION} < 1500018) \
-    || (${OSREL:R} == 13 && ${OSVERSION} < 1303503))
+.if ${OSREL:R} == 15 && ${OSVERSION} < 1500018
 	${CP} -R ${WRKSRC_jthread}/* ${WRKSRC}/lib/third_party/jthread
 .endif
 
