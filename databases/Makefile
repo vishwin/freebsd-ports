@@ -906,6 +906,7 @@
     SUBDIR += rubygem-activemodel70
     SUBDIR += rubygem-activemodel71
     SUBDIR += rubygem-activemodel72
+    SUBDIR += rubygem-activemodel80
     SUBDIR += rubygem-activerecord-explain-analyze
     SUBDIR += rubygem-activerecord-import
     SUBDIR += rubygem-activerecord-jdbc-adapter
@@ -921,6 +922,7 @@
     SUBDIR += rubygem-activerecord70
     SUBDIR += rubygem-activerecord71
     SUBDIR += rubygem-activerecord72
+    SUBDIR += rubygem-activerecord80
     SUBDIR += rubygem-after_commit_queue
     SUBDIR += rubygem-amalgalite
     SUBDIR += rubygem-arel
@@ -978,6 +980,7 @@
     SUBDIR += rubygem-globalid-rails70
     SUBDIR += rubygem-globalid-rails71
     SUBDIR += rubygem-globalid-rails72
+    SUBDIR += rubygem-globalid-rails80
     SUBDIR += rubygem-google-cloud-datastore
     SUBDIR += rubygem-google-cloud-datastore-v1
     SUBDIR += rubygem-google-cloud-firestore
@@ -1029,8 +1032,11 @@
     SUBDIR += rubygem-sdbm
     SUBDIR += rubygem-seed-fu
     SUBDIR += rubygem-solid_cable
+    SUBDIR += rubygem-solid_cable-rails72
     SUBDIR += rubygem-solid_cache
+    SUBDIR += rubygem-solid_cache-rails72
     SUBDIR += rubygem-solid_queue
+    SUBDIR += rubygem-solid_queue-rails72
     SUBDIR += rubygem-sqlite3
     SUBDIR += rubygem-sqlite3-ruby
     SUBDIR += rubygem-sqlite31

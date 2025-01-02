@@ -1780,6 +1780,7 @@
     SUBDIR += rubygem-actiontext70
     SUBDIR += rubygem-actiontext71
     SUBDIR += rubygem-actiontext72
+    SUBDIR += rubygem-actiontext80
     SUBDIR += rubygem-albino
     SUBDIR += rubygem-amatch
     SUBDIR += rubygem-asciidoctor
@@ -1925,6 +1926,7 @@
     SUBDIR += rubygem-rails-dom-testing-rails70
     SUBDIR += rubygem-rails-dom-testing-rails71
     SUBDIR += rubygem-rails-dom-testing-rails72
+    SUBDIR += rubygem-rails-dom-testing-rails80
     SUBDIR += rubygem-rails-dom-testing1
     SUBDIR += rubygem-rails-html-sanitizer
     SUBDIR += rubygem-rak
