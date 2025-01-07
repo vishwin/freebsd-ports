@@ -1,13 +1,17 @@
 PORTNAME=	spidermonkey
-DISTVERSION=	128.6.0
+DISTVERSION=	115.19.0
 CATEGORIES=	lang
 MASTER_SITES=	MOZILLA/firefox/releases/${DISTVERSION}esr/source \
 		MOZILLA/firefox/candidates/${DISTVERSION}esr-candidates/build1/source
 PKGNAMESUFFIX=	${SP_VER}
 DISTNAME=	firefox-${DISTVERSION}esr.source
 
+PATCH_SITES=	https://hg.mozilla.org/mozilla-central/raw-rev/
+PATCHFILES+=	223087fdc29f18678f6174e9807b8780e439acf6:-p1 # https://bugzilla.mozilla.org/1894423
+PATCHFILES+=	68ff4d3f7338248b4d67cf03aade5a73f8d396b2:-p1 # https://bugzilla.mozilla.org/1849070
+
 MAINTAINER=	vishwin@FreeBSD.org
-COMMENT=	Standalone JavaScript based from Mozilla 128-esr
+COMMENT=	Standalone JavaScript based from Mozilla 115-esr
 WWW=		https://spidermonkey.dev/
 
 LICENSE=	MPL20
@@ -22,7 +26,7 @@ LIB_DEPENDS=	libicudata.so:devel/icu \
 USES=		compiler:c++17-lang gmake llvm:noexport localbase pathfix pkgconfig \
 		python:build tar:xz
 USE_LDCONFIG=	yes
-SP_VER=		128
+SP_VER=		115
 HAS_CONFIGURE=	yes
 
 WRKSRC=			${WRKDIR}/firefox-${DISTVERSION}/
