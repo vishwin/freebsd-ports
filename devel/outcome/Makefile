@@ -1,11 +1,13 @@
 PORTNAME=	outcome
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.2.11
+PORTREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	C++14 library for reporting and handling function failures
-WWW=		https://ned14.github.io/outcome/
+WWW=		https://ned14.github.io/outcome/ \
+		https://github.com/ned14/outcome
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/Licence.txt
@@ -24,6 +26,7 @@ CMAKE_TESTING_ON=	BUILD_TESTING OUTCOME_ENABLE_DEPENDENCY_SMOKE_TEST
 CMAKE_ARGS=	-Dquickcpplib_DIR=${LOCALBASE}/lib/cmake/quickcpplib
 
 NO_BUILD=	yes
+NO_ARCH=	yes
 
 PORTSCOUT=	limit:^.*[0-9]\.[0-9].*
 
