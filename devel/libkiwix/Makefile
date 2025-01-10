@@ -1,5 +1,5 @@
 PORTNAME=	libkiwix
-DISTVERSION=	13.1.0
+DISTVERSION=	14.0.0
 CATEGORIES=	devel
 
 MAINTAINER=	olce.freebsd.ports@certner.fr
@@ -26,6 +26,8 @@ GH_ACCOUNT=	kiwix
 GH_TUPLE=	kiwix:${PORTNAME}:${PORTVERSION}:DEFAULT \
 		kainjow:Mustache:v4.1:mustache
 USE_LDCONFIG=	yes
+
+CONFLICTS_INSTALL=	libkiwix13
 
 SHEBANG_FILES=	scripts/format_code.sh
 SHEBANG_REGEX=	./scripts/kiwix.*[^.].
