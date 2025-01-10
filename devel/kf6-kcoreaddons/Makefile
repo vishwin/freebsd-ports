@@ -9,4 +9,6 @@ USES=		cmake kde:6 qt:6 shared-mime-info tar:xz
 USE_KDE=	ecm:build
 USE_QT=		base declarative tools
 
+NO_CCACHE=	yes
+
 .include <bsd.port.mk>
