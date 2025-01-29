@@ -353,6 +353,7 @@
     SUBDIR += lzr
     SUBDIR += man2web
     SUBDIR += manpageblog
+    SUBDIR += marmite
     SUBDIR += mathjax
     SUBDIR += mathjax3
     SUBDIR += mathopd
@@ -427,6 +428,7 @@
     SUBDIR += mod_scgi
     SUBDIR += mod_security
     SUBDIR += mod_setenvifplus
+    SUBDIR += mod_tls
     SUBDIR += mod_umask
     SUBDIR += mod_webauth
     SUBDIR += mod_webkit
@@ -2090,7 +2092,6 @@
     SUBDIR += rubygem-goldfinger
     SUBDIR += rubygem-gollum
     SUBDIR += rubygem-gollum-grit_adapter
-    SUBDIR += rubygem-gollum-grit_adapter10
     SUBDIR += rubygem-gollum-lib
     SUBDIR += rubygem-gollum-rugged_adapter
     SUBDIR += rubygem-gon-rails5

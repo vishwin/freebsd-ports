@@ -716,6 +716,7 @@
     SUBDIR += modman
     SUBDIR += modules
     SUBDIR += mog
+    SUBDIR += mongodb_exporter
     SUBDIR += monit
     SUBDIR += monitord
     SUBDIR += monitorix
@@ -1492,6 +1493,8 @@
     SUBDIR += upower
     SUBDIR += upsdaemon
     SUBDIR += uptimed
+    SUBDIR += usacloud
+    SUBDIR += usacloud-core
     SUBDIR += usb_modeswitch
     SUBDIR += usbhid-dump
     SUBDIR += usbtop

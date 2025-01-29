@@ -4,7 +4,6 @@
     SUBDIR += 4va
     SUBDIR += Coin
     SUBDIR += GraphicsMagick
-    SUBDIR += Hermes
     SUBDIR += ImageMagick6
     SUBDIR += ImageMagick7
     SUBDIR += O2-tools
@@ -715,6 +714,7 @@
     SUBDIR += p5-Geo-GDAL-FFI
     SUBDIR += p5-Geo-GML
     SUBDIR += p5-Geo-Gpx
+    SUBDIR += p5-Geo-LibProj-FFI
     SUBDIR += p5-Geometry-Primitive
     SUBDIR += p5-Gimp
     SUBDIR += p5-Google-Chart
