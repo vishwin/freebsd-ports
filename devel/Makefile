@@ -2574,6 +2574,7 @@
     SUBDIR += p5-ExtUtils-Constant
     SUBDIR += p5-ExtUtils-CppGuess
     SUBDIR += p5-ExtUtils-Depends
+    SUBDIR += p5-ExtUtils-H2PM
     SUBDIR += p5-ExtUtils-HasCompiler
     SUBDIR += p5-ExtUtils-Helpers
     SUBDIR += p5-ExtUtils-Install
@@ -8206,6 +8207,7 @@
     SUBDIR += tagref
     SUBDIR += tailor
     SUBDIR += talloc
+    SUBDIR += talloc242
     SUBDIR += task
     SUBDIR += taskctl
     SUBDIR += taskflow
@@ -8235,6 +8237,7 @@
     SUBDIR += terraform-ls
     SUBDIR += test-drive
     SUBDIR += tevent
+    SUBDIR += tevent016
     SUBDIR += tex-kpathsea
     SUBDIR += tex-libtexlua
     SUBDIR += tex-libtexluajit
