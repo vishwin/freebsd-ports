@@ -4117,3 +4117,21 @@ x11/plasma5-plasma-bigscreen||2025-02-03|No releases for Plasma 6
 x11/plasma5-plasma-desktop|x11/plasma6-plasma-desktop|2025-02-03|Moved to Plasma 6
 x11/plasma5-plasma-integration|x11/plasma6-plasma-integration|2025-02-03|Moved to Plasma 6
 x11/plasma5-plasma-workspace|x11/plasma6-plasma-workspace|2025-02-03|Moved to Plasma 6
+www/falkon@default|www/falkon@kf6|2025-02-03|Flavor was renamed to use a more standard PKGNAMESUFFIX
+www/falkon@qtonly|www/falkon@qt6|2025-02-03|Flavor was renamed to use a more standard PKGNAMESUFFIX
+x11-toolkits/qml-box2d@qt5||2025-02-03|Unflavorize port, qt5 flavor is no longer used in ports tree
+x11-toolkits/qml-box2d@qt6|x11-toolkits/qml-box2d|2025-02-03|Unflavorize port, as it is now qt6 only
+databases/mysql90-client|databases/mysql91-client|2025-02-04|Has expired: MySQL 9.0 is no longer supported by the vendor
+databases/mysql90-server|databases/mysql91-server|2025-02-04|Has expired: MySQL 9.0 is no longer supported by the vendor
+textproc/docproj-legacy|textproc/docproj|2025-02-04|Has expired: Old version of documentation set
+devel/kore||2025-02-04|Has expired: Unmaintained in tree for years and broken for months
+www/searx||2025-02-04|Has expired: Upstream repo archived Sep 7 2023
+databases/xtrabackup81|databases/xtrabackup84|2025-02-04|Has expired: Unsupported upstream, consider migrating to databases/xtrabackup84
+games/allacrost||2025-02-04|Has expired: Fails to build and upstream is gone
+multimedia/mpeg_encode||2025-02-04|Has expired: Upstream is dead and it's buggy, consider using multimedia/ffmpeg
+sysutils/pcns||2025-02-04|Has expired: not supported upstream
+devel/py-pydrive||2025-02-04|Has expired: Upstream repo archived on Jul 22, 2021
+devel/p5-Test-HTML-Tidy||2025-02-04|Has expired: Depends on expired textproc/p5-HTML-Tidy
+www/p5-CGI-Application-Plugin-HtmlTidy||2025-02-04|Has expired: Depends on expired textproc/p5-HTML-Tidy
+textproc/p5-HTML-Tidy||2025-02-04|Has expired: Depends on expired textproc/tidyp
+textproc/tidyp||2025-02-04|Has expired: The repository has been archived by upstream on Apr 14, 2019
