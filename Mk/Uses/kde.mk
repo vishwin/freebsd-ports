@@ -87,7 +87,7 @@ KDE_APPLICATIONS_SHLIB_VER?=	${KDE_APPLICATIONS6_SHLIB_VER}
 KDE_APPLICATIONS_SHLIB_G_VER?=	${KDE_APPLICATIONS6_SHLIB_G_VER}
 
 # Legacy KDE Plasma.
-KDE_PLASMA5_VERSION?=		5.27.11
+KDE_PLASMA5_VERSION?=		5.27.12
 KDE_PLASMA5_BRANCH?=		stable
 
 # Current KDE Plasma desktop.
@@ -116,9 +116,6 @@ KDE_APPLICATIONS6_SHLIB_VER?=	6.3.0
 KDE_APPLICATIONS6_SHLIB_G_VER?=	${KDE_APPLICATIONS6_VERSION}
 KDE_APPLICATIONS6_BRANCH?=	stable
 
-# Extended KDE universe applications.
-CALLIGRA_VERSION?=		2.9.11
-CALLIGRA_BRANCH?=		stable
 # ==============================================================================
 
 # === INSTALLATION PREFIXES AND HEADER LOCATION ================================
@@ -311,7 +308,7 @@ _USE_FRAMEWORKS6_ALL=	ecm colorscheme \
 _USE_FRAMEWORKS_ALL=	${_USE_FRAMEWORKS${_KDE_VERSION}_ALL}
 
 # List of components of the KDE Plasma distribution.
-_USE_PLASMA5_ALL=	libksysguard
+_USE_PLASMA5_ALL=	libksysguard oxygen-sounds
 
 _USE_PLASMA6_ALL=	activities activities-stats activitymanagerd \
 			breeze breeze-gtk decoration discover drkonqi \
