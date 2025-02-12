@@ -242,7 +242,6 @@
     SUBDIR += asmjit
     SUBDIR += asmutils
     SUBDIR += asmx
-    SUBDIR += astah-community
     SUBDIR += astyle
     SUBDIR += asyncplusplus
     SUBDIR += atf
@@ -4778,6 +4777,7 @@
     SUBDIR += py-defusedxml
     SUBDIR += py-demjson
     SUBDIR += py-dep-logic
+    SUBDIR += py-dependency-groups
     SUBDIR += py-deprecat
     SUBDIR += py-deprecated
     SUBDIR += py-deprecation
@@ -6212,7 +6212,6 @@
     SUBDIR += py-yacs
     SUBDIR += py-yamllint
     SUBDIR += py-yamlordereddictloader
-    SUBDIR += py-yandex-money-sdk
     SUBDIR += py-yappi
     SUBDIR += py-yapps2
     SUBDIR += py-yarg

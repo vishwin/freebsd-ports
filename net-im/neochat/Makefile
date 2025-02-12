@@ -1,6 +1,5 @@
 PORTNAME=	neochat
 DISTVERSION=	${KDE_APPLICATIONS_VERSION}
-PORTREVISION=	1
 CATEGORIES=	net-im deskutils kde kde-applications
 
 MAINTAINER=	kde@FreeBSD.org
@@ -29,6 +28,7 @@ USE_KDE=	auth codecs completion config configwidgets coreaddons \
 		kirigami2 kquickcharts notifications purpose qqc2-desktop-style \
 		service solid sonnet statusnotifieritem syntaxhighlighting \
 		widgetsaddons windowsystem \
+		prison:run \
 		ecm:build
 USE_XORG=	x11
 
