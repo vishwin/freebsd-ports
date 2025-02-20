@@ -95,7 +95,7 @@ KDE_PLASMA5_VERSION?=		5.27.12
 KDE_PLASMA5_BRANCH?=		stable
 
 # Current KDE Plasma desktop.
-KDE_PLASMA6_VERSION?=		6.3.0
+KDE_PLASMA6_VERSION?=		6.3.1
 KDE_PLASMA6_BRANCH?=		stable
 
 # Legacy KDE frameworks (Qt5 based).
@@ -103,7 +103,7 @@ KDE_FRAMEWORKS5_VERSION?=	5.116.0
 KDE_FRAMEWORKS5_BRANCH?=	stable
 
 # Current KDE Frameworks (Qt6 based).
-KDE_FRAMEWORKS6_VERSION?=	6.10.0
+KDE_FRAMEWORKS6_VERSION?=	6.11.0
 KDE_FRAMEWORKS6_BRANCH?=	stable
 
 # Current KDE applications. Update _${PORTNAME}_PROJECT_VERSION for the following ports:
@@ -316,7 +316,7 @@ _USE_PLASMA6_ALL=	activities activities-stats activitymanagerd \
 			plasma-sdk plasma-workspace \
 			plasma-workspace-wallpapers plasma5support \
 			polkit-kde-agent-1 powerdevil print-manager \
-			qqc2-breeze-style sddm-kcm systemmonitor \
+			qqc2-breeze-style sddm-kcm spectacle systemmonitor \
 			systemsettings wayland xdg-desktop-portal-kde
 _USE_PLASMA_ALL=	${_USE_PLASMA${_KDE_VERSION}_ALL}
 
@@ -763,6 +763,10 @@ kde-powerdevil_LIB=		libpowerdevilcore.so
 kde-print-manager_PORT=		print/plasma${_KDE_VERSION}-print-manager
 kde-print-manager_PATH=		${KDE_PREFIX}/bin/kde-add-printer
 kde-print-manager_TYPE=		run
+
+kde-spectacle_PORT=		graphics/plasma${_KDE_VERSION}-spectacle
+kde-spectacle_PATH=		${KDE_PREFIX}/bin/spectacle
+kde-spectacle_TYPE=		run
 
 kde-systemmonitor_PORT=		sysutils/plasma${_KDE_VERSION}-plasma-systemmonitor
 kde-systemmonitor_PATH=		${KDE_PREFIX}/bin/plasma-systemmonitor
