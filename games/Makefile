@@ -425,6 +425,7 @@
     SUBDIR += jutils
     SUBDIR += jvgs
     SUBDIR += jzip
+    SUBDIR += kajongg
     SUBDIR += kanagram
     SUBDIR += kanatest
     SUBDIR += kapman
@@ -919,6 +920,7 @@
     SUBDIR += simutrans-pak64
     SUBDIR += sjeng
     SUBDIR += ski
+    SUBDIR += skladnik
     SUBDIR += sl
     SUBDIR += slade
     SUBDIR += slashem-tty
