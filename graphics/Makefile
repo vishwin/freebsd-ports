@@ -410,7 +410,6 @@
     SUBDIR += khronos-texture
     SUBDIR += kimageannotator
     SUBDIR += kimagemapeditor
-    SUBDIR += kipi-plugins
     SUBDIR += klatexformula
     SUBDIR += kludge3d
     SUBDIR += kmscube
@@ -481,7 +480,6 @@
     SUBDIR += libjxr
     SUBDIR += libkdcraw
     SUBDIR += libkexiv2
-    SUBDIR += libkipi
     SUBDIR += libksane
     SUBDIR += libliftoff
     SUBDIR += liblqr-1
@@ -1176,7 +1174,6 @@
     SUBDIR += shared-color-profiles
     SUBDIR += sharpconstruct
     SUBDIR += shotwell
-    SUBDIR += showimage
     SUBDIR += silgraphite
     SUBDIR += simage
     SUBDIR += simple-scan
