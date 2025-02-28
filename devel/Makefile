@@ -6672,8 +6672,6 @@
     SUBDIR += rubygem-aws-sdk-internetmonitor
     SUBDIR += rubygem-aws-sdk-invoicing
     SUBDIR += rubygem-aws-sdk-iot
-    SUBDIR += rubygem-aws-sdk-iot1clickdevicesservice
-    SUBDIR += rubygem-aws-sdk-iot1clickprojects
     SUBDIR += rubygem-aws-sdk-iotanalytics
     SUBDIR += rubygem-aws-sdk-iotdataplane
     SUBDIR += rubygem-aws-sdk-iotdeviceadvisor
@@ -7062,6 +7060,7 @@
     SUBDIR += rubygem-bin_struct
     SUBDIR += rubygem-bin_utils
     SUBDIR += rubygem-bindata
+    SUBDIR += rubygem-bindata24
     SUBDIR += rubygem-bindex
     SUBDIR += rubygem-binding_of_caller
     SUBDIR += rubygem-bit-struct

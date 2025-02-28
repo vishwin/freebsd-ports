@@ -1572,7 +1572,6 @@
     SUBDIR += py-python-xmp-toolkit
     SUBDIR += py-pytidylib
     SUBDIR += py-pytkdocs
-    SUBDIR += py-pytoml
     SUBDIR += py-pytomlpp
     SUBDIR += py-pyx12
     SUBDIR += py-pyxlsb2
@@ -1689,7 +1688,6 @@
     SUBDIR += py-toronado
     SUBDIR += py-towncrier
     SUBDIR += py-towncrier23
-    SUBDIR += py-trans
     SUBDIR += py-translationstring
     SUBDIR += py-transpopy
     SUBDIR += py-ttp
@@ -1805,6 +1803,7 @@
     SUBDIR += rubygem-case_transform61
     SUBDIR += rubygem-character_set
     SUBDIR += rubygem-charlock_holmes
+    SUBDIR += rubygem-chef-gyoku
     SUBDIR += rubygem-chewy
     SUBDIR += rubygem-citrus
     SUBDIR += rubygem-cld3
