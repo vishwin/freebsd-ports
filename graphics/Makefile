@@ -811,7 +811,6 @@
     SUBDIR += pecl-qrencode
     SUBDIR += pecl-vips
     SUBDIR += pencil2d
-    SUBDIR += peps
     SUBDIR += perceptualdiff
     SUBDIR += peruse
     SUBDIR += pfstools
@@ -1282,7 +1281,6 @@
     SUBDIR += xpdf
     SUBDIR += xpdf3
     SUBDIR += xpdf4
-    SUBDIR += xpeps
     SUBDIR += xpx
     SUBDIR += xsane
     SUBDIR += xtexcad

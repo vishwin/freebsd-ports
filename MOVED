@@ -4175,3 +4175,18 @@ www/py-instabot||2025-02-28|Remove expired port
 www/py-jsonfield||2025-02-28|Remove expired port
 devel/rubygem-aws-sdk-iot1clickdevicesservice||2025-02-28|Remove expired port
 devel/rubygem-aws-sdk-iot1clickprojects||2025-02-28|Remove expired port
+databases/postgis31||2025-03-01|Has expired: Please use newer versions
+textproc/zorba||2025-03-01|Has expired: Unmaintained, outdated and fails to build with ICU 76.1
+graphics/xpeps||2025-03-01|Has expired: Depends on expired graphics/peps
+graphics/peps||2025-03-01|Has expired: Ancient port, upstream gone
+www/glewlwyd||2025-03-01|Has expired: Upstream repo archived on Oct 20, 2024
+databases/tarantool2||2025-03-01|Has expired
+java/cos||2025-03-01|Has expired: Upstream seems gone since 2024-08-22
+sysutils/pass-secrets||2025-03-01|Has expired: Listed as BROKEN and unmaintained for months
+sysutils/fluxengine||2025-03-01|Has expired: Broken for several months
+textproc/py-pyjade||2025-03-01|Has expired: Upstream is inactive for almost 8.5 years
+math/parmetis||2025-03-01|Has expired: Fails to fetch, unmaintained for years in tree
+math/pspp||2025-03-01|Has expired: Listed as broken for more than 5 months
+games/shaaft||2025-03-02|Has expired: Unmaintained upstream for ages, breaks with modern toolchains
+devel/asmutils||2025-03-02|Has expired: latest upstream release is 19 years ago, replaced by a-Linux, does not build with GCC 14
+multimedia/libfame||2025-03-02|Has expired: Obsolete library, last release in 2004. Consider migrating to multimedia/ffmpeg

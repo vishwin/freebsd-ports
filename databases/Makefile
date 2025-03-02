@@ -642,7 +642,6 @@
     SUBDIR += plpgsql_check
     SUBDIR += pointcloud
     SUBDIR += postgis-jdbc
-    SUBDIR += postgis31
     SUBDIR += postgis33
     SUBDIR += postgis34
     SUBDIR += postgis35
@@ -1078,7 +1077,6 @@
     SUBDIR += symphytum
     SUBDIR += tarantool
     SUBDIR += tarantool-c
-    SUBDIR += tarantool2
     SUBDIR += tcl-Mysql
     SUBDIR += tcl-lmdb
     SUBDIR += tcl-sqlite3

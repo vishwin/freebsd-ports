@@ -1543,7 +1543,6 @@
     SUBDIR += py-pygments
     SUBDIR += py-pygtail
     SUBDIR += py-pyhamcrest
-    SUBDIR += py-pyjade
     SUBDIR += py-pykwalify
     SUBDIR += py-pylons-sphinx-themes
     SUBDIR += py-pyls-spyder
@@ -2223,7 +2222,6 @@
     SUBDIR += ytt
     SUBDIR += zed
     SUBDIR += zenxml
-    SUBDIR += zorba
     SUBDIR += zq
     SUBDIR += zu-aspell
     SUBDIR += zu-hunspell
