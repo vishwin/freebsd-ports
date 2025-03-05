@@ -4192,3 +4192,15 @@ devel/asmutils||2025-03-02|Has expired: latest upstream release is 19 years ago,
 multimedia/libfame||2025-03-02|Has expired: Obsolete library, last release in 2004. Consider migrating to multimedia/ffmpeg
 graphics/kquickimageeditor@qt5||2025-03-03|Unflavorize; only Qt6 support is needed
 graphics/kquickimageeditor@qt6|graphics/kquickimageeditor|2025-03-03|Unflavorize; only Qt6 support is needed
+devel/d-feet|devel/d-spy|2025-03-04|No longer maintained use d-spy instead
+devel/glademm||2025-03-05|Dead upstream, now consumers in the ports tree
+devel/libvolume_id||2025-03-05|Dead upstream, now consumers in the ports tree
+devel/mm-common||2025-03-05|Dead upstream, now consumers in the ports tree
+security/gnome-keyring-sharp||2025-03-05|Dead upstream, now consumers in the ports tree
+devel/ndesk-dbus-glib||2025-03-05|Dead upstream, now consumers in the ports tree
+devel/ndesk-dbus||2025-03-05|Dead upstream, now consumers in the ports tree
+devel/ndesk-options||2025-03-05|Dead upstream, now consumers in the ports tree
+sysutils/tracker3|devel/tinysparql|2025-03-05|tracker3 has been replaced everywhere by libtinysparql
+net/gnome-online-miners||2025-03-05|Retired upstream
+sysutils/tracker-miners||2025-03-05|Retired upstream
+sysutils/tracker||2025-03-05|Replaced long ago by tracker3 and now tinysparql

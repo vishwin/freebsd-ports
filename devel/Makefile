@@ -573,7 +573,6 @@
     SUBDIR += cxxtest
     SUBDIR += cxxtools
     SUBDIR += cython-lint
-    SUBDIR += d-feet
     SUBDIR += d-scanner
     SUBDIR += d-spy
     SUBDIR += darts
@@ -883,7 +882,6 @@
     SUBDIR += gitui
     SUBDIR += glab
     SUBDIR += glade
-    SUBDIR += glademm
     SUBDIR += glaze
     SUBDIR += glib20
     SUBDIR += glibd
@@ -1470,6 +1468,7 @@
     SUBDIR += libthreadar
     SUBDIR += libtickit
     SUBDIR += libtifiles2
+    SUBDIR += tinysparql
     SUBDIR += libtool
     SUBDIR += libtpl
     SUBDIR += libtsm
@@ -1499,7 +1498,6 @@
     SUBDIR += libvirt-glib
     SUBDIR += libvirt-java
     SUBDIR += libvmdk
-    SUBDIR += libvolume_id
     SUBDIR += libvsapm
     SUBDIR += libvsgpt
     SUBDIR += libvshadow
@@ -1689,7 +1687,6 @@
     SUBDIR += mir-core
     SUBDIR += mk-configure
     SUBDIR += mm
-    SUBDIR += mm-common
     SUBDIR += modd
     SUBDIR += mold
     SUBDIR += mongo-c-driver
@@ -1721,9 +1718,6 @@
     SUBDIR += ncc
     SUBDIR += ncnf
     SUBDIR += ncurses
-    SUBDIR += ndesk-dbus
-    SUBDIR += ndesk-dbus-glib
-    SUBDIR += ndesk-options
     SUBDIR += netscape-java40
     SUBDIR += netsurf-buildsystem
     SUBDIR += newfile
@@ -8289,6 +8283,7 @@
     SUBDIR += tinycbor
     SUBDIR += tinygo
     SUBDIR += tinylaf
+    SUBDIR += tinysparql
     SUBDIR += tkcon
     SUBDIR += tkcvs
     SUBDIR += tkp4
