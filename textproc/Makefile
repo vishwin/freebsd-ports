@@ -16,6 +16,7 @@
     SUBDIR += R-cran-htmlTable
     SUBDIR += R-cran-htmltools
     SUBDIR += R-cran-hunspell
+    SUBDIR += R-cran-litedown
     SUBDIR += R-cran-markdown
     SUBDIR += R-cran-openxlsx
     SUBDIR += R-cran-pystr
@@ -1337,6 +1338,7 @@
     SUBDIR += py-asonic
     SUBDIR += py-autopep8
     SUBDIR += py-awesome-slugify
+    SUBDIR += py-backrefs
     SUBDIR += py-bibtexparser
     SUBDIR += py-bracex
     SUBDIR += py-cchardet
