@@ -9,6 +9,16 @@ USES=		cmake kde:6 qt:6 shared-mime-info tar:xz
 USE_KDE=	ecm:build
 USE_QT=		base declarative tools
 
+# Requires PySide and Shiboken.
+CMAKE_OFF=	BUILD_PYTHON_BINDINGS
+
 NO_CCACHE=	yes
+
+OPTIONS_DEFINE=		INOTIFY
+OPTIONS_DEFAULT=	INOTIFY
+
+INOTIFY_DESC=		Filesystem alteration notifications using inotify
+INOTIFY_LIB_DEPENDS=	libinotify.so:devel/libinotify
+INOTIFY_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_INOTIFY
 
 .include <bsd.port.mk>

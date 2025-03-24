@@ -4825,7 +4825,6 @@
     SUBDIR += py-easyprocess
     SUBDIR += py-editables
     SUBDIR += py-editdistance
-    SUBDIR += py-eggtestinfo
     SUBDIR += py-ejson
     SUBDIR += py-enlighten
     SUBDIR += py-entrypoint2
@@ -5627,7 +5626,6 @@
     SUBDIR += py-pyrepl
     SUBDIR += py-pyrfc3339
     SUBDIR += py-pyright
-    SUBDIR += py-pyro
     SUBDIR += py-pyroma
     SUBDIR += py-pyrsistent
     SUBDIR += py-pyscaffold
@@ -5889,7 +5887,6 @@
     SUBDIR += py-semver
     SUBDIR += py-sentry-sdk
     SUBDIR += py-serializable
-    SUBDIR += py-serpent
     SUBDIR += py-session-info
     SUBDIR += py-setoptconf
     SUBDIR += py-setproctitle
