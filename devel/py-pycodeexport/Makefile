@@ -12,7 +12,7 @@ WWW=		https://github.com/bjodah/pycodeexport
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Mako>=1.0.0:textproc/py-mako@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mako>=1.0.0:textproc/py-mako@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycompilation>=0.4.0:devel/py-pycompilation@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sympy>=0.7.5:math/py-sympy@${PY_FLAVOR}
 

@@ -17,7 +17,7 @@ BROKEN=		https://github.com/flightlessmango/MangoHud/issues/927
 
 BUILD_DEPENDS=	glslangValidator:graphics/glslang \
 		${LOCALBASE}/share/vulkan/registry/vk.xml:graphics/vulkan-headers \
-		${PYTHON_PKGNAMEPREFIX}Mako>=0:textproc/py-mako@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}mako>=0:textproc/py-mako@${PY_FLAVOR}
 LIB_DEPENDS=	libinotify.so:devel/libinotify
 
 USES=		compiler:c++14-lang meson pkgconfig python:build xorg

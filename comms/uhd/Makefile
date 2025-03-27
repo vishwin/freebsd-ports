@@ -22,7 +22,7 @@ LIB_DEPENDS=	${PY_BOOST} \
 		libboost_system.so:devel/boost-libs
 BUILD_DEPENDS=	orcc:devel/orc \
 		cheetah-analyze:devel/py-cheetah3@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Mako>0:textproc/py-mako@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako@${PY_FLAVOR} \
 		rst2html:textproc/py-docutils@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ruamel.yaml>=0:devel/py-ruamel.yaml@${PY_FLAVOR}
 

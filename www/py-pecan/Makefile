@@ -13,7 +13,7 @@ LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}WebOb>=1.2:www/py-webob@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Mako>=0.4.0:textproc/py-mako@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}mako>=0.4.0:textproc/py-mako@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}WebTest>=1.3.1:www/py-webtest@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>=0:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}logutils>=0.3:devel/py-logutils@${PY_FLAVOR}

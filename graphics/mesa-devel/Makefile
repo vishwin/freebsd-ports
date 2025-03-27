@@ -23,7 +23,7 @@ ONLY_FOR_ARCHS_REASON=	Limited scope: no old drivers and no software rendering. 
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyyaml>0:devel/py-pyyaml@${PY_FLAVOR} \
 		libglvnd>=1.3.2:graphics/libglvnd \
-		${PYTHON_PKGNAMEPREFIX}Mako>0:textproc/py-mako@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako@${PY_FLAVOR}
 LIB_DEPENDS=	libdrm.so:graphics/libdrm \
 		libexpat.so:textproc/expat2
 
