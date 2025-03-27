@@ -205,7 +205,6 @@ CMAKE_ARGS+=		-DCMAKE_INSTALL_PREFIX=${PREFIX} \
 			-DQT_SBOM_GENERATE_JSON:BOOL=OFF \
 			-DQT_SBOM_VERIFY:BOOL=OFF \
 			--log-level=TRACE
-NO_CCACHE=		yes
 .  endif
 
 # Build setup for Qt5
