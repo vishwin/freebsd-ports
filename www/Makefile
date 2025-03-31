@@ -101,7 +101,6 @@
     SUBDIR += cgiwrap
     SUBDIR += checkbot
     SUBDIR += chisel
-    SUBDIR += choqok
     SUBDIR += chpasswd
     SUBDIR += chrome-gnome-shell
     SUBDIR += chromium
@@ -1600,7 +1599,6 @@
     SUBDIR += py-django-hashid-field
     SUBDIR += py-django-haystack
     SUBDIR += py-django-hierarkey
-    SUBDIR += py-django-hijack
     SUBDIR += py-django-htmlmin
     SUBDIR += py-django-htmx
     SUBDIR += py-django-i18nfield
@@ -1721,7 +1719,6 @@
     SUBDIR += py-flask-restful
     SUBDIR += py-flask-restx
     SUBDIR += py-flask-script
-    SUBDIR += py-flask-security
     SUBDIR += py-flask-session
     SUBDIR += py-flask-simpleldap
     SUBDIR += py-flask-smorest
@@ -1977,7 +1974,6 @@
     SUBDIR += radicale
     SUBDIR += rearx
     SUBDIR += reddsaver
-    SUBDIR += redmine50
     SUBDIR += redmine51
     SUBDIR += redmine60
     SUBDIR += rejik

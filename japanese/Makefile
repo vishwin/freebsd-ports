@@ -49,10 +49,6 @@
     SUBDIR += edyvalue
     SUBDIR += eijiro-fpw
     SUBDIR += epwutil
-    SUBDIR += esecanna
-    SUBDIR += esecanna-module-vje25
-    SUBDIR += esecanna-module-vje30
-    SUBDIR += esecanna-module-wnn6
     SUBDIR += eterm
     SUBDIR += fcitx-anthy
     SUBDIR += fcitx-mozc
@@ -295,7 +291,6 @@
     SUBDIR += wdic-fpw
     SUBDIR += web1913-fpw
     SUBDIR += webalizer
-    SUBDIR += wnn7egg
     SUBDIR += wordnet-fpw
     SUBDIR += wordpress
     SUBDIR += wwasw-fpw
