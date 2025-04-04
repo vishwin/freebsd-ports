@@ -4578,7 +4578,6 @@
     SUBDIR += py-blessed
     SUBDIR += py-blessings
     SUBDIR += py-blinker
-    SUBDIR += py-blist
     SUBDIR += py-bluelet
     SUBDIR += py-boltons
     SUBDIR += py-boolean.py
@@ -7504,7 +7503,6 @@
     SUBDIR += rubygem-lru_redux
     SUBDIR += rubygem-lumberjack
     SUBDIR += rubygem-main
-    SUBDIR += rubygem-makara61
     SUBDIR += rubygem-manpages
     SUBDIR += rubygem-map
     SUBDIR += rubygem-marcel
