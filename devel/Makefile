@@ -1409,6 +1409,7 @@
     SUBDIR += libplist
     SUBDIR += libpo6
     SUBDIR += libpololu-avr
+    SUBDIR += libprotobuf-mutator
     SUBDIR += libpru
     SUBDIR += libqb
     SUBDIR += libqcow
@@ -5437,6 +5438,7 @@
     SUBDIR += py-pip
     SUBDIR += py-pip-api
     SUBDIR += py-pip-audit
+    SUBDIR += py-pip-check
     SUBDIR += py-pip-licenses
     SUBDIR += py-pip-requirements-parser
     SUBDIR += py-pip-run

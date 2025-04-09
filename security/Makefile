@@ -921,6 +921,7 @@
     SUBDIR += py-cryptography
     SUBDIR += py-cryptography-legacy
     SUBDIR += py-cryptography-vectors
+    SUBDIR += py-cryptojwt
     SUBDIR += py-ctypescrypto
     SUBDIR += py-cybox
     SUBDIR += py-detect-secrets
@@ -1034,6 +1035,7 @@
     SUBDIR += py-python-cas
     SUBDIR += py-python-gnupg
     SUBDIR += py-python-gvm
+    SUBDIR += py-python-jose
     SUBDIR += py-python-nss
     SUBDIR += py-python-openid
     SUBDIR += py-python-pam
