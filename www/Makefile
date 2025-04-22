@@ -146,6 +146,7 @@
     SUBDIR += dolibarr17
     SUBDIR += dolibarr18
     SUBDIR += dolibarr19
+    SUBDIR += dolibarr20
     SUBDIR += domoticz
     SUBDIR += domoticz-devel
     SUBDIR += dooble
@@ -2284,6 +2285,7 @@
     SUBDIR += rubygem-rack-protection3
     SUBDIR += rubygem-rack-proxy
     SUBDIR += rubygem-rack-session
+    SUBDIR += rubygem-rack-session10
     SUBDIR += rubygem-rack-ssl
     SUBDIR += rubygem-rack-test
     SUBDIR += rubygem-rack-timeout
@@ -2291,6 +2293,7 @@
     SUBDIR += rubygem-rack22
     SUBDIR += rubygem-rack_csrf
     SUBDIR += rubygem-rackup
+    SUBDIR += rubygem-rackup10
     SUBDIR += rubygem-rackup21
     SUBDIR += rubygem-rails-settings-cached
     SUBDIR += rubygem-rails-settings-cached-rails5
@@ -2374,6 +2377,7 @@
     SUBDIR += rubygem-sinatra-respond_to
     SUBDIR += rubygem-sinatra1
     SUBDIR += rubygem-sinatra2
+    SUBDIR += rubygem-sinatra3
     SUBDIR += rubygem-sitemap_generator
     SUBDIR += rubygem-smashing
     SUBDIR += rubygem-socksify
@@ -2607,6 +2611,7 @@
     SUBDIR += websocketd
     SUBDIR += webstone
     SUBDIR += webtrees21
+    SUBDIR += webtrees22
     SUBDIR += wget2
     SUBDIR += wgetpaste
     SUBDIR += wiki-tui
