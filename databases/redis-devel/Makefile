@@ -7,7 +7,7 @@ MAINTAINER=	yasu@FreeBSD.org
 COMMENT=	Persistent key-value database with built-in net interface
 WWW=		https://redis.io/
 
-LICENSE=	RSALv2 SSPLv1
+LICENSE=	AGPLv3 RSALv2 SSPLv1
 LICENSE_COMB=	dual
 LICENSE_NAME_RSALv2=	Redis Source Available License v2
 LICENSE_NAME_SSPLv1=	Server Side Public License v1
@@ -27,7 +27,7 @@ MAKE_ENV=	OPTIMIZATION= \
 CFLAGS+=	-Wno-deprecated-declarations
 LDFLAGS+=	-lpthread -lm -lexecinfo
 
-CONFLICTS_INSTALL=	redis redis62 redis72
+CONFLICTS_INSTALL=	redis redis62 redis72 redis74
 
 PORTSCOUT=	ignore:1
 SUB_FILES=	pkg-message
