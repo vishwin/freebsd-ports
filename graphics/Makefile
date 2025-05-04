@@ -43,7 +43,6 @@
     SUBDIR += a2png
     SUBDIR += aalib
     SUBDIR += aaphoto
-    SUBDIR += acidwarp-sdl
     SUBDIR += aeskulap
     SUBDIR += agg
     SUBDIR += airsaned
@@ -1018,6 +1017,7 @@
     SUBDIR += py-svg.path
     SUBDIR += py-svgelements
     SUBDIR += py-svgwrite
+    SUBDIR += py-term-image
     SUBDIR += py-termtosvg
     SUBDIR += py-tifffile
     SUBDIR += py-tkcolorpicker

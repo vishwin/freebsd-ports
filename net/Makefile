@@ -140,7 +140,6 @@
     SUBDIR += dual-dhclient-daemon
     SUBDIR += dumbpipe
     SUBDIR += ecal
-    SUBDIR += echoping
     SUBDIR += empty
     SUBDIR += endlessh
     SUBDIR += enet
@@ -428,7 +427,6 @@
     SUBDIR += libslirp
     SUBDIR += libsockpp
     SUBDIR += libsrtp2
-    SUBDIR += libtnl
     SUBDIR += libtrace
     SUBDIR += libunp
     SUBDIR += libusipp
@@ -575,7 +573,6 @@
     SUBDIR += ooni-mini
     SUBDIR += ooni-probe-cli
     SUBDIR += open-isns
-    SUBDIR += openbgpd
     SUBDIR += openbgpd6
     SUBDIR += openbgpd7
     SUBDIR += openbgpd8
