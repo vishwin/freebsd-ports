@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/ndg/httpsclient/LICENSE
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=0:devel/py-setuptools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyasn1>=0.1.4:devel/py-pyasn1@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=0.13,1:security/py-openssl@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pyopenssl>=0.13,1:security/py-openssl@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist concurrent pep517

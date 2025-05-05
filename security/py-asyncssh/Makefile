@@ -36,6 +36,6 @@ FIDO2_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fido2>=0.9.2:security/py-fido2@${PY_FL
 GSSAPI_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gssapi>=1.2.0:security/py-gssapi@${PY_FLAVOR}
 LIBNACL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}libnacl>=1.4.2:security/py-libnacl@${PY_FLAVOR}
 PKCS11_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}python-pkcs11>=0.7.0:security/py-python-pkcs11@${PY_FLAVOR}
-PYOPENSSL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=23.0.0,1:security/py-openssl@${PY_FLAVOR}
+PYOPENSSL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyopenssl>=23.0.0,1:security/py-openssl@${PY_FLAVOR}
 
 .include <bsd.port.mk>

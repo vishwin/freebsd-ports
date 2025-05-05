@@ -16,7 +16,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE-2.0
 BROKEN_riscv64=		fails to build: /usr/include/c++/v1/__config:1141:6: No thread API
 
 PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>0:devel/py-msgpack@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>0:security/py-openssl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyopenssl>0:security/py-openssl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pbr>0:devel/py-pbr@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${PY_FLAVOR}
 BUILD_DEPENDS=	msgpack-c>0:devel/msgpack-c \

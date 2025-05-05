@@ -11,7 +11,7 @@ WWW=		https://github.com/radfish/pyelliptic
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=0:security/py-openssl@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyopenssl>=0:security/py-openssl@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes

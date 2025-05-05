@@ -26,7 +26,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}asgiref>=3.2.10<3.5:www/py-asgiref@${PY_FLAV
 		${PYTHON_PKGNAMEPREFIX}ldap3>=2.8<2.10:net/py-ldap3@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}markupsafe>=2.0.0:textproc/py-markupsafe@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}msgpack>=1.0.0<1.1.0:devel/py-msgpack@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>=20.0<20.1:security/py-openssl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyopenssl>=20.0<20.1:security/py-openssl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}passlib>=1.6.5<1.8:security/py-passlib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}protobuf>=3.14<3.19:devel/py-protobuf@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}publicsuffix2>=2.20190812<3:dns/py-publicsuffix2@${PY_FLAVOR} \

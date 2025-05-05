@@ -45,7 +45,7 @@ NO_ARCH=	yes
 
 OPTIONS_DEFINE=		WEBTEST
 WEBTEST_DESC=		Use WebTest helper to test WSGI apps
-WEBTEST_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyOpenSSL>0:security/py-openssl@${PY_FLAVOR} \
+WEBTEST_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyopenssl>0:security/py-openssl@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}WebTest>0:www/py-webtest@${PY_FLAVOR}
 
 .include <bsd.port.mk>

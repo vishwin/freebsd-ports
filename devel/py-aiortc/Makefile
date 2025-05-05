@@ -20,7 +20,7 @@ RUN_DEPENDS=	${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}aioice>=0.9.0:devel/py-aioice@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}av>=9.0.0:multimedia/py-av@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}google-crc32c>=1.1:devel/py-google-crc32c@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyOpenSSL>0:security/py-openssl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyopenssl>0:security/py-openssl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyee>=9.0.0:devel/py-pyee@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pylibsrtp>=0.5.6:devel/py-pylibsrtp@${PY_FLAVOR}
 
