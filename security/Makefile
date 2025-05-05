@@ -74,6 +74,7 @@
     SUBDIR += cargo-audit
     SUBDIR += ccrypt
     SUBDIR += ccsrch
+    SUBDIR += certificate_maker
     SUBDIR += certmgr
     SUBDIR += certspotter
     SUBDIR += cfssl
@@ -100,6 +101,7 @@
     SUBDIR += clamtk
     SUBDIR += cloak
     SUBDIR += cops
+    SUBDIR += cosign
     SUBDIR += courier-authlib
     SUBDIR += courier-authlib-base
     SUBDIR += courierpassd
@@ -186,6 +188,7 @@
     SUBDIR += gnupg1
     SUBDIR += gnutls
     SUBDIR += go-cve-dictionary
+    SUBDIR += go-tuf
     SUBDIR += gokart
     SUBDIR += gokey
     SUBDIR += gonepass
@@ -1103,6 +1106,7 @@
     SUBDIR += ratproxy
     SUBDIR += rats
     SUBDIR += rcracki_mt
+    SUBDIR += rekor
     SUBDIR += reop
     SUBDIR += rhash
     SUBDIR += rhonabwy
@@ -1351,6 +1355,7 @@
     SUBDIR += testssl.sh
     SUBDIR += tfhe
     SUBDIR += theonionbox
+    SUBDIR += timestamp-authority
     SUBDIR += tinc
     SUBDIR += tinc-devel
     SUBDIR += tinyca
@@ -1366,6 +1371,7 @@
     SUBDIR += tpm2-tss
     SUBDIR += transcrypt
     SUBDIR += trezord
+    SUBDIR += trillian
     SUBDIR += tripwire
     SUBDIR += trivy
     SUBDIR += trousers
