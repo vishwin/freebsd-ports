@@ -1,5 +1,6 @@
 PORTNAME=	qemu
 DISTVERSION=	10.0.0
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	https://download.qemu.org/
 DIST_SUBDIR=	qemu/${PORTVERSION}
@@ -221,7 +222,7 @@ X86_TARGETS_CONFIGURE_ON=	--target-list='i386-softmmu i386-bsd-user x86_64-softm
 .include <bsd.port.options.mk>
 
 .if ${FLAVOR:U} == tools || ${FLAVOR:U} == guestagent
-.if ${ARCH} == "i386" || ${ARCH} == "powerpc"
+.if ${ARCH} == "i386" || ${ARCH} == "powerpc" || ${ARCH:Marmv?}
 PLIST_SUB+=	NO_I386="@comment "
 .else
 PLIST_SUB+=	NO_I386=""
