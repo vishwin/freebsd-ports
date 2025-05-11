@@ -400,6 +400,7 @@
     SUBDIR += ncrack
     SUBDIR += ncrypt
     SUBDIR += nebula
+    SUBDIR += netbird
     SUBDIR += nettle
     SUBDIR += nextcloud-end_to_end_encryption
     SUBDIR += nextcloud-passman
@@ -630,6 +631,7 @@
     SUBDIR += p5-Crypt-SmbHash
     SUBDIR += p5-Crypt-Sodium
     SUBDIR += p5-Crypt-Solitaire
+    SUBDIR += p5-Crypt-SysRandom
     SUBDIR += p5-Crypt-TEA
     SUBDIR += p5-Crypt-T_e_a
     SUBDIR += p5-Crypt-Tea_JS
