@@ -498,8 +498,8 @@
     SUBDIR += mxml
     SUBDIR += mythes
     SUBDIR += nb-aspell
-    SUBDIR += nerdlog
     SUBDIR += nds-aspell
+    SUBDIR += nerdlog
     SUBDIR += nl-aspell
     SUBDIR += nl-hunspell
     SUBDIR += nl-hyphen
@@ -1321,6 +1321,7 @@
     SUBDIR += py-awesome-slugify
     SUBDIR += py-backrefs
     SUBDIR += py-bibtexparser
+    SUBDIR += py-bistring
     SUBDIR += py-bracex
     SUBDIR += py-cchardet
     SUBDIR += py-chameleon
@@ -1808,6 +1809,7 @@
     SUBDIR += rubygem-elasticsearch-api
     SUBDIR += rubygem-elasticsearch-api-gitlab
     SUBDIR += rubygem-elasticsearch-api7
+    SUBDIR += rubygem-elasticsearch-api8
     SUBDIR += rubygem-elasticsearch-dsl
     SUBDIR += rubygem-elasticsearch-gitlab
     SUBDIR += rubygem-elasticsearch-model
@@ -1819,6 +1821,7 @@
     SUBDIR += rubygem-elasticsearch-transport-gitlab
     SUBDIR += rubygem-elasticsearch-xpack
     SUBDIR += rubygem-elasticsearch7
+    SUBDIR += rubygem-elasticsearch8
     SUBDIR += rubygem-emot
     SUBDIR += rubygem-escape_utils
     SUBDIR += rubygem-extended-markdown-filter

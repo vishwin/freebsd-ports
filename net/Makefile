@@ -405,6 +405,7 @@
     SUBDIR += libnfs
     SUBDIR += libngtcp2
     SUBDIR += libngtcp2-gnutls
+    SUBDIR += libngtcp2-wolfssl
     SUBDIR += libnids
     SUBDIR += libnpupnp
     SUBDIR += libnss-cache
@@ -1282,7 +1283,6 @@
     SUBDIR += rubygem-cloudflare
     SUBDIR += rubygem-connection_pool
     SUBDIR += rubygem-devfile
-    SUBDIR += rubygem-devfile-gitlab
     SUBDIR += rubygem-docker-api
     SUBDIR += rubygem-dogapi
     SUBDIR += rubygem-domain_name
