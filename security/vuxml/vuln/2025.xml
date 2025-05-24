@@ -1,3 +1,134 @@
+  <vuln vid="5baa64d6-37ee-11f0-a116-8447094a420f">
+    <topic>OpenSSL -- Inverted security logic in x509 app</topic>
+    <affects>
+      <package>
+	<name>openssl35</name>
+	<range><lt>3.5.0_1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The OpenSSL project reports:</p>
+	<blockquote cite="https://openssl-library.org/news/secadv/20250522.txt">
+	  <p>The x509 application adds trusted use instead of rejected use (low)</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-4575</cvename>
+      <url>https://openssl-library.org/news/secadv/20250522.txt</url>
+    </references>
+    <dates>
+      <discovery>2025-05-23</discovery>
+      <entry>2025-05-23</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="6529e5e7-36d5-11f0-8f57-b42e991fc52e">
+    <topic>Firefox -- memory corruption due to race condition</topic>
+    <affects>
+      <package>
+	<name>firefox</name>
+	<range><lt>137.0.2,2</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>security@mozilla.org reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/show_bug.cgi?id=1951554">
+	  <p>A race condition existed in nsHttpTransaction that could
+	  have been exploited to cause memory corruption, potentially
+	  leading to an exploitable condition.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-3608</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2025-3608</url>
+    </references>
+    <dates>
+      <discovery>2025-04-15</discovery>
+      <entry>2025-05-22</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="a1a1b0c2-3791-11f0-8600-2cf05da270f3">
+    <topic>Gitlab -- vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>gitlab-ce</name>
+	<name>gitlab-ee</name>
+	<range><ge>18.0.0</ge><lt>18.0.1</lt></range>
+	<range><ge>17.11.0</ge><lt>17.11.3</lt></range>
+	<range><ge>10.2.0</ge><lt>17.10.7</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Gitlab reports:</p>
+	<blockquote cite="https://about.gitlab.com/releases/2025/05/21/patch-release-gitlab-18-0-1-released/">
+	  <p>Unprotected large blob endpoint in GitLab allows Denial of Service</p>
+	  <p>Improper XPath validation allows modified SAML response to bypass 2FA requirement</p>
+	  <p>A Discord webhook integration may cause DoS</p>
+	  <p>Unbounded Kubernetes cluster tokens may lead to DoS</p>
+	  <p>Unvalidated notes position may lead to Denial of Service</p>
+	  <p>Hidden/masked variables may get exposed in the UI</p>
+	  <p>Two-factor authentication requirement bypass</p>
+	  <p>View full email addresses that should be partially obscured</p>
+	  <p>Branch name confusion in confidential MRs</p>
+	  <p>Unauthorized access to job data via a GraphQL query</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-0993</cvename>
+      <cvename>CVE-2024-12093</cvename>
+      <cvename>CVE-2024-7803</cvename>
+      <cvename>CVE-2025-3111</cvename>
+      <cvename>CVE-2025-2853</cvename>
+      <cvename>CVE-2025-4979</cvename>
+      <cvename>CVE-2025-0605</cvename>
+      <cvename>CVE-2025-0679</cvename>
+      <cvename>CVE-2024-9163</cvename>
+      <cvename>CVE-2025-1110</cvename>
+      <url>https://about.gitlab.com/releases/2025/05/21/patch-release-gitlab-18-0-1-released/</url>
+    </references>
+    <dates>
+      <discovery>2025-05-21</discovery>
+      <entry>2025-05-23</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="4abd86c1-366d-11f0-9c0c-000c29ffbb6c">
+    <topic>screen -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>screen</name>
+	<range><lt>5.0.1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The screen project reports:</p>
+	<blockquote cite="https://lists.gnu.org/archive/html/info-gnu/2025-05/msg00002.html">
+	  <p>Multiple security issues in screen.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-46805</cvename>
+      <cvename>CVE-2025-46804</cvename>
+      <cvename>CVE-2025-46803</cvename>
+      <cvename>CVE-2025-46802</cvename>
+      <cvename>CVE-2025-23395</cvename>
+      <url>https://lists.gnu.org/archive/html/info-gnu/2025-05/msg00002.html</url>
+    </references>
+    <dates>
+      <discovery>2025-05-12</discovery>
+      <entry>2025-05-21</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="07560111-34cc-11f0-af94-b42e991fc52e">
     <topic>firefox -- out-of-bounds read/write</topic>
     <affects>
