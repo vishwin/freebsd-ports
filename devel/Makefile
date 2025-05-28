@@ -1107,6 +1107,7 @@
     SUBDIR += judy
     SUBDIR += jujutsu
     SUBDIR += jwasm
+    SUBDIR += jwt-cpp
     SUBDIR += kBuild
     SUBDIR += kapptemplate
     SUBDIR += kassert
@@ -5364,6 +5365,7 @@
     SUBDIR += py-os-vif
     SUBDIR += py-os-win
     SUBDIR += py-osc-lib
+    SUBDIR += py-oslex
     SUBDIR += py-oslo.cache
     SUBDIR += py-oslo.concurrency
     SUBDIR += py-oslo.config
@@ -5958,6 +5960,7 @@
     SUBDIR += py-spyder-kernels
     SUBDIR += py-spyder-unittest
     SUBDIR += py-sqids
+    SUBDIR += py-sqlfluff
     SUBDIR += py-squint
     SUBDIR += py-sre-yield
     SUBDIR += py-srsly
