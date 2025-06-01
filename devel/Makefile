@@ -79,6 +79,7 @@
     SUBDIR += R-cran-hms
     SUBDIR += R-cran-ids
     SUBDIR += R-cran-ini
+    SUBDIR += R-cran-interp
     SUBDIR += R-cran-iterators
     SUBDIR += R-cran-itertools
     SUBDIR += R-cran-kit
@@ -4467,6 +4468,7 @@
     SUBDIR += py-automaton
     SUBDIR += py-autopage
     SUBDIR += py-autoprop
+    SUBDIR += py-avocado-framework
     SUBDIR += py-avro
     SUBDIR += py-awesomeversion
     SUBDIR += py-aws-lambda-builders
@@ -4814,7 +4816,6 @@
     SUBDIR += py-distlib
     SUBDIR += py-distributed
     SUBDIR += py-dj50-django-rq
-    SUBDIR += py-dj50-strawberry-graphql
     SUBDIR += py-dj51-django-rq
     SUBDIR += py-dj51-strawberry-graphql
     SUBDIR += py-django-rq
@@ -4828,6 +4829,7 @@
     SUBDIR += py-doit
     SUBDIR += py-domdf-python-tools
     SUBDIR += py-donut-shellcode
+    SUBDIR += py-dotmap
     SUBDIR += py-dotted
     SUBDIR += py-dotty-dict
     SUBDIR += py-dpcontracts
@@ -5796,6 +5798,7 @@
     SUBDIR += py-pyvisa-py
     SUBDIR += py-pyxb-x
     SUBDIR += py-pyyaml
+    SUBDIR += py-pyyaml-ft
     SUBDIR += py-pyyaml-include
     SUBDIR += py-pyyaml_env_tag
     SUBDIR += py-pyzipper
@@ -5929,6 +5932,7 @@
     SUBDIR += py-sgmllib3k
     SUBDIR += py-sgqlc
     SUBDIR += py-sh
+    SUBDIR += py-shandy-sqlfmt
     SUBDIR += py-shapely
     SUBDIR += py-shellingham
     SUBDIR += py-shpyx
