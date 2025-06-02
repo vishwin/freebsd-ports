@@ -4455,3 +4455,41 @@ www/py-dj50-django-htmx|www/py-dj51-django-htmx|2025-06-01|Has expired: Extended
 www/py-django50|www/py-django51|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2024, upgrade to a newer version of Django. See https://www.djangoproject.com/download/
 devel/linux-c7-libgfortran|devel/linux-c7-devtools|2025-06-02|Merged into devel/linux-c7-devtools
 devel/linux-rl9-libgfortran|devel/linux-rl9-devtools|2025-06-02|Merged into devel/linux-rl9-devtools
+textproc/py-textract||2025-06-02|Has expired: Depends on expiring textproc/py-extract-msg
+databases/py-fastapi-users-db-ormar||2025-06-02|Has expired: Depends on expiring www/py-fastapi-users
+www/py-fastapi-users||2025-06-02|Has expired: Depends on expired devel/py-makefun
+multimedia/ffsubsync||2025-06-02|Has expired: Depends on expired multimedia/py-ffmpeg-python
+biology/checkm||2025-06-02|Has expired: Depends on expired science/py-DendroPy
+net/pichi||2025-06-02|Has expired: Depends on expired security/mbedtls2
+science/dvc||2025-06-02|Has expired: Depends on expired math/py-grandalf
+textproc/py-extract-msg||2025-06-02|Has expired: Depends on expiring textproc/py-RTFDE
+devel/py-pcodedmp||2025-06-02|Has expired: Depends on expired devel/py-oletools
+deskutils/gcalcli||2025-06-02|Has expired: Depends on expired security/py-oauth2client
+textproc/py-RTFDE||2025-06-02|Has expired: Depends on expired devel/py-oletools
+sysutils/py-upt-cpan||2025-06-02|Has expired: Depends on expired sysutils/py-upt
+sysutils/py-upt-freebsd||2025-06-02|Has expired: Depends on expired sysutils/py-upt
+sysutils/py-upt-rubygems||2025-06-02|Has expired: Depends on expired sysutils/py-upt
+sysutils/py-upt-pypi||2025-06-02|Has expired: Depends on expired sysutils/py-upt
+devel/py-pytest-cases||2025-06-02|Has expired: Depends on expired devel/py-makefun
+devel/py-decopatch||2025-06-02|Has expired: Depends on expired devel/py-makefun
+graphics/rubygem-ezprint||2025-06-02|Has expired: Depends on expired graphics/rubygem-pdfkit
+databases/datasette||2025-06-02|Has expired: Depends on expired devel/py-pytest-runner
+www/py-pydrive2||2025-06-02|Has expired: Depends on expired security/py-oauth2client
+misc/py-gluoncv||2025-06-02|Has expired: Depends on expiring misc/py-mxnet
+misc/py-gluonnlp||2025-06-02|Has expired: Depends on expiring misc/py-mxnet
+misc/py-mxnet||2025-06-02|Has expired: Depends on expired misc/mxnet
+misc/mxnet||2025-06-02|Has expired: Project has been retired by Apache, see https://attic.apache.org/projects/mxnet.html
+sysutils/py-upt||2025-06-02|Has expired: Depends on expired misc/py-spdx-lookup
+misc/py-spdx-lookup||2025-06-02|Has expired: Upstream repository has been archived on Nov 13, 2020
+misc/py-spdx||2025-06-02|Has expired: Upstream repository has been archived on Nov 13, 2020
+devel/py-makefun||2025-06-02|Has expired: Depends on expired devel/py-pytest-runner
+security/mbedtls2||2025-06-02|Has expired: Upstream support ends at the end of 2024
+graphics/rubygem-pdfkit||2025-06-02|Has expired: Depends on expired converters/wkhtmltopdf
+security/racoon2||2025-06-02|Has expired: Requested removal by PR/286981
+converters/wkhtmltopdf||2025-06-02|Has expired: Upstream abandoned the project
+devel/py-oletools||2025-06-02|Has expired: Depends on expired textproc/py-colorclass
+textproc/py-colorclass||2025-06-02|Has expired: Upstream repository has been archived on Jul 10, 2024
+security/py-oauth2client||2025-06-02|Has expired: Deprecated by upstream. Use security/py-google-auth or security/py-oauthlib instead. See https://google-auth.readthedocs.io/en/latest/oauth2client-deprecation.html for details
+math/py-grandalf||2025-06-02|Has expired: Depends on expired devel/py-pytest-runner
+multimedia/py-ffmpeg-python||2025-06-02|Has expired: Depends on expired devel/py-pytest-runner
+science/py-DendroPy||2025-06-02|Has expired: Depends on expired devel/py-pytest-runner

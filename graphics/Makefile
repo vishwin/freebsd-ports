@@ -1099,7 +1099,6 @@
     SUBDIR += rubygem-dragonfly
     SUBDIR += rubygem-emoji
     SUBDIR += rubygem-exifr
-    SUBDIR += rubygem-ezprint
     SUBDIR += rubygem-fastimage
     SUBDIR += rubygem-flamegraph
     SUBDIR += rubygem-gd2
@@ -1117,7 +1116,6 @@
     SUBDIR += rubygem-mini_magick
     SUBDIR += rubygem-mini_magick4
     SUBDIR += rubygem-opengl
-    SUBDIR += rubygem-pdfkit
     SUBDIR += rubygem-png
     SUBDIR += rubygem-railroad
     SUBDIR += rubygem-red-colors
