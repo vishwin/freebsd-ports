@@ -4428,3 +4428,30 @@ www/py-dj50-strawberry-graphql-django|www/py-dj51-strawberry-graphql-django|2025
 devel/py-dj50-strawberry-graphql|devel/py-dj51-strawberry-graphql|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
 www/py-dj50-channels|www/py-dj51-channels|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
 sysutils/screen49||2025-06-01|Has expired: Multiple CVEs
+www/py-dj50-drf-spectacular|www/py-dj51-drf-spectacular|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-djangorestframework|www/py-dj51-djangorestframework|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+devel/aphpbreakdown||2025-06-01|Has expired: Upstream is gone and last release in 2018
+www/py-dj50-drf-spectacular-sidecar|www/py-dj51-drf-spectacular-sidecar|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-django-debug-toolbar|www/py-dj51-django-debug-toolbar|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+devel/py-dj50-django-rq|devel/py-dj51-django-rq|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-django-auth-ldap|www/py-dj51-django-auth-ldap|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+textproc/bar||2025-06-01|Has expired: Obsolete, consider using sysutils/pv
+www/py-dj50-django-tables2|www/py-dj51-django-tables2|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-django-choices-field|www/py-dj51-django-choices-field|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-django-rich|www/py-dj51-django-rich|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-django-cors-headers|www/py-dj51-django-cors-headers|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-django-tree-queries||2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025. See https://www.djangoproject.com/download/
+www/py-dj50-django-prometheus|www/py-dj51-django-prometheus|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-django-timezone-field|www/py-dj51-django-timezone-field|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-django-filter|www/py-dj51-django-filter|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+devel/awless||2025-06-01|Has expired: Abandoned upstream
+devel/hgreviewboard||2025-06-01|Has expired: Upstream is gone
+www/py-dj50-django-mptt|www/py-dj51-django-mptt|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-django-js-asset|www/py-dj51-django-js-asset|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-dj50-django-redis|www/py-dj51-django-redis|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+devel/eventxx||2025-06-01|Has expired: Upstream is gone, unmaintained for 10+ years in tree
+devel/cmunge||2025-06-01|Has expired: Upstream is gone
+www/py-dj50-django-htmx|www/py-dj51-django-htmx|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2025, upgrade to the Django 5.1+ version of this port. See https://www.djangoproject.com/download/
+www/py-django50|www/py-django51|2025-06-01|Has expired: Extended support of Django 5.0 ends April 2024, upgrade to a newer version of Django. See https://www.djangoproject.com/download/
+devel/linux-c7-libgfortran|devel/linux-c7-devtools|2025-06-02|Merged into devel/linux-c7-devtools
+devel/linux-rl9-libgfortran|devel/linux-rl9-devtools|2025-06-02|Merged into devel/linux-rl9-devtools

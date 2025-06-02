@@ -199,7 +199,6 @@
     SUBDIR += apache-log4j2
     SUBDIR += apache-orc
     SUBDIR += apache-rat
-    SUBDIR += aphpbreakdown
     SUBDIR += aphpunit
     SUBDIR += api-linter
     SUBDIR += api-sanity-autotest
@@ -274,7 +273,6 @@
     SUBDIR += avro
     SUBDIR += avro-c
     SUBDIR += avro-cpp
-    SUBDIR += awless
     SUBDIR += aws-c-common
     SUBDIR += aws-c-compression
     SUBDIR += aws-c-event-stream
@@ -476,7 +474,6 @@
     SUBDIR += cmake-modules-webos
     SUBDIR += cmakedoc
     SUBDIR += cmph
-    SUBDIR += cmunge
     SUBDIR += coccinelle
     SUBDIR += cocogitto
     SUBDIR += codeblocks
@@ -698,7 +695,6 @@
     SUBDIR += evcxr-jupyter
     SUBDIR += evdev-proto
     SUBDIR += evemu
-    SUBDIR += eventxx
     SUBDIR += exercisix
     SUBDIR += exomizer
     SUBDIR += expected
@@ -985,7 +981,6 @@
     SUBDIR += heirloom-devtools
     SUBDIR += hexcompare
     SUBDIR += hexd
-    SUBDIR += hgreviewboard
     SUBDIR += hgsvn
     SUBDIR += highlighterkit
     SUBDIR += highway
@@ -4815,7 +4810,6 @@
     SUBDIR += py-diskcache
     SUBDIR += py-distlib
     SUBDIR += py-distributed
-    SUBDIR += py-dj50-django-rq
     SUBDIR += py-dj51-django-rq
     SUBDIR += py-dj51-strawberry-graphql
     SUBDIR += py-django-rq
