@@ -336,6 +336,7 @@
     SUBDIR += boost-python-libs
     SUBDIR += boost_build
     SUBDIR += bossa
+    SUBDIR += boxed-cpp
     SUBDIR += boxfort
     SUBDIR += bpython
     SUBDIR += brz
@@ -1488,6 +1489,7 @@
     SUBDIR += libuiohook
     SUBDIR += libukcprog
     SUBDIR += libunicode
+    SUBDIR += libunicode-contour
     SUBDIR += libuninum
     SUBDIR += libunistring
     SUBDIR += libunit
@@ -6371,6 +6373,7 @@
     SUBDIR += recycle
     SUBDIR += redasm
     SUBDIR += redo
+    SUBDIR += reflection-cpp
     SUBDIR += regexx
     SUBDIR += regexxer
     SUBDIR += remake
