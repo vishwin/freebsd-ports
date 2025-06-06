@@ -4493,6 +4493,11 @@ security/py-oauth2client||2025-06-02|Has expired: Deprecated by upstream. Use se
 math/py-grandalf||2025-06-02|Has expired: Depends on expired devel/py-pytest-runner
 multimedia/py-ffmpeg-python||2025-06-02|Has expired: Depends on expired devel/py-pytest-runner
 science/py-DendroPy||2025-06-02|Has expired: Depends on expired devel/py-pytest-runner
-devel/linux-rl9-libsoup|devel/linux_base-rl9|2025-06-04|Merged into devel/linux_base-rl9
+devel/linux-rl9-libsoup||2025-06-04|Merged into devel/linux_base-rl9
 games/hedgewars-server||2025-06-04|Depends on expired lang/ghc810, does not build with newer GHCs
 lang/ghc810||2025-06-04|Old version, unsupported upstream
+audio/mp3check||2025-06-06|Has expired: Depends on expired audio/id3tool
+audio/id3tool||2025-06-06|Has expired: Can't read ID3v2 tags which have been around for 20+ years and discontinued in 2005 feature-wise according to readme file
+science/py-pysal||2025-06-06|Has expired: Depends on expired math/py-spvcm
+textproc/xincluder||2025-06-06|Has expired: Depends on expiring java/jdom
+math/py-spvcm||2025-06-06|Has expired: Upstream repository has been archived on Jul 9, 2024
