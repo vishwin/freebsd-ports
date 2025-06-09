@@ -1,7 +1,7 @@
 PORTNAME=	scenefx
-DISTVERSION=	0.2.1
+DISTVERSION=	0.3
 CATEGORIES=	x11-toolkits
-PKGNAMESUFFIX=	02
+PKGNAMESUFFIX=	03
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	wlroots scene API, but with eye candy!
@@ -22,8 +22,9 @@ USE_XORG=	pixman
 GH_ACCOUNT=	wlrfx
 MESON_ARGS=	-Dexamples=false -Drenderers=${RENDERERS:ts,}
 PLIST_SUB=	SUFFIX=-${DISTVERSION:R}
+PLIST_SUB=	SUFFIX=-${DISTVERSION} # XXX Remove after 0.3.1 update
 
-PORTSCOUT=	limit:^0\.2\.
+PORTSCOUT=	limit:^0\.3\.
 
 OPTIONS_DEFINE=	OPENGL
 OPTIONS_DEFAULT=OPENGL
