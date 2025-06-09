@@ -1458,6 +1458,7 @@
     SUBDIR += py-mkdocs-get-deps
     SUBDIR += py-mkdocs-git-revision-date-localized-plugin
     SUBDIR += py-mkdocs-include-markdown-plugin
+    SUBDIR += py-mkdocs-macros-plugin
     SUBDIR += py-mkdocs-material
     SUBDIR += py-mkdocs-material-extensions
     SUBDIR += py-mkdocs-mermaid2-plugin
@@ -1652,6 +1653,7 @@
     SUBDIR += py-tabletext
     SUBDIR += py-tablib
     SUBDIR += py-terminaltables
+    SUBDIR += py-terminaltables3
     SUBDIR += py-text2digits
     SUBDIR += py-textdistance
     SUBDIR += py-textfsm
