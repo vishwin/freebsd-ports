@@ -1,6 +1,6 @@
 PORTNAME=	rl9
 PORTVERSION=	${LINUX_DIST_VER}
-PORTREVISION=	10
+PORTREVISION=	13
 CATEGORIES=	emulators linux
 PKGNAMEPREFIX=	linux_base-
 EXTRACT_ONLY=	${DISTFILES:N*${SRC_SUFX}*:Nf/filesystem-*:C/:[^:]+$//}
@@ -15,7 +15,9 @@ USE_LINUX=	# empty
 USE_LINUX_RPM=	yes
 WANT_LINUX32=	yes
 
-CONFLICTS_INSTALL=	linux-${linux_ARGS}-libsigsegv
+# lib64/gconv/ stuff that is loaded dynamically and has rpath
+NO_SHLIB_REQUIRES_GLOB=	libCNS.so* libGB.so* libISOIR165.so* \
+			libJIS.so* libJISX0213.so* libKSC.so*
 
 .include	"${.CURDIR}/Makefile.version"
 
@@ -56,6 +58,7 @@ LIB_DISTNAMES=	bzip2-libs-${bzip2_ver} \
 		libacl-${libacl_ver} \
 		libattr-${libattr_ver} \
 		libblkid-${util_ver} \
+		libbrotli-${brotli_ver} \
 		libcap-${libcap_ver}  \
 		libcom_err-${e2fsprogs_ver} \
 		libdatrie-${libdatrie_ver} \
@@ -66,15 +69,18 @@ LIB_DISTNAMES=	bzip2-libs-${bzip2_ver} \
 		libffi-${libffi_ver} \
 		libgcc-${gcc_ver} \
 		libgudev-${libgudev_ver} \
+		libidn2-${libidn2_ver} \
 		libmount-${util_ver} \
 		libnsl-${glibc_ver} \
 		libproxy-${libproxy_ver} \
+		libpsl-${libpsl_ver} \
 		libselinux-${selinux_ver} \
 		libsepol-${sepol_ver} \
 		libsigsegv-${libsigsegv_ver} \
 		libsmartcols-${util_ver} \
 		libsoup-${libsoup_ver} \
 		libstdc++-${gcc_ver} \
+		libunistring-${libunistring_ver} \
 		libuuid-${util_ver} \
 		libverto-${libverto_ver} \
 		libxcrypt-${libxcrypt_ver} \

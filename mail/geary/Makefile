@@ -1,8 +1,8 @@
 PORTNAME=	geary
 PORTVERSION=	40.0
-PORTREVISION=	13
+PORTREVISION=	14
 CATEGORIES=	mail gnome
-MASTER_SITES=	GNOME/sources/${PORTNAME}/${PORTVERSION:C/^([0-9]+)\..*/\1/}
+MASTER_SITES=	GNOME
 DIST_SUBDIR=	gnome
 
 PATCH_SITES=	https://gitlab.gnome.org/GNOME/geary/-/commit/

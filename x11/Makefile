@@ -6,6 +6,7 @@
     SUBDIR += aclip
     SUBDIR += admiral
     SUBDIR += alacritty
+    SUBDIR += alacarte
     SUBDIR += albert
     SUBDIR += alttab
     SUBDIR += aminal
@@ -94,10 +95,13 @@
     SUBDIR += glcapsviewer
     SUBDIR += gmrun
     SUBDIR += gnome
+    SUBDIR += gnome-applets
     SUBDIR += gnome-clipboard-daemon
     SUBDIR += gnome-console
     SUBDIR += gnome-desktop
+    SUBDIR += gnome-flashback
     SUBDIR += gnome-menus
+    SUBDIR += gnome-panel
     SUBDIR += gnome-pie
     SUBDIR += gnome-session
     SUBDIR += gnome-shell
@@ -427,6 +431,7 @@
     SUBDIR += sxpc
     SUBDIR += tabbed
     SUBDIR += taiga
+    SUBDIR += tecla
     SUBDIR += temperature.app
     SUBDIR += terminal.app
     SUBDIR += terminator
@@ -537,6 +542,7 @@
     SUBDIR += xdg-desktop-portal-hyprland
     SUBDIR += xdg-desktop-portal-luminous
     SUBDIR += xdg-desktop-portal-wlr
+    SUBDIR += xdg-user-dirs-gtk
     SUBDIR += xdialog
     SUBDIR += xditview
     SUBDIR += xdm
