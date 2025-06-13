@@ -1263,7 +1263,6 @@
     SUBDIR += libcutl
     SUBDIR += libcwd
     SUBDIR += libdaemon
-    SUBDIR += libdex
     SUBDIR += libdap
     SUBDIR += libdatadog
     SUBDIR += libdatovka
@@ -1273,6 +1272,7 @@
     SUBDIR += libdbusmenu-qt
     SUBDIR += libddoc
     SUBDIR += libddwaf
+    SUBDIR += libdex
     SUBDIR += libdfui
     SUBDIR += libdill
     SUBDIR += libdisasm
@@ -2769,6 +2769,7 @@
     SUBDIR += p5-Hash-Diff
     SUBDIR += p5-Hash-FieldHash
     SUBDIR += p5-Hash-Flatten
+    SUBDIR += p5-Hash-Merge-Extra
     SUBDIR += p5-Hash-Merge-Simple
     SUBDIR += p5-Hash-MoreUtils
     SUBDIR += p5-Hash-MultiKey
@@ -4791,6 +4792,7 @@
     SUBDIR += py-debugpy
     SUBDIR += py-debugtools
     SUBDIR += py-decli
+    SUBDIR += py-decopatch
     SUBDIR += py-decorator
     SUBDIR += py-decoratortools
     SUBDIR += py-deepdiff
@@ -4824,6 +4826,7 @@
     SUBDIR += py-dogpile.cache
     SUBDIR += py-doit
     SUBDIR += py-domdf-python-tools
+    SUBDIR += py-donfig
     SUBDIR += py-donut-shellcode
     SUBDIR += py-dotmap
     SUBDIR += py-dotted
@@ -5229,6 +5232,7 @@
     SUBDIR += py-magic
     SUBDIR += py-magnet2torrent
     SUBDIR += py-mailcap-fix
+    SUBDIR += py-makefun
     SUBDIR += py-manuel
     SUBDIR += py-marisa-trie
     SUBDIR += py-marrow.mailer
@@ -5663,6 +5667,7 @@
     SUBDIR += py-pytest-cache
     SUBDIR += py-pytest-canonical-data
     SUBDIR += py-pytest-capturelog
+    SUBDIR += py-pytest-cases
     SUBDIR += py-pytest-checkdocs
     SUBDIR += py-pytest-codspeed
     SUBDIR += py-pytest-console-scripts

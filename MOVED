@@ -4472,8 +4472,6 @@ sysutils/py-upt-cpan||2025-06-02|Has expired: Depends on expired sysutils/py-upt
 sysutils/py-upt-freebsd||2025-06-02|Has expired: Depends on expired sysutils/py-upt
 sysutils/py-upt-rubygems||2025-06-02|Has expired: Depends on expired sysutils/py-upt
 sysutils/py-upt-pypi||2025-06-02|Has expired: Depends on expired sysutils/py-upt
-devel/py-pytest-cases||2025-06-02|Has expired: Depends on expired devel/py-makefun
-devel/py-decopatch||2025-06-02|Has expired: Depends on expired devel/py-makefun
 graphics/rubygem-ezprint||2025-06-02|Has expired: Depends on expired graphics/rubygem-pdfkit
 databases/datasette||2025-06-02|Has expired: Depends on expired devel/py-pytest-runner
 www/py-pydrive2||2025-06-02|Has expired: Depends on expired security/py-oauth2client
@@ -4484,7 +4482,6 @@ misc/mxnet||2025-06-02|Has expired: Project has been retired by Apache, see http
 sysutils/py-upt||2025-06-02|Has expired: Depends on expired misc/py-spdx-lookup
 misc/py-spdx-lookup||2025-06-02|Has expired: Upstream repository has been archived on Nov 13, 2020
 misc/py-spdx||2025-06-02|Has expired: Upstream repository has been archived on Nov 13, 2020
-devel/py-makefun||2025-06-02|Has expired: Depends on expired devel/py-pytest-runner
 security/mbedtls2||2025-06-02|Has expired: Upstream support ends at the end of 2024
 graphics/rubygem-pdfkit||2025-06-02|Has expired: Depends on expired converters/wkhtmltopdf
 security/racoon2||2025-06-02|Has expired: Requested removal by PR/286981

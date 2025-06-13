@@ -665,6 +665,7 @@
     SUBDIR += p5-Makefile-DOM
     SUBDIR += p5-Makefile-Parser
     SUBDIR += p5-Markapl
+    SUBDIR += p5-Markdown-Render
     SUBDIR += p5-Marpa-HTML
     SUBDIR += p5-MathML-Entities
     SUBDIR += p5-Net-Groonga-HTTP
@@ -1515,8 +1516,8 @@
     SUBDIR += py-pyaml
     SUBDIR += py-pybtex
     SUBDIR += py-pybtex-docutils
-    SUBDIR += py-pycountry
     SUBDIR += py-pycddl
+    SUBDIR += py-pycountry
     SUBDIR += py-pydata-sphinx-theme
     SUBDIR += py-pyexcel
     SUBDIR += py-pyexcel-ezodf
