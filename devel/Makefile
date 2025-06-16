@@ -345,7 +345,6 @@
     SUBDIR += bsddialog
     SUBDIR += bsdowl
     SUBDIR += buf
-    SUBDIR += bugzilla44
     SUBDIR += bugzilla50
     SUBDIR += bugzilla52
     SUBDIR += build
@@ -6279,6 +6278,7 @@
     SUBDIR += pybugz
     SUBDIR += pycanberra
     SUBDIR += pycdc
+    SUBDIR += pycharm
     SUBDIR += pycharm-ce
     SUBDIR += pycharm-pro
     SUBDIR += pycomposefile
