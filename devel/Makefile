@@ -4739,6 +4739,7 @@
     SUBDIR += py-crc32c
     SUBDIR += py-crcmod
     SUBDIR += py-crick
+    SUBDIR += py-cronsim
     SUBDIR += py-crontab
     SUBDIR += py-crosshair-tool
     SUBDIR += py-cson
@@ -5331,6 +5332,7 @@
     SUBDIR += py-olefile
     SUBDIR += py-omnijson
     SUBDIR += py-omniorb
+    SUBDIR += py-oncalendar
     SUBDIR += py-onigurumacffi
     SUBDIR += py-opcodes
     SUBDIR += py-openapi-codec
