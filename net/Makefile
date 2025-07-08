@@ -523,7 +523,6 @@
     SUBDIR += ndproxy
     SUBDIR += neatvnc
     SUBDIR += nemesis
-    SUBDIR += net6
     SUBDIR += netatalk3
     SUBDIR += netatalk4
     SUBDIR += netcat
@@ -799,7 +798,6 @@
     SUBDIR += p5-Net-SMS-Mollie
     SUBDIR += p5-Net-SMS-PChome
     SUBDIR += p5-Net-SNPP
-    SUBDIR += p5-Net-SPDY
     SUBDIR += p5-Net-SSH
     SUBDIR += p5-Net-SSH-Expect
     SUBDIR += p5-Net-SSH-Mechanize
@@ -1008,6 +1006,9 @@
     SUBDIR += php84-ldap
     SUBDIR += php84-soap
     SUBDIR += php84-sockets
+    SUBDIR += php85-ldap
+    SUBDIR += php85-soap
+    SUBDIR += php85-sockets
     SUBDIR += phpldapadmin
     SUBDIR += pimcommon
     SUBDIR += pimd
@@ -1527,7 +1528,6 @@
     SUBDIR += sniffnet
     SUBDIR += sniproxy
     SUBDIR += sntop
-    SUBDIR += sobby
     SUBDIR += socat
     SUBDIR += sock
     SUBDIR += socketapi
@@ -1612,6 +1612,7 @@
     SUBDIR += traff
     SUBDIR += trafshow
     SUBDIR += trafshow3
+    SUBDIR += trantor
     SUBDIR += trickle
     SUBDIR += trippy
     SUBDIR += ts-warp
@@ -1655,7 +1656,6 @@
     SUBDIR += vnstat
     SUBDIR += vortex
     SUBDIR += vpp
-    SUBDIR += vtun
     SUBDIR += wackamole
     SUBDIR += wakeonlan
     SUBDIR += wangle
@@ -1716,7 +1716,6 @@
     SUBDIR += zapret
     SUBDIR += zebra-server
     SUBDIR += zerotier
-    SUBDIR += zillion
     SUBDIR += zmap
     SUBDIR += zmate
     SUBDIR += zsync

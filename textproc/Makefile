@@ -1292,6 +1292,14 @@
     SUBDIR += php84-xmlreader
     SUBDIR += php84-xmlwriter
     SUBDIR += php84-xsl
+    SUBDIR += php85-ctype
+    SUBDIR += php85-dom
+    SUBDIR += php85-enchant
+    SUBDIR += php85-simplexml
+    SUBDIR += php85-xml
+    SUBDIR += php85-xmlreader
+    SUBDIR += php85-xmlwriter
+    SUBDIR += php85-xsl
     SUBDIR += pict
     SUBDIR += po4a
     SUBDIR += pod2mdoc
@@ -1417,7 +1425,6 @@
     SUBDIR += py-json2html
     SUBDIR += py-jsonslicer
     SUBDIR += py-jsx-lexer
-    SUBDIR += py-jtextfsm
     SUBDIR += py-junit-xml
     SUBDIR += py-jupyter_sphinx
     SUBDIR += py-jupyterlab-pygments
@@ -1606,6 +1613,7 @@
     SUBDIR += py-sphinx-inline-tabs
     SUBDIR += py-sphinx-intl
     SUBDIR += py-sphinx-issues
+    SUBDIR += py-sphinx-last-updated-by-git
     SUBDIR += py-sphinx-markdown-tables
     SUBDIR += py-sphinx-material
     SUBDIR += py-sphinx-me

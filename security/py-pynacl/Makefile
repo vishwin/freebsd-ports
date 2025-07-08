@@ -1,9 +1,10 @@
-PORTNAME=	PyNaCl
+PORTNAME=	pynacl
 DISTVERSION=	1.5.0
 PORTREVISION=	2
 CATEGORIES=	security python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+DISTNAME=	PyNaCl-${PORTVERSION}
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Python binding to the Networking and Cryptography library
