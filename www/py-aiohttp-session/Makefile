@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aiohttp>0:www/py-aiohttp@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}aiomcache>0:databases/py-aiomcache@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycryptodome>0:security/py-pycryptodome@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}secure>0:security/py-secure@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyNaCl>0:security/py-pynacl@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}pynacl>0:security/py-pynacl@${PY_FLAVOR}
 
 USES=		cpe python
 CPE_VENDOR=	${PORTNAME}_project
