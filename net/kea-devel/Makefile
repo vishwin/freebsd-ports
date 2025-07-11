@@ -1,5 +1,6 @@
 PORTNAME=	kea
 DISTVERSION=	3.0.0
+PORTREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	ISC/kea/cur/3.0
 PKGNAMESUFFIX=	-devel
@@ -37,7 +38,8 @@ OPTIONS_DEFINE=	DOCS MYSQL PGSQL
 OPTIONS_SUB=	yes
 
 MESON_ARGS=	--auto-features=disabled \
-		-Dnetconf=disabled
+		-Dnetconf=disabled \
+		-Drunstatedir=/var/run
 		
 MYSQL_USES=		mysql
 MYSQL_MESON_ENABLED=	mysql
@@ -56,7 +58,7 @@ post-build:
 
 post-install:
 	@mkdir -p ${STAGEDIR}${PREFIX}/etc/kea ${STAGEDIR}/var/db/kea \
-	${STAGEDIR}/var/lib/kea ${STAGEDIR}/var/run/kea
+	${STAGEDIR}/var/log/kea ${STAGEDIR}/var/run/kea
 	@rm -rf ${STAGEDIR}${PREFIX}/var
 	@cd ${WRKSRC}/doc/sphinx/man; \
 	cp *.8 ${STAGEDIR}${PREFIX}/share/man/man8
