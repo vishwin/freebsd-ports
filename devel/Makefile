@@ -4697,6 +4697,7 @@
     SUBDIR += py-comm
     SUBDIR += py-commandlines
     SUBDIR += py-commentjson
+    SUBDIR += py-commoncode
     SUBDIR += py-condense-json
     SUBDIR += py-conditional
     SUBDIR += py-confection
@@ -5482,6 +5483,7 @@
     SUBDIR += py-pluggy
     SUBDIR += py-pluggy0
     SUBDIR += py-pluginbase
+    SUBDIR += py-plugincode
     SUBDIR += py-plux
     SUBDIR += py-ply
     SUBDIR += py-pnio-dcp
@@ -6076,6 +6078,7 @@
     SUBDIR += py-txi2p-tahoe
     SUBDIR += py-ty
     SUBDIR += py-typechecks
+    SUBDIR += py-typecode
     SUBDIR += py-typeguard
     SUBDIR += py-typer
     SUBDIR += py-types-Flask
