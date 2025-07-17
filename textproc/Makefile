@@ -233,6 +233,7 @@
     SUBDIR += gh-grep
     SUBDIR += git-chglog
     SUBDIR += gitlab-elasticsearch-indexer
+    SUBDIR += gitlab-zoekt-indexer
     SUBDIR += gl-aspell
     SUBDIR += gladtex
     SUBDIR += gnugrep
@@ -669,6 +670,7 @@
     SUBDIR += p5-Makefile-DOM
     SUBDIR += p5-Makefile-Parser
     SUBDIR += p5-Markapl
+    SUBDIR += p5-Markdown-Perl
     SUBDIR += p5-Markdown-Render
     SUBDIR += p5-Marpa-HTML
     SUBDIR += p5-MathML-Entities
@@ -1032,6 +1034,7 @@
     SUBDIR += p5-Text-Xslate-Bridge-TT2Like
     SUBDIR += p5-Text-sprintfn
     SUBDIR += p5-Text-vCard
+    SUBDIR += p5-Tie-Handle-Offset
     SUBDIR += p5-Tiffany
     SUBDIR += p5-Time-Human
     SUBDIR += p5-Tk-Pod
