@@ -3628,8 +3628,8 @@
     SUBDIR += p5-Test-Bits
     SUBDIR += p5-Test-CPAN-Meta
     SUBDIR += p5-Test-CPAN-Meta-YAML
-    SUBDIR += p5-Test-CheckDeps
     SUBDIR += p5-Test-CPANfile
+    SUBDIR += p5-Test-CheckDeps
     SUBDIR += p5-Test-CheckManifest
     SUBDIR += p5-Test-Class
     SUBDIR += p5-Test-Class-Most
@@ -4839,6 +4839,8 @@
     SUBDIR += py-editables
     SUBDIR += py-editdistance
     SUBDIR += py-ejson
+    SUBDIR += py-electrum-aionostr
+    SUBDIR += py-electrum-ecc
     SUBDIR += py-eliot
     SUBDIR += py-enlighten
     SUBDIR += py-entrypoint2
@@ -7125,6 +7127,7 @@
     SUBDIR += rubygem-cf-uaa-lib
     SUBDIR += rubygem-cheffish
     SUBDIR += rubygem-childprocess
+    SUBDIR += rubygem-childprocess-gitlab
     SUBDIR += rubygem-chronic
     SUBDIR += rubygem-chronic_duration
     SUBDIR += rubygem-claide
@@ -7276,6 +7279,7 @@
     SUBDIR += rubygem-excon
     SUBDIR += rubygem-excon-gitlab
     SUBDIR += rubygem-excon0
+    SUBDIR += rubygem-excon1-gitlab
     SUBDIR += rubygem-execjs
     SUBDIR += rubygem-extlib
     SUBDIR += rubygem-extpp

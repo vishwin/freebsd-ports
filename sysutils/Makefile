@@ -574,6 +574,7 @@
     SUBDIR += k8temp
     SUBDIR += k9s
     SUBDIR += kapp
+    SUBDIR += kassiber
     SUBDIR += kbackup
     SUBDIR += kcron
     SUBDIR += kdeadmin
@@ -799,6 +800,8 @@
     SUBDIR += openseachest
     SUBDIR += opentofu
     SUBDIR += openupsd
+    SUBDIR += openvox-agent8
+    SUBDIR += openvox-server8
     SUBDIR += osinfo-db-tools
     SUBDIR += p5-App-Regather
     SUBDIR += p5-App-RunCron
@@ -1198,6 +1201,8 @@
     SUBDIR += rubygem-mothra
     SUBDIR += rubygem-murder
     SUBDIR += rubygem-ohai
+    SUBDIR += rubygem-openfact
+    SUBDIR += rubygem-openvoxserver-ca
     SUBDIR += rubygem-parallel
     SUBDIR += rubygem-puppet_forge
     SUBDIR += rubygem-puppetfile-resolver
@@ -1225,6 +1230,7 @@
     SUBDIR += rubygem-vagrant-bhyve
     SUBDIR += rubygem-vagrant-mutate
     SUBDIR += rubygem-vagrant_cloud
+    SUBDIR += rubygem-vagrant_cloud-gitlab
     SUBDIR += rubygem-vmstat
     SUBDIR += rubygem-win32-file
     SUBDIR += rubygem-win32-file-security
