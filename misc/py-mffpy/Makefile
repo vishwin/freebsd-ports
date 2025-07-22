@@ -14,7 +14,7 @@ LICENSE=	APACHE20
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}deprecated>=1.2.12:devel/py-deprecated@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}lxml5>=4.8.0:devel/py-lxml5@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}lxml>=4.8.0:devel/py-lxml@${PY_FLAVOR} \
 		${PYNUMPY} \
 		${PYTHON_PKGNAMEPREFIX}pytz>=2019.2:devel/py-pytz@${PY_FLAVOR}
 

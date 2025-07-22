@@ -12,7 +12,7 @@ WWW=		https://packages.octave.org/
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/${OCTAVE_SRC}/COPYING
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml5>=0:devel/py-lxml5@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${PY_FLAVOR} \
 		${OCTAVE_TARBALLS_DIR}/matgeom.tar.gz:math/octave-forge-matgeom
 
 USES=		octave python:env

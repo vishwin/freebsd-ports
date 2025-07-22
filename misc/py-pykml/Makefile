@@ -12,7 +12,7 @@ WWW=		https://pythonhosted.org/pykml
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml5>=2.2.6:devel/py-lxml5@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=2.2.6:devel/py-lxml@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils concurrent autoplist

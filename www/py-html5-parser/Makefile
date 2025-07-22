@@ -11,7 +11,7 @@ WWW=		https://html5-parser.readthedocs.io/
 
 LICENSE=	APACHE20
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml5>=4.9.2:devel/py-lxml5@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=4.9.2:devel/py-lxml@${PY_FLAVOR}
 
 USES=		gnome pkgconfig python
 USE_PYTHON=	autoplist distutils

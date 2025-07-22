@@ -25,7 +25,7 @@ OPTIONS_DEFINE=	ALL
 ALL_DESC=	All optional dependencies
 
 ALL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}h5py>=0:science/py-h5py@${PY_FLAVOR} \
-			${PYTHON_PKGNAMEPREFIX}lxml5>=4.1.1:devel/py-lxml5@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}lxml>=4.1.1:devel/py-lxml@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}matplotlib>=0:math/py-matplotlib@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}networkx>=2.5:math/py-networkx@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}pillow>=0:graphics/py-pillow@${PY_FLAVOR} \

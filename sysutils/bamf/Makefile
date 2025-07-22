@@ -11,7 +11,7 @@ WWW=		https://launchpad.net/bamf
 LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/COPYING.LGPL
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml5>=4.4.2:devel/py-lxml5@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=4.4.2:devel/py-lxml@${PY_FLAVOR}
 LIB_DEPENDS=	libgtop-2.0.so:devel/libgtop \
 	libstartup-notification-1.so:x11/startup-notification \
 	libharfbuzz.so:print/harfbuzz
