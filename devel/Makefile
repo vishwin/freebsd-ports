@@ -2593,6 +2593,7 @@
     SUBDIR += p5-FFI-Platypus-Type-Enum
     SUBDIR += p5-FFI-Platypus-Type-PtrObject
     SUBDIR += p5-FSA-Rules
+    SUBDIR += p5-Feature-Compat-Defer
     SUBDIR += p5-Feature-Compat-Try
     SUBDIR += p5-Fennec-Lite
     SUBDIR += p5-File-Append-TempFile
@@ -3178,6 +3179,7 @@
     SUBDIR += p5-MouseX-Types
     SUBDIR += p5-MouseX-Types-Path-Class
     SUBDIR += p5-Multiplex-CMD
+    SUBDIR += p5-Mutex
     SUBDIR += p5-NEXT
     SUBDIR += p5-Net-DBus
     SUBDIR += p5-No-Worries
@@ -3537,6 +3539,7 @@
     SUBDIR += p5-Symbol-Get
     SUBDIR += p5-Symbol-Global-Name
     SUBDIR += p5-Symbol-Util
+    SUBDIR += p5-Syntax-Keyword-Defer
     SUBDIR += p5-Syntax-Keyword-Dynamically
     SUBDIR += p5-Syntax-Keyword-Gather
     SUBDIR += p5-Syntax-Keyword-Junction
@@ -3973,6 +3976,7 @@
     SUBDIR += p5-iCal-Parser
     SUBDIR += p5-indirect
     SUBDIR += p5-interface
+    SUBDIR += p5-isa
     SUBDIR += p5-latest
     SUBDIR += p5-lexical-underscore
     SUBDIR += p5-lib-abs
