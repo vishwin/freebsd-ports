@@ -464,6 +464,7 @@
     SUBDIR += py-langchain-openai
     SUBDIR += py-langchain-tests
     SUBDIR += py-langchain-text-splitters
+    SUBDIR += py-langgraph-checkpoint
     SUBDIR += py-langgraph-sdk
     SUBDIR += py-langsmith
     SUBDIR += py-laspy
@@ -553,7 +554,6 @@
     SUBDIR += py-xformers
     SUBDIR += py-xgboost
     SUBDIR += pyobd
-    SUBDIR += python-langgraph-checkpoint
     SUBDIR += pytorch
     SUBDIR += qbrew
     SUBDIR += qlas
@@ -618,6 +618,8 @@
     SUBDIR += snakemake
     SUBDIR += soapysdr
     SUBDIR += solarized
+    SUBDIR += spacenavd-devel
+    SUBDIR += spnavcfg-devel
     SUBDIR += sshbuddy
     SUBDIR += sssnips
     SUBDIR += star-history

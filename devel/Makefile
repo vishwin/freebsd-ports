@@ -4332,6 +4332,7 @@
     SUBDIR += pprof
     SUBDIR += premake4
     SUBDIR += premake5
+    SUBDIR += priv_wrapper
     SUBDIR += projectcenter
     SUBDIR += prometheus-cpp
     SUBDIR += protobuf
@@ -7487,6 +7488,7 @@
     SUBDIR += rubygem-icalendar-gitlab
     SUBDIR += rubygem-ice_cube
     SUBDIR += rubygem-ice_nine
+    SUBDIR += rubygem-imagen
     SUBDIR += rubygem-inflecto
     SUBDIR += rubygem-iniparse
     SUBDIR += rubygem-insist
@@ -7789,6 +7791,8 @@
     SUBDIR += rubygem-rails-i18n-rails61
     SUBDIR += rubygem-rails-i18n-rails70
     SUBDIR += rubygem-rails-i18n-rails71
+    SUBDIR += rubygem-rails-i18n-rails72
+    SUBDIR += rubygem-rails-i18n-rails80
     SUBDIR += rubygem-rails-observers
     SUBDIR += rubygem-rainbow
     SUBDIR += rubygem-rake
@@ -8084,6 +8088,7 @@
     SUBDIR += rubygem-tzinfo1
     SUBDIR += rubygem-uber
     SUBDIR += rubygem-un
+    SUBDIR += rubygem-undercover
     SUBDIR += rubygem-unicode
     SUBDIR += rubygem-unicode-display_width
     SUBDIR += rubygem-unicode-display_width2

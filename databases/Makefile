@@ -224,8 +224,8 @@
     SUBDIR += ods2sql
     SUBDIR += opendbviewer
     SUBDIR += opendbx
-    SUBDIR += openvoxdb8
     SUBDIR += openvoxdb-terminus8
+    SUBDIR += openvoxdb8
     SUBDIR += ora2pg
     SUBDIR += oracle8-client
     SUBDIR += p5-Amazon-SimpleDB
@@ -768,6 +768,7 @@
     SUBDIR += py-couchdb
     SUBDIR += py-cymysql
     SUBDIR += py-databases
+    SUBDIR += py-datafusion
     SUBDIR += py-dbf
     SUBDIR += py-dbt-core
     SUBDIR += py-dbt-duckdb
