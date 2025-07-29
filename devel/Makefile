@@ -378,6 +378,7 @@
     SUBDIR += cargo-hack
     SUBDIR += cargo-leptos
     SUBDIR += cargo-llvm-cov
+    SUBDIR += cargo-make
     SUBDIR += cargo-mutants
     SUBDIR += cargo-spellcheck
     SUBDIR += cargo-tarpaulin
@@ -876,6 +877,7 @@
     SUBDIR += gitlab-shell
     SUBDIR += gitleaks
     SUBDIR += gitlist
+    SUBDIR += gitmux
     SUBDIR += gitolite
     SUBDIR += gitolite2
     SUBDIR += gitoxide
