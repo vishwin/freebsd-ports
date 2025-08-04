@@ -319,9 +319,7 @@
     SUBDIR += bloaty
     SUBDIR += bloomberg-bde
     SUBDIR += blueprint-compiler
-    SUBDIR += bmake
     SUBDIR += bmk
-    SUBDIR += bmkdep
     SUBDIR += bnf
     SUBDIR += boehm-gc
     SUBDIR += boehm-gc-threaded
@@ -8371,6 +8369,7 @@
     SUBDIR += transient-devel
     SUBDIR += transwarp
     SUBDIR += tree-sitter
+    SUBDIR += tree-sitter-cli
     SUBDIR += tree-sitter-graph
     SUBDIR += treefmt
     SUBDIR += treepy.el
@@ -8436,6 +8435,7 @@
     SUBDIR += wasi-libcxx20
     SUBDIR += wasm3
     SUBDIR += wasmer
+    SUBDIR += wasm-server-runner
     SUBDIR += websocketpp
     SUBDIR += websvn
     SUBDIR += wf-config
