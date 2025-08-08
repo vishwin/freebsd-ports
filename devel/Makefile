@@ -339,6 +339,7 @@
     SUBDIR += bsdcflow
     SUBDIR += bsddialog
     SUBDIR += bsdowl
+    SUBDIR += bstring
     SUBDIR += buf
     SUBDIR += bugzilla50
     SUBDIR += bugzilla52
@@ -1180,6 +1181,7 @@
     SUBDIR += kpublictransport
     SUBDIR += kronosnet
     SUBDIR += ktextaddons
+    SUBDIR += kunifiedpush
     SUBDIR += kyua
     SUBDIR += lab
     SUBDIR += lace
