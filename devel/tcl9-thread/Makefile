@@ -2,7 +2,7 @@ PORTNAME=	thread
 PORTVERSION=	3.0.2
 CATEGORIES=	devel
 MASTER_SITES=	SF/tcl/Tcl/9.0.2
-PKGNAMEPREFIX=	tcl9
+PKGNAMEPREFIX=	tcl9-
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	tcltk@FreeBSD.org
@@ -32,6 +32,8 @@ LMDB_LIB_DEPENDS=	liblmdb.so:databases/lmdb
 LMDB_CONFIGURE_WITH=	lmdb
 
 PORTDOCS=	*
+
+PORTSCOUT=	limit:^3\.
 
 post-patch:
 	@${REINPLACE_CMD} "/INSTALL_LIBRARY=/s|'\$$| -s'|" \
