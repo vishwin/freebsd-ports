@@ -399,7 +399,6 @@
     SUBDIR += cdialog
     SUBDIR += cdk
     SUBDIR += cereal
-    SUBDIR += cervisia
     SUBDIR += cflow
     SUBDIR += cflow2vcg
     SUBDIR += cfr
@@ -1080,6 +1079,7 @@
     SUBDIR += jgoodies-looks
     SUBDIR += jiic
     SUBDIR += jiri
+    SUBDIR += jjui
     SUBDIR += jline
     SUBDIR += jna
     SUBDIR += jsap
