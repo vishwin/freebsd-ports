@@ -448,6 +448,7 @@
     SUBDIR += py-google-ai-generativelanguage
     SUBDIR += py-gpiozero
     SUBDIR += py-halo
+    SUBDIR += py-hf-doc-builder
     SUBDIR += py-hf-xet
     SUBDIR += py-hist
     SUBDIR += py-histoprint
@@ -497,6 +498,7 @@
     SUBDIR += py-openpaperwork-core
     SUBDIR += py-openpaperwork-gtk
     SUBDIR += py-openvdb
+    SUBDIR += py-opt-einsum
     SUBDIR += py-optuna
     SUBDIR += py-oterm
     SUBDIR += py-palettable
