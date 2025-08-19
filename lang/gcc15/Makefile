@@ -80,11 +80,7 @@ CONFIGURE_TARGET=	x86_64-portbld-${OPSYS:tl}${OSREL}
 CONFIGURE_ARGS+=	--with-abi=elfv2
 .endif
 
-.if ${ARCH} == i386
 LANGUAGES:=	c,c++,objc,fortran
-.else
-LANGUAGES:=	c,c++,objc,fortran,jit
-.endif
 TARGLIB=	${PREFIX}/lib/gcc${SUFFIX}
 TARGLIB32=	${PREFIX}/lib32	# The version information is added later
 LIBEXEC=	${PREFIX}/libexec/gcc${SUFFIX}
