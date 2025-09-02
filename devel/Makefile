@@ -720,7 +720,6 @@
     SUBDIR += folly
     SUBDIR += forge
     SUBDIR += forgejo-runner
-    SUBDIR += forge-devel
     SUBDIR += fortran-stdlib
     SUBDIR += fortran-utils
     SUBDIR += fortytwo-encore
@@ -811,7 +810,6 @@
     SUBDIR += geany-plugin-xmlsnippets
     SUBDIR += geany-plugins
     SUBDIR += geany-plugins-l10n
-    SUBDIR += geany-themes
     SUBDIR += generate
     SUBDIR += gengetopt
     SUBDIR += genht
@@ -832,7 +830,6 @@
     SUBDIR += ghostie
     SUBDIR += ghq
     SUBDIR += ghub
-    SUBDIR += ghub-devel
     SUBDIR += gilt
     SUBDIR += gindent
     SUBDIR += gio-sharp
@@ -1651,7 +1648,6 @@
     SUBDIR += mage
     SUBDIR += magic_enum
     SUBDIR += magit
-    SUBDIR += magit-devel
     SUBDIR += makedepend
     SUBDIR += malloy
     SUBDIR += marisa-trie
@@ -4355,6 +4351,7 @@
     SUBDIR += py-BTrees
     SUBDIR += py-Dumper
     SUBDIR += py-Faker
+    SUBDIR += py-Farama-Notifications
     SUBDIR += py-IBMQuantumExperience
     SUBDIR += py-Jinja2
     SUBDIR += py-Jinja2-doc
@@ -5338,6 +5335,7 @@
     SUBDIR += py-onigurumacffi
     SUBDIR += py-opcodes
     SUBDIR += py-openapi-core
+    SUBDIR += py-openapi-pydantic
     SUBDIR += py-openapi-schema-validator
     SUBDIR += py-openapi-spec-validator
     SUBDIR += py-opencensus
@@ -8372,7 +8370,6 @@
     SUBDIR += tracy
     SUBDIR += tradcpp
     SUBDIR += transient
-    SUBDIR += transient-devel
     SUBDIR += transwarp
     SUBDIR += tree-sitter
     SUBDIR += tree-sitter-cli

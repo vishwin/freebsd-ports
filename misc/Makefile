@@ -443,6 +443,7 @@
     SUBDIR += py-ezc3d
     SUBDIR += py-facenet-pytorch
     SUBDIR += py-fast-histogram
+    SUBDIR += py-fastmcp
     SUBDIR += py-fastscapelib
     SUBDIR += py-files-to-prompt
     SUBDIR += py-fleep
@@ -450,6 +451,7 @@
     SUBDIR += py-gguf
     SUBDIR += py-google-ai-generativelanguage
     SUBDIR += py-gpiozero
+    SUBDIR += py-gymnasium
     SUBDIR += py-halo
     SUBDIR += py-hf-doc-builder
     SUBDIR += py-hf-xet
