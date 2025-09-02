@@ -152,7 +152,6 @@
     SUBDIR += mtrace
     SUBDIR += mysql-snmp
     SUBDIR += mysqld_exporter
-    SUBDIR += nagcon
     SUBDIR += nagios
     SUBDIR += nagios-certexp-plugin
     SUBDIR += nagios-check_bacula13
@@ -193,7 +192,6 @@
     SUBDIR += netbox-agent
     SUBDIR += netdata
     SUBDIR += netdata-go
-    SUBDIR += netdisco
     SUBDIR += netdisco-mibs
     SUBDIR += netleak
     SUBDIR += netmagis-common

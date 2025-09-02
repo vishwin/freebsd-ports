@@ -525,9 +525,6 @@
     SUBDIR += openjade
     SUBDIR += opensearch
     SUBDIR += opensearch-dashboards
-    SUBDIR += opensearch-dashboards210
-    SUBDIR += opensearch-dashboards213
-    SUBDIR += opensearch-dashboards216
     SUBDIR += opensearch-dashboards219
     SUBDIR += opensearch13
     SUBDIR += opensearch210
@@ -1375,6 +1372,7 @@
     SUBDIR += py-dparse
     SUBDIR += py-duecredit
     SUBDIR += py-ebcdic
+    SUBDIR += py-elastic-transport
     SUBDIR += py-elasticsearch
     SUBDIR += py-elasticsearch-async
     SUBDIR += py-elasticsearch-curator
@@ -1382,6 +1380,7 @@
     SUBDIR += py-elasticsearch-dsl6
     SUBDIR += py-elasticsearch5
     SUBDIR += py-elasticsearch6
+    SUBDIR += py-elasticsearch7
     SUBDIR += py-elementpath
     SUBDIR += py-emeraldtree
     SUBDIR += py-empy

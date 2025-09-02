@@ -190,6 +190,7 @@
     SUBDIR += ffproxy
     SUBDIR += fgallery
     SUBDIR += filebrowser
+    SUBDIR += filebrowser-quantum
     SUBDIR += filepizza
     SUBDIR += filtron
     SUBDIR += firedm
@@ -802,7 +803,6 @@
     SUBDIR += p5-Dancer2-Plugin-Ajax
     SUBDIR += p5-Dancer2-Plugin-Deferred
     SUBDIR += p5-Dancer2-Plugin-FormValidator
-    SUBDIR += p5-Dancer2-Plugin-Interchange6
     SUBDIR += p5-Dancer2-Plugin-Path-Class
     SUBDIR += p5-Data-TreeDumper-Renderer-DHTML
     SUBDIR += p5-Data-Validate-URI
@@ -1011,7 +1011,6 @@
     SUBDIR += p5-I18N-AcceptLanguage
     SUBDIR += p5-IMDB-Film
     SUBDIR += p5-Image-Delivery
-    SUBDIR += p5-Interchange6
     SUBDIR += p5-JE
     SUBDIR += p5-JSON-API
     SUBDIR += p5-JSON-WebToken
@@ -2686,7 +2685,6 @@
     SUBDIR += xurls
     SUBDIR += yabb
     SUBDIR += yarn
-    SUBDIR += yarn-node18
     SUBDIR += yarn-node20
     SUBDIR += yarn-node22
     SUBDIR += yarn-node24

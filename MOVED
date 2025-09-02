@@ -4743,3 +4743,25 @@ devel/forge-devel|devel/forge|2025-09-01|Has expired: Use devel/forge instead
 editors/with-editor-devel|editors/with-editor|2025-09-01|Has expired: Use editors/with-editor instead
 converters/pdf2djvu||2025-09-01|Has expired: Port has been abandoned upstream for almost three years: https://groups.io/g/pdf2djvu/message/146
 multimedia/py-PySceneDetect|multimedia/py-scenedetect|2025-09-01|Renamed to match the registered PYPI package name
+finance/quba-viewer||2025-09-02|Has expired: Depends on expired devel/electron32
+devel/electron32||2025-09-02|Has expired: EOLed upstream, switch to newer version
+devel/rubygem-thor13|devel/rubygem-thor|2025-09-02|Remove obsoleted port. Use devel/rubygem-thor instead
+devel/rubygem-xdg2|devel/rubygem-xdg|2025-09-02|Remove obsoleted port. Use devel/rubygem-xdg instead
+math/libmissing||2025-09-02|Has expired: Old. FreeBSD's libm improved since 2012 when this was imported
+security/p5-Dancer2-Plugin-Auth-Extensible-Provider-Usergroup||2025-09-02|Has expired: Depends on expired security/p5-Data-Entropy via security/p5-Dancer2-Plugin-Passphrase
+security/p5-Dancer-Plugin-Auth-Extensible-Provider-Usergroup||2025-09-02|Has expired: Depends on expired security/p5-Data-Entropy via security/p5-Dancer-Plugin-Passphrase
+security/py-onlykey||2025-09-02|Has expired: Depends on expired security/libu2f-host
+security/yubikey-manager-qt||2025-09-02|Has expired: Depends on expired security/libu2f-host via security/py-yubikey-manager
+security/yubioath-desktop||2025-09-02|Has expired: Depends on expired security/libu2f-host via security/py-yubikey-manager
+textproc/opensearch-dashboards213||2025-09-02|Has expired: Depends on expired www/npm-node18
+textproc/opensearch-dashboards210||2025-09-02|Has expired: Depends on expired www/npm-node18
+textproc/opensearch-dashboards216||2025-09-02|Has expired: Depends on expired www/npm-node18
+net-mgmt/netdisco||2025-09-02|Has expired: Depends on expired security/p5-Data-Entropy via security/p5-Dancer-Plugin-Passphrase
+www/p5-Dancer2-Plugin-Interchange6||2025-09-02|Has expired: Depends on expired security/p5-Data-Entropy via databases/p5-Interchange6-Schema
+www/p5-Interchange6||2025-09-02|Has expired: Depends on expired security/p5-Data-Entropy via databases/p5-Interchange6-Schema
+security/p5-Dancer-Plugin-Passphrase||2025-09-02|Has expired: Depends on expired security/p5-Data-Entropy
+security/p5-Dancer2-Plugin-Passphrase||2025-09-02|Has expired: Depends on expired security/p5-Data-Entropy
+security/p5-Data-Entropy||2025-09-02|Has expired: The maintainer of this distribution has indicated that it is deprecated and no longer suitable for use
+security/libu2f-host||2025-09-02|Has expired: This project is deprecated and is no longer being maintained. libfido2 is a new project with support for U2F and FIDO2. Use security/libfido2 instead
+net-mgmt/nagcon||2025-09-02|Has expired: Obsolete, only supports legacy versions of Nagios
+www/yarn-node18||2025-09-02|Has expired: Depeneds on expired www/node18. Node.js 18.* has reached its EoL on 2025-04-30
