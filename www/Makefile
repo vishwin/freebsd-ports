@@ -498,7 +498,6 @@
     SUBDIR += nginx-vts-exporter
     SUBDIR += nift
     SUBDIR += node
-    SUBDIR += node18
     SUBDIR += node20
     SUBDIR += node22
     SUBDIR += node24
@@ -506,7 +505,6 @@
     SUBDIR += novnc
     SUBDIR += npc
     SUBDIR += npm
-    SUBDIR += npm-node18
     SUBDIR += npm-node20
     SUBDIR += npm-node22
     SUBDIR += npm-node24
