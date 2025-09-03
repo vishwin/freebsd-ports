@@ -15,7 +15,7 @@ WWW=		https://itstool.org/ \
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING.GPL3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml5>=0:devel/py-lxml5@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${PY_FLAVOR}
 
 USES=		autoreconf python tar:bzip2
 
