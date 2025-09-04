@@ -1435,7 +1435,9 @@
     SUBDIR += ylva
     SUBDIR += yubico-piv-tool
     SUBDIR += yubikey-agent
+    SUBDIR += yubikey-manager-qt
     SUBDIR += yubikey-personalization-gui
+    SUBDIR += yubioath-desktop
     SUBDIR += zaproxy
     SUBDIR += zeek
     SUBDIR += zeronet
