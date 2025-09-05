@@ -296,6 +296,7 @@
     SUBDIR += pandorafms_agent
     SUBDIR += pandorafms_console
     SUBDIR += pandorafms_server
+    SUBDIR += peering-manager
     SUBDIR += pftabled
     SUBDIR += php-fpm_exporter
     SUBDIR += php81-snmp
@@ -343,6 +344,7 @@
     SUBDIR += py-pyIOSXR
     SUBDIR += py-pyang
     SUBDIR += py-pyeapi
+    SUBDIR += py-pyixapi
     SUBDIR += py-pynetbox
     SUBDIR += py-pynxos
     SUBDIR += py-pypowerwall
