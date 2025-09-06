@@ -174,6 +174,7 @@
     SUBDIR += activitymail
     SUBDIR += actor-framework
     SUBDIR += adacurses
+    SUBDIR += addlicense
     SUBDIR += agar
     SUBDIR += aifad
     SUBDIR += air-go
@@ -500,6 +501,7 @@
     SUBDIR += covtool
     SUBDIR += cpan-upload
     SUBDIR += cpan-upload-http
+    SUBDIR += cpp-codec
     SUBDIR += cpp-netlib
     SUBDIR += cpp-utilities
     SUBDIR += cpp2py
@@ -1678,6 +1680,7 @@
     SUBDIR += modd
     SUBDIR += mold
     SUBDIR += mongo-c-driver
+    SUBDIR += mongo-cxx-driver
     SUBDIR += mono-addins
     SUBDIR += mpatrol
     SUBDIR += mph
