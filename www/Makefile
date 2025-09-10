@@ -36,6 +36,7 @@
     SUBDIR += angie-console-light
     SUBDIR += angie-module-auth-jwt
     SUBDIR += angie-module-auth-spnego
+    SUBDIR += angie-module-auth-totp
     SUBDIR += angie-module-brotli
     SUBDIR += angie-module-cache-purge
     SUBDIR += angie-module-dav-ext
@@ -450,7 +451,7 @@
     SUBDIR += mod_umask
     SUBDIR += mod_webauth
     SUBDIR += mod_webkit
-    SUBDIR += mod_wsgi4
+    SUBDIR += mod_wsgi
     SUBDIR += mod_xsendfile
     SUBDIR += mohawk
     SUBDIR += moin2
