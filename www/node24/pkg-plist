@@ -2110,7 +2110,6 @@ include/node/node_version.h
 %%BUNDLED_SSL%%include/node/openssl/archs/solaris64-x86_64-gcc/no-asm/providers/common/include/prov/der_wrap.h
 %%BUNDLED_SSL%%include/node/openssl/asn1.h
 %%BUNDLED_SSL%%include/node/openssl/asn1_asm.h
-%%BUNDLED_SSL%%include/node/openssl/asn1_mac.h
 %%BUNDLED_SSL%%include/node/openssl/asn1_no-asm.h
 %%BUNDLED_SSL%%include/node/openssl/asn1err.h
 %%BUNDLED_SSL%%include/node/openssl/asn1t.h
