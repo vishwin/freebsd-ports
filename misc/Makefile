@@ -501,8 +501,11 @@
     SUBDIR += py-mmengine
     SUBDIR += py-mmsegmentation
     SUBDIR += py-molequeue
+    SUBDIR += py-napari
+    SUBDIR += py-napari-svg
     SUBDIR += py-natten
     SUBDIR += py-npTDMS
+    SUBDIR += py-npe2
     SUBDIR += py-numcodecs
     SUBDIR += py-ollama
     SUBDIR += py-onnx
