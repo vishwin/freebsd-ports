@@ -12,16 +12,18 @@ WWW=		https://gatus.io
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_i386=	cannot use int64(off) (value of type int64) as int32 value in assignment
+
 USES=		go:modules
 USE_GITHUB=	yes
 GH_ACCOUNT=	TwiN
 
 USE_RC_SUBR=	${PORTNAME}
 
+SUB_LIST=	USER=${GATUS_USER}
+
 PLIST_FILES=	bin/${PORTNAME} \
 		"@sample etc/${PORTNAME}.yaml.sample"
-
-SUB_LIST=	USER=${GATUS_USER}
 
 GATUS_USER=	www
 
