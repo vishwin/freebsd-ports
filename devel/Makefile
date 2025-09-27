@@ -5242,6 +5242,7 @@
     SUBDIR += py-lxml5
     SUBDIR += py-mac-vendor-lookup
     SUBDIR += py-macholib
+    SUBDIR += py-madoka
     SUBDIR += py-magic
     SUBDIR += py-magnet2torrent
     SUBDIR += py-mailcap-fix
@@ -5522,6 +5523,7 @@
     SUBDIR += py-poetry-types
     SUBDIR += py-poetry2setup
     SUBDIR += py-polib
+    SUBDIR += py-pondpond
     SUBDIR += py-pooch
     SUBDIR += py-pop
     SUBDIR += py-pop-config
