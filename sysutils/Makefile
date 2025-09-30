@@ -1003,6 +1003,7 @@
     SUBDIR += process-viewer
     SUBDIR += procmap
     SUBDIR += procs
+    SUBDIR += progress
     SUBDIR += pslist
     SUBDIR += psmisc
     SUBDIR += pstack
@@ -1534,6 +1535,7 @@
     SUBDIR += userneu-devel
     SUBDIR += usrinfo
     SUBDIR += utcount
+    SUBDIR += util-linux
     SUBDIR += vagrant
     SUBDIR += vagrant-gitlab
     SUBDIR += vbetool
