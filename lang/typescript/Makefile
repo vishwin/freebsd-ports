@@ -1,12 +1,15 @@
 PORTNAME=	typescript
-DISTVERSION=	5.9.2
+DISTVERSION=	5.9.3
 CATEGORIES=	lang
 MASTER_SITES=	https://registry.npmjs.org/${PORTNAME}/-/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mandree@FreeBSD.org
 COMMENT=	Superset of JavaScript that compiles to JavaScript output
 WWW=		https://www.typescriptlang.org/
+
+DEPRECATED=	New port was added without port maintainer, submitter not interested in taking it.  See https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=289856 and contact mandree@ if you are willing to maintain typescript and have a track record that lets you appear suitable for maintaining a high-profile port.
+EXPIRATION_DATE=2025-11-30
 
 LICENSE=	APACHE20
 
