@@ -58,7 +58,6 @@
     SUBDIR += bitwarden-cli
     SUBDIR += blst
     SUBDIR += boringssl
-    SUBDIR += botan2
     SUBDIR += botan3
     SUBDIR += bruteblock
     SUBDIR += bsdsfv
@@ -453,7 +452,6 @@
     SUBDIR += openssl-quictls
     SUBDIR += openssl-unsafe
     SUBDIR += openssl111
-    SUBDIR += openssl32
     SUBDIR += openssl33
     SUBDIR += openssl33-quictls
     SUBDIR += openssl34
