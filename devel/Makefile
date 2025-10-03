@@ -4646,6 +4646,7 @@
     SUBDIR += py-cfgv
     SUBDIR += py-cfn-lint
     SUBDIR += py-cftime
+    SUBDIR += py-cgen
     SUBDIR += py-chai
     SUBDIR += py-chainmap
     SUBDIR += py-characteristic
@@ -5247,6 +5248,7 @@
     SUBDIR += py-magnet2torrent
     SUBDIR += py-mailcap-fix
     SUBDIR += py-makefun
+    SUBDIR += py-mando
     SUBDIR += py-manuel
     SUBDIR += py-marisa-trie
     SUBDIR += py-marrow.mailer
