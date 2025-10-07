@@ -895,6 +895,7 @@
     SUBDIR += py-bcrypt
     SUBDIR += py-bitbox02
     SUBDIR += py-btchip-python
+    SUBDIR += py-cart
     SUBDIR += py-cerealizer
     SUBDIR += py-cert-human
     SUBDIR += py-certbot
@@ -956,6 +957,7 @@
     SUBDIR += py-gpsoauth
     SUBDIR += py-greenbone-feed-sync
     SUBDIR += py-gssapi
+    SUBDIR += py-guardpost
     SUBDIR += py-gvm-tools
     SUBDIR += py-hkdf
     SUBDIR += py-htpasswd
