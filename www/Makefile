@@ -127,6 +127,7 @@
     SUBDIR += codeigniter
     SUBDIR += colly
     SUBDIR += coppermine
+    SUBDIR += corepack
     SUBDIR += cpp-httplib
     SUBDIR += cpr
     SUBDIR += crawl
@@ -507,6 +508,7 @@
     SUBDIR += node20
     SUBDIR += node22
     SUBDIR += node24
+    SUBDIR += node25
     SUBDIR += nostromo
     SUBDIR += novnc
     SUBDIR += npc
@@ -514,6 +516,7 @@
     SUBDIR += npm-node20
     SUBDIR += npm-node22
     SUBDIR += npm-node24
+    SUBDIR += npm-node25
     SUBDIR += nyxt
     SUBDIR += oatpp
     SUBDIR += oauth2-proxy
@@ -2729,6 +2732,7 @@
     SUBDIR += yarn-node20
     SUBDIR += yarn-node22
     SUBDIR += yarn-node24
+    SUBDIR += yarn-node25
     SUBDIR += yarr
     SUBDIR += yaws
     SUBDIR += you-get

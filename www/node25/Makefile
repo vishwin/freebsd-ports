@@ -1,7 +1,6 @@
 PORTNAME=	node
 PORTVERSION=	${NODEJS_PORTVERSION}
 DISTVERSIONPREFIX=	v
-PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=	https://nodejs.org/dist/v${PORTVERSION}/
 PKGNAMESUFFIX=	${PORTVERSION:R:R}
@@ -44,7 +43,6 @@ CONFIGURE_ARGS=	--prefix=${PREFIX:S|^${DESTDIR}||} \
 		--shared-simdjson \
 		--shared-zlib \
 		--shared-zstd \
-		--without-corepack \
 		--with-intl=system-icu \
 		--without-npm
 CXXFLAGS_powerpc64=	-mpower8-vector
@@ -87,7 +85,6 @@ post-patch:
 # Clean up bundled libraries
 	@${RM} -r ${WRKSRC}/deps/brotli/
 	@${RM} -r ${WRKSRC}/deps/cares/
-	@${RM} -r ${WRKSRC}/deps/corepack/
 	@${RM} -r ${WRKSRC}/deps/icu-small/
 	@${RM} -r ${WRKSRC}/deps/llhttp/
 	@${RM} -r ${WRKSRC}/deps/nghttp2/
