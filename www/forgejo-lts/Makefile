@@ -1,8 +1,9 @@
 PORTNAME=	forgejo
 DISTVERSIONPREFIX=	v
-DISTVERSION=	13.0.2
+DISTVERSION=	11.0.7
 CATEGORIES=	www
 MASTER_SITES=	https://codeberg.org/forgejo/forgejo/releases/download/${DISTVERSIONFULL}/
+PKGNAMESUFFIX=	-lts
 DISTNAME=	forgejo-src-${DISTVERSION}
 
 MAINTAINER=	des@FreeBSD.org
@@ -19,7 +20,7 @@ USE_RC_SUBR=	forgejo
 
 PIE_UNSAFE=	yes
 
-CONFLICTS_INSTALL=	forgejo-lts forgejo7
+CONFLICTS_INSTALL=	forgejo forgejo7
 
 EXTRACT_AFTER_ARGS=	--strip-components 1
 DBDIR=		/var/db/forgejo
