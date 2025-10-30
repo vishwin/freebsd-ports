@@ -1,8 +1,92 @@
+  <vuln vid="237f4f57-b50f-11f0-ae9b-b42e991fc52e">
+    <topic>Erlang - Absolute Path in Zip Module</topic>
+    <affects>
+	<package>
+	  <name>erlang</name>
+	  <range><ge>17.0</ge><lt>26.2.5.13,4</lt></range>
+	</package>
+	<package>
+	  <name>erlang-runtime26</name>
+	  <range><lt>26.2.5.13</lt></range>
+	</package>
+	<package>
+	  <name>erlang-runtime27</name>
+	  <range><lt>27.3.4.1</lt></range>
+	</package>
+	<package>
+	  <name>erlang-runtime28</name>
+	  <range><lt>28.0.1</lt></range>
+	</package>
+	</affects>
+	<description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://github.com/erlang/otp/security/advisories/GHSA-9g37-pgj9-wrhc reports:</p>
+	<blockquote cite="https://github.com/erlang/otp/security/advisories/GHSA-9g37-pgj9-wrhc">
+	  <p>Improper Limitation of a Pathname to a Restricted
+	  Directory ('Path Traversal') vulnerability in Erlang OTP
+	(stdlib modules) allows Absolute Path Traversal, File Manipulation.
+	This vulnerability is associated with program files lib/stdlib/src/zip.erl
+	and program routines zip:unzip/1, zip:unzip/2, zip:extract/1,
+	zip:extract/2unless the memory option is passed. This issue
+	affects OTP from OTP 17.0 until OTP28.0.1, OTP27.3.4.1 and
+	OTP26.2.5.13, corresponding to stdlib from 2.0 until 7.0.1,
+	6.2.2.1 and 5.2.3.4.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-4748</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2025-4748</url>
+    </references>
+    <dates>
+      <discovery>2025-06-16</discovery>
+      <entry>2025-10-29</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="55c4e822-b4e4-11f0-8438-001b217e4ee5">
+    <topic>ISC KEA -- Invalid characters cause assert</topic>
+    <affects>
+      <package>
+       <name>kea</name>
+       <range><ge>3.0.1</ge><lt>3.0.2</lt></range>
+      </package>
+      <package>
+       <name>kea-devel</name>
+       <range><ge>3.1.1</ge><lt>3.1.3</lt></range>
+      </package>
+    </affects>
+    <description>
+       <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Internet Systems Consortium, Inc. reports:</p>
+       <blockquote cite="https://kb.isc.org/docs/cve-2025-11232">
+       <p>To trigger the issue, three configuration parameters
+       must have specific settings: "hostname-char-set" must be
+       left at the default setting, which is "[^A-Za-z0-9.-]";
+       "hostname-char-replacement" must be empty (the default);
+       and "ddns-qualifying-suffix" must NOT be empty (the default is empty).
+       DDNS updates do not need to be enabled for this issue to manifest.
+       A client that sends certain option content would then
+       cause kea-dhcp4 to exit unexpectedly.
+       This addresses CVE-2025-11232 [#4142, #4155].</p>
+       </blockquote>
+       </body>
+    </description>
+    <references>
+      <cvename>CVE-2025-11232</cvename>
+      <url>https://kb.isc.org/docs/cve-2025-11232</url>
+    </references>
+    <dates>
+      <discovery>2025-10-29</discovery>
+      <entry>2025-10-29</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="c5889223-b4e1-11f0-ae9b-b42e991fc52e">
     <topic>SQLite -- CWE-190 Integer Overflow or Wraparound</topic>
     <affects>
     <package>
-	<name>SQLite</name>
+	<name>sqlite3</name>
 	<range><lt>3.50.3</lt></range>
     </package>
       <package>
@@ -84,7 +168,7 @@
     <topic>SQLite -- Integer Overflow vulnerability</topic>
     <affects>
     <package>
-	<name>sqlite</name>
+	<name>sqlite3</name>
 	<range><lt>3.50.1</lt></range>
     </package>
       <package>
