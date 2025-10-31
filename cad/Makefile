@@ -17,6 +17,7 @@
     SUBDIR += calculix
     SUBDIR += calculix-ccx
     SUBDIR += camotics
+    SUBDIR += camv-rnd
     SUBDIR += caneda
     SUBDIR += cascade
     SUBDIR += cascade-compiler
@@ -133,6 +134,7 @@
     SUBDIR += qucsator
     SUBDIR += repsnapper
     SUBDIR += rubygem-gdsii
+    SUBDIR += sch-rnd
     SUBDIR += scotch
     SUBDIR += silice
     SUBDIR += solvespace
