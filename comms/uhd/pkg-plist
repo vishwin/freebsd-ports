@@ -688,4 +688,3 @@ share/man/man1/usrpctl.1.gz
 %%DATADIR%%/utils/usrp2_recovery.py
 %%DATADIR%%/utils/usrp_burn_db_eeprom
 %%DATADIR%%/utils/usrp_burn_mb_eeprom
-@dir %%PYTHON_SITELIBDIR%%/uhd/rfnoc_utils/__pycache__
