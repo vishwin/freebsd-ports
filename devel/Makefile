@@ -663,7 +663,6 @@
     SUBDIR += egypt
     SUBDIR += eiffelstudio
     SUBDIR += electron34
-    SUBDIR += electron35
     SUBDIR += electron36
     SUBDIR += electron37
     SUBDIR += electron38
@@ -6157,7 +6156,6 @@
     SUBDIR += py-types-retry
     SUBDIR += py-types-setuptools
     SUBDIR += py-types-toml
-    SUBDIR += py-types-ujson
     SUBDIR += py-typeshed-client
     SUBDIR += py-typing-extensions
     SUBDIR += py-typing-inspect
@@ -6359,7 +6357,6 @@
     SUBDIR += pyside6
     SUBDIR += pyside6-tools
     SUBDIR += pystring
-    SUBDIR += pysvn
     SUBDIR += pythontidy
     SUBDIR += pytype
     SUBDIR += qbe

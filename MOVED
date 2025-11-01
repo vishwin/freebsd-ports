@@ -4834,3 +4834,16 @@ devel/pycomposefile|devel/py-pycomposefile|2025-10-27|Rename to add py- prefix. 
 devel/rubygem-fugit111|devel/rubygem-fugit|2025-10-27|Remove obsoleted port. Use devel/rubygem-fugit instead
 science/py-hiphive|science/py-hiPhive|2025-10-28|Spelling changed into camel case on PYPI and GH
 games/burrtools|games/burr-tools|2025-10-31|Harmonise with upstream repository name
+databases/mongodb60|databases/mongodb70|2025-11-01|Has expired: EOL starting August 2025, see https://www.mongodb.com/legal/support-policy/lifecycles, please use databases/mongodb70
+www/phpmustache||2025-11-01|Has expired: Installation mode changed from systemwide to per-application with Composer
+dns/fpdns||2025-11-01|Has expired: Upstream repository has been archived on Sep 19, 2024
+databases/py-pycql||2025-11-01|Has expired: Upstream repository has been archived on Aug 31, 2021
+devel/py-types-ujson||2025-11-01|Has expired: No longer required by devel/py-ujson ≥ 5.11
+devel/pysvn||2025-11-01|Has expired: Fails to build
+cad/impact||2025-11-01|Has expired: Does not work as intended
+emulators/citra-qt5||2025-11-01|Has expired: project has been discontinued and build fails with FFmpeg >7
+emulators/citra||2025-11-01|Has expired: project has been discontinued and build fails with FFmpeg >7
+games/renpy||2025-11-01|Has expired: Uses deprecated version of python
+security/rhonabwy||2025-11-01|Has expired: Upstream repository has been archived on Nov 11, 2024
+devel/electron35||2025-11-01|Has expired: EOLed upstream, switch to newer version
+lang/python39||2025-11-01|Has expired: Upgrade to a newer Python version. 3.9 is in maintenance status and gets security fixes only. End-of-Life: 2025-10. See https://devguide.python.org/versions/
