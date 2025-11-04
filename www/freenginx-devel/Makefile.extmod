@@ -158,6 +158,7 @@ HTTP_TARANTOOL_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ngx_http_tarantool-config
 
 HTTP_UPLOAD_GH_TUPLE=		fdintino:nginx-upload-module:96e6460:upload
 HTTP_UPLOAD_VARS=		DSO_EXTMODS+=upload
+HTTP_UPLOAD_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ngx_http_upload_module.c
 
 HTTP_UPLOAD_PROGRESS_GH_TUPLE=		masterzen:nginx-upload-progress-module:v0.9.3:uploadprogress
 HTTP_UPLOAD_PROGRESS_VARS=		DSO_EXTMODS+=uploadprogress
@@ -266,7 +267,8 @@ PASSENGER_DISTFILES=	passenger-${PASSENGER_NGINX_VER}.tar.gz:passenger
 PASSENGER_VARS=		WRKSRC_passenger=${WRKDIR}/passenger-${PASSENGER_NGINX_VER} \
 			DSO_EXTDIRS+=passenger-${PASSENGER_NGINX_VER}/src/nginx_module
 PASSENGER_EXTRA_PATCHES=${PATCHDIR}/extra-patch-passenger-build-nginx.rb \
-			${PATCHDIR}/extra-patch-passenger-disable-telemetry
+			${PATCHDIR}/extra-patch-passenger-disable-telemetry \
+			${PATCHDIR}/extra-patch-passenger-Configuration.c
 
 POSTGRES_USES=		pgsql
 POSTGRES_GH_TUPLE=	konstruxi:ngx_postgres:8aa7359:postgres
@@ -316,6 +318,7 @@ VOD_VARS=		DSO_EXTMODS+=vod
 
 VTS_GH_TUPLE=		vozlt:nginx-module-vts:c382342:vts
 VTS_VARS=		DSO_EXTMODS+=vts
+VTS_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ngx_http_vhost_traffic_status_module.c
 
 XSS_GH_TUPLE=		openresty:xss-nginx-module:de2d87a:xss
 XSS_VARS=		DSO_EXTMODS+=xss
