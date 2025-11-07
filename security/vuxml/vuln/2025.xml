@@ -1,3 +1,44 @@
+  <vuln vid="93ff3ebe-bba8-11f0-b3f7-a8a1599412c6">
+    <topic>chromium -- multiple security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>142.0.7444.134</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>142.0.7444.134</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2025/11/stable-channel-update-for-desktop.html">
+	 <p>This update includes 5 security fixes:</p>
+	 <ul>
+	    <li>[443906252] High CVE-2025-12725: Out of bounds write in WebGPU. Reported by Anonymous on 2025-09-09</li>
+	    <li>[447172715] High CVE-2025-12726: Inappropriate implementation in Views. Reported by Alesandro Ortiz on 2025-09-25</li>
+	    <li>[454485895] High CVE-2025-12727: Inappropriate implementation in V8. Reported by 303f06e3 on 2025-10-23</li>
+	    <li>[452392032] Medium CVE-2025-12728: Inappropriate implementation in Omnibox. Reported by Hafiizh on 2025-10-16</li>
+	    <li>[454354281] Medium CVE-2025-12729: Inappropriate implementation in Omnibox. Reported by Khalil Zhani on 2025-10-23</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2025-12725</cvename>
+      <cvename>CVE-2025-12726</cvename>
+      <cvename>CVE-2025-12727</cvename>
+      <cvename>CVE-2025-12728</cvename>
+      <cvename>CVE-2025-12729</cvename>
+      <url>https://chromereleases.googleblog.com/2025/11/stable-channel-update-for-desktop.html</url>
+    </references>
+    <dates>
+      <discovery>2025-11-05</discovery>
+      <entry>2025-11-07</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="77bac392-ba98-11f0-aada-f59a8ea34d12">
 	  <topic>OpenJPH &lt; 0.24.5 -- multiple vulnerabilities</topic>
     <affects>
@@ -796,15 +837,15 @@
   </vuln>
 
   <vuln vid="c5889223-b4e1-11f0-ae9b-b42e991fc52e">
-    <topic>SQLite -- CWE-190 Integer Overflow or Wraparound</topic>
+    <topic>SQLite &lt; 3.50.3 -- CWE-190 Integer Overflow or Wraparound in FTS5 module</topic>
     <affects>
     <package>
 	<name>sqlite3</name>
-	<range><lt>3.50.3,1</lt></range>
+	<range><ge>3.49.1,1</ge><lt>3.50.3,1</lt></range>
     </package>
       <package>
-	<name>linux_base-rl9-9.6</name>
-	<range><le>9.6_1</le></range>
+	<name>linux_base-rl9</name>
+	<range><ge>0</ge></range> <!-- unknown and unrelated fixes might make this disappear, so set >= 0 instead of <= 9.6_1 to err on the safe side -->
       </package>
       <package>
 	<name>linux-c7-sqlite</name>
@@ -821,6 +862,7 @@
 	  A pointer to partially controlled data can then be written
 	  out of bounds.</p>
 	</blockquote>
+	<p>The FreeBSD build enables the FTS5 extension by default.</p>
 	</body>
     </description>
     <references>
@@ -828,8 +870,9 @@
       <url>https://cveawg.mitre.org/api/cve/CVE-2025-7709</url>
     </references>
     <dates>
-      <discovery>2025-09-08</discovery>
+      <discovery>2025-07-15</discovery>
       <entry>2025-10-29</entry>
+      <modified>2025-11-07</modified>
     </dates>
   </vuln>
 
