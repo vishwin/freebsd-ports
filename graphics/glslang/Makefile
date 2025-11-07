@@ -23,6 +23,8 @@ GH_ACCOUNT=	KhronosGroup
 
 CMAKE_ON=	ALLOW_EXTERNAL_SPIRV_TOOLS
 
+PORTSCOUT=	limit:^[0-9]+\.	# avoid tags like sdk-candidate-26-jul-2020
+
 NO_CCACHE=	yes
 
 .include <bsd.port.mk>
