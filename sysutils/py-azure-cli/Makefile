@@ -1,6 +1,6 @@
 PORTNAME=	azure-cli
 PORTVERSION=	2.55.0
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	sysutils python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -97,7 +97,7 @@ RUN_DEPENDS=	bash:shells/bash \
 		${PYTHON_PKGNAMEPREFIX}fabric>=2.4:devel/py-fabric@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}paramiko>=2.0.8:security/py-paramiko@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pygments>=2.4:textproc/py-pygments@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pyopenssl>=17.1.0:security/py-openssl@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pyopenssl>=17.1.0,1:security/py-pyopenssl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}packaging>=20.9:devel/py-packaging@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycomposefile>=0.0.30:devel/py-pycomposefile@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyyaml>=5.1:devel/py-pyyaml@${PY_FLAVOR} \
@@ -110,7 +110,7 @@ RUN_DEPENDS=	bash:shells/bash \
 		${PYTHON_PKGNAMEPREFIX}javaproperties>=0.5.1:devel/py-javaproperties@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jsondiff>=2.0.0:devel/py-jsondiff@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}semver>=2.13.0:devel/py-semver@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pygithub>=1.55:devel/py-PyGithub@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}PyGithub>=1.55:devel/py-PyGithub@${PY_FLAVOR}
 
 USES=		azurepy python
 USE_PYTHON=	autoplist concurrent cryptography distutils
