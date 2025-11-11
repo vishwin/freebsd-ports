@@ -21,6 +21,8 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyopenssl>17.0:security/py-openssl@${PY_FLAV
 USES=		python
 USE_PYTHON=	distutils autoplist
 
+NO_ARCH=	yes
+
 CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}cloudflare-scrape-1.*
 
 .include <bsd.port.mk>
