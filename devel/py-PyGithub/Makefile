@@ -1,9 +1,8 @@
-PORTNAME=	PyGithub
+PORTNAME=	pygithub
 DISTVERSION=	2.8.1
 CATEGORIES=	devel www python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-DISTNAME=	${PORTNAME:tl}-${PORTVERSION}
 
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Python library implementing the full GitHub API v3
