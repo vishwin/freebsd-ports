@@ -1798,6 +1798,7 @@
     SUBDIR += ruby-rdtool
     SUBDIR += ruby-rttool
     SUBDIR += rubygem-abbrev
+    SUBDIR += rubygem-action_text-trix
     SUBDIR += rubygem-actionpack-xml_parser-rails5
     SUBDIR += rubygem-actionpack-xml_parser-rails52
     SUBDIR += rubygem-actionpack-xml_parser-rails61
@@ -1809,6 +1810,7 @@
     SUBDIR += rubygem-actiontext71
     SUBDIR += rubygem-actiontext72
     SUBDIR += rubygem-actiontext80
+    SUBDIR += rubygem-actiontext81
     SUBDIR += rubygem-albino
     SUBDIR += rubygem-amatch
     SUBDIR += rubygem-asciidoctor
@@ -1961,6 +1963,7 @@
     SUBDIR += rubygem-rails-dom-testing-rails71
     SUBDIR += rubygem-rails-dom-testing-rails72
     SUBDIR += rubygem-rails-dom-testing-rails80
+    SUBDIR += rubygem-rails-dom-testing-rails81
     SUBDIR += rubygem-rails-dom-testing1
     SUBDIR += rubygem-rails-html-sanitizer
     SUBDIR += rubygem-rak
