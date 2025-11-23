@@ -11,7 +11,7 @@ LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${LOCALBASE}/libdata/pkgconfig/xkeyboard-config.pc:x11/xkeyboard-config \
-		${LOCALBASE}/include/EGL/eglmesaext.h:graphics/mesa-dri \
+		${LOCALBASE}/include/EGL/eglmesaext.h:graphics/mesa-libs \
 		${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 LIB_DEPENDS=	libgraphene-1.0.so:graphics/graphene \
 		libfribidi.so:converters/fribidi \
