@@ -5552,6 +5552,7 @@
     SUBDIR += py-poetry-types
     SUBDIR += py-poetry2setup
     SUBDIR += py-polib
+    SUBDIR += py-polyfactory
     SUBDIR += py-pondpond
     SUBDIR += py-pooch
     SUBDIR += py-pop
@@ -5839,6 +5840,7 @@
     SUBDIR += py-pythonfinder
     SUBDIR += py-pythran
     SUBDIR += py-pytimeparse
+    SUBDIR += py-pytokens
     SUBDIR += py-pytoolconfig
     SUBDIR += py-pytools
     SUBDIR += py-pytrie
@@ -8373,6 +8375,7 @@
     SUBDIR += stylua
     SUBDIR += styx
     SUBDIR += subprocess
+    SUBDIR += subprocess.h
     SUBDIR += subversion
     SUBDIR += subversion-book
     SUBDIR += subversion-lts
