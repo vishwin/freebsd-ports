@@ -4562,6 +4562,7 @@
     SUBDIR += py-azure-mgmt-synapse
     SUBDIR += py-azure-mgmt-trafficmanager
     SUBDIR += py-azure-mgmt-web
+    SUBDIR += py-azure-monitor-query
     SUBDIR += py-azure-multiapi-storage
     SUBDIR += py-azure-storage-blob
     SUBDIR += py-azure-storage-common
@@ -4582,6 +4583,7 @@
     SUBDIR += py-backports.entry-points-selectable
     SUBDIR += py-backports.tarfile
     SUBDIR += py-backports.zoneinfo
+    SUBDIR += py-backports.zstd
     SUBDIR += py-banal
     SUBDIR += py-bandit
     SUBDIR += py-bashlex
@@ -5221,6 +5223,7 @@
     SUBDIR += py-libpeas
     SUBDIR += py-libpeas1
     SUBDIR += py-libplist
+    SUBDIR += py-librt
     SUBDIR += py-libtaxii
     SUBDIR += py-libtmux
     SUBDIR += py-libusb-package
@@ -5287,6 +5290,7 @@
     SUBDIR += py-mergedeep
     SUBDIR += py-merossiot
     SUBDIR += py-methodtools
+    SUBDIR += py-microsoft-security-utilities-secret-masker
     SUBDIR += py-microversion-parse
     SUBDIR += py-milc
     SUBDIR += py-mime
@@ -5597,6 +5601,7 @@
     SUBDIR += py-pure-eval
     SUBDIR += py-purl
     SUBDIR += py-py
+    SUBDIR += py-py-deviceid
     SUBDIR += py-py-partiql-parser
     SUBDIR += py-py-serializable
     SUBDIR += py-py-stackexchange
@@ -7880,6 +7885,7 @@
     SUBDIR += rubygem-rails-i18n-rails71
     SUBDIR += rubygem-rails-i18n-rails72
     SUBDIR += rubygem-rails-i18n-rails80
+    SUBDIR += rubygem-rails-i18n-rails81
     SUBDIR += rubygem-rails-observers
     SUBDIR += rubygem-rainbow
     SUBDIR += rubygem-rake
