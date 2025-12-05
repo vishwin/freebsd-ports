@@ -190,6 +190,7 @@
     SUBDIR += gpsim
     SUBDIR += granulate
     SUBDIR += grc
+    SUBDIR += grok-cli
     SUBDIR += gwhich
     SUBDIR += hashdb
     SUBDIR += hello
@@ -562,6 +563,7 @@
     SUBDIR += py-sagemaker
     SUBDIR += py-sagemaker-core
     SUBDIR += py-sagemaker-mlops
+    SUBDIR += py-sagemaker-serve
     SUBDIR += py-sagemaker-shim
     SUBDIR += py-sagemaker-train
     SUBDIR += py-schedulefree
