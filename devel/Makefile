@@ -1369,7 +1369,6 @@
     SUBDIR += libmatthew
     SUBDIR += libmba
     SUBDIR += libmcfp
-    SUBDIR += libmill
     SUBDIR += libmowgli
     SUBDIR += libmowgli2
     SUBDIR += libmpcbdm
@@ -4610,7 +4609,6 @@
     SUBDIR += py-botocore
     SUBDIR += py-bps-restpy
     SUBDIR += py-breathe
-    SUBDIR += py-bsd
     SUBDIR += py-btest
     SUBDIR += py-build
     SUBDIR += py-buildbot
