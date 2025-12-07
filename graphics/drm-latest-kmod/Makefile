@@ -53,6 +53,8 @@ PLIST_SUB+=	I915="@comment "
 
 MAKE_ENV+=	MAKEOBJDIRPREFIX=${WRKSRC}/obj
 
+NO_CCACHE=	yes
+
 pre-build:
 		${MKDIR} ${WRKSRC}/obj
 		(cd ${WRKSRC} ; ${SETENV} ${MAKE_ENV} ${MAKE_CMD} obj)
