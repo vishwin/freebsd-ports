@@ -561,6 +561,7 @@
     SUBDIR += pgbarman
     SUBDIR += pgbouncer
     SUBDIR += pgdbf
+    SUBDIR += pgjwt
     SUBDIR += pgloader3
     SUBDIR += pglogical
     SUBDIR += pgmetrics
@@ -576,6 +577,7 @@
     SUBDIR += pgrouting
     SUBDIR += pgsanity
     SUBDIR += pgschema
+    SUBDIR += pgsql-http
     SUBDIR += pgtcl
     SUBDIR += pgtop
     SUBDIR += pguri
