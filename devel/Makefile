@@ -293,6 +293,7 @@
     SUBDIR += bacnet-stack
     SUBDIR += bacon
     SUBDIR += bam
+    SUBDIR += base64
     SUBDIR += bashdb
     SUBDIR += basu
     SUBDIR += bats-core
@@ -4645,6 +4646,7 @@
     SUBDIR += py-cclib
     SUBDIR += py-cdg
     SUBDIR += py-cel-python
+    SUBDIR += py-cel-python02
     SUBDIR += py-celery
     SUBDIR += py-celery-progress
     SUBDIR += py-celery-singleton
@@ -5387,6 +5389,7 @@
     SUBDIR += py-openstacksdk
     SUBDIR += py-opentelemetry-api
     SUBDIR += py-opentelemetry-distro
+    SUBDIR += py-opentelemetry-exporter-credential-provider-gcp
     SUBDIR += py-opentelemetry-exporter-otlp
     SUBDIR += py-opentelemetry-exporter-otlp-proto-common
     SUBDIR += py-opentelemetry-exporter-otlp-proto-grpc
@@ -5588,6 +5591,7 @@
     SUBDIR += py-proto-plus
     SUBDIR += py-protobuf
     SUBDIR += py-protobuf-compiler
+    SUBDIR += py-protoc-gen-validate
     SUBDIR += py-protovalidate
     SUBDIR += py-proxmoxer
     SUBDIR += py-psygnal
@@ -5613,6 +5617,7 @@
     SUBDIR += py-pyasn1-modules
     SUBDIR += py-pybind11
     SUBDIR += py-pybix
+    SUBDIR += py-pybreaker
     SUBDIR += py-pycadf
     SUBDIR += py-pycalendar
     SUBDIR += py-pycallgraph
@@ -6870,6 +6875,7 @@
     SUBDIR += rubygem-aws-sdk-networkmonitor
     SUBDIR += rubygem-aws-sdk-notifications
     SUBDIR += rubygem-aws-sdk-notificationscontacts
+    SUBDIR += rubygem-aws-sdk-novaact
     SUBDIR += rubygem-aws-sdk-oam
     SUBDIR += rubygem-aws-sdk-observabilityadmin
     SUBDIR += rubygem-aws-sdk-odb
@@ -6880,6 +6886,8 @@
     SUBDIR += rubygem-aws-sdk-osis
     SUBDIR += rubygem-aws-sdk-outposts
     SUBDIR += rubygem-aws-sdk-panorama
+    SUBDIR += rubygem-aws-sdk-partnercentralaccount
+    SUBDIR += rubygem-aws-sdk-partnercentralbenefits
     SUBDIR += rubygem-aws-sdk-partnercentralchannel
     SUBDIR += rubygem-aws-sdk-partnercentralselling
     SUBDIR += rubygem-aws-sdk-paymentcryptography
@@ -6925,6 +6933,7 @@
     SUBDIR += rubygem-aws-sdk-rolesanywhere
     SUBDIR += rubygem-aws-sdk-route53
     SUBDIR += rubygem-aws-sdk-route53domains
+    SUBDIR += rubygem-aws-sdk-route53globalresolver
     SUBDIR += rubygem-aws-sdk-route53profiles
     SUBDIR += rubygem-aws-sdk-route53recoverycluster
     SUBDIR += rubygem-aws-sdk-route53recoverycontrolconfig
