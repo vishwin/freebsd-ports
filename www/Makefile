@@ -63,6 +63,7 @@
     SUBDIR += angie-module-upload
     SUBDIR += angie-module-vod
     SUBDIR += angie-module-xslt
+    SUBDIR += angie-module-zstd
     SUBDIR += anyremote2html
     SUBDIR += apache-mode.el
     SUBDIR += apache24
@@ -388,6 +389,7 @@
     SUBDIR += mediawiki139
     SUBDIR += mediawiki143
     SUBDIR += mediawiki144
+    SUBDIR += mediawiki145
     SUBDIR += mergelog
     SUBDIR += mhonarc
     SUBDIR += micro_httpd
