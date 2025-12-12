@@ -133,7 +133,7 @@ CONFIGURE_ENV=			PTHREAD_LDFLAGS="-lpthread" \
 				PYTHONHASHSEED=1
 MAKE_ENV=			PYTHONHASHSEED=1 \
 				RPCGEN_CPP="${CPP}"
-TEST_ENV+=			PYTHON="${PYTHON_CMD}" \
+TEST_ENV=			PYTHON="${PYTHON_CMD}" \
 				SHA1SUM=/sbin/sha1 \
 				SHA256SUM=${SHA256} \
 				MD5SUM=${MD5} \
@@ -313,6 +313,7 @@ AVAHI_LIB_DEPENDS=		libavahi-client.so:net/avahi-app
 AVAHI_CONFIGURE_ENABLE=		avahi
 AVAHI_VARS=			SAMBA4_SERVICES+=avahi_daemon
 
+CLUSTER_LIB_DEPENDS=		libpcap.so:net/libpcap
 CLUSTER_CONFIGURE_WITH=		cluster-support
 CLUSTER_VARS=			PLIST+=${PKGDIR}/pkg-plist.cluster
 
@@ -361,8 +362,6 @@ GSSAPI_MIT_PLIST_FILES=		${SAMBA4_MODULEDIR}/krb5/winbind_krb5_localauth.so \
 				%%AD_DC%%${SAMBA4_LIBDIR}/krb5/plugins/kdb/samba.so
 
 LDAP_USES=			ldap
-LDAP_CONFIGURE_ON=		--with-ldap
-LDAP_CONFIGURE_OFF=		--without-ldap
 LDAP_CONFIGURE_WITH=		ldap
 LDAP_VARS=			SAMBA4_MODULES+=idmap_ldap
 
@@ -536,6 +535,7 @@ post-install-CLUSTER-on:
 	${RLN} ${STAGEDIR}${PREFIX}/share/ctdb/events/legacy/01.reclock.script ${STAGEDIR}${PREFIX}/etc/ctdb/events/legacy/01.reclock.script
 	${RLN} ${STAGEDIR}${PREFIX}/share/ctdb/events/legacy/05.system.script ${STAGEDIR}${PREFIX}/etc/ctdb/events/legacy/05.system.script
 	${RLN} ${STAGEDIR}${PREFIX}/share/ctdb/events/legacy/10.interface.script ${STAGEDIR}${PREFIX}/etc/ctdb/events/legacy/10.interface.script
+	${RLN} ${STAGEDIR}${PREFIX}/share/ctdb/events/legacy/95.database.script ${STAGEDIR}${PREFIX}/etc/ctdb/events/legacy/95.database.script
 
 post-install-FRUIT-off:
 	${RM} ${STAGEDIR}${SAMBA4_MODULEDIR}/vfs/fruit.so

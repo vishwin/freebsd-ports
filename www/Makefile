@@ -1486,6 +1486,7 @@
     SUBDIR += py-WebFlash
     SUBDIR += py-adblock
     SUBDIR += py-advocate
+    SUBDIR += py-aiobreaker
     SUBDIR += py-aioh2
     SUBDIR += py-aiohttp
     SUBDIR += py-aiohttp-jinja2
@@ -1494,6 +1495,7 @@
     SUBDIR += py-aiohttp-session
     SUBDIR += py-aiohttp-wsgi
     SUBDIR += py-aiohttp_cors
+    SUBDIR += py-aiolimiter
     SUBDIR += py-aioquic
     SUBDIR += py-aioresponses
     SUBDIR += py-aiostream
