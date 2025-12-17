@@ -1070,6 +1070,7 @@
     SUBDIR += ittapi
     SUBDIR += ivykis
     SUBDIR += jam
+    SUBDIR += janet-lsp
     SUBDIR += jansson
     SUBDIR += java-findbugs
     SUBDIR += jclassinfo
@@ -7316,6 +7317,8 @@
     SUBDIR += rubygem-devise-rails70
     SUBDIR += rubygem-devise-rails71
     SUBDIR += rubygem-devise-rails72
+    SUBDIR += rubygem-devise-rails80
+    SUBDIR += rubygem-devise-rails81
     SUBDIR += rubygem-did_you_mean
     SUBDIR += rubygem-dig_rb
     SUBDIR += rubygem-directory_watcher
