@@ -1608,6 +1608,7 @@
     SUBDIR += py-rich-cli
     SUBDIR += py-rich-rst
     SUBDIR += py-rnc2rng
+    SUBDIR += py-roman-numerals
     SUBDIR += py-roman-numerals-py
     SUBDIR += py-rouge-score
     SUBDIR += py-rst2ansi
@@ -1929,6 +1930,7 @@
     SUBDIR += rubygem-liquid4
     SUBDIR += rubygem-loggability
     SUBDIR += rubygem-loofah
+    SUBDIR += rubygem-loofah-gitlab
     SUBDIR += rubygem-loofah222
     SUBDIR += rubygem-ltsv
     SUBDIR += rubygem-markaby
