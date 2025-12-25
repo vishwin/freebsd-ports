@@ -1,8 +1,24 @@
-diff --git src/share/poudriere/common.sh src/share/poudriere/common.sh
-index aecbbc49..49fd7b29 100755
---- src/share/poudriere/common.sh
+--- src/share/poudriere/common.sh.orig	2025-12-13 21:04:46 UTC
 +++ src/share/poudriere/common.sh
-@@ -3406,21 +3406,57 @@ setup_xdev() {
+@@ -3046,6 +3046,7 @@ do_portbuild_mounts() {
+ 		    "${mnt:?}/.npkg" \
+ 		    "${mnt:?}/var/db/ports" \
+ 		    "${mnt:?}${HOME:?}/.ccache" \
++		    "${mnt:?}/var/run/kvstore" \
+ 		    "${mnt:?}/usr/home"
+ 		for o in ${OVERLAYS}; do
+ 			mkdir -p "${mnt:?}${OVERLAYSDIR:?}/${o:?}"
+@@ -3058,6 +3059,9 @@ do_portbuild_mounts() {
+ 	if [ -d "${CCACHE_DIR:-/nonexistent}" ]; then
+ 		${NULLMOUNT} "${CCACHE_DIR:?}" "${mnt:?}${HOME:?}/.ccache"
+ 	fi
++	if [ -d "${CCACHE_KVSTORE:-/nonexistent}" ]; then
++		${NULLMOUNT} "${CCACHE_KVSTORE:?}" "${mnt:?}/var/run/kvstore"
++	fi
+ 	case "${MFSSIZE:+set}" in
+ 	set)
+ 		mdmfs -t -S -o async -s ${MFSSIZE} md "${mnt:?}/wrkdirs"
+@@ -3610,21 +3614,57 @@ setup_xdev() {
  
  	msg_n "Setting up native-xtools environment in jail..."
  	cat > "${mnt:?}/etc/make.nxb.conf" <<-EOF
@@ -68,7 +84,7 @@ index aecbbc49..49fd7b29 100755
  	EOF
  
  	# as(1) has been removed in FreeBSD 13.0.  Just check if it's present
-@@ -3439,7 +3475,7 @@ setup_xdev() {
+@@ -3643,7 +3683,7 @@ setup_xdev() {
  			usr/bin/find usr/bin/gzcat usr/bin/awk \
  			usr/bin/touch usr/bin/sed usr/bin/patch \
  			usr/bin/install usr/bin/gunzip \
