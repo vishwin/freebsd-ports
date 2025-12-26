@@ -74,8 +74,6 @@ CMAKE_ARGS+=	-DLINUX=true
 # libdispatch components
 LDFLAGS+=	-lBlocksRuntime
 
-NO_CCACHE=	yes
-
 # Telegram uses OpenAL for its audio, but libtgvoip (for voice calls) can use PulseAudio or ALSA.
 # It dynamically loads PulseAudio, and if this fails, it loads ALSA.
 # If both of them are not installed, then voice calls do not work, but other functionalities still work.
