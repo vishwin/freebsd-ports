@@ -18,6 +18,26 @@
  	case "${MFSSIZE:+set}" in
  	set)
  		mdmfs -t -S -o async -s ${MFSSIZE} md "${mnt:?}/wrkdirs"
+@@ -3555,14 +3559,14 @@ setup_ccache() {
+ 	fi
+ 	# A static host version may have been requested.
+ 	if [ -n "${CCACHE_STATIC_PREFIX}" ] && \
+-	    [ -x "${CCACHE_STATIC_PREFIX}/bin/ccache" ]; then
+-		file "${CCACHE_STATIC_PREFIX}/bin/ccache" | \
++	    [ -x "${CCACHE_STATIC_PREFIX}/bin/${CCACHE_DRIVER}" ]; then
++		file "${CCACHE_STATIC_PREFIX}/bin/${CCACHE_DRIVER}" | \
+ 		    grep -q "statically linked" || \
+-		    err 1 "CCACHE_STATIC_PREFIX used but ${CCACHE_STATIC_PREFIX}/bin/ccache is not static."
++		    err 1 "CCACHE_STATIC_PREFIX used but ${CCACHE_STATIC_PREFIX}/bin/${CCACHE_DRIVER} is not static."
+ 		mkdir -p "${tomnt:?}${CCACHE_JAIL_PREFIX}/libexec/ccache/world" \
+ 		    "${tomnt:?}${CCACHE_JAIL_PREFIX}/bin"
+-		msg "Copying host static ccache from ${CCACHE_STATIC_PREFIX}/bin/ccache"
+-		cp -f "${CCACHE_STATIC_PREFIX}/bin/ccache" \
++		msg "Copying host static ${CCACHE_DRIVER} from ${CCACHE_STATIC_PREFIX}/bin/${CCACHE_DRIVER}"
++		cp -f "${CCACHE_STATIC_PREFIX}/bin/${CCACHE_DRIVER}" \
+ 		    "${CCACHE_STATIC_PREFIX}/bin/ccache-update-links" \
+ 		    "${tomnt:?}${CCACHE_JAIL_PREFIX}/bin/"
+ 		cp -f "${CCACHE_STATIC_PREFIX}/libexec/ccache/world/ccache" \
 @@ -3610,21 +3614,57 @@ setup_xdev() {
  
  	msg_n "Setting up native-xtools environment in jail..."
@@ -93,3 +113,11 @@
  			usr/bin/tar usr/bin/wc usr/bin/xargs usr/sbin/chown bin/cp \
  			bin/cat bin/chmod bin/echo bin/expr \
  			bin/hostname bin/ln bin/ls bin/mkdir bin/mv \
+@@ -11047,6 +11087,7 @@ esac
+ 	;;
+ esac
+ : ${CCACHE_JAIL_PREFIX:=/ccache}
++: ${CCACHE_DRIVER:=ccache}
+ # Default on otherwise.
+ : ${BUILD_AS_NON_ROOT:=yes}
+ : ${DISTFILES_CACHE:=/nonexistent}
