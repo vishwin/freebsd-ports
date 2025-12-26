@@ -12,8 +12,6 @@ USE_QT=		base declarative tools
 # Requires PySide and Shiboken.
 CMAKE_OFF=	BUILD_PYTHON_BINDINGS
 
-NO_CCACHE=	yes
-
 OPTIONS_DEFINE=		INOTIFY
 OPTIONS_DEFAULT=	INOTIFY
 
