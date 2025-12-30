@@ -4828,6 +4828,7 @@
     SUBDIR += py-deptry
     SUBDIR += py-devtools
     SUBDIR += py-dexml2
+    SUBDIR += py-diagnostic
     SUBDIR += py-diff-cover
     SUBDIR += py-dill
     SUBDIR += py-dirspec
@@ -7013,6 +7014,7 @@
     SUBDIR += rubygem-aws-sdk-wafregional
     SUBDIR += rubygem-aws-sdk-wafv2
     SUBDIR += rubygem-aws-sdk-wellarchitected
+    SUBDIR += rubygem-aws-sdk-wickr
     SUBDIR += rubygem-aws-sdk-workdocs
     SUBDIR += rubygem-aws-sdk-workmail
     SUBDIR += rubygem-aws-sdk-workmailmessageflow
@@ -7267,6 +7269,7 @@
     SUBDIR += rubygem-cucumber-ci-environment10
     SUBDIR += rubygem-cucumber-ci-environment11
     SUBDIR += rubygem-cucumber-core
+    SUBDIR += rubygem-cucumber-core15
     SUBDIR += rubygem-cucumber-cucumber-expressions
     SUBDIR += rubygem-cucumber-cucumber-expressions17
     SUBDIR += rubygem-cucumber-messages
