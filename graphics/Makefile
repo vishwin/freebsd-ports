@@ -398,7 +398,6 @@
     SUBDIR += jpeg-turbo
     SUBDIR += jpeginfo
     SUBDIR += jpegoptim
-    SUBDIR += jpgtn
     SUBDIR += jslice
     SUBDIR += kamera
     SUBDIR += kamerka
@@ -686,7 +685,6 @@
     SUBDIR += optar
     SUBDIR += optipng
     SUBDIR += osg
-    SUBDIR += osgearth
     SUBDIR += ospray
     SUBDIR += ospray-studio
     SUBDIR += ossim
@@ -774,7 +772,6 @@
     SUBDIR += p5-Image-OCR-Tesseract
     SUBDIR += p5-Image-PBMlib
     SUBDIR += p5-Image-PNG-Libpng
-    SUBDIR += p5-Image-PNG-QRCode
     SUBDIR += p5-Image-Pngslimmer
     SUBDIR += p5-Image-Sane
     SUBDIR += p5-Image-Scale
@@ -834,8 +831,6 @@
     SUBDIR += phototonic
     SUBDIR += php-facedetect
     SUBDIR += php-geos
-    SUBDIR += php81-exif
-    SUBDIR += php81-gd
     SUBDIR += php82-exif
     SUBDIR += php82-gd
     SUBDIR += php83-exif
@@ -1204,7 +1199,6 @@
     SUBDIR += squish
     SUBDIR += ssocr
     SUBDIR += sswf
-    SUBDIR += stamp
     SUBDIR += svgalib
     SUBDIR += svgbob
     SUBDIR += svgpp
@@ -1234,7 +1228,6 @@
     SUBDIR += tslib
     SUBDIR += ttygif
     SUBDIR += ttyplot
-    SUBDIR += tumble
     SUBDIR += tweeny
     SUBDIR += ufraw
     SUBDIR += unpaper

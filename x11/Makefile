@@ -79,7 +79,6 @@
     SUBDIR += elementary-terminal
     SUBDIR += emprint
     SUBDIR += erun
-    SUBDIR += eterm
     SUBDIR += evilvte
     SUBDIR += evtest
     SUBDIR += eww
@@ -134,7 +133,6 @@
     SUBDIR += hyprcursor
     SUBDIR += hypridle
     SUBDIR += hyprland-guiutils
-    SUBDIR += hyprland-qtutils
     SUBDIR += hyprlauncher
     SUBDIR += hyprlock
     SUBDIR += hyprls
@@ -688,7 +686,6 @@
     SUBDIR += xwatchwin
     SUBDIR += xwayland-run
     SUBDIR += xwayland-satellite
-    SUBDIR += xwaylandvideobridge
     SUBDIR += xwd
     SUBDIR += xwininfo
     SUBDIR += xwinwrap

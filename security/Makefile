@@ -99,7 +99,6 @@
     SUBDIR += clamav-unofficial-sigs
     SUBDIR += clamd-stream-client
     SUBDIR += clamsmtp
-    SUBDIR += clamtk
     SUBDIR += cloak
     SUBDIR += cops
     SUBDIR += cosign
@@ -274,7 +273,6 @@
     SUBDIR += kpkpass
     SUBDIR += kpmenu
     SUBDIR += krb5
-    SUBDIR += krb5-120
     SUBDIR += krb5-121
     SUBDIR += krb5-122
     SUBDIR += krb5-devel
@@ -406,7 +404,6 @@
     SUBDIR += netbird
     SUBDIR += nettle
     SUBDIR += nextcloud-end_to_end_encryption
-    SUBDIR += nextcloud-passman
     SUBDIR += nextcloud-twofactor_admin
     SUBDIR += nextcloud-twofactor_webauthn
     SUBDIR += nflib
@@ -830,8 +827,6 @@
     SUBDIR += pgpdump
     SUBDIR += pgpgpg
     SUBDIR += pgpin
-    SUBDIR += php81-filter
-    SUBDIR += php81-sodium
     SUBDIR += php82-filter
     SUBDIR += php82-sodium
     SUBDIR += php83-filter
@@ -1126,7 +1121,6 @@
     SUBDIR += rhash
     SUBDIR += ridl
     SUBDIR += rifiuti2
-    SUBDIR += rkhunter
     SUBDIR += rndpassw
     SUBDIR += rnp
     SUBDIR += rotate
@@ -1378,7 +1372,6 @@
     SUBDIR += tinc
     SUBDIR += tinc-devel
     SUBDIR += tinyca
-    SUBDIR += tls-check
     SUBDIR += tlsc
     SUBDIR += tor
     SUBDIR += totp-cli

@@ -583,7 +583,6 @@
     SUBDIR += pavucontrol
     SUBDIR += pavucontrol-qt
     SUBDIR += pavumeter
-    SUBDIR += pc-mixer
     SUBDIR += pcaudiolib
     SUBDIR += pd
     SUBDIR += pd-cyclone
@@ -810,7 +809,6 @@
     SUBDIR += tkeca
     SUBDIR += toccata-lv2
     SUBDIR += tosha
-    SUBDIR += traverso
     SUBDIR += triceratops-lv2
     SUBDIR += tse3
     SUBDIR += tta

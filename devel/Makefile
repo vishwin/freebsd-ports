@@ -211,7 +211,6 @@
     SUBDIR += appstream-glib
     SUBDIR += appstream-qt
     SUBDIR += apr1
-    SUBDIR += arachne-pnr
     SUBDIR += arcanist
     SUBDIR += arcanist-lib
     SUBDIR += arduino
@@ -292,7 +291,6 @@
     SUBDIR += babeltrace
     SUBDIR += bacnet-stack
     SUBDIR += bacon
-    SUBDIR += bam
     SUBDIR += base64
     SUBDIR += bashdb
     SUBDIR += basu
@@ -663,7 +661,6 @@
     SUBDIR += efl
     SUBDIR += egypt
     SUBDIR += eiffelstudio
-    SUBDIR += electron36
     SUBDIR += electron37
     SUBDIR += electron38
     SUBDIR += electron39
@@ -703,7 +700,6 @@
     SUBDIR += expected
     SUBDIR += f77flow
     SUBDIR += fam
-    SUBDIR += fastcrc
     SUBDIR += fatal
     SUBDIR += fbthrift
     SUBDIR += fc++
@@ -1044,7 +1040,6 @@
     SUBDIR += imake
     SUBDIR += immer
     SUBDIR += imtui
-    SUBDIR += inastemp
     SUBDIR += include-what-you-use
     SUBDIR += indi
     SUBDIR += indicators
@@ -1456,7 +1451,6 @@
     SUBDIR += libsoup3
     SUBDIR += libspice-server
     SUBDIR += libstatgrab
-    SUBDIR += libstatgrab0
     SUBDIR += libstrfunc
     SUBDIR += libstroke
     SUBDIR += libsysctlmibinfo
@@ -1486,7 +1480,6 @@
     SUBDIR += libunicode-contour
     SUBDIR += libuninum
     SUBDIR += libunistring
-    SUBDIR += libunit
     SUBDIR += libunwind
     SUBDIR += libuutil
     SUBDIR += libuv
@@ -1583,7 +1576,6 @@
     SUBDIR += llvm-cheriot
     SUBDIR += llvm-devel
     SUBDIR += llvm-morello
-    SUBDIR += llvm11
     SUBDIR += llvm12
     SUBDIR += llvm13
     SUBDIR += llvm14
@@ -4262,16 +4254,6 @@
     SUBDIR += php-ice37
     SUBDIR += php-libawl
     SUBDIR += php-maxminddb
-    SUBDIR += php81-ffi
-    SUBDIR += php81-gettext
-    SUBDIR += php81-intl
-    SUBDIR += php81-pcntl
-    SUBDIR += php81-readline
-    SUBDIR += php81-shmop
-    SUBDIR += php81-sysvmsg
-    SUBDIR += php81-sysvsem
-    SUBDIR += php81-sysvshm
-    SUBDIR += php81-tokenizer
     SUBDIR += php82-ffi
     SUBDIR += php82-gettext
     SUBDIR += php82-intl
@@ -4635,7 +4617,6 @@
     SUBDIR += py-cacheyou
     SUBDIR += py-cachier
     SUBDIR += py-cachy
-    SUBDIR += py-cadquery-pywrap
     SUBDIR += py-calver
     SUBDIR += py-camel-converter
     SUBDIR += py-canonicaljson
@@ -4836,8 +4817,6 @@
     SUBDIR += py-diskcache
     SUBDIR += py-distlib
     SUBDIR += py-distributed
-    SUBDIR += py-dj51-django-rq
-    SUBDIR += py-dj51-strawberry-graphql
     SUBDIR += py-dj52-django-rq
     SUBDIR += py-dj52-strawberry-graphql
     SUBDIR += py-django-rq
@@ -8524,7 +8503,6 @@
     SUBDIR += umpire
     SUBDIR += undead
     SUBDIR += unibilium
-    SUBDIR += unit-otel
     SUBDIR += universal-ctags
     SUBDIR += unordered-dense
     SUBDIR += upnp

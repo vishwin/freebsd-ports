@@ -273,8 +273,6 @@
     SUBDIR += pfe
     SUBDIR += pharo
     SUBDIR += php-mode.el
-    SUBDIR += php81
-    SUBDIR += php81-extensions
     SUBDIR += php82
     SUBDIR += php82-extensions
     SUBDIR += php83
@@ -367,11 +365,9 @@
     SUBDIR += smlnj
     SUBDIR += snobol4
     SUBDIR += solidity
-    SUBDIR += spidermonkey102
     SUBDIR += spidermonkey115
     SUBDIR += spidermonkey128
     SUBDIR += spidermonkey140
-    SUBDIR += spidermonkey78
     SUBDIR += squeak
     SUBDIR += squirrel
     SUBDIR += starlark-rust
