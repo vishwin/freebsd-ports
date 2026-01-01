@@ -4638,7 +4638,6 @@ lang/linux-dotnet11-runtime||2025-07-01|Has expired: Ancient version, no practic
 lang/linux-dotnet-sdk||2025-07-01|Removed: Depends on expired lang/linux-dotnet-runtime, MASTER_SITES gone
 lang/linux-dotnet-runtime||2025-07-01|Has expired: Ancient version, no practical use
 lang/linux-dotnet-cli||2025-07-01|Removed, depends on removed lang/linux-dotnet-runtime
-math/manifold||2025-07-06|Removed, planned to update BRL-CAD, but currently blocked
 shells/bash53||2025-07-07|Removed in favour of updating shells/bash
 devel/etcd31||2025-07-08|Has expired: EOLed upstream, switch to a newer version
 devel/etcd32||2025-07-08|Has expired: EOLed upstream, switch to a newer version
@@ -5061,3 +5060,6 @@ databases/php81-pdo_mysql|databases/php82-pdo_mysql|2025-12-31|Has expired: Secu
 databases/php81-odbc|databases/php82-odbc|2025-12-31|Has expired: Security support ended on 2025-12-31
 security/php81-sodium|security/php82-sodium|2025-12-31|Has expired: Security support ended on 2025-12-31
 security/php81-filter|security/php82-filter|2025-12-31|Has expired: Security support ended on 2025-12-31
+lang/go120||2026-01-01|Has expired: Old version, unsupported upstream
+net/gwhois||2026-01-01|Has expired: source and WWW is gone. Hasn't been updated for 12yrs
+lang/go121||2026-01-01|Has expired: Old version, unsupported upstream
