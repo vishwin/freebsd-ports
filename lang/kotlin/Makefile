@@ -15,6 +15,8 @@ RUN_DEPENDS=	bash:shells/bash
 
 USES=	java zip
 
+CONFLICTS=	kotlin22
+
 NO_ARCH=	yes
 NO_BUILD=	yes
 
