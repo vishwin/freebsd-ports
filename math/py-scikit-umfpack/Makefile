@@ -22,7 +22,7 @@ LIB_DEPENDS=	libamd.so:math/suitesparse-amd \
 		libcblas.so:math/cblas \
 		libopenblas.so:math/openblas \
 		libumfpack.so:math/suitesparse-umfpack
-RUN_DEPENDS=	${PYNUMPY} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR}
 
 USES=		fortran localbase:ldflags python
