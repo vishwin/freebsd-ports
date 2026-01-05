@@ -9,7 +9,7 @@ WWW=		https://github.com/tdlib/td
 
 LICENSE=	BSL
 
-USES=		cmake:testing compiler:c++14-lang gperf readline ssl
+USES=		cmake:testing compiler:c++14-lang gperf localbase readline ssl
 
 CONFLICTS_INSTALL=	tdlib
 
