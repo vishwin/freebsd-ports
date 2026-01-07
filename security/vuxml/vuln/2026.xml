@@ -1,3 +1,124 @@
+  <vuln vid="8826fb1c-ebd8-11f0-a15a-a8a1599412c6">
+    <topic>chromium -- multiple security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>143.0.7499.192</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>143.0.7499.192</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop.html">
+	 <p>This update includes 1 security fix:</p>
+	 <ul>
+	    <li>[463155954] High CVE-2026-0628: Insufficient policy enforcement in WebView tag. Reported by Gal Weizman on 2025-11-23</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-0628</cvename>
+      <url>https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop.html</url>
+    </references>
+    <dates>
+      <discovery>2026-01-06</discovery>
+      <entry>2026-01-07</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="583b63f5-ebae-11f0-939f-47e3830276dd">
+	  <topic>security/libsodium -- crypto_core_ed25519_is_valid_point mishandles checks for whether an elliptic curve point is valid</topic>
+    <affects>
+<package>
+<name>libsodium</name>
+<range><lt>1.0.21</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Libsodium maintainer reports:</p>
+	<blockquote cite="https://00f.net/2025/12/30/libsodium-vulnerability/">
+	  <p>The function crypto_core_ed25519_is_valid_point(), a low-level function
+	  used to check if a given elliptic curve point is valid, was supposed to
+	  reject points that aren't in the main cryptographic group,
+	  but some points were slipping through.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-69277</cvename>
+      <url>https://00f.net/2025/12/30/libsodium-vulnerability/</url>
+    </references>
+    <dates>
+      <discovery>2025-12-30</discovery>
+      <entry>2026-01-07</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="df33c83b-eb4f-11f0-a46f-0897988a1c07">
+    <topic>mail/mailpit -- Server-Side Request Forgery</topic>
+    <affects>
+<package>
+<name>mailpit</name>
+<range><lt>1.28.1</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Mailpit author reports:</p>
+	<blockquote cite="https://github.com/axllent/mailpit/security/advisories/GHSA-8v65-47jx-7mfr">
+	  <p>A Server-Side Request Forgery (SSRF) vulnerability
+	  exists in Mailpit's /proxy endpoint that allows attackers
+	  to make requests to internal network resources.</p>
+	  <p>The /proxy endpoint allows requests to internal network
+	  resources. While it validates http:// and https:// schemes,
+	  it does not block internal IP addresses, allowing attackers
+	  to access internal services and APIs.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-21859</cvename>
+      <url>https://github.com/axllent/mailpit/security/advisories/GHSA-8v65-47jx-7mfr</url>
+    </references>
+    <dates>
+      <discovery>2026-01-06</discovery>
+      <entry>2026-01-06</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="e2cd20fd-eb10-11f0-a1c0-0050569f0b83">
+    <topic>net-mgmt/net-snmp -- Remote Code Execution (snmptrapd)</topic>
+    <affects>
+<package>
+<name>net-snmp</name>
+<range><lt>5.9.5</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>net-snmp development team reports:</p>
+	<blockquote cite="https://github.com/net-snmp/net-snmp/security/advisories/GHSA-4389-rwqf-q9gq">
+	  <p>A specially crafted packet to an net-snmp snmptrapd daemon can cause a buffer overflow and
+	   the daemon to crash.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2025-68615</cvename>
+      <url>https://github.com/net-snmp/net-snmp/security/advisories/GHSA-4389-rwqf-q9gq</url>
+    </references>
+    <dates>
+      <discovery>2025-12-23</discovery>
+      <entry>2026-01-06</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="500cc49c-e93b-11f0-b8d8-4ccc6adda413">
     <topic>gstreamer1-plugins-bad -- Out-of-bounds reads in MIDI parser</topic>
     <affects>
