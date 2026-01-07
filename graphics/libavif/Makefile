@@ -16,7 +16,7 @@ LIB_DEPENDS=	libpng.so:graphics/png \
 TEST_DEPENDS=	bash:shells/bash \
 		googletest>=0:devel/googletest
 
-USES=		cmake:testing compiler:c11 cpe jpeg pkgconfig
+USES=		cmake:testing compiler:c11 cpe jpeg localbase pkgconfig
 
 CMAKE_ARGS=	-DAVIF_GTEST=OFF \
 		-DAVIF_FUZZTEST=OFF \
