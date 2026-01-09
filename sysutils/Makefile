@@ -1313,6 +1313,7 @@
     SUBDIR += screenie
     SUBDIR += scterc
     SUBDIR += sd-agent
+    SUBDIR += sdmon
     SUBDIR += sdparm
     SUBDIR += seatd
     SUBDIR += seatools
@@ -1594,6 +1595,7 @@
     SUBDIR += whowatch
     SUBDIR += wiimms
     SUBDIR += wiper
+    SUBDIR += witr
     SUBDIR += wmapmload
     SUBDIR += wmbluecpu
     SUBDIR += wmbsdbatt
