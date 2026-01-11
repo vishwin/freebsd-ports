@@ -1,6 +1,8 @@
---- Cargo.toml.orig	2025-09-17 17:46:01 UTC
+-- remove jemalloc dependencies from Cargo.lock
+
+--- Cargo.toml.orig	2025-12-09 21:46:20 UTC
 +++ Cargo.toml
-@@ -149,11 +149,6 @@ collapsible_if = "allow"
+@@ -156,11 +156,6 @@ collapsible_if = "allow"
  [workspace.lints.clippy]
  collapsible_if = "allow"
  

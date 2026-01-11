@@ -1,6 +1,6 @@
---- crates/polars-python/Cargo.toml.orig	2025-09-09 05:54:25 UTC
+--- crates/polars-python/Cargo.toml.orig	2025-12-09 21:46:20 UTC
 +++ crates/polars-python/Cargo.toml
-@@ -54,11 +54,11 @@ mimalloc = { version = "0.1", default-features = false
+@@ -51,11 +51,11 @@ mimalloc = { version = "0.1", default-features = false
  mimalloc = { version = "0.1", default-features = false }
  
  # Feature background_threads is unsupported on MacOS (https://github.com/jemalloc/jemalloc/issues/843).
