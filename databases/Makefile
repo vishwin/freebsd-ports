@@ -553,6 +553,7 @@
     SUBDIR += pg_similarity
     SUBDIR += pg_stat_kcache
     SUBDIR += pg_store_plans
+    SUBDIR += pg_textsearch
     SUBDIR += pg_tileserv
     SUBDIR += pgaccess
     SUBDIR += pgactive
@@ -1126,6 +1127,7 @@
     SUBDIR += tiledb
     SUBDIR += timescaledb
     SUBDIR += timescaledb-backup
+    SUBDIR += timescaledb-parallel-copy
     SUBDIR += timescaledb-tune
     SUBDIR += tinycdb
     SUBDIR += tkrzw

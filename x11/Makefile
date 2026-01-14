@@ -128,6 +128,7 @@
     SUBDIR += habak
     SUBDIR += hamclock
     SUBDIR += hhpc
+    SUBDIR += histui
     SUBDIR += hs-xmobar
     SUBDIR += hsetroot
     SUBDIR += hybrid-bar
@@ -374,6 +375,7 @@
     SUBDIR += qt5-qev
     SUBDIR += qt5-x11extras
     SUBDIR += qterminal
+    SUBDIR += quickshell
     SUBDIR += remontoire
     SUBDIR += rendercheck
     SUBDIR += rgb

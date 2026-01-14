@@ -1,7 +1,7 @@
 PORTNAME=	freenginx
 PORTVERSION=	${NGINX_VERSION}
 .include "version.mk"
-PORTREVISION=	8
+PORTREVISION=	9
 CATEGORIES=	www
 MASTER_SITES=	https://freenginx.org/download/ \
 		LOCAL/osa
@@ -314,10 +314,6 @@ post-patch-HTTP_TARANTOOL-on:
 
 post-patch-ICONV-on:
 	@${REINPLACE_CMD} 's!%%PREFIX%%!${LOCALBASE}!g' ${WRKSRC_iconv}/config
-
-post-patch-NJS_QJS-on:
-	@${REINPLACE_CMD} 's!%%LOCALBASE%%!${LOCALBASE}!g' ${WRKSRC_njs}/auto/quickjs \
-		${WRKSRC_njs}/nginx/config
 
 post-patch-PASSENGER-on:
 	@${REINPLACE_CMD} \
