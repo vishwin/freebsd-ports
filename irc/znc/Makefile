@@ -16,7 +16,7 @@ BUILD_DEPENDS=	swig>=4.0.1:devel/swig
 LIB_DEPENDS=	libcctz.so:devel/cctz \
 		libicuuc.so:devel/icu
 
-USES=		compiler:c++17-lang cpe cmake:run iconv pathfix \
+USES=		compiler:c++17-lang cpe cmake:run iconv localbase pathfix \
 		perl5 pkgconfig:both python ssl
 USE_PERL5=	build
 
