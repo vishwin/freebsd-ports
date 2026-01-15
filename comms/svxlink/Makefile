@@ -19,7 +19,7 @@ LIB_DEPENDS?=	libcurl.so:ftp/curl \
 		libspeex.so:audio/speex
 BUILD_DEPENDS=	${LOCALBASE}/include/linux/input.h:devel/evdev-proto
 
-USES+=		cmake:noninja compiler:c++11-lang gnome groff pkgconfig tcl:86
+USES+=		cmake:noninja compiler:c++11-lang gnome groff localbase pkgconfig tcl:86
 USE_GITHUB=	yes
 GH_ACCOUNT=	sm0svx
 GH_PROJECT=	svxlink
