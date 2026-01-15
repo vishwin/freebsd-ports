@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libpng.so:graphics/png
 
-USES=		cmake iconv pathfix pkgconfig
+USES=		cmake iconv localbase pathfix pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	fukuchi
 USE_LDCONFIG=	yes
