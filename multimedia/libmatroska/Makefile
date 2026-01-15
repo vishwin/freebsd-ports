@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.LGPL
 
 LIB_DEPENDS=	libebml.so:textproc/libebml
 
-USES=		cmake compiler:c++14-lang cpe tar:xz
+USES=		cmake compiler:c++14-lang cpe localbase tar:xz
 USE_LDCONFIG=	yes
 CPE_VENDOR=	matroska
 
