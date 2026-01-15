@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libiio.so:misc/libiio
 
-USES=		cmake
+USES=		cmake localbase
 USE_GITHUB=	yes
 GH_ACCOUNT=	analogdevicesinc
 USE_LDCONFIG=	yes
