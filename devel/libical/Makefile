@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libicuuc.so:devel/icu
 
-USES=		cmake:testing compiler:c++11-lib cpe gnome pathfix perl5 \
+USES=		cmake:testing compiler:c++11-lib cpe gnome localbase pathfix perl5 \
 		pkgconfig
 CPE_VENDOR=	libical_project
 USE_LDCONFIG=	yes
