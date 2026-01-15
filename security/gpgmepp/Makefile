@@ -13,6 +13,6 @@ LICENSE_FILE=	${WRKSRC}/COPYING.LIB
 LIB_DEPENDS=	libgpg-error.so:security/libgpg-error \
 		libgpgme.so:security/gpgme
 
-USES=		cmake compiler:c++17-lang pkgconfig tar:xz
+USES=		cmake compiler:c++17-lang localbase pkgconfig tar:xz
 
 .include <bsd.port.mk>
