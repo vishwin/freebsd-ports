@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 LIB_DEPENDS=	libSoapySDR.so:misc/soapysdr \
 		librtlsdr.so:comms/rtl-sdr
 
-USES=		cmake compiler:c++11-lang
+USES=		cmake compiler:c++11-lang localbase
 USE_GITHUB=	yes
 GH_ACCOUNT=	pothosware
 
