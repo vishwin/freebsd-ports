@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libfmt.so:devel/libfmt
 TEST_DEPENDS=	catch2>0:devel/catch2
 
-USES=		cmake:testing compiler:c++14-lang pathfix
+USES=		cmake:testing compiler:c++14-lang localbase pathfix
 .if make(test)
 USES+=		pkgconfig
 .endif
