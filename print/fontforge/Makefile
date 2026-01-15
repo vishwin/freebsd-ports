@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libfreetype.so:print/freetype2
 
 USES=		compiler:c++11-lang cmake cpe desktop-file-utils gettext gnome \
-		iconv:wchar_t pkgconfig shared-mime-info tar:xz
+		iconv:wchar_t localbase pkgconfig shared-mime-info tar:xz
 USE_GNOME=	cairo glib20 libxml2
 USE_LDCONFIG=	yes
 
