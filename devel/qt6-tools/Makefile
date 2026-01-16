@@ -11,7 +11,7 @@ LIB_DEPENDS=	libxkbcommon.so:x11/libxkbcommon \
 		libzstd.so:archivers/zstd
 
 USES=		cmake compiler:c++17-lang gl llvm:min=17,max=21,lib,noexport \
-		python:build qt-dist:6
+		localbase python:build qt-dist:6
 USE_GL=		opengl
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
 USE_QT=		base declarative sqldriver-sqlite:run
