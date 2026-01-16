@@ -51,7 +51,7 @@ TEST_DEPENDS=	googletest>0:devel/googletest \
 		bash:shells/bash
 
 USES=		compiler:c++20-lang cmake:testing cpe desktop-file-utils ghostscript:run \
-		gnome jpeg pathfix pkgconfig python \
+		gnome jpeg localbase pathfix pkgconfig python \
 		readline shebangfix tar:xz xorg
 USE_GNOME=	cairo gdkpixbuf glibmm gtkmm30 gtksourceview4 libxml2 libxslt
 USE_PYTHON=	cython
