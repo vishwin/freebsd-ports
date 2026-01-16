@@ -34,7 +34,7 @@ LIB_DEPENDS=	libatk-1.0.so:accessibility/at-spi2-core \
 		libxkbcommon.so:x11/libxkbcommon \
 		libzstd.so:archivers/zstd
 
-USES=		cmake compiler:c++17-lang gl gnome jpeg perl5 pkgconfig python \
+USES=		cmake compiler:c++17-lang gl gnome jpeg localbase perl5 pkgconfig python \
 		qt-dist:6 shebangfix ssl
 USE_GL=		egl opengl
 USE_GNOME=	cairo gdkpixbuf glib20 gtk30 pango
