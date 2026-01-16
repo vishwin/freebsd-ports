@@ -9,7 +9,7 @@ COMMENT=	Enables keyframe-based animations and parameterization.
 BUILD_DEPENDS=	${LOCALBASE}/include/vulkan/vulkan.h:graphics/vulkan-headers
 LIB_DEPENDS=	libxkbcommon.so:x11/libxkbcommon
 
-USES=		cmake compiler:c++17-lang gl \
+USES=		cmake compiler:c++17-lang gl localbase \
 		qt-dist:6
 USE_GL=		opengl
 USE_QT=		base declarative
