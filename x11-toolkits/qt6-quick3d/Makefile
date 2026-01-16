@@ -10,7 +10,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/vulkan/vulkan.h:graphics/vulkan-headers
 LIB_DEPENDS=	libassimp.so:multimedia/assimp \
 		libxkbcommon.so:x11/libxkbcommon
 
-USES=		cmake compiler:c++17-lang gl python:build \
+USES=		cmake compiler:c++17-lang gl localbase python:build \
 		qt-dist:6
 USE_GL=		opengl
 USE_QT=		base declarative quicktimeline shadertools
