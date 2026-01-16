@@ -10,7 +10,7 @@ COMMENT=	Qt declarative framework for dynamic user interfaces
 BUILD_DEPENDS=	${LOCALBASE}/include/vulkan/vulkan.h:graphics/vulkan-headers
 LIB_DEPENDS=	libxkbcommon.so:x11/libxkbcommon
 
-USES=		cmake compiler:c++17-lang gl pkgconfig python \
+USES=		cmake compiler:c++17-lang gl localbase pkgconfig python \
 		qt-dist:6
 USE_GL=		opengl
 USE_LDCONFIG=	${PREFIX}/${QT_LIBDIR_REL}
