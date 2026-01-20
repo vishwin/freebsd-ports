@@ -1,14 +1,18 @@
-PORTNAME=	go
-DISTVERSION?=	g20240208
-PORTREVISION?=	2
+# A Go port must define DISTVERSION and BOOTSTRAP_VER before including
+# this file.
+# Each Go port is responsible for its own FILESDIR, though a common
+# pkg-descr is used by default.
+
+PORTNAME?=	go
 CATEGORIES=	lang
-MASTER_SITES?=	https://github.com/dmgk/go-bootstrap/releases/download/${BOOTSTRAP_TAG}/:bootstrap \
-		LOCAL/dmgk:bootstrap
-PKGNAMESUFFIX=	${DISTVERSION:C/^g[0-9]+/-devel/:C/^([0-9]+)\.([0-9]+).*/\1\2/}
-DISTFILES?=	go-${OPSYS:tl}-${GOARCH_${ARCH}}${GOARM_${ARCH}}-${BOOTSTRAP_TAG}.tar.xz:bootstrap
+MASTER_SITES?=	https://go.dev/dl/
+PKGNAMESUFFIX=	${DISTVERSION:C/^([0-9]+)\.([0-9]+).*/\1\2/}
+DISTFILES?=	go${DISTVERSION}.src.tar.gz \
+		go${BOOTSTRAP_VER}.${OPSYS:tl}-${GOARCH_${ARCH}}.tar.gz
+EXTRACT_ONLY?=	${DISTFILES:[1]}
 
 MAINTAINER=	go@FreeBSD.org
-COMMENT?=	Go programming language (deprecated version)
+COMMENT?=	Go programming language
 WWW=		https://golang.org
 
 LICENSE=	BSD3CLAUSE
@@ -29,22 +33,16 @@ TEST_DEPENDS=	${TEST_DEPENDS_${ARCH}}
 # ld.bfd from devel/binutils is needed for working cgo on aarch64
 TEST_DEPENDS_aarch64=	binutils>0:devel/binutils
 
-USES=		cpe shebangfix
+USES?=		cpe shebangfix
+
+WRKSRC=		${WRKDIR}/go
+BOOTSTRAP_WRKSRC=	${WRKDIR}/go-${OPSYS:tl}-${GOARCH_${ARCH}}${GOARM_${ARCH}}-bootstrap
+DESCR?=		${.CURDIR}/../go/pkg-descr-subports
 
 CPE_VENDOR=	golang
 NO_SHLIB_REQUIRES_GLOB=	*
 
-.ifndef MASTERDIR
-DEPRECATED=	Old version of Go. Use the go package (lang/go) instead.
-EXPIRATION_DATE=2026-03-01
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	golang
-# go1.22
-GH_TAGNAME=	20107e05a609b8f2e61a6b5e8dc258237ad046e7
-.endif
-
-SHEBANG_FILES?=	misc/wasm/go_js_wasm_exec misc/wasm/go_wasip1_wasm_exec
+SHEBANG_FILES?=	lib/wasm/go_js_wasm_exec lib/wasm/go_wasip1_wasm_exec
 SHEBANG_GLOB=	*.bash *.pl *.sh
 
 REINPLACE_ARGS=	-i''
@@ -72,7 +70,6 @@ V3_VARS=	GOAMD64=v3
 V4_DESC=	V3 instructions plus AVX512*
 V4_VARS=	GOAMD64=v4
 
-BOOTSTRAP_TAG=	go1.20
 GO_SUFFIX=	${PKGNAMESUFFIX}
 
 GOARCH_aarch64=	arm64
@@ -85,6 +82,12 @@ GOARM_armv6=	6
 GOARM_armv7=	7
 
 .include <bsd.port.pre.mk>
+
+pre-extract:
+	${MKDIR} ${BOOTSTRAP_WRKSRC}
+	cd ${BOOTSTRAP_WRKSRC} && ${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} \
+		${DISTDIR}/${DIST_SUBDIR}/${DISTFILES:[2]} \
+		--strip-components 1 ${EXTRACT_AFTER_ARGS}
 
 post-extract:
 	@[ -z "${GH_TAGNAME}" ] || \
