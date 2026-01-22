@@ -1,7 +1,7 @@
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
-DISTVERSION=	9.18.43
+DISTVERSION=	9.18.44
 CATEGORIES=	dns net
 MASTER_SITES=	ISC/bind9/${DISTVERSION}
 PKGNAMESUFFIX=	918
@@ -170,6 +170,13 @@ post-patch:
 		-e "s#/var\/run\/named\/named.pid#/var/run/named/pid#" \
 		${WRKSRC}/bin/${FILE}
 .endfor
+
+regen-patches:
+	cd ${.CURDIR} ; \
+		make clean ; \
+		mv files/extrapatch-bind-min-override-ttl files/patch-bind-min-override-ttl ; \
+		make extract do-patch makepatch BATCH= NO_IGNORE= PATCH_DEBUG=yes EXTRA_PATCHES= || : ; \
+		mv files/patch-bind-min-override-ttl files/extrapatch-bind-min-override-ttl
 
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc/mtree

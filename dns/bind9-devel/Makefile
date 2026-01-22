@@ -1,7 +1,7 @@
 # pkg-help formatted with fmt 59 63
 
 PORTNAME=	bind
-DISTVERSION=	9.21.16
+DISTVERSION=	9.21.17
 .if defined(BIND_TOOLS_SLAVE)
 # dns/bind-tools here
 PORTREVISION=	0
@@ -188,6 +188,13 @@ SUB_LIST+=	ENGINES=${LOCALBASE}/lib/engines
 .endif
 
 .if !defined(BIND_TOOLS_SLAVE)
+regen-patches:
+	cd ${.CURDIR} ; \
+		make clean ; \
+		mv files/extrapatch-bind-min-override-ttl files/patch-bind-min-override-ttl ; \
+		make extract do-patch makepatch BATCH= NO_IGNORE= PATCH_DEBUG=yes EXTRA_PATCHES= || : ; \
+		mv files/patch-bind-min-override-ttl files/extrapatch-bind-min-override-ttl
+
 post-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/etc/mtree
 	${MKDIR} ${STAGEDIR}${ETCDIR}
