@@ -85,6 +85,10 @@ MASTER_SITES?=	https://github.com/Kitware/CMake/releases/download/v${DISTVERSION
 .  else
 BUILD_DEPENDS+=		${CMAKE_BIN}:devel/cmake-core
 
+.    if !${USES:Mlocalbase}
+.    include "${USESDIR}/localbase.mk"
+.    endif
+
 .    if !empty(cmake_ARGS:Mrun)
 RUN_DEPENDS+=		${CMAKE_BIN}:devel/cmake-core
 .    endif
