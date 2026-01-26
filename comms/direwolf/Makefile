@@ -14,7 +14,7 @@ LIB_DEPENDS=	libgps.so:astro/gpsd \
 		libportaudio.so:audio/portaudio
 RUN_DEPENDS=	bash:shells/bash
 
-USES=		cmake localbase pkgconfig python shebangfix
+USES=		cmake pkgconfig python shebangfix
 USE_GITHUB=	yes
 GH_ACCOUNT=	wb2osz
 
