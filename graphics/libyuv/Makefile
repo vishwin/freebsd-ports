@@ -32,7 +32,7 @@ LIBYUV_HASH=	5a9a6ea936085310f3b9fbd4a774868e6a984ec4
 OPTIONS_DEFINE=	JPEG
 OPTIONS_DEFAULT=JPEG
 
-JPEG_USES=		jpeg localbase
+JPEG_USES=		jpeg
 JPEG_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_JPEG
 
 # sha256 changes everytime you download the archive, need to host it on freefall
