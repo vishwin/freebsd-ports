@@ -12,7 +12,7 @@ WWW=		https://ccache.dev/
 LICENSE=	GPLv3+
 LICENSE_FILE=	${WRKSRC}/GPL-3.0.txt
 
-USES=		cmake:noninja compiler:c++17-lang localbase pathfix shebangfix
+USES=		cmake:noninja compiler:c++17-lang pathfix shebangfix
 USE_GITHUB=	yes
 
 # /bin/bash -> /bin/sh to reduce tests dep.
