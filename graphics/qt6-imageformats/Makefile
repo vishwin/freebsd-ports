@@ -12,7 +12,7 @@ LIB_DEPENDS=	libjasper.so:graphics/jasper \
 		libtiff.so:graphics/tiff \
 		libwebp.so:graphics/webp
 
-USES=		cmake compiler:c++17-lang gl jpeg localbase pkgconfig \
+USES=		cmake compiler:c++17-lang gl jpeg pkgconfig \
 		qt-dist:6
 USE_GL=		opengl
 USE_QT=		base
