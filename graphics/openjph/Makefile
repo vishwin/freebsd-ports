@@ -11,7 +11,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libtiff.so:graphics/tiff
 
-USES=		cmake compiler:c++14-lang localbase
+USES=		cmake compiler:c++14-lang
 
 CMAKE_OFF=	OJPH_BUILD_STREAM_EXPAND \
 		OJPH_BUILD_TESTS
