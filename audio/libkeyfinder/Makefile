@@ -10,7 +10,7 @@ LICENSE=	GPLv3
 
 LIB_DEPENDS=	libfftw3.so:math/fftw3
 
-USES=		cmake localbase
+USES=		cmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	mixxxdj
