@@ -13,7 +13,7 @@ WWW=		https://www.libsdl.org/ \
 LICENSE=	ZLIB
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
-USES=		cmake iconv localbase pkgconfig
+USES=		cmake iconv pkgconfig
 CMAKE_OFF=	SDL_ARTS \
 		SDL_CCACHE \
 		SDL_ESD \
