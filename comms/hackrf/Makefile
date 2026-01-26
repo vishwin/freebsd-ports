@@ -11,7 +11,7 @@ LICENSE=	GPLv2
 LIB_DEPENDS=	libfftw3f.so:math/fftw3-float \
 		libfftw3.so:math/fftw3
 
-USES=		cmake localbase
+USES=		cmake
 USE_GITHUB=	YES
 GH_ACCOUNT=	greatscottgadgets
 GH_TAGNAME=	18b485e
