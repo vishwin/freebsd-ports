@@ -11,7 +11,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 BUILD_DEPENDS=	googletest>=1.12.1:devel/googletest
 
-USES=		cmake:testing compiler:c++11-lang localbase
+USES=		cmake:testing compiler:c++11-lang
 
 CMAKE_ON=	USE_EXTERNAL_GTEST
 NO_ARCH=	yes
