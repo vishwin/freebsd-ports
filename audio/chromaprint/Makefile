@@ -14,7 +14,7 @@ LICENSE_FILE_MIT=	${WRKSRC}/LICENSE.md
 
 LIB_DEPENDS=	libavcodec.so:multimedia/ffmpeg
 
-USES=		cmake:testing compiler:c++14-lang localbase
+USES=		cmake:testing compiler:c++14-lang
 USE_LDCONFIG=	yes
 
 CMAKE_ARGS=	-DAUDIO_PROCESSOR_LIB:STRING=swresample \
