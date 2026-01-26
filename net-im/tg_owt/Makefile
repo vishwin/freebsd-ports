@@ -23,7 +23,7 @@ LIB_DEPENDS=	libabsl_base.so:devel/abseil \
 		libsrtp2.so:net/libsrtp2 \
 		libvpx.so:multimedia/libvpx
 
-USES=		cmake gl gnome localbase pkgconfig xorg
+USES=		cmake gl gnome pkgconfig xorg
 USE_XORG=	x11 xcomposite xdamage xrender xrandr xtst
 USE_GL=		gbm gl
 USE_GITHUB=	yes
