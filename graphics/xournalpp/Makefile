@@ -23,7 +23,7 @@ LIB_DEPENDS=	libgtksourceview-4.so:x11-toolkits/gtksourceview4 \
 		libsndfile.so:audio/libsndfile \
 		libzip.so:archivers/libzip
 
-USES=		cmake compiler:c++11-lang gettext-tools gnome localbase lua pkgconfig tex xorg desktop-file-utils shared-mime-info
+USES=		cmake compiler:c++11-lang gettext-tools gnome lua pkgconfig tex xorg desktop-file-utils shared-mime-info
 USE_GITHUB=	yes
 USE_GNOME=	atk cairo gdkpixbuf glib20 gtk30 librsvg2 libxml2 pango
 USE_XORG=	x11 xext xi
