@@ -27,7 +27,7 @@ BUILD_DEPENDS=	\
 		${PY_SETUPTOOLS} \
 		${PYTHON_PKGNAMEPREFIX}ruamel.yaml>=0:devel/py-ruamel.yaml@${PY_FLAVOR}
 
-USES=		compiler:c++14-lang cmake localbase ncurses pkgconfig \
+USES=		compiler:c++14-lang cmake ncurses pkgconfig \
 		dos2unix python shebangfix
 USE_LDCONFIG=	yes
 USE_GITHUB=	yes
