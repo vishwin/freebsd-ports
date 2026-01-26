@@ -11,7 +11,7 @@ WWW=		https://frei0r.dyne.org/
 LICENSE=	GPLv2+
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-USES=		cmake compiler:c++11-lang localbase pkgconfig
+USES=		cmake compiler:c++11-lang pkgconfig
 USE_GITHUB=	yes
 GH_ACCOUNT=	dyne
 
