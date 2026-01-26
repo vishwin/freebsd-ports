@@ -37,7 +37,7 @@ TRACE_DESC=		Enable debug packet traces
 GCRYPT_LIB_DEPENDS=	libgcrypt.so:security/libgcrypt
 GCRYPT_CMAKE_ON=	-DCRYPTO_BACKEND=Libgcrypt
 
-OPENSSL_USES=		localbase ssl
+OPENSSL_USES=		ssl
 OPENSSL_CMAKE_ON=	-DCRYPTO_BACKEND=OpenSSL
 
 STATIC_CMAKE_BOOL=	BUILD_STATIC_LIBS
