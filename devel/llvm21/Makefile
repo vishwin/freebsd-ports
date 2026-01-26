@@ -30,7 +30,7 @@ LLVM_PREFIX=	${PREFIX}/${LLVM_DIR}
 DOCSDIR=	${PREFIX}/share/doc/${PORTNAME}${LLVM_SUFFIX}
 DATADIR=	${PREFIX}/share/${PORTNAME}${LLVM_SUFFIX}
 
-USES=		cmake compiler:c++17-lang cpe localbase tar:xz shebangfix
+USES=		cmake compiler:c++17-lang cpe tar:xz shebangfix
 _USES_PYTHON?=	python:build
 USES+=		${_USES_PYTHON}
 USE_LDCONFIG=	${LLVM_PREFIX}/lib
