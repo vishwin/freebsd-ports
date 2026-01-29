@@ -1888,6 +1888,7 @@
     SUBDIR += p5-Alien-Base-ModuleBuild
     SUBDIR += p5-Alien-Build
     SUBDIR += p5-Alien-LibGumbo
+    SUBDIR += p5-Alien-Role-Dino
     SUBDIR += p5-Alien-SDL
     SUBDIR += p5-Alien-cmake3
     SUBDIR += p5-Alzabo
@@ -5204,6 +5205,7 @@
     SUBDIR += py-klepto
     SUBDIR += py-knack
     SUBDIR += py-l18n
+    SUBDIR += py-lap
     SUBDIR += py-lark
     SUBDIR += py-launchpadlib
     SUBDIR += py-lazr.config

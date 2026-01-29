@@ -760,6 +760,7 @@
     SUBDIR += p5-Math-GMPq
     SUBDIR += p5-Math-GMPz
     SUBDIR += p5-Math-GSL
+    SUBDIR += p5-Math-GSL-Alien
     SUBDIR += p5-Math-Geometry
     SUBDIR += p5-Math-Geometry-Planar
     SUBDIR += p5-Math-Geometry-Planar-GPC
@@ -1192,7 +1193,6 @@
     SUBDIR += rubygem-numru-misc
     SUBDIR += rubygem-numru-units
     SUBDIR += rubygem-prime
-    SUBDIR += rubygem-rb-gsl
     SUBDIR += rumur
     SUBDIR += saga
     SUBDIR += savage
