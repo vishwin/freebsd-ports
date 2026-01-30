@@ -1,16 +1,13 @@
 PORTNAME=	${DICT}-aspell
-SPELLVERSION=	6-el-0.08-0
-PORTEPOCH=	2
+SPELLVERSION=	5-mg-0.03-0
 CATEGORIES=	textproc
 
 MAINTAINER=	office@FreeBSD.org
-COMMENT=	Aspell Greek dictionary
+COMMENT=	Aspell Malagasy dictionary
 
 LICENSE=	GPLv2
 
-WWW=		https://www.elspell.gr/
-
-DICT=		el
+DICT=		mg
 
 .include "${.CURDIR}/../../textproc/aspell/Makefile.inc"
 .include <bsd.port.post.mk>

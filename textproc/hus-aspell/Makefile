@@ -1,16 +1,13 @@
 PORTNAME=	${DICT}-aspell
-SPELLVERSION=	6-el-0.08-0
-PORTEPOCH=	2
+SPELLVERSION=	6-hus-0.03-1
 CATEGORIES=	textproc
 
 MAINTAINER=	office@FreeBSD.org
-COMMENT=	Aspell Greek dictionary
+COMMENT=	Aspell Huastec (Tenek) dictionary
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
 
-WWW=		https://www.elspell.gr/
-
-DICT=		el
+DICT=		hus
 
 .include "${.CURDIR}/../../textproc/aspell/Makefile.inc"
 .include <bsd.port.post.mk>
