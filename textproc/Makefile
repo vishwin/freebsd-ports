@@ -1413,6 +1413,7 @@
     SUBDIR += py-hexdump
     SUBDIR += py-hieroglyph
     SUBDIR += py-hjson
+    SUBDIR += py-hotdoc
     SUBDIR += py-html-text
     SUBDIR += py-html2json
     SUBDIR += py-html2text
@@ -1696,8 +1697,10 @@
     SUBDIR += py-texttable
     SUBDIR += py-textual
     SUBDIR += py-textual-autocomplete
+    SUBDIR += py-textual-fastdatatable
     SUBDIR += py-textual-image
     SUBDIR += py-textual-speedups
+    SUBDIR += py-textual-textarea
     SUBDIR += py-textual0
     SUBDIR += py-textwrap3
     SUBDIR += py-three-merge
@@ -1732,6 +1735,7 @@
     SUBDIR += py-wavedrom
     SUBDIR += py-wcmatch
     SUBDIR += py-whatthepatch
+    SUBDIR += py-wheezy.template
     SUBDIR += py-whoosh
     SUBDIR += py-wordcloud
     SUBDIR += py-wordnet

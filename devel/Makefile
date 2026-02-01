@@ -4801,6 +4801,7 @@
     SUBDIR += py-datrie
     SUBDIR += py-dbt-extractor
     SUBDIR += py-dbus
+    SUBDIR += py-dbus-deviation
     SUBDIR += py-ddsketch
     SUBDIR += py-ddt
     SUBDIR += py-ddtrace
@@ -5105,6 +5106,7 @@
     SUBDIR += py-ipython-pygments-lexers
     SUBDIR += py-ipython_genutils
     SUBDIR += py-ipywidgets
+    SUBDIR += py-isal
     SUBDIR += py-iso8601
     SUBDIR += py-isodate
     SUBDIR += py-isoduration
@@ -6250,6 +6252,7 @@
     SUBDIR += py-vulture
     SUBDIR += py-wadler-lindig
     SUBDIR += py-wadllib
+    SUBDIR += py-wait-for-it
     SUBDIR += py-wait-for2
     SUBDIR += py-warlock
     SUBDIR += py-watchdog
@@ -8262,6 +8265,7 @@
     SUBDIR += rubygem-xdg
     SUBDIR += rubygem-xdg7
     SUBDIR += rubygem-xdg8
+    SUBDIR += rubygem-xdg9
     SUBDIR += rubygem-xorcist
     SUBDIR += rubygem-xpath
     SUBDIR += rubygem-xxhash
