@@ -4784,6 +4784,7 @@
     SUBDIR += py-daemons
     SUBDIR += py-daiquiri
     SUBDIR += py-dal
+    SUBDIR += py-darkdetect
     SUBDIR += py-darts.util.lru
     SUBDIR += py-dask
     SUBDIR += py-dask-awkward
@@ -5707,6 +5708,7 @@
     SUBDIR += py-pyparsing2
     SUBDIR += py-pypemicro
     SUBDIR += py-pyperclip
+    SUBDIR += py-pyperclipimg
     SUBDIR += py-pyperf
     SUBDIR += py-pyperscan
     SUBDIR += py-pyplusplus
