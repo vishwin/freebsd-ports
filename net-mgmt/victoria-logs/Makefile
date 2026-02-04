@@ -1,7 +1,7 @@
 PORTNAME=	victoria-logs
-PORTVERSION=	1.43.1
+PORTVERSION=	1.44.0
+PORTREVISION=	1
 DISTVERSIONPREFIX=	v
-PORTREVISION=	2
 CATEGORIES=	net-mgmt
 
 MAINTAINER=	samm@FreeBSD.org
@@ -13,8 +13,15 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		gmake go:1.25+,modules,no_targets
 
-GO_MODULE=	github.com/VictoriaMetrics/VictoriaLogs
-USE_RC_SUBR?=	${PORTNAME}
+# we have to use github, as goproxy tags are wrong
+# see https://github.com/VictoriaMetrics/VictoriaLogs/issues/1071
+USE_GITHUB=	yes
+GH_ACCOUNT=	VictoriaMetrics
+GH_PROJECT=	VictoriaLogs
+GO_MODULE=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
+GO_MOD_DIST=	github
+
+USE_RC_SUBR?=	victoria_logs
 
 MAKE_ENV=	PKG_TAG=v${PORTVERSION} GOOS=${OPSYS:tl} \
 		BUILDINFO_TAG=tags-v${PORTVERSION}-victorialogs \
