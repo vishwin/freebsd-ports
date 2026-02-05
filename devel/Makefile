@@ -7659,6 +7659,7 @@
     SUBDIR += rubygem-licensee-gitlab
     SUBDIR += rubygem-lint_roller
     SUBDIR += rubygem-listen
+    SUBDIR += rubygem-listen-gitlab
     SUBDIR += rubygem-little-plugger
     SUBDIR += rubygem-local_time
     SUBDIR += rubygem-local_time-rails5
@@ -8057,7 +8058,6 @@
     SUBDIR += rubygem-sidekiq-bulk
     SUBDIR += rubygem-sidekiq-cron
     SUBDIR += rubygem-sidekiq-cron-rails-gitlab
-    SUBDIR += rubygem-sidekiq-cron-rails70
     SUBDIR += rubygem-sidekiq-gitlab
     SUBDIR += rubygem-sidekiq-scheduler
     SUBDIR += rubygem-sidekiq-unique-jobs
