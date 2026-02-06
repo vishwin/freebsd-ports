@@ -1007,7 +1007,6 @@
     SUBDIR += hs-ormolu
     SUBDIR += hs-profiteur
     SUBDIR += hs-shake
-    SUBDIR += hs-spago
     SUBDIR += hs-threadscope
     SUBDIR += htable
     SUBDIR += hub
@@ -5369,6 +5368,7 @@
     SUBDIR += py-notify2
     SUBDIR += py-num2words
     SUBDIR += py-numba
+    SUBDIR += py-nvidia-ml-py
     SUBDIR += py-objgraph
     SUBDIR += py-objprint
     SUBDIR += py-objsize
@@ -6043,6 +6043,7 @@
     SUBDIR += py-speaklater
     SUBDIR += py-speg
     SUBDIR += py-spin
+    SUBDIR += py-spy
     SUBDIR += py-spyder-kernels
     SUBDIR += py-sqids
     SUBDIR += py-sqlfluff
@@ -8376,6 +8377,7 @@
     SUBDIR += sope
     SUBDIR += sope2
     SUBDIR += sord
+    SUBDIR += spago
     SUBDIR += spark
     SUBDIR += sparsebitset
     SUBDIR += sparsehash
