@@ -32,6 +32,8 @@ MAKE_JOBS_UNSAFE=	yes
 GNU_CONFIGURE=	yes
 GNU_CONFIGURE_MANPREFIX=${PREFIX}/share
 
+LDFLAGS+=	-L${LOCALBASE}/lib -ldbus-1
+
 OPTIONS_SUB=	yes
 OPTIONS_DEFINE=	DOCS NLS PCAP SSH2 SSL
 OPTIONS_DEFAULT=NLS SSH2 SSL
@@ -41,7 +43,7 @@ SSH2_DESC=		SSH2 protocol support
 
 NLS_CONFIGURE_ENABLE=	nls
 PCAP_CONFIGURE_ON=	--with-libpcap=included
-PCAP_BROKEN=		Broken libdbus linkage with builtin PCAP
+PCAP_LIB_DEPENDS=	libdbus-1.so:devel/dbus
 SSH2_CONFIGURE_ON=	--with-libssh2=included
 SSH2_CONFIGURE_OFF=	--without-libssh2
 SSH2_IMPLIES=		SSL
