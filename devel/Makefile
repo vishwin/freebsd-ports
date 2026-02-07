@@ -734,7 +734,6 @@
     SUBDIR += freebsd-gcc13
     SUBDIR += freebsd-gcc14
     SUBDIR += freebsd-gcc15
-    SUBDIR += freebsd-git-devtools
     SUBDIR += freebsd-nvme-shim
     SUBDIR += freebsd-sysroot
     SUBDIR += frink
@@ -838,6 +837,7 @@
     SUBDIR += gio-sharp
     SUBDIR += git
     SUBDIR += git-absorb
+    SUBDIR += freebsd-git-arc
     SUBDIR += git-branchless
     SUBDIR += git-bug
     SUBDIR += git-cinnabar
@@ -1671,6 +1671,7 @@
     SUBDIR += mergify
     SUBDIR += meson
     SUBDIR += meson-python
+    SUBDIR += mfc-candidates
     SUBDIR += microsoft-gsl
     SUBDIR += mill
     SUBDIR += mimalloc
