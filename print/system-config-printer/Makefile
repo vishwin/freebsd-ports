@@ -11,7 +11,7 @@ BUILD_DEPENDS=	${PY_SETUPTOOLS} \
 		xmlto:textproc/xmlto \
 		docbook-xml>0:textproc/docbook-xml
 LIB_DEPENDS=	libcups.so:print/cups
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>0:devel/dbus-python@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycups>=0:print/py-pycups@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pycurl>=0:ftp/py-pycurl@${PY_FLAVOR} \

@@ -24,7 +24,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}cffi>1.1.0:devel/py-cffi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}six>1.4.1:devel/py-six@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cairocffi>=0.9:graphics/py-cairocffi@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}xcffib>=0.5.0:x11/py-xcffib@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dbus>=0.8:devel/py-dbus@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}dbus-python>=0.8:devel/dbus-python@${PY_FLAVOR}
 
 USES=		gnome python localbase
 USE_GNOME=	pygobject3

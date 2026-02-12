@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libcupsimage.so:print/cups \
 		libdbus-1.so:devel/dbus
 RUN_DEPENDS=	cups-filters>=0:print/cups-filters \
-		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus-python>=0:devel/dbus-python@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}distro>=1.0.1:sysutils/py-distro@${PY_FLAVOR}
 
 USES=		dos2unix gnome jpeg libtool localbase pkgconfig python \

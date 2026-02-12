@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=63.1.0:devel/py-setuptools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wheel>=0.45.1:devel/py-wheel@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=1.3.2:devel/py-dbus@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>=1.3.2:devel/dbus-python@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}python-gettext>=3.0:textproc/py-python-gettext@${PY_FLAVOR}
 
 USES=		desktop-file-utils pyqt:6 python

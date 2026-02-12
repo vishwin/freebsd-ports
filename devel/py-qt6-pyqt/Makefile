@@ -11,9 +11,9 @@ WWW=		https://riverbankcomputing.com/software/pyqt
 
 LICENSE=	${PYQT6_LICENSE}
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>1:devel/py-dbus@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>1:devel/dbus-python@${PY_FLAVOR}
 LIB_DEPENDS=	libdbus-1.so:devel/dbus
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>1:devel/py-dbus@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>1:devel/dbus-python@${PY_FLAVOR}
 
 USES=		gl pkgconfig pyqt:6,dist python qt:6
 USE_GL=		opengl

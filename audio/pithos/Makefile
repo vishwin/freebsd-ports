@@ -14,7 +14,7 @@ BUILD_DEPENDS=	appstream-util:devel/appstream-glib \
 
 RUN_DEPENDS=	gnome-keyring:security/gnome-keyring \
 		gsettings-desktop-schemas>3.0.0:devel/gsettings-desktop-schemas \
-		${PYTHON_SITELIBDIR}/dbus/__init__.py:devel/py-dbus@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/dbus/__init__.py:devel/dbus-python@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/gi/overrides/Gst.py:multimedia/py-gstreamer1@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pylast>0:audio/py-pylast@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/xdg/__init__.py:devel/py-xdg@${PY_FLAVOR}

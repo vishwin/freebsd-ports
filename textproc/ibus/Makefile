@@ -11,11 +11,11 @@ LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	${LOCALBASE}/share/unicode/ucd/NamesList.txt:textproc/UCD \
-		${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus-python>0:devel/dbus-python@${PY_FLAVOR} \
 		bash:shells/bash \
 		iso-codes>0:misc/iso-codes \
 		evdev-proto>0:devel/evdev-proto
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>0:devel/dbus-python@${PY_FLAVOR} \
 		iso-codes>0:misc/iso-codes \
 		setxkbmap:x11/setxkbmap
 

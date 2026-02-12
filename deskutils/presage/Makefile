@@ -9,7 +9,7 @@ COMMENT=	Intelligent predictive text entry system
 WWW=		https://presage.sourceforge.io/
 
 BUILD_DEPENDS=	help2man:misc/help2man \
-		${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus-python>0:devel/dbus-python@${PY_FLAVOR} \
 		${PY_SETUPTOOLS}
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libfontconfig.so:x11-fonts/fontconfig \
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libharfbuzz.so:print/harfbuzz \
 		libtinyxml.so:textproc/tinyxml \
 		libuuid.so:misc/libuuid
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>0:devel/dbus-python@${PY_FLAVOR}
 
 USES=		gmake libtool:build localbase shebangfix python sqlite
 

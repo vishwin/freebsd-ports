@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
 		${PYTHON_PKGNAMEPREFIX}html5lib>0:www/py-html5lib@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mygpoclient>=1.7:devel/py-mygpoclient@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}podcastparser>=0.6.0:devel/py-podcastparser@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus-python>=0:devel/dbus-python@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mutagen>=0:audio/py-mutagen@${PY_FLAVOR} \
 		yt-dlp:www/yt-dlp \
 		${PYTHON_PKGNAMEPREFIX}eyed3>=0:audio/py-eyed3@${PY_FLAVOR}

@@ -28,7 +28,7 @@ OPTIONS_DEFAULT=	SECRET_SERVICE
 DBUS_DESC=		Install Python DBUS to support the kwallet backend
 SECRET_SERVICE_DESC=	Install SecretStorage to support the SecretService backend
 
-DBUS_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR}
+DBUS_RUN_DEPENDS=		${PYTHON_PKGNAMEPREFIX}dbus-python>0:devel/dbus-python@${PY_FLAVOR}
 SECRET_SERVICE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}SecretStorage>=3.2:security/py-SecretStorage@${PY_FLAVOR}
 
 .include <bsd.port.mk>

@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libdbus-1.so:devel/dbus \
 		libduktape.so:lang/duktape-lib
-TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR} \
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>=0:devel/dbus-python@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}python-dbusmock>0:devel/py-python-dbusmock@${PY_FLAVOR} \
 		${LOCALBASE}/sbin/console-kit-daemon:sysutils/consolekit2
 

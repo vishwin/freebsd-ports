@@ -7,10 +7,10 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Python interface to the Avahi mDNS system
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${PY_FLAVOR} \
-		${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/py-dbus@${PY_FLAVOR}
+		${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/dbus-python@${PY_FLAVOR}
 LIB_DEPENDS=	libavahi-client.so:net/avahi-app
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${PY_FLAVOR} \
-		${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/py-dbus@${PY_FLAVOR} \
+		${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/dbus-python@${PY_FLAVOR} \
 		avahi-gtk3>=0.7:net/avahi-gtk3
 
 MASTERDIR=	${.CURDIR}/../avahi-app

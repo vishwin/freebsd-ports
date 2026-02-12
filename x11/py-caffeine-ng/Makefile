@@ -17,7 +17,7 @@ LICENSE_FILE_GPLv3+ =	${WRKSRC}/LICENCE
 LICENSE_FILE_LGPL3+ =	${WRKSRC}/LGPL
 
 PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dbus-python>0:devel/dbus-python@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ewmh>0:devel/py-ewmh@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pulsectl>0:audio/py-pulsectl@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}setproctitle>0:devel/py-setproctitle@${PY_FLAVOR}

@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 LIB_DEPENDS=	libtag.so:audio/taglib \
 		libmtp.so:multimedia/libmtp
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>0:devel/dbus-python@${PY_FLAVOR}
 
 USES=		cmake compiler:c++11-lib desktop-file-utils gnome gstreamer pkgconfig \
 		qt:5 python shebangfix

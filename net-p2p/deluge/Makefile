@@ -10,7 +10,7 @@ WWW=		https://deluge-torrent.org/
 
 LICENSE=	GPLv3
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83:devel/py-dbus@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>=0.83:devel/dbus-python@${PY_FLAVOR} \
 		${PYGAME} \
 		${PY_PILLOW} \
 		xdg-utils>=1.0.2:devel/xdg-utils \

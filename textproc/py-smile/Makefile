@@ -11,7 +11,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	appstream-util:devel/appstream-glib
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=1.2.18:devel/py-dbus@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>=1.2.18:devel/dbus-python@${PY_FLAVOR}
 
 USES=		desktop-file-utils gettext-tools gnome meson pkgconfig python \
 		shebangfix

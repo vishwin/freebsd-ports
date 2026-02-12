@@ -68,7 +68,7 @@ DBUS_USES=	gnome python
 DBUS_USE=	GNOME+=glib20
 DBUS_LIB_DEPENDS=	libdbus-glib-1.so:devel/dbus-glib \
 			libdbus-1.so:devel/dbus
-DBUS_RUN_DEPENDS=	${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/py-dbus@${PY_FLAVOR}
+DBUS_RUN_DEPENDS=	${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/dbus-python@${PY_FLAVOR}
 DBUS_MESON_ON=		-Dwith-dbus-daemon-path=${LOCALBASE}/bin/dbus-daemon \
 			-Dwith-dbus-sysconf-path=${LOCALBASE}/etc/dbus-1/system.d
 DBUS_MESON_OFF=		-Dwith-afpstats=false

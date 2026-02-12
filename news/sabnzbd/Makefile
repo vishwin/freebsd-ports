@@ -56,7 +56,7 @@ NOTIFY2_DESC=		Notify2 support
 PYGOBJECT_DESC=		PyGObject support for system tray icon (requires cairo)
 
 7ZIP_RUN_DEPENDS=	7zz:archivers/7-zip
-DBUS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR}
+DBUS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>=0:devel/dbus-python@${PY_FLAVOR}
 NLS_USES=		gettext-tools
 NOTIFY2_IMPLIES=	DBUS
 NOTIFY2_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}notify2>=0:devel/py-notify2@${PY_FLAVOR}

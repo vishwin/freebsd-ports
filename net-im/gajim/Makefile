@@ -51,7 +51,7 @@ VOICEMESSAGES_DESC=	Voice messages support
 AVCALLS_RUN_DEPENDS=	farstream>0:net-im/farstream
 AVCALLS_USES=		gstreamer
 AVCALLS_USE=		GSTREAMER=core libav rust ugly
-DBUS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.82.2:devel/py-dbus@${PY_FLAVOR}
+DBUS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>=0.82.2:devel/dbus-python@${PY_FLAVOR}
 LIBSECRET_RUN_DEPENDS=	libsecret>0:security/libsecret
 OPENPGP_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gpg>=2.0.0:security/py-gpg@${PY_FLAVOR}
 SENTRY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sentry-sdk>0:devel/py-sentry-sdk@${PY_FLAVOR}

@@ -207,7 +207,7 @@ CONFIGURE_ARGS+=	--disable-gtkspell
 USES+=			python
 LIB_DEPENDS+=		libdbus-glib-1.so:devel/dbus-glib
 .if !defined(PIDGIN_SLAVE)
-RUN_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}dbus>=0:devel/py-dbus@${PY_FLAVOR}
+RUN_DEPENDS+=		${PYTHON_PKGNAMEPREFIX}dbus-python>=0:devel/dbus-python@${PY_FLAVOR}
 .endif
 CONFIGURE_ARGS+=	--enable-dbus --with-python3=${PYTHON_CMD}
 PLIST_SUB+=		DBUS=""

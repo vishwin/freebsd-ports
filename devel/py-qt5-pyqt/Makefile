@@ -10,9 +10,9 @@ MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtCore module
 WWW=		https://riverbankcomputing.com/software/pyqt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>1:devel/py-dbus@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>1:devel/dbus-python@${PY_FLAVOR}
 LIB_DEPENDS=	libdbus-1.so:devel/dbus
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>1:devel/py-dbus@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>1:devel/dbus-python@${PY_FLAVOR}
 
 USES=		gl pkgconfig python pyqt:5,dist qt:5
 USE_GL=		gl

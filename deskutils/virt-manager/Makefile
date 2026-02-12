@@ -10,7 +10,7 @@ WWW=		https://virt-manager.org/
 LICENSE=	LGPL3
 
 BUILD_DEPENDS=	rst2man:textproc/py-docutils@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>=0.83.2:devel/py-dbus@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>=0.83.2:devel/dbus-python@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}libxml2-python>=2.7.8:textproc/libxml2-python@${PY_FLAVOR} \
 		vte3>=0:x11-toolkits/vte3 \
 		${PYTHON_PKGNAMEPREFIX}ipaddr>=0:devel/py-ipaddr@${PY_FLAVOR} \

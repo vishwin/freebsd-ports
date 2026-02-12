@@ -45,7 +45,7 @@ ALSA_CONFIGURE_OFF=	--alsa=no
 
 DBUS_LIB_DEPENDS=	libdbus-1.so:devel/dbus \
 			libexpat.so:textproc/expat2
-DBUS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus>0:devel/py-dbus@${PY_FLAVOR}
+DBUS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dbus-python>0:devel/dbus-python@${PY_FLAVOR}
 DBUS_CONFIGURE_ON=	--dbus --classic --autostart=dbus
 
 OPUS_LIB_DEPENDS=	libopus.so:audio/opus
