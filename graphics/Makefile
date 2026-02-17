@@ -84,8 +84,8 @@
     SUBDIR += bitmap
     SUBDIR += blend2d
     SUBDIR += blender
-    SUBDIR += blender4
     SUBDIR += blender-doc
+    SUBDIR += blender4
     SUBDIR += bmeps
     SUBDIR += bmp2html
     SUBDIR += bonzomatic
@@ -346,6 +346,7 @@
     SUBDIR += gwenview
     SUBDIR += h3
     SUBDIR += halftone
+    SUBDIR += hdr_histogram
     SUBDIR += hdr_tools
     SUBDIR += heimer
     SUBDIR += hiptext
