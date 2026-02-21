@@ -1,3 +1,109 @@
+  <vuln vid="428e782a-0e92-11f1-a9b1-0cc47ada5f32">
+    <topic>jenkins -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>jenkins</name>
+	<range><lt>2.551</lt></range>
+      </package>
+      <package>
+	<name>jenkins-lts</name>
+	<range><lt>2.541.2</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Jenkins Security Advisory:</p>
+	<blockquote cite="https://www.jenkins.io/security/advisory/2026-02-18/">
+	  <h1>Description</h1>
+	  <h5>(High) SECURITY-3669 / CVE-2026-27099</h5>
+	  <p>Stored XSS vulnerability in node offline cause description</p>
+	  <h5>(Medium) SECURITY-3658 / CVE-2026-27100</h5>
+	  <p>Build information disclosure vulnerability through Run Parameter</p>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-27099</cvename>
+      <cvename>CVE-2026-27100</cvename>
+      <url>https://www.jenkins.io/security/advisory/2026-02-18/</url>
+    </references>
+    <dates>
+      <discovery>2026-02-18</discovery>
+      <entry>2026-02-20</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="6a81dc74-0e8b-11f1-b7d1-b42e991fc52e">
+    <topic>Mozilla -- Heap buffer overflow</topic>
+    <affects>
+    <package>
+	<name>firefox</name>
+	<range><lt>147.0.4,2</lt></range>
+    </package>
+    <package>
+	<name>firefox-esr</name>
+	<range><lt>140.7.1</lt></range>
+    </package>
+    <package>
+	<name>thunderbird</name>
+	<range><lt>147.0.2</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://bugzilla.mozilla.org/show_bug.cgi?id=2014390 reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/show_bug.cgi?id=2014390">
+	  <p>Heap buffer overflow in libvpx.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-2447</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-2447</url>
+    </references>
+    <dates>
+      <discovery>2026-02-16</discovery>
+      <entry>2026-02-20</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="a977cb1c-0d7d-11f1-85c5-a8a1599412c6">
+    <topic>chromium -- security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>145.0.7632.109</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>145.0.7632.109</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_18.html">
+	 <p>This update includes 3 security fixes:</p>
+	 <ul>
+	    <li>[477033835] High CVE-2026-2648: Heap buffer overflow in PDFium. Reported by soiax on 2026-01-19</li>
+	    <li>[481074858] High CVE-2026-2649: Integer overflow in V8. Reported by JunYoung Park(@candymate) of KAIST Hacking Lab on 2026-02-03</li>
+	    <li>[476461867] Medium CVE-2026-2650: Heap buffer overflow in Media. Reported by Google on 2026-01-18</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-2648</cvename>
+      <cvename>CVE-2026-2649</cvename>
+      <cvename>CVE-2026-2650</cvename>
+      <url>https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_18.html</url>
+    </references>
+    <dates>
+      <discovery>2026-02-18</discovery>
+      <entry>2026-02-19</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="67793feb-0b5b-11f1-a1c0-0050569f0b83">
     <topic>powerdns-recursor -- Denial of Service</topic>
     <affects>
