@@ -4386,6 +4386,7 @@
     SUBDIR += py-aioapns
     SUBDIR += py-aioboto3
     SUBDIR += py-aiobotocore
+    SUBDIR += py-aiofile
     SUBDIR += py-aiofiles
     SUBDIR += py-aiohttp-apispec
     SUBDIR += py-aioice
@@ -4638,6 +4639,7 @@
     SUBDIR += py-cacheyou
     SUBDIR += py-cachier
     SUBDIR += py-cachy
+    SUBDIR += py-caio
     SUBDIR += py-calver
     SUBDIR += py-camel-converter
     SUBDIR += py-canonicaljson
@@ -5618,6 +5620,7 @@
     SUBDIR += py-purl
     SUBDIR += py-py
     SUBDIR += py-py-deviceid
+    SUBDIR += py-py-key-value-aio
     SUBDIR += py-py-partiql-parser
     SUBDIR += py-py-serializable
     SUBDIR += py-py-stackexchange
