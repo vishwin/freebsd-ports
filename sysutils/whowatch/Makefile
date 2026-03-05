@@ -12,6 +12,8 @@ WWW=		http://wizard.ae.krakow.pl/~mike/
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/COPYING
 
+BROKEN=	Relies on wtmp and utmp, which are deprecated since FreeBSD 9
+
 USES=		ncurses
 GNU_CONFIGURE=	yes
 GNU_CONFIGURE_MANPREFIX=${PREFIX}/share
