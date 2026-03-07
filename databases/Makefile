@@ -22,6 +22,7 @@
     SUBDIR += beansdb
     SUBDIR += buzhug
     SUBDIR += c3p0
+    SUBDIR += cargo-pgrx
     SUBDIR += cassandra-cpp-driver
     SUBDIR += cassandra3
     SUBDIR += cassandra4
@@ -1146,6 +1147,7 @@
     SUBDIR += usql
     SUBDIR += valkey
     SUBDIR += valkey8
+    SUBDIR += vchord
     SUBDIR += vfront
     SUBDIR += virtualpg
     SUBDIR += weaviate
