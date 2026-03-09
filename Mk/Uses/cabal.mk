@@ -88,7 +88,7 @@ CABAL_EXECUTABLES?=	${PORTNAME}
 
 CABAL_CMD?=	cabal
 CABAL_PORT=	devel/hs-cabal-install
-CABAL_HOME=	${WRKDIR}/cabal-home
+CABAL_HOME?=	${WRKDIR}/cabal-home
 CABAL_HOME_ENV=XDG_DATA_HOME=${CABAL_HOME} XDG_CONFIG_HOME=${CABAL_HOME} XDG_CACHE_HOME=${CABAL_HOME} HOME=${CABAL_HOME}
 CABAL_LIBEXEC=	libexec/cabal
 CABAL_EXTRACT_SUFX=	.tar.gz
@@ -319,7 +319,7 @@ cabal-pre-configure:
 .  if !target(do-build)
 do-build:
 	cd ${WRKSRC} && \
-		${SETENVI} ${WRK_ENV} ${MAKE_ENV} ${CABAL_HOME_ENV} ${CABAL_CMD} build --no-semaphore --disable-benchmarks --disable-tests ${CABAL_WITH_ARGS} ${CABAL_LTO_ARGS} --flags "${CABAL_FLAGS}" ${BUILD_ARGS} ${BUILD_TARGET}
+		${SETENVI} ${WRK_ENV} ${MAKE_ENV} ${CABAL_HOME_ENV} ${CABAL_CMD} build --disable-benchmarks --disable-tests ${CABAL_WITH_ARGS} ${CABAL_LTO_ARGS} --flags "${CABAL_FLAGS}" ${BUILD_ARGS} ${BUILD_TARGET}
 .  endif
 
 .  if !target(do-install)

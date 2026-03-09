@@ -5319,6 +5319,7 @@
     SUBDIR += py-minimal-snowplow-tracker
     SUBDIR += py-minimongo
     SUBDIR += py-minio
+    SUBDIR += py-mirakuru
     SUBDIR += py-mmh3
     SUBDIR += py-mock
     SUBDIR += py-molecule
@@ -5808,6 +5809,7 @@
     SUBDIR += py-pytest-order
     SUBDIR += py-pytest-parallel
     SUBDIR += py-pytest-plus
+    SUBDIR += py-pytest-postgresql
     SUBDIR += py-pytest-pretty
     SUBDIR += py-pytest-profiling
     SUBDIR += py-pytest-pycodestyle
@@ -7277,6 +7279,7 @@
     SUBDIR += rubygem-contracts
     SUBDIR += rubygem-contracts016
     SUBDIR += rubygem-cookbook-omnifetch
+    SUBDIR += rubygem-cookstyle
     SUBDIR += rubygem-cool.io
     SUBDIR += rubygem-corefines
     SUBDIR += rubygem-corefoundation
