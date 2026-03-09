@@ -2540,6 +2540,7 @@
     SUBDIR += p5-Directory-Queue
     SUBDIR += p5-Directory-Scratch
     SUBDIR += p5-Directory-Scratch-Structured
+    SUBDIR += p5-Dist-Build
     SUBDIR += p5-Dist-CheckConflicts
     SUBDIR += p5-Dist-Joseki
     SUBDIR += p5-Dist-Metadata
@@ -8548,7 +8549,6 @@
     SUBDIR += universal-ctags
     SUBDIR += unordered-dense
     SUBDIR += upnp
-    SUBDIR += upp
     SUBDIR += urjtag
     SUBDIR += ut
     SUBDIR += utf8cpp
