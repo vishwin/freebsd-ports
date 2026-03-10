@@ -1477,6 +1477,7 @@
     SUBDIR += py-Tenjin
     SUBDIR += py-WebError
     SUBDIR += py-WebFlash
+    SUBDIR += py-a2wsgi
     SUBDIR += py-adblock
     SUBDIR += py-advocate
     SUBDIR += py-aiobreaker
@@ -1498,6 +1499,7 @@
     SUBDIR += py-autobahn
     SUBDIR += py-azure-common
     SUBDIR += py-azure-storage
+    SUBDIR += py-baize
     SUBDIR += py-beaker
     SUBDIR += py-beautifulsoup
     SUBDIR += py-betamax
