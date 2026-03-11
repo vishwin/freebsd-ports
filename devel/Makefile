@@ -7221,6 +7221,8 @@
     SUBDIR += rubygem-buftok
     SUBDIR += rubygem-bugspots
     SUBDIR += rubygem-builder
+    SUBDIR += rubygem-bullet
+    SUBDIR += rubygem-bullet-rails72
     SUBDIR += rubygem-byebug
     SUBDIR += rubygem-c21e
     SUBDIR += rubygem-cabin
@@ -8235,6 +8237,7 @@
     SUBDIR += rubygem-unicode-emoji
     SUBDIR += rubygem-unicode-version
     SUBDIR += rubygem-unicode_utils
+    SUBDIR += rubygem-uniform_notifier
     SUBDIR += rubygem-unleash
     SUBDIR += rubygem-useragent
     SUBDIR += rubygem-uuid
