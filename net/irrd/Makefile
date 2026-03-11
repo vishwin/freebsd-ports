@@ -43,7 +43,7 @@ RUN_DEPENDS=	\
 TEST_DEPENDS=	\
 		${PYTHON_PKGNAMEPREFIX}coverage>=6.0:devel/py-coverage@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-cov>=2.12.1:devel/py-pytest-cov@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}Twisted>=21.7.0:devel/py-twisted@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}twisted>=21.7.0:devel/py-twisted@${PY_FLAVOR}
 
 USES=		python
 USE_GITHUB=	yes
