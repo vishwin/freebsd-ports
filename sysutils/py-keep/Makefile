@@ -16,7 +16,7 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flit-core>=0:devel/py-flit-core@${PY_FLAVO
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}click>0:devel/py-click@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}terminaltables3>0:textproc/py-terminaltables3@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}pygithub>0:devel/py-PyGithub@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}PyGithub>0:devel/py-PyGithub@${PY_FLAVOR}
 
 USES=	python
 USE_PYTHON=	autoplist pep517
