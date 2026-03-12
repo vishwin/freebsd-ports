@@ -860,6 +860,7 @@
     SUBDIR += git-merge-changelog
     SUBDIR += git-modes
     SUBDIR += git-p4
+    SUBDIR += git-pkgs
     SUBDIR += git-prev-next
     SUBDIR += git-repo-manager
     SUBDIR += git-review
@@ -6005,6 +6006,7 @@
     SUBDIR += py-scikit-build-core
     SUBDIR += py-scooby
     SUBDIR += py-scripttest
+    SUBDIR += py-seedir
     SUBDIR += py-selection
     SUBDIR += py-semantic-version
     SUBDIR += py-semver
@@ -6154,6 +6156,7 @@
     SUBDIR += py-tooz
     SUBDIR += py-toposort
     SUBDIR += py-tox
+    SUBDIR += py-tox-ini-fmt
     SUBDIR += py-tox-toml-fmt
     SUBDIR += py-traceback2
     SUBDIR += py-trailrunner
@@ -6733,6 +6736,7 @@
     SUBDIR += rubygem-aws-sdk-connectcampaignsv2
     SUBDIR += rubygem-aws-sdk-connectcases
     SUBDIR += rubygem-aws-sdk-connectcontactlens
+    SUBDIR += rubygem-aws-sdk-connecthealth
     SUBDIR += rubygem-aws-sdk-connectparticipant
     SUBDIR += rubygem-aws-sdk-connectwisdomservice
     SUBDIR += rubygem-aws-sdk-controlcatalog
@@ -6778,6 +6782,7 @@
     SUBDIR += rubygem-aws-sdk-elasticloadbalancing
     SUBDIR += rubygem-aws-sdk-elasticloadbalancingv2
     SUBDIR += rubygem-aws-sdk-elasticsearchservice
+    SUBDIR += rubygem-aws-sdk-elementalinference
     SUBDIR += rubygem-aws-sdk-emr
     SUBDIR += rubygem-aws-sdk-emrcontainers
     SUBDIR += rubygem-aws-sdk-emrserverless
@@ -6999,6 +7004,7 @@
     SUBDIR += rubygem-aws-sdk-sesv2
     SUBDIR += rubygem-aws-sdk-shield
     SUBDIR += rubygem-aws-sdk-signer
+    SUBDIR += rubygem-aws-sdk-signerdata
     SUBDIR += rubygem-aws-sdk-simpledb
     SUBDIR += rubygem-aws-sdk-simspaceweaver
     SUBDIR += rubygem-aws-sdk-snowball
