@@ -4877,6 +4877,7 @@
     SUBDIR += py-durus
     SUBDIR += py-dynrules
     SUBDIR += py-e3-core
+    SUBDIR += py-e3-testsuite
     SUBDIR += py-easydict
     SUBDIR += py-easyprocess
     SUBDIR += py-editables
@@ -5295,7 +5296,6 @@
     SUBDIR += py-marrow.mailer
     SUBDIR += py-marrow.util
     SUBDIR += py-marshmallow
-    SUBDIR += py-marshmallow-enum
     SUBDIR += py-mashumaro
     SUBDIR += py-matrix-angular-sdk
     SUBDIR += py-matrix-common
