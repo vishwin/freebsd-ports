@@ -452,6 +452,7 @@
     SUBDIR += openssl
     SUBDIR += openssl-agent
     SUBDIR += openssl-oqsprovider
+    SUBDIR += openssl-pkcs11provider
     SUBDIR += openssl-unsafe
     SUBDIR += openssl111
     SUBDIR += openssl33
@@ -1372,6 +1373,7 @@
     SUBDIR += sudoscript
     SUBDIR += super
     SUBDIR += suricata
+    SUBDIR += susshi
     SUBDIR += swatchdog
     SUBDIR += tailscale
     SUBDIR += tang

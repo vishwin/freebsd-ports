@@ -1389,6 +1389,7 @@
     SUBDIR += py-elementpath
     SUBDIR += py-emeraldtree
     SUBDIR += py-empy
+    SUBDIR += py-en-core-web-sm
     SUBDIR += py-enchant
     SUBDIR += py-enrich
     SUBDIR += py-epy-reader
@@ -1538,6 +1539,7 @@
     SUBDIR += py-pdfrw
     SUBDIR += py-pdftotext
     SUBDIR += py-petl
+    SUBDIR += py-phonemizer-fork
     SUBDIR += py-pikepdf
     SUBDIR += py-precis_i18n
     SUBDIR += py-pscript
