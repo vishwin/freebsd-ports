@@ -1,6 +1,5 @@
-# must sync with devel/llvm21
-DISTVERSION=	21.1.8
-PORTREVISION=	1
+# must sync with devel/llvm22
+DISTVERSION=	22.1.0
 
 MASTERDIR=	${.CURDIR}/../wasi-libcxx
 
