@@ -3,10 +3,11 @@ PORTNAME=	vm-bhyve
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.7.99-77
 DISTVERSIONSUFFIX= -g41dbbba
+PORTREVISION=	1
 CATEGORIES=		sysutils
 PKGNAMESUFFIX=		-devel
 
-MAINTAINER=	driesm@FreeBSD.org
+MAINTAINER=	vm-bhyve@FreeBSD.org
 COMMENT=	Management system for bhyve virtual machines
 WWW=		https://github.com/freebsd/vm-bhyve
 
