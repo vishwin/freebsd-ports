@@ -1,3 +1,112 @@
+  <vuln vid="09e36f7e-2b5b-11f1-852e-5404a68ad561">
+    <topic>traefik -- Multiple vulnerabilities</topic>
+    <affects>
+<package>
+<name>traefik</name>
+<range><lt>3.6.12</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The traefik project releases a new version addressing multiple CVEs:</p>
+	<blockquote cite="https://github.com/traefik/traefik/releases/tag/v3.6.12">
+	  <ul>
+	    <li>CVE-2026-33433 (BasicAuth/DigestAuth Identity Spoofing via Non-Canonical headerField)</li>
+	    <li>CVE-2026-33186 (authorization bypass via missing leading slash in :path)</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-33433</cvename>
+      <cvename>CVE-2026-33186</cvename>
+      <url>https://github.com/traefik/traefik/releases/tag/v3.6.12</url>
+    </references>
+    <dates>
+      <discovery>2026-03-26</discovery>
+      <entry>2026-03-29</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="095e9db2-2b5b-11f1-9839-8447094a420f">
+    <topic>Roundcube -- SVG Attribute Bypass</topic>
+    <affects>
+      <package>
+	<name>roundcube-php82</name>
+	<name>roundcube-php83</name>
+	<name>roundcube-php84</name>
+	<name>roundcube-php85</name>
+	<range><lt>1.6.15,1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Roundcube project reports:</p>
+	<blockquote cite="https://github.com/roundcube/roundcubemail/releases/tag/1.6.15">
+	  <p>.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/roundcube/roundcubemail/releases/tag/1.6.15</url>
+    </references>
+    <dates>
+      <discovery>2026-03-29</discovery>
+      <entry>2026-03-29</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="b933083e-2b2e-11f1-b60a-2cf05da270f3">
+    <topic>Gitlab -- vulnerabilities</topic>
+    <affects>
+<package>
+<name>gitlab-ce</name>
+<name>gitlab-ee</name>
+<range><ge>18.10.0</ge><lt>18.10.1</lt></range>
+<range><ge>18.9.0</ge><lt>18.9.3</lt></range>
+<range><ge>7.11.0</ge><lt>18.8.7</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Gitlab reports:</p>
+	<blockquote cite="https://about.gitlab.com/releases/2026/03/25/patch-release-gitlab-18-10-1-released/">
+	  <p>Improper Handling of Parameters issue in Jira Connect installations impacts GitLab CE/EE</p>
+	  <p>Cross-Site Request Forgery issue in GLQL API impacts GitLab CE/EE</p>
+	  <p>HTML Injection in vulnerability report impacts GitLab EE</p>
+	  <p>Denial of Service issue in GraphQL API impacts GitLab CE/EE</p>
+	  <p>Improper Access Control issue in WebAuthn 2FA impacts GitLab CE/EE</p>
+	  <p>Improper Access Control issue in GraphQL query impacts GitLab EE</p>
+	  <p>Denial of Service issue in CI configuration processing impacts GitLab CE/EE</p>
+	  <p>Denial of Service issue in webhook configuration impacts GitLab CE/EE</p>
+	  <p>Cross-site Scripting issue in Mermaid diagram renderer impacts GitLab CE/EE</p>
+	  <p>Improper Access Control issue in Merge Requests impacts GitLab CE/EE</p>
+	  <p>Access Control issue in GraphQL API impacts GitLab EE</p>
+	  <p>Incorrect Authorization issue in authorization caching impacts GitLab EE</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-2370</cvename>
+      <cvename>CVE-2026-3857</cvename>
+      <cvename>CVE-2026-2995</cvename>
+      <cvename>CVE-2026-3988</cvename>
+      <cvename>CVE-2026-2745</cvename>
+      <cvename>CVE-2026-1724</cvename>
+      <cvename>CVE-2025-13436</cvename>
+      <cvename>CVE-2025-13078</cvename>
+      <cvename>CVE-2026-2973</cvename>
+      <cvename>CVE-2026-2726</cvename>
+      <cvename>CVE-2025-14595</cvename>
+      <cvename>CVE-2026-4363</cvename>
+      <url>https://about.gitlab.com/releases/2026/03/25/patch-release-gitlab-18-10-1-released/</url>
+    </references>
+    <dates>
+      <discovery>2026-03-25</discovery>
+      <entry>2026-03-29</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="970fd0ec-26f5-11f1-a9b1-0cc47ada5f32">
     <topic>jenkins -- multiple vulnerabilities</topic>
     <affects>
