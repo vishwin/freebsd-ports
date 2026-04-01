@@ -1094,7 +1094,6 @@
     SUBDIR += jline
     SUBDIR += jna
     SUBDIR += jsap
-    SUBDIR += jsl
     SUBDIR += jsmin
     SUBDIR += json-c
     SUBDIR += json-dto
@@ -1611,7 +1610,6 @@
     SUBDIR += log4shib
     SUBDIR += loguru
     SUBDIR += lokalize
-    SUBDIR += loki
     SUBDIR += love
     SUBDIR += love07
     SUBDIR += love08
@@ -4387,7 +4385,6 @@
     SUBDIR += py-QtPy
     SUBDIR += py-RPyC
     SUBDIR += py-about-time
-    SUBDIR += py-absl
     SUBDIR += py-absl-py
     SUBDIR += py-acstore
     SUBDIR += py-adb
@@ -5033,7 +5030,6 @@
     SUBDIR += py-grab
     SUBDIR += py-graphene
     SUBDIR += py-graphene-django
-    SUBDIR += py-graphene-django300
     SUBDIR += py-graphene-sqlalchemy
     SUBDIR += py-graphene2
     SUBDIR += py-graphql-core
@@ -6431,7 +6427,6 @@
     SUBDIR += qconf
     SUBDIR += qcoro
     SUBDIR += qgit
-    SUBDIR += qjson
     SUBDIR += qlementine
     SUBDIR += qschematic
     SUBDIR += qscintilla2

@@ -237,7 +237,6 @@
     SUBDIR += gitlab-workhorse
     SUBDIR += glance
     SUBDIR += glassfish
-    SUBDIR += glassfish4
     SUBDIR += glpi
     SUBDIR += gnome-user-share
     SUBDIR += go-anubis
@@ -520,7 +519,6 @@
     SUBDIR += nyxt
     SUBDIR += oatpp
     SUBDIR += oauth2-proxy
-    SUBDIR += obhttpd
     SUBDIR += offpunk
     SUBDIR += oneshot
     SUBDIR += onionbalance
@@ -1592,7 +1590,6 @@
     SUBDIR += py-django-autocomplete-light
     SUBDIR += py-django-bakery
     SUBDIR += py-django-bitfield
-    SUBDIR += py-django-bleach
     SUBDIR += py-django-bootstrap3
     SUBDIR += py-django-bootstrap4
     SUBDIR += py-django-braces
@@ -1611,7 +1608,6 @@
     SUBDIR += py-django-cors-headers
     SUBDIR += py-django-countries
     SUBDIR += py-django-crispy-forms
-    SUBDIR += py-django-cron
     SUBDIR += py-django-csp
     SUBDIR += py-django-debreach
     SUBDIR += py-django-debug-toolbar
@@ -1674,12 +1670,10 @@
     SUBDIR += py-django-soft-delete
     SUBDIR += py-django-solo
     SUBDIR += py-django-sortedm2m
-    SUBDIR += py-django-star-ratings
     SUBDIR += py-django-staticinline
     SUBDIR += py-django-storages
     SUBDIR += py-django-stubs-ext
     SUBDIR += py-django-tables2
-    SUBDIR += py-django-tagging
     SUBDIR += py-django-taggit
     SUBDIR += py-django-tasks
     SUBDIR += py-django-tastypie

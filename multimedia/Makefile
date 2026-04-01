@@ -99,7 +99,6 @@
     SUBDIR += gstreamer1-plugins-rust
     SUBDIR += gstreamer1-plugins-smoothstreaming
     SUBDIR += gstreamer1-plugins-svt-av1
-    SUBDIR += gstreamer1-plugins-svt-hevc
     SUBDIR += gstreamer1-plugins-svt-vp9
     SUBDIR += gstreamer1-plugins-theora
     SUBDIR += gstreamer1-plugins-ttml
@@ -110,7 +109,6 @@
     SUBDIR += gstreamer1-plugins-x264
     SUBDIR += gstreamer1-plugins-x265
     SUBDIR += gstreamer1-rtsp-server
-    SUBDIR += gstreamer1-vaapi
     SUBDIR += gstreamermm
     SUBDIR += gtk-pipe-viewer
     SUBDIR += gtk-youtube-viewer
