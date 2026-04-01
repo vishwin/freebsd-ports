@@ -1,5 +1,5 @@
 PORTNAME=	dwave-samplers
-DISTVERSION=	1.6.0
+DISTVERSION=	1.7.0
 CATEGORIES=	science python # quantum-computing
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 

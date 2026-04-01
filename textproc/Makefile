@@ -386,7 +386,6 @@
     SUBDIR += lasem
     SUBDIR += latex-service
     SUBDIR += latex2html
-    SUBDIR += lexilla
     SUBDIR += libabw
     SUBDIR += libcroco
     SUBDIR += libcss
@@ -1234,6 +1233,7 @@
     SUBDIR += pa-aspell
     SUBDIR += pageedit
     SUBDIR += par
+    SUBDIR += pdf-reader-mcp
     SUBDIR += pdfgrep
     SUBDIR += pdfoutline
     SUBDIR += pdfresurrect

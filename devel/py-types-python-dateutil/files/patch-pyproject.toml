@@ -1,0 +1,17 @@
+--- pyproject.toml.orig	2026-03-31 14:19:18.055818000 -0700
++++ pyproject.toml	2026-03-31 14:19:18.058072000 -0700
+@@ -1,12 +1,11 @@
+ [build-system]
+ build-backend = "setuptools.build_meta"
+-requires = ["setuptools>=82.0.1"]
++requires = ["setuptools>=63"]
+ 
+ [project]
+ name = "types-python-dateutil"
+ version = "2.9.0.20260323"
+-license = "Apache-2.0"
+-license-files = ["LICENSE"]
++license = {text = "Apache-2.0"}
+ description = "Typing stubs for python-dateutil"
+ readme = { text = """\
+ ## Typing stubs for python-dateutil

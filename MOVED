@@ -5222,3 +5222,5 @@ sysutils/alfio||2026-03-31|Has expired: Upstream abandoned the project and does 
 devel/py-absl|devel/py-absl-py|2026-03-31|Has expired: Use devel/py-absl-py
 security/openssl33-quictls||2026-03-31|Removed: Upstream project has been archived
 security/openssl33||2026-03-31|Has expired: Please use security/openssl35 (LTS)
+textproc/lexilla||2026-04-01|Has expired: No consumers left in the tree, the library is intended to be bundled
+x11-toolkits/scintilla||2026-04-01|Has expired: No consumers left in the tree, the library is intended to be bundled

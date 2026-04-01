@@ -1,3 +1,76 @@
+  <vuln vid="1dc2aae1-0793-4dbd-8548-e63ae0e1bdaf">
+    <topic>chromium -- security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>146.0.7680.177</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>146.0.7680.177</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_31.html">
+	 <p>This update includes 21 security fixes:</p>
+	 <ul>
+	    <li>[493952652] High CVE-2026-5273: Use after free in CSS. Reported by Anonymous on 2026-03-18</li>
+	    <li>[491732188] High CVE-2026-5272: Heap buffer overflow in GPU. Reported by inspector-ambitious on 2026-03-11</li>
+	    <li>[488596746] High CVE-2026-5274: Integer overflow in Codecs. Reported by heapracer (@heapracer) on 2026-03-01</li>
+	    <li>[489494022] High CVE-2026-5275: Heap buffer overflow in ANGLE. Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-04</li>
+	    <li>[489711638] High CVE-2026-5276: Insufficient policy enforcement in WebUSB. Reported by Ariel Simon on 2026-03-04</li>
+	    <li>[489791424] High CVE-2026-5277: Integer overflow in ANGLE. Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-05</li>
+	    <li>[490254128] High CVE-2026-5278: Use after free in Web MIDI. Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-06</li>
+	    <li>[490642836] High CVE-2026-5279: Object corruption in V8. Reported by Hyeonjun Ahn (@_deayzl) on 2026-03-08</li>
+	    <li>[491515787] High CVE-2026-5280: Use after free in WebCodecs. Reported by heapracer (@heapracer) on 2026-03-11</li>
+	    <li>[491518608] High CVE-2026-5281: Use after free in Dawn. Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-10</li>
+	    <li>[491655161] High CVE-2026-5282: Out of bounds read in WebCodecs. Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-11</li>
+	    <li>[492131521] High CVE-2026-5283: Inappropriate implementation in ANGLE. Reported by sweetchip on 2026-03-12</li>
+	    <li>[492139412] High CVE-2026-5284: Use after free in Dawn. Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-12</li>
+	    <li>[492228019] High CVE-2026-5285: Use after free in WebGL. Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-13</li>
+	    <li>[493900619] High CVE-2026-5286: Use after free in Dawn. Reported by sweetchip on 2026-03-18</li>
+	    <li>[494644471] High CVE-2026-5287: Use after free in PDF. Reported by Syn4pse on 2026-03-21</li>
+	    <li>[495507390] High CVE-2026-5288: Use after free in WebView. Reported by Google on 2026-03-23</li>
+	    <li>[495931147] High CVE-2026-5289: Use after free in Navigation. Reported by Google on 2026-03-25</li>
+	    <li>[496205576] High CVE-2026-5290: Use after free in Compositing. Reported by Google on 2026-03-25</li>
+	    <li>[490118036] Medium CVE-2026-5291: Inappropriate implementation in WebGL. Reported by heapracer (@heapracer) on 2026-03-06</li>
+	    <li>[492213293] Medium CVE-2026-5292: Out of bounds read in WebCodecs. Reported by Google on 2026-03-12</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-5273</cvename>
+      <cvename>CVE-2026-5272</cvename>
+      <cvename>CVE-2026-5274</cvename>
+      <cvename>CVE-2026-5275</cvename>
+      <cvename>CVE-2026-5276</cvename>
+      <cvename>CVE-2026-5277</cvename>
+      <cvename>CVE-2026-5278</cvename>
+      <cvename>CVE-2026-5279</cvename>
+      <cvename>CVE-2026-5280</cvename>
+      <cvename>CVE-2026-5281</cvename>
+      <cvename>CVE-2026-5282</cvename>
+      <cvename>CVE-2026-5283</cvename>
+      <cvename>CVE-2026-5284</cvename>
+      <cvename>CVE-2026-5285</cvename>
+      <cvename>CVE-2026-5286</cvename>
+      <cvename>CVE-2026-5287</cvename>
+      <cvename>CVE-2026-5288</cvename>
+      <cvename>CVE-2026-5289</cvename>
+      <cvename>CVE-2026-5290</cvename>
+      <cvename>CVE-2026-5291</cvename>
+      <cvename>CVE-2026-5292</cvename>
+      <url>https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_31.html</url>
+    </references>
+    <dates>
+      <discovery>2026-03-31</discovery>
+      <entry>2026-04-01</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="09e36f7e-2b5b-11f1-852e-5404a68ad561">
     <topic>traefik -- Multiple vulnerabilities</topic>
     <affects>
