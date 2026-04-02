@@ -2551,6 +2551,7 @@
     SUBDIR += srg
     SUBDIR += srt
     SUBDIR += stagit
+    SUBDIR += static-api
     SUBDIR += stork
     SUBDIR += suitecrm
     SUBDIR += suphp

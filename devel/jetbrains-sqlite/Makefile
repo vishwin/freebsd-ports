@@ -21,7 +21,7 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	JetBrains
 GH_PROJECT=	intellij-community
 GH_TAGNAME=	idea/242.23726.38
-JAVA_VERSION=	17+
+JAVA_VERSION=	17 21
 
 DATADIR=	${PREFIX}/share/jetbrains/${PORTNAME}
 WRKSRC_SUBDIR=	platform/sqlite

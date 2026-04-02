@@ -34,20 +34,24 @@ JSON_VERSION=		3.11.3
 PLIST_FILES=	bin/${PORTNAME} \
 		bin/ollama-limit-gpu-layers
 
+XARCH!=		uname -p
+
 OPTIONS_GROUP=		BACKENDS
 OPTIONS_GROUP_BACKENDS=	CPU VULKAN MLX
 OPTIONS_DEFAULT=	CPU VULKAN MLX
 
 CPU_DESC=		Build CPU backend shared libraries for various SIMD instruction sets
 CPU_PLIST_FILES=	lib/ollama/libggml-base.so \
-			lib/ollama/libggml-base.so.0 \
-			lib/ollama/libggml-cpu-alderlake.so \
+			lib/ollama/libggml-base.so.0
+.if ${XARCH} == "amd64" || ${XARCH} == "i386"
+CPU_PLIST_FILES+=	lib/ollama/libggml-cpu-alderlake.so \
 			lib/ollama/libggml-cpu-haswell.so \
 			lib/ollama/libggml-cpu-icelake.so \
 			lib/ollama/libggml-cpu-sandybridge.so \
 			lib/ollama/libggml-cpu-skylakex.so \
 			lib/ollama/libggml-cpu-sse42.so \
 			lib/ollama/libggml-cpu-x64.so
+.endif
 
 VULKAN_DESC=		Build Vulkan GPU backend shared library
 VULKAN_BUILD_DEPENDS=	glslc:graphics/shaderc \

@@ -301,6 +301,7 @@
     SUBDIR += fretsonfire
     SUBDIR += fretsonfire-data
     SUBDIR += frikqcc
+    SUBDIR += frobtads
     SUBDIR += frogatto
     SUBDIR += frotz
     SUBDIR += frozen-bubble
@@ -812,6 +813,7 @@
     SUBDIR += qonk
     SUBDIR += qqwing
     SUBDIR += qstat
+    SUBDIR += qtads
     SUBDIR += qtv
     SUBDIR += quackle
     SUBDIR += quadra

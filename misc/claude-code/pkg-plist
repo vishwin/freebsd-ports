@@ -12,10 +12,3 @@ lib/node_modules/@anthropic-ai/claude-code/vendor/audio-capture/arm64-win32/audi
 lib/node_modules/@anthropic-ai/claude-code/vendor/audio-capture/x64-darwin/audio-capture.node
 lib/node_modules/@anthropic-ai/claude-code/vendor/audio-capture/x64-linux/audio-capture.node
 lib/node_modules/@anthropic-ai/claude-code/vendor/audio-capture/x64-win32/audio-capture.node
-lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/COPYING
-lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-darwin/rg
-lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-linux/rg
-lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/arm64-win32/rg.exe
-lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-darwin/rg
-lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-linux/rg
-lib/node_modules/@anthropic-ai/claude-code/vendor/ripgrep/x64-win32/rg.exe
