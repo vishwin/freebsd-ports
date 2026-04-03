@@ -76,8 +76,10 @@ IMAGEMAGICK_DEFAULT?=	7
 # Possible values: 8, 11, 17, 21, 22, 23, 24, 25
 .  if ${ARCH:Marmv*}
 JAVA_DEFAULT?=		11
-.  else
+.  elif ${ARCH:Mi386}
 JAVA_DEFAULT?=		21
+.  else
+JAVA_DEFAULT?=		25
 .  endif
 # Possible values: 4.6, 4.99
 .  if (defined(WANT_LAZARUS_DEVEL) && !empty(WANT_LAZARUS_DEVEL)) || ${ARCH:Maarch64} || ${ARCH:Mpowerpc*}

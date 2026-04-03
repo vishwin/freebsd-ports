@@ -5224,3 +5224,4 @@ security/openssl33-quictls||2026-03-31|Removed: Upstream project has been archiv
 security/openssl33||2026-03-31|Has expired: Please use security/openssl35 (LTS)
 textproc/lexilla||2026-04-01|Has expired: No consumers left in the tree, the library is intended to be bundled
 x11-toolkits/scintilla||2026-04-01|Has expired: No consumers left in the tree, the library is intended to be bundled
+security/py-shodan|net/py-shodan|2026-04-03|Remove duplicate port. Use net/py-shodan instead

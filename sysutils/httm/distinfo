@@ -1,4 +1,4 @@
-TIMESTAMP = 1775031891
+TIMESTAMP = 1775210799
 SHA256 (rust/crates/ahash-0.3.8.crate) = e8fd72866655d1904d6b0997d0b07ba561047d070fbe29de039031c641b61217
 SIZE (rust/crates/ahash-0.3.8.crate) = 28650
 SHA256 (rust/crates/aho-corasick-1.1.3.crate) = 8e60d3430d3a69478ad0993f19238d2df97c507009a52b3c10addcd7f6bcb916
@@ -329,5 +329,5 @@ SHA256 (rust/crates/xattr-1.6.1.crate) = 32e45ad4206f6d2479085147f02bc2ef834ac85
 SIZE (rust/crates/xattr-1.6.1.crate) = 15952
 SHA256 (rust/crates/yaml-rust-0.3.5.crate) = e66366e18dc58b46801afbf2ca7661a9f59cc8c5962c29892b6039b4f86fa992
 SIZE (rust/crates/yaml-rust-0.3.5.crate) = 42087
-SHA256 (kimono-koans-httm-0.49.3_GH0.tar.gz) = ed925a6ff29132709c9da9cf6acb54a67a571a4ba81f6b55ff3390531c9d74f7
-SIZE (kimono-koans-httm-0.49.3_GH0.tar.gz) = 141184
+SHA256 (kimono-koans-httm-0.49.4_GH0.tar.gz) = 3d55618c1092d7da21af665c5e9b82d51582519443e07774eb5f5dad8d6fe59c
+SIZE (kimono-koans-httm-0.49.4_GH0.tar.gz) = 142138

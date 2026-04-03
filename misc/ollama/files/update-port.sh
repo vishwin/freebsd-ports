@@ -14,7 +14,7 @@ VERSION="$1"
 GH_PROJECT="ollama"
 GH_ACCOUNT_ORIG="ollama"
 GH_ACCOUNT_FORK="yurivict"
-
+GO_CMD=$(make -V GO_CMD)
 
 echo "updating $GH_PROJECT to version $VERSION"
 
@@ -59,7 +59,7 @@ git push --tags
 
 # make GoLang proxy
 echo "==> submitting the new version $VERSION to GoLang proxy"
-GOPROXY=proxy.golang.org $(make -C "$(dirname "$0")/.." -V GO_CMD) list -m github.com/$GH_ACCOUNT_FORK/ollama@v$VERSION
+GOPROXY=proxy.golang.org $GO_CMD list -m github.com/$GH_ACCOUNT_FORK/ollama@v$VERSION
 
 # final message
 echo "success: done updating the $GH_ACCOUNT_FORK/$GH_PROJECT to version $VERSION"

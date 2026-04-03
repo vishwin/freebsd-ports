@@ -4,8 +4,8 @@ in the cli. There's no point in having the build fail because of it,
 however.
 
 Index: tests/util/server/src/servers/mod.rs
---- tests/util/server/src/servers/mod.rs.orig
-+++ tests/util/server/src/servers/mod.rs
+--- tests/util/lib/consts.rs.orig
++++ tests/util/lib/consts.rs
 @@ -1500,10 +1500,8 @@ const fn tsgo_platform() -> &'static str {
      (b"macos", b"aarch64") => "macos-arm64",
      (b"linux", b"x86_64") => "linux-x64",

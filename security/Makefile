@@ -969,6 +969,8 @@
     SUBDIR += py-hkdf
     SUBDIR += py-htpasswd
     SUBDIR += py-httpx-auth
+    SUBDIR += py-iam-expand
+    SUBDIR += py-iamdata
     SUBDIR += py-iris-check-module
     SUBDIR += py-iris-client
     SUBDIR += py-iris-evtx-module
@@ -1023,6 +1025,7 @@
     SUBDIR += py-plaso
     SUBDIR += py-pnu-certwatch
     SUBDIR += py-pnu-vuxml
+    SUBDIR += py-policyuniverse
     SUBDIR += py-potr
     SUBDIR += py-pwntools
     SUBDIR += py-pyaes

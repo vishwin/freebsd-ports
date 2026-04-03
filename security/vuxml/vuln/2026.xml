@@ -1,3 +1,41 @@
+  <vuln vid="adb096d4-2e72-11f1-acc1-339a1a6999b0">
+    <topic>openexr -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>openexr</name>
+	<range><lt>3.4.9</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Cary Phillips reports:</p>
+	<blockquote cite="https://github.com/AcademySoftwareFoundation/openexr/blob/v3.4.9-rc/CHANGES.md#version-349-april--3-2026">
+	  <p>[OpenEXR 3.4.9] addresses the following CVEs:</p>
+	  <ul>
+	    <li>CVE-2026-34589 DWA Lossy Decoder Heap Out-of-Bounds Write</li>
+	    <li>CVE-2026-34588 Signed 32-bit Overflow in PIZ Decoder Leads to OOB Read/Write</li>
+	    <li>CVE-2026-34380 Signed integer overflow (undefined behavior) in undo_pxr24_impl may allow bounds-check bypass in PXR24 decompression</li>
+	    <li>CVE-2026-34379 Misaligned write in LossyDctDecoder_execute leading to undefined behavior (DWA/DWAB decompression)</li>
+	    <li>CVE-2026-34378 Signed integer overflow in generic_unpack() when parsing EXR files with crafted negative dataWindow.min.x</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-34589</cvename>
+      <cvename>CVE-2026-34588</cvename>
+      <cvename>CVE-2026-34380</cvename>
+      <cvename>CVE-2026-34379</cvename>
+      <cvename>CVE-2026-34378</cvename>
+      <url>https://github.com/AcademySoftwareFoundation/openexr/blob/v3.4.9-rc/CHANGES.md#version-349-april--3-2026</url>
+      <url>https://lists.aswf.io/g/openexr-dev/message/5436</url>
+    </references>
+    <dates>
+      <discovery>2026-03-26</discovery>
+      <entry>2026-04-02</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="9fdad262-2e0f-11f1-88c7-00a098b42aeb">
     <topic>Python -- The webbrowser.open() API allows leading dashes</topic>
     <affects>

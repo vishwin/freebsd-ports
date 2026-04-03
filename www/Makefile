@@ -385,6 +385,7 @@
     SUBDIR += matomo
     SUBDIR += mattermost-server
     SUBDIR += mattermost-webapp
+    SUBDIR += mcp-server-browserbase
     SUBDIR += mediawiki143
     SUBDIR += mediawiki144
     SUBDIR += mediawiki145
@@ -1524,6 +1525,7 @@
     SUBDIR += py-channels-redis
     SUBDIR += py-cheroot
     SUBDIR += py-cherrypy
+    SUBDIR += py-cherrypy-cors
     SUBDIR += py-cinemagoer
     SUBDIR += py-cross-web
     SUBDIR += py-crossplane
@@ -1535,6 +1537,7 @@
     SUBDIR += py-cssutils
     SUBDIR += py-daphne
     SUBDIR += py-dash
+    SUBDIR += py-dash-bootstrap-components
     SUBDIR += py-ddgs
     SUBDIR += py-dj-database-url
     SUBDIR += py-dj52-channels
@@ -1778,10 +1781,12 @@
     SUBDIR += py-google-cloud-bigquery-storage
     SUBDIR += py-google-cloud-bigtable
     SUBDIR += py-google-cloud-compute
+    SUBDIR += py-google-cloud-container
     SUBDIR += py-google-cloud-core
     SUBDIR += py-google-cloud-datastore
     SUBDIR += py-google-cloud-dlp
     SUBDIR += py-google-cloud-logging
+    SUBDIR += py-google-cloud-monitoring
     SUBDIR += py-google-cloud-resource-manager
     SUBDIR += py-google-cloud-speech
     SUBDIR += py-google-cloud-storage

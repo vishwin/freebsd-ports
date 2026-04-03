@@ -55,6 +55,7 @@
     SUBDIR += lizardfs
     SUBDIR += lkl
     SUBDIR += ltfs
+    SUBDIR += mcp-server-filesystem
     SUBDIR += mergerfs
     SUBDIR += mhddfs
     SUBDIR += moosefs-cgi
