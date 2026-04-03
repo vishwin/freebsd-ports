@@ -11,7 +11,7 @@ WWW=		https://pypi.org/project/quadprog/
 
 LICENSE=	GPLv2+
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.2:math/py-numpy1@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.2:math/py-numpy@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist cython

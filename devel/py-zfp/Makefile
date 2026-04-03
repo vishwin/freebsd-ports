@@ -13,10 +13,10 @@ WWW=		https://computing.llnl.gov/projects/zfp \
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/scikit-build-cmake/LICENSE
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR} \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR} \
 		${PY_SETUPTOOLS}
 LIB_DEPENDS=	libzfp.so:devel/zfp
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR}
 
 USES=		cmake localbase:ldflags python
 USE_PYTHON=	cython flavors pytest

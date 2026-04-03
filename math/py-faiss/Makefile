@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/../../LICENSE
 
 BROKEN_i386=	clang crashes, see bug#261580
 
-PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR} \
+PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}packaging>0:devel/py-packaging@${PY_FLAVOR}
 BUILD_DEPENDS=	swig:devel/swig \
 		${PY_DEPENDS}

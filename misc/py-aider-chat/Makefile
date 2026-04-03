@@ -38,7 +38,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}arrow>=1.3:devel/py-arrow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}litellm>=1.44.7:misc/py-litellm@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}mixpanel>=4.10:misc/py-mixpanel@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}networkx>=3.3:math/py-networkx@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}numpy1<2.0:math/py-numpy1@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}numpy<2.0:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}openai>=1.43.1:misc/py-openai@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}oslex>=0.1.3:devel/py-oslex@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}packaging>=24.1:devel/py-packaging@${PY_FLAVOR} \

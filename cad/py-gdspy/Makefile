@@ -12,7 +12,7 @@ WWW=		https://github.com/heitzmann/gdspy/
 LICENSE=	BSL
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>0:math/py-numpy1@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy@${PY_FLAVOR}
 TEST_DEPENDS=	pytest:devel/py-pytest@${PY_FLAVOR}
 
 USES=		python

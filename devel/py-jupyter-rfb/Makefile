@@ -21,7 +21,7 @@ RUN_DEPENDS=	${PY_PILLOW} \
 		${PYTHON_PKGNAMEPREFIX}simplejpeg>0:graphics/py-simplejpeg@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}ipywidgets>=7.6.0:devel/py-ipywidgets@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}jupyterlab-widgets>0:devel/py-jupyterlab-widgets@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR} # probably only one of pillow and simplejpeg is needed
+		${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR} # probably only one of pillow and simplejpeg is needed
 
 USES=		python
 USE_PYTHON=	pep517 autoplist concurrent pytest

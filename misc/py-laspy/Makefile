@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 BUILD_DEPENDS=	${PY_SETUPTOOLS} \
 		${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${PY_FLAVOR}
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR}
 # optional dependencies
 RUN_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}lazrs>=0.6.0:misc/py-lazrs@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}laszip>=0.2.1:archivers/py-laszip@${PY_FLAVOR} \

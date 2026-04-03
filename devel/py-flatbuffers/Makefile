@@ -32,6 +32,6 @@ GH_ACCOUNT=	google
 OPTIONS_DEFINE=	NUMPY
 NUMPY_DESC=	Support scalar vectors as numpy arrays
 
-NUMPY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=0:math/py-numpy1@${PY_FLAVOR}
+NUMPY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=0:math/py-numpy@${PY_FLAVOR}
 
 .include <bsd.port.mk>

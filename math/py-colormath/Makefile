@@ -11,7 +11,7 @@ WWW=		https://pypi.org/project/colormath/
 
 LICENSE=	BSD2CLAUSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.9.2:math/py-numpy1@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.9.2:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}networkx>=1.9.1:math/py-networkx@${PY_FLAVOR}
 
 USES=		python

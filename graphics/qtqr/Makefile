@@ -14,7 +14,7 @@ WWW=		https://launchpad.net/qr-tools
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENCE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=0:math/py-numpy1@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=0:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}zbar-py>=1.0.4:graphics/py-zbar-py@${PY_FLAVOR}
 

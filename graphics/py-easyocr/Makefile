@@ -15,7 +15,7 @@ LICENSE=	GPLv3
 USES=		python
 USE_PYTHON=	distutils autoplist pytest
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR} \
 		opencv>0:graphics/opencv \
 		${PYTHON_PKGNAMEPREFIX}pillow>0:graphics/py-pillow@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyclipper>0:math/py-pyclipper@${PY_FLAVOR} \

@@ -12,7 +12,7 @@ WWW=		https://github.com/xmikos/qspectrumanalyzer
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pyqtgraph>=0.10.0:graphics/py-pyqtgraph@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}soapy_power>=1.5.0:misc/py-soapy_power@${PY_FLAVOR}
 

@@ -22,11 +22,11 @@ LICENSE_COMB=	multi
 ONLY_FOR_ARCHS=	amd64 i386
 
 BUILD_DEPENDS=	makedepend:devel/makedepend \
-		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR}
 LIB_DEPENDS=	libexpat.so:textproc/expat2 \
 		libfltk.so:x11-toolkits/fltk \
 		libnetcdf.so:science/netcdf
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR}
 
 USES=		gl gmake perl5 python shebangfix sqlite tcl tk xorg
 SHEBANG_FILES=	${WRKDIR}/plugins/topotools/*.tcl \

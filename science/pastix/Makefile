@@ -11,13 +11,13 @@ WWW=		https://solverstack.gitlabpages.inria.fr/pastix/
 LICENSE=	LGPL3
 
 BUILD_DEPENDS=	bash:shells/bash	\
-		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR}
 LIB_DEPENDS=	libmetis.so:math/metis	\
 		libjulia.so:lang/julia	\
 		libscotch.so:cad/scotch	\
 		libhwloc.so:devel/hwloc2
 RUN_DEPENDS=	bash:shells/bash	\
-		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR}
 
 USES=		cmake blaslapack:openblas fortran pkgconfig python
 

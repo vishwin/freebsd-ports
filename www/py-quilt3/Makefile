@@ -35,7 +35,7 @@ ANNDATA_DESC=	Annotated data support
 PYARROW_DESC=	Apache Arrow support
 
 ANNDATA_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}anndata>=0.8.0:devel/py-anndata@${PY_FLAVOR}
-PYARROW_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.14.0:math/py-numpy1@${PY_FLAVOR} \
+PYARROW_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.14.0:math/py-numpy@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}pandas>=0.19.2,1:math/py-pandas@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}pyarrow>=0.14.1:databases/py-pyarrow@${PY_FLAVOR}
 

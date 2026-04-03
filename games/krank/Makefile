@@ -9,7 +9,7 @@ COMMENT=	Little casual game
 WWW=		https://krank.sourceforge.net/
 
 RUN_DEPENDS=	${PYGAME} \
-		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR}
 
 USES=		python:run tar:bzip2
 NO_BUILD=	yes

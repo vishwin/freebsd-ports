@@ -23,7 +23,7 @@ USE_PYTHON=	autoplist concurrent cython pep517
 OPTIONS_DEFINE=	ARRAYS
 ARRAYS_DESC=	Array support
 
-ARRAYS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=0:math/py-numpy1@${PY_FLAVOR}
+ARRAYS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=0:math/py-numpy@${PY_FLAVOR}
 
 post-install:
 	${FIND} ${STAGEDIR}${PYTHON_SITELIBDIR} -name '*.so' -exec ${STRIP_CMD} {} +

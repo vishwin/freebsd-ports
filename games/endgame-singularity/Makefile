@@ -29,7 +29,7 @@ LICENSE_PERMS_MEMESBRUH03=	dist-mirror dist-sell pkg-mirror pkg-sell \
 				auto-accept
 
 RUN_DEPENDS=	${PYGAME} \
-		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}polib>=0:devel/py-polib@${PY_FLAVOR}
 
 USES=		python sdl shebangfix
