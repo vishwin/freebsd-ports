@@ -13,12 +13,12 @@ WWW=		https://www.h5py.org/ \
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/licenses/license.txt
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.25.0<3:math/py-numpy@${PY_FLAVOR} \
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.25.0,1<3,1:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pkgconfig>=1.5.5,1:devel/py-pkgconfig@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}setuptools>=61:devel/py-setuptools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR}
 LIB_DEPENDS=	libhdf5.so:science/hdf5
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.21.2:math/py-numpy@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.21.2,1:math/py-numpy@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}mpi4py>=3.1.2:net/py-mpi4py@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}tables>=3.4.4:devel/py-tables@${PY_FLAVOR}
 
