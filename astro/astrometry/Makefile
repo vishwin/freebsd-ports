@@ -16,7 +16,7 @@ BROKEN_armv7=	fails to link: os-features-test.c:10: undefined symbol 'canonicali
 
 BUILD_DEPENDS=	bash:shells/bash \
 		${PY_SETUPTOOLS} \
-		${PYNUMPY}
+		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
 LIB_DEPENDS=	libcairo.so:graphics/cairo \
 		libcfitsio.so:astro/cfitsio \
 		libgsl.so:math/gsl \
@@ -24,7 +24,7 @@ LIB_DEPENDS=	libcairo.so:graphics/cairo \
 		libpng16.so:graphics/png \
 		libwcs.so:astro/wcslib
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}astropy>0:astro/py-astropy@${PY_FLAVOR} \
-		${PYNUMPY}
+		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
 #TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}matplotlib>=3.3.0:math/py-matplotlib@${PY_FLAVOR}
 
 USES=		gmake jpeg localbase pkgconfig python shebangfix

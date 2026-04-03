@@ -13,7 +13,7 @@ LICENSE=	PD
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 RUN_DEPENDS=	${LOCALBASE}/lib/libsofa_c.so:astro/sofa \
-		${PYNUMPY}
+		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
 
 USES=		python
 NO_ARCH=	yes

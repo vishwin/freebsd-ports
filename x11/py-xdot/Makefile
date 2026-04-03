@@ -14,7 +14,7 @@ LICENSE=	LGPL3+
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 
 RUN_DEPENDS=	dot:graphics/graphviz \
-		${PYNUMPY}
+		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR}
 
 USES=		gnome python
 USE_GNOME=	cairo gtk30 pygobject3

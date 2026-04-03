@@ -11,7 +11,7 @@ WWW=		https://git.durrantlab.pitt.edu/jdurrant/scoria
 
 LICENSE=	APACHE20
 
-RUN_DEPENDS=	${PYNUMPY} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${PY_FLAVOR}
 
 USES=		python
