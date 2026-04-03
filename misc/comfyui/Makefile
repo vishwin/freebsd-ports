@@ -1,6 +1,7 @@
 PORTNAME=	comfyui
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.18.0
+PORTREVISION=	1
 CATEGORIES=	misc python # machine-learning
 
 MAINTAINER=	yuri@FreeBSD.org

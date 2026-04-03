@@ -1,3 +1,40 @@
+  <vuln vid="a117f43b-2f7b-11f1-89f4-b42e991fc52e">
+    <topic>MongoDB Server -- CWE-617: Reachable Assertion</topic>
+    <affects>
+    <package>
+	<name>mongodb80</name>
+	<range><lt>8.0.18</lt></range>
+    </package>
+    <package>
+	<name>mongodb70</name>
+	<range><lt>7.0.31</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://jira.mongodb.org/browse/SERVER-101758 reports:</p>
+	<blockquote cite="https://jira.mongodb.org/browse/SERVER-101758">
+	<p>
+	A user with access to the cluster with a limited set of
+	privilege actions can trigger a crash of amongod process
+	during the limited and unpredictable window when the
+	cluster is being promoted from a replica set to a sharded
+	cluster. This may cause a denial of service by taking
+	down the primary of the replica set.
+	</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-5170</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-5170</url>
+    </references>
+    <dates>
+      <discovery>2026-03-30</discovery>
+      <entry>2026-04-03</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="adb096d4-2e72-11f1-acc1-339a1a6999b0">
     <topic>openexr -- multiple vulnerabilities</topic>
     <affects>

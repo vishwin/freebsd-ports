@@ -1,5 +1,6 @@
 PORTNAME=	gguf
 DISTVERSION=	0.17.1.${GH_TAGNAME:S/b//} # the base version is in pyproject.toml, updated by post-patch
+PORTREVISION=	1
 CATEGORIES=	misc python # machine-learning
 #MASTER_SITES=	PYPI # the PYPI version is way behind of llama-cpp
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

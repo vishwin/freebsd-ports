@@ -1,6 +1,6 @@
 PORTNAME=	GPyOpt # the upstream repository was archived but this packages seems to be ok and is useful
 DISTVERSION=	1.2.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	science python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

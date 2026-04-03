@@ -1,6 +1,6 @@
 PORTNAME=	PyNE
 DISTVERSION=	0.7.8
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	science # physics
 MASTER_SITES=	https://raw.githubusercontent.com/pyne/data/master/:decay \
 		https://raw.githubusercontent.com/pyne/data/master/:cram \

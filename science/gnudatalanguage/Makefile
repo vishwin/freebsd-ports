@@ -1,7 +1,7 @@
 PORTNAME=	gnudatalanguage
 PORTVERSION=	1.1.3
 DISTVERSIONPREFIX=	v
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	science lang
 MASTER_SITES=	https://github.com/${PORTNAME}/gdl/releases/download/v${PORTVERSION}/
 .if defined(BUILD_PYTHON_MODULE)

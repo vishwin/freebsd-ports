@@ -1,5 +1,6 @@
 PORTNAME=	SQCommon
 DISTVERSION=	0.3.2
+PORTREVISION=	1
 CATEGORIES=	misc math python # quantum-computing, chemostry, physics
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

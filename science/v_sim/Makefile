@@ -1,5 +1,6 @@
 PORTNAME=	v_sim
 DISTVERSION=	3.9.0
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	thierry@FreeBSD.org
