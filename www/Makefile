@@ -1948,6 +1948,7 @@
     SUBDIR += py-sherlock-project
     SUBDIR += py-simple-websocket
     SUBDIR += py-slimit
+    SUBDIR += py-slowapi
     SUBDIR += py-slumber
     SUBDIR += py-social-auth-app-django
     SUBDIR += py-sockjs-tornado
