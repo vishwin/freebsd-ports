@@ -76,10 +76,11 @@
   <vuln vid="9fdad262-2e0f-11f1-88c7-00a098b42aeb">
     <topic>Python -- The webbrowser.open() API allows leading dashes</topic>
     <affects>
-    <package><name>python310</name> <range><ge>0</ge></range></package>
-    <package><name>python311</name> <range><ge>0</ge></range></package>
-    <package><name>python312</name> <range><ge>0</ge></range></package>
-    <package><name>python313</name> <range><ge>0</ge></range></package>
+    <package><name>python310</name> <range><lt>3.10.20_2</lt></range></package>
+    <package><name>python311</name> <range><lt>3.11.15_2</lt></range></package>
+    <package><name>python312</name> <range><lt>3.12.13_2</lt></range></package>
+    <package><name>python313</name> <range><lt>3.13.12_3</lt></range></package>
+    <package><name>python313t</name> <range><lt>3.13.12_3</lt></range></package>
     <package><name>python314</name> <range><ge>0</ge></range></package>
     </affects>
     <description>
@@ -100,15 +101,18 @@
     <dates>
       <discovery>2026-03-20</discovery>
       <entry>2026-04-01</entry>
+      <modified>2026-04-04</modified>
     </dates>
   </vuln>
 
   <vuln vid="6d3488ae-2e0f-11f1-88c7-00a098b42aeb">
     <topic>Python -- poplib module, when passed a user-controlled command, can have additional commands injected using newlines</topic>
     <affects>
+    <package><name>python310</name> <range><ge>0</ge></range></package>
     <package><name>python311</name> <range><ge>0</ge></range></package>
     <package><name>python312</name> <range><ge>0</ge></range></package>
     <package><name>python313</name> <range><ge>0</ge></range></package>
+    <package><name>python313t</name> <range><ge>0</ge></range></package>
     <package><name>python314</name> <range><ge>0</ge></range></package>
     </affects>
     <description>
@@ -128,15 +132,18 @@
     <dates>
       <discovery>2026-01-20</discovery>
       <entry>2026-04-01</entry>
+      <modified>2026-04-04</modified>
     </dates>
   </vuln>
 
   <vuln vid="0be929a5-2e0f-11f1-88c7-00a098b42aeb">
     <topic>Python -- imaplib module, when passed a user-controlled command, can have additional commands injected using newlines</topic>
     <affects>
+    <package><name>python310</name> <range><ge>0</ge></range></package>
     <package><name>python311</name> <range><ge>0</ge></range></package>
     <package><name>python312</name> <range><ge>0</ge></range></package>
     <package><name>python313</name> <range><ge>0</ge></range></package>
+    <package><name>python313t</name> <range><ge>0</ge></range></package>
     <package><name>python314</name> <range><ge>0</ge></range></package>
     </affects>
     <description>
@@ -156,6 +163,7 @@
     <dates>
       <discovery>2026-01-20</discovery>
       <entry>2026-04-01</entry>
+      <modified>2026-04-04</modified>
     </dates>
   </vuln>
 
