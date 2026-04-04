@@ -11,7 +11,8 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	appstream-util:devel/appstream-glib \
-		gjs-console:lang/gjs
+		gjs-console:lang/gjs \
+		msgfmt:devel/gettext-tools
 LIB_DEPENDS=	libadwaita-1.so:x11-toolkits/libadwaita \
 		libwebkitgtk-6.0.so:www/webkit2-gtk@60
 RUN_DEPENDS=	gjs-console:lang/gjs
