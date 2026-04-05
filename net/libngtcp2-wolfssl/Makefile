@@ -6,7 +6,7 @@ PKGNAMEPREFIX=	lib
 PKGNAMESUFFIX=	-wolfssl
 
 MAINTAINER=	sunpoet@FreeBSD.org
-COMMENT=	Implementation of QUIC protocol (wolfssl backend)
+COMMENT=	Implementation of QUIC protocol (wolfSSL backend)
 WWW=		https://nghttp2.org/ngtcp2/ \
 		https://github.com/ngtcp2/ngtcp2
 

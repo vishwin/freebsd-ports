@@ -28,7 +28,7 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-strip
 USE_LDCONFIG=	yes
 
-SLAVEDIRS=	net/libngtcp2-gnutls net/libngtcp2-wolfssl
+SLAVEDIRS=	net/libngtcp2-boringssl net/libngtcp2-gnutls net/libngtcp2-wolfssl
 
 post-install:
 	cd ${WRKSRC}/crypto/includes/ngtcp2/ && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/include/ngtcp2

@@ -240,8 +240,8 @@
     SUBDIR += arm-none-eabi-newlib
     SUBDIR += aros-sdk
     SUBDIR += art
-    SUBDIR += asfml
     SUBDIR += asdf
+    SUBDIR += asfml
     SUBDIR += asl
     SUBDIR += asmjit
     SUBDIR += asmx
@@ -300,6 +300,8 @@
     SUBDIR += bazel-buildtools
     SUBDIR += bazel5
     SUBDIR += bazel7
+    SUBDIR += bazel8
+    SUBDIR += bazel9
     SUBDIR += bbparse
     SUBDIR += bcc
     SUBDIR += bcpp
@@ -362,7 +364,7 @@
     SUBDIR += caliper
     SUBDIR += camp
     SUBDIR += capnproto
-    SUBDIR += capnproto1
+    SUBDIR += capnproto-tiledb
     SUBDIR += capslock
     SUBDIR += capstone
     SUBDIR += capstone4
@@ -667,6 +669,7 @@
     SUBDIR += electron38
     SUBDIR += electron39
     SUBDIR += electron40
+    SUBDIR += electron41
     SUBDIR += elf
     SUBDIR += elf-dissector
     SUBDIR += elfcat
@@ -965,8 +968,8 @@
     SUBDIR += gstreamer1-devtools
     SUBDIR += gstreamer1-plugins-soup
     SUBDIR += gtgt
-    SUBDIR += gtranslator
     SUBDIR += gtkspellmm
+    SUBDIR += gtranslator
     SUBDIR += guichan
     SUBDIR += guile-lib
     SUBDIR += gum
@@ -4576,6 +4579,8 @@
     SUBDIR += py-azure-mgmt-synapse
     SUBDIR += py-azure-mgmt-trafficmanager
     SUBDIR += py-azure-mgmt-web
+    SUBDIR += py-azure-monitor-opentelemetry
+    SUBDIR += py-azure-monitor-opentelemetry-exporter
     SUBDIR += py-azure-monitor-query
     SUBDIR += py-azure-multiapi-storage
     SUBDIR += py-azure-storage-blob
@@ -4590,7 +4595,7 @@
     SUBDIR += py-b2sdk
     SUBDIR += py-babel
     SUBDIR += py-babelfish
-    SUBDIR += py-babi_grammars
+    SUBDIR += py-babi-grammars
     SUBDIR += py-backcall
     SUBDIR += py-backoff
     SUBDIR += py-backports
@@ -4808,6 +4813,7 @@
     SUBDIR += py-dask
     SUBDIR += py-dask-awkward
     SUBDIR += py-dask-expr
+    SUBDIR += py-dask-geopandas
     SUBDIR += py-dask-histogram
     SUBDIR += py-dataclass-array
     SUBDIR += py-dataclasses-json
@@ -5186,7 +5192,7 @@
     SUBDIR += py-jsonrpclib-pelix
     SUBDIR += py-jsonschema
     SUBDIR += py-jsonschema-path
-    SUBDIR += py-jsonschema-spec
+    SUBDIR += py-jsonschema-rs
     SUBDIR += py-jsonschema-specifications
     SUBDIR += py-jsonschema3
     SUBDIR += py-jsonsir
@@ -5241,7 +5247,6 @@
     SUBDIR += py-legacy-api-wrap
     SUBDIR += py-levenshtein
     SUBDIR += py-libcst
-    SUBDIR += py-libcst03
     SUBDIR += py-libevdev
     SUBDIR += py-libioc
     SUBDIR += py-libpeas
@@ -5352,6 +5357,7 @@
     SUBDIR += py-multiset
     SUBDIR += py-multitasking
     SUBDIR += py-munch
+    SUBDIR += py-munge
     SUBDIR += py-murmurhash
     SUBDIR += py-mutf8
     SUBDIR += py-mutmut
@@ -5434,6 +5440,7 @@
     SUBDIR += py-opentelemetry-instrumentation-urllib3
     SUBDIR += py-opentelemetry-instrumentation-wsgi
     SUBDIR += py-opentelemetry-proto
+    SUBDIR += py-opentelemetry-resource-detector-azure
     SUBDIR += py-opentelemetry-sdk
     SUBDIR += py-opentelemetry-semantic-conventions
     SUBDIR += py-opentelemetry-util-http
@@ -7010,6 +7017,7 @@
     SUBDIR += rubygem-aws-sdk-signer
     SUBDIR += rubygem-aws-sdk-signerdata
     SUBDIR += rubygem-aws-sdk-simpledb
+    SUBDIR += rubygem-aws-sdk-simpledbv2
     SUBDIR += rubygem-aws-sdk-simspaceweaver
     SUBDIR += rubygem-aws-sdk-snowball
     SUBDIR += rubygem-aws-sdk-snowdevicemanagement
@@ -7278,6 +7286,7 @@
     SUBDIR += rubygem-colorizer
     SUBDIR += rubygem-columnize
     SUBDIR += rubygem-commander
+    SUBDIR += rubygem-compact_index
     SUBDIR += rubygem-concurrent-ruby
     SUBDIR += rubygem-concurrent-ruby-edge
     SUBDIR += rubygem-concurrent-ruby-edge06
@@ -7704,6 +7713,7 @@
     SUBDIR += rubygem-map
     SUBDIR += rubygem-marcel
     SUBDIR += rubygem-marcel-gitlab
+    SUBDIR += rubygem-mcp
     SUBDIR += rubygem-memo_wise
     SUBDIR += rubygem-memoist
     SUBDIR += rubygem-memoist3
@@ -8046,6 +8056,7 @@
     SUBDIR += rubygem-resque
     SUBDIR += rubygem-resque-scheduler
     SUBDIR += rubygem-retriable
+    SUBDIR += rubygem-retriable-gitlab
     SUBDIR += rubygem-retryable
     SUBDIR += rubygem-rgen
     SUBDIR += rubygem-rgl
@@ -8095,6 +8106,7 @@
     SUBDIR += rubygem-ruby2ruby
     SUBDIR += rubygem-ruby_memcheck
     SUBDIR += rubygem-ruby_parser
+    SUBDIR += rubygem-rubygems-generate_index
     SUBDIR += rubygem-rubygems-mirror
     SUBDIR += rubygem-rubygems-tasks
     SUBDIR += rubygem-rubygems-test
@@ -8636,6 +8648,7 @@
     SUBDIR += vc
     SUBDIR += vc-intrinsics
     SUBDIR += vcglib
+    SUBDIR += vdf
     SUBDIR += venom
     SUBDIR += vera++
     SUBDIR += vexcl

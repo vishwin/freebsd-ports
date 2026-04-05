@@ -405,6 +405,7 @@
     SUBDIR += libnet
     SUBDIR += libnfs
     SUBDIR += libngtcp2
+    SUBDIR += libngtcp2-boringssl
     SUBDIR += libngtcp2-gnutls
     SUBDIR += libngtcp2-wolfssl
     SUBDIR += libnids
@@ -1156,6 +1157,7 @@
     SUBDIR += py-rabbitpy
     SUBDIR += py-radix
     SUBDIR += py-raet
+    SUBDIR += py-rdap
     SUBDIR += py-ripe.atlas.cousteau
     SUBDIR += py-ripe.atlas.sagan
     SUBDIR += py-ripe.atlas.tools

@@ -7876,7 +7876,7 @@
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/certifi/core.py
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/certifi/py.typed
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/cffi-1.15.1.dist-info/INSTALLER
-/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/cffi-1.15.1.dist-info/LICENSE
+/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/cffi-1.15.1.dist-info/licenses/LICENSE
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/cffi-1.15.1.dist-info/METADATA
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/cffi-1.15.1.dist-info/RECORD
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/cffi-1.15.1.dist-info/REQUESTED
@@ -11574,10 +11574,10 @@
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/googleapis_common_protos-1.63.2.dist-info/WHEEL
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/googleapis_common_protos-1.63.2.dist-info/direct_url.json
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/googleapis_common_protos-1.63.2.dist-info/top_level.txt
-/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/AUTHORS
+/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/licenses/AUTHORS
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/INSTALLER
-/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/LICENSE
-/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/LICENSE.PSF
+/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/licenses/LICENSE
+/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/licenses/LICENSE.PSF
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/METADATA
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/RECORD
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/REQUESTED
@@ -11953,7 +11953,7 @@
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpc_status/_common.py
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpc_status/rpc_status.py
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpcio-1.69.0.dist-info/INSTALLER
-/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpcio-1.69.0.dist-info/LICENSE
+/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpcio-1.69.0.dist-info/licenses/LICENSE
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpcio-1.69.0.dist-info/METADATA
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpcio-1.69.0.dist-info/RECORD
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpcio-1.69.0.dist-info/REQUESTED
@@ -13884,7 +13884,7 @@
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/libcst/tests/test_visitor.py
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/libcst/tool.py
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/markupsafe-2.1.2.dist-info/INSTALLER
-/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/markupsafe-2.1.2.dist-info/LICENSE.rst
+/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/markupsafe-2.1.2.dist-info/licenses/LICENSE.rst
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/markupsafe-2.1.2.dist-info/METADATA
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/markupsafe-2.1.2.dist-info/RECORD
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/markupsafe-2.1.2.dist-info/REQUESTED
@@ -18804,7 +18804,7 @@
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/protobuf-5.29.6.dist-info/WHEEL
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/protobuf-5.29.6.dist-info/direct_url.json
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil-5.9.0.dist-info/INSTALLER
-/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil-5.9.0.dist-info/LICENSE
+/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil-5.9.0.dist-info/licenses/LICENSE
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil-5.9.0.dist-info/METADATA
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil-5.9.0.dist-info/RECORD
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil-5.9.0.dist-info/REQUESTED
@@ -25242,8 +25242,8 @@
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvicorn/supervisors/watchgodreload.py
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvicorn/workers.py
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop-0.17.0.dist-info/INSTALLER
-/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop-0.17.0.dist-info/LICENSE-APACHE
-/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop-0.17.0.dist-info/LICENSE-MIT
+/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop-0.17.0.dist-info/licenses/LICENSE-APACHE
+/var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop-0.17.0.dist-info/licenses/LICENSE-MIT
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop-0.17.0.dist-info/METADATA
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop-0.17.0.dist-info/RECORD
 /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop-0.17.0.dist-info/REQUESTED
@@ -32535,6 +32535,7 @@
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/certifi-2024.7.4.dist-info
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/cffi/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/cffi
+@dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/cffi-1.15.1.dist-info/licenses
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/cffi-1.15.1.dist-info
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/chardet/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/chardet/cli/__pycache__
@@ -32853,6 +32854,7 @@
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet/tests/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet/tests
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet
+@dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info/licenses
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/greenlet-2.0.2.dist-info
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpc/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpc/_cython/__pycache__
@@ -32884,6 +32886,7 @@
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpc_google_iam_v1-0.13.1.dist-info
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpc_status/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpc_status
+@dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpcio-1.69.0.dist-info/licenses
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpcio-1.69.0.dist-info
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/grpcio_status-1.49.1.dist-info
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/h11/__pycache__
@@ -33017,6 +33020,7 @@
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/libcst-0.3.20.dist-info
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/markupsafe/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/markupsafe
+@dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/markupsafe-2.1.2.dist-info/licenses
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/markupsafe-2.1.2.dist-info
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/more_itertools/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/more_itertools
@@ -33338,6 +33342,7 @@
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil/tests/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil/tests
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil
+@dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil-5.9.0.dist-info/licenses
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/psutil-5.9.0.dist-info
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/pyarrow/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/pyarrow/include/arrow/acero
@@ -33728,6 +33733,7 @@
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop/includes/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop/includes
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop
+@dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop-0.17.0.dist-info/licenses
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/uvloop-0.17.0.dist-info
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/wazuh/__pycache__
 @dir /var/ossec/framework/python/%%PYTHON_SITELIBDIR%%/wazuh/core/__pycache__

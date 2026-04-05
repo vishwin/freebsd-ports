@@ -482,6 +482,7 @@
     SUBDIR += ldmud
     SUBDIR += leela-zero
     SUBDIR += legend-of-edgar
+    SUBDIR += legendary
     SUBDIR += legesmotus
     SUBDIR += lexter
     SUBDIR += lgeneral
@@ -850,6 +851,7 @@
     SUBDIR += qwfwd
     SUBDIR += r1q2
     SUBDIR += railroad-rampage
+    SUBDIR += rare
     SUBDIR += rawgl
     SUBDIR += re3
     SUBDIR += redeclipse

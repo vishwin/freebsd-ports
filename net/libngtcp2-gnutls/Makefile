@@ -6,7 +6,7 @@ PKGNAMEPREFIX=	lib
 PKGNAMESUFFIX=	-gnutls
 
 MAINTAINER=	sunpoet@FreeBSD.org
-COMMENT=	Implementation of QUIC protocol (gnutls backend)
+COMMENT=	Implementation of QUIC protocol (GnuTLS backend)
 WWW=		https://nghttp2.org/ngtcp2/ \
 		https://github.com/ngtcp2/ngtcp2
 

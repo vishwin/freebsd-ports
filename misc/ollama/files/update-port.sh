@@ -16,6 +16,16 @@ GH_ACCOUNT_ORIG="ollama"
 GH_ACCOUNT_FORK="yurivict"
 GO_CMD=$(make -V GO_CMD)
 
+# check if GO_CMD is set and is a valid command
+if [ -z "$GO_CMD" ]; then
+	echo "error: GO_CMD is not set"
+	exit 1
+fi
+if ! command -v "$GO_CMD" >/dev/null 2>&1; then
+	echo "error: GO_CMD '$GO_CMD' is not a valid command"
+	exit 1
+fi
+
 echo "updating $GH_PROJECT to version $VERSION"
 
 # remove old dirs

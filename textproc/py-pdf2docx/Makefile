@@ -13,7 +13,7 @@ LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}fire>=0.3.0:devel/py-fire@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}PyMuPDF>=1.19.0:print/py-PyMuPDF@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pymupdf>=1.19.0:print/py-PyMuPDF@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}fonttools>=4.24.0:print/py-fonttools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}python-docx>=0.8.10:textproc/py-python-docx@${PY_FLAVOR} \

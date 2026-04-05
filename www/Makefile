@@ -1795,6 +1795,7 @@
     SUBDIR += py-google-cloud-translate
     SUBDIR += py-google-cloud-vision
     SUBDIR += py-google-resumable-media
+    SUBDIR += py-googlemaps
     SUBDIR += py-grafana-dashboard-manager
     SUBDIR += py-granian
     SUBDIR += py-graphite-api
@@ -2742,8 +2743,8 @@
     SUBDIR += yuicompressor
     SUBDIR += zenphoto
     SUBDIR += zerowait-httpd
-    SUBDIR += zine-ssg
     SUBDIR += zgrab2
+    SUBDIR += zine-ssg
     SUBDIR += zola
     SUBDIR += zoraxy
 
