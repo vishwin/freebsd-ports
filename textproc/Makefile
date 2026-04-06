@@ -1463,6 +1463,7 @@
     SUBDIR += py-latexcodec
     SUBDIR += py-license-expression
     SUBDIR += py-line-protocol-parser
+    SUBDIR += py-lingua-language-detector
     SUBDIR += py-linkify-it-py
     SUBDIR += py-m2r
     SUBDIR += py-mako

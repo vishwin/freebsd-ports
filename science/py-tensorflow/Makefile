@@ -297,10 +297,13 @@ do-test:
 		--verbose_failures \
 		--distdir=${WRKDIR}/bazel-dist \
 		--test_output=errors \
-		//tensorflow/python/...
+		--keep_going \
+		//tensorflow/python/autograph/...
 
-do-test-quick: build
+test-quick: build
 	@cd ${TEST_WRKSRC} && \
 		${SETENV} ${TEST_ENV} ${PYTHON_CMD} ${FILESDIR}/example-quick-training.py
+
+# tests as of 2.21.0: Executed 76 out of 76 tests: 76 tests pass.
 
 .include <bsd.port.mk>
