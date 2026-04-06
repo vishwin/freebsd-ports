@@ -1,6 +1,6 @@
 PORTNAME=	numpy
 DISTVERSION=	1.26.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math python
 MASTER_SITES=	PYPI \
 		https://numpy.org/doc/${DISTVERSION:R}/:doc
@@ -64,6 +64,9 @@ post-patch:
 	@${REINPLACE_CMD} -e 's|meson-python>=0.15.0,<0.16.0|meson-python>=0.15.0|' \
 		-e 's|Cython>=0.29.34,<3.1|Cython>=0.29.34|' \
 		${WRKSRC}/pyproject.toml
+
+post-install:
+	${FIND} ${STAGEDIR}${PYTHON_SITELIBDIR} -name '*.so' -exec ${STRIP_CMD} {} +
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}

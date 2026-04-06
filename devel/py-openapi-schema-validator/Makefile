@@ -25,4 +25,9 @@ USE_PYTHON=	autoplist concurrent pep517
 
 NO_ARCH=	yes
 
+OPTIONS_DEFINE=	ECMA_REGEX
+ECMA_REGEX_DESC=ECMA regular expressions support
+
+ECMA_REGEX_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}regress>=2025.10.1:devel/py-regress@${PY_FLAVOR}
+
 .include <bsd.port.mk>

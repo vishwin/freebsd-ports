@@ -1,10 +1,10 @@
 PORTNAME=	appscript
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.2.0
+DISTVERSION=	0.3.1
 CATEGORIES=	archivers
 
 MAINTAINER=	dtxdf@FreeBSD.org
-COMMENT=	Very lightweight script to create self-extractable archives
+COMMENT=	Simple, lightweight and effective tool for creating SFX files
 
 LICENSE=	BSD3CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
@@ -16,6 +16,7 @@ NO_ARCH=	yes
 NO_BUILD=	yes
 
 PLIST_FILES=	bin/appscript \
+		share/appscript/stub.c \
 		share/man/man1/appscript.1.gz
 
 .include <bsd.port.mk>

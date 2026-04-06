@@ -1,5 +1,6 @@
 PORTNAME=	scipy
 DISTVERSION=	1.17.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	science python
 MASTER_SITES=	https://docs.scipy.org/doc/${PORTNAME}-1.17.0/:doc \
@@ -75,6 +76,9 @@ post-patch:
 		${WRKSRC}/pyproject.toml
 	@${REINPLACE_CMD} -e "s|'boost', version : '1.89.0'|'boost'|g" \
 		${WRKSRC}/meson.build
+
+post-install:
+	${FIND} ${STAGEDIR}${PYTHON_SITELIBDIR} -name '*.so' -exec ${STRIP_CMD} {} +
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
