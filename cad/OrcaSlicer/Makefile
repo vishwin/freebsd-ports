@@ -3,7 +3,7 @@ DISTVERSIONPREFIX=v
 DISTVERSION=	2.3.2
 CATEGORIES=	cad
 
-MAINTAINER=	bapt@FreeBSD.org
+MAINTAINER=	kenrap@FreeBSD.org
 COMMENT=	Slicing Software for Precision 3D Prints
 WWW=		https://www.orcaslicer.com
 

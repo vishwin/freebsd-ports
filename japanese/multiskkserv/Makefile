@@ -3,7 +3,7 @@ DISTVERSION=	20240224
 PORTREVISION=	1
 CATEGORIES=	japanese
 
-MAINTAINER=	mew14930xvi@inbox.lv
+MAINTAINER=	mce@FreeBSD.org
 COMMENT=	Multiple dictionary server for the SKK
 WWW=		https://github.com/sina-ht/multiskkserv/
 
