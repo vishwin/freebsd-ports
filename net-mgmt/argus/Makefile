@@ -1,31 +1,29 @@
 PORTNAME=	argus
-PORTVERSION=	3.0.8.2
-PORTREVISION=	2
+DISTVERSIONPREFIX=	v
+DISTVERSION=	5.0.2
 CATEGORIES=	net-mgmt security
-MASTER_SITES=	http://qosient.com/argus/src/ \
-		ftp://qosient.com/pub/argus/src/
 
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Generic IP network transaction auditing tool
-WWW=		https://www.qosient.com/argus/
+WWW=		https://openargus.org/
 
 LICENSE=	GPLv3
 
-CONFLICTS=	argus-2* argus-sasl-2* argus-clients-2*
+USES=		bison perl5
+USE_GITHUB=	yes
+GH_ACCOUNT=	openargus
+USE_RC_SUBR=	argus
+
+GNU_CONFIGURE=	yes
+
+CONFLICTS=	argus-*
 
 OPTIONS_DEFINE=	SASL EXAMPLES
 OPTIONS_DEFAULT=SASL
+
 SASL_LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2
 SASL_CONFIGURE_ON=	--with-sasl=${LOCALBASE}
-SASL_VARS=	PKGNAMESUFFIX+=-sasl
-
-USE_RC_SUBR=	argus
-
-USES=		bison perl5
-GNU_CONFIGURE=	yes
-
-# Fix build with clang11
-CFLAGS+=	-fcommon
+SASL_VAR=		PKGNAMESUFFIX=-sasl
 
 post-patch:
 	@${REINPLACE_CMD} -e 's#/usr/lib/sasl2#${LOCALBASE}/lib/sasl2#' ${WRKSRC}/argus/ArgusOutput.c

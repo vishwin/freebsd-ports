@@ -1,5 +1,5 @@
 PORTNAME=	usbredir
-DISTVERSION=	0.10.0
+DISTVERSION=	0.11.0
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	net devel
 
@@ -21,5 +21,6 @@ INSTALL_TARGET=	install-strip
 
 post-patch:
 	@${REINPLACE_CMD} 's|SOL_TCP|IPPROTO_TCP|' \
-	       ${WRKSRC}/usbredirserver/usbredirserver.c
+		${WRKSRC}/usbredirserver/usbredirserver.c
+
 .include <bsd.port.mk>

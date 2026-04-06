@@ -336,6 +336,7 @@
     SUBDIR += kidentitymanagement
     SUBDIR += kimap
     SUBDIR += kio-gdrive
+    SUBDIR += kio-gopher
     SUBDIR += kio-zeroconf
     SUBDIR += kippo
     SUBDIR += kitinerary

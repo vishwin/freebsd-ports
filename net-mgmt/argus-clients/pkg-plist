@@ -4,7 +4,6 @@ bin/rabins
 bin/racluster
 bin/raconvert
 bin/racount
-bin/radark
 bin/radium
 bin/radump
 bin/raevent
@@ -12,8 +11,6 @@ bin/rafilteraddr
 bin/ragraph
 bin/ragrep
 bin/rahisto
-bin/rahosts
-bin/raips
 bin/ralabel
 bin/ranonymize
 bin/rapath
@@ -23,7 +20,6 @@ bin/raports
 bin/rarpwatch
 bin/raservices
 bin/rasort
-bin/rasplit
 %%MYSQL%%bin/rasql
 %%MYSQL%%bin/rasqlinsert
 %%MYSQL%%bin/rasqltimeindex
@@ -67,7 +63,7 @@ share/man/man8/radium.8.gz
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL
 %%PORTDOCS%%%%DOCSDIR%%/MANIFEST
-%%PORTDOCS%%%%DOCSDIR%%/README
+%%PORTDOCS%%%%DOCSDIR%%/README.rst
 %%PORTDOCS%%%%DOCSDIR%%/VERSION
 %%EXAMPLESDIR%%/Config/delegated-ipv4-latest
 %%EXAMPLESDIR%%/Config/excel.rc

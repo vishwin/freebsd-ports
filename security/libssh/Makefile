@@ -1,7 +1,9 @@
 PORTNAME=	libssh
 PORTVERSION=	0.12.0
+PORTREVISION=	1
 CATEGORIES=	security devel
-MASTER_SITES=	https://www.libssh.org/files/${PORTVERSION:R}/
+MASTER_SITES=	https://www.libssh.org/files/${PORTVERSION:R}/ \
+		https://ftp.openbsd.org/pub/OpenBSD/distfiles/
 
 MAINTAINER=	sunpoet@FreeBSD.org
 COMMENT=	Library implementing the SSH2 protocol
@@ -10,6 +12,9 @@ WWW=		https://www.libssh.org/ \
 
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
+
+BROKEN_FreeBSD_15=	src/mlkem_crypto.c:31:10: fatal error: 'openssl/ml_kem.h' file not found
+BROKEN_FreeBSD_16=	src/mlkem_crypto.c:31:10: fatal error: 'openssl/ml_kem.h' file not found
 
 TEST_DEPENDS=	cmocka>=0:sysutils/cmocka
 

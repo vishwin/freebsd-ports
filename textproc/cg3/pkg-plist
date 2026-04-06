@@ -15,6 +15,8 @@ libdata/pkgconfig/cg3.pc
 share/man/man1/cg-comp.1.gz
 share/man/man1/cg-conv.1.gz
 share/man/man1/cg-proc.1.gz
+share/man/man1/cg-sort.1.gz
+share/man/man1/cg-untrace.1.gz
 share/man/man1/cg3-autobin.pl.1.gz
 share/man/man1/vislcg3.1.gz
 share/emacs/site-lisp/cg.el

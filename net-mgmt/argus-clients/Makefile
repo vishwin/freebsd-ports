@@ -1,55 +1,46 @@
 PORTNAME=	argus-clients
-PORTVERSION=	3.0.8.3
-PORTREVISION=	1
+DISTVERSIONPREFIX=	v
+DISTVERSION=	5.0.0
 CATEGORIES=	net-mgmt security
-MASTER_SITES=	http://qosient.com/argus/src/ \
-		ftp://qosient.com/pub/argus/src/
 
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Client programs for the argus IP network transaction auditing tool
-WWW=		https://www.qosient.com/argus/
+WWW=		https://openargus.org/
 
 LICENSE=	GPLv3
 
-USES=		bison ncurses perl5 readline shebangfix
-CONFLICTS=	argus-clients-2* argus-clients-sasl-2*
+USES=		bison gmake ncurses perl5 readline shebangfix
+USE_GITHUB=	yes
+GH_ACCOUNT=	openargus
+GH_PROJECT=	clients
+
+GNU_CONFIGURE=	yes
+
+CONFLICTS=	argus-clients-*
 
 OPTIONS_DEFINE=	MYSQL SASL DOCS EXAMPLES
 OPTIONS_DEFAULT=MYSQL SASL
 OPTIONS_SUB=	yes
+
+MYSQL_USES=	mysql
 SASL_LIB_DEPENDS=	libsasl2.so:security/cyrus-sasl2
 SASL_CONFIGURE_ON=	--with-sasl=${LOCALBASE}
-MYSQL_USES=	mysql
-
-GNU_CONFIGURE=	yes
-SHEBANG_FILES=	examples/rahosts/raips.pl
-
-# Fix build with clang11
-CFLAGS+=	-fcommon
-
-.include <bsd.port.options.mk>
-
-.if ${PORT_OPTIONS:MSASL}
-PKGNAMESUFFIX+=	-sasl
-.endif
+SASL_VARS=  PKGNAMESUFFIX+=-sasl
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|/etc/radium.conf|${PREFIX}/etc/radium.conf|' ${WRKSRC}/clients/radium.c
-	@${REINPLACE_CMD} -e 's|/usr/lib/sasl2|${PREFIX}/lib/sasl2|' ${WRKSRC}/common/argus_auth.c
 	@${REINPLACE_CMD} -e 's|/etc/ra.conf|${PREFIX}/etc/ra.conf|' ${WRKSRC}/common/argus_util.c
 	@${REINPLACE_CMD} -e 's|/etc/rapolicy.conf|${PREFIX}/etc/rapolicy.conf|' \
 		${WRKSRC}/examples/rapolicy/rapolicy.c
-	@${REINPLACE_CMD} -e 's|/usr/local/bin/ra|${PREFIX}/bin/ra|' \
-		${WRKSRC}/examples/ramysql/rasql.c
 
 do-install:
 .for i in ra rabins racluster raconvert racount radium radump raevent \
 	rafilteraddr ragrep rahisto ralabel ranonymize rapath rapolicy \
-	rarpwatch raservices rasort rasplit rastream rastrip \
+	rarpwatch raservices rasort rastream rastrip \
 	ratemplate ratimerange ratop rauserdata
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/$i ${STAGEDIR}/${PREFIX}/bin/$i
 .endfor
-.for i in argusclientbug radark ragraph rahosts raips raplot raports
+.for i in argusclientbug ragraph raplot raports
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/$i ${STAGEDIR}/${PREFIX}/bin/$i
 .endfor
 .for i in ra.1 rabins.1 racluster.1 raconvert.1 racount.1 radump.1 raevent.1 \
@@ -64,18 +55,10 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/man/man8/$i ${STAGEDIR}/${PREFIX}/share/man/man8
 .endfor
 
-do-install-MYSQL-on:
-.for i in rasql rasqlinsert rasqltimeindex
-	${INSTALL_PROGRAM} ${WRKSRC}/bin/$i ${STAGEDIR}/${PREFIX}/bin/$i
-.endfor
-.for i in rasql.1 rasqlinsert.1 rasqltimeindex.1
-	${INSTALL_MAN} ${WRKSRC}/man/man1/$i ${STAGEDIR}/${PREFIX}/share/man/man1
-.endfor
-
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}/${DOCSDIR}/
 .for i in AUTHORS CHANGES CREDITS ChangeLog INSTALL \
-	MANIFEST README VERSION
+	MANIFEST README.rst VERSION
 	${INSTALL_DATA} ${WRKSRC}/$i ${STAGEDIR}/${DOCSDIR}
 .endfor
 
@@ -101,4 +84,13 @@ do-install-EXAMPLES-on:
 .for i in magic
 	${INSTALL_DATA} ${WRKSRC}/support/System/$i ${STAGEDIR}/${EXAMPLESDIR}/System/$i
 .endfor
+
+do-install-MYSQL-on:
+.for i in rasql rasqlinsert rasqltimeindex
+	${INSTALL_PROGRAM} ${WRKSRC}/bin/$i ${STAGEDIR}/${PREFIX}/bin/$i
+.endfor
+.for i in rasql.1 rasqlinsert.1 rasqltimeindex.1
+	${INSTALL_MAN} ${WRKSRC}/man/man1/$i ${STAGEDIR}/${PREFIX}/share/man/man1
+.endfor
+
 .include <bsd.port.mk>
