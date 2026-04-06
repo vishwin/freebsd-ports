@@ -1,11 +1,15 @@
 PORTNAME=	python
 DISTVERSION=	${PYTHON_DISTVERSION}
-PORTREVISION=	1
+PORTREVISION=	3
 CATEGORIES=	lang python
 MASTER_SITES=	PYTHON/ftp/python/${DISTVERSION:C/[a-z].*//}
 PKGNAMESUFFIX=	${PYTHON_BASESUFFIX}${THREADFLAG}
 DISTNAME=	Python-${DISTVERSION}
 DIST_SUBDIR=	python
+
+PATCH_SITES=	https://github.com/python/cpython/commit/
+PATCHFILES=	43fe06b96f6a6cf5cfd5bdab20b8649374956866.patch:-p1 \
+		89bfb8e5ed3c7caa241028f1a4eac5f6275a46a4.patch:-p1
 
 MAINTAINER=	python@FreeBSD.org
 COMMENT=	Interpreted object-oriented programming language
@@ -114,7 +118,9 @@ BUILD_DEPENDS+=	python${PYTHON_DEFAULT}:lang/python${PYTHON_DEFAULT:S/.//g}
 
 .if !empty(ABIFLAGS) || !empty(THREADFLAG)
 PLIST_FILES+=	bin/python${PYTHON_BASEVER}${THREADFLAG}${ABIFLAGS} \
-		bin/python${PYTHON_BASEVER}${THREADFLAG}${ABIFLAGS}-config
+		bin/python${PYTHON_BASEVER}${THREADFLAG}${ABIFLAGS}-config \
+		libdata/pkgconfig/python-${PYTHON_BASEVER}${THREADFLAG}${ABIFLAGS}-embed.pc \
+		libdata/pkgconfig/python-${PYTHON_BASEVER}${THREADFLAG}${ABIFLAGS}.pc
 .endif
 
 # See https://bugs.freebsd.org/115940 and https://bugs.freebsd.org/193650
