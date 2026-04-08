@@ -1,3 +1,52 @@
+  <vuln vid="c7a52cee-32ab-11f1-9839-8447094a420f">
+    <topic>OpenSSL -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>openssl</name>
+	<range><lt>3.0.20,1</lt></range>
+      </package>
+      <package>
+	<name>openssl34</name>
+	<range><lt>3.4.5</lt></range>
+      </package>
+      <package>
+	<name>openssl35</name>
+	<range><lt>3.5.6</lt></range>
+      </package>
+      <package>
+	<name>openssl36</name>
+	<range><lt>3.6.2</lt></range>
+      </package>
+      <package>
+	<name>openssl111</name>
+	<range><lt>1.1.1zg</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The OpenSSL project reports:</p>
+	<blockquote cite="https://openssl-library.org/news/vulnerabilities/">
+	  <p>Seven vulnerabilities in OpenSSL library. Highest classification Moderate.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-31790</cvename>
+      <cvename>CVE-2026-2637</cvename>
+      <cvename>CVE-2026-28386</cvename>
+      <cvename>CVE-2026-28387</cvename>
+      <cvename>CVE-2026-28388</cvename>
+      <cvename>CVE-2026-28389</cvename>
+      <cvename>CVE-2026-28390</cvename>
+      <cvename>CVE-2026-31789</cvename>
+      <url>https://openssl-library.org/news/vulnerabilities/</url>
+    </references>
+    <dates>
+      <discovery>2026-04-07</discovery>
+      <entry>2026-04-07</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="c08273b5-30e5-11f1-b9f2-b42e991fc52e">
     <topic>nghttp2 -- CWE-617: Reachable Assertion</topic>
     <affects>

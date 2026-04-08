@@ -1,7 +1,7 @@
 PORTNAME=	pytorch
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.10.0
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	misc # machine-learning
 MASTER_SITES=	https://github.com/pytorch/pytorch/releases/download/v${DISTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -100,6 +100,9 @@ post-patch:
 		${RM} -r third_party/cpuinfo third_party/fbgemm/external/cpuinfo && \
 		${CP} -r cpuinfo-with-freebsd-support third_party/cpuinfo && \
 		${CP} -r cpuinfo-with-freebsd-support third_party/fbgemm/external/cpuinfo
+	# change hardcoded compiler in torch/_inductor/config.py
+	@${REINPLACE_CMD} -e 's|"g++"|"${CXX}"|' \
+		${WRKSRC}/torch/_inductor/config.py
 
 do-install: # port should be moved to 'torch', but keep this for now with the hardcoded 'torch' name
 	@${MKDIR} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}

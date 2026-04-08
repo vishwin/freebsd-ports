@@ -623,6 +623,7 @@ share/applications/cudatext.desktop
 %%DATADIR%%/settings_default/default.json
 %%DATADIR%%/settings_default/lexer Bash script.json
 %%DATADIR%%/settings_default/lexer CSS.json
+%%DATADIR%%/settings_default/lexer HTML.json
 %%DATADIR%%/settings_default/lexer JSON.json
 %%DATADIR%%/settings_default/lexer JavaScript.json
 %%DATADIR%%/settings_default/lexer Python.json

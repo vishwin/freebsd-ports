@@ -1,5 +1,5 @@
 PORTNAME=	usbredir
-DISTVERSION=	0.11.0
+DISTVERSION=	0.13.0
 DISTVERSIONPREFIX=	${PORTNAME}-
 CATEGORIES=	net devel
 
@@ -18,9 +18,5 @@ USE_GNOME=	glib20
 USE_LDCONFIG=	yes
 
 INSTALL_TARGET=	install-strip
-
-post-patch:
-	@${REINPLACE_CMD} 's|SOL_TCP|IPPROTO_TCP|' \
-		${WRKSRC}/usbredirserver/usbredirserver.c
 
 .include <bsd.port.mk>

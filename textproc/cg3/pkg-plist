@@ -1,5 +1,7 @@
+bin/cg-annotate
 bin/cg-comp
 bin/cg-conv
+bin/cg-merge-annotations
 bin/cg-mwesplit
 bin/cg-proc
 bin/cg-relabel

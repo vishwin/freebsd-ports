@@ -983,7 +983,9 @@
     SUBDIR += py-napari-console
     SUBDIR += py-napari-plugin-engine
     SUBDIR += py-nwdiag
+    SUBDIR += py-olmocr
     SUBDIR += py-opencolorio
+    SUBDIR += py-opencv-python-headless
     SUBDIR += py-openimageio
     SUBDIR += py-openshadinglanguage
     SUBDIR += py-openslide-python

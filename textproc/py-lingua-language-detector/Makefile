@@ -14,7 +14,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}maturin>=1.1:devel/py-maturin@${PY_FLAVOR}
 
 USES=		cargo python
-USE_PYTHON=	pep517 concurrent autoplist
+USE_PYTHON=	pep517 autoplist
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	pemistahl

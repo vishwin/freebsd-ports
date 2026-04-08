@@ -13,9 +13,6 @@ WWW=		https://www.libssh.org/ \
 LICENSE=	LGPL21
 LICENSE_FILE=	${WRKSRC}/COPYING
 
-BROKEN_FreeBSD_15=	src/mlkem_crypto.c:31:10: fatal error: 'openssl/ml_kem.h' file not found
-BROKEN_FreeBSD_16=	src/mlkem_crypto.c:31:10: fatal error: 'openssl/ml_kem.h' file not found
-
 TEST_DEPENDS=	cmocka>=0:sysutils/cmocka
 
 USES=		cmake:testing cpe tar:xz
@@ -71,6 +68,12 @@ GSSAPI_NONE_CMAKE_BOOL_OFF=	WITH_GSSAPI
 OPENSSL_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_OpenSSL
 OPENSSL_USES=		ssl
 STATIC_CMAKE_BOOL=	BUILD_STATIC_LIB
+
+.include <bsd.port.options.mk>
+
+.if ${PORT_OPTIONS:MOPENSSL} && ${SSL_DEFAULT} == base && !exists(/usr/include/openssl/ml_kem.h)
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-mlkem
+.endif
 
 post-install-STATIC-on:
 	${INSTALL_DATA} ${INSTALL_WRKSRC}/src/libssh.a ${STAGEDIR}${PREFIX}/lib/

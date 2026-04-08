@@ -11,7 +11,6 @@ WWW=		https://jasmin.sourceforge.net/
 
 USES=		dos2unix java:ant,run zip
 DOS2UNIX_REGEX=	.*\.(txt|xml|j|class|java|mf|css|bnf|html)
-JAVA_VERSION=	8
 
 ALL_TARGET=	jasmin
 

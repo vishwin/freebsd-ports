@@ -1,7 +1,6 @@
 PORTNAME=	llama-cpp-python
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.16
-PORTREVISION=	1
+DISTVERSION=	0.3.20
 CATEGORIES=	misc # machine-learning
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -35,7 +34,7 @@ USE_PYTHON=	pep517 autoplist pytest
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	abetlen
-GH_TUPLE=	ggerganov:llama.cpp:b6598:cpp/vendor/llama.cpp
+GH_TUPLE=	ggerganov:llama.cpp:f49e917:cpp/vendor/llama.cpp
 
 SHEBANG_GLOB=	*.py
 

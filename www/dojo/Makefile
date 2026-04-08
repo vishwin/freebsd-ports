@@ -1,5 +1,5 @@
 PORTNAME=	dojo
-DISTVERSION=	1.13.10
+DISTVERSION=	1.14.9
 CATEGORIES=	www
 MASTER_SITES=	https://download.dojotoolkit.org/release-${PORTVERSION}/
 DISTNAME=	dojo-release-${PORTVERSION}

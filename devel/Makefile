@@ -4849,6 +4849,7 @@
     SUBDIR += py-deprecated
     SUBDIR += py-deprecation
     SUBDIR += py-deptry
+    SUBDIR += py-depyf
     SUBDIR += py-devtools
     SUBDIR += py-dexml2
     SUBDIR += py-diagnostic
@@ -5381,6 +5382,7 @@
     SUBDIR += py-nbformat
     SUBDIR += py-nbval
     SUBDIR += py-nest-asyncio
+    SUBDIR += py-ninja
     SUBDIR += py-node-semver
     SUBDIR += py-nodeenv
     SUBDIR += py-nose
@@ -5444,6 +5446,7 @@
     SUBDIR += py-opentelemetry-resource-detector-azure
     SUBDIR += py-opentelemetry-sdk
     SUBDIR += py-opentelemetry-semantic-conventions
+    SUBDIR += py-opentelemetry-semantic-conventions-ai
     SUBDIR += py-opentelemetry-util-http
     SUBDIR += py-opentracing
     SUBDIR += py-openupgradelib
@@ -5652,6 +5655,7 @@
     SUBDIR += py-pyaml-env
     SUBDIR += py-pyasn1
     SUBDIR += py-pyasn1-modules
+    SUBDIR += py-pybase64
     SUBDIR += py-pybind11
     SUBDIR += py-pybix
     SUBDIR += py-pybreaker
@@ -6261,6 +6265,7 @@
     SUBDIR += py-user_agents
     SUBDIR += py-userpath
     SUBDIR += py-usort
+    SUBDIR += py-uuid6
     SUBDIR += py-uuid7
     SUBDIR += py-uv
     SUBDIR += py-uv-build

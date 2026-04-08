@@ -19,7 +19,8 @@ binary_PKGNAMESUFFIX=	-bin
 binary_COMMENT=	GitHub Copilot CLI - standalone binary (no npm dependencies)
 binary_PLIST=	${.CURDIR}/pkg-plist.binary
 
-FETCH_DEPENDS=	npm:www/npm \
+FETCH_DEPENDS=	flock:sysutils/flock \
+		npm:www/npm \
 		jq:textproc/jq \
 		${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 
@@ -30,6 +31,8 @@ PACKAGE_NAME=	@github/copilot
 DD=		${DISTDIR}/${DIST_SUBDIR}
 
 FETCH_SCRIPT=	${PORTSDIR}/Tools/scripts/npmjs-fetch-with-dependencies.sh
+
+FETCH_LOCKFILE=	${DD}/fetch.lock
 
 .if ${FLAVOR} == script
 DISTFILES+=	${NODE_HEADERS}${EXTRACT_SUFX}
@@ -99,40 +102,41 @@ PLIST_SUB=	JS_ARCH=${JS_ARCH}
 
 do-fetch:
 	@${MKDIR} ${DD}
-	@if ! [ -f ${DD}/${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} ]; then \
+	@exec 9>${FETCH_LOCKFILE} && flock -x 9 && \
+	if ! [ -f ${DD}/${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX} ]; then \
 		${ECHO} "====> Fetching ${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}" && \
 		${SETENV} TMPDIR=${WRKDIR} LOCALBASE=${LOCALBASE} ${FETCH_SCRIPT} \
 			${PACKAGE_NAME} ${DISTVERSION} \
 			${FILESDIR}/package-lock.json \
 			${DD}/${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}; \
-	fi
-	@if ! [ -f ${DD}/${NODE_HEADERS}${EXTRACT_SUFX} ]; then \
+	fi && \
+	if ! [ -f ${DD}/${NODE_HEADERS}${EXTRACT_SUFX} ]; then \
 		${ECHO} "====> Fetching ${NODE_HEADERS}${EXTRACT_SUFX}" && \
 		${FETCH_CMD} -q https://nodejs.org/download/release/v22.19.0/${NODE_HEADERS}${EXTRACT_SUFX} \
 			-o ${DD}/${NODE_HEADERS}${EXTRACT_SUFX}; \
-	fi
-	@if ! [ -f ${DD}/pty-${dep_pty_version}${EXTRACT_SUFX} ]; then \
+	fi && \
+	if ! [ -f ${DD}/pty-${dep_pty_version}${EXTRACT_SUFX} ]; then \
 		${ECHO} "====> Fetching dependency pty" && \
 		${SETENV} TMPDIR=${WRKDIR} LOCALBASE=${LOCALBASE} ${FETCH_SCRIPT} \
 			${dep_pty_npm_name} ${dep_pty_version} \
 			${FILESDIR}/package-lock-pty.json \
 			${DD}/pty-${dep_pty_version}${EXTRACT_SUFX}; \
-	fi
-	@if ! [ -f ${DD}/sharp-${dep_sharp_version}${EXTRACT_SUFX} ]; then \
+	fi && \
+	if ! [ -f ${DD}/sharp-${dep_sharp_version}${EXTRACT_SUFX} ]; then \
 		${ECHO} "====> Fetching dependency sharp" && \
 		${SETENV} TMPDIR=${WRKDIR} LOCALBASE=${LOCALBASE} ${FETCH_SCRIPT} \
 			${dep_sharp_npm_name} ${dep_sharp_version} \
 			${FILESDIR}/package-lock-sharp.json \
 			${DD}/sharp-${dep_sharp_version}${EXTRACT_SUFX}; \
-	fi
-	@if ! [ -f ${DD}/keytar-${dep_keytar_version}${EXTRACT_SUFX} ]; then \
+	fi && \
+	if ! [ -f ${DD}/keytar-${dep_keytar_version}${EXTRACT_SUFX} ]; then \
 		${ECHO} "====> Fetching dependency keytar" && \
 		${SETENV} TMPDIR=${WRKDIR} LOCALBASE=${LOCALBASE} ${FETCH_SCRIPT} \
 			${dep_keytar_npm_name} ${dep_keytar_version} \
 			${FILESDIR}/package-lock-keytar.json \
 			${DD}/keytar-${dep_keytar_version}${EXTRACT_SUFX}; \
-	fi
-	@if ! [ -f ${DD}/node-addon-api-${dep_node_addon_api_version}${EXTRACT_SUFX} ]; then \
+	fi && \
+	if ! [ -f ${DD}/node-addon-api-${dep_node_addon_api_version}${EXTRACT_SUFX} ]; then \
 		${ECHO} "====> Fetching dependency node-addon-api" && \
 		${SETENV} TMPDIR=${WRKDIR} LOCALBASE=${LOCALBASE} ${FETCH_SCRIPT} \
 			${dep_node_addon_api_npm_name} ${dep_node_addon_api_version} \

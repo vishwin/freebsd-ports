@@ -1,7 +1,7 @@
 PORTNAME=	jacop
 DISTVERSIONPREFIX=	v
 DISTVERSION=	4.8.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	math java
 MASTER_SITES=	LOCAL/yuri/:maven \
 		http://people.freebsd.org/~yuri/:maven

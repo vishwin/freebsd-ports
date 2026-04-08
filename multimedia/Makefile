@@ -121,7 +121,7 @@
     SUBDIR += intel-media-sdk
     SUBDIR += iso2mkv
     SUBDIR += jellyfin
-    SUBDIR += jellyfin-media-player
+    SUBDIR += jellyfin-desktop
     SUBDIR += jmref
     SUBDIR += kaffeine
     SUBDIR += kamoso

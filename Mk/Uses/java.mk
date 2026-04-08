@@ -31,6 +31,10 @@
 #			port. An optional "+" allows you to specify a range of
 #			versions. (allowed values: 8[+] 11[+] 17[+]
 #			21[+] 22[+] 23[+] 24[+] 25[+] 26[+])
+#			JAVA_DEFAULT (Mk/bsd.default-versions.mk) is used if this
+#			variable is omitted or if JAVA_DEFAULT is part of the range.
+#			Otherwise the latest LTS from the range is preferred over
+#			non-LTS versions.
 #
 # JAVA_OS		List of space-separated suitable JDK port operating systems
 #			for the port. (allowed values: native linux)
@@ -238,16 +242,20 @@ _JAVA_OS_native=	Native
 _JAVA_OS_linux=		Linux
 
 # List all JDK ports in order of preference
-__JAVA_PORTS_ALL=	\
-					JAVA_PORT_NATIVE_OPENJDK_JDK_8  \
-					JAVA_PORT_NATIVE_OPENJDK_JDK_11 \
-					JAVA_PORT_NATIVE_OPENJDK_JDK_17 \
-					JAVA_PORT_NATIVE_OPENJDK_JDK_21 \
-					JAVA_PORT_NATIVE_OPENJDK_JDK_22 \
-					JAVA_PORT_NATIVE_OPENJDK_JDK_23 \
-					JAVA_PORT_NATIVE_OPENJDK_JDK_24 \
+__JAVA_PORTS_NATIVE_LTS=	\
 					JAVA_PORT_NATIVE_OPENJDK_JDK_25 \
+					JAVA_PORT_NATIVE_OPENJDK_JDK_21 \
+					JAVA_PORT_NATIVE_OPENJDK_JDK_17 \
+					JAVA_PORT_NATIVE_OPENJDK_JDK_11 \
+					JAVA_PORT_NATIVE_OPENJDK_JDK_8
+__JAVA_PORTS_NATIVE_NON_LTS=	\
 					JAVA_PORT_NATIVE_OPENJDK_JDK_26 \
+					JAVA_PORT_NATIVE_OPENJDK_JDK_24 \
+					JAVA_PORT_NATIVE_OPENJDK_JDK_23 \
+					JAVA_PORT_NATIVE_OPENJDK_JDK_22
+__JAVA_PORTS_ALL=	\
+					${__JAVA_PORTS_NATIVE_LTS} \
+					${__JAVA_PORTS_NATIVE_NON_LTS} \
 					JAVA_PORT_LINUX_ORACLE_JDK_8
 _JAVA_PORTS_ALL=	${JAVA_PREFERRED_PORTS} \
 			JAVA_PORT_NATIVE_OPENJDK_JDK_${JAVA_DEFAULT} \
@@ -258,7 +266,7 @@ _JAVA_PORTS_ALL=	${JAVA_PREFERRED_PORTS} \
 _JDK_FILE=bin/javac
 
 #-------------------------------------------------------------------------------
-# Stage 2: Determine which JDK ports are suitable and which JDK ports are
+# Stage 2: Determine which JDK ports are installed and which JDK ports are
 # suitable
 #
 
