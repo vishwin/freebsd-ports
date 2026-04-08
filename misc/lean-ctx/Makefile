@@ -1,6 +1,6 @@
 PORTNAME=	lean-ctx
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.9.11
+DISTVERSION=	2.20.0
 CATEGORIES=	misc # machine-learning
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -29,6 +29,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		base64-0.22.1 \
 		bit-set-0.5.3 \
 		bit-vec-0.6.3 \
+		bitflags-1.3.2 \
 		bitflags-2.11.0 \
 		block-buffer-0.10.4 \
 		bstr-1.12.1 \
@@ -56,11 +57,14 @@ CARGO_CRATES=	adler2-2.0.1 \
 		dirs-5.0.1 \
 		dirs-sys-0.4.1 \
 		dyn-clone-1.0.20 \
+		either-1.15.0 \
 		equivalent-1.0.2 \
 		errno-0.3.14 \
 		fancy-regex-0.13.0 \
+		fastrand-2.3.0 \
 		filetime-0.2.27 \
 		find-msvc-tools-0.1.9 \
+		flatbuffers-24.12.23 \
 		flate2-1.1.9 \
 		foldhash-0.1.5 \
 		futures-0.3.32 \
@@ -80,6 +84,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		hashbrown-0.15.5 \
 		hashbrown-0.16.1 \
 		heck-0.5.0 \
+		hermit-abi-0.5.2 \
 		hmac-0.12.1 \
 		http-1.4.0 \
 		httparse-1.10.1 \
@@ -110,6 +115,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		nu-ansi-term-0.50.3 \
 		num-conv-0.2.1 \
 		num-traits-0.2.19 \
+		num_cpus-1.17.0 \
 		once_cell-1.21.4 \
 		option-ext-0.2.0 \
 		parking_lot-0.12.5 \
@@ -127,6 +133,8 @@ CARGO_CRATES=	adler2-2.0.1 \
 		quote-1.0.45 \
 		r-efi-5.3.0 \
 		r-efi-6.0.0 \
+		rayon-1.11.0 \
+		rayon-core-1.13.0 \
 		redox_syscall-0.5.18 \
 		redox_syscall-0.7.3 \
 		redox_users-0.4.6 \
@@ -138,7 +146,18 @@ CARGO_CRATES=	adler2-2.0.1 \
 		ring-0.17.14 \
 		rmcp-1.2.0 \
 		rmcp-macros-1.2.0 \
+		rten-0.24.0 \
+		rten-base-0.24.0 \
+		rten-gemm-0.24.0 \
+		rten-model-file-0.24.0 \
+		rten-onnx-0.24.0 \
+		rten-shape-inference-0.24.0 \
+		rten-simd-0.24.0 \
+		rten-tensor-0.24.0 \
+		rten-vecmath-0.24.0 \
 		rustc-hash-1.1.0 \
+		rustc-hash-2.1.2 \
+		rustc_version-0.4.1 \
 		rustix-1.1.4 \
 		rustls-0.23.37 \
 		rustls-pki-types-1.14.0 \
@@ -159,7 +178,6 @@ CARGO_CRATES=	adler2-2.0.1 \
 		sha2-0.10.9 \
 		sharded-slab-0.1.7 \
 		shlex-1.3.0 \
-		signal-hook-registry-1.4.8 \
 		simd-adler32-0.3.8 \
 		similar-2.7.0 \
 		slab-0.4.12 \
@@ -170,6 +188,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		subtle-2.6.1 \
 		syn-2.0.117 \
 		tar-0.4.45 \
+		tempfile-3.27.0 \
 		thiserror-1.0.69 \
 		thiserror-2.0.18 \
 		thiserror-impl-1.0.69 \
@@ -191,9 +210,12 @@ CARGO_CRATES=	adler2-2.0.1 \
 		tracing-log-0.2.0 \
 		tracing-subscriber-0.3.23 \
 		tree-sitter-0.26.7 \
+		tree-sitter-bash-0.25.1 \
 		tree-sitter-c-0.24.1 \
 		tree-sitter-c-sharp-0.23.1 \
 		tree-sitter-cpp-0.23.4 \
+		tree-sitter-dart-0.1.0 \
+		tree-sitter-elixir-0.3.5 \
 		tree-sitter-go-0.25.0 \
 		tree-sitter-java-0.23.5 \
 		tree-sitter-javascript-0.25.0 \
@@ -203,9 +225,12 @@ CARGO_CRATES=	adler2-2.0.1 \
 		tree-sitter-python-0.25.0 \
 		tree-sitter-ruby-0.23.1 \
 		tree-sitter-rust-0.24.1 \
+		tree-sitter-scala-0.25.0 \
 		tree-sitter-swift-0.7.1 \
 		tree-sitter-typescript-0.23.2 \
+		tree-sitter-zig-1.1.2 \
 		typed-path-0.12.3 \
+		typeid-1.0.3 \
 		typenum-1.19.0 \
 		unicode-ident-1.0.24 \
 		unicode-xid-0.2.6 \

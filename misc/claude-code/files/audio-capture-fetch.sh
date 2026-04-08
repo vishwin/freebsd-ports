@@ -9,7 +9,10 @@
 # Usage: $0 <commit> <output-tarball>
 # Example: $0 bb370f75235254da2c3d34f6168fc4a9902d9090 /distfiles/audio-capture-bb370f75.tar.gz
 
-set -eu
+set -euo pipefail
+
+export LC_ALL=C
+umask 002
 
 AUDIO_CAPTURE_COMMIT="$1"
 PACKAGE_TARBALL_OUTPUT="$2"
@@ -67,9 +70,12 @@ rustflags = ["-C", "link-args=-undefined dynamic_lookup"]
 rustflags = ["-C", "link-args=-undefined dynamic_lookup"]
 EOF
 
-# Create a deterministic tarball (normalise timestamps, sort entries)
+# Create a deterministic tarball (normalise timestamps, permissions, sort entries)
 echo "===> Creating tarball"
 cd "${BUILD_DIR}"
+find "${SRC}" -type d -exec chmod 755 {} \;
+find "${SRC}" -type f ! -perm -0100 -exec chmod 644 {} \;
+find "${SRC}" -type f -perm -0100 -exec chmod 755 {} \;
 find "${SRC}" -and -exec touch -h -d 1970-01-01T00:00:00Z {} \;
 find "${SRC}" -print0 | sort -z | \
 	tar czf "${PACKAGE_TARBALL_OUTPUT}" \

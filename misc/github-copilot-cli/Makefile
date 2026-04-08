@@ -1,5 +1,5 @@
 PORTNAME=	github-copilot-cli
-DISTVERSION=	1.0.14
+DISTVERSION=	1.0.21
 PORTEPOCH=	1
 CATEGORIES=	misc # machine-learning
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
@@ -8,9 +8,6 @@ DIST_SUBDIR=	${PORTNAME}
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	GitHub Copilot CLI brings the power of the coding agent to terminal
 WWW=		https://github.com/github/copilot-cli
-
-ONLY_FOR_ARCHS=		aarch64 amd64
-ONLY_FOR_ARCHS_REASON=	binaries are installed in folders with architecture encoded in them, patches are welcome to fix this limitation
 
 FLAVORS=	script binary
 FLAVOR?=	${FLAVORS:[1]}
@@ -82,7 +79,8 @@ USES=		nodejs:build pkgconfig python:build
 
 NODE_HEADERS=	node-v22.19.0-headers
 
-JS_ARCH=	${ARCH:S/amd64/x64/:S/aarch64/arm64/}
+JS_ARCH=	${ARCH:S/amd64/x64/:S/aarch64/arm64/:S/i386/ia32/:S/powerpc64le/ppc64le/:S/powerpc64/ppc64/:C/armv[67]/arm/} # modeled after electron.mk
+PLIST_SUB=	JS_ARCH=${JS_ARCH}
 
 DEP_MODULES=			pty sharp keytar node_addon_api
 dep_pty_npm_name=		@devm33/node-pty
@@ -97,8 +95,6 @@ dep_node_addon_api_version=	8.5.0
 .for dep in ${DEP_MODULES}
 DISTFILES+=	${dep:S/_/-/g}-${dep_${dep}_version}${EXTRACT_SUFX}
 .endfor
-
-PLIST_SUB=	JS_ARCH=${JS_ARCH}
 
 do-fetch:
 	@${MKDIR} ${DD}

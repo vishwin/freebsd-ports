@@ -10,6 +10,10 @@ WWW=		https://github.com/Nano-Collective/nanocoder
 
 LICENSE=	MIT
 
+.for arch in armv6 armv7 i386 mips powerpc powerpcspe
+BROKEN_${arch}=	compilation fails on 32-bit platforms: https://github.com/withcatai/node-llama-cpp/issues/593
+.endfor
+
 FETCH_DEPENDS=	npm:www/npm \
 		jq:textproc/jq \
 		${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss

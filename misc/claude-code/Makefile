@@ -1,6 +1,5 @@
 PORTNAME=	claude-code
-DISTVERSION=	2.1.90
-PORTREVISION=	2
+DISTVERSION=	2.1.96
 CATEGORIES=	misc # machine-learning
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
 
@@ -8,12 +7,17 @@ MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Agentic coding tool from Anthropic that lives in your terminal
 WWW=		https://github.com/anthropics/claude-code
 
-FETCH_DEPENDS=	npm:www/npm \
+FETCH_DEPENDS=	cargo:lang/rust \
+		curl:ftp/curl \
 		jq:textproc/jq \
+		npm:www/npm \
 		${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
 RUN_DEPENDS=	rg:textproc/ripgrep
 
 USES=		nodejs:run
+
+JS_ARCH=	${ARCH:S/amd64/x64/:S/aarch64/arm64/:S/i386/ia32/:S/powerpc64le/ppc64le/:S/powerpc64/ppc64/:C/armv[67]/arm/} # modeled after electron.mk
+PLIST_SUB=	JS_ARCH=${JS_ARCH}
 
 OPTIONS_DEFINE=		AUDIO_CAPTURE
 OPTIONS_DEFAULT=	AUDIO_CAPTURE
@@ -37,10 +41,7 @@ AUDIO_CAPTURE_WRKSRC=	${WRKDIR}/audio-capture-${AUDIO_CAPTURE_COMMIT}
 .include <bsd.port.options.mk>
 
 .if ${PORT_OPTIONS:MAUDIO_CAPTURE}
-ONLY_FOR_ARCHS=		amd64
-ONLY_FOR_ARCHS_REASON=	audio capture module only supports amd64
 DISTFILES+=	audio-capture-${AUDIO_CAPTURE_COMMIT}${EXTRACT_SUFX}:audio_capture_src
-MASTER_SITES+=	https://github.com/kstonekuan/audio-capture/archive/:audio_capture_src
 .else
 NO_BUILD=	yes
 NO_ARCH=	yes
@@ -64,7 +65,7 @@ do-fetch-AUDIO_CAPTURE-on:
 
 # Raise API and MCP transport timeouts to 24 hours for slow (e.g. CPU-based) servers
 post-extract:
-	${REINPLACE_CMD} \
+	${REINPLACE_CMD} -i '' \
 		-e 's/var EP5=60000;/var EP5=86400000;/' \
 		-e 's/API_TIMEOUT_MS||String(600000)/API_TIMEOUT_MS||String(86400000)/' \
 		-e 's/DEFAULT_TIMEOUT=600000;/DEFAULT_TIMEOUT=86400000;/' \
@@ -72,7 +73,7 @@ post-extract:
 
 post-extract-AUDIO_CAPTURE-on:
 	# patch cli.js to load audio-capture on FreeBSD
-	${REINPLACE_CMD} \
+	${REINPLACE_CMD} -i '' \
 		-e 's|q!=="darwin"&&q!=="linux"&&q!=="win32"|q!=="darwin"\&\&q!=="linux"\&\&q!=="win32"\&\&q!=="freebsd"|' \
 		${CLI_JS}
 
@@ -97,6 +98,8 @@ do-install:
 	${INSTALL_LIB} ${AUDIO_CAPTURE_WRKSRC}/target/release/libaudio_capture.so \
 		${STAGEDIR}${PREFIX}/lib/node_modules/${PACKAGE_NAME}/vendor/audio-capture/x64-freebsd/audio-capture.node
 .endif
+	# remove Linux-only seccomp binaries (seccomp is a Linux kernel API, guarded by process.platform==="linux" in cli.js)
+	@${RM} -r ${STAGEDIR}${PREFIX}/lib/node_modules/${PACKAGE_NAME}/vendor/seccomp
 	# remove bundled ripgrep
 	@${RM} -r ${STAGEDIR}${PREFIX}/lib/node_modules/${PACKAGE_NAME}/vendor/ripgrep
 	# remove empty vendor subdirectories (and vendor/ itself when AUDIO_CAPTURE=OFF)

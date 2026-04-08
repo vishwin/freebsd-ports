@@ -1049,6 +1049,7 @@
     SUBDIR += py-amqp
     SUBDIR += py-amqplib
     SUBDIR += py-avahi
+    SUBDIR += py-awsipranges
     SUBDIR += py-blobfile
     SUBDIR += py-bonsai
     SUBDIR += py-casttube
