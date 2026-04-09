@@ -1,3 +1,4 @@
+
 --- src/postscreen/Makefile.in.orig	2026-04-02 20:28:51 UTC
 +++ src/postscreen/Makefile.in
 @@ -3,13 +3,13 @@ SRCS	= postscreen.c postscreen_dict.c postscreen_dnsbl
@@ -22,20 +23,20 @@
 @@ -0,0 +1,19 @@
 +#include "pfilter.h"
 +#include <stdio.h>	/* for NULL */
-+#include <blacklist.h>
++#include <blocklist.h>
 +
-+static struct blacklist *blstate;
++static struct blocklist *blstate;
 +
 +void
 +pfilter_notify(int a, int fd)
 +{
 +	if (blstate == NULL)
-+		blstate = blacklist_open();
++		blstate = blocklist_open();
 +	if (blstate == NULL)
 +		return;
-+	(void)blacklist_r(blstate, a, fd, "postscreen");
++	(void)blocklist_r(blstate, a, fd, "postscreen");
 +	if (a == 0) {
-+		blacklist_close(blstate);
++		blocklist_close(blstate);
 +		blstate = NULL;
 +	}
 +}
@@ -49,7 +50,7 @@
  /* Application-specific. */
  
  #include <postscreen.h>
-+#include "pfilter.h" /* for blacklistd(8) */
++#include "pfilter.h" /* for blocklistd(8) */
  
  static char *psc_teaser_greeting;
  static VSTRING *psc_escape_buf;
@@ -58,13 +59,13 @@
  			 state->dnsbl_score, PSC_CLIENT_ADDR_PORT(state));
  		PSC_FAIL_SESSION_STATE(state, PSC_STATE_FLAG_DNSBL_FAIL);
 +
-+		/* notify blacklistd of DNSBL rank violation */
++		/* notify blocklistd of DNSBL rank violation */
 +		pfilter_notify(1, vstream_fileno(state->smtp_client_stream));
 +
  		switch (psc_dnsbl_action) {
  		case PSC_ACT_DROP:
  		    state->dnsbl_reply = vstring_sprintf(vstring_alloc(100),
---- src/smtpd/Makefile.in.orig	2026-04-09 12:33:10 UTC
+--- src/smtpd/Makefile.in.orig	2026-04-03 19:46:09 UTC
 +++ src/smtpd/Makefile.in
 @@ -2,14 +2,14 @@ SRCS	= smtpd.c smtpd_token.c smtpd_check.c smtpd_chat.
  SRCS	= smtpd.c smtpd_token.c smtpd_check.c smtpd_chat.c smtpd_state.c \
@@ -89,20 +90,20 @@
 @@ -0,0 +1,19 @@
 +#include "pfilter.h"
 +#include <stdio.h>	/* for NULL */
-+#include <blacklist.h>
++#include <blocklist.h>
 +
-+static struct blacklist *blstate;
++static struct blocklist *blstate;
 +
 +void
 +pfilter_notify(int a, int fd)
 +{
 +	if (blstate == NULL)
-+		blstate = blacklist_open();
++		blstate = blocklist_open();
 +	if (blstate == NULL)
 +		return;
-+	(void)blacklist_r(blstate, a, fd, "smtpd");
++	(void)blocklist_r(blstate, a, fd, "smtpd");
 +	if (a == 0) {
-+		blacklist_close(blstate);
++		blocklist_close(blstate);
 +		blstate = NULL;
 +	}
 +}
@@ -144,7 +145,7 @@
  #include "smtpd.h"
  #include "smtpd_sasl_glue.h"
  #include "smtpd_chat.h"
-+#include "pfilter.h" /* for blacklistd(8) */
++#include "pfilter.h" /* for blocklistd(8) */
  
  #ifdef USE_SASL_AUTH
  
@@ -153,7 +154,7 @@
  	    smtpd_chat_reply(state, "535 5.7.8 Error: authentication failed: %s",
  			     reason);
 +
-+	/* notify blacklistd of SASL authentication failure */
++	/* notify blocklistd of SASL authentication failure */
 +	pfilter_notify(1, vstream_fileno(state->client));
  	return (-1);
      }

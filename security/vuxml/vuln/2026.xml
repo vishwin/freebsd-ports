@@ -1,3 +1,153 @@
+  <vuln vid="359d8e42-33fb-11f1-8ac1-b42e991fc52e">
+    <topic>Mozilla -- Memory safety bugs</topic>
+    <affects>
+    <package>
+	<name>firefox</name>
+	<range><lt>149.0.2,2</lt></range>
+    </package>
+    <package>
+	<name>thunderbird</name>
+	<range><lt>149.0.2</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://bugzilla.mozilla.org/buglist.cgi?bug_id=2025475%2C2025477 reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/buglist.cgi?bug_id=2025475%2C2025477">
+	<p>
+	  Memory safety bugs present in Firefox 149.0.1 and
+	  Thunderbird 149.0.1. Some of these bugs showed evidence
+	  of memory corruption and we presume that with enough
+	  effort some of these could have been exploited to run
+	  arbitrary code.
+	</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-5735</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-5735</url>
+    </references>
+    <dates>
+      <discovery>2026-04-07</discovery>
+      <entry>2026-04-09</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="33e56419-33fb-11f1-8ac1-b42e991fc52e">
+    <topic>Mozilla -- Memory safety bugs</topic>
+    <affects>
+    <package>
+	<name>firefox</name>
+	<range><lt>149.0.2,2</lt></range>
+    </package>
+    <package>
+	<name>firefox-esr</name>
+	<range><lt>140.9.1</lt></range>
+    </package>
+    <package>
+	<name>thunderbird</name>
+	<range><lt>140.9.1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://bugzilla.mozilla.org/buglist.cgi?bug_id=2022369%2C2023026%2C2023545%2C2023555%2C2023958%2C2025422%2C2025468%2C2025492%2C2025505 reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/buglist.cgi?bug_id=2022369%2C2023026%2C2023545%2C2023555%2C2023958%2C2025422%2C2025468%2C2025492%2C2025505">
+	<p>
+	  Memory safety bugs present in Firefox ESR 140.9.0,
+	  Thunderbird ESR 140.9.0, Firefox 149.0.1 and Thunderbird
+	  149.0.1. Some of these bugs showed evidence of memory
+	  corruption and we presume that with enough effort some of
+	  these could have been exploited to run arbitrary code.
+	  </p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-5734</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-5734</url>
+    </references>
+    <dates>
+      <discovery>2026-04-07</discovery>
+      <entry>2026-04-09</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="322bd409-33fb-11f1-8ac1-b42e991fc52e">
+    <topic>Mozilla -- Incorrect boundary conditions</topic>
+    <affects>
+    <package>
+	<name>firefox</name>
+	<range><lt>149.0.2,2</lt></range>
+    </package>
+    <package>
+	<name>thunderbird</name>
+	<range><lt>149.0.2</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://bugzilla.mozilla.org/show_bug.cgi?id=2022554 reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/show_bug.cgi?id=2022554">
+	<p>
+	  Incorrect boundary conditions in the Graphics: WebGPU
+	  component.
+	</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-5733</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-5733</url>
+    </references>
+    <dates>
+      <discovery>2026-04-07</discovery>
+      <entry>2026-04-09</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="30522580-33fb-11f1-8ac1-b42e991fc52e">
+    <topic>Mozilla -- Incorrect boundary conditions, integer overflow</topic>
+    <affects>
+    <package>
+	<name>firefox</name>
+	<range><lt>149.0.2,2</lt></range>
+    </package>
+    <package>
+	<name>firefox-esr</name>
+	<range><lt>140.9.1</lt></range>
+    </package>
+    <package>
+	<name>thunderbird</name>
+	<range><lt>149.0.2</lt></range>
+    </package>
+    <package>
+	<name>thunderbird</name>
+	<range><lt>140.9.1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://bugzilla.mozilla.org/show_bug.cgi?id=2017867 reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/show_bug.cgi?id=2017867">
+	<p>
+	  Incorrect boundary conditions, integer overflow in the
+	  Graphics: Text component.
+	</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-5732</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-5732</url>
+    </references>
+    <dates>
+      <discovery>2026-04-07</discovery>
+      <entry>2026-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="099d4998-33cc-11f1-a7d1-2cf05da270f3">
     <topic>Gitlab -- vulnerabilities</topic>
     <affects>

@@ -1,4 +1,4 @@
-TIMESTAMP = 1775200103
+TIMESTAMP = 1775734245
 SHA256 (rust/crates/addr2line-0.24.2.crate) = dfbe277e56a376000877090da837660b4427aad530e3028d44e0bffe4f89a1c1
 SIZE (rust/crates/addr2line-0.24.2.crate) = 39015
 SHA256 (rust/crates/adler2-2.0.1.crate) = 320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa
@@ -979,5 +979,5 @@ SHA256 (rust/crates/zune-inflate-0.2.54.crate) = 73ab332fe2f6680068f3582b16a24f9
 SIZE (rust/crates/zune-inflate-0.2.54.crate) = 37973
 SHA256 (rust/crates/zune-jpeg-0.4.21.crate) = 29ce2c8a9384ad323cf564b67da86e21d3cfdff87908bc1223ed5c99bc792713
 SIZE (rust/crates/zune-jpeg-0.4.21.crate) = 68268
-SHA256 (benjajaja-mdfried-v0.18.3_GH0.tar.gz) = c19f3e678b758b565c3931a1d6ab4860694cdc9c9bba36ecb580c16a35ab2a87
-SIZE (benjajaja-mdfried-v0.18.3_GH0.tar.gz) = 13618767
+SHA256 (benjajaja-mdfried-v0.19.0_GH0.tar.gz) = e828d5ec5202b83c1d70c390b21efa164beb3920caf15684dda5534f19673e4b
+SIZE (benjajaja-mdfried-v0.19.0_GH0.tar.gz) = 13621615

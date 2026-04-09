@@ -1,7 +1,6 @@
-work/java3d-1.5.2/j3d-core-utils/src/classes/share/com/sun/j3d/utils/scenegraph/io/state/javax/media/j3d
---- j3d-core-utils/src/classes/share/com/sun/j3d/utils/scenegraph/io/state/javax/media/j3d/ImageComponentState.java.orig
+--- j3d-core-utils/src/classes/share/com/sun/j3d/utils/scenegraph/io/state/javax/media/j3d/ImageComponentState.java.orig	2007-02-09 17:20:35 UTC
 +++ j3d-core-utils/src/classes/share/com/sun/j3d/utils/scenegraph/io/state/javax/media/j3d/ImageComponentState.java
-@@ -61,10 +61,7 @@ import com.sun.j3d.utils.scenegraph.io.r
+@@ -61,10 +61,7 @@ import java.awt.image.DataBuffer;
  import com.sun.j3d.utils.scenegraph.io.retained.SGIORuntimeException;
  import java.awt.color.ColorSpace;
  import java.awt.image.DataBuffer;
@@ -13,7 +12,7 @@ work/java3d-1.5.2/j3d-core-utils/src/classes/share/com/sun/j3d/utils/scenegraph/
  
  public abstract class ImageComponentState extends NodeComponentState {
  
-@@ -203,10 +200,9 @@ public abstract class ImageComponentStat
+@@ -203,10 +200,9 @@ public abstract class ImageComponentState extends Node
      
      private void writeBufferedImageJpegCompression( DataOutput out, BufferedImage image ) throws IOException {
          ByteArrayOutputStream byteStream = new ByteArrayOutputStream();
@@ -27,7 +26,7 @@ work/java3d-1.5.2/j3d-core-utils/src/classes/share/com/sun/j3d/utils/scenegraph/
          
          byte[] buffer = byteStream.toByteArray();
          out.writeInt( buffer.length );
-@@ -261,11 +257,15 @@ public abstract class ImageComponentStat
+@@ -261,11 +257,15 @@ public abstract class ImageComponentState extends Node
          byte[] buffer = new byte[ size ];
          in.readFully( buffer );
          ByteArrayInputStream byteStream = new ByteArrayInputStream( buffer );
