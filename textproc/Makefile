@@ -1234,6 +1234,7 @@
     SUBDIR += pa-aspell
     SUBDIR += pageedit
     SUBDIR += par
+    SUBDIR += pdf-form-filler-mcp
     SUBDIR += pdf-reader-mcp
     SUBDIR += pdfgrep
     SUBDIR += pdfoutline

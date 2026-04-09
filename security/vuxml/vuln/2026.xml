@@ -1,3 +1,54 @@
+  <vuln vid="099d4998-33cc-11f1-a7d1-2cf05da270f3">
+    <topic>Gitlab -- vulnerabilities</topic>
+    <affects>
+<package>
+<name>gitlab-ce</name>
+<name>gitlab-ee</name>
+<range><ge>18.10.0</ge><lt>18.10.3</lt></range>
+<range><ge>18.9.0</ge><lt>18.9.5</lt></range>
+<range><ge>11.3.0</ge><lt>18.8.9</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Gitlab reports:</p>
+	<blockquote cite="https://about.gitlab.com/releases/2026/04/08/patch-release-gitlab-18-10-3-released/">
+	  <p>Exposed Method issue in websocket connections impacts GitLab CE/EE</p>
+	  <p>Denial of Service issue in Terraform state lock API impacts GitLab CE/EE</p>
+	  <p>Denial of Service issue in GraphQL API impacts GitLab CE/EE</p>
+	  <p>Denial of Service issue in CSV import impacts GitLab CE/EE</p>
+	  <p>Denial of Service issue in GraphQL SBOM API impacts GitLab EE</p>
+	  <p>Code Injection issue in Code Quality reports impacts GitLab EE</p>
+	  <p>Cross-site Scripting issue in analytics dashboards impacts GitLab EE</p>
+	  <p>Incorrect Authorization issue in vulnerability flags AI detection API impacts GitLab EE</p>
+	  <p>Information Disclosure issue in certain GraphQl query impacts GitLab EE</p>
+	  <p>Improper Access Control issue in Environments API impacts GitLab EE</p>
+	  <p>Information Disclosure issue in CSV export impacts GitLab CE/EE</p>
+	  <p>Missing Authorization issue in custom role permissions impacts GitLab CE/EE</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-5173</cvename>
+      <cvename>CVE-2026-1092</cvename>
+      <cvename>CVE-2025-12664</cvename>
+      <cvename>CVE-2026-1403</cvename>
+      <cvename>CVE-2026-1101</cvename>
+      <cvename>CVE-2026-1516</cvename>
+      <cvename>CVE-2026-4332</cvename>
+      <cvename>CVE-2026-2619</cvename>
+      <cvename>CVE-2025-9484</cvename>
+      <cvename>CVE-2026-1752</cvename>
+      <cvename>CVE-2026-2104</cvename>
+      <cvename>CVE-2026-4916</cvename>
+      <url>https://about.gitlab.com/releases/2026/04/08/patch-release-gitlab-18-10-3-released/</url>
+    </references>
+    <dates>
+      <discovery>2026-04-08</discovery>
+      <entry>2026-04-09</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="c7a52cee-32ab-11f1-9839-8447094a420f">
     <topic>OpenSSL -- Multiple vulnerabilities</topic>
     <affects>
@@ -25,7 +76,7 @@
     <description>
 	<body xmlns="http://www.w3.org/1999/xhtml">
 	<p>The OpenSSL project reports:</p>
-	<blockquote cite="https://openssl-library.org/news/vulnerabilities/">
+	<blockquote cite="https://openssl-library.org/news/secadv/20260407.txt">
 	  <p>Seven vulnerabilities in OpenSSL library. Highest classification Moderate.</p>
 	</blockquote>
 	</body>
@@ -39,7 +90,7 @@
       <cvename>CVE-2026-28389</cvename>
       <cvename>CVE-2026-28390</cvename>
       <cvename>CVE-2026-31789</cvename>
-      <url>https://openssl-library.org/news/vulnerabilities/</url>
+      <url>https://openssl-library.org/news/secadv/20260407.txt</url>
     </references>
     <dates>
       <discovery>2026-04-07</discovery>
