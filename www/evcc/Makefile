@@ -12,6 +12,8 @@ WWW=		https://evcc.io/ \
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN_i386=	Platform i386 is not supported
+
 BUILD_DEPENDS=	npm>0:www/npm
 
 USES=		gmake go:1.26+,modules,no_targets nodejs:lts,build tar:zstd

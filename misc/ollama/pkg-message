@@ -47,7 +47,7 @@ Working examples:
   1. run 'OLLAMA_CONTEXT_LENGTH=65536 ollama serve'
      or
      setup and start the service 'ollama'
-  2. install claude-code and run:
+  2. run:
      ollama run x/z-image-turbo {textual description of the desired image}
 
 There are also a lot of text-to-text models that you can chat with.
