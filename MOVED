@@ -5233,3 +5233,4 @@ net-mgmt/argus3|net-mgmt/argus|2026-04-06|Update to latest version and remove ve
 net-mgmt/argus3-clients|net-mgmt/argus-clients|2026-04-06|Update to latest version and remove version suffix
 textproc/py-asciinema|textproc/asciinema|2026-04-06|No longer based on python, use textproc/asciinema instead
 multimedia/jellyfin-media-player|multimedia/jellyfin-desktop|2026-04-08|Project has been renamed
+databases/movine||2026-04-11|Remove: abandoned upstream

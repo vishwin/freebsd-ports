@@ -1,6 +1,6 @@
---- bin/solr.orig	2024-08-06 17:02:34 UTC
+--- bin/solr.orig	2026-01-02 20:59:41 UTC
 +++ bin/solr
-@@ -2027,13 +2027,20 @@ function start_solr() {
+@@ -1352,13 +1352,20 @@ function start_solr() {
      fi
  
      # no lsof on cygwin though
@@ -10,24 +10,24 @@
 +    elif which -s sockstat; then
 +      check_command="sockstat -q46lp$SOLR_PORT"
 +    fi
-+    
++
 +    if [[ "${check_command}" != "" ]]; then
-       echo -n "Waiting up to $SOLR_START_WAIT seconds to see Solr running on port $SOLR_PORT"
+       echo -n "Waiting up to $SOLR_START_WAIT seconds to see Solr running on port $SOLR_PORT_LISTEN"
        # Launch in a subshell to show the spinner
        (loops=0
        while true
        do
--        running=$(lsof -t -PniTCP:$SOLR_PORT -sTCP:LISTEN || :)
+-        running=$(lsof -t -PniTCP:$SOLR_PORT_LISTEN -sTCP:LISTEN || :)
 +        running=$(${check_command} || :)
          if [ -z "${running:-}" ]; then
            slept=$((loops * 2))
            if [ $slept -lt $SOLR_START_WAIT ]; then
-@@ -2052,7 +2059,7 @@ function start_solr() {
+@@ -1377,7 +1384,7 @@ function start_solr() {
        done) &
        spinner $!
      else
--      echo -e "NOTE: Please install lsof as this script needs it to determine if Solr is listening on port $SOLR_PORT."
-+      echo -e "NOTE: Please install lsof or sockstat as this script needs it to determine if Solr is listening on port $SOLR_PORT."
+-      echo -e "NOTE: Please install lsof as this script needs it to determine if Solr is listening on port $SOLR_PORT_LISTEN."
++      echo -e "NOTE: Please install lsof or sockstat as this script needs it to determine if Solr is listening on port $SOLR_PORT_LISTEN."
        sleep 10
-       SOLR_PID=$(ps auxww | grep start\.jar | awk "/\-Djetty\.port=$SOLR_PORT/"' {print $2}' | sort -r)
-       echo -e "\nStarted Solr server on port $SOLR_PORT (pid=$SOLR_PID). Happy searching!\n"
+       SOLR_PID=$(ps auxww | grep start\.jar | awk "/\-Dsolr\.port\.listen=$SOLR_PORT_LISTEN/"' {print $2}' | sort -r)
+       echo -e "\nStarted Solr server on port $SOLR_PORT_LISTEN (pid=$SOLR_PID). Happy searching!\n"

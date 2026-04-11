@@ -44,8 +44,8 @@ EBUR128_DEFAULT?=	rust
 .  else
 EBUR128_DEFAULT?=	legacy
 .  endif
-# Possible_values: full canna nox devel_full devel_nox
-#EMACS_DEFAULT?=	let the flavor be the default if not explicitly set
+# Possible values: full canna nox wayland devel_full devel_nox (default: nox)
+#EMACS_DEFAULT?=	nox
 # Possible values: 3.0, 4.0
 FIREBIRD_DEFAULT?=	3.0
 # Possible values: gfortran

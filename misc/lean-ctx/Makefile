@@ -1,6 +1,6 @@
 PORTNAME=	lean-ctx
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.20.0
+DISTVERSION=	3.0.0
 CATEGORIES=	misc # machine-learning
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -36,7 +36,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		bumpalo-3.20.2 \
 		bytes-1.11.1 \
 		bzip2-0.6.1 \
-		cc-1.2.57 \
+		cc-1.2.59 \
 		cfg-if-1.0.4 \
 		chrono-0.4.44 \
 		cipher-0.4.4 \
@@ -61,7 +61,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		equivalent-1.0.2 \
 		errno-0.3.14 \
 		fancy-regex-0.13.0 \
-		fastrand-2.3.0 \
+		fastrand-2.4.1 \
 		filetime-0.2.27 \
 		find-msvc-tools-0.1.9 \
 		flatbuffers-24.12.23 \
@@ -80,6 +80,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		getrandom-0.2.17 \
 		getrandom-0.3.4 \
 		getrandom-0.4.2 \
+		glob-0.3.3 \
 		globset-0.4.18 \
 		hashbrown-0.15.5 \
 		hashbrown-0.16.1 \
@@ -93,16 +94,16 @@ CARGO_CRATES=	adler2-2.0.1 \
 		id-arena-2.3.0 \
 		ident_case-1.0.1 \
 		ignore-0.4.25 \
-		indexmap-2.13.0 \
+		indexmap-2.13.1 \
 		inout-0.1.4 \
 		itoa-1.0.18 \
 		jobserver-0.1.34 \
-		js-sys-0.3.91 \
+		js-sys-0.3.94 \
 		lazy_static-1.5.0 \
 		leb128fmt-0.1.0 \
 		libbz2-rs-sys-0.2.2 \
-		libc-0.2.183 \
-		libredox-0.1.14 \
+		libc-0.2.184 \
+		libredox-0.1.15 \
 		linux-raw-sys-0.12.1 \
 		lock_api-0.4.14 \
 		log-0.4.29 \
@@ -111,7 +112,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		md-5-0.10.6 \
 		memchr-2.8.0 \
 		miniz_oxide-0.8.9 \
-		mio-1.1.1 \
+		mio-1.2.0 \
 		nu-ansi-term-0.50.3 \
 		num-conv-0.2.1 \
 		num-traits-0.2.19 \
@@ -144,8 +145,8 @@ CARGO_CRATES=	adler2-2.0.1 \
 		regex-automata-0.4.14 \
 		regex-syntax-0.8.10 \
 		ring-0.17.14 \
-		rmcp-1.2.0 \
-		rmcp-macros-1.2.0 \
+		rmcp-1.3.0 \
+		rmcp-macros-1.3.0 \
 		rten-0.24.0 \
 		rten-base-0.24.0 \
 		rten-gemm-0.24.0 \
@@ -167,7 +168,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		schemars-1.2.1 \
 		schemars_derive-1.2.1 \
 		scopeguard-1.2.0 \
-		semver-1.0.27 \
+		semver-1.0.28 \
 		serde-1.0.228 \
 		serde_core-1.0.228 \
 		serde_derive-1.0.228 \
@@ -178,7 +179,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		sha2-0.10.9 \
 		sharded-slab-0.1.7 \
 		shlex-1.3.0 \
-		simd-adler32-0.3.8 \
+		simd-adler32-0.3.9 \
 		similar-2.7.0 \
 		slab-0.4.12 \
 		smallvec-1.15.1 \
@@ -197,8 +198,8 @@ CARGO_CRATES=	adler2-2.0.1 \
 		tiktoken-rs-0.6.0 \
 		time-0.3.47 \
 		time-core-0.1.8 \
-		tokio-1.50.0 \
-		tokio-macros-2.6.1 \
+		tokio-1.51.1 \
+		tokio-macros-2.7.0 \
 		tokio-util-0.7.18 \
 		toml-0.8.23 \
 		toml_datetime-0.6.11 \
@@ -209,7 +210,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		tracing-core-0.1.36 \
 		tracing-log-0.2.0 \
 		tracing-subscriber-0.3.23 \
-		tree-sitter-0.26.7 \
+		tree-sitter-0.26.8 \
 		tree-sitter-bash-0.25.1 \
 		tree-sitter-c-0.24.1 \
 		tree-sitter-c-sharp-0.23.1 \
@@ -224,7 +225,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		tree-sitter-php-0.24.2 \
 		tree-sitter-python-0.25.0 \
 		tree-sitter-ruby-0.23.1 \
-		tree-sitter-rust-0.24.1 \
+		tree-sitter-rust-0.24.2 \
 		tree-sitter-scala-0.25.0 \
 		tree-sitter-swift-0.7.1 \
 		tree-sitter-typescript-0.23.2 \
@@ -244,10 +245,10 @@ CARGO_CRATES=	adler2-2.0.1 \
 		wasi-0.11.1+wasi-snapshot-preview1 \
 		wasip2-1.0.2+wasi-0.2.9 \
 		wasip3-0.4.0+wasi-0.3.0-rc-2026-01-06 \
-		wasm-bindgen-0.2.114 \
-		wasm-bindgen-macro-0.2.114 \
-		wasm-bindgen-macro-support-0.2.114 \
-		wasm-bindgen-shared-0.2.114 \
+		wasm-bindgen-0.2.117 \
+		wasm-bindgen-macro-0.2.117 \
+		wasm-bindgen-macro-support-0.2.117 \
+		wasm-bindgen-shared-0.2.117 \
 		wasm-encoder-0.244.0 \
 		wasm-metadata-0.244.0 \
 		wasmparser-0.244.0 \
@@ -288,7 +289,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		wit-parser-0.244.0 \
 		xattr-1.6.1 \
 		zeroize-1.8.2 \
-		zip-8.4.0 \
+		zip-8.5.1 \
 		zlib-rs-0.6.3 \
 		zmij-1.0.21 \
 		zopfli-0.8.3 \

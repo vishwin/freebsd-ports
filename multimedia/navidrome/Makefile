@@ -1,6 +1,7 @@
 PORTNAME=	navidrome
 DISTVERSIONPREFIX=	v
 DISTVERSION=	0.61.1
+PORTREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	LOCAL/dtxdf/${PORTNAME}/:assets
 # For instructions on how to create assets:
@@ -18,7 +19,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 ONLY_FOR_ARCHS=	aarch64 amd64
 
 LIB_DEPENDS=	libtag.so:audio/taglib
-RUN_DEPENDS=	ffmpeg:multimedia/ffmpeg
 
 USES=		cpe go:1.25+,modules pkgconfig
 

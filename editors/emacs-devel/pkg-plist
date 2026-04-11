@@ -4311,7 +4311,6 @@ share/applications/emacsclient.desktop
 %%DATADIR%%/%%EMACS_VER%%/lisp/xwidget.elc
 %%DATADIR%%/%%EMACS_VER%%/lisp/yank-media.el.gz
 %%DATADIR%%/%%EMACS_VER%%/lisp/yank-media.elc
-%%SOURCES%%%%DATADIR%%/%%EMACS_VER%%/site-lisp/site-start.el
 %%DATADIR%%/%%EMACS_VER%%/site-lisp/subdirs.el
 %%SOURCES%%%%DATADIR%%/%%EMACS_VER%%/src/alloc.c
 %%SOURCES%%%%DATADIR%%/%%EMACS_VER%%/src/android-asset.h
@@ -4569,6 +4568,8 @@ share/applications/emacsclient.desktop
 %%SOURCES%%%%DATADIR%%/%%EMACS_VER%%/src/xwidget.h
 %%DATADIR%%/info/elisp_type_hierarchy.jpg
 %%DATADIR%%/info/elisp_type_hierarchy.txt
+%%DATADIR%%/site-lisp/default.el
+%%DATADIR%%/site-lisp/site-start.el
 %%DATADIR%%/site-lisp/subdirs.el
 share/icons/hicolor/128x128/apps/emacs.png
 share/icons/hicolor/16x16/apps/emacs.png

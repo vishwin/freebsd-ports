@@ -1,7 +1,6 @@
 PORTNAME=	mise
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2026.4.6
-PORTREVISION=	0
+DISTVERSION=	2026.4.8
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -696,7 +695,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		rmcp-macros-0.3.2 \
 		rmp-0.8.15 \
 		rmp-serde-1.3.1 \
-		roff-0.2.2 \
+		roff-1.1.1 \
 		rops-0.1.7 \
 		rowan-0.15.18 \
 		rsa-0.9.10 \
@@ -903,7 +902,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		untrusted-0.9.0 \
 		url-2.5.8 \
 		urlencoding-2.1.3 \
-		usage-lib-2.18.2 \
+		usage-lib-3.2.0 \
 		utf8-decode-1.0.1 \
 		utf8_iter-1.0.4 \
 		utf8parse-0.2.2 \

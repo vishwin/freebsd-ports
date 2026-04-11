@@ -1,3 +1,278 @@
+  <vuln vid="766bb9b5-357f-11f1-98f0-00a098b42aeb">
+    <topic>(lib)tiff -- Integer Overflow or Wraparound</topic>
+    <affects>
+    <package>
+	<name>tiff</name>
+	<range><lt>4.7.1_1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>PrymEvol and Quang Luong reports:</p>
+	<blockquote cite="https://www.cve.org/CVERecord?id=CVE-2026-4775">
+	  <p>A flaw was found in the libtiff library.  A remote attacker could
+	     exploit a signed integer overflow vulnerability in the
+	     putcontig8bitYCbCr44tile function by providing a specially crafted
+	     TIFF file.  This flaw can lead to an out-of-bounds heap write due
+	     to incorrect memory pointer calculations, potentially causing a
+	     denial of service (application crash) or arbitrary code execution.
+	  </p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-4775</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-4775</url>
+    </references>
+    <dates>
+      <discovery>2026-03-24</discovery>
+      <entry>2026-04-11</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="431c2753-3503-11f1-bc6d-3c7c3fba4204">
+    <topic>DNSdist -- vulnerabilities</topic>
+    <affects>
+    <package>
+	<name>dnsdist</name>
+	<range><lt>2.0.3</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://www.dnsdist.org/security-advisories/powerdns-advisory-for-dnsdist-2026-02.html reports:</p>
+	<blockquote cite="https://www.dnsdist.org/security-advisories/powerdns-advisory-for-dnsdist-2026-02.html">
+	  <ul>
+	    <li>CVE-2026-0396: HTML injection in the web dashboard</li>
+	    <li>CVE-2026-0397: Information disclosure via CORS misconfiguration</li>
+	    <li>CVE-2026-24028: Out-of-bounds read when parsing DNS packets via Lua</li>
+	    <li>CVE-2026-24029: DNS over HTTPS ACL bypass</li>
+	    <li>CVE-2026-24030: Unbounded memory allocation for DoQ and DoH3</li>
+	    <li>CVE-2026-27853: Out-of-bounds write when rewriting large DNS packets</li>
+	    <li>CVE-2026-27854: Use after free when parsing EDNS options in Lua</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-0396</cvename>
+      <cvename>CVE-2026-0397</cvename>
+      <cvename>CVE-2026-24028</cvename>
+      <cvename>CVE-2026-24029</cvename>
+      <cvename>CVE-2026-24030</cvename>
+      <cvename>CVE-2026-27853</cvename>
+      <cvename>CVE-2026-27854</cvename>
+      <url>https://www.dnsdist.org/security-advisories/powerdns-advisory-for-dnsdist-2026-02.html</url>
+    </references>
+    <dates>
+      <discovery>2026-03-31</discovery>
+      <entry>2026-04-10</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="d77bd2f5-34f0-11f1-bc6d-3c7c3fba4204">
+    <topic>Mbed TLS -- vulnerabilities</topic>
+    <affects>
+    <package>
+	<name>mbedtls3</name>
+	<range><lt>3.6.6</lt></range>
+    </package>
+    <package>
+	<name>mbedtls4</name>
+	<range><lt>4.1.0</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://mbed-tls.readthedocs.io/en/latest/security-advisories/ reports:</p>
+	<blockquote cite="https://mbed-tls.readthedocs.io/en/latest/security-advisories/">
+	  <ul>
+	    <li>Client impersonation while resuming a TLS 1.3 session (CVE-2026-34873)</li>
+	    <li>Entropy on Linux can fall back to /dev/urandom (CVE-2026-34871)</li>
+	    <li>PSA random generator cloning (CVE-2026-25835)</li>
+	    <li>Compiler-induced constant-time violations (CVE-2025-66442)</li>
+	    <li>Null pointer dereference when setting a distinguished name (CVE-2026-34874)</li>
+	    <li>Buffer overflow in FFDH public key export (CVE-2026-34875)</li>
+	    <li>FFDH: lack of contributory behaviour due to improper input validation (CVE-2026-34872)</li>
+	    <li>Signature Algorithm Injection (CVE-2026-25834)</li>
+	    <li>CCM multipart finish tag-length validation bypass (CVE-2026-34876)</li>
+	    <li>Risk of insufficient protection of serialized session or context data leading to potential memory safety issues (CVE-2026-34877)</li>
+	    <li>Buffer underflow in x509_inet_pton_ipv6() (CVE-2026-25833)</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-34873</cvename>
+      <cvename>CVE-2026-34871</cvename>
+      <cvename>CVE-2026-25835</cvename>
+      <cvename>CVE-2025-66442</cvename>
+      <cvename>CVE-2026-34874</cvename>
+      <cvename>CVE-2026-34875</cvename>
+      <cvename>CVE-2026-34872</cvename>
+      <cvename>CVE-2026-25834</cvename>
+      <cvename>CVE-2026-34876</cvename>
+      <cvename>CVE-2026-34877</cvename>
+      <cvename>CVE-2026-25833</cvename>
+      <url>https://mbed-tls.readthedocs.io/en/latest/security-advisories/</url>
+    </references>
+    <dates>
+      <discovery>2026-03-31</discovery>
+      <entry>2026-04-10</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="4b727a1a-5034-42b4-b29b-2289389f4ba8">
+    <topic>chromium -- security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>147.0.7727.55</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>147.0.7727.55</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2026/04/stable-channel-update-for-desktop.html">
+	 <p>This update includes multiple security fixes:</p>
+	 <ul>
+	    <li>Critical CVE-2026-5858: Heap buffer overflow in WebML.</li>
+	    <li>Critical CVE-2026-5859: Integer overflow in WebML.</li>
+	    <li>High CVE-2026-5860: Use after free in WebRTC.</li>
+	    <li>High CVE-2026-5861: Use after free in V8.</li>
+	    <li>High CVE-2026-5862: Inappropriate implementation in V8.</li>
+	    <li>High CVE-2026-5863: Inappropriate implementation in V8.</li>
+	    <li>High CVE-2026-5864: Heap buffer overflow in WebAudio.</li>
+	    <li>High CVE-2026-5865: Type Confusion in V8.</li>
+	    <li>High CVE-2026-5866: Use after free in Media.</li>
+	    <li>High CVE-2026-5867: Heap buffer overflow in WebML.</li>
+	    <li>High CVE-2026-5868: Heap buffer overflow in ANGLE.</li>
+	    <li>High CVE-2026-5869: Heap buffer overflow in WebML.</li>
+	    <li>High CVE-2026-5870: Integer overflow in Skia.</li>
+	    <li>High CVE-2026-5871: Type Confusion in V8.</li>
+	    <li>High CVE-2026-5872: Use after free in Blink.</li>
+	    <li>High CVE-2026-5873: Out of bounds read and write in V8.</li>
+	    <li>Medium CVE-2026-5874: Use after free in PrivateAI.</li>
+	    <li>Medium CVE-2026-5875: Policy bypass in Blink.</li>
+	    <li>Medium CVE-2026-5876: Side-channel information leakage in Navigation.</li>
+	    <li>Medium CVE-2026-5877: Use after free in Navigation.</li>
+	    <li>Medium CVE-2026-5878: Incorrect security UI in Blink.</li>
+	    <li>Medium CVE-2026-5879: Insufficient validation of untrusted input in ANGLE.</li>
+	    <li>Medium CVE-2026-5880: Incorrect security UI in browser UI.</li>
+	    <li>Medium CVE-2026-5881: Policy bypass in LocalNetworkAccess.</li>
+	    <li>Medium CVE-2026-5882: Incorrect security UI in Fullscreen.</li>
+	    <li>Medium CVE-2026-5883: Use after free in Media.</li>
+	    <li>Medium CVE-2026-5884: Insufficient validation of untrusted input in Media.</li>
+	    <li>Medium CVE-2026-5885: Insufficient validation of untrusted input in WebML.</li>
+	    <li>Medium CVE-2026-5886: Out of bounds read in WebAudio.</li>
+	    <li>Medium CVE-2026-5887: Insufficient validation of untrusted input in Downloads.</li>
+	    <li>Medium CVE-2026-5888: Uninitialized Use in WebCodecs.</li>
+	    <li>Medium CVE-2026-5889: Cryptographic Flaw in PDFium.</li>
+	    <li>Medium CVE-2026-5890: Race in WebCodecs.</li>
+	    <li>Medium CVE-2026-5891: Insufficient policy enforcement in browser UI.</li>
+	    <li>Medium CVE-2026-5892: Insufficient policy enforcement in PWAs.</li>
+	    <li>Medium CVE-2026-5893: Race in V8.</li>
+	    <li>Low CVE-2026-5894: Inappropriate implementation in PDF.</li>
+	    <li>Low CVE-2026-5895: Incorrect security UI in Omnibox.</li>
+	    <li>Low CVE-2026-5896: Policy bypass in Audio.</li>
+	    <li>Low CVE-2026-5897: Incorrect security UI in Downloads.</li>
+	    <li>Low CVE-2026-5898: Incorrect security UI in Omnibox.</li>
+	    <li>Low CVE-2026-5899: Incorrect security UI in History Navigation.</li>
+	    <li>Low CVE-2026-5900: Policy bypass in Downloads.</li>
+	    <li>Low CVE-2026-5901: Policy bypass in DevTools.</li>
+	    <li>Low CVE-2026-5902: Race in Media.</li>
+	    <li>Low CVE-2026-5903: Policy bypass in IFrameSandbox.</li>
+	    <li>Low CVE-2026-5904: Use after free in V8.</li>
+	    <li>Low CVE-2026-5905: Incorrect security UI in Permissions.</li>
+	    <li>Low CVE-2026-5906: Incorrect security UI in Omnibox.</li>
+	    <li>Low CVE-2026-5907: Insufficient data validation in Media.</li>
+	    <li>Low CVE-2026-5908: Integer overflow in Media.</li>
+	    <li>Low CVE-2026-5909: Integer overflow in Media.</li>
+	    <li>Low CVE-2026-5910: Integer overflow in Media.</li>
+	    <li>Low CVE-2026-5911: Policy bypass in ServiceWorkers.</li>
+	    <li>Low CVE-2026-5912: Integer overflow in WebRTC.</li>
+	    <li>Low CVE-2026-5913: Out of bounds read in Blink.</li>
+	    <li>Low CVE-2026-5914: Type Confusion in CSS.</li>
+	    <li>Low CVE-2026-5915: Insufficient validation of untrusted input in WebML.</li>
+	    <li>Low CVE-2026-5918: Inappropriate implementation in Navigation.</li>
+	    <li>Low CVE-2026-5919: Insufficient validation of untrusted input in WebSockets.</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-5858</cvename>
+      <cvename>CVE-2026-5859</cvename>
+      <cvename>CVE-2026-5860</cvename>
+      <cvename>CVE-2026-5861</cvename>
+      <cvename>CVE-2026-5862</cvename>
+      <cvename>CVE-2026-5863</cvename>
+      <cvename>CVE-2026-5864</cvename>
+      <cvename>CVE-2026-5865</cvename>
+      <cvename>CVE-2026-5866</cvename>
+      <cvename>CVE-2026-5867</cvename>
+      <cvename>CVE-2026-5868</cvename>
+      <cvename>CVE-2026-5869</cvename>
+      <cvename>CVE-2026-5870</cvename>
+      <cvename>CVE-2026-5871</cvename>
+      <cvename>CVE-2026-5872</cvename>
+      <cvename>CVE-2026-5873</cvename>
+      <cvename>CVE-2026-5874</cvename>
+      <cvename>CVE-2026-5875</cvename>
+      <cvename>CVE-2026-5876</cvename>
+      <cvename>CVE-2026-5877</cvename>
+      <cvename>CVE-2026-5878</cvename>
+      <cvename>CVE-2026-5879</cvename>
+      <cvename>CVE-2026-5880</cvename>
+      <cvename>CVE-2026-5881</cvename>
+      <cvename>CVE-2026-5882</cvename>
+      <cvename>CVE-2026-5883</cvename>
+      <cvename>CVE-2026-5884</cvename>
+      <cvename>CVE-2026-5885</cvename>
+      <cvename>CVE-2026-5886</cvename>
+      <cvename>CVE-2026-5887</cvename>
+      <cvename>CVE-2026-5888</cvename>
+      <cvename>CVE-2026-5889</cvename>
+      <cvename>CVE-2026-5890</cvename>
+      <cvename>CVE-2026-5891</cvename>
+      <cvename>CVE-2026-5892</cvename>
+      <cvename>CVE-2026-5893</cvename>
+      <cvename>CVE-2026-5894</cvename>
+      <cvename>CVE-2026-5895</cvename>
+      <cvename>CVE-2026-5896</cvename>
+      <cvename>CVE-2026-5897</cvename>
+      <cvename>CVE-2026-5898</cvename>
+      <cvename>CVE-2026-5899</cvename>
+      <cvename>CVE-2026-5900</cvename>
+      <cvename>CVE-2026-5901</cvename>
+      <cvename>CVE-2026-5902</cvename>
+      <cvename>CVE-2026-5903</cvename>
+      <cvename>CVE-2026-5904</cvename>
+      <cvename>CVE-2026-5905</cvename>
+      <cvename>CVE-2026-5906</cvename>
+      <cvename>CVE-2026-5907</cvename>
+      <cvename>CVE-2026-5908</cvename>
+      <cvename>CVE-2026-5909</cvename>
+      <cvename>CVE-2026-5910</cvename>
+      <cvename>CVE-2026-5911</cvename>
+      <cvename>CVE-2026-5912</cvename>
+      <cvename>CVE-2026-5913</cvename>
+      <cvename>CVE-2026-5914</cvename>
+      <cvename>CVE-2026-5915</cvename>
+      <cvename>CVE-2026-5918</cvename>
+      <cvename>CVE-2026-5919</cvename>
+      <url>https://chromereleases.googleblog.com/2026/04/stable-channel-update-for-desktop.html</url>
+    </references>
+    <dates>
+      <discovery>2026-04-07</discovery>
+      <entry>2026-04-10</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="359d8e42-33fb-11f1-8ac1-b42e991fc52e">
     <topic>Mozilla -- Memory safety bugs</topic>
     <affects>

@@ -5,6 +5,36 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20260411:
+  AFFECTS: AFFECTS: users of elisp (*-emacs_*) packages
+  AUTHOR: jrm@FreeBSD.org
+
+  Packages for different flavors of elisp ports have been removed.  For
+  example, the old and new packages for devel/tablist are:
+  |-------------------------+---------|
+  | Before                  | After   |
+  |-------------------------+---------|
+  | tablist                 | tablist |
+  | tablist-emacs_canna     |         |
+  | tablist-emacs_devel_nox |         |
+  | tablist-emacs_devel     |         |
+  | tablist-emacs_nox       |         |
+  | tablist-emacs_wayland   |         |
+  |-------------------------+---------|
+
+  If you have any -emacs_* packages installed, simply running `pkg upgrade`
+  will not upgrade and replace them with the new package.  Run these commands
+  under /bin/sh with superuser privileges before upgrading.
+
+  for i in $(pkg query -g %n *-emacs_*); do
+    if [ "$i" != "notmuch-emacs_*" ]; then
+      nn=$(echo "$i" | sed -e 's/-emacs_[a-z_]*//')
+    else
+      nn=$(echo "$i" | sed -e 's/-emacs_[a-z_]*/-emacs/')
+    fi
+    pkg set -yn "$i":"$nn"
+  done
+
 20260401:
   AFFECTS: users of security/openvpn
   AUTHOR: mandree@FreeBSD.org

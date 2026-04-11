@@ -1119,6 +1119,7 @@
     SUBDIR += xnethack
     SUBDIR += xoids
     SUBDIR += xoj
+    SUBDIR += xonix
     SUBDIR += xonotic
     SUBDIR += xorgramana
     SUBDIR += xosmulti
