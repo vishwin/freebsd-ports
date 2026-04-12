@@ -62,7 +62,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		cairo-sys-rs-0.22.0 \
 		cast-0.3.0 \
 		cbc-0.2.0-rc.1 \
-		cc-1.2.59 \
+		cc-1.2.60 \
 		cesu8-1.1.0 \
 		cfg-expr-0.20.7 \
 		cfg-if-1.0.4 \
@@ -189,7 +189,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		gettext-rs-0.7.7 \
 		gettext-sys-0.26.0 \
 		ghash-0.6.0-rc.2 \
-		gif-0.14.1 \
+		gif-0.14.2 \
 		gio-0.22.4 \
 		gio-sys-0.22.0 \
 		glib-0.22.4 \
@@ -210,7 +210,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		half-2.7.1 \
 		hash32-0.2.1 \
 		hashbrown-0.15.5 \
-		hashbrown-0.16.1 \
+		hashbrown-0.17.0 \
 		heapless-0.7.17 \
 		heck-0.5.0 \
 		hex-0.4.3 \
@@ -244,7 +244,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		image-0.25.10 \
 		image-webp-0.2.4 \
 		imagesize-0.14.0 \
-		indexmap-2.13.1 \
+		indexmap-2.14.0 \
 		inotify-0.11.1 \
 		inotify-sys-0.1.5 \
 		inout-0.1.4 \
@@ -283,11 +283,11 @@ CARGO_CRATES=	adler2-2.0.1 \
 		jni-sys-macros-0.4.1 \
 		jobserver-0.1.34 \
 		jpeg-decoder-0.3.2 \
-		js-sys-0.3.94 \
+		js-sys-0.3.95 \
 		keccak-0.2.0-rc.0 \
 		kqueue-1.1.1 \
 		kqueue-sys-1.0.4 \
-		ksni-0.3.3 \
+		ksni-0.3.4 \
 		kurbo-0.13.0 \
 		lazy_static-1.5.0 \
 		leb128fmt-0.1.0 \
@@ -297,7 +297,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		libc-0.2.184 \
 		libloading-0.8.9 \
 		libm-0.2.16 \
-		libredox-0.1.15 \
+		libredox-0.1.16 \
 		libz-sys-1.1.28 \
 		linux-raw-sys-0.12.1 \
 		litemap-0.8.2 \
@@ -430,7 +430,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		rayon-core-1.13.0 \
 		rc2-0.9.0-pre.0 \
 		redox_syscall-0.5.18 \
-		redox_syscall-0.7.3 \
+		redox_syscall-0.7.4 \
 		redox_users-0.5.2 \
 		regex-1.12.3 \
 		regex-automata-0.4.14 \
@@ -454,7 +454,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		rustls-0.23.37 \
 		rustls-native-certs-0.8.3 \
 		rustls-pki-types-1.14.0 \
-		rustls-webpki-0.103.10 \
+		rustls-webpki-0.103.11 \
 		rustversion-1.0.22 \
 		rusty-fork-0.3.1 \
 		rustybuzz-0.20.1 \
@@ -591,16 +591,16 @@ CARGO_CRATES=	adler2-2.0.1 \
 		wasi-0.11.1+wasi-snapshot-preview1 \
 		wasip2-1.0.2+wasi-0.2.9 \
 		wasip3-0.4.0+wasi-0.3.0-rc-2026-01-06 \
-		wasm-bindgen-0.2.117 \
-		wasm-bindgen-futures-0.4.67 \
-		wasm-bindgen-macro-0.2.117 \
-		wasm-bindgen-macro-support-0.2.117 \
-		wasm-bindgen-shared-0.2.117 \
+		wasm-bindgen-0.2.118 \
+		wasm-bindgen-futures-0.4.68 \
+		wasm-bindgen-macro-0.2.118 \
+		wasm-bindgen-macro-support-0.2.118 \
+		wasm-bindgen-shared-0.2.118 \
 		wasm-encoder-0.244.0 \
 		wasm-metadata-0.244.0 \
 		wasm-streams-0.4.2 \
 		wasmparser-0.244.0 \
-		web-sys-0.3.94 \
+		web-sys-0.3.95 \
 		weezl-0.1.12 \
 		widestring-1.2.1 \
 		winapi-0.3.9 \

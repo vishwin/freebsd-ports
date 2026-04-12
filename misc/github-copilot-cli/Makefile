@@ -44,6 +44,7 @@ RUN_DEPENDS=	libsecret>0:security/libsecret \
 USES=		nodejs:run pkgconfig python:build
 
 .elif ${FLAVOR} == binary
+BROKEN=		See if the binary flavor somehow causes fetch failures
 DISTFILES+=	${NODE_HEADERS}${EXTRACT_SUFX}
 
 BUILD_DEPENDS=	npm:www/npm \

@@ -1,6 +1,6 @@
 PORTNAME=	lean-ctx
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.0.0
+DISTVERSION=	3.0.1
 CATEGORIES=	misc # machine-learning
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -21,6 +21,7 @@ WRKSRC_SUBDIR=	rust
 CARGO_CRATES=	adler2-2.0.1 \
 		aes-0.8.4 \
 		aho-corasick-1.1.4 \
+		allocator-api2-0.2.21 \
 		android_system_properties-0.1.5 \
 		anyhow-1.0.102 \
 		async-trait-0.1.89 \
@@ -36,10 +37,13 @@ CARGO_CRATES=	adler2-2.0.1 \
 		bumpalo-3.20.2 \
 		bytes-1.11.1 \
 		bzip2-0.6.1 \
+		cassowary-0.3.0 \
+		castaway-0.2.4 \
 		cc-1.2.59 \
 		cfg-if-1.0.4 \
 		chrono-0.4.44 \
 		cipher-0.4.4 \
+		compact_str-0.8.1 \
 		constant_time_eq-0.4.2 \
 		core-foundation-sys-0.8.7 \
 		cpufeatures-0.2.17 \
@@ -47,6 +51,8 @@ CARGO_CRATES=	adler2-2.0.1 \
 		crossbeam-deque-0.8.6 \
 		crossbeam-epoch-0.9.18 \
 		crossbeam-utils-0.8.21 \
+		crossterm-0.28.1 \
+		crossterm_winapi-0.9.1 \
 		crypto-common-0.1.7 \
 		darling-0.23.0 \
 		darling_core-0.23.0 \
@@ -95,7 +101,10 @@ CARGO_CRATES=	adler2-2.0.1 \
 		ident_case-1.0.1 \
 		ignore-0.4.25 \
 		indexmap-2.13.1 \
+		indoc-2.0.7 \
 		inout-0.1.4 \
+		instability-0.3.12 \
+		itertools-0.13.0 \
 		itoa-1.0.18 \
 		jobserver-0.1.34 \
 		js-sys-0.3.94 \
@@ -104,9 +113,11 @@ CARGO_CRATES=	adler2-2.0.1 \
 		libbz2-rs-sys-0.2.2 \
 		libc-0.2.184 \
 		libredox-0.1.15 \
+		linux-raw-sys-0.4.15 \
 		linux-raw-sys-0.12.1 \
 		lock_api-0.4.14 \
 		log-0.4.29 \
+		lru-0.12.5 \
 		lzma-rust2-0.16.2 \
 		matchers-0.2.0 \
 		md-5-0.10.6 \
@@ -121,6 +132,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		option-ext-0.2.0 \
 		parking_lot-0.12.5 \
 		parking_lot_core-0.9.12 \
+		paste-1.0.15 \
 		pastey-0.2.1 \
 		pbkdf2-0.12.2 \
 		percent-encoding-2.3.2 \
@@ -134,6 +146,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		quote-1.0.45 \
 		r-efi-5.3.0 \
 		r-efi-6.0.0 \
+		ratatui-0.29.0 \
 		rayon-1.11.0 \
 		rayon-core-1.13.0 \
 		redox_syscall-0.5.18 \
@@ -159,11 +172,13 @@ CARGO_CRATES=	adler2-2.0.1 \
 		rustc-hash-1.1.0 \
 		rustc-hash-2.1.2 \
 		rustc_version-0.4.1 \
+		rustix-0.38.44 \
 		rustix-1.1.4 \
 		rustls-0.23.37 \
 		rustls-pki-types-1.14.0 \
 		rustls-webpki-0.103.10 \
 		rustversion-1.0.22 \
+		ryu-1.0.23 \
 		same-file-1.0.6 \
 		schemars-1.2.1 \
 		schemars_derive-1.2.1 \
@@ -179,13 +194,19 @@ CARGO_CRATES=	adler2-2.0.1 \
 		sha2-0.10.9 \
 		sharded-slab-0.1.7 \
 		shlex-1.3.0 \
+		signal-hook-0.3.18 \
+		signal-hook-mio-0.2.5 \
+		signal-hook-registry-1.4.8 \
 		simd-adler32-0.3.9 \
 		similar-2.7.0 \
 		slab-0.4.12 \
 		smallvec-1.15.1 \
 		socket2-0.6.3 \
+		static_assertions-1.1.0 \
 		streaming-iterator-0.1.9 \
 		strsim-0.11.1 \
+		strum-0.26.3 \
+		strum_macros-0.26.4 \
 		subtle-2.6.1 \
 		syn-2.0.117 \
 		tar-0.4.45 \
@@ -234,6 +255,10 @@ CARGO_CRATES=	adler2-2.0.1 \
 		typeid-1.0.3 \
 		typenum-1.19.0 \
 		unicode-ident-1.0.24 \
+		unicode-segmentation-1.13.2 \
+		unicode-truncate-1.1.0 \
+		unicode-width-0.1.14 \
+		unicode-width-0.2.0 \
 		unicode-xid-0.2.6 \
 		untrusted-0.9.0 \
 		ureq-3.3.0 \
@@ -253,7 +278,10 @@ CARGO_CRATES=	adler2-2.0.1 \
 		wasm-metadata-0.244.0 \
 		wasmparser-0.244.0 \
 		webpki-roots-1.0.6 \
+		winapi-0.3.9 \
+		winapi-i686-pc-windows-gnu-0.4.0 \
 		winapi-util-0.1.11 \
+		winapi-x86_64-pc-windows-gnu-0.4.0 \
 		windows-core-0.62.2 \
 		windows-implement-0.60.2 \
 		windows-interface-0.59.3 \
@@ -297,7 +325,8 @@ CARGO_CRATES=	adler2-2.0.1 \
 		zstd-safe-7.2.4 \
 		zstd-sys-2.0.16+zstd.1.5.7
 
-PLIST_FILES=	bin/${PORTNAME}
+PLIST_FILES=	bin/${PORTNAME} \
+		bin/seed_observatory
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/${PORTNAME}

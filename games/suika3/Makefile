@@ -1,5 +1,5 @@
 PORTNAME=	suika3
-DISTVERSION=	26.04.4
+DISTVERSION=	26.04.5
 CATEGORIES=	games
 
 MAINTAINER=	awe@noctvm.io
@@ -47,10 +47,10 @@ OPTIONS_DEFINE=	DOCS EXAMPLES
 # Create a symlink to NotoSans to satisfy the engine's expected file name
 # without modifying upstream sample data.
 post-install:
-	${RM} -r ${STAGEDIR}${PREFIX}/share/examples/suika3/game/font
-	${RM} -r ${STAGEDIR}${PREFIX}/share/examples/suika3/game/bgm2
-	${MKDIR} ${STAGEDIR}${PREFIX}/share/examples/suika3/game/font
+	${RM} -r ${STAGEDIR}${PREFIX}/share/examples/suika3/game/system/font \
+		${STAGEDIR}${PREFIX}/share/examples/suika3/game/bgm2
+	${MKDIR} ${STAGEDIR}${PREFIX}/share/examples/suika3/game/system/font
 	${LN} -s ${LOCALBASE}/share/fonts/noto/NotoSans-Regular.ttf \
-		${STAGEDIR}${PREFIX}/share/examples/suika3/game/font/rounded-l-mplus-1c-bold.ttf
+		${STAGEDIR}${PREFIX}/share/examples/suika3/game/system/font/rounded-l-mplus-1c-bold.ttf
 
 .include <bsd.port.mk>

@@ -288,6 +288,7 @@
     SUBDIR += mate-user-guide
     SUBDIR += mbuffer
     SUBDIR += mc
+    SUBDIR += mcp-inspector
     SUBDIR += mcp-probe
     SUBDIR += mdp
     SUBDIR += meshoptimizer

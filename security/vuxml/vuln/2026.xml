@@ -1,3 +1,39 @@
+  <vuln vid="8d549898-3598-11f1-a8bc-3c7c3fba4204">
+    <topic>py-ormar -- vulnerabilities</topic>
+    <affects>
+    <package>
+	<name>py310-ormar</name>
+	<name>py311-ormar</name>
+	<name>py312-ormar</name>
+	<name>py313-ormar</name>
+	<name>py313t-ormar</name>
+	<name>py314-ormar</name>
+	<range><lt>0.23.1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://github.com/ormar-orm/ormar/security/advisories reports:</p>
+	<blockquote cite="https://github.com/collerek/ormar/security/advisories">
+	  <ul>
+	    <li>SQL Injection in aggregate functions min() and max()</li>
+	    <li>Pydantic Validation Bypass via __pk_only__ and __excluded__ Kwargs Injection in Model Constructor</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-26198</cvename>
+      <url>https://github.com/ormar-orm/ormar/security/advisories/GHSA-xxh2-68g9-8jqr</url>
+      <cvename>CVE-2026-27953</cvename>
+      <url>https://github.com/ormar-orm/ormar/security/advisories/GHSA-f964-whrq-44h8</url>
+    </references>
+    <dates>
+      <discovery>2026-02-22</discovery>
+      <entry>2026-04-11</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="766bb9b5-357f-11f1-98f0-00a098b42aeb">
     <topic>(lib)tiff -- Integer Overflow or Wraparound</topic>
     <affects>

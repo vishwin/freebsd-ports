@@ -10,6 +10,8 @@ WWW=		https://github.com/yamafaktory/jql
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE-MIT
 
+BROKEN_i386=	fails to link: ld: error: undefined symbol: __atomic_load
+
 USES=		cargo
 
 USE_GITHUB=	yes
