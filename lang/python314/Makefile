@@ -1,6 +1,5 @@
 PORTNAME=	python
-DISTVERSION=	${PYTHON_DISTVERSION}
-PORTREVISION=	1
+DISTVERSION=	${PYTHON_DISTVERSION}  # see Makefile.version
 CATEGORIES=	lang python
 MASTER_SITES=	PYTHON/ftp/python/${DISTVERSION:C/[a-z].*//}
 PKGNAMESUFFIX=	${PYTHON_SUFFIX}
@@ -55,15 +54,18 @@ PLIST_SUB=		ABI=${ABIFLAGS} \
 			XYZDOT=${DISTVERSION:C/[a-z].*//} \
 			OSMAJOR=${OSVERSION:C/([0-9]*)[0-9]{5}/\1/}		# For plat-freebsd* in pkg-plist. https://bugs.python.org/issue19554
 
-OPTIONS_DEFINE=		DEBUG IPV6 LIBMPDEC LTO NLS PYMALLOC
+OPTIONS_DEFINE=		DEBUG IPV6 LIBMPDEC NLS PYMALLOC
 OPTIONS_DEFAULT=	LIBMPDEC LTO PYMALLOC
-OPTIONS_EXCLUDE_powerpc64=	LTO
-OPTIONS_EXCLUDE_riscv64=	LTO
-OPTIONS_RADIO=		HASH
+OPTIONS_EXCLUDE_powerpc64=	LTO LTOFULL
+OPTIONS_EXCLUDE_riscv64=	LTO LTOFULL
+OPTIONS_RADIO=		HASH LTO
 OPTIONS_RADIO_HASH=	FNV SIPHASH
+OPTIONS_RADIO_LTO=	LTO LTOFULL
 OPTIONS_SUB=		yes
 
 LIBMPDEC_DESC=		Use libmpdec from ports instead of bundled version
+LTO_DESC=		Use Link-Time Optimization with -flto=thin
+LTOFULL_DESC=		Use -flto=full (not =thin) (faster build at more CPU time)
 NLS_DESC=		Enable gettext support for the locale module
 PYMALLOC_DESC=		Enable specialized mallocs
 
@@ -81,6 +83,7 @@ LIBMPDEC_CONFIGURE_ON=	--with-system-libmpdec
 LIBMPDEC_LIB_DEPENDS=	libmpdec.so:math/mpdecimal
 
 LTO_CONFIGURE_ON=	--with-lto
+LTOFULL_CONFIGURE_ON=	--with-lto=full
 
 # Use CPPFLAGS over CFLAGS due to -I ordering, causing elementtree and pyexpat
 # to break in Python 2.7, or preprocessor complaints in Python >= 3.3
@@ -180,6 +183,9 @@ sigstore-verify: ${_sigstorebundle} checksum
 
 pre-test:
 	@${ECHO_CMD} "=== NOTE: the py314-* gdbm, sqlite3, tkinter modules must be rebuilt before the test ==="
+.if ${PORT_OPTIONS:MDEBUG}
+	@${ECHO_CMD} "=== NOTE: The test_ssl test is known to fail with DEBUG option enabled ==="
+.endif
 	sleep 5
 
 post-clean:

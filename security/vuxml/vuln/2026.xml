@@ -1,3 +1,83 @@
+  <vuln vid="57f31f61-36a1-11f1-9839-8447094a420f">
+    <topic>Vaultwarden -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>vaultwarden</name>
+	<range><lt>1.35.5</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Vaultwarden project reports:</p>
+	<blockquote cite="https://github.com/dani-garcia/vaultwarden/releases/tag/1.35.5">
+	  <p>GHSA-937x-3j8m-7w7p Unconfirmed Owner Can Purge Entire Organization Vault.</p>
+	  <p>GHSA-569v-845w-g82p Cross-Org Group Binding Enables Unauthorized Read And Write Access Into Another Organization</p>
+	  <p>GHSA-6j4w-g4jh-xjfx Refresh tokens not invalidated on security stamp rotation</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/dani-garcia/vaultwarden/releases/tag/1.35.5</url>
+    </references>
+    <dates>
+      <discovery>2026-04-12</discovery>
+      <entry>2026-04-12</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="30bda1c3-369b-11f1-b51c-6dd25bec137b">
+    <topic>Python -- HTTP proxy CONNECT tunnel does not sanitize CR/LF</topic>
+    <affects>
+      <package><name>python310</name><range><ge>0</ge></range></package>
+      <package><name>python311</name><range><ge>0</ge></range></package>
+      <package><name>python312</name><range><ge>0</ge></range></package>
+      <package><name>python313</name><range><ge>0</ge></range></package>
+      <package><name>python314</name><range><lt>3.14.4</lt></range></package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Seth Larson reports:</p>
+	<blockquote cite="https://github.com/python/cpython/issues/146211">
+	  <p>HTTP proxy via "CONNECT" tunneling doesn't sanitize CR/LF (CVE-2026-1502).</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-1502</cvename>
+      <url>https://github.com/python/cpython/issues/146211</url>
+    </references>
+    <dates>
+      <discovery>2026-03-20</discovery>
+      <entry>2026-04-12</entry>
+    </dates>
+   </vuln>
+
+  <vuln vid="5ec4dcf6-3588-11f1-b51c-6dd25bec137b">
+    <topic>Python -- configparser vulnerable to excessive CPU use</topic>
+    <affects>
+      <package><name>python310</name><range><ge>0</ge></range></package>
+      <package><name>python311</name><range><ge>0</ge></range></package>
+      <package><name>python312</name><range><ge>0</ge></range></package>
+      <package><name>python313</name><range><ge>0</ge></range></package>
+      <package><name>python314</name><range><lt>3.14.4</lt></range></package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Stan Ulbrych reports:</p>
+	<blockquote cite="https://github.com/python/cpython/issues/146333">
+	  <p>configparser.RawConfigParser.{OPTCRE,OPTCRE_NV} regexes [are] vulnerable to quadratic backtracking.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/python/cpython/issues/146333</url>
+    </references>
+    <dates>
+      <discovery>2026-03-23</discovery>
+      <entry>2026-04-12</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="8d549898-3598-11f1-a8bc-3c7c3fba4204">
     <topic>py-ormar -- vulnerabilities</topic>
     <affects>
@@ -687,7 +767,7 @@
     <package><name>python312</name> <range><lt>3.12.13_2</lt></range></package>
     <package><name>python313</name> <range><lt>3.13.12_3</lt></range></package>
     <package><name>python313t</name> <range><lt>3.13.12_3</lt></range></package>
-    <package><name>python314</name> <range><ge>0</ge></range></package>
+    <package><name>python314</name> <range><lt>3.14.4</lt></range></package>
     </affects>
     <description>
 	<body xmlns="http://www.w3.org/1999/xhtml">

@@ -1,10 +1,10 @@
 PORTNAME=	libwebsockets
 DISTVERSIONPREFIX=	v
-DISTVERSION=	4.3.5
+DISTVERSION=	4.3.6
 CATEGORIES=	net devel
 #MASTER_SITES=	https://libwebsockets.org/git/libwebsockets/snapshot/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	C library for lightweight websocket clients and servers
 WWW=		https://libwebsockets.org/
 
