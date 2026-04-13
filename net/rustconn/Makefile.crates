@@ -74,7 +74,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		cipher-0.5.0-rc.1 \
 		clap-4.6.0 \
 		clap_builder-4.6.0 \
-		clap_complete-4.6.0 \
+		clap_complete-4.6.1 \
 		clap_derive-4.6.0 \
 		clap_lex-1.1.0 \
 		clap_mangen-0.2.33 \
@@ -190,9 +190,9 @@ CARGO_CRATES=	adler2-2.0.1 \
 		gettext-sys-0.26.0 \
 		ghash-0.6.0-rc.2 \
 		gif-0.14.2 \
-		gio-0.22.4 \
+		gio-0.22.5 \
 		gio-sys-0.22.0 \
-		glib-0.22.4 \
+		glib-0.22.5 \
 		glib-macros-0.22.2 \
 		glib-sys-0.22.3 \
 		glob-0.3.3 \
@@ -226,7 +226,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		httparse-1.10.1 \
 		hybrid-array-0.4.10 \
 		hyper-1.9.0 \
-		hyper-rustls-0.27.7 \
+		hyper-rustls-0.27.8 \
 		hyper-tls-0.6.0 \
 		hyper-util-0.1.20 \
 		iana-time-zone-0.1.65 \
@@ -294,7 +294,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		libadwaita-0.9.1 \
 		libadwaita-sys-0.9.1 \
 		libbz2-rs-sys-0.2.2 \
-		libc-0.2.184 \
+		libc-0.2.185 \
 		libloading-0.8.9 \
 		libm-0.2.16 \
 		libredox-0.1.16 \
@@ -354,10 +354,10 @@ CARGO_CRATES=	adler2-2.0.1 \
 		once_cell_polyfill-1.70.2 \
 		oorandom-11.1.5 \
 		open-5.3.3 \
-		openssl-0.10.76 \
+		openssl-0.10.77 \
 		openssl-macros-0.1.1 \
 		openssl-probe-0.2.1 \
-		openssl-sys-0.9.112 \
+		openssl-sys-0.9.113 \
 		option-ext-0.2.0 \
 		ordered-stream-0.2.0 \
 		owo-colors-4.3.0 \
@@ -391,7 +391,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		pkcs1-0.8.0-rc.4 \
 		pkcs8-0.10.2 \
 		pkcs8-0.11.0-rc.7 \
-		pkg-config-0.3.32 \
+		pkg-config-0.3.33 \
 		plain-0.2.3 \
 		plotters-0.3.7 \
 		plotters-backend-0.3.7 \
@@ -420,7 +420,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		r-efi-6.0.0 \
 		radium-0.7.0 \
 		rand-0.8.5 \
-		rand-0.9.2 \
+		rand-0.9.3 \
 		rand_chacha-0.3.1 \
 		rand_chacha-0.9.0 \
 		rand_core-0.6.4 \
@@ -447,11 +447,11 @@ CARGO_CRATES=	adler2-2.0.1 \
 		rpassword-7.4.0 \
 		rsa-0.9.10 \
 		rsa-0.10.0-rc.9 \
-		rtoolbox-0.0.3 \
+		rtoolbox-0.0.4 \
 		rustc_version-0.4.1 \
 		rusticata-macros-4.1.0 \
 		rustix-1.1.4 \
-		rustls-0.23.37 \
+		rustls-0.23.38 \
 		rustls-native-certs-0.8.3 \
 		rustls-pki-types-1.14.0 \
 		rustls-webpki-0.103.11 \
