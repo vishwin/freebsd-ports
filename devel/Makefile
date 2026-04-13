@@ -980,6 +980,9 @@
     SUBDIR += gzstream
     SUBDIR += hapy
     SUBDIR += hare
+    SUBDIR += hare-adwaita
+    SUBDIR += hare-gi
+    SUBDIR += hare-gtk4-layer-shell
     SUBDIR += hcs12mem
     SUBDIR += heaptrack
     SUBDIR += heimdall
