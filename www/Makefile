@@ -245,7 +245,6 @@
     SUBDIR += gobuffalo
     SUBDIR += gohugo
     SUBDIR += googlebook_dl
-    SUBDIR += googler
     SUBDIR += gophernicus
     SUBDIR += gopherus
     SUBDIR += gotty
