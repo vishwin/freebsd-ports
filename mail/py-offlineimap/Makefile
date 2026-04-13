@@ -1,7 +1,7 @@
-PORTNAME=	offlineimap3
-DISTVERSIONPREFIX=	v
-DISTVERSION=	8.0.1
+PORTNAME=	offlineimap
+DISTVERSION=	8.0.2
 CATEGORIES=	mail python
+MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	dereks@lifeofadishwasher.com
@@ -18,20 +18,13 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}distro>=0:sysutils/py-distro@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}imaplib2>=3.5:mail/py-imaplib2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}keyring>0:security/py-keyring@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}rfc6555>=0:mail/py-rfc6555@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}urllib3>=1.25.9:net/py-urllib3@${PY_FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}urllib3>=1.25.9:net/py-urllib3@${PY_FLAVOR}
 
 USES=		python
 
-# Project is currently not publishing to pypi sdist.  pypi/naming status:
-# https://github.com/OfflineIMAP/offlineimap3/issues/111
-USE_GITHUB=	yes
-GH_ACCOUNT=	OfflineIMAP
-
-USE_PYTHON=	autoplist concurrent distutils pytest
+USE_PYTHON=	autoplist concurrent pep517 pytest
 TEST_ARGS=	"-k not TestBasicFunctions or test_01_MappedImap"
-
-CONFLICTS_INSTALL=	mail/py-offlineimap
 
 NO_ARCH=	yes
 
@@ -41,7 +34,7 @@ PORTEXAMPLES=	offlineimap.conf
 OPTIONS_DEFINE=		DOCS EXAMPLES GSSAPI KEYRING MANPAGES
 OPTIONS_DEFAULT=	KEYRING MANPAGES
 
-KEYRING_DESC=		GNOME keyring support
+KEYRING_DESC=	GNOME keyring support
 
 COMMON_BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}rfc6555>=0:mail/py-rfc6555@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR} \

@@ -5235,3 +5235,4 @@ textproc/py-asciinema|textproc/asciinema|2026-04-06|No longer based on python, u
 multimedia/jellyfin-media-player|multimedia/jellyfin-desktop|2026-04-08|Project has been renamed
 databases/movine||2026-04-11|Remove: abandoned upstream
 java/openjdk22||2026-04-12|Has expired: No longer supported by upstream
+mail/py-offlineimap3|mail/py-offlineimap|2026-04-16|Project is now in PyPi as offlineimap
