@@ -1,3 +1,97 @@
+  <vuln vid="7a7a17b2-381c-11f1-a663-10ffe07f9334">
+    <topic>PHP Composer -- Multiple vulnerabilities</topic>
+    <affects>
+<package>
+<name>php82-composer</name><range><lt>2.9.6</lt></range>
+<name>php83-composer</name><range><lt>2.9.6</lt></range>
+<name>php84-composer</name><range><lt>2.9.6</lt></range>
+<name>php85-composer</name><range><lt>2.9.6</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Composer project reports:</p>
+	<blockquote cite="https://github.com/composer/composer/releases/tag/2.9.6">
+	  <p>Fixed command injection via malicious Perforce reference (GHSA-gqw4-4w2p-838q / CVE-2026-40261)</p>
+    <p>Fixed command injection via malicious Perforce repository definition (GHSA-wg36-wvj6-r67p / CVE-2026-40176)</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-40261</cvename>
+      <cvename>CVE-2026-40176</cvename>
+      <url>https://github.com/composer/composer/releases/tag/2.9.6</url>
+    </references>
+    <dates>
+      <discovery>2026-04-14</discovery>
+      <entry>2026-04-14</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="099423d1-3815-11f1-a284-589cfc10a551">
+    <topic>xwayland -- Multiple vulnerabilities</topic>
+    <affects>
+<package>
+<name>xwayland</name>
+<range><lt>24.1.10</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>X.Org project reports:</p>
+	<blockquote cite="https://lists.x.org/archives/xorg-announce/2026-April/003677.html">
+	  <p>Multiple issues have been found in the X server and Xwayland
+	     implementations published by X.Org for which we are releasing
+	     security fixes for in xorg-server-21.1.22 and xwayland-24.1.10.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-33999</cvename>
+      <cvename>CVE-2026-34000</cvename>
+      <cvename>CVE-2026-34001</cvename>
+      <cvename>CVE-2026-34002</cvename>
+      <cvename>CVE-2026-34003</cvename>
+      <url>https://lists.x.org/archives/xorg-announce/2026-April/003677.html</url>
+    </references>
+    <dates>
+      <discovery>2026-04-14</discovery>
+      <entry>2026-04-14</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="7b6463c6-3813-11f1-a284-589cfc10a551">
+    <topic>xorg-server -- Multiple vulnerabilities</topic>
+    <affects>
+<package>
+<name>xorg-server</name>
+<range><lt>21.1.22</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>X.Org project reports:</p>
+	<blockquote cite="https://lists.x.org/archives/xorg-announce/2026-April/003677.html">
+	  <p>Multiple issues have been found in the X server and Xwayland
+	     implementations published by X.Org for which we are releasing
+	     security fixes for in xorg-server-21.1.22 and xwayland-24.1.10.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-33999</cvename>
+      <cvename>CVE-2026-34000</cvename>
+      <cvename>CVE-2026-34001</cvename>
+      <cvename>CVE-2026-34002</cvename>
+      <cvename>CVE-2026-34003</cvename>
+      <url>https://lists.x.org/archives/xorg-announce/2026-April/003677.html</url>
+    </references>
+    <dates>
+      <discovery>2026-04-14</discovery>
+      <entry>2026-04-14</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="57f31f61-36a1-11f1-9839-8447094a420f">
     <topic>Vaultwarden -- Multiple vulnerabilities</topic>
     <affects>

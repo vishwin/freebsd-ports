@@ -1,6 +1,6 @@
 PORTNAME=	atuin
 DISTVERSIONPREFIX=	v
-DISTVERSION=	18.13.6
+DISTVERSION=	18.14.1
 CATEGORIES=	shells
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -137,8 +137,8 @@ CARGO_CRATES=	aead-0.5.2 \
 		euclid-0.22.13 \
 		event-listener-5.4.1 \
 		eventsource-stream-0.2.3 \
-		eye_declare-0.2.0 \
-		eye_declare_macros-0.2.0 \
+		eye_declare-0.4.0 \
+		eye_declare_macros-0.4.0 \
 		eyre-0.6.12 \
 		fancy-regex-0.11.0 \
 		fast-srgb8-1.0.0 \
@@ -175,6 +175,7 @@ CARGO_CRATES=	aead-0.5.2 \
 		getrandom-0.2.17 \
 		getrandom-0.3.4 \
 		getrandom-0.4.2 \
+		glob-match-0.2.1 \
 		h2-0.4.13 \
 		hashbrown-0.12.3 \
 		hashbrown-0.14.5 \
@@ -418,7 +419,7 @@ CARGO_CRATES=	aead-0.5.2 \
 		serde_json-1.0.149 \
 		serde_path_to_error-0.1.20 \
 		serde_regex-1.1.0 \
-		serde_spanned-1.0.4 \
+		serde_spanned-1.1.1 \
 		serde_urlencoded-0.7.1 \
 		serde_with-3.18.0 \
 		serde_with_macros-3.18.0 \
@@ -454,6 +455,7 @@ CARGO_CRATES=	aead-0.5.2 \
 		sqlx-sqlite-0.8.6 \
 		stable_deref_trait-1.2.1 \
 		static_assertions-1.1.0 \
+		streaming-iterator-0.1.9 \
 		stringprep-0.1.5 \
 		strsim-0.11.1 \
 		strum-0.27.2 \
@@ -488,11 +490,11 @@ CARGO_CRATES=	aead-0.5.2 \
 		tokio-rustls-0.26.4 \
 		tokio-stream-0.1.18 \
 		tokio-util-0.7.18 \
-		toml-1.0.6+spec-1.1.0 \
-		toml_datetime-1.0.0+spec-1.1.0 \
+		toml-1.1.1+spec-1.1.0 \
+		toml_datetime-1.1.1+spec-1.1.0 \
 		toml_edit-0.25.4+spec-1.1.0 \
-		toml_parser-1.0.9+spec-1.1.0 \
-		toml_writer-1.0.6+spec-1.1.0 \
+		toml_parser-1.1.1+spec-1.1.0 \
+		toml_writer-1.1.1+spec-1.1.0 \
 		tonic-0.14.5 \
 		tonic-build-0.14.5 \
 		tonic-prost-0.14.5 \
@@ -510,11 +512,17 @@ CARGO_CRATES=	aead-0.5.2 \
 		tracing-serde-0.2.0 \
 		tracing-subscriber-0.3.23 \
 		tracing-tree-0.4.1 \
+		tree-sitter-0.26.8 \
+		tree-sitter-bash-0.25.1 \
+		tree-sitter-fish-3.6.0 \
+		tree-sitter-language-0.1.7 \
 		tree_magic_mini-3.2.2 \
 		try-lock-0.2.5 \
 		tui-textarea-2-0.10.2 \
 		typed-builder-0.18.2 \
+		typed-builder-0.23.2 \
 		typed-builder-macro-0.18.2 \
+		typed-builder-macro-0.23.2 \
 		typenum-1.19.0 \
 		ucd-trie-0.1.7 \
 		unicase-2.9.0 \
@@ -538,9 +546,8 @@ CARGO_CRATES=	aead-0.5.2 \
 		valuable-0.1.1 \
 		vcpkg-0.2.15 \
 		version_check-0.9.5 \
-		vt100-0.15.2 \
-		vte-0.11.1 \
-		vte_generate_state_changes-0.1.2 \
+		vt100-0.16.2 \
+		vte-0.15.0 \
 		vtparse-0.6.2 \
 		walkdir-2.5.0 \
 		want-0.3.1 \
@@ -631,6 +638,7 @@ CARGO_CRATES=	aead-0.5.2 \
 		windows_x86_64_msvc-0.52.6 \
 		windows_x86_64_msvc-0.53.1 \
 		winnow-0.7.15 \
+		winnow-1.0.1 \
 		winreg-0.10.1 \
 		wit-bindgen-0.51.0 \
 		wit-bindgen-core-0.51.0 \

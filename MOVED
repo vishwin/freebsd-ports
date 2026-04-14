@@ -5239,3 +5239,6 @@ mail/py-offlineimap3|mail/py-offlineimap|2026-04-13|Project is now in PyPi as of
 textproc/jalingo||2026-04-13|Has expired: Last release in 2006. Does not compile in Java 9+
 science/colt||2026-04-13|Has expired: java 8 only, unmaintained, no users in the ports tree, latest release was 2004
 www/googler||2026-04-13|Has expired: Upstream repository archived on 2022-03-05; use www/ddgr as alternative
+misc/jbidwatcher||2026-04-14|Has expired: unmaintained, upstream website is gone, no users in the ports tree
+multimedia/py-tvnamer||2026-04-14|Has expired: Upstream project appears to be abandoned, last release was in 2021
+devel/prjpeppercorn111||2026-04-14|No longer supported by devel/nextpnr

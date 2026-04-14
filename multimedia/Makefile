@@ -320,7 +320,6 @@
     SUBDIR += py-tartube
     SUBDIR += py-torchcodec
     SUBDIR += py-trakit
-    SUBDIR += py-tvnamer
     SUBDIR += py-ustreamer
     SUBDIR += qmmp-plugin-pack-qt5
     SUBDIR += qmmp-plugin-pack-qt6

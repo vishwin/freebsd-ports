@@ -1,7 +1,7 @@
-diff --git a/configure.ac.orig b/configure.ac
+diff -u configure.ac.orig configure.ac
 index 8919d01..9f454f9 100644
---- a/configure.ac.orig
-+++ b/configure.ac
+--- configure.ac.orig
++++ configure.ac
 @@ -531,13 +531,6 @@ AS_IF([test -n "`${PROBE_OS_GROUP} nogroup`" && test -z "`${PROBE_OS_GROUP} \"${
  	[RUN_AS_GROUP="nogroup"]
  )

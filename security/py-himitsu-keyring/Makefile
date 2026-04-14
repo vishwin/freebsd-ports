@@ -20,7 +20,7 @@ USE_GNOME=	glib20 gtk-update-icon-cache
 NO_ARCH=	yes
 
 SRHT_ACCOUNT=	martijnbraam
-SRHT_PROJECT=	${PORTNAME}
+SRHT_PROJECT=	keyring
 
 post-patch:
 	@${REINPLACE_CMD} -e 's|%%PYTHON_CMD%%|${PYTHON_CMD}|' \

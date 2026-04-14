@@ -219,7 +219,6 @@
     SUBDIR += iselect
     SUBDIR += iso-codes
     SUBDIR += jargon
-    SUBDIR += jbidwatcher
     SUBDIR += jojodiff
     SUBDIR += json-tui
     SUBDIR += kbdscan
