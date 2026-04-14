@@ -23,7 +23,7 @@ you update your ports collection, before attempting any port upgrades.
   https://docs.ansible.com/ansible/latest/porting_guides/porting_guide_core_2.19.html
 
 20260411:
-  AFFECTS: AFFECTS: users of elisp (*-emacs_*) packages
+  AFFECTS: users of elisp (*-emacs_*) packages
   AUTHOR: jrm@FreeBSD.org
 
   Packages for different flavors of elisp ports have been removed.  For
@@ -51,6 +51,17 @@ you update your ports collection, before attempting any port upgrades.
     fi
     pkg set -yn "$i":"$nn"
   done
+
+  If you are building ports in an unclean environment, you may have to specify
+  the Emacs build flavor to avoid conflicts.  For example, if you have the
+  default flavor of editors/emacs installed, add the following to
+  /etc/make.conf:
+
+  DEFAULT_VERSIONS+=emacs=full
+
+  Possible values are: full, canna, nox, wayland, devel_full, and devel_nox.
+  Values prefixed with devel_ select editors/emacs-devel; others select
+  editors/emacs.  The default is nox.
 
 20260401:
   AFFECTS: users of security/openvpn

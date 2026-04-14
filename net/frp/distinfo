@@ -1,5 +1,5 @@
-TIMESTAMP = 1775930720
-SHA256 (go/net_frp/frp-v0.68.0/v0.68.0.mod) = 316d889e247e32c0fe27119d8096472fda752118d5e945c0b5b2b960001480b3
-SIZE (go/net_frp/frp-v0.68.0/v0.68.0.mod) = 3390
-SHA256 (go/net_frp/frp-v0.68.0/v0.68.0.zip) = fa2c35bff5cbbf05f5d2cd8045c9b8d25469d73cdecd28c7c66ad1a0824270f4
-SIZE (go/net_frp/frp-v0.68.0/v0.68.0.zip) = 832485
+TIMESTAMP = 1776140396
+SHA256 (go/net_frp/frp-v0.68.1/v0.68.1.mod) = b845b13bc83af7d066e05677a856a2153ae663aedb36955ce3f4d9b2e2b0ef38
+SIZE (go/net_frp/frp-v0.68.1/v0.68.1.mod) = 3358
+SHA256 (go/net_frp/frp-v0.68.1/v0.68.1.zip) = 523982afe7dc45e595811ab29745c090dfb38af6da03d07d962c2a37452a049c
+SIZE (go/net_frp/frp-v0.68.1/v0.68.1.zip) = 902894

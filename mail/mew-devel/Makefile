@@ -4,6 +4,7 @@ PORTREVISION=	1
 DISTVERSION=	6.10-49
 DISTVERSIONSUFFIX=	-ge50839a
 CATEGORIES=	mail elisp
+PKGNAMESUFFIX= -devel
 
 MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Messaging in the Emacs World for emacs (Development Version)

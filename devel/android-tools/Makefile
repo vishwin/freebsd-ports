@@ -17,7 +17,7 @@ LIB_DEPENDS=	libbrotlicommon.so:archivers/brotli \
 		libprotobuf.so:devel/protobuf \
 		libzstd.so:archivers/zstd
 
-USES=		cmake compiler:c++20-lang localbase:ldflags python shebangfix tar:xz
+USES=		cmake compiler:c++20-lang localbase:ldflags pkgconfig python shebangfix tar:xz
 
 SHEBANG_FILES=	vendor/avb/avbtool.py \
 		vendor/libufdt/utils/src/mkdtboimg.py \

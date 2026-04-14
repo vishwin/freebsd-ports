@@ -1,6 +1,6 @@
 PORTNAME=	mise
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2026.4.10
+DISTVERSION=	2026.4.11
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -547,6 +547,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		netrc-rs-0.1.2 \
 		nix-0.30.1 \
 		nix-0.31.2 \
+		nodejs-semver-4.2.0 \
 		nom-7.1.3 \
 		nom-8.0.0 \
 		nom-language-0.1.0 \
