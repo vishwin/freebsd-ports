@@ -15,18 +15,30 @@ EXTRACT_DEPENDS=	gnulib>0:devel/gnulib
 USES=		uidfix
 USE_LDCONFIG=	yes
 
+CFLAGS=		-I${WRKSRC}
 MAKE_ENV+=	INCLUDEDIR="${PREFIX}/include" LIBDIR="${PREFIX}/lib"
 
-REGEX_FILES=	lib/regex.c \
+REGEX_FILES=	lib/attribute.h \
+		lib/cdefs.h \
+		lib/dynarray.h \
+		lib/gettext.h \
+		lib/intprops.h \
+		lib/intprops-internal.h \
+		lib/libc-config.h \
+		lib/regex.c \
 		lib/regex.h \
 		lib/regex_internal.c \
 		lib/regex_internal.h \
 		lib/regexec.c \
-		lib/regcomp.c
+		lib/regcomp.c \
+		lib/verify.h
+REGEX_MALLOC_FILES=	lib/malloc/dynarray.h \
+			lib/malloc/dynarray-skeleton.c
 
 do-extract:
-	${MKDIR} ${WRKSRC}
+	${MKDIR} -p ${WRKSRC}/malloc
 	${CP} -a ${REGEX_FILES:C,^,${LOCALBASE}/share/gnulib/,} ${WRKSRC}
+	${CP} -a ${REGEX_MALLOC_FILES:C,^,${LOCALBASE}/share/gnulib/,} ${WRKSRC}/malloc
 	${CP} -a ${FILESDIR}/config.h ${FILESDIR}/gnuregex.h \
 		${FILESDIR}/Makefile ${WRKSRC}
 

@@ -2,10 +2,11 @@
     <topic>PHP Composer -- Multiple vulnerabilities</topic>
     <affects>
 <package>
-<name>php82-composer</name><range><lt>2.9.6</lt></range>
-<name>php83-composer</name><range><lt>2.9.6</lt></range>
-<name>php84-composer</name><range><lt>2.9.6</lt></range>
-<name>php85-composer</name><range><lt>2.9.6</lt></range>
+<name>php82-composer</name>
+<name>php83-composer</name>
+<name>php84-composer</name>
+<name>php85-composer</name>
+<range><lt>2.9.6</lt></range>
 </package>
     </affects>
     <description>

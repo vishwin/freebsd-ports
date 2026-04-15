@@ -2675,6 +2675,7 @@
     SUBDIR += vertx
     SUBDIR += vger
     SUBDIR += vigil
+    SUBDIR += vikunja
     SUBDIR += vimb
     SUBDIR += vinyl09
     SUBDIR += visitors

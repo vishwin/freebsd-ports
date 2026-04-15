@@ -639,6 +639,7 @@
     SUBDIR += dra
     SUBDIR += dragon
     SUBDIR += dsymbol
+    SUBDIR += dtcmp
     SUBDIR += dtool
     SUBDIR += dub
     SUBDIR += dupl
@@ -1254,6 +1255,7 @@
     SUBDIR += libchipcard
     SUBDIR += libcidr
     SUBDIR += libcii
+    SUBDIR += libcircle
     SUBDIR += libcircllhist
     SUBDIR += libcjson
     SUBDIR += libclc
@@ -1655,6 +1657,7 @@
     SUBDIR += luajava
     SUBDIR += lutok
     SUBDIR += luv
+    SUBDIR += lwgrp
     SUBDIR += lwp
     SUBDIR += lxqt-build-tools
     SUBDIR += lxqt2-build-tools

@@ -755,6 +755,7 @@
     SUBDIR += moreutils
     SUBDIR += most
     SUBDIR += mountsmb2
+    SUBDIR += mpifileutils
     SUBDIR += mping
     SUBDIR += mprocs
     SUBDIR += mptd
