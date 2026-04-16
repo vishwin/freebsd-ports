@@ -10,6 +10,7 @@ WWW=		https://github.com/nmeum/android-tools
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BUILD_DEPENDS=	googletest>0:devel/googletest
 LIB_DEPENDS=	libbrotlicommon.so:archivers/brotli \
 		libfmt.so:devel/libfmt \
 		liblz4.so:archivers/liblz4 \

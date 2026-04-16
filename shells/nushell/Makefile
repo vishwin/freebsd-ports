@@ -1,5 +1,5 @@
 PORTNAME=	nushell
-DISTVERSION=	0.112.1
+DISTVERSION=	0.112.2
 CATEGORIES=	shells
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -605,7 +605,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		rustls-pki-types-1.14.0 \
 		rustls-platform-verifier-0.6.2 \
 		rustls-platform-verifier-android-0.1.1 \
-		rustls-webpki-0.103.10 \
+		rustls-webpki-0.103.12 \
 		rustversion-1.0.22 \
 		ryu-1.0.23 \
 		same-file-1.0.6 \

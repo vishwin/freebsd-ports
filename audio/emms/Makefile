@@ -1,6 +1,5 @@
 PORTNAME=	emms
-DISTVERSION=	25
-PORTREVISION=	1
+DISTVERSION=	26
 CATEGORIES=	audio elisp
 MASTER_SITES=	https://elpa.gnu.org/packages/
 

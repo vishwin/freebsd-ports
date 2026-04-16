@@ -1,6 +1,6 @@
 PORTNAME=	atuin
 DISTVERSIONPREFIX=	v
-DISTVERSION=	18.14.1
+DISTVERSION=	18.15.1
 CATEGORIES=	shells
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -64,9 +64,11 @@ CARGO_CRATES=	aead-0.5.2 \
 		cc-1.2.57 \
 		cesu8-1.1.0 \
 		cfg-if-1.0.4 \
+		cfg_aliases-0.1.1 \
 		cfg_aliases-0.2.1 \
 		chacha20-0.9.1 \
 		chrono-0.4.44 \
+		chrono-humanize-0.2.3 \
 		cipher-0.4.4 \
 		clap-4.6.0 \
 		clap_builder-4.6.0 \
@@ -137,8 +139,8 @@ CARGO_CRATES=	aead-0.5.2 \
 		euclid-0.22.13 \
 		event-listener-5.4.1 \
 		eventsource-stream-0.2.3 \
-		eye_declare-0.4.0 \
-		eye_declare_macros-0.4.0 \
+		eye_declare-0.4.3 \
+		eye_declare_macros-0.4.3 \
 		eyre-0.6.12 \
 		fancy-regex-0.11.0 \
 		fast-srgb8-1.0.0 \
@@ -221,7 +223,6 @@ CARGO_CRATES=	aead-0.5.2 \
 		instability-0.3.12 \
 		instant-0.1.13 \
 		interim-0.2.1 \
-		ioctl-rs-0.1.6 \
 		ipnet-2.12.0 \
 		iri-string-0.7.10 \
 		is-docker-0.2.0 \
@@ -262,7 +263,6 @@ CARGO_CRATES=	aead-0.5.2 \
 		memchr-2.8.0 \
 		memmem-0.1.1 \
 		memo-map-0.3.3 \
-		memoffset-0.6.5 \
 		memoffset-0.9.1 \
 		metrics-0.24.3 \
 		metrics-exporter-prometheus-0.18.1 \
@@ -275,7 +275,7 @@ CARGO_CRATES=	aead-0.5.2 \
 		minspan-0.1.5 \
 		mio-1.1.1 \
 		multimap-0.10.1 \
-		nix-0.25.1 \
+		nix-0.28.0 \
 		nix-0.29.0 \
 		nom-7.1.3 \
 		nom-8.0.0 \
@@ -337,7 +337,7 @@ CARGO_CRATES=	aead-0.5.2 \
 		plain-0.2.3 \
 		poly1305-0.8.0 \
 		portable-atomic-1.13.1 \
-		portable-pty-0.8.1 \
+		portable-pty-0.9.0 \
 		potential_utf-0.1.4 \
 		powerfmt-0.2.0 \
 		ppv-lite86-0.2.21 \
@@ -423,10 +423,7 @@ CARGO_CRATES=	aead-0.5.2 \
 		serde_urlencoded-0.7.1 \
 		serde_with-3.18.0 \
 		serde_with_macros-3.18.0 \
-		serial-0.4.0 \
-		serial-core-0.4.0 \
-		serial-unix-0.4.0 \
-		serial-windows-0.4.0 \
+		serial2-0.2.36 \
 		sha1-0.10.6 \
 		sha2-0.10.9 \
 		sharded-slab-0.1.7 \
@@ -469,7 +466,6 @@ CARGO_CRATES=	aead-0.5.2 \
 		tempfile-3.27.0 \
 		terminal_size-0.4.3 \
 		terminfo-0.9.0 \
-		termios-0.2.2 \
 		termios-0.3.3 \
 		termwiz-0.23.3 \
 		testing_logger-0.1.1 \

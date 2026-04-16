@@ -1,6 +1,6 @@
 PORTNAME=	rio
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.3.8
+DISTVERSION=	0.3.10
 CATEGORIES=	x11 wayland
 PKGNAMESUFFIX=	-terminal-emulator
 
@@ -16,9 +16,10 @@ BROKEN_armv7=	rustc-LLVM ERROR: out of memory
 BROKEN_i386=	rustc-LLVM ERROR: out of memory
 
 LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
-		libfreetype.so:print/freetype2
+		libfreetype.so:print/freetype2 \
+		libonig.so:devel/oniguruma
 
-USES=		cargo
+USES=		cargo pkgconfig
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	raphamorim
@@ -358,6 +359,8 @@ CARGO_CRATES=	ab_glyph-0.2.32 \
 		oboe-sys-0.6.1 \
 		once_cell-1.21.4 \
 		once_cell_polyfill-1.70.2 \
+		onig-6.5.1 \
+		onig_sys-69.9.1 \
 		oorandom-11.1.5 \
 		option-ext-0.2.0 \
 		orbclient-0.3.51 \
@@ -373,6 +376,8 @@ CARGO_CRATES=	ab_glyph-0.2.32 \
 		percent-encoding-2.3.2 \
 		persy-1.7.1 \
 		petgraph-0.8.3 \
+		phf-0.13.1 \
+		phf_shared-0.13.1 \
 		pin-project-1.1.11 \
 		pin-project-internal-1.1.11 \
 		pin-project-lite-0.2.17 \
@@ -455,6 +460,7 @@ CARGO_CRATES=	ab_glyph-0.2.32 \
 		signal-hook-registry-1.4.8 \
 		simd-adler32-0.3.9 \
 		simdutf8-0.1.5 \
+		siphasher-1.0.2 \
 		skrifa-0.37.0 \
 		slab-0.4.12 \
 		slotmap-1.1.1 \
@@ -514,6 +520,7 @@ CARGO_CRATES=	ab_glyph-0.2.32 \
 		ttf-parser-0.25.1 \
 		twox-hash-2.1.2 \
 		typenum-1.19.0 \
+		ucd-trie-0.1.7 \
 		uds_windows-1.2.1 \
 		unicode-ident-1.0.24 \
 		unicode-segmentation-1.13.2 \

@@ -1,3 +1,96 @@
+  <vuln vid="d93c247b-4dba-43ce-b5c0-ac5bd03bea8d">
+    <topic>chromium -- security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>147.0.7727.101</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>147.0.7727.101</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2026/04/stable-channel-update-for-desktop_15.html">
+	 <p>This update includes 31 security fixes:</p>
+	 <ul>
+	    <li>[490170083] Critical CVE-2026-6296: Heap buffer overflow in ANGLE. Reported by cinzinga on 2026-03-05</li>
+	    <li>[493628982] Critical CVE-2026-6297: Use after free in Proxy. Reported by heapracer on 2026-03-17</li>
+	    <li>[495700484] Critical CVE-2026-6298: Heap buffer overflow in Skia. Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-24</li>
+	    <li>[497053588] Critical CVE-2026-6299: Use after free in Prerender. Reported by Google on 2026-03-28</li>
+	    <li>[497724498] Critical CVE-2026-6358: Use after free in XR. Reported by Jihyeon Jeong (Compsec Lab, Seoul National University / Research Intern) on 2026-03-30</li>
+	    <li>[490251701] High CVE-2026-6359: Use after free in Video. Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-06</li>
+	    <li>[491994185] High CVE-2026-6300: Use after free in CSS. Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-12</li>
+	    <li>[495273999] High CVE-2026-6301: Type Confusion in Turbofan. Reported by qymag1c on 2026-03-23</li>
+	    <li>[495477995] High CVE-2026-6302: Use after free in Video. Reported by Syn4pse on 2026-03-24</li>
+	    <li>[496282147] High CVE-2026-6303: Use after free in Codecs. Reported by Google on 2026-03-25</li>
+	    <li>[496393742] High CVE-2026-6304: Use after free in Graphite. Reported by Google on 2026-03-26</li>
+	    <li>[496618639] High CVE-2026-6305: Heap buffer overflow in PDFium. Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-26</li>
+	    <li>[496907110] High CVE-2026-6306: Heap buffer overflow in PDFium. Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-27</li>
+	    <li>[497404188] High CVE-2026-6307: Type Confusion in Turbofan. Reported by Project WhatForLunch (@pjwhatforlunch) on 2026-03-29</li>
+	    <li>[497412658] High CVE-2026-6308: Out of bounds read in Media. Reported by Google on 2026-03-29</li>
+	    <li>[497846428] High CVE-2026-6309: Use after free in Viz. Reported by Google on 2026-03-30</li>
+	    <li>[497880137] High CVE-2026-6360: Use after free in FileSystem. Reported by asjidkalam on 2026-03-31</li>
+	    <li>[497969820] High CVE-2026-6310: Use after free in Dawn. Reported by Google on 2026-03-31</li>
+	    <li>[498201025] High CVE-2026-6311: Uninitialized Use in Accessibility. Reported by Google on 2026-03-31</li>
+	    <li>[498269651] High CVE-2026-6312: Insufficient policy enforcement in Passwords. Reported by Google on 2026-03-31</li>
+	    <li>[498765210] High CVE-2026-6313: Insufficient policy enforcement in CORS. Reported by Google on 2026-04-02</li>
+	    <li>[498782145] High CVE-2026-6314: Out of bounds write in GPU. Reported by Google on 2026-04-02</li>
+	    <li>[499247910] High CVE-2026-6315: Use after free in Permissions. Reported by Google on 2026-04-03</li>
+	    <li>[499384399] High CVE-2026-6316: Use after free in Forms. Reported by Google on 2026-04-03</li>
+	    <li>[500036290] High CVE-2026-6361: Heap buffer overflow in PDFium. Reported by Google on 2026-04-06</li>
+	    <li>[500066234] High CVE-2026-6362: Use after free in Codecs. Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-04-07</li>
+	    <li>[500091052] High CVE-2026-6317: Use after free in Cast. Reported by Google on 2026-04-06</li>
+	    <li>[495751197] Medium CVE-2026-6363: Type Confusion in V8. Reported by Google on 2026-03-24</li>
+	    <li>[495996858] Medium CVE-2026-6318: Use after free in Codecs. Reported by Syn4pse on 2026-03-25</li>
+	    <li>[499018889] Medium CVE-2026-6319: Use after free in Payments. Reported by pwn2addr on 2026-04-02</li>
+	    <li>[502103414] Medium CVE-2026-6364: Out of bounds read in Skia. Reported by Google Threat Intelligence on 2026-04-13</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-6296</cvename>
+      <cvename>CVE-2026-6297</cvename>
+      <cvename>CVE-2026-6298</cvename>
+      <cvename>CVE-2026-6299</cvename>
+      <cvename>CVE-2026-6358</cvename>
+      <cvename>CVE-2026-6359</cvename>
+      <cvename>CVE-2026-6300</cvename>
+      <cvename>CVE-2026-6301</cvename>
+      <cvename>CVE-2026-6302</cvename>
+      <cvename>CVE-2026-6303</cvename>
+      <cvename>CVE-2026-6304</cvename>
+      <cvename>CVE-2026-6305</cvename>
+      <cvename>CVE-2026-6306</cvename>
+      <cvename>CVE-2026-6307</cvename>
+      <cvename>CVE-2026-6308</cvename>
+      <cvename>CVE-2026-6309</cvename>
+      <cvename>CVE-2026-6360</cvename>
+      <cvename>CVE-2026-6310</cvename>
+      <cvename>CVE-2026-6311</cvename>
+      <cvename>CVE-2026-6312</cvename>
+      <cvename>CVE-2026-6313</cvename>
+      <cvename>CVE-2026-6314</cvename>
+      <cvename>CVE-2026-6315</cvename>
+      <cvename>CVE-2026-6316</cvename>
+      <cvename>CVE-2026-6361</cvename>
+      <cvename>CVE-2026-6362</cvename>
+      <cvename>CVE-2026-6317</cvename>
+      <cvename>CVE-2026-6363</cvename>
+      <cvename>CVE-2026-6318</cvename>
+      <cvename>CVE-2026-6319</cvename>
+      <cvename>CVE-2026-6364</cvename>
+      <url>https://chromereleases.googleblog.com/2026/04/stable-channel-update-for-desktop_15.html</url>
+    </references>
+    <dates>
+      <discovery>2026-04-15</discovery>
+      <entry>2026-04-16</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="7a7a17b2-381c-11f1-a663-10ffe07f9334">
     <topic>PHP Composer -- Multiple vulnerabilities</topic>
     <affects>

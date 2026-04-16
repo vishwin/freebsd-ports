@@ -320,6 +320,7 @@
     SUBDIR += onnx
     SUBDIR += onnxruntime
     SUBDIR += ooo
+    SUBDIR += openclaw
     SUBDIR += opencyc
     SUBDIR += openhab
     SUBDIR += openhab-addons

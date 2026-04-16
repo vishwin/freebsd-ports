@@ -1,5 +1,5 @@
 PORTNAME=	cargo-deny
-DISTVERSION=	0.19.2
+DISTVERSION=	0.19.4
 CATEGORIES=	devel
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -145,7 +145,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		rustix-1.1.4 \
 		rustls-0.23.37 \
 		rustls-pki-types-1.14.0 \
-		rustls-webpki-0.103.10 \
+		rustls-webpki-0.103.12 \
 		same-file-1.0.6 \
 		scopeguard-1.2.0 \
 		scroll-0.13.0 \

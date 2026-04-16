@@ -1,6 +1,6 @@
 PORTNAME=	ncrystal
 DISTVERSIONPREFIX=	v
-DISTVERSION=	4.3.2
+DISTVERSION=	4.3.4
 CATEGORIES=	science # physics
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -21,6 +21,6 @@ SHEBANG_FILES=	tests/scripts/*
 CMAKE_TESTING_ON=	NCRYSTAL_ENABLE_TESTING \
 			NCRYSTAL_ENABLE_CORE_TEST
 
-# tests as of 4.3.2: 100% tests passed, 0 tests failed out of 124
+# tests as of 4.3.4: 100% tests passed, 0 tests failed out of 124
 
 .include <bsd.port.mk>
