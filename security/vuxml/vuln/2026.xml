@@ -1,3 +1,37 @@
+  <vuln vid="9c8c00ce-3642-11f1-bd03-3c7c3fba4204">
+    <topic>go-ethereum -- vulnerabilities</topic>
+    <affects>
+    <package>
+	<name>go-ethereum</name>
+	<range><lt>1.17.0</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://github.com/ethereum/go-ethereum/security/advisories reports:</p>
+	<blockquote cite="https://github.com/ethereum/go-ethereum/security/advisories">
+	  <ul>
+	    <li>DoS via malicious p2p message (CVE-2026-26313)</li>
+	    <li>DoS via malicious p2p message (CVE-2026-26314)</li>
+	    <li>Improper ECIES Public Key Validation in RLPx Handshake (CVE-2026-26315)</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-26313</cvename>
+      <url>https://github.com/ethereum/go-ethereum/security/advisories/GHSA-689v-6xwf-5jf3</url>
+      <cvename>CVE-2026-26314</cvename>
+      <url>https://github.com/ethereum/go-ethereum/security/advisories/GHSA-2gjw-fg97-vg3r</url>
+      <cvename>CVE-2026-26315</cvename>
+      <url>https://github.com/ethereum/go-ethereum/security/advisories/GHSA-m6j8-rg6r-7mv8</url>
+    </references>
+    <dates>
+      <discovery>2026-02-17</discovery>
+      <entry>2026-04-12</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="d93c247b-4dba-43ce-b5c0-ac5bd03bea8d">
     <topic>chromium -- security fixes</topic>
     <affects>
