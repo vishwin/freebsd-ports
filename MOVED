@@ -5242,3 +5242,4 @@ www/googler||2026-04-13|Has expired: Upstream repository archived on 2022-03-05;
 misc/jbidwatcher||2026-04-14|Has expired: unmaintained, upstream website is gone, no users in the ports tree
 multimedia/py-tvnamer||2026-04-14|Has expired: Upstream project appears to be abandoned, last release was in 2021
 devel/prjpeppercorn111||2026-04-14|No longer supported by devel/nextpnr
+www/py-tvdb_api||2026-04-15|Has expired: Upstream project appears to be abandoned, last release was in 2021
