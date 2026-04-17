@@ -3,6 +3,7 @@
     SUBDIR += R-cran-fs
     SUBDIR += acfgfs
     SUBDIR += afuse
+    SUBDIR += amazon-efs-utils
     SUBDIR += archivemount
     SUBDIR += automount
     SUBDIR += avfs
