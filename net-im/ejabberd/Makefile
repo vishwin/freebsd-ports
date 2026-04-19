@@ -175,6 +175,7 @@ post-patch:
 	@${REINPLACE_CMD} -e 's,/bin/bash,/bin/sh,' \
 		-e 's,^jquery=.*$$,jquery=${WRKSRC}/jquery-${JQUERY_VER}.min.js,' \
 		-e 's,^bootstrap=.*$$,bootstrap=${WRKSRC}/bootstrap-${BOOTSTRAP_VER}-dist.zip,' \
+		-e 's,sha256sum -c -,sha256sum -c /dev/stdin,' \
 		-e '/^curl/d' \
 		${WRKSRC}/tools/dl_invites_page_deps.sh
 .for F in jquery-${JQUERY_VER}.min.js bootstrap-${BOOTSTRAP_VER}-dist.zip

@@ -852,7 +852,8 @@
     SUBDIR += py-sqlcipher3
     SUBDIR += py-sqlframe
     SUBDIR += py-sqlglot
-    SUBDIR += py-sqlglotrs
+    SUBDIR += py-sqlglot-mypy
+    SUBDIR += py-sqlglotc
     SUBDIR += py-sqlite-anyio
     SUBDIR += py-sqlite-fts4
     SUBDIR += py-sqlite-migrate
@@ -1155,6 +1156,7 @@
     SUBDIR += wfb2sql
     SUBDIR += xapian-bindings
     SUBDIR += xapian-core
+    SUBDIR += xapian-core14
     SUBDIR += xls2txt
     SUBDIR += xrootd
     SUBDIR += xtrabackup80

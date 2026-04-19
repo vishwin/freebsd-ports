@@ -1,5 +1,6 @@
 PORTNAME=	avogadrolibs
 DISTVERSION=	2.0.0
+PORTREVISION=	1
 CATEGORIES=	science
 
 MAINTAINER=	yuri@FreeBSD.org

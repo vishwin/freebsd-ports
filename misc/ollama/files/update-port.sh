@@ -26,10 +26,9 @@ if ! command -v "$GO_CMD" >/dev/null 2>&1; then
 	exit 1
 fi
 
-# make GoLang proxy
+# make GoLang proxy to ingest the new version
 echo "==> submitting the new version $VERSION to GoLang proxy"
 GOPROXY=proxy.golang.org $GO_CMD list -m github.com/$GH_ACCOUNT_FORK/ollama@v$VERSION
-
 exit 1
 
 echo "updating $GH_PROJECT to version $VERSION"
@@ -73,7 +72,7 @@ git tag -a v$VERSION -m "Release version v$VERSION + freebsd patches"
 git push origin
 git push --tags
 
-# make GoLang proxy
+# make GoLang proxy to ingest the new version
 echo "==> submitting the new version $VERSION to GoLang proxy"
 GOPROXY=proxy.golang.org $GO_CMD list -m github.com/$GH_ACCOUNT_FORK/ollama@v$VERSION
 

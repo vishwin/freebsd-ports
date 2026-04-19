@@ -5247,6 +5247,7 @@ graphics/libkdcraw@qt5|graphics/libkdcraw-qt5|2026-04-16|Unflavorize; keep the l
 graphics/libkdcraw@qt6|graphics/libkdcraw|2026-04-16|Unflavorize; only Qt6 is supported from now
 audio/libkcompactdisc||2026-04-16|Development discontinued, not shipped with KDE Gear since 26.04
 multimedia/dvdstyler||2026-04-16|Dead upstream
-multimedia/lebiniou||2026-04-16|Dead upstream
-multimedia/lebiniou-data||2026-04-16|Dead upstream
 emulators/emu64||2026-04-16|Broken, fails to build
+databases/py-sqlglotrs|databases/py-sqlglotc|2026-04-18|Remove obsoleted port. Use databases/py-sqlglotc instead
+devel/py-prettytable0|devel/py-prettytable|2026-04-18|Remove obsoleted port. Use devel/py-prettytable instead
+www/py-requests-cache0|www/py-requests-cache|2026-04-18|Remove obsoleted port. Use www/py-requests-cache instead

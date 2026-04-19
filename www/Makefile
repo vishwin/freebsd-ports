@@ -310,6 +310,7 @@
     SUBDIR += joomla4
     SUBDIR += joomla5
     SUBDIR += jwt-cli
+    SUBDIR += kamal-proxy
     SUBDIR += kanboard
     SUBDIR += kannel
     SUBDIR += kannel-sqlbox
@@ -1549,6 +1550,7 @@
     SUBDIR += py-dj52-django-choices-field
     SUBDIR += py-dj52-django-compression-middleware
     SUBDIR += py-dj52-django-cors-headers
+    SUBDIR += py-dj52-django-crispy-forms
     SUBDIR += py-dj52-django-debug-toolbar
     SUBDIR += py-dj52-django-extensions
     SUBDIR += py-dj52-django-filter
@@ -1915,7 +1917,6 @@
     SUBDIR += py-requests
     SUBDIR += py-requests-aws4auth
     SUBDIR += py-requests-cache
-    SUBDIR += py-requests-cache0
     SUBDIR += py-requests-cache93
     SUBDIR += py-requests-file
     SUBDIR += py-requests-futures
@@ -2213,6 +2214,7 @@
     SUBDIR += rubygem-http-accept
     SUBDIR += rubygem-http-cookie
     SUBDIR += rubygem-http-form_data
+    SUBDIR += rubygem-http-form_data2
     SUBDIR += rubygem-http3
     SUBDIR += rubygem-http4
     SUBDIR += rubygem-http_router
@@ -2722,6 +2724,7 @@
     SUBDIR += wuzz
     SUBDIR += wwwoffle
     SUBDIR += xapian-omega
+    SUBDIR += xapian-omega14
     SUBDIR += xcaddy
     SUBDIR += xfce4-smartbookmark-plugin
     SUBDIR += xh

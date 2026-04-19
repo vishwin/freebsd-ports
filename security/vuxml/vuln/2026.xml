@@ -1,3 +1,45 @@
+  <vuln vid="6f1c19bf-3b29-11f1-930b-98b78501ef2a">
+    <topic>xrdp -- Multiple vulnerabilities</topic>
+    <affects>
+    <package>
+      <name>xrdp</name>
+      <range><lt>0.10.6,1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>xrdp project reports:</p>
+	<blockquote cite="https://github.com/neutrinolabs/xrdp/releases/tag/v0.10.6">
+	  <p>This release includes 8 security fixes:</p>
+	  <ul>
+	    <li>CVE-2026-32105</li>
+	    <li>CVE-2026-32107</li>
+	    <li>CVE-2026-32623</li>
+	    <li>CVE-2026-32624</li>
+	    <li>CVE-2026-33145</li>
+	    <li>CVE-2026-32516</li>
+	    <li>CVE-2026-32689</li>
+	    <li>CVE-2026-35512</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-32105</cvename>
+      <cvename>CVE-2026-32107</cvename>
+      <cvename>CVE-2026-32623</cvename>
+      <cvename>CVE-2026-32624</cvename>
+      <cvename>CVE-2026-33145</cvename>
+      <cvename>CVE-2026-32516</cvename>
+      <cvename>CVE-2026-32689</cvename>
+      <cvename>CVE-2026-35512</cvename>
+    </references>
+    <dates>
+      <discovery>2026-03-03</discovery>
+      <entry>2026-04-18</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="6a0aa20d-399f-11f1-8626-901b0edee044">
     <topic>py-strawberry-graphql -- Multiple vulnerabilities</topic>
     <affects>

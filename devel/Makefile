@@ -729,6 +729,7 @@
     SUBDIR += fnm
     SUBDIR += folly
     SUBDIR += forge
+    SUBDIR += forgejo-cli
     SUBDIR += forgejo-runner
     SUBDIR += fortran-stdlib
     SUBDIR += fortran-utils
@@ -1969,6 +1970,7 @@
     SUBDIR += p5-Async-Interrupt
     SUBDIR += p5-Async-MergePoint
     SUBDIR += p5-AtExit
+    SUBDIR += p5-Atomic-Pipe
     SUBDIR += p5-Attribute-Handlers
     SUBDIR += p5-Attribute-Handlers-Prospective
     SUBDIR += p5-Attribute-Persistent
@@ -2232,6 +2234,7 @@
     SUBDIR += p5-Connector
     SUBDIR += p5-Const-Exporter
     SUBDIR += p5-Const-Fast
+    SUBDIR += p5-Consumer-NonBlock
     SUBDIR += p5-Context-Preserve
     SUBDIR += p5-Contextual-Return
     SUBDIR += p5-Convert-Age
@@ -3224,6 +3227,7 @@
     SUBDIR += p5-Object-Destroyer
     SUBDIR += p5-Object-Enum
     SUBDIR += p5-Object-Event
+    SUBDIR += p5-Object-HashBase
     SUBDIR += p5-Object-Import
     SUBDIR += p5-Object-InsideOut
     SUBDIR += p5-Object-MultiType
@@ -4461,6 +4465,7 @@
     SUBDIR += py-aspy.yaml
     SUBDIR += py-assertpy
     SUBDIR += py-ast-decompiler
+    SUBDIR += py-ast-serialize
     SUBDIR += py-ast2json
     SUBDIR += py-asteval
     SUBDIR += py-astor
@@ -4752,6 +4757,7 @@
     SUBDIR += py-condense-json
     SUBDIR += py-conditional
     SUBDIR += py-confection
+    SUBDIR += py-confection0
     SUBDIR += py-configargparse
     SUBDIR += py-configobj
     SUBDIR += py-configparser
@@ -5077,6 +5083,7 @@
     SUBDIR += py-hatch-regex-commit
     SUBDIR += py-hatch-requirements-txt
     SUBDIR += py-hatch-semver
+    SUBDIR += py-hatch-tryton
     SUBDIR += py-hatch-vcs
     SUBDIR += py-hatchling
     SUBDIR += py-heapdict
@@ -5098,6 +5105,7 @@
     SUBDIR += py-hypothesis-crosshair
     SUBDIR += py-hypothesmith
     SUBDIR += py-icalendar
+    SUBDIR += py-icalendar-searcher
     SUBDIR += py-ice
     SUBDIR += py-ice37
     SUBDIR += py-id
@@ -5252,6 +5260,7 @@
     SUBDIR += py-lazy-object-proxy
     SUBDIR += py-lazy_imports
     SUBDIR += py-lazy_loader
+    SUBDIR += py-lazyarray
     SUBDIR += py-legacy-api-wrap
     SUBDIR += py-levenshtein
     SUBDIR += py-libcst
@@ -5508,6 +5517,7 @@
     SUBDIR += py-parameterized
     SUBDIR += py-parsedatetime
     SUBDIR += py-parsley
+    SUBDIR += py-parsy
     SUBDIR += py-parver
     SUBDIR += py-pastel
     SUBDIR += py-patch
@@ -5621,7 +5631,6 @@
     SUBDIR += py-preshed3
     SUBDIR += py-pretend
     SUBDIR += py-prettytable
-    SUBDIR += py-prettytable0
     SUBDIR += py-printree
     SUBDIR += py-process-tests
     SUBDIR += py-proglog
@@ -6095,9 +6104,9 @@
     SUBDIR += py-sre-yield
     SUBDIR += py-srsly
     SUBDIR += py-stack-data
+    SUBDIR += py-standard-imghdr
     SUBDIR += py-statgrab
     SUBDIR += py-statsd
-    SUBDIR += py-standard-imghdr
     SUBDIR += py-stdlib-list
     SUBDIR += py-stdlibs
     SUBDIR += py-stdnum
@@ -7255,6 +7264,7 @@
     SUBDIR += rubygem-bootstrap_form
     SUBDIR += rubygem-bson
     SUBDIR += rubygem-buftok
+    SUBDIR += rubygem-buftok0
     SUBDIR += rubygem-bugspots
     SUBDIR += rubygem-builder
     SUBDIR += rubygem-bullet

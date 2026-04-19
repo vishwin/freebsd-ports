@@ -144,8 +144,8 @@ include/avogadro/quantumio/genericoutput.h
 include/avogadro/quantumio/molden.h
 include/avogadro/quantumio/mopacaux.h
 include/avogadro/quantumio/nwchemjson.h
-include/avogadro/quantumio/nwchemlog.h
-include/avogadro/quantumio/orca.h
+%%OPENGL%%include/avogadro/quantumio/nwchemlog.h
+%%OPENGL%%include/avogadro/quantumio/orca.h
 include/avogadro/quantumio/qcschema.h
 %%OPENGL%%include/avogadro/rendering/arcsector.h
 %%OPENGL%%include/avogadro/rendering/arcstrip.h
@@ -242,8 +242,8 @@ include/avogadro/quantumio/qcschema.h
 %%QT%%lib/avogadro2/staticplugins/POVRay.a
 %%QT%%lib/avogadro2/staticplugins/PlayerTool.a
 %%QT%%lib/avogadro2/staticplugins/PlotConformer.a
-%%VTK%%lib/avogadro2/staticplugins/PlotPdf.a
-%%VTK%%lib/avogadro2/staticplugins/PlotXrd.a
+%%QT%%lib/avogadro2/staticplugins/PlotPdf.a
+%%QT%%lib/avogadro2/staticplugins/PlotXrd.a
 %%LIBARCHIVE%%lib/avogadro2/staticplugins/PackageInstaller.a
 %%QT%%lib/avogadro2/staticplugins/PropertyTables.a
 %%QT%%lib/avogadro2/staticplugins/QuantumInput.a

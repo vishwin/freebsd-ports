@@ -1132,6 +1132,7 @@
     SUBDIR += ratify
     SUBDIR += ratproxy
     SUBDIR += rats
+    SUBDIR += rbw
     SUBDIR += rcracki_mt
     SUBDIR += rekor
     SUBDIR += reop

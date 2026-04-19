@@ -458,6 +458,7 @@ bin/comfyui
 %%DATADIR%%/comfy_api_nodes/nodes_recraft.py
 %%DATADIR%%/comfy_api_nodes/nodes_reve.py
 %%DATADIR%%/comfy_api_nodes/nodes_rodin.py
+%%DATADIR%%/comfy_api_nodes/nodes_sonilo.py
 %%DATADIR%%/comfy_api_nodes/nodes_runway.py
 %%DATADIR%%/comfy_api_nodes/nodes_sora.py
 %%DATADIR%%/comfy_api_nodes/nodes_stability.py

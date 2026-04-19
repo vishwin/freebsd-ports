@@ -1,6 +1,6 @@
 PORTNAME=	mise
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2026.4.14
+DISTVERSION=	2026.4.16
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -71,8 +71,8 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		aws-config-1.8.13 \
 		aws-credential-types-1.2.11 \
 		aws-lc-fips-sys-0.13.14 \
-		aws-lc-rs-1.16.2 \
-		aws-lc-sys-0.39.1 \
+		aws-lc-rs-1.16.3 \
+		aws-lc-sys-0.40.0 \
 		aws-runtime-1.6.0 \
 		aws-sdk-s3-1.119.0 \
 		aws-sdk-sts-1.97.0 \
@@ -148,10 +148,10 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		ci_info-0.14.15 \
 		cipher-0.4.4 \
 		clang-sys-1.8.1 \
-		clap-4.6.0 \
+		clap-4.6.1 \
 		clap-sort-1.0.3 \
 		clap_builder-4.6.0 \
-		clap_derive-4.6.0 \
+		clap_derive-4.6.1 \
 		clap_lex-1.1.0 \
 		clru-0.6.3 \
 		clx-1.3.0 \
@@ -202,7 +202,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		crypto-common-0.1.7 \
 		crypto-common-0.2.1 \
 		crypto_secretbox-0.1.1 \
-		ctor-0.9.1 \
+		ctor-0.10.0 \
 		ctor-proc-macro-0.0.12 \
 		ctr-0.9.2 \
 		curve25519-dalek-4.1.3 \
@@ -244,7 +244,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		displaydoc-0.2.5 \
 		document-features-0.2.12 \
 		dotenvy-0.15.7 \
-		dtor-0.6.0 \
+		dtor-0.7.0 \
 		dtor-proc-macro-0.0.12 \
 		duct-0.13.7 \
 		duct-1.1.1 \
@@ -502,7 +502,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		libloading-0.9.0 \
 		libm-0.2.16 \
 		libredox-0.1.16 \
-		link-section-0.0.12 \
+		link-section-0.2.0 \
 		linux-raw-sys-0.4.15 \
 		linux-raw-sys-0.12.1 \
 		litemap-0.8.2 \
@@ -705,6 +705,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		ring-0.17.14 \
 		rmcp-0.3.2 \
 		rmcp-macros-0.3.2 \
+		rmcp-macros-0.17.0 \
 		rmp-0.8.15 \
 		rmp-serde-1.3.1 \
 		roff-1.1.1 \
@@ -863,7 +864,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		tinyvec_macros-0.1.1 \
 		tls_codec-0.4.2 \
 		tls_codec_derive-0.4.2 \
-		tokio-1.52.0 \
+		tokio-1.52.1 \
 		tokio-macros-2.7.0 \
 		tokio-native-tls-0.3.1 \
 		tokio-retry-0.3.1 \
@@ -874,7 +875,8 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		toml-0.5.11 \
 		toml-0.9.12+spec-1.1.0 \
 		toml_datetime-0.7.5+spec-1.1.0 \
-		toml_edit-0.24.1+spec-1.1.0 \
+		toml_datetime-1.1.1+spec-1.1.0 \
+		toml_edit-0.25.11+spec-1.1.0 \
 		toml_parser-1.1.2+spec-1.1.0 \
 		toml_writer-1.1.1+spec-1.1.0 \
 		tough-0.21.0 \
@@ -1055,6 +1057,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		zip-4.6.1 \
 		zip-8.5.1 \
 		zipsign-api-0.1.5 \
+		zipsign-api-0.2.1 \
 		zlib-rs-0.6.3 \
 		zmij-1.0.21 \
 		zopfli-0.8.3 \
