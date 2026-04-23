@@ -63,6 +63,7 @@ CARGO_TARGET_DIR=	${WRKSRC}/out/rust
 
 # Variables used by the "runner" build system
 MAKE_ENV+=	NODE_BINARY=${LOCALBASE}/bin/node \
+		NODE_OPTIONS=--max-old-space-size=1024 \
 		OFFLINE_BUILD=1 \
 		PROTOC_BINARY=${LOCALBASE}/bin/protoc \
 		PYTHON_BINARY=${PYTHON_CMD} \

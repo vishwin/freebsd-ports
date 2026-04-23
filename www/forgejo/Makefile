@@ -1,6 +1,7 @@
 PORTNAME=	forgejo
 DISTVERSIONPREFIX=	v
 DISTVERSION=	14.0.4
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	https://codeberg.org/forgejo/forgejo/releases/download/${DISTVERSIONFULL}/
 DISTNAME=	forgejo-src-${DISTVERSION}
@@ -54,7 +55,7 @@ SQLITE_VARS=		GO_TAGS+="sqlite sqlite_unlock_notify"
 
 SSP_UNSAFE=	true
 LDFLAGS=	"'-X "forgejo.org/modules/setting.CustomPath=${PREFIX}/etc/forgejo"'" \
-		"'-X "forgejo.org/modules/setting.AppWorkPath=${DATADIR}"'"
+		"'-X "forgejo.org/modules/setting.AppWorkPath=${DBDIR}"'"
 MAKE_ARGS=	GOFLAGS="-buildvcs=false" \
 		GOPATH=${WRKDIR} \
 		TAGS="${GO_TAGS}"

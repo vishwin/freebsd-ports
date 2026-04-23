@@ -1,3 +1,3 @@
-TIMESTAMP = 1766036431
-SHA256 (opentelemetry_exporter_credential_provider_gcp-0.60b1.tar.gz) = 88e3ef2b2de41f88409bebdcd42ef34201dfa8203a294c74abdfee05fa70434e
-SIZE (opentelemetry_exporter_credential_provider_gcp-0.60b1.tar.gz) = 7162
+TIMESTAMP = 1776864042
+SHA256 (opentelemetry_exporter_credential_provider_gcp-0.62b0.tar.gz) = 14c3951ff1ac41178d41fd19c1e011ee8e3727d50dc7f1077d675434430362c3
+SIZE (opentelemetry_exporter_credential_provider_gcp-0.62b0.tar.gz) = 7188

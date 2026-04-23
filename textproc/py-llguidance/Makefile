@@ -1,5 +1,5 @@
 PORTNAME=	llguidance
-DISTVERSION=	1.7.2
+DISTVERSION=	1.7.3
 CATEGORIES=	textproc python # machine-learning
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -92,7 +92,7 @@ CARGO_CRATES=	addr2line-0.24.2 \
 		derive_builder-0.20.2 \
 		derive_builder_core-0.20.2 \
 		derive_builder_macro-0.20.2 \
-		derivre-0.3.9 \
+		derivre-0.3.10 \
 		dirs-6.0.0 \
 		dirs-sys-0.5.0 \
 		displaydoc-0.2.5 \
@@ -224,7 +224,7 @@ CARGO_CRATES=	addr2line-0.24.2 \
 		pyo3-macros-backend-0.28.2 \
 		quote-1.0.40 \
 		r-efi-5.3.0 \
-		rand-0.9.1 \
+		rand-0.9.4 \
 		rand_chacha-0.9.0 \
 		rand_core-0.9.3 \
 		rayon-1.10.0 \

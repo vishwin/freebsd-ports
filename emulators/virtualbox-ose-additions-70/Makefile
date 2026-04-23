@@ -10,7 +10,7 @@ MAINTAINER=	vbox@FreeBSD.org
 COMMENT=	VirtualBox additions for FreeBSD guests
 WWW=		https://www.virtualbox.org/
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 DEPRECATED=		Upstream EOL reaches on 2025-04-15, use emulators/virtualbox-ose${PKGNAMESUFFIX:S|0|2|} instead

@@ -35,6 +35,7 @@
     SUBDIR += binocle
     SUBDIR += biosfont-demos
     SUBDIR += birthday
+    SUBDIR += blogwatcher
     SUBDIR += bogosort
     SUBDIR += bottlerocket
     SUBDIR += box2d
@@ -42,6 +43,7 @@
     SUBDIR += broot
     SUBDIR += bsod
     SUBDIR += caffe
+    SUBDIR += camsnap
     SUBDIR += chatblade
     SUBDIR += chatgpt-shell-cli
     SUBDIR += cheat
@@ -50,6 +52,7 @@
     SUBDIR += chrono
     SUBDIR += cinnamon-translations
     SUBDIR += claude-code
+    SUBDIR += clawhub
     SUBDIR += clex
     SUBDIR += clifm
     SUBDIR += cloc
@@ -109,6 +112,7 @@
     SUBDIR += ecflow
     SUBDIR += edfbrowser
     SUBDIR += edflib
+    SUBDIR += eightctl
     SUBDIR += elki
     SUBDIR += elscreen
     SUBDIR += emacs-libvterm
@@ -189,10 +193,12 @@
     SUBDIR += gobuster
     SUBDIR += gollama
     SUBDIR += gone
+    SUBDIR += goplaces
     SUBDIR += gplink
     SUBDIR += gpsim
     SUBDIR += granulate
     SUBDIR += grc
+    SUBDIR += grizzly
     SUBDIR += grok-cli
     SUBDIR += gwhich
     SUBDIR += hashdb
@@ -290,6 +296,7 @@
     SUBDIR += mcp-inspector
     SUBDIR += mcp-probe
     SUBDIR += mdp
+    SUBDIR += memo
     SUBDIR += meshoptimizer
     SUBDIR += metalink-checker
     SUBDIR += metalink-tools
@@ -599,6 +606,12 @@
     SUBDIR += py-shell-gpt
     SUBDIR += py-sigopt
     SUBDIR += py-smdebug-rulesconfig
+    SUBDIR += py-snakemake-interface-common
+    SUBDIR += py-snakemake-interface-executor-plugins
+    SUBDIR += py-snakemake-interface-logger-plugins
+    SUBDIR += py-snakemake-interface-report-plugins
+    SUBDIR += py-snakemake-interface-scheduler-plugins
+    SUBDIR += py-snakemake-interface-storage-plugins
     SUBDIR += py-soapy_power
     SUBDIR += py-spandrel
     SUBDIR += py-spdx-tools

@@ -1,6 +1,6 @@
 PORTNAME=	netbox
 DISTVERSIONPREFIX=	v
-DISTVERSION=	4.5.7
+DISTVERSION=	4.5.8
 CATEGORIES=	net-mgmt python
 
 MAINTAINER=	kai@FreeBSD.org
@@ -23,7 +23,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE.txt
 # - www/py-dj52-django-tables2
 # - www/py-dj52-djangorestframework
 #
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django52>=5.2.12<5.3:www/py-django52@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django52>=5.2.13<5.3:www/py-django52@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-django-cors-headers>=4.9.0<5:www/py-dj52-django-cors-headers@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-django-debug-toolbar>=6.2.0<7:www/py-dj52-django-debug-toolbar@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-django-filter>=25.2<26:www/py-dj52-django-filter@${PY_FLAVOR} \
@@ -32,7 +32,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django52>=5.2.12<5.3:www/py-django52@${PY_FL
 		${PYTHON_PKGNAMEPREFIX}dj52-django-prometheus>=2.4.1<2.5:www/py-dj52-django-prometheus@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-django-redis>=6.0.0<7:www/py-dj52-django-redis@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-django-rich>=2.2.0<3:www/py-dj52-django-rich@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dj52-django-rq>=4.0.1<4.1.0:devel/py-dj52-django-rq@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dj52-django-rq>=4.0.1<4.2.0:devel/py-dj52-django-rq@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-django-storages>=1.14.6<2:www/py-dj52-django-storages@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-django-tables2>=2.8.0<2.9:www/py-dj52-django-tables2@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-django-taggit>=6.1.0<7:www/py-dj52-django-taggit@${PY_FLAVOR} \
@@ -42,7 +42,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django52>=5.2.12<5.3:www/py-django52@${PY_FL
 		${PYTHON_PKGNAMEPREFIX}dj52-drf-spectacular-sidecar>=2026.4.1:www/py-dj52-drf-spectacular-sidecar@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-social-auth-app-django>=5.7.0<6:www/py-dj52-social-auth-app-django@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-sorl-thumbnail>=13.0.0<14:graphics/py-dj52-sorl-thumbnail@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}dj52-strawberry-graphql>=0.312.2<1:devel/py-dj52-strawberry-graphql@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}dj52-strawberry-graphql>=0.314.3<1:devel/py-dj52-strawberry-graphql@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dj52-strawberry-graphql-django>=0.82.1<1:www/py-dj52-strawberry-graphql-django@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}django-pglocks>=1.0.4<1.1:www/py-django-pglocks@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}colorama>=0.4.6<1:devel/py-colorama@${PY_FLAVOR} \

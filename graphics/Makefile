@@ -1213,6 +1213,7 @@
     SUBDIR += skanpage
     SUBDIR += skia
     SUBDIR += spirv-cross
+    SUBDIR += spirv-headers
     SUBDIR += spirv-tools
     SUBDIR += springgraph
     SUBDIR += squish

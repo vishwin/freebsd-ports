@@ -14,7 +14,7 @@ MAINTAINER=	vbox@FreeBSD.org
 COMMENT=	General-purpose full virtualizer for x86 hardware
 WWW=		https://www.virtualbox.org/
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 ONLY_FOR_ARCHS=	amd64

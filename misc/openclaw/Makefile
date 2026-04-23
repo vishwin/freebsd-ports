@@ -1,5 +1,6 @@
 PORTNAME=	openclaw
-DISTVERSION=	2026.4.14
+DISTVERSION=	2026.4.15
+PORTREVISION=	3
 CATEGORIES=	misc # machine-learning
 PKGNAMESUFFIX=	-ai-gateway
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
@@ -20,6 +21,36 @@ BUILD_DEPENDS=	npm:www/npm \
 RUN_DEPENDS=	vips>=8.17.2:graphics/vips
 
 USES=		nodejs:run pkgconfig python:build
+USE_RC_SUBR=	${PORTNAME}
+
+OPTIONS_DEFINE=		EXTEND_AI_TIMEOUT EXTEND_TYPING_TTL_TIMEOUT SKILL_DEPENDENCIES
+OPTIONS_DEFAULT=	EXTEND_AI_TIMEOUT EXTEND_TYPING_TTL_TIMEOUT SKILL_DEPENDENCIES
+
+EXTEND_AI_TIMEOUT_DESC=		Set AI endpoint request timeout to 24 hours for slow models
+EXTEND_TYPING_TTL_TIMEOUT_DESC=	Set typing indicator TTL to 5 hours for slow LLM responses
+SKILL_DEPENDENCIES_DESC=	Install dependencies for all supported skills
+
+# SKILL_DEPENDENCIES installs a lot of dependencies, but they are referenced in the SKILL.md files and can be used any time given the right request,
+# therefore we keep it ON by default. Users can disable it if they want to save space and don't mind manually installing dependencies for skills they want to use.
+SKILL_DEPENDENCIES_RUN_DEPENDS=	blogwatcher:misc/blogwatcher \
+				blu:audio/blucli \
+				camsnap:misc/camsnap \
+				clawhub:misc/clawhub \
+				curl:ftp/curl \
+				eightctl:misc/eightctl \
+				ffmpeg:multimedia/ffmpeg \
+				gh:devel/gh \
+				git:devel/git \
+				goplaces:misc/goplaces \
+				grizzly:misc/grizzly \
+				jq:textproc/jq \
+				memo:misc/memo \
+				op:security/op \
+				rg:textproc/ripgrep \
+				songsee:audio/songsee \
+				spotify_player:audio/spotify-player \
+				tmux:sysutils/tmux \
+				whisper:misc/py-openai-whisper
 
 PACKAGE_NAME=	openclaw
 
@@ -95,5 +126,25 @@ do-install:
 	@${ECHO_CMD} 'exec ${PREFIX}/lib/node_modules/${PACKAGE_NAME}/openclaw.mjs "$$@"' \
 		>> ${STAGEDIR}${PREFIX}/bin/openclaw
 	@${CHMOD} +x ${STAGEDIR}${PREFIX}/bin/openclaw
+
+post-patch-EXTEND_AI_TIMEOUT-on:
+	@${FIND} ${WRKSRC}/node_modules/${PACKAGE_NAME}/dist -name "*.js" \
+		-exec ${GREP} -q "DEFAULT_GUARDED_HTTP_TIMEOUT_MS = 6e4" {} \; \
+		-exec ${REINPLACE_CMD} \
+			-e 's/DEFAULT_GUARDED_HTTP_TIMEOUT_MS = 6e4/DEFAULT_GUARDED_HTTP_TIMEOUT_MS = 86400000/' {} \;
+	@${FIND} ${WRKSRC}/node_modules/${PACKAGE_NAME}/dist -name "*.js" \
+		-exec ${GREP} -q "DEFAULT_LLM_IDLE_TIMEOUT_MS = 120 \* 1e3" {} \; \
+		-exec ${REINPLACE_CMD} \
+			-e 's/DEFAULT_LLM_IDLE_TIMEOUT_MS = 120 \* 1e3/DEFAULT_LLM_IDLE_TIMEOUT_MS = 0/' {} \;
+	@${FIND} ${WRKSRC}/node_modules/${PACKAGE_NAME}/dist -name "*.js" \
+		-exec ${GREP} -q "new Agent(withHttp1OnlyDispatcherOptions(options))" {} \; \
+		-exec ${REINPLACE_CMD} \
+			-e 's/new Agent(withHttp1OnlyDispatcherOptions(options))/new Agent({ ...withHttp1OnlyDispatcherOptions(options), headersTimeout: 86400000, bodyTimeout: 86400000 })/' {} \;
+
+post-patch-EXTEND_TYPING_TTL_TIMEOUT-on:
+	@${FIND} ${WRKSRC}/node_modules/${PACKAGE_NAME}/dist -name "*.js" \
+		-exec ${GREP} -q "typingTtlMs = 2 \* 6e4" {} \; \
+		-exec ${REINPLACE_CMD} \
+			-e 's/typingTtlMs = 2 \* 6e4/typingTtlMs = 18000000/' {} \;
 
 .include <bsd.port.mk>

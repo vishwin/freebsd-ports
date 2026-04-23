@@ -1,5 +1,5 @@
 PORTNAME=	xonsh
-DISTVERSION=	0.22.8
+DISTVERSION=	0.23.1
 CATEGORIES=	shells python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -38,7 +38,9 @@ PYTEST_BROKEN_TESTS=	\
 		test_integrations.py \
 		test_man.py \
 		test_os.xsh \
+		test_pipelines.py \
 		test_ptk_highlight.py \
+		test_stress.py \
 		test_specs.py
 SHEBANG_FILES=	tests/bin/cat tests/bin/pwd tests/bin/wc
 
@@ -46,7 +48,7 @@ NO_ARCH=	yes
 
 post-patch:
 	${REINPLACE_CMD} -e 's|python3|${PYTHON_CMD}|' \
-		${WRKSRC}/tests/test_integrations.py \
+		${WRKSRC}/tests/xintegration/test_integrations.py \
 		${WRKSRC}/tests/test_virtualenv_activator.py
 
 .include <bsd.port.mk>

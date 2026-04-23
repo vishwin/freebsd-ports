@@ -1,3 +1,3 @@
-TIMESTAMP = 1775587346
-SHA256 (opentelemetry_distro-0.61b0.tar.gz) = 975b845f50181ad53753becf4fd4b123b54fa04df5a9d78812264436d6518981
-SIZE (opentelemetry_distro-0.61b0.tar.gz) = 2590
+TIMESTAMP = 1776864040
+SHA256 (opentelemetry_distro-0.62b0.tar.gz) = aa0308fbe50ad8f17d4446982dbf26870e20b8031ba38d8e1224ecf7aedd3184
+SIZE (opentelemetry_distro-0.62b0.tar.gz) = 2611

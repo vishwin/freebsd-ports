@@ -24,4 +24,9 @@ USE_PYTHON=	autoplist concurrent pep517
 
 NO_ARCH=	yes
 
+OPTIONS_DEFINE=	COMPLETION
+COMPLETION_DESC=Completion support
+
+COMPLETION_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}argcomplete>=3.1:devel/py-argcomplete@${PY_FLAVOR}
+
 .include <bsd.port.mk>

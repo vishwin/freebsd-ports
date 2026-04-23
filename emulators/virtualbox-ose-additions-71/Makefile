@@ -10,7 +10,7 @@ MAINTAINER=	vbox@FreeBSD.org
 COMMENT=	VirtualBox additions for FreeBSD guests
 WWW=		https://www.virtualbox.org/
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 ONLY_FOR_ARCHS=	amd64 i386

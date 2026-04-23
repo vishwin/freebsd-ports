@@ -1943,7 +1943,6 @@ sysutils/etcupdate||2023-03-21|Part of the base system since FreeBSD 10.0
 devel/freebsd-gcc6||2023-03-22|No longer able to build base system, use GCC 9 or later instead
 net/rubygem-gitlab-omniauth-openid-connect|net/rubygem-omniauth_openid_connect|2023-03-22|Obsolete use net/rubygem-omniauth_openid_connect instead
 japanese/mutt-devel||2023-03-25|Has expired: Broken since 2019
-audio/amarok||2023-03-31|Has expired: No longer actively maintained upstream
 audio/cd2mp3||2023-03-31|Has expired: Depends on deprecated port audio/dagrab, consider using audio/abcde or audio/cyanrip
 audio/cmp3||2023-03-31|Has expired: Abandonware, no development in 20 years. Please consider using audio/cmus or audio/musicpd
 audio/cpige||2023-03-31|Has expired: Doesn't work, newer versions also fails
@@ -5251,3 +5250,4 @@ emulators/emu64||2026-04-16|Broken, fails to build
 databases/py-sqlglotrs|databases/py-sqlglotc|2026-04-18|Remove obsoleted port. Use databases/py-sqlglotc instead
 devel/py-prettytable0|devel/py-prettytable|2026-04-18|Remove obsoleted port. Use devel/py-prettytable instead
 www/py-requests-cache0|www/py-requests-cache|2026-04-18|Remove obsoleted port. Use www/py-requests-cache instead
+sysutils/py-azure-cli-base||2026-04-21|Remove obsoleted port

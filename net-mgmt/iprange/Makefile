@@ -1,6 +1,5 @@
 PORTNAME=	iprange
-PORTVERSION=	1.0.4
-PORTREVISION=	2
+PORTVERSION=	2.0.0
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://github.com/firehol/iprange/releases/download/v${PORTVERSION}/
 
@@ -9,6 +8,7 @@ COMMENT=	Manage IP ranges
 WWW=		https://github.com/firehol/iprange
 
 LICENSE=	GPLv2+
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		tar:xz
 

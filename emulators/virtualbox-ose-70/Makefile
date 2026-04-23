@@ -14,7 +14,7 @@ MAINTAINER=	vbox@FreeBSD.org
 COMMENT=	General-purpose full virtualizer for x86 hardware
 WWW=		https://www.virtualbox.org/
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
 
 DEPRECATED=		Upstream EOL reaches on 2025-04-15, use emulators/virtualbox-ose${PKGNAMESUFFIX:S|0|2|} instead

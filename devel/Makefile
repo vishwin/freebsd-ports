@@ -893,6 +893,7 @@
     SUBDIR += gitolite2
     SUBDIR += gitoxide
     SUBDIR += gitqlient
+    SUBDIR += gittop
     SUBDIR += gittrac
     SUBDIR += gitty
     SUBDIR += gitu
@@ -1209,6 +1210,7 @@
     SUBDIR += laminar
     SUBDIR += lasi
     SUBDIR += lazygit
+    SUBDIR += lazyworktree
     SUBDIR += lcov
     SUBDIR += leaktracer
     SUBDIR += lefthook
@@ -4449,6 +4451,7 @@
     SUBDIR += py-argcomplete
     SUBDIR += py-argh
     SUBDIR += py-argparse
+    SUBDIR += py-argparse-dataclass
     SUBDIR += py-argparse-manpage
     SUBDIR += py-argparse_addons
     SUBDIR += py-args
@@ -4531,6 +4534,7 @@
     SUBDIR += py-azure-mgmt-consumption
     SUBDIR += py-azure-mgmt-containerinstance
     SUBDIR += py-azure-mgmt-containerregistry
+    SUBDIR += py-azure-mgmt-containerregistrytasks
     SUBDIR += py-azure-mgmt-containerservice
     SUBDIR += py-azure-mgmt-core
     SUBDIR += py-azure-mgmt-cosmosdb
@@ -4596,6 +4600,7 @@
     SUBDIR += py-azure-multiapi-storage
     SUBDIR += py-azure-storage-blob
     SUBDIR += py-azure-storage-common
+    SUBDIR += py-azure-storage-file-datalake
     SUBDIR += py-azure-storage-file-share
     SUBDIR += py-azure-storage-queue
     SUBDIR += py-azure-synapse-accesscontrol
@@ -4754,6 +4759,7 @@
     SUBDIR += py-commandlines
     SUBDIR += py-commentjson
     SUBDIR += py-commoncode
+    SUBDIR += py-conda-inject
     SUBDIR += py-condense-json
     SUBDIR += py-conditional
     SUBDIR += py-confection
@@ -4891,6 +4897,7 @@
     SUBDIR += py-dotmap
     SUBDIR += py-dotted
     SUBDIR += py-dotty-dict
+    SUBDIR += py-dpath
     SUBDIR += py-dpcontracts
     SUBDIR += py-dtfabric
     SUBDIR += py-dukpy
@@ -6174,6 +6181,7 @@
     SUBDIR += py-threema-msgapi
     SUBDIR += py-thrift
     SUBDIR += py-thriftpy2
+    SUBDIR += py-throttler
     SUBDIR += py-tiamat
     SUBDIR += py-time-machine
     SUBDIR += py-timelib
@@ -6856,6 +6864,7 @@
     SUBDIR += rubygem-aws-sdk-inspector
     SUBDIR += rubygem-aws-sdk-inspector2
     SUBDIR += rubygem-aws-sdk-inspectorscan
+    SUBDIR += rubygem-aws-sdk-interconnect
     SUBDIR += rubygem-aws-sdk-internetmonitor
     SUBDIR += rubygem-aws-sdk-invoicing
     SUBDIR += rubygem-aws-sdk-iot
@@ -6915,6 +6924,7 @@
     SUBDIR += rubygem-aws-sdk-marketplacecatalog
     SUBDIR += rubygem-aws-sdk-marketplacecommerceanalytics
     SUBDIR += rubygem-aws-sdk-marketplacedeployment
+    SUBDIR += rubygem-aws-sdk-marketplacediscovery
     SUBDIR += rubygem-aws-sdk-marketplaceentitlementservice
     SUBDIR += rubygem-aws-sdk-marketplacemetering
     SUBDIR += rubygem-aws-sdk-marketplacereporting
@@ -7014,6 +7024,7 @@
     SUBDIR += rubygem-aws-sdk-s3
     SUBDIR += rubygem-aws-sdk-s3-gitlab
     SUBDIR += rubygem-aws-sdk-s3control
+    SUBDIR += rubygem-aws-sdk-s3files
     SUBDIR += rubygem-aws-sdk-s3outposts
     SUBDIR += rubygem-aws-sdk-s3tables
     SUBDIR += rubygem-aws-sdk-s3vectors
@@ -7349,6 +7360,7 @@
     SUBDIR += rubygem-cucumber-tag-expressions
     SUBDIR += rubygem-cucumber-tag-expressions8
     SUBDIR += rubygem-cucumber-wire
+    SUBDIR += rubygem-cucumber10
     SUBDIR += rubygem-curses
     SUBDIR += rubygem-cyoi
     SUBDIR += rubygem-daemon_controller
@@ -7656,6 +7668,7 @@
     SUBDIR += rubygem-io-console
     SUBDIR += rubygem-io-endpoint
     SUBDIR += rubygem-io-event
+    SUBDIR += rubygem-io-event-gitlab
     SUBDIR += rubygem-io-like
     SUBDIR += rubygem-io-nonblock
     SUBDIR += rubygem-io-stream
@@ -7956,6 +7969,7 @@
     SUBDIR += rubygem-pairing_heap
     SUBDIR += rubygem-paper_trail
     SUBDIR += rubygem-parser
+    SUBDIR += rubygem-parser-gitlab
     SUBDIR += rubygem-pastel
     SUBDIR += rubygem-patch_finder
     SUBDIR += rubygem-pathname

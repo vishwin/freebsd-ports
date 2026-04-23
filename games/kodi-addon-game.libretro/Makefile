@@ -9,6 +9,10 @@ WWW=		https://github.com/kodi-game/game.libretro
 
 LICENSE=	GPLv2+
 
+DEPRECATED=	Failing to build for a long time.
+EXPIRATION_DATE=	2026-10-22
+BROKEN=		LibretroEnvironment.cpp:216:17: error: no member named 'context_type' in 'game_stream_hw_framebuffer_properties'
+
 LIB_DEPENDS=	libtinyxml.so:textproc/tinyxml
 
 USES=		cmake localbase compiler:c++14-lang kodi
