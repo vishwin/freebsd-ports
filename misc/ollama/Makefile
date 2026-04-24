@@ -1,7 +1,6 @@
 PORTNAME=	ollama
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.21.0
-PORTREVISION=	1
+DISTVERSION=	0.21.2
 CATEGORIES=	misc # machine-learning
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -81,9 +80,6 @@ MASTER_SITES+=	https://github.com/ml-explore/mlx/archive/refs/tags/:mlxsrc \
 CONFLICTS_BUILD=	ggml
 
 post-patch:
-	# change import path to the fork
-	@cd ${WRKSRC} && \
-		(${GREP} -rl ollama/ollama | ${XARGS} ${REINPLACE_CMD} -i '' -e 's|ollama/ollama|yurivict/ollama|g')
 	# update version in go.mod and version.go
 	@${REINPLACE_CMD} -e 's|var Version string = "0.0.0"|var Version string = "${PORTVERSION}"|g' \
 		${WRKSRC}/go.mod ${WRKSRC}/version/version.go

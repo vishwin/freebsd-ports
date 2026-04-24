@@ -1210,6 +1210,7 @@
     SUBDIR += laminar
     SUBDIR += lasi
     SUBDIR += lazygit
+    SUBDIR += lazymake
     SUBDIR += lazyworktree
     SUBDIR += lcov
     SUBDIR += leaktracer
