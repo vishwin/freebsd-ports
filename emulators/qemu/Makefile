@@ -1,5 +1,5 @@
 PORTNAME=	qemu
-DISTVERSION=	10.2.2
+DISTVERSION=	11.0.0
 CATEGORIES=	emulators
 MASTER_SITES=	https://download.qemu.org/
 DIST_SUBDIR=	qemu/${PORTVERSION}
@@ -15,7 +15,8 @@ ONLY_FOR_ARCHS=	aarch64 amd64 powerpc64 powerpc64le
 # We need to check if it build with other ARCHS
 .endif
 
-BUILD_DEPENDS=	bash:shells/bash
+BUILD_DEPENDS=	bash:shells/bash \
+		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR}
 .if ${FLAVOR:U} != guestagent
 LIB_DEPENDS+=	libzstd.so:archivers/zstd
 .endif

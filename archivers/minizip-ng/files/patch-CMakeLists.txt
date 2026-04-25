@@ -1,0 +1,10 @@
+--- CMakeLists.txt.orig	2026-04-23 04:10:20 UTC
++++ CMakeLists.txt
+@@ -381,6 +381,7 @@ if(MZ_PPMD)
+         ${PPMD_SOURCE_DIR}/C/Precomp.h)
+ 
+     add_library(ppmd STATIC ${PPMD_SRC} ${PPMD_HDR})
++    target_compile_options(ppmd PRIVATE -fPIC)
+ 
+     list(APPEND MINIZIP_DEP ppmd)
+     list(APPEND MINIZIP_INC ${PPMD_SOURCE_DIR})

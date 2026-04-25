@@ -658,6 +658,7 @@
     SUBDIR += qt6ct
     SUBDIR += quantum++
     SUBDIR += quary
+    SUBDIR += qwen-code
     SUBDIR += radio_datetime_analyzer
     SUBDIR += raja
     SUBDIR += randomx

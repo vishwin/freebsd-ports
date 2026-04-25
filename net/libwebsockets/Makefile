@@ -1,6 +1,6 @@
 PORTNAME=	libwebsockets
 DISTVERSIONPREFIX=	v
-DISTVERSION=	4.3.7
+DISTVERSION=	4.3.8
 CATEGORIES=	net devel
 #MASTER_SITES=	https://libwebsockets.org/git/libwebsockets/snapshot/
 
