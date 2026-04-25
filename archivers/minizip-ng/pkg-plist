@@ -1,3 +1,4 @@
+include/minizip-ng/crypt.h
 include/minizip-ng/ioapi.h
 include/minizip-ng/mz.h
 include/minizip-ng/mz_compat.h
@@ -22,8 +23,8 @@ include/minizip-ng/unzip.h
 include/minizip-ng/zip.h
 lib/cmake/minizip-ng/minizip-ng-config-version.cmake
 lib/cmake/minizip-ng/minizip-ng-config.cmake
-lib/cmake/minizip-ng/minizip-ng-%%CMAKE_BUILD_TYPE%%.cmake
-lib/cmake/minizip-ng/minizip-ng.cmake
+lib/cmake/minizip-ng/minizip-ng-targets-%%CMAKE_BUILD_TYPE%%.cmake
+lib/cmake/minizip-ng/minizip-ng-targets.cmake
 lib/libminizip-ng.so
 lib/libminizip-ng.so.1
 lib/libminizip-ng.so.%%VERSION%%

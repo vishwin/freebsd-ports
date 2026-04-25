@@ -29,15 +29,6 @@ Apply FreeBSD's configuration defaults.
  	if (options->pam_service_name == NULL)
  		options->pam_service_name = xstrdup(SSHD_PAM_SERVICE);
  
-@@ -339,7 +344,7 @@ fill_default_server_options(ServerOptions *options)
- 	if (options->print_lastlog == -1)
- 		options->print_lastlog = 1;
- 	if (options->x11_forwarding == -1)
--		options->x11_forwarding = 0;
-+		options->x11_forwarding = 1;
- 	if (options->x11_display_offset == -1)
- 		options->x11_display_offset = 10;
- 	if (options->x11_use_localhost == -1)
 @@ -381,7 +386,11 @@ fill_default_server_options(ServerOptions *options)
  	if (options->gss_strict_acceptor == -1)
  		options->gss_strict_acceptor = 1;

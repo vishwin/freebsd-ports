@@ -1,6 +1,5 @@
 PORTNAME=	openclaw
-DISTVERSION=	2026.4.15
-PORTREVISION=	3
+DISTVERSION=	2026.4.23
 CATEGORIES=	misc # machine-learning
 PKGNAMESUFFIX=	-ai-gateway
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
@@ -16,7 +15,8 @@ FETCH_DEPENDS=	curl:ftp/curl \
 		jq:textproc/jq \
 		npm:www/npm \
 		${LOCALBASE}/share/certs/ca-root-nss.crt:security/ca_root_nss
-BUILD_DEPENDS=	npm:www/npm \
+BUILD_DEPENDS=	cmake:devel/cmake \
+		npm:www/npm \
 		vips>=8.17.2:graphics/vips
 RUN_DEPENDS=	vips>=8.17.2:graphics/vips
 
@@ -59,12 +59,20 @@ PLIST_SUB=	NODE_ARCH=${NODE_ARCH}
 
 FETCH_SCRIPT=	${PORTSDIR}/Tools/scripts/npmjs-fetch-with-dependencies.sh
 
+# Binary NodeJS modules that require building for the target platform:
+# - sharp: Fast image processing library for reading, manipulating, and encoding images
+# - koffi: C foreign function interface (FFI) for calling native libraries
+# - node-addon-api: Helper library for building native Node.js modules
+
 dep_sharp_npm_name=		sharp
 dep_sharp_version=		0.34.5
+dep_koffi_npm_name=		koffi
+dep_koffi_version=		2.16.1
 dep_node_addon_api_npm_name=	node-addon-api
 dep_node_addon_api_version=	8.5.0
 
 DISTFILES+=	sharp-${dep_sharp_version}${EXTRACT_SUFX} \
+		koffi-${dep_koffi_version}${EXTRACT_SUFX} \
 		node-addon-api-${dep_node_addon_api_version}${EXTRACT_SUFX}
 
 DD=	${DISTDIR}/${DIST_SUBDIR}
@@ -82,6 +90,12 @@ do-fetch:
 			${dep_sharp_npm_name} ${dep_sharp_version} \
 			${FILESDIR}/package-lock-sharp.json \
 			${DD}/sharp-${dep_sharp_version}${EXTRACT_SUFX}; \
+	fi
+	@if ! [ -f ${DD}/koffi-${dep_koffi_version}${EXTRACT_SUFX} ]; then \
+		${SETENV} TMPDIR=${WRKDIR} LOCALBASE=${LOCALBASE} ${FETCH_SCRIPT} \
+			${dep_koffi_npm_name} ${dep_koffi_version} \
+			${FILESDIR}/package-lock-koffi.json \
+			${DD}/koffi-${dep_koffi_version}${EXTRACT_SUFX}; \
 	fi
 	@if ! [ -f ${DD}/node-addon-api-${dep_node_addon_api_version}${EXTRACT_SUFX} ]; then \
 		${SETENV} TMPDIR=${WRKDIR} LOCALBASE=${LOCALBASE} ${FETCH_SCRIPT} \
@@ -104,6 +118,13 @@ do-build:
 		${MKDIR} ${WRKSRC}/node_modules/openclaw/node_modules/@img/sharp-freebsd-${NODE_ARCH} && \
 		${CP} build/Release/sharp-freebsd-${NODE_ARCH}.node \
 			${WRKSRC}/node_modules/openclaw/node_modules/@img/sharp-freebsd-${NODE_ARCH}/sharp.node
+	@${ECHO_MSG} "====> Building koffi for FreeBSD..."
+	@cd ${WRKDIR}/${dep_koffi_npm_name}-${dep_koffi_version}/node_modules/${dep_koffi_npm_name} && \
+		${SETENV} HOME=${WRKDIR} PYTHON=${PYTHON_CMD} \
+			node src/cnoke/cnoke.js build -P . -D src/koffi && \
+		${MKDIR} ${WRKSRC}/node_modules/openclaw/node_modules/koffi/build/koffi/freebsd_${NODE_ARCH} && \
+		${CP} $$(${FIND} ${WRKDIR}/${dep_koffi_npm_name}-${dep_koffi_version}/node_modules/${dep_koffi_npm_name}/build/koffi/freebsd_${NODE_ARCH} -name "koffi.node" -type f | ${HEAD} -1) \
+			${WRKSRC}/node_modules/openclaw/node_modules/koffi/build/koffi/freebsd_${NODE_ARCH}/koffi.node
 
 do-install:
 	# install node_modules
@@ -146,5 +167,12 @@ post-patch-EXTEND_TYPING_TTL_TIMEOUT-on:
 		-exec ${GREP} -q "typingTtlMs = 2 \* 6e4" {} \; \
 		-exec ${REINPLACE_CMD} \
 			-e 's/typingTtlMs = 2 \* 6e4/typingTtlMs = 18000000/' {} \;
+
+post-install:
+	# remove empty directories in STAGEDIR
+	@${FIND} ${STAGEDIR}${PREFIX}/lib/node_modules -type d -empty -delete
+	# autoplist: thousands of files with randomizing strings in names warrant autoplist
+	@cd ${STAGEDIR}${PREFIX} && \
+		${FIND} * -type f -or -type l >> ${TMPPLIST}
 
 .include <bsd.port.mk>

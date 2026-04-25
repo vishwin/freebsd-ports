@@ -1,7 +1,7 @@
 PORTNAME=	forgejo
 DISTVERSIONPREFIX=	v
 DISTVERSION=	14.0.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	https://codeberg.org/forgejo/forgejo/releases/download/${DISTVERSIONFULL}/
 DISTNAME=	forgejo-src-${DISTVERSION}
@@ -55,6 +55,7 @@ SQLITE_VARS=		GO_TAGS+="sqlite sqlite_unlock_notify"
 
 SSP_UNSAFE=	true
 LDFLAGS=	"'-X "forgejo.org/modules/setting.CustomPath=${PREFIX}/etc/forgejo"'" \
+		"'-X "forgejo.org/modules/setting.StaticRootPath=${DATADIR}"'" \
 		"'-X "forgejo.org/modules/setting.AppWorkPath=${DBDIR}"'"
 MAKE_ARGS=	GOFLAGS="-buildvcs=false" \
 		GOPATH=${WRKDIR} \
@@ -88,7 +89,9 @@ do-install:
 		${STAGEDIR}${ETCDIR}/conf/app.ini.sample
 	${INSTALL_DATA} ${WRKSRC}/custom/conf/app.example.ini \
 		${STAGEDIR}${ETCDIR}/conf/app.ini.defaults
+.if ! ${PORT_OPTIONS:MBINDATA}
 	${MKDIR} ${STAGEDIR}${DATADIR}
+.endif
 	${MKDIR} ${STAGEDIR}${DBDIR}/data
 	${MKDIR} ${STAGEDIR}${DBDIR}/forgejo-repositories
 	${MKDIR} ${STAGEDIR}${LOGDIR}

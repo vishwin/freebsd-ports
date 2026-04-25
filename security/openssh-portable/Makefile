@@ -1,6 +1,6 @@
 PORTNAME=	openssh
 DISTVERSION=	10.2p1
-PORTREVISION=	2
+PORTREVISION=	4
 PORTEPOCH=	1
 CATEGORIES=	security
 MASTER_SITES=	OPENBSD/OpenSSH/portable
@@ -42,7 +42,7 @@ gssapi_PKGNAMESUFFIX=		-portable-gssapi
 
 OPTIONS_DEFINE=		DOCS PAM TCP_WRAPPERS LIBEDIT BSM \
 			HPN KERB_GSSAPI \
-			LDNS NONECIPHER XMSS FIDO_U2F BLACKLISTD
+			LDNS NONECIPHER FIDO_U2F BLACKLISTD
 OPTIONS_DEFAULT=	BLACKLISTD LIBEDIT PAM TCP_WRAPPERS LDNS FIDO_U2F
 .if ${FLAVOR:U} == hpn
 OPTIONS_DEFAULT+=	HPN NONECIPHER
@@ -61,7 +61,6 @@ HEIMDAL_DESC=		Heimdal Kerberos (security/heimdal)
 HEIMDAL_BASE_DESC=	Heimdal Kerberos (base)
 MIT_DESC=		MIT Kerberos (security/krb5)
 NONECIPHER_DESC=	NONE Cipher support
-XMSS_DESC=		XMSS key support (experimental)
 FIDO_U2F_DESC=		FIDO/U2F support (security/libfido2)
 BLACKLISTD_DESC=	FreeBSD blacklistd(8) support
 
@@ -216,9 +215,6 @@ post-patch:
 	    ${WRKSRC}/sshd_config.5
 	@${ECHO_CMD} '#define SSH_VERSION_FREEBSD_PORT	"${VERSION_ADDENDUM_DEFAULT}"' >> \
 		${WRKSRC}/version.h
-
-post-configure-XMSS-on:
-	@${ECHO_CMD} "#define WITH_XMSS 1" >> ${WRKSRC}/config.h
 
 post-configure-BLACKLISTD-on:
 	@${ECHO_CMD} "#define USE_BLACKLIST 1" >> ${WRKSRC}/config.h
