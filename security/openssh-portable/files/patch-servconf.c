@@ -6,9 +6,9 @@ Changed paths:
 
 Apply FreeBSD's configuration defaults.
 
---- servconf.c.orig	2024-07-01 13:30:30.284417000 -0700
-+++ servconf.c	2024-07-01 13:31:20.040132000 -0700
-@@ -46,6 +46,7 @@
+--- servconf.c.orig	2026-04-25 16:05:26.936844000 -0700
++++ servconf.c	2026-04-25 16:18:06.486288000 -0700
+@@ -44,6 +44,7 @@
  # include "openbsd-compat/glob.h"
  #endif
  
@@ -16,7 +16,7 @@ Apply FreeBSD's configuration defaults.
  #include "openbsd-compat/sys-queue.h"
  #include "xmalloc.h"
  #include "ssh.h"
-@@ -295,7 +296,11 @@ fill_default_server_options(ServerOptions *options)
+@@ -298,7 +299,11 @@ fill_default_server_options(ServerOptions *options)
  
  	/* Portable-specific options */
  	if (options->use_pam == -1)
@@ -29,7 +29,16 @@ Apply FreeBSD's configuration defaults.
  	if (options->pam_service_name == NULL)
  		options->pam_service_name = xstrdup(SSHD_PAM_SERVICE);
  
-@@ -381,7 +386,11 @@ fill_default_server_options(ServerOptions *options)
+@@ -328,7 +333,7 @@ fill_default_server_options(ServerOptions *options)
+ 	if (options->login_grace_time == -1)
+ 		options->login_grace_time = 120;
+ 	if (options->permit_root_login == PERMIT_NOT_SET)
+-		options->permit_root_login = PERMIT_NO_PASSWD;
++		options->permit_root_login = PERMIT_NO;
+ 	if (options->ignore_rhosts == -1)
+ 		options->ignore_rhosts = 1;
+ 	if (options->ignore_user_known_hosts == -1)
+@@ -380,7 +385,11 @@ fill_default_server_options(ServerOptions *options)
  	if (options->gss_strict_acceptor == -1)
  		options->gss_strict_acceptor = 1;
  	if (options->password_authentication == -1)

@@ -1,5 +1,5 @@
 PORTNAME=	openclaw
-DISTVERSION=	2026.4.23
+DISTVERSION=	2026.4.24
 CATEGORIES=	misc # machine-learning
 PKGNAMESUFFIX=	-ai-gateway
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
@@ -171,7 +171,7 @@ post-patch-EXTEND_TYPING_TTL_TIMEOUT-on:
 post-install:
 	# remove empty directories in STAGEDIR
 	@${FIND} ${STAGEDIR}${PREFIX}/lib/node_modules -type d -empty -delete
-	# autoplist: thousands of files with randomizing strings in names warrant autoplist
+	# autoplist: 32k+ files with randomizing strings in names warrant autoplist
 	@cd ${STAGEDIR}${PREFIX} && \
 		${FIND} * -type f -or -type l >> ${TMPPLIST}
 
