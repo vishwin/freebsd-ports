@@ -712,6 +712,7 @@
     SUBDIR += snakemake
     SUBDIR += soapysdr
     SUBDIR += solarized
+    SUBDIR += sonoscli
     SUBDIR += spacenavd-devel
     SUBDIR += spnavcfg-devel
     SUBDIR += sshbuddy
@@ -775,6 +776,7 @@
     SUBDIR += viz
     SUBDIR += vote
     SUBDIR += vxl
+    SUBDIR += wacli
     SUBDIR += wavedrom
     SUBDIR += wego
     SUBDIR += whichman

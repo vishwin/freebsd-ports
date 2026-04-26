@@ -515,6 +515,7 @@
     SUBDIR += muse
     SUBDIR += mxml
     SUBDIR += mythes
+    SUBDIR += nano-pdf
     SUBDIR += nb-aspell
     SUBDIR += nds-aspell
     SUBDIR += nerdlog

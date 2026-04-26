@@ -714,6 +714,7 @@
     SUBDIR += rubygem-ruby-ogginfo
     SUBDIR += rubygem-ruby-shout
     SUBDIR += s3mod
+    SUBDIR += sag
     SUBDIR += samplv1-lv2
     SUBDIR += sayonara
     SUBDIR += sbagen
