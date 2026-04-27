@@ -674,6 +674,7 @@
     SUBDIR += nextgo
     SUBDIR += nexuiz
     SUBDIR += nighthawk
+    SUBDIR += nile
     SUBDIR += nimuh
     SUBDIR += ninix-aya
     SUBDIR += njam
