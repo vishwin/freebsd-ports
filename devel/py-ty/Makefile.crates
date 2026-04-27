@@ -141,6 +141,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		hashbrown-0.14.5 \
 		hashbrown-0.15.5 \
 		hashbrown-0.16.1 \
+		hashbrown-0.17.0 \
 		hashlink-0.10.0 \
 		heck-0.5.0 \
 		hermit-abi-0.5.2 \
@@ -161,7 +162,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		ignore-0.4.25 \
 		imara-diff-0.2.0 \
 		imperative-1.0.7 \
-		indexmap-2.13.1 \
+		indexmap-2.14.0 \
 		indicatif-0.18.4 \
 		indoc-2.0.7 \
 		inotify-0.11.0 \
@@ -205,7 +206,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		manyhow-macros-0.11.4 \
 		markdown-1.0.0 \
 		matchers-0.2.0 \
-		matchit-0.9.1 \
+		matchit-0.9.2 \
 		memchr-2.8.0 \
 		memoffset-0.9.1 \
 		mimalloc-0.1.48 \
@@ -229,7 +230,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		once_cell_polyfill-1.70.1 \
 		oorandom-11.1.5 \
 		option-ext-0.2.0 \
-		ordermap-1.1.0 \
+		ordermap-1.2.0 \
 		os_pipe-1.2.2 \
 		os_str_bytes-7.1.1 \
 		page_size-0.6.0 \

@@ -1,5 +1,5 @@
 PORTNAME=	libhydrogen
-PORTVERSION=	0.0.0.g20260331
+PORTVERSION=	0.0.0.g20260419
 CATEGORIES=	security
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -15,6 +15,6 @@ MESON_ARGS=	--default-library=both
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	jedisct1
-GH_TAGNAME=	cd65ca8
+GH_TAGNAME=	f3ab14c
 
 .include <bsd.port.mk>

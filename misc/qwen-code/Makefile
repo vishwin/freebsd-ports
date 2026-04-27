@@ -1,5 +1,5 @@
 PORTNAME=	qwen-code
-DISTVERSION=	0.15.2
+DISTVERSION=	0.15.3
 CATEGORIES=	misc # machine-learning
 DISTFILES=	${PORTNAME}-${DISTVERSION}${EXTRACT_SUFX}
 
@@ -32,7 +32,6 @@ do-fetch:
 	fi
 
 do-install:
-	# install node_modules
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib
 	@cd ${WRKSRC} && \
 		${COPYTREE_SHARE} node_modules ${STAGEDIR}${PREFIX}/lib
@@ -41,11 +40,12 @@ do-install:
 	@${RM} -r ${STAGEDIR}${PREFIX}/lib/node_modules/${PACKAGE_NAME}/vendor/ripgrep
 	# remove macOS-only sandbox profiles
 	@${RM} ${STAGEDIR}${PREFIX}/lib/node_modules/${PACKAGE_NAME}/sandbox-macos-*.sb
-	# update shebang
 	${REINPLACE_CMD} -i '' \
 		-e "s|#!/usr/bin/env node|#!${PREFIX}/bin/node|" \
 		${STAGEDIR}${PREFIX}/lib/node_modules/${PACKAGE_NAME}/cli.js
-	# set exec bit
+	${REINPLACE_CMD} -i '' \
+		-e 's|settings.merged.general?.enableAutoUpdate !== false|false|g' \
+		${STAGEDIR}${PREFIX}/lib/node_modules/${PACKAGE_NAME}/cli.js
 	@${CHMOD} +x ${STAGEDIR}${PREFIX}/lib/node_modules/${PACKAGE_NAME}/cli.js
 	# create wrapper script
 	@${MKDIR} ${STAGEDIR}${PREFIX}/bin

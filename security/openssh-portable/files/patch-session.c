@@ -13,9 +13,9 @@ to the child process.
 Reviewed by:    ache
 Sponsored by:   DARPA, NAI Labs
 
---- session.c.orig	2021-04-15 20:55:25.000000000 -0700
-+++ session.c	2021-04-27 13:11:13.515917000 -0700
-@@ -939,6 +939,9 @@ do_setup_env(struct ssh *ssh, Session *s, const char *
+--- session.c.orig	2026-04-02 01:09:03.000000000 -0700
++++ session.c	2026-04-25 16:52:16.015940000 -0700
+@@ -940,6 +940,9 @@ do_setup_env(struct ssh *ssh, Session *s, const char *
  	struct passwd *pw = s->pw;
  #if !defined (HAVE_LOGIN_CAP) && !defined (HAVE_CYGWIN)
  	char *path = NULL;
@@ -25,7 +25,7 @@ Sponsored by:   DARPA, NAI Labs
  #endif
  
  	/* Initialize the environment. */
-@@ -960,6 +963,9 @@ do_setup_env(struct ssh *ssh, Session *s, const char *
+@@ -961,6 +964,9 @@ do_setup_env(struct ssh *ssh, Session *s, const char *
  	}
  #endif
  
@@ -35,7 +35,7 @@ Sponsored by:   DARPA, NAI Labs
  #ifdef GSSAPI
  	/* Allow any GSSAPI methods that we've used to alter
  	 * the child's environment as they see fit
-@@ -977,11 +983,30 @@ do_setup_env(struct ssh *ssh, Session *s, const char *
+@@ -978,11 +984,30 @@ do_setup_env(struct ssh *ssh, Session *s, const char *
  	child_set_env(&env, &envsize, "LOGIN", pw->pw_name);
  #endif
  	child_set_env(&env, &envsize, "HOME", pw->pw_dir);
@@ -70,25 +70,26 @@ Sponsored by:   DARPA, NAI Labs
  #else /* HAVE_LOGIN_CAP */
  # ifndef HAVE_CYGWIN
  	/*
-@@ -1001,17 +1026,9 @@ do_setup_env(struct ssh *ssh, Session *s, const char *
+@@ -1001,18 +1026,10 @@ do_setup_env(struct ssh *ssh, Session *s, const char *
+ 	}
  # endif /* HAVE_CYGWIN */
  #endif /* HAVE_LOGIN_CAP */
- 
+-
 -	if (!options.use_pam) {
 -		snprintf(buf, sizeof buf, "%.200s/%.50s",
 -		    _PATH_MAILDIR, pw->pw_name);
 -		child_set_env(&env, &envsize, "MAIL", buf);
 -	}
--
+ 
  	/* Normal systems set SHELL by default. */
  	child_set_env(&env, &envsize, "SHELL", shell);
  
 -	if (getenv("TZ"))
 -		child_set_env(&env, &envsize, "TZ", getenv("TZ"));
- 	if (s->term)
- 		child_set_env(&env, &envsize, "TERM", s->term);
- 	if (s->display)
-@@ -1225,7 +1242,8 @@ do_nologin(struct passwd *pw)
+ #ifdef HAVE_LOGIN_CAP
+ 	if (getenv("XDG_RUNTIME_DIR")) {
+ 		child_set_env(&env, &envsize, "XDG_RUNTIME_DIR",
+@@ -1232,7 +1249,8 @@ do_nologin(struct passwd *pw)
  do_nologin(struct passwd *pw)
  {
  	FILE *f = NULL;
@@ -98,7 +99,7 @@ Sponsored by:   DARPA, NAI Labs
  	struct stat sb;
  
  #ifdef HAVE_LOGIN_CAP
-@@ -1315,7 +1333,7 @@ do_setusercontext(struct passwd *pw)
+@@ -1322,7 +1340,7 @@ do_setusercontext(struct passwd *pw)
  	if (platform_privileged_uidswap()) {
  #ifdef HAVE_LOGIN_CAP
  		if (setusercontext(lc, pw, pw->pw_uid,

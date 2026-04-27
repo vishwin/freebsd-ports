@@ -12,6 +12,8 @@ WWW=		http://sites.math.rutgers.edu/~asbuch/lrcalc/
 
 LICENSE=	GPLv3
 
+BUILD_DEPENDS=	${PY_SETUPTOOLS}	\
+		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR}
 LIB_DEPENDS=	liblrcalc.so:math/lrcalc
 
 USES=		localbase python

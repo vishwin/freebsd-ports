@@ -1,5 +1,6 @@
 PORTNAME=	qemu
 DISTVERSION=	11.0.0
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	https://download.qemu.org/
 DIST_SUBDIR=	qemu/${PORTVERSION}
@@ -16,6 +17,7 @@ ONLY_FOR_ARCHS=	aarch64 amd64 powerpc64 powerpc64le
 .endif
 
 BUILD_DEPENDS=	bash:shells/bash \
+		${PYTHON_PKGNAMEPREFIX}qemu.qmp>=0.0.5:emulators/py-qemu.qmp@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR}
 .if ${FLAVOR:U} != guestagent
 LIB_DEPENDS+=	libzstd.so:archivers/zstd
@@ -52,7 +54,7 @@ guestagent_PLIST=		${.CURDIR}/pkg-plist-ga
 guestagent_CONFLICTS_INSTALL=	qemu qemu-devel qemu-nox11 qemu-tools qemu-utils qemu6* \
 				qemu7* qemu-guest-agent
 
-USES=		cpe gmake gnome ninja perl5 pkgconfig python:build shebangfix tar:xz
+USES=		cpe gmake gnome ninja perl5 pkgconfig python shebangfix tar:xz
 SHEBANG_FILES=	scripts/xml-preprocess.py
 USE_GNOME=	glib20
 USE_PERL5=	build

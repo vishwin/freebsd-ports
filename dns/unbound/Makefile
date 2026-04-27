@@ -1,6 +1,6 @@
 PORTNAME=	unbound
 DISTVERSION=	1.24.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	dns
 MASTER_SITES=	https://www.nlnetlabs.nl/downloads/unbound/
 

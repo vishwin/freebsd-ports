@@ -812,6 +812,7 @@
     SUBDIR += nvimpager
     SUBDIR += nvme-cli
     SUBDIR += nvramtool
+    SUBDIR += nvtop
     SUBDIR += oak
     SUBDIR += obliterate
     SUBDIR += oc
@@ -1060,6 +1061,7 @@
     SUBDIR += py-croniter2
     SUBDIR += py-dbuild
     SUBDIR += py-debian-inspector
+    SUBDIR += py-dex
     SUBDIR += py-dict-toolbox
     SUBDIR += py-diffoscope
     SUBDIR += py-director
@@ -1082,7 +1084,6 @@
     SUBDIR += py-howdoi
     SUBDIR += py-hpilo
     SUBDIR += py-iowait
-    SUBDIR += py-ioztat
     SUBDIR += py-jailconf
     SUBDIR += py-keep
     SUBDIR += py-kubernetes
@@ -1304,6 +1305,7 @@
     SUBDIR += rw-tui
     SUBDIR += s-tui
     SUBDIR += s6
+    SUBDIR += s6-frontend
     SUBDIR += s6-rc
     SUBDIR += safe-rm
     SUBDIR += safecat

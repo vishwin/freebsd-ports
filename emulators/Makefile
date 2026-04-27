@@ -113,6 +113,7 @@
     SUBDIR += ppsspp
     SUBDIR += py-gns3-converter
     SUBDIR += py-m64py
+    SUBDIR += py-qemu.qmp
     SUBDIR += py-unicorn
     SUBDIR += qemu
     SUBDIR += qemu-cheri

@@ -792,6 +792,8 @@
     SUBDIR += py-mysql-connector-python
     SUBDIR += py-mysqlclient
     SUBDIR += py-ormar
+    SUBDIR += py-oxyde
+    SUBDIR += py-oxyde-core
     SUBDIR += py-partd
     SUBDIR += py-peewee
     SUBDIR += py-peewee_migrate

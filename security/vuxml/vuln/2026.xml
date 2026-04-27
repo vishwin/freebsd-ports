@@ -1,3 +1,58 @@
+  <vuln vid="88440f1d-4168-11f1-95f7-00a098b42aeb">
+    <topic>(lib)expat -- Insufficient entropy</topic>
+    <affects>
+    <package>
+	<name>expat</name>
+	<range><lt>2.8.0</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://github.com/libexpat/libexpat/pull/1183 reports:</p>
+	<blockquote cite="https://github.com/libexpat/libexpat/pull/1183">
+	  <p>libexpat before 2.8.0 uses insufficient entropy, and thus hash
+	  flooding can occur via a crafted XML document.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-41080</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-41080</url>
+    </references>
+    <dates>
+      <discovery>2026-04-16</discovery>
+      <entry>2026-04-26</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="ca62e49c-4150-11f1-95f7-00a098b42aeb">
+    <topic>lcms2 -- Integer overflow</topic>
+    <affects>
+    <package>
+	<name>lcms2</name>
+	<range><lt>2.19</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://github.com/mm2/Little-CMS/commit/da6110b1d14abc394633a388209abd5ebedd7ab0 reports:</p>
+	<blockquote cite="https://github.com/mm2/Little-CMS/commit/da6110b1d14abc394633a388209abd5ebedd7ab0">
+	  <p>Little CMS (lcms2) through 2.18 has an integer overflow in
+	  CubeSize in cmslut.c because the overflow check is performed after
+	  the multiplication.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-41254</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-41254</url>
+    </references>
+    <dates>
+      <discovery>2026-04-18</discovery>
+      <entry>2026-04-26</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="73b927a6-3ecd-11f1-be20-2cf05da270f3">
     <topic>Gitlab -- vulnerabilities</topic>
     <affects>

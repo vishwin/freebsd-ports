@@ -1,6 +1,6 @@
-TIMESTAMP = 1773141367
-SHA256 (pdns-recursor-5.4.0.tar.xz) = 2f69ef7586adc805bc4f503e15a34f0c6dcfbbfdab7d959ff132d8e2cdbf250a
-SIZE (pdns-recursor-5.4.0.tar.xz) = 1392752
+TIMESTAMP = 1776846326
+SHA256 (pdns-recursor-5.4.1.tar.xz) = 93f23ee93fb0d3a9fd48817265631ece4758b8001af726c358ee3afb6645b63a
+SIZE (pdns-recursor-5.4.1.tar.xz) = 1393844
 SHA256 (rust/crates/anstyle-1.0.13.crate) = 5192cca8006f1fd4f7237516f40fa183bb07f8fbdfedaa0036de5ea9b0b45e78
 SIZE (rust/crates/anstyle-1.0.13.crate) = 17651
 SHA256 (rust/crates/atomic-waker-1.1.2.crate) = 1505bd5d3d116872e7271a6d4e16d81d0c8570876c8de68093a09ac269d8aac0

@@ -1,5 +1,5 @@
 PORTNAME=	xonsh
-DISTVERSION=	0.23.1
+DISTVERSION=	0.23.2
 CATEGORIES=	shells python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -9,7 +9,7 @@ COMMENT=	Python-powered, cross-platform, Unix-gazing shell
 WWW=		https://xon.sh
 
 LICENSE=	BSD2CLAUSE
-LICENSE_FILE=	${WRKSRC}/license
+LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=0:devel/py-setuptools@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${PY_FLAVOR}

@@ -8,14 +8,6 @@ Apply FreeBSD's configuration defaults.
 
 --- servconf.c.orig	2026-04-25 16:05:26.936844000 -0700
 +++ servconf.c	2026-04-25 16:18:06.486288000 -0700
-@@ -44,6 +44,7 @@
- # include "openbsd-compat/glob.h"
- #endif
- 
-+#include "version.h"
- #include "openbsd-compat/sys-queue.h"
- #include "xmalloc.h"
- #include "ssh.h"
 @@ -298,7 +299,11 @@ fill_default_server_options(ServerOptions *options)
  
  	/* Portable-specific options */

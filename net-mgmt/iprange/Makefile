@@ -12,6 +12,8 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 
 USES=		tar:xz
 
+IGNORE_i386=	__uint128_t is not available on i386 and is required for mandatory IPv6 support
+
 GNU_CONFIGURE=	yes
 GNU_CONFIGURE_MANPREFIX=	${PREFIX}/share
 

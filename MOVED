@@ -5252,3 +5252,6 @@ devel/py-prettytable0|devel/py-prettytable|2026-04-18|Remove obsoleted port. Use
 www/py-requests-cache0|www/py-requests-cache|2026-04-18|Remove obsoleted port. Use www/py-requests-cache instead
 sysutils/py-azure-cli-base||2026-04-21|Remove obsoleted port
 games/coronapoker||2026-04-25|Remove for security concerns: downloads closed source binary modules, should not be restored unless https://github.com/tonikelope/coronapoker/issues/7 is addressed
+sysutils/py-ioztat|filesystems/py-ioztat|2026-04-27|Move to more appropriate category
+misc/py-aider-chat||2026-04-27|Upstream project has stopped active releases and doesn't match ports dependencies
+

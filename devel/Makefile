@@ -1956,6 +1956,7 @@
     SUBDIR += p5-App-SD
     SUBDIR += p5-App-SVN-Bisect
     SUBDIR += p5-App-Trace
+    SUBDIR += p5-App-Yath-Script
     SUBDIR += p5-App-cpanminus
     SUBDIR += p5-App-cpanminus-reporter
     SUBDIR += p5-App-cpanoutdated
@@ -2757,6 +2758,7 @@
     SUBDIR += p5-Getopt-Long
     SUBDIR += p5-Getopt-Long-Descriptive
     SUBDIR += p5-Getopt-Tabular
+    SUBDIR += p5-Getopt-Yath
     SUBDIR += p5-Git-PurePerl
     SUBDIR += p5-Git-Repository
     SUBDIR += p5-Git-Repository-Plugin-Log
@@ -6044,6 +6046,7 @@
     SUBDIR += py-scikit-build-core
     SUBDIR += py-scooby
     SUBDIR += py-scripttest
+    SUBDIR += py-scverse-misc
     SUBDIR += py-seedir
     SUBDIR += py-selection
     SUBDIR += py-semantic-version
@@ -6051,6 +6054,7 @@
     SUBDIR += py-sentry-sdk
     SUBDIR += py-serializable
     SUBDIR += py-session-info
+    SUBDIR += py-session-info2
     SUBDIR += py-setoptconf
     SUBDIR += py-setproctitle
     SUBDIR += py-setupmeta
@@ -6154,6 +6158,7 @@
     SUBDIR += py-taskflow
     SUBDIR += py-taskgroup
     SUBDIR += py-tasklib
+    SUBDIR += py-tatsu
     SUBDIR += py-tblib
     SUBDIR += py-tdworkflow
     SUBDIR += py-telepath
