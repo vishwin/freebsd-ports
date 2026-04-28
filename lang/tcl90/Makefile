@@ -44,7 +44,7 @@ INSTALL_TARGET=	install-libraries \
 		install-msgs \
 		install-private-headers
 
-USE_LDCONFIG=	yes
+USE_LDCONFIG=	${PREFIX}/lib/tcl${TCL_VER}
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared \
 		--enable-man-suffix=.${MAN_SUFFIX} \
