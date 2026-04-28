@@ -108,6 +108,7 @@ OPENSSL_PORT=		security/${SSL_DEFAULT}
 OPENSSLDIR?=		${OPENSSLBASE}/openssl
 .    if defined(_SSL_BUILD_DEP)
 BUILD_DEPENDS+=		${LOCALBASE}/lib/libcrypto.so.${OPENSSL_SHLIBVER}:${OPENSSL_PORT}
+.    endif
 .    if defined(_SSL_LIB_DEP)
 LIB_DEPENDS+=		libcrypto.so.${OPENSSL_SHLIBVER}:${OPENSSL_PORT}
 .    endif
