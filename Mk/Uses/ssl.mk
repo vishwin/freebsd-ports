@@ -2,7 +2,7 @@
 #
 # Feature:	SSL_DEFAULT
 # Usage:	USES=ssl
-# Valid ARGS:	none (build and run), build, run
+# Valid ARGS:	none (build, lib, run), build, lib, run
 #
 # The user can choose which ssl library they want with:
 #
@@ -22,6 +22,7 @@
 #
 # MAKE_ENV		- extended with the variables above
 # BUILD_DEPENDS		- are added if needed
+# LIB_DEPENDS		- are added if needed
 # RUN_DEPENDS		- are added if needed
 #
 # MAINTAINER:	ports@FreeBSD.org
@@ -33,11 +34,14 @@ _INCLUDE_USES_SSL_MK=	yes
 IGNORE=	"USES=ssl invalid arguments ${ssl_ARGS}."
 .  endif
 
-.  if empty(ssl_ARGS) || (!empty(ssl_ARGS:Mbuild) && !empty(ssl_ARGS:Mrun))
+.  if empty(ssl_ARGS) || (!empty(ssl_ARGS:Mbuild) && !empty(ssl_ARGS:Mlib) && !empty(ssl_ARGS:Mrun))
 _SSL_BUILD_DEP=	1
+_SSL_LIB_DEP=	1
 _SSL_RUN_DEP=	1
 .  elif !empty(ssl_ARGS:Mbuild)
 _SSL_BUILD_DEP=	1
+.  elif !empty(ssl_ARGS:Mlib)
+_SSL_LIB_DEP=	1
 .  elif !empty(ssl_ARGS:Mrun)
 _SSL_RUN_DEP=	1
 .  endif
@@ -104,6 +108,8 @@ OPENSSL_PORT=		security/${SSL_DEFAULT}
 OPENSSLDIR?=		${OPENSSLBASE}/openssl
 .    if defined(_SSL_BUILD_DEP)
 BUILD_DEPENDS+=		${LOCALBASE}/lib/libcrypto.so.${OPENSSL_SHLIBVER}:${OPENSSL_PORT}
+.    if defined(_SSL_LIB_DEP)
+LIB_DEPENDS+=		libcrypto.so.${OPENSSL_SHLIBVER}:${OPENSSL_PORT}
 .    endif
 .    if defined(_SSL_RUN_DEP)
 RUN_DEPENDS+=		${LOCALBASE}/lib/libcrypto.so.${OPENSSL_SHLIBVER}:${OPENSSL_PORT}
