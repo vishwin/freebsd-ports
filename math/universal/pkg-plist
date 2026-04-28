@@ -119,6 +119,14 @@ include/math/constants/double_constants.hpp
 include/math/constants/float_constants.hpp
 include/math/constants/ieee754_constants.hpp
 include/math/constants/longdouble_constants.hpp
+include/math/constexpr_math.hpp
+include/math/constexpr_math/detail.hpp
+include/math/constexpr_math/exp.hpp
+include/math/constexpr_math/exp2.hpp
+include/math/constexpr_math/log.hpp
+include/math/constexpr_math/log2.hpp
+include/math/constexpr_math/pow.hpp
+include/math/constexpr_math/sqrt.hpp
 include/math/functions.hpp
 include/math/functions/bessel.hpp
 include/math/functions/bessel.md

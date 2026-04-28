@@ -1,11 +1,12 @@
 PORTNAME=	xonsh
 DISTVERSION=	0.23.2
+PORTREVISION=	1
 CATEGORIES=	shells python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	eduardo@FreeBSD.org
-COMMENT=	Python-powered, cross-platform, Unix-gazing shell
+COMMENT=	Xonsh is a Python-powered shell
 WWW=		https://xon.sh
 
 LICENSE=	BSD2CLAUSE
