@@ -1,6 +1,6 @@
 PORTNAME=	mise
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2026.4.23
+DISTVERSION=	2026.4.24
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -859,7 +859,6 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		tokio-1.52.1 \
 		tokio-macros-2.7.0 \
 		tokio-native-tls-0.3.1 \
-		tokio-retry-0.3.1 \
 		tokio-rustls-0.26.4 \
 		tokio-stream-0.1.18 \
 		tokio-util-0.7.18 \

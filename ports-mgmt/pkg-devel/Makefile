@@ -68,6 +68,7 @@ post-build:
 .endif
 
 post-install:
+	${INSTALL_DATA} ${WRKSRC}/src/pkg.conf.sample ${STAGEDIR}${PREFIX}/etc/
 	@${MKDIR} ${STAGEDIR}${PREFIX}/lib/compat/pkg
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/NEWS ${STAGEDIR}${DOCSDIR}/NEWS

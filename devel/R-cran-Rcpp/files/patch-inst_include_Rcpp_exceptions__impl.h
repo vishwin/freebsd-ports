@@ -1,4 +1,4 @@
---- inst/include/Rcpp/exceptions_impl.h.orig	2025-12-07 13:35:22 UTC
+--- inst/include/Rcpp/exceptions_impl.h.orig	2026-04-23 14:10:21 UTC
 +++ inst/include/Rcpp/exceptions_impl.h
 @@ -2,7 +2,7 @@
  //

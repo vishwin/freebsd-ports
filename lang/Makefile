@@ -16,6 +16,7 @@
     SUBDIR += basic256
     SUBDIR += bend
     SUBDIR += bsh
+    SUBDIR += bun
     SUBDIR += bwbasic
     SUBDIR += c
     SUBDIR += cairo
