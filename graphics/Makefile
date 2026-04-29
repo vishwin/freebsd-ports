@@ -123,6 +123,7 @@
     SUBDIR += converseen
     SUBDIR += corrupter
     SUBDIR += cptutils
+    SUBDIR += crucible
     SUBDIR += crw
     SUBDIR += ctl
     SUBDIR += curator

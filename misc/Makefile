@@ -42,6 +42,7 @@
     SUBDIR += boxes
     SUBDIR += broot
     SUBDIR += bsod
+    SUBDIR += bun-decompile
     SUBDIR += caffe
     SUBDIR += camsnap
     SUBDIR += chatblade
@@ -442,7 +443,6 @@
     SUBDIR += py-SimpleSoapy
     SUBDIR += py-SoapySDR
     SUBDIR += py-accelerate
-    SUBDIR += py-aider-chat
     SUBDIR += py-alive-progress
     SUBDIR += py-anthropic
     SUBDIR += py-apache-beam
