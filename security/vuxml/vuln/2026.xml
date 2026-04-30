@@ -1,3 +1,207 @@
+  <vuln vid="c3a9c5a6-4435-11f1-bb07-bc241121aa0a">
+    <topic>FreeBSD -- Heap overflow in libnv</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.0</ge><lt>15.0_7</lt></range>
+	<range><ge>14.4</ge><lt>14.4_3</lt></range>
+	<range><ge>14.3</ge><lt>14.3_12</lt></range>
+	<range><ge>13.5</ge><lt>13.5_13</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>When processing the header of an incoming message, libnv failed
+	  to properly validate the message size.</p>
+	<h1>Impact:</h1>
+	  <p>The lack of validation allows a malicious program to write
+	  outside the bounds of a heap allocation.  This can trigger a crash
+	  or system panic, and it may be possible for an unprivileged user
+	  to exploit the bug to elevate their privileges.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-35547</cvename>
+      <freebsdsa>SA-26:17.libnv</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-04-29</discovery>
+      <entry>2026-04-30</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="892fabf5-4435-11f1-bb07-bc241121aa0a">
+    <topic>FreeBSD -- Stack overflow via select() file descriptor set overflow</topic>
+    <affects>
+      <package>
+	<name>FreeBSD</name>
+	<range><ge>15.0</ge><lt>15.0_7</lt></range>
+	<range><ge>14.4</ge><lt>14.4_3</lt></range>
+	<range><ge>14.3</ge><lt>14.3_12</lt></range>
+	<range><ge>13.5</ge><lt>13.5_13</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>When exchanging data over a socket, libnv uses select(2) to
+	  wait for data to arrive.  However, it does not verify whether the
+	  provided socket descriptor fits in select(2)'s file descriptor set
+	  size limit of FD_SETSIZE (1024).</p>
+	<h1>Impact:</h1>
+	  <p>An attacker who is able to force a libnv application to allocate
+	  large file descriptors, e.g., by opening many descriptors and
+	  executing a program which is not careful to close them upon startup,
+	  can trigger stack corruption.  If the target application is
+	  setuid-root, then this could be used to elevate local privileges.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-39457</cvename>
+      <freebsdsa>SA-26:16.libnv</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-04-29</discovery>
+      <entry>2026-04-30</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="58acf4c5-4435-11f1-bb07-bc241121aa0a">
+    <topic>FreeBSD -- Remotely triggerable out-of-bounds heap write in dhclient</topic>
+    <affects>
+      <package>
+	<name>FreeBSD</name>
+	<range><ge>15.0</ge><lt>15.0_7</lt></range>
+	<range><ge>14.4</ge><lt>14.4_3</lt></range>
+	<range><ge>14.3</ge><lt>14.3_12</lt></range>
+	<range><ge>13.5</ge><lt>13.5_13</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>As dhclient is building an environment to pass to dhclient-script,
+	  it may need to resize the array of string pointers.  The code which
+	  expands the array incorrectly calculates its new size when requesting
+	  memory, resulting in a heap buffer overrun.</p>
+	<h1>Impact:</h1>
+	  <p>A specially crafted packet can cause dhclient to overrun its
+	  buffer of environment entries.  This can result in a crash, but it
+	  may be possible to leverage this bug to achieve remote code
+	  execution.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-42512</cvename>
+      <freebsdsa>SA-26:15.dhclient</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-04-29</discovery>
+      <entry>2026-04-30</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="225ba563-4435-11f1-bb07-bc241121aa0a">
+    <topic>FreeBSD -- pf can overflow the stack parsing crafted SCTP packets</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.0</ge><lt>15.0_7</lt></range>
+	<range><ge>14.4</ge><lt>14.4_3</lt></range>
+	<range><ge>14.3</ge><lt>14.3_12</lt></range>
+	<range><ge>13.5</ge><lt>13.5_13</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>Incorrect packet validation allowed unbounded recursion parsing
+	  SCTP chunk parameters.  This can eventually result in a stack
+	  overflow and panic.</p>
+	<h1>Impact:</h1>
+	  <p>Remote attackers can craft packets which cause affected systems
+	  to panic.  This affects any system where pf is configured to process
+	  traffic, independent of the configured ruleset.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-7164</cvename>
+      <freebsdsa>SA-26:14.pf</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-04-29</discovery>
+      <entry>2026-04-30</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="f528ea29-4434-11f1-bb07-bc241121aa0a">
+    <topic>FreeBSD -- Local privilege escalation via execve()</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.0</ge><lt>15.0_7</lt></range>
+	<range><ge>14.4</ge><lt>14.4_3</lt></range>
+	<range><ge>14.3</ge><lt>14.3_12</lt></range>
+	<range><ge>13.5</ge><lt>13.5_13</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>An operator precedence bug in the kernel results in a scenario
+	  where a buffer overflow causes attacker-controlled data to overwrite
+	  adjacent execve(2) argument buffers.</p>
+	<h1>Impact:</h1>
+	  <p>The bug may be exploitable by an unprivileged user to obtain
+	  superuser privileges.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-7270</cvename>
+      <freebsdsa>SA-26:13.exec</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-04-29</discovery>
+      <entry>2026-04-30</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="9eb2533e-4434-11f1-bb07-bc241121aa0a">
+    <topic>FreeBSD -- Remote code execution via malicious DHCP options</topic>
+    <affects>
+      <package>
+	<name>FreeBSD</name>
+	<range><ge>15.0</ge><lt>15.0_7</lt></range>
+	<range><ge>14.4</ge><lt>14.4_3</lt></range>
+	<range><ge>14.3</ge><lt>14.3_12</lt></range>
+	<range><ge>13.5</ge><lt>13.5_13</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>The BOOTP file field is written to the lease file without
+	  escaping embedded double-quotes, allowing injection of arbitrary
+	  dhclient.conf directives.  When the lease file is subsequently
+	  re-parsed by dhclient, e.g., after a system restart, an attacker-controlled
+	  field from the lease is passed to dhclient-script(8), which evaluates
+	  it.</p>
+	<h1>Impact:</h1>
+	  <p>A rogue DHCP server may be able to execute arbirary code as
+	  root on a system running dhclient.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-42511</cvename>
+      <freebsdsa>SA-26:12.dhclient</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-04-29</discovery>
+      <entry>2026-04-30</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="98c23e2b-43c7-11f1-a190-b42e991fc52e">
     <topic>Mozilla -- Sandbox escape</topic>
     <affects>
