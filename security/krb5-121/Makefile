@@ -10,6 +10,9 @@ PKGNAME_X=		-${FLAVOR:S/default//}
 .endif
 PKGNAMESUFFIX=		${PKGNAME_X:S/--/-/:C/-$//}
 
+DEPRECATED=		Unpatched vulnerabilities, no longer supported by MIT
+EXPIRATION_DATE=	2026-06-30
+
 PATCH_SITES=		http://web.mit.edu/kerberos/advisories/
 PATCH_DIST_STRIP=	-p2
 
