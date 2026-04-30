@@ -58,6 +58,7 @@ DMYPY_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}psutil>=4.0:sysutils/py-psutil@${PY_FL
 FASTER_CACHE_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}orjson>=0:devel/py-orjson@${PY_FLAVOR}
 INSTALL_TYPES_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pip>=0:devel/py-pip@${PY_FLAVOR}
 MYPYC_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=50:devel/py-setuptools@${PY_FLAVOR}
+NATIVE_PARSER_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ast-serialize>=0.1.1<1.0.0:devel/py-ast-serialize@${PY_FLAVOR}
 REPORTS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${PY_FLAVOR}
 
 .include <bsd.port.mk>
