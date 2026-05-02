@@ -74,9 +74,3 @@ share/man/man3/rc_setdebug.3.gz
 share/man/man3/rc_test_config.3.gz
 share/man/man3/rc_tls_fd.3.gz
 %%DATADIR%%/dictionary
-%%DATADIR%%/dictionary.ascend
-%%DATADIR%%/dictionary.compat
-%%DATADIR%%/dictionary.merit
-%%DATADIR%%/dictionary.microsoft
-%%DATADIR%%/dictionary.roaringpenguin
-%%DATADIR%%/dictionary.sip

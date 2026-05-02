@@ -1266,6 +1266,7 @@
     SUBDIR += vips
     SUBDIR += visprint
     SUBDIR += viu
+    SUBDIR += vkrunner
     SUBDIR += volpack
     SUBDIR += vp
     SUBDIR += vpaint

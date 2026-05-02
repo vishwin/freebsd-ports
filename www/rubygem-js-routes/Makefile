@@ -1,11 +1,11 @@
 PORTNAME=	js-routes
-PORTVERSION=	2.3.6
+PORTVERSION=	2.3.7
 CATEGORIES=	www rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	ruby@FreeBSD.org
 COMMENT=	Exposes all Rails Routes URL helpers as javascript module
-WWW=		http://github.com/railsware/js-routes
+WWW=		https://github.com/railsware/js-routes
 
 LICENSE=	MIT
 

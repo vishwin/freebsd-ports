@@ -172,11 +172,6 @@
     SUBDIR += virtualbox-ose-kmod-72
     SUBDIR += virtualbox-ose-kmod-legacy
     SUBDIR += virtualbox-ose-legacy
-    SUBDIR += virtualbox-ose-nox11
-    SUBDIR += virtualbox-ose-nox11-70
-    SUBDIR += virtualbox-ose-nox11-71
-    SUBDIR += virtualbox-ose-nox11-72
-    SUBDIR += virtualbox-ose-nox11-legacy
     SUBDIR += visualboyadvance-m
     SUBDIR += vmips
     SUBDIR += vmsbackup
