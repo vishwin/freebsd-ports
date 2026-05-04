@@ -150,7 +150,7 @@ PYCRYPTOGRAPHY_DEFAULT?=	legacy
 PYTHON_DEFAULT?=	3.11
 # Possible values: 2.7
 PYTHON2_DEFAULT?=	2.7
-# Possible values: 3.2, 3.3, 3.4, 4.0
+# Possible values: 3.3, 3.4, 4.0
 RUBY_DEFAULT?=		3.4
 # Possible values: rust, rust-nightly
 RUST_DEFAULT?=		rust
@@ -158,7 +158,7 @@ RUST_DEFAULT?=		rust
 SAMBA_DEFAULT?=		4.16
 # When updating this, please also update the same list in ssl.mk and the checks
 # for USES=ssl in qa.sh!
-# Possible values: base, openssl, openssl111, openssl34, openssl35,
+# Possible values: base, openssl, openssl34, openssl35,
 # openssl36, libressl, libressl-devel
 .  if !defined(SSL_DEFAULT)
 #	If no preference was set, check for an installed base version

@@ -457,7 +457,6 @@
     SUBDIR += openssl-oqsprovider
     SUBDIR += openssl-pkcs11provider
     SUBDIR += openssl-unsafe
-    SUBDIR += openssl111
     SUBDIR += openssl34
     SUBDIR += openssl35
     SUBDIR += openssl36

@@ -1,3 +1,36 @@
+  <vuln vid="3c02dcfd-47d7-11f1-99fb-3497f65b111b">
+    <topic>modsecurity3 -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+       <name>modsecurity3</name>
+       <range><lt>3.0.15</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>
+       ModSecurity is an open source web application firewall engine.
+       </p>
+       <p>
+       According to the upstream changelog, multiple vulnerabilities have been fixed.
+       </p>
+       <ul>
+       <li>CVE-2026-42268: unsigned integer underflow in verify operators</li>
+       <li>CVE-2026-30923: buffer overflow in hex_decode</li>
+       </ul>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-42268</cvename>
+      <cvename>CVE-2026-30923</cvename>
+      <url>https://github.com/owasp-modsecurity/ModSecurity/blob/v3.0.15/CHANGES</url>
+    </references>
+    <dates>
+      <discovery>2026-04-28</discovery>
+      <entry>2026-05-04</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="e4a08820-470d-11f1-be75-b42e991fc52e">
     <topic>Mozilla -- Memory safety bugs</topic>
     <affects>
