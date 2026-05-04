@@ -1,3 +1,42 @@
+  <vuln vid="e4a08820-470d-11f1-be75-b42e991fc52e">
+    <topic>Mozilla -- Memory safety bugs</topic>
+    <affects>
+    <package>
+	<name>firefox</name>
+	<range><lt>150.0.1,2</lt></range>
+    </package>
+    <package>
+	<name>firefox-esr</name>
+	<range><lt>140.10.1</lt></range>
+    </package>
+    <package>
+	<name>thunderbird</name>
+	<range><lt>150.0.1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>https://bugzilla.mozilla.org/buglist.cgi?bug_id=2028537%2C2029911%2C2031121%2C2033602 reports:</p>
+	<blockquote cite="https://bugzilla.mozilla.org/buglist.cgi?bug_id=2028537%2C2029911%2C2031121%2C2033602">
+	<p>
+	Memory safety bugs. Some of these bugs showed evidence of
+	memory corruption and we presume that with enough effort
+	some of these could have been exploited to run arbitrary
+	code.
+	</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-7323</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-7323</url>
+    </references>
+    <dates>
+      <discovery>2026-04-28</discovery>
+      <entry>2026-05-03</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="a420f545-442c-11f1-b9b5-589cfc0dc9a2">
     <topic>Prosody XMPP server advisory 2026-04-29</topic>
     <affects>

@@ -56,6 +56,11 @@ CFLAGS+=       -Wno-error=bitwise-instead-of-logical
 CFLAGS+=       -Wno-error=unsafe-buffer-usage
 # Fixes build failure for Clang 18.1.4
 CFLAGS+=       -Wno-error=switch-default
+# Fixes build failure for Clang 21.1.8
+.if ${OSVERSION} >= 1600018
+CFLAGS+=	-Wno-error=nrvo
+CFLAGS+=	-Wno-error=thread-safety-negative
+.endif
 .endif
 
 # Prepare for Qt5-5.15

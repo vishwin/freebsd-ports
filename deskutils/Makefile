@@ -240,6 +240,7 @@
     SUBDIR += py-paperless-ngx
     SUBDIR += py-py3status
     SUBDIR += py-pystash
+    SUBDIR += py-qmd
     SUBDIR += py-send2trash
     SUBDIR += py-taskw
     SUBDIR += py-term-background
@@ -249,6 +250,7 @@
     SUBDIR += py-vobject
     SUBDIR += py-vorta
     SUBDIR += qlipper
+    SUBDIR += qmd
     SUBDIR += qmediamanager
     SUBDIR += qownnotes
     SUBDIR += qtfeedback

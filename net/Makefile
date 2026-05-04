@@ -1660,6 +1660,7 @@
     SUBDIR += unison
     SUBDIR += unison248
     SUBDIR += unison251
+    SUBDIR += unison253
     SUBDIR += unix2tcp
     SUBDIR += urelay
     SUBDIR += uriparser

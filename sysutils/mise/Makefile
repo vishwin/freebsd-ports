@@ -1,6 +1,6 @@
 PORTNAME=	mise
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2026.4.28
+DISTVERSION=	2026.5.0
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -31,7 +31,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		aead-0.5.2 \
 		aes-0.8.4 \
 		aes-gcm-0.10.3 \
-		age-0.11.2 \
+		age-0.11.3 \
 		age-core-0.11.0 \
 		ahash-0.7.8 \
 		ahash-0.8.12 \
@@ -114,7 +114,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		bitflags-2.11.1 \
 		bitvec-1.0.1 \
 		blake2-0.10.6 \
-		blake3-1.8.4 \
+		blake3-1.8.5 \
 		block-buffer-0.10.4 \
 		block-buffer-0.12.0 \
 		block-padding-0.3.3 \
@@ -203,8 +203,8 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		crypto-common-0.1.7 \
 		crypto-common-0.2.1 \
 		crypto_secretbox-0.1.1 \
-		ctor-0.10.0 \
-		ctor-proc-macro-0.0.12 \
+		ctor-0.10.1 \
+		ctor-proc-macro-0.0.13 \
 		ctr-0.9.2 \
 		curve25519-dalek-4.1.3 \
 		curve25519-dalek-derive-0.1.1 \
@@ -242,8 +242,8 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		displaydoc-0.2.5 \
 		document-features-0.2.12 \
 		dotenvy-0.15.7 \
-		dtor-0.7.0 \
-		dtor-proc-macro-0.0.12 \
+		dtor-0.8.1 \
+		dtor-proc-macro-0.0.13 \
 		duct-1.1.1 \
 		dunce-1.0.5 \
 		dyn-clone-1.0.20 \
@@ -456,8 +456,8 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		itertools-0.13.0 \
 		itertools-0.14.0 \
 		itoa-1.0.18 \
-		jiff-0.2.23 \
-		jiff-static-0.2.23 \
+		jiff-0.2.24 \
+		jiff-static-0.2.24 \
 		jiff-tzdb-0.1.6 \
 		jiff-tzdb-platform-0.1.3 \
 		jni-0.21.1 \
@@ -497,7 +497,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		libloading-0.9.0 \
 		libm-0.2.16 \
 		libredox-0.1.16 \
-		link-section-0.2.0 \
+		link-section-0.2.1 \
 		linux-raw-sys-0.4.15 \
 		linux-raw-sys-0.12.1 \
 		litemap-0.8.2 \
@@ -909,7 +909,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		ureq-proto-0.6.0 \
 		url-2.5.8 \
 		urlencoding-2.1.3 \
-		usage-lib-3.2.0 \
+		usage-lib-3.2.1 \
 		utf8-decode-1.0.1 \
 		utf8-zero-0.8.1 \
 		utf8_iter-1.0.4 \

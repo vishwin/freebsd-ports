@@ -5263,3 +5263,4 @@ emulators/virtualbox-ose-nox11|emulators/virtualbox-ose@nox11|2026-04-30|Convert
 emulators/virtualbox-ose-nox11-70|emulators/virtualbox-ose-70@nox11|2026-04-30|Converted to a flavorized port
 emulators/virtualbox-ose-nox11-71|emulators/virtualbox-ose-71@nox11|2026-04-30|Converted to a flavorized port
 emulators/virtualbox-ose-nox11-72|emulators/virtualbox-ose-72@nox11|2026-04-30|Converted to a flavorized port
+databases/kuzu|databases/ladybug|2026-05-03|Upstream abandoned, project continuing under new name

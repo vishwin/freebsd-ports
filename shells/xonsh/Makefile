@@ -1,7 +1,7 @@
 PORTNAME=	xonsh
-DISTVERSION=	0.23.3
+DISTVERSION=	0.23.4
 CATEGORIES=	shells python
-#MASTER_SITES=	PYPI
+MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	eduardo@FreeBSD.org
@@ -29,7 +29,6 @@ TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}coverage>=5.3.1:devel/py-coverage@${PY_FLAV
 		${PYTHON_PKGNAMEPREFIX}virtualenv>=20.16.2:devel/py-virtualenv@${PY_FLAVOR}
 
 USES=		python
-USE_GITHUB=	yes
 USE_PYTHON=	autoplist concurrent pep517 pytest
 
 NO_ARCH=	yes

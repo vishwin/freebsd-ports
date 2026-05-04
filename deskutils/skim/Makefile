@@ -1,6 +1,6 @@
 PORTNAME=	skim
 DISTVERSIONPREFIX=	v
-DISTVERSION=	4.6.1
+DISTVERSION=	4.6.2
 CATEGORIES=	deskutils
 PKGNAMESUFFIX=	-fuzzy-finder
 
@@ -61,7 +61,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		ciborium-ll-0.2.2 \
 		clap-4.6.1 \
 		clap_builder-4.6.0 \
-		clap_complete-4.6.2 \
+		clap_complete-4.6.3 \
 		clap_complete_nushell-4.6.0 \
 		clap_derive-4.6.1 \
 		clap_lex-1.1.0 \
@@ -133,9 +133,9 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		getrandom-0.4.2 \
 		gimli-0.32.3 \
 		gnuplot-0.0.46 \
-		gungraun-0.18.1 \
+		gungraun-0.18.2 \
 		gungraun-macros-0.8.0 \
-		gungraun-runner-0.18.1 \
+		gungraun-runner-0.18.2 \
 		half-2.7.1 \
 		hashbrown-0.15.5 \
 		hashbrown-0.16.1 \
@@ -156,7 +156,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		itoa-1.0.18 \
 		jiff-0.2.24 \
 		jiff-static-0.2.24 \
-		js-sys-0.3.95 \
+		js-sys-0.3.97 \
 		kanal-0.1.1 \
 		kasuari-0.4.12 \
 		lab-0.11.0 \
@@ -323,14 +323,14 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		wasi-0.11.1+wasi-snapshot-preview1 \
 		wasip2-1.0.3+wasi-0.2.9 \
 		wasip3-0.4.0+wasi-0.3.0-rc-2026-01-06 \
-		wasm-bindgen-0.2.118 \
-		wasm-bindgen-macro-0.2.118 \
-		wasm-bindgen-macro-support-0.2.118 \
-		wasm-bindgen-shared-0.2.118 \
+		wasm-bindgen-0.2.120 \
+		wasm-bindgen-macro-0.2.120 \
+		wasm-bindgen-macro-support-0.2.120 \
+		wasm-bindgen-shared-0.2.120 \
 		wasm-encoder-0.244.0 \
 		wasm-metadata-0.244.0 \
 		wasmparser-0.244.0 \
-		web-sys-0.3.95 \
+		web-sys-0.3.97 \
 		wezterm-bidi-0.2.3 \
 		wezterm-blob-leases-0.1.1 \
 		wezterm-color-types-0.3.0 \

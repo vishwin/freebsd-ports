@@ -1,5 +1,5 @@
 PORTNAME=	snakemake
-DISTVERSION=	9.19.0
+DISTVERSION=	9.20.0
 CATEGORIES=	misc python
 MASTER_SITES=	PYPI
 
@@ -10,8 +10,7 @@ WWW=		https://github.com/snakemake/snakemake
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}appdirs>0:devel/py-appdirs@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}conda-inject>=1.3.1:devel/py-conda-inject@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}conda-inject>=1.3.1:devel/py-conda-inject@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}configargparse>0:devel/py-configargparse@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}connection_pool>=0.0.3:devel/py-connection_pool@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}docutils>0:textproc/py-docutils@${PY_FLAVOR} \
@@ -55,5 +54,7 @@ do-test:
 		tests/test_prefix_lookup.py -v
 
 NO_ARCH=	yes
+
+# tests as of 9.20.0: 20 passed in 2.94s
 
 .include <bsd.port.mk>

@@ -75,15 +75,15 @@ PLIST_SUB+=	ETCFILES="${CONFIG_FILES}" \
 		LIBVER_LONG=${LIBVER_LONG}
 PORTDOCS=	CONTRIBUTORS HACKING INSTALL LICENSE MANIFEST NEWS README TODO
 
-OPTIONS_DEFINE=		BERKELEYDB BLACKLISTD DOCS EXAMPLES GNUPG KERBEROS \
+OPTIONS_DEFINE=		BERKELEYDB BLOCKLISTD DOCS EXAMPLES GNUPG KERBEROS \
 			KEYWORDS LARGE_FILES OPENSSL PYTHON SASL SETGID_INEWS \
 			SQLITE TAGGED_HASH UUCP_RNEWS
-OPTIONS_DEFAULT=	BERKELEYDB BLACKLISTD GNUPG KEYWORDS LARGE_FILES \
+OPTIONS_DEFAULT=	BERKELEYDB BLOCKLISTD GNUPG KEYWORDS LARGE_FILES \
 			OPENSSL PYTHON SETGID_INEWS SQLITE UUCP_RNEWS
 OPTIONS_SUB=		yes
 
 BERKELEYDB_DESC=	Enable BerkeleyDB (for ovdb overview method)
-BLACKLISTD_DESC=	Enable blacklistd support
+BLOCKLISTD_DESC=	Enable blocklistd support
 GNUPG_DESC=		GnuPG support (for pgpverify control message)
 KERBEROS_DESC=		Enable Kerberos v5 (for auth_krb5)
 KEYWORDS_DESC=		Automatic keyword generation support
@@ -101,7 +101,11 @@ BERKELEYDB_CONFIGURE_ON=	--with-bdb-include=${BDB_INCLUDE_DIR} \
 				--with-bdb-lib=${LOCALBASE}/lib \
 				--with-bdb=${LOCALBASE}
 
-BLACKLISTD_CONFIGURE_WITH=	blacklist
+.if ${BRANCH:U} == 2.8 && ${OSVERSION} >= 1500000
+BLOCKLISTD_CONFIGURE_WITH=	blocklist
+.else
+BLOCKLISTD_CONFIGURE_WITH=	blacklist
+.endif
 
 # Although pgpverify needs gpgv/gpgv2,
 # checking 'gpg' is the shortest way to check any version of GnuPG installed.
@@ -157,6 +161,21 @@ post-patch:
 	                  ${WRKSRC}/site/Makefile
 .if ${PORT_OPTIONS:MBERKELEYDB}
 	@${REINPLACE_CMD} -e 's!-ldb!-ldb-${BDB_VER}!' ${WRKSRC}/configure
+.endif
+.if ${BRANCH:U} == 2.8
+.  if ${OPSYS} == FreeBSD && ${OSVERSION} < 1500000
+	@${FIND} ${WRKSRC} -type f -exec ${SED} -i '' \
+		-e 's/BLOCKLIST/BLACKLIST/g' \
+		-e 's/Blocklist/Blacklist/g' \
+		-e 's/blocklist/blacklist/g' {} +
+.  endif
+.else
+.  if ${OPSYS} == FreeBSD && ${OSVERSION} >= 1500000
+	@${FIND} ${WRKSRC} -type f -exec ${SED} -i '' \
+		-e 's/BLACKLIST/BLOCKLIST/g' \
+		-e 's/Blacklist/Blocklist/g' \
+		-e 's/blacklist/blocklist/g' {} +
+.  endif
 .endif
 
 pre-install:

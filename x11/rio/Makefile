@@ -1,6 +1,6 @@
 PORTNAME=	rio
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.0
+DISTVERSION=	0.4.2
 CATEGORIES=	x11 wayland
 PKGNAMESUFFIX=	-terminal-emulator
 
@@ -366,7 +366,7 @@ CARGO_CRATES=	ab_glyph-0.2.32 \
 		onig_sys-69.9.3 \
 		oorandom-11.1.5 \
 		option-ext-0.2.0 \
-		orbclient-0.3.53 \
+		orbclient-0.3.54 \
 		ordered-float-5.3.0 \
 		ordered-stream-0.2.0 \
 		owned_ttf_parser-0.25.1 \
@@ -663,7 +663,7 @@ CARGO_CRATES=	ab_glyph-0.2.32 \
 		xml-rs-0.8.28 \
 		yansi-1.0.1 \
 		yazi-0.2.1 \
-		yeslogic-fontconfig-sys-6.0.0 \
+		yeslogic-fontconfig-sys-6.0.1 \
 		yoke-0.8.2 \
 		yoke-derive-0.8.2 \
 		zbus-4.4.0 \

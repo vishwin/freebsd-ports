@@ -113,9 +113,9 @@
     SUBDIR += kdb
     SUBDIR += kexi
     SUBDIR += keydb
-    SUBDIR += kuzu
     SUBDIR += kyotocabinet
     SUBDIR += kyototycoon
+    SUBDIR += ladybug
     SUBDIR += ldb25
     SUBDIR += ldb28
     SUBDIR += ldb29
@@ -201,6 +201,8 @@
     SUBDIR += mysql84-server
     SUBDIR += mysql96-client
     SUBDIR += mysql96-server
+    SUBDIR += mysql97-client
+    SUBDIR += mysql97-server
     SUBDIR += mysqlbackup
     SUBDIR += mysqldump-secure
     SUBDIR += mysqlreport
@@ -861,6 +863,7 @@
     SUBDIR += py-sqlite-fts4
     SUBDIR += py-sqlite-migrate
     SUBDIR += py-sqlite-utils
+    SUBDIR += py-sqlite-vec
     SUBDIR += py-sqlite3
     SUBDIR += py-sqlmodel
     SUBDIR += py-sqlobject
@@ -1108,6 +1111,7 @@
     SUBDIR += sqlite-ext-pcre
     SUBDIR += sqlite-ext-regexp
     SUBDIR += sqlite-ext-spellfix
+    SUBDIR += sqlite-ext-vec
     SUBDIR += sqlite-jdbc
     SUBDIR += sqlite2
     SUBDIR += sqlite3
