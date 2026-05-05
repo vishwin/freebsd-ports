@@ -1,3 +1,46 @@
+  <vuln vid="1ccc383b-486a-11f1-8b62-8447094a420f">
+    <topic>www/apache24 -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>apache24</name>
+	<range><lt>2.4.67</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Apache httpd project reports:</p>
+	<blockquote cite="https://dlcdn.apache.org/httpd/CHANGES_2.4.67">
+	  <p>mod_proxy_ajp: CVE-2026-34059, CVE-2026-34032, CVE-2026-33857, CVE-2026-28780</p>
+	  <p>multiple modules: CVE-2026-33523</p>
+	  <p>mod_authn_socache: CVE-2026-33007</p>
+	  <p>mod_auth_digest: CVE-2026-33006</p>
+	  <p>mod_dav_lock: mod_dav_lock</p>
+	  <p>mod_md: CVE-2026-29168</p>
+	  <p>mod_rewrite: CVE-2026-24072</p>
+	  <p>mod_http2: CVE-2026-23918</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-34059</cvename>
+      <cvename>CVE-2026-34032</cvename>
+      <cvename>CVE-2026-33857</cvename>
+      <cvename>CVE-2026-33523</cvename>
+      <cvename>CVE-2026-33007</cvename>
+      <cvename>CVE-2026-33006</cvename>
+      <cvename>CVE-2026-29169</cvename>
+      <cvename>CVE-2026-29168</cvename>
+      <cvename>CVE-2026-28780</cvename>
+      <cvename>CVE-2026-24072</cvename>
+      <cvename>CVE-2026-23918</cvename>
+      <url>https://dlcdn.apache.org/httpd/CHANGES_2.4.67</url>
+    </references>
+    <dates>
+      <discovery>2026-05-04</discovery>
+      <entry>2026-05-05</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="3c02dcfd-47d7-11f1-99fb-3497f65b111b">
     <topic>modsecurity3 -- multiple vulnerabilities</topic>
     <affects>

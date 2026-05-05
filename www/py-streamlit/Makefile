@@ -5,7 +5,7 @@ CATEGORIES=	www python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	dch@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Turn data scripts into shareable web apps in minutes, in pure python
 WWW=		https://streamlit.io/
 

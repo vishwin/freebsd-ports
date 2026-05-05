@@ -881,6 +881,7 @@ CARGO_CRATES=	Inflector-0.11.4 \
 		system-configuration-sys-0.6.0 \
 		system-deps-7.0.7 \
 		tagptr-0.2.0 \
+		tar-0.4.45 \
 		target-lexicon-0.13.3 \
 		tempfile-3.27.0 \
 		temporal_capi-0.1.2 \

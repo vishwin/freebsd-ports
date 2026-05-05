@@ -7,6 +7,8 @@ MAINTAINER=	pkubaj@FreeBSD.org
 COMMENT=	Monitor of resources
 WWW=		https://github.com/aristocratos/btop
 
+OPTIONS_DEFINE=	DOCS
+
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 

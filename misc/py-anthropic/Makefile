@@ -4,7 +4,7 @@ CATEGORIES=	misc python # machine-learning
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	dch@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Convenient access to the Anthropic REST API via python
 WWW=		https://github.com/anthropics/anthropic-sdk-python
 

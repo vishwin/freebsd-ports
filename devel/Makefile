@@ -1677,6 +1677,7 @@
     SUBDIR += magic_enum
     SUBDIR += magit
     SUBDIR += makedepend
+    SUBDIR += maki
     SUBDIR += malloy
     SUBDIR += manuals
     SUBDIR += marisa-trie
