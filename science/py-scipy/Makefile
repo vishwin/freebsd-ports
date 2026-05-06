@@ -1,6 +1,6 @@
 PORTNAME=	scipy
 DISTVERSION=	1.17.1
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	science python
 MASTER_SITES=	https://docs.scipy.org/doc/${PORTNAME}-1.17.0/:doc \
@@ -22,10 +22,10 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}meson-python>=0.15.0:devel/meson-python@${
 		${PYTHON_PKGNAMEPREFIX}pybind11>=2.13.2:devel/py-pybind11@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pythran>=0.14.0:devel/py-pythran@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}setuptools>0:devel/py-setuptools@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}numpy>=2.1.3,1:math/py-numpy@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}numpy>=1.26.4:math/py-numpy@${PY_FLAVOR} \
 		boost-libs>=1.89.0:devel/boost-libs
 LIB_DEPENDS=	libqhull_r.so:math/qhull
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=2.1.3,1:math/py-numpy@${PY_FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>=1.26.4:math/py-numpy@${PY_FLAVOR}
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest-cov>0:devel/py-pytest-cov@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-timeout>0:devel/py-pytest-timeout@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pytest-xdist>0:devel/py-pytest-xdist@${PY_FLAVOR} \
@@ -74,6 +74,7 @@ OPENBLAS_VARS=	PEP517_BUILD_CONFIG_SETTING+="-Csetup-args=-Dblas=openblas -Csetu
 post-patch:
 	@${REINPLACE_CMD} -e 's|pythran>=0.14.0,<0.19.0|pythran>=0.14.0|' \
 		-e 's|Cython>=3.0.8,<3.3.0|Cython>=3.0.8|' \
+		-e 's|numpy>=2.0.0|numpy>=1.26.4|g' \
 		${WRKSRC}/pyproject.toml
 	@${REINPLACE_CMD} -e "s|'boost', version : '1.89.0'|'boost'|g" \
 		${WRKSRC}/meson.build
