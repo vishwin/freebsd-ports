@@ -1017,6 +1017,7 @@
     SUBDIR += procmap
     SUBDIR += procs
     SUBDIR += progress
+    SUBDIR += prokshy
     SUBDIR += pslist
     SUBDIR += psmisc
     SUBDIR += pstack

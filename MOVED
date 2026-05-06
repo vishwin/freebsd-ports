@@ -5280,3 +5280,8 @@ sysutils/cfengine-masterfiles321||2026-05-04|Has expired: No longer supported by
 sysutils/cfengine323||2026-05-04|Has expired: No longer supported by upstream
 sysutils/cfengine-masterfiles323||2026-05-04|Has expired: No longer supported by upstream
 security/openssl111||2026-05-04|Has expired: End-of-life since 2023-09-11, see https://www.openssl.org/blog/blog/2023/09/11/eol-111/  port will be removed when FreeBSD 13 is EoL
+security/ktls_isa-l_crypto-kmod||2026-05-05|Removed, is only for FreeBSD 13
+graphics/drm-510-kmod||2026-05-05|Removed, is only for FreeBSD 13
+graphics/nvidia-drm-510-kmod||2026-05-05|Removed, is only for FreeBSD 13
+graphics/nvidia-drm-510-kmod-580||2026-05-05|Removed, is only for FreeBSD 13
+graphics/nvidia-drm-510-kmod-devel||2026-05-05|Removed, is only for FreeBSD 13

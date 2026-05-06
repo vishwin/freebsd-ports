@@ -15,8 +15,7 @@ LICENSE_COMB=	multi
 ONLY_FOR_ARCHS=	amd64
 ONLY_FOR_ARCHS_REASON=	the new KMS components are only supported on amd64
 
-CONFLICTS_INSTALL=	drm-510-kmod \
-			drm-515-kmod \
+CONFLICTS_INSTALL=	drm-515-kmod \
 			drm-61-kmod
 
 USES=		kmod uidfix compiler:c++11-lang

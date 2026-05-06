@@ -1,6 +1,7 @@
 PORTNAME=	uhd
 DISTVERSIONPREFIX=	v
 DISTVERSION=	4.9.0.1
+PORTREVISION=	1
 CATEGORIES=	comms hamradio
 DIST_SUBDIR=	${PORTNAME}
 
@@ -23,7 +24,7 @@ BUILD_DEPENDS=	\
 		${PYTHON_PKGNAMEPREFIX}mako>0:textproc/py-mako@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${PY_FLAVOR} \
 		rst2html:textproc/py-docutils@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}numpy1>=1.16:math/py-numpy1@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}numpy>=1.16:math/py-numpy@${PY_FLAVOR} \
 		${PY_SETUPTOOLS} \
 		${PYTHON_PKGNAMEPREFIX}ruamel.yaml>=0:devel/py-ruamel.yaml@${PY_FLAVOR}
 

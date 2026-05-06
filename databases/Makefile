@@ -751,6 +751,7 @@
     SUBDIR += py-anysqlite
     SUBDIR += py-apache-arrow
     SUBDIR += py-apsw
+    SUBDIR += py-apswutils
     SUBDIR += py-asyncmy
     SUBDIR += py-asyncpg
     SUBDIR += py-berkeleydb

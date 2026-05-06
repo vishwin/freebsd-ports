@@ -1,3 +1,31 @@
+  <vuln vid="9b5d6fbb-4893-11f1-82bf-3c7c3fba4204">
+    <topic>devel/ocaml-opam -- CWE-24 Path Traversal: '../filedir'</topic>
+    <affects>
+    <package>
+	<name>ocaml-opam</name>
+	<range><lt>2.5.1</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p><a href="https://github.com/ocaml/opam/releases/tag/2.5.1">https://github.com/ocaml/opam/releases/tag/2.5.1</a> reports:</p>
+	<blockquote cite="https://github.com/ocaml/opam/releases/tag/2.5.1">
+	  <p>In OCaml opam before 2.5.1, a .install field containing a destination
+filepath can use ../ to reach a parent directory.</p>
+	<p>Reported by <a href="https://github.com/andrew">Andrew Nesbitt</a> &lt;andrewnez@gmail.com&gt;.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-41082</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-41082</url>
+    </references>
+    <dates>
+      <discovery>2026-04-16</discovery>
+      <entry>2026-05-05</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="1ccc383b-486a-11f1-8b62-8447094a420f">
     <topic>www/apache24 -- Multiple vulnerabilities</topic>
     <affects>

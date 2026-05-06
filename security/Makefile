@@ -283,7 +283,6 @@
     SUBDIR += krb5-122
     SUBDIR += krb5-devel
     SUBDIR += kstart
-    SUBDIR += ktls_isa-l_crypto-kmod
     SUBDIR += kuku
     SUBDIR += kwalletmanager
     SUBDIR += l0pht-watch
