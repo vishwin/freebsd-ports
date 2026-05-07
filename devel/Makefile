@@ -4487,6 +4487,7 @@
     SUBDIR += py-async-lru
     SUBDIR += py-async_generator
     SUBDIR += py-async_timeout
+    SUBDIR += py-asyncstdlib
     SUBDIR += py-asynctest
     SUBDIR += py-atom
     SUBDIR += py-atomiclong
@@ -4539,6 +4540,7 @@
     SUBDIR += py-azure-mgmt-cdn
     SUBDIR += py-azure-mgmt-cognitiveservices
     SUBDIR += py-azure-mgmt-compute
+    SUBDIR += py-azure-mgmt-compute34
     SUBDIR += py-azure-mgmt-consumption
     SUBDIR += py-azure-mgmt-containerinstance
     SUBDIR += py-azure-mgmt-containerregistry
@@ -5707,6 +5709,7 @@
     SUBDIR += py-pycompilation
     SUBDIR += py-pycomplete
     SUBDIR += py-pycomposefile
+    SUBDIR += py-pyconfigurator
     SUBDIR += py-pyconify
     SUBDIR += py-pycparser
     SUBDIR += py-pycrdt

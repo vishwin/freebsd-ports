@@ -516,6 +516,7 @@
     SUBDIR += node22
     SUBDIR += node24
     SUBDIR += node25
+    SUBDIR += node26
     SUBDIR += nostromo
     SUBDIR += novnc
     SUBDIR += npc
@@ -524,6 +525,7 @@
     SUBDIR += npm-node22
     SUBDIR += npm-node24
     SUBDIR += npm-node25
+    SUBDIR += npm-node26
     SUBDIR += nyxt
     SUBDIR += oatpp
     SUBDIR += oauth2-proxy
@@ -1474,6 +1476,7 @@
     SUBDIR += pocket-id
     SUBDIR += podcastamatic
     SUBDIR += pomerium
+    SUBDIR += pomerium-envoy-custom
     SUBDIR += pound
     SUBDIR += privatebin
     SUBDIR += privoxy
@@ -1721,6 +1724,7 @@
     SUBDIR += py-dtflickr
     SUBDIR += py-enmerkar
     SUBDIR += py-essentials-openapi
+    SUBDIR += py-exa-py
     SUBDIR += py-extruct
     SUBDIR += py-fake-useragent
     SUBDIR += py-falcon
@@ -1728,6 +1732,7 @@
     SUBDIR += py-fastapi-sso
     SUBDIR += py-feedgen
     SUBDIR += py-feedgenerator
+    SUBDIR += py-firecrawl-py
     SUBDIR += py-flasgger
     SUBDIR += py-flask
     SUBDIR += py-flask-admin
@@ -1877,6 +1882,7 @@
     SUBDIR += py-onetimepass
     SUBDIR += py-openbrokerapi
     SUBDIR += py-pafy
+    SUBDIR += py-parallel-web
     SUBDIR += py-paste
     SUBDIR += py-pastedeploy
     SUBDIR += py-path-and-address
@@ -2754,6 +2760,7 @@
     SUBDIR += yarn-node22
     SUBDIR += yarn-node24
     SUBDIR += yarn-node25
+    SUBDIR += yarn-node26
     SUBDIR += yarr
     SUBDIR += yaws
     SUBDIR += you-get
