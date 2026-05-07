@@ -9,7 +9,7 @@ WWW=		https://munt.sourceforge.net
 LICENSE=	LGPL21+
 LICENSE_FILE=	${WRKSRC}/COPYING.LESSER.txt
 
-USES=		cmake pkgconfig
+USES=		cmake
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	munt
@@ -40,6 +40,7 @@ LIBSAMPLERATE_LIB_DEPENDS=	libsamplerate.so:audio/libsamplerate
 LIBSAMPLERATE_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_SampleRate
 
 LIBSOXR_LIB_DEPENDS=	libsoxr.so:audio/libsoxr
+LIBSOXR_USES=		pkgconfig
 LIBSOXR_CMAKE_BOOL_OFF=	CMAKE_DISABLE_FIND_PACKAGE_SOXR
 
 .include <bsd.port.mk>
