@@ -1205,7 +1205,6 @@
     SUBDIR += kronosnet
     SUBDIR += ktextaddons
     SUBDIR += kunifiedpush
-    SUBDIR += kyua
     SUBDIR += lab
     SUBDIR += lace
     SUBDIR += lace14
@@ -4850,6 +4849,7 @@
     SUBDIR += py-datadog
     SUBDIR += py-dataflows-tabulator
     SUBDIR += py-datapackage
+    SUBDIR += py-datashape
     SUBDIR += py-datasette
     SUBDIR += py-datatest
     SUBDIR += py-dateparser
@@ -5799,6 +5799,7 @@
     SUBDIR += py-pyrepl
     SUBDIR += py-pyrfc3339
     SUBDIR += py-pyright
+    SUBDIR += py-pyroaring
     SUBDIR += py-pyroma
     SUBDIR += py-pyrsistent
     SUBDIR += py-pyscaffold
@@ -5988,7 +5989,6 @@
     SUBDIR += py-recordclass
     SUBDIR += py-recurring-ical-events
     SUBDIR += py-red-black-tree-mod
-    SUBDIR += py-rednose
     SUBDIR += py-reedsolo
     SUBDIR += py-referencing
     SUBDIR += py-regress
@@ -8463,7 +8463,6 @@
     SUBDIR += sccs
     SUBDIR += schilybase
     SUBDIR += scons
-    SUBDIR += sd-mux-ctrl
     SUBDIR += sdbus-cpp
     SUBDIR += sdl12
     SUBDIR += sdl12-compat
