@@ -311,6 +311,7 @@
     SUBDIR += python313
     SUBDIR += python313t
     SUBDIR += python314
+    SUBDIR += python315
     SUBDIR += qmasm
     SUBDIR += quickjs
     SUBDIR += quickjs-ng
@@ -399,5 +400,6 @@
     SUBDIR += zephir
     SUBDIR += zig
     SUBDIR += zig014
+	SUBDIR += zig015
 
 .include <bsd.port.subdir.mk>
