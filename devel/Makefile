@@ -1207,7 +1207,6 @@
     SUBDIR += kunifiedpush
     SUBDIR += lab
     SUBDIR += lace
-    SUBDIR += lace14
     SUBDIR += lager
     SUBDIR += laminar
     SUBDIR += lasi
@@ -1369,6 +1368,7 @@
     SUBDIR += libkiwix
     SUBDIR += libkiwix13
     SUBDIR += libklel
+    SUBDIR += libks
     SUBDIR += liblangtag
     SUBDIR += liblnk
     SUBDIR += liblockfile
@@ -1687,6 +1687,7 @@
     SUBDIR += maven
     SUBDIR += maven-wrapper
     SUBDIR += maven363
+    SUBDIR += maven38
     SUBDIR += maven39
     SUBDIR += mcpp
     SUBDIR += mdb
@@ -4839,6 +4840,7 @@
     SUBDIR += py-dal
     SUBDIR += py-darkdetect
     SUBDIR += py-darts.util.lru
+    SUBDIR += py-dasbus
     SUBDIR += py-dask
     SUBDIR += py-dask-awkward
     SUBDIR += py-dask-expr
@@ -4849,8 +4851,8 @@
     SUBDIR += py-datadog
     SUBDIR += py-dataflows-tabulator
     SUBDIR += py-datapackage
-    SUBDIR += py-datashape
     SUBDIR += py-datasette
+    SUBDIR += py-datashape
     SUBDIR += py-datatest
     SUBDIR += py-dateparser
     SUBDIR += py-dateutils
