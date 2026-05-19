@@ -490,7 +490,7 @@ ejabberd:*:543:
 # free: 547
 # free: 548
 # free: 549
-# free: 550
+grist:*:550:
 # free: 551
 kresd:*:552:
 knot:*:553:
@@ -512,7 +512,7 @@ polkitd:*:565:
 # free: 568
 # free: 569
 # free: 570
-# free: 571
+ttrssd:*:571:
 # free: 572
 # free: 573
 # free: 574
