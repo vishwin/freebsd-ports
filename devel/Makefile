@@ -1055,6 +1055,7 @@
     SUBDIR += ignition-msgs
     SUBDIR += ignition-plugin
     SUBDIR += ignition-tools
+    SUBDIR += ignition-utils
     SUBDIR += ikos
     SUBDIR += imake
     SUBDIR += immer
@@ -4393,6 +4394,7 @@
     SUBDIR += py-Automat
     SUBDIR += py-BTrees
     SUBDIR += py-Dumper
+    SUBDIR += py-Events
     SUBDIR += py-Faker
     SUBDIR += py-Farama-Notifications
     SUBDIR += py-IBMQuantumExperience

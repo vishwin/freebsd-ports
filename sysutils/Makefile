@@ -119,6 +119,7 @@
     SUBDIR += beats91
     SUBDIR += beats92
     SUBDIR += beats93
+    SUBDIR += beats94
     SUBDIR += bfs
     SUBDIR += bhyve-firmware
     SUBDIR += bhyve-rc
@@ -134,6 +135,7 @@
     SUBDIR += bmd-plugin-hookcmd
     SUBDIR += boot-extract
     SUBDIR += bottom
+    SUBDIR += boxrun
     SUBDIR += bpytop
     SUBDIR += brasero
     SUBDIR += brename
@@ -673,6 +675,7 @@
     SUBDIR += logstash91
     SUBDIR += logstash92
     SUBDIR += logstash93
+    SUBDIR += logstash94
     SUBDIR += logtool
     SUBDIR += logwatch
     SUBDIR += loki
@@ -1041,6 +1044,7 @@
     SUBDIR += py-ansible-core218
     SUBDIR += py-ansible-core219
     SUBDIR += py-ansible-core220
+    SUBDIR += py-ansible-core221
     SUBDIR += py-ansible-lint
     SUBDIR += py-ansible-runner
     SUBDIR += py-appjail-gui
