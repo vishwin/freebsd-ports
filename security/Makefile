@@ -880,6 +880,7 @@
     SUBDIR += pwdsafety
     SUBDIR += pwman
     SUBDIR += pwned-check
+    SUBDIR += py-PAM
     SUBDIR += py-SecretStorage
     SUBDIR += py-YubiOTP
     SUBDIR += py-acme
@@ -1029,6 +1030,7 @@
     SUBDIR += py-pnu-vuxml
     SUBDIR += py-policyuniverse
     SUBDIR += py-potr
+    SUBDIR += py-privleap
     SUBDIR += py-pwntools
     SUBDIR += py-pyaes
     SUBDIR += py-pyaff4
