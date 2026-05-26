@@ -22,4 +22,6 @@ USE_PYTHON=	autoplist concurrent pep517
 
 NO_ARCH=	yes
 
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}*django-picklefield
+
 .include <bsd.port.mk>

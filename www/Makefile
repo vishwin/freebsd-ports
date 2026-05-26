@@ -303,6 +303,7 @@
     SUBDIR += ikiwiki
     SUBDIR += ilias
     SUBDIR += imaginary
+    SUBDIR += iocaine
     SUBDIR += iridium
     SUBDIR += janus
     SUBDIR += jericho-html
@@ -510,6 +511,7 @@
     SUBDIR += nginx-devel
     SUBDIR += nginx-full
     SUBDIR += nginx-lite
+    SUBDIR += nginx-module-lua
     SUBDIR += nginx-naxsi
     SUBDIR += nginx-prometheus-exporter
     SUBDIR += nginx-ultimate-bad-bot-blocker
@@ -1552,6 +1554,13 @@
     SUBDIR += py-dash-bootstrap-components
     SUBDIR += py-ddgs
     SUBDIR += py-dj-database-url
+    SUBDIR += py-dj42-django-picklefield
+    SUBDIR += py-dj42-django-ranged-response
+    SUBDIR += py-dj42-django-simple-captcha
+    SUBDIR += py-dj42-django-webpack-loader
+    SUBDIR += py-dj42-django_statici18n
+    SUBDIR += py-dj42-djangorestframework
+    SUBDIR += py-dj42-djangosaml2
     SUBDIR += py-dj52-channels
     SUBDIR += py-dj52-channels-redis
     SUBDIR += py-dj52-django-allauth

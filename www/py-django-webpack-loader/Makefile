@@ -17,6 +17,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}django42>=2.0:www/py-django42@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	distutils autoplist concurrent
+
+CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}*${PORTNAME}
+
 NO_ARCH=	yes
 
 .include <bsd.port.mk>
