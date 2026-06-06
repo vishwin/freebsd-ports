@@ -1068,6 +1068,7 @@
     SUBDIR += py-nevergrad
     SUBDIR += py-nlopt
     SUBDIR += py-numba-stats
+    SUBDIR += py-numdifftools
     SUBDIR += py-numexpr
     SUBDIR += py-numpoly
     SUBDIR += py-numpy
@@ -1274,6 +1275,7 @@
     SUBDIR += sundials
     SUBDIR += superlu
     SUBDIR += superlu-dist
+    SUBDIR += superlu-mt
     SUBDIR += symengine
     SUBDIR += symfpu
     SUBDIR += symmetrica
