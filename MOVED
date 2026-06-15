@@ -5340,3 +5340,8 @@ devel/twiggy||2026-06-02|Archived upstream, no longer maintained, and has an unc
 audio/surge-synthesizer-lv2|audio/surge-synthesizer-xt-lv2|2026-06-04|Retire older surge-synthesizer-lv2 in favor of new gen surge-synthesizer-xt-lv2
 dns/dnsmasq-devel|dns/dnsmasq|2026-06-05|Discontinued -devel port, use dns/dnsmasq instead
 www/surge|ftp/surge|2026-06-05|Switch to a more updated ftp/surge port, which was accidentally added despite www/surge being available (but outdated)
+sysutils/mixer||2026-06-13|Discontinued, use /etc/rc.d/mixer
+audio/freebsd-13-mixer||2026-06-13|Discontinued
+java/openjdk24||2026-06-14|Has expired: No longer supported by upstream
+devel/simian||2026-06-14|Has expired: does not fetch
+net/pecl-oauth2|net/php-oauth|2026-06-14|Renamed to avoid confusion between implemented protocol and library version. Also, pecl repository is deprecated
