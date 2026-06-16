@@ -511,7 +511,6 @@
     SUBDIR += libnsgif
     SUBDIR += libopendrive
     SUBDIR += libopenraw
-    SUBDIR += libosmesa
     SUBDIR += libpano13
     SUBDIR += libpcd
     SUBDIR += libpgf
@@ -602,9 +601,6 @@
     SUBDIR += mesa-demos
     SUBDIR += mesa-devel
     SUBDIR += mesa-dri
-    SUBDIR += mesa-gallium-va
-    SUBDIR += mesa-gallium-vdpau
-    SUBDIR += mesa-gallium-xa
     SUBDIR += mesa-libs
     SUBDIR += metacam
     SUBDIR += metapixel
