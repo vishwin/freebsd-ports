@@ -39,7 +39,6 @@ PLIST_FILES=	bin/${BINARY_NAME} \
 
 DESCR=	${.CURDIR}/pkg-descr-${FLAVOR}
 
-BUILD_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/dri.pc:graphics/mesa-libs
 RUN_DEPENDS+=	xkeyboard-config>=2.5:x11/xkeyboard-config \
 		xkbcomp:x11/xkbcomp \
 		${LOCALBASE}/lib/dri/libdril_dri.so:graphics/mesa-dri
