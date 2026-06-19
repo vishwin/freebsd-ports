@@ -5,7 +5,9 @@ CATEGORIES=	graphics
 COMMENT=	OpenGL hardware acceleration drivers for DRI2+
 WWW=		https://www.mesa3d.org/
 
-BUILD_DEPENDS+=	${PYTHON_PKGNAMEPREFIX}ply>0:devel/py-ply@${PY_FLAVOR}
+BUILD_DEPENDS+=	glslangValidator:graphics/glslang \
+		${PYTHON_PKGNAMEPREFIX}ply>0:devel/py-ply@${PY_FLAVOR} \
+		libva>=0:multimedia/libva
 LIB_DEPENDS+=	libgallium-${MESAVERSION}.so:graphics/mesa-libs \
 		libgbm.so:graphics/mesa-libs
 
@@ -37,18 +39,13 @@ iris_BUILD_DEPENDS=	libclc-${LLVM_PORT:T}>0:devel/libclc@${LLVM_PORT:T} \
 			spirv-llvm-translator-${LLVM_PORT:T}>0:devel/spirv-llvm-translator@${LLVM_PORT:T}
 iris_RUN_DEPENDS=	spirv-tools>0:graphics/spirv-tools \
 			spirv-llvm-translator-${LLVM_PORT:T}>0:devel/spirv-llvm-translator@${LLVM_PORT:T}
-iris_CONFIGURE_ENV=	PKG_CONFIG_PATH="${LLVM_PREFIX}/libdata/pkgconfig"
 iris_IMPLIES=		SPIRV
 llvmpipe_DESC=		Software Rasterizer
 panfrost_DESC=		ARM Midgard and Bifrost
 panfrost_BUILD_DEPENDS=	libclc-${LLVM_PORT:T}>0:devel/libclc@${LLVM_PORT:T}
 r300_DESC=		AMD/ATI R300, R400 and R500
 r600_DESC=		AMD/ATI R600, R700, Evergreen, Northern Islands
-r600_BUILD_DEPENDS=	libva>=0:multimedia/libva
-r600_MESON_ON=		-Dgallium-va=enabled
 radeonsi_DESC=		AMD/ATI Southern Islands and newer
-radeonsi_BUILD_DEPENDS=	libva>=0:multimedia/libva
-radeonsi_MESON_ON=	-Dgallium-va=enabled
 svga_DESC=		VMWare Virtual GPU
 zink_DESC=		OpenGL on top of Khronos’ Vulkan API
 
@@ -64,15 +61,12 @@ ${_gd}_VARS+=		GALLIUM_DRIVERS+=${_gd}
 OPTIONS_GROUP_VULKAN=	anv radv swrast_vk
 VULKAN_DESC=		Vulkan drivers
 anv_DESC=		Intel GPU Gen9 and newer Vulkan support
-anv_BUILD_DEPENDS=	glslangValidator:graphics/glslang \
-			libclc-${LLVM_PORT:T}>0:devel/libclc@${LLVM_PORT:T} \
+anv_BUILD_DEPENDS=	libclc-${LLVM_PORT:T}>0:devel/libclc@${LLVM_PORT:T} \
 			spirv-tools>0:graphics/spirv-tools \
 			spirv-llvm-translator-${LLVM_PORT:T}>0:devel/spirv-llvm-translator@${LLVM_PORT:T}
 anv_RUN_DEPENDS=	spirv-tools>0:graphics/spirv-tools \
 			spirv-llvm-translator-${LLVM_PORT:T}>0:devel/spirv-llvm-translator@${LLVM_PORT:T}
-anv_CONFIGURE_ENV=	PKG_CONFIG_PATH="${LLVM_PREFIX}/libdata/pkgconfig"
 radv_DESC=		AMD/ATI Southern Islands and newer Vulkan support
-radv_BUILD_DEPENDS=	glslangValidator:graphics/glslang
 swrast_vk_DESC=		Software Rasterizer Vulkan support
 
 OPTIONS_EXCLUDE+=	${ARCH:Marmv7:C/.+/anv radv/}
@@ -101,9 +95,6 @@ MESA_PLATFORMS+=	wayland
 .endif
 
 MESON_ARGS+=	-Dplatforms="${MESA_PLATFORMS:ts,:tl}"
-
-# Vulkan Video extensions (keep in sync with mesa-gallium-va)
-MESON_ARGS+=	-Dvideo-codecs="vc1dec,h264dec,h264enc,h265dec,h265enc,av1dec,av1enc,vp9dec"
 
 # Disable some options
 MESON_ARGS+=	-Dandroid-libbacktrace=disabled \
