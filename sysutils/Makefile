@@ -149,7 +149,6 @@
     SUBDIR += bsdinfo
     SUBDIR += bsdisks
     SUBDIR += bsdsensors
-    SUBDIR += bsdstats
     SUBDIR += bstack
     SUBDIR += btop
     SUBDIR += btsixad
@@ -1043,6 +1042,7 @@
     SUBDIR += pwol
     SUBDIR += pwsafe
     SUBDIR += pxattr
+    SUBDIR += py-GPUtil
     SUBDIR += py-ansible-compat
     SUBDIR += py-ansible-core
     SUBDIR += py-ansible-core218
