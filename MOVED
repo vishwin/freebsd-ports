@@ -4211,7 +4211,6 @@ www/py-flask-security||2025-03-31|Has expired: Depends on expired devel/py-pytes
 devel/py-aiocontextvars||2025-03-31|Has expired: Depends on expired devel/py-pytest-runner
 converters/libutf-8||2025-03-31|Has expired: Upstream disapeared and distfile is no more available
 science/py-moltemplate||2025-03-31|Has expired: Depends on expired devel/py-pytest-runner
-math/py-numdifftools||2025-03-31|Has expired: Depends on expired devel/py-pytest-runner
 graphics/py-pygal||2025-03-31|Has expired: Depends on expired devel/py-pytest-runner
 www/choqok||2025-03-31|Has expired: Project discontinued upstream
 net-p2p/vuze||2025-03-31|Has expired: Abandoned upstream
@@ -5371,3 +5370,9 @@ textproc/stardict-dictd_mova||2026-06-19|Broken for years and unfetchable
 x11/taiga||2026-06-19|Broken for more than 6 months
 databases/py-apache-arrow|databases/py-pyarrow|2026-06-21|Remove in favor of py-pyarrow, which is the same project
 misc/air||2026-06-21|Upstream has disappeared
+sysutils/signond@qt5||2026-06-22|Unflavorize, remove Qt5 flavor
+sysutils/signond@qt6|sysutils/signond|2026-06-22|Unflavorize
+sysutils/signon-plugin-oauth2@qt5||2026-06-22|Unflavorize, remove Qt5 flavor
+sysutils/signon-plugin-oauth2@qt6|sysutils/signon-plugin-oauth2|2026-06-22|Unflavorize
+net-im/libaccounts-qt@qt5||2026-06-22|Unflavorize, remove Qt5 flavor
+net-im/libaccounts-qt@qt6|net-im/libaccounts-qt|2026-06-22|Unflavorize
