@@ -2922,6 +2922,7 @@
     SUBDIR += p5-Lexical-Var
     SUBDIR += p5-Lingua-JA-Fold
     SUBDIR += p5-Lingua-Translit
+    SUBDIR += p5-Linux-Inotify2
     SUBDIR += p5-List-AllUtils
     SUBDIR += p5-List-BinarySearch
     SUBDIR += p5-List-Cycle
@@ -4907,6 +4908,8 @@
     SUBDIR += py-dj52-django-rq
     SUBDIR += py-dj52-graphene-django
     SUBDIR += py-dj52-strawberry-graphql
+    SUBDIR += py-dj60-django-rq
+    SUBDIR += py-dj60-strawberry-graphql
     SUBDIR += py-django-rq
     SUBDIR += py-dlinfo
     SUBDIR += py-dm-tree
@@ -5704,6 +5707,7 @@
     SUBDIR += py-ptvsd
     SUBDIR += py-pudb
     SUBDIR += py-pure-eval
+    SUBDIR += py-pure-sasl
     SUBDIR += py-purl
     SUBDIR += py-py
     SUBDIR += py-py-deviceid
@@ -6229,6 +6233,7 @@
     SUBDIR += py-threadpoolctl
     SUBDIR += py-threema-msgapi
     SUBDIR += py-thrift
+    SUBDIR += py-thrift_sasl
     SUBDIR += py-thriftpy2
     SUBDIR += py-throttler
     SUBDIR += py-tiamat

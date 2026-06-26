@@ -8,6 +8,8 @@ MAINTAINER=	herbert@gojira.at
 COMMENT=	Console carddav client
 WWW=		https://github.com/lucc/khard/
 
+BROKEN=		does not build with sphinx-9.0.4
+
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
@@ -22,7 +24,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}configobj>=5.0.6:devel/py-configobj@${PY_FLA
 		${PYTHON_PKGNAMEPREFIX}vdirsyncer>=0:deskutils/py-vdirsyncer@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}vobject>=0.9.5:deskutils/py-vobject@${PY_FLAVOR}
 
-USES=		gmake python:3.10-3.12
+USES=		gmake python
 USE_PYTHON=	autoplist pep517
 
 NO_ARCH=	yes
@@ -55,4 +57,10 @@ post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/build/man/khard.1 ${STAGEDIR}${PREFIX}/share/man/man1
 	${INSTALL_MAN} ${WRKSRC}/doc/build/man/khard.conf.5 ${STAGEDIR}${PREFIX}/share/man/man5
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${PYTHON_REL} >= 31200
+BROKEN=		Handler <function run_autoapi at 0x2e76579a5080> for event 'builder-inited' threw an exception (exception: 'TreeRebuilder' object has no attribute 'visit_typealias')
+.endif
+
+.include <bsd.port.post.mk>
