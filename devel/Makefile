@@ -4446,6 +4446,7 @@
     SUBDIR += py-aniso8601
     SUBDIR += py-aniso86016
     SUBDIR += py-anndata
+    SUBDIR += py-annexremote
     SUBDIR += py-annotated-doc
     SUBDIR += py-annotated-types
     SUBDIR += py-ansi
@@ -6397,6 +6398,7 @@
     SUBDIR += py-weblib
     SUBDIR += py-websockets
     SUBDIR += py-websockify
+    SUBDIR += py-wenv
     SUBDIR += py-wheel
     SUBDIR += py-wheel-filename
     SUBDIR += py-wheel044
@@ -6492,6 +6494,7 @@
     SUBDIR += py-zope.interface
     SUBDIR += py-zope.schema
     SUBDIR += py-zope.testbrowser
+    SUBDIR += py-zugbruecke
     SUBDIR += py3c
     SUBDIR += pybind11
     SUBDIR += pybind11-json
