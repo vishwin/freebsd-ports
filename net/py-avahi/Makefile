@@ -8,6 +8,7 @@ COMMENT=	Python interface to the Avahi mDNS system
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/dbus-python@${PY_FLAVOR}
+		${LOCALBASE}/share/automake-1.18/py-compile:devel/automake
 LIB_DEPENDS=	libavahi-client.so:net/avahi-app
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}gdbm>0:databases/py-gdbm@${PY_FLAVOR} \
 		${PYTHON_SITELIBDIR}/dbus/_dbus.py:devel/dbus-python@${PY_FLAVOR} \
@@ -33,6 +34,7 @@ post-extract:
 	${CP} ${FILESDIR}/build-db ${WRKSRC}/service-type-database
 
 do-build:
+	${CP} ${LOCALBASE}/share/automake-1.18/py-compile ${WRKSRC}/
 	@${DO_MAKE_BUILD} -C ${BUILD_WRKSRC}
 	@${DO_MAKE_BUILD} -C ${WRKSRC}/service-type-database
 

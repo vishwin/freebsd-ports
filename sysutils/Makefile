@@ -632,6 +632,7 @@
     SUBDIR += lcdproc
     SUBDIR += ldap-account-manager
     SUBDIR += ldapvi
+    SUBDIR += leaf
     SUBDIR += ledit
     SUBDIR += less
     SUBDIR += lfm
@@ -1065,6 +1066,7 @@
     SUBDIR += py-cron-descriptor
     SUBDIR += py-croniter
     SUBDIR += py-croniter2
+    SUBDIR += py-datalad
     SUBDIR += py-dbuild
     SUBDIR += py-debian-inspector
     SUBDIR += py-dex
