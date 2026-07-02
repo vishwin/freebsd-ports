@@ -10,7 +10,7 @@ WWW=		https://www.x.org/
 USES=		metaport
 
 # data
-RUN_DEPENDS+=	${LOCALBASE}/libdata/pkgconfig/xbitmaps.pc:x11/xbitmaps \
+RUN_DEPENDS+=	${LOCALBASE}/share/pkgconfig/xbitmaps.pc:x11/xbitmaps \
 		${LOCALBASE}/share/icons/handhelds/cursors/X_cursor:x11-themes/xcursor-themes
 
 OPTIONS_DEFINE=	DOCS

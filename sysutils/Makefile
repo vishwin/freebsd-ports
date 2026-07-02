@@ -317,6 +317,7 @@
     SUBDIR += doctl
     SUBDIR += doinkd
     SUBDIR += downtimed
+    SUBDIR += dpv
     SUBDIR += dsbbatmon
     SUBDIR += dsbdriverd
     SUBDIR += dsblogoutmgr
@@ -674,7 +675,6 @@
     SUBDIR += loganalyzer
     SUBDIR += logrotate
     SUBDIR += logstalgia
-    SUBDIR += logstash7
     SUBDIR += logstash8
     SUBDIR += logstash91
     SUBDIR += logstash92
@@ -1035,8 +1035,6 @@
     SUBDIR += pstree
     SUBDIR += puppet-lint
     SUBDIR += puppet-mode.el
-    SUBDIR += puppet8
-    SUBDIR += puppetserver8
     SUBDIR += pv
     SUBDIR += pwd_unmkdb
     SUBDIR += pwgen
@@ -1201,7 +1199,6 @@
     SUBDIR += rtkit-unix
     SUBDIR += rtty
     SUBDIR += rubygem-backup
-    SUBDIR += rubygem-bolt
     SUBDIR += rubygem-bosh-gen
     SUBDIR += rubygem-bundle-audit
     SUBDIR += rubygem-bundler
@@ -1266,7 +1263,6 @@
     SUBDIR += rubygem-parallel
     SUBDIR += rubygem-puppet_forge
     SUBDIR += rubygem-puppetfile-resolver
-    SUBDIR += rubygem-puppetserver-ca
     SUBDIR += rubygem-r10k
     SUBDIR += rubygem-redfish_client
     SUBDIR += rubygem-rubyipmi

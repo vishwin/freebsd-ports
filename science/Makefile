@@ -25,6 +25,7 @@
     SUBDIR += afni
     SUBDIR += agrum
     SUBDIR += aircraft-datcom
+    SUBDIR += amrex
     SUBDIR += antioch
     SUBDIR += apbs
     SUBDIR += arbor
@@ -407,6 +408,7 @@
     SUBDIR += py-periodictable
     SUBDIR += py-phono3py
     SUBDIR += py-phonopy
+    SUBDIR += py-phonors
     SUBDIR += py-plumed
     SUBDIR += py-pnetcdf
     SUBDIR += py-probeinterface

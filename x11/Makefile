@@ -469,7 +469,6 @@
     SUBDIR += virtualgl
     SUBDIR += walker
     SUBDIR += wallutils
-    SUBDIR += wapanel
     SUBDIR += watershot
     SUBDIR += waveterm
     SUBDIR += way-displays
@@ -702,7 +701,6 @@
     SUBDIR += xzoom
     SUBDIR += yad
     SUBDIR += yakuake
-    SUBDIR += yalias
     SUBDIR += yeahconsole
     SUBDIR += yelp
     SUBDIR += zenity

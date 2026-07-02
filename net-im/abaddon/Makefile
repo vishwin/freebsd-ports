@@ -16,10 +16,7 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libfontconfig.so:x11-fonts/fontconfig \
 		libfreetype.so:print/freetype2 \
 		libhandy-1.so:x11-toolkits/libhandy \
-		libopus.so:audio/opus \
-		librnnoise.so:audio/rnnoise \
 		libsecret-1.so:security/libsecret \
-		libsodium.so:security/libsodium \
 		libspdlog.so:devel/spdlog
 
 USES=		cmake compiler:c++17-lang gnome pkgconfig sqlite ssl
@@ -33,5 +30,21 @@ GH_TUPLE=	machinezone:IXWebSocket:bc765e7:ixwebsocket/subprojects/ixwebsocket \
 		cisco:mlspp:1cc50a1:mlspp/subprojects/mlspp \
 		nayuki:QR-Code-generator:22fac31:qrcodegenerator/subprojects/qrcodegen
 USE_GNOME=	gdkpixbufextra gtkmm30
+
+OPTIONS_DEFINE=		VOICE
+OPTIONS_DEFAULT=	VOICE
+
+# libdave (required for voice) doesn't support 32 bit
+OPTIONS_EXCLUDE_armv6=		VOICE
+OPTIONS_EXCLUDE_armv7=		VOICE
+OPTIONS_EXCLUDE_i386=		VOICE
+OPTIONS_EXCLUDE_powerpc=	VOICE
+OPTIONS_EXCLUDE_powerpcspe=	VOICE
+
+VOICE_DESC=		Voice chat support
+VOICE_LIB_DEPENDS=	libopus.so:audio/opus \
+			librnnoise.so:audio/rnnoise \
+			libsodium.so:security/libsodium
+VOICE_CMAKE_BOOL=	ENABLE_VOICE
 
 .include <bsd.port.mk>

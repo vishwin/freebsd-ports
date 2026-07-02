@@ -11,6 +11,7 @@
     SUBDIR += 90secondportraits
     SUBDIR += Bugdom
     SUBDIR += Bugdom2
+    SUBDIR += CWR-CE
     SUBDIR += CaribbeanStud
     SUBDIR += DDNet
     SUBDIR += Doom64EX
@@ -186,6 +187,7 @@
     SUBDIR += dangen
     SUBDIR += darkplaces
     SUBDIR += defendguin
+    SUBDIR += dethrace
     SUBDIR += devd-controller-rules
     SUBDIR += devilutionX
     SUBDIR += dhewm3

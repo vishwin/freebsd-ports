@@ -685,6 +685,7 @@
     SUBDIR += emacs-lsp-booster
     SUBDIR += embb
     SUBDIR += emscripten
+    SUBDIR += enkits
     SUBDIR += entt
     SUBDIR += envsubst
     SUBDIR += epl.el
@@ -1294,6 +1295,7 @@
     SUBDIR += libdlmalloc
     SUBDIR += libdombey
     SUBDIR += libdparse
+    SUBDIR += libdpv
     SUBDIR += libds
     SUBDIR += libdwarf
     SUBDIR += libe
@@ -1321,6 +1323,7 @@
     SUBDIR += libffi
     SUBDIR += libffi321
     SUBDIR += libffi33
+    SUBDIR += libfigpar
     SUBDIR += libfirm
     SUBDIR += libfixposix
     SUBDIR += libfmt
@@ -1510,6 +1513,7 @@
     SUBDIR += libvanessa_socket
     SUBDIR += libvc
     SUBDIR += libversion
+    SUBDIR += libverto
     SUBDIR += libvex
     SUBDIR += libvhdi
     SUBDIR += libvirt
@@ -1711,6 +1715,7 @@
     SUBDIR += mm
     SUBDIR += modd
     SUBDIR += mold
+    SUBDIR += moon
     SUBDIR += mongo-c-driver
     SUBDIR += mongo-cxx-driver
     SUBDIR += mono-addins
@@ -1791,19 +1796,29 @@
     SUBDIR += ocaml-dolmen
     SUBDIR += ocaml-domain-name
     SUBDIR += ocaml-dune
+    SUBDIR += ocaml-duration
+    SUBDIR += ocaml-eqaf
     SUBDIR += ocaml-extlib
     SUBDIR += ocaml-findlib
     SUBDIR += ocaml-fmt
     SUBDIR += ocaml-fpath
     SUBDIR += ocaml-gen
+    SUBDIR += ocaml-gmap
     SUBDIR += ocaml-hmap
+    SUBDIR += ocaml-integers
     SUBDIR += ocaml-ipaddr
+    SUBDIR += ocaml-js_of_ocaml-ocamlbuild
     SUBDIR += ocaml-lacaml
     SUBDIR += ocaml-linol
     SUBDIR += ocaml-logs
     SUBDIR += ocaml-lsp
     SUBDIR += ocaml-lwt
+    SUBDIR += ocaml-lwt_log
     SUBDIR += ocaml-magic
+    SUBDIR += ocaml-magic-mime
+    SUBDIR += ocaml-merlin
+    SUBDIR += ocaml-mew
+    SUBDIR += ocaml-mew_vi
     SUBDIR += ocaml-mtime
     SUBDIR += ocaml-ocamlbuild
     SUBDIR += ocaml-ocplib-endian
@@ -1823,6 +1838,7 @@
     SUBDIR += ocaml-ppx_deriving
     SUBDIR += ocaml-ppx_hash
     SUBDIR += ocaml-ppx_js_style
+    SUBDIR += ocaml-ppx_optcomp
     SUBDIR += ocaml-ppx_sexp_conv
     SUBDIR += ocaml-ppx_yojson_conv
     SUBDIR += ocaml-ppx_yojson_conv_lib
@@ -1840,6 +1856,7 @@
     SUBDIR += ocaml-stdio
     SUBDIR += ocaml-topkg
     SUBDIR += ocaml-trace
+    SUBDIR += ocaml-trie
     SUBDIR += ocaml-uchar
     SUBDIR += ocaml-ulex
     SUBDIR += ocaml-uutf
@@ -4863,6 +4880,7 @@
     SUBDIR += py-dask-expr
     SUBDIR += py-dask-geopandas
     SUBDIR += py-dask-histogram
+    SUBDIR += py-databricks-sdk
     SUBDIR += py-dataclass-array
     SUBDIR += py-dataclasses-json
     SUBDIR += py-datadog
@@ -4909,9 +4927,6 @@
     SUBDIR += py-diskcache
     SUBDIR += py-distlib
     SUBDIR += py-distributed
-    SUBDIR += py-dj52-django-rq
-    SUBDIR += py-dj52-graphene-django
-    SUBDIR += py-dj52-strawberry-graphql
     SUBDIR += py-dj60-django-rq
     SUBDIR += py-dj60-strawberry-graphql
     SUBDIR += py-django-rq
@@ -5082,7 +5097,6 @@
     SUBDIR += py-glance-store
     SUBDIR += py-glob2
     SUBDIR += py-glom
-    SUBDIR += py-goodreads
     SUBDIR += py-google-cloud-iam
     SUBDIR += py-google-crc32c
     SUBDIR += py-google-i18n-address
@@ -5146,6 +5160,7 @@
     SUBDIR += py-hologram
     SUBDIR += py-homebase
     SUBDIR += py-http-prompt
+    SUBDIR += py-huey
     SUBDIR += py-humanize
     SUBDIR += py-hunter
     SUBDIR += py-hupper
@@ -5351,6 +5366,7 @@
     SUBDIR += py-logutils
     SUBDIR += py-logzero
     SUBDIR += py-looseversion
+    SUBDIR += py-loro
     SUBDIR += py-louie
     SUBDIR += py-lru-dict
     SUBDIR += py-lsprotocol
@@ -5367,6 +5383,7 @@
     SUBDIR += py-makefun
     SUBDIR += py-mando
     SUBDIR += py-manuel
+    SUBDIR += py-marimo
     SUBDIR += py-marisa-trie
     SUBDIR += py-marrow.mailer
     SUBDIR += py-marrow.util
@@ -5868,6 +5885,7 @@
     SUBDIR += py-pytest-dependency
     SUBDIR += py-pytest-django
     SUBDIR += py-pytest-doctestplus
+    SUBDIR += py-pytest-dotenv
     SUBDIR += py-pytest-drop-dup-tests
     SUBDIR += py-pytest-enabler
     SUBDIR += py-pytest-env
@@ -5918,6 +5936,7 @@
     SUBDIR += py-pytest-remotedata
     SUBDIR += py-pytest-repeat
     SUBDIR += py-pytest-rerunfailures
+    SUBDIR += py-pytest-retry
     SUBDIR += py-pytest-ruff
     SUBDIR += py-pytest-run-parallel
     SUBDIR += py-pytest-services
@@ -6016,7 +6035,6 @@
     SUBDIR += py-rapidfuzz-capi
     SUBDIR += py-ratelim
     SUBDIR += py-ratelimiter
-    SUBDIR += py-rauth
     SUBDIR += py-raven
     SUBDIR += py-rchitect
     SUBDIR += py-re-assert
@@ -6308,6 +6326,7 @@
     SUBDIR += py-types-psutil
     SUBDIR += py-types-psycopg2
     SUBDIR += py-types-python-dateutil
+    SUBDIR += py-types-pytz
     SUBDIR += py-types-pyyaml
     SUBDIR += py-types-requests
     SUBDIR += py-types-retry
@@ -6473,7 +6492,6 @@
     SUBDIR += py-yacs
     SUBDIR += py-yamllint
     SUBDIR += py-yamlloader
-    SUBDIR += py-yamlordereddictloader
     SUBDIR += py-yappi
     SUBDIR += py-yapps2
     SUBDIR += py-yarg

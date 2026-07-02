@@ -192,7 +192,6 @@
     SUBDIR += gnupg
     SUBDIR += gnupg-pkcs11-scd
     SUBDIR += gnupg1
-    SUBDIR += gnupg25
     SUBDIR += gnutls
     SUBDIR += go-cve-dictionary
     SUBDIR += go-tuf
@@ -283,7 +282,6 @@
     SUBDIR += kpkpass
     SUBDIR += kpmenu
     SUBDIR += krb5
-    SUBDIR += krb5-121
     SUBDIR += krb5-122
     SUBDIR += krb5-devel
     SUBDIR += kstart
@@ -392,7 +390,6 @@
     SUBDIR += mate-pam-helper
     SUBDIR += mbedtls3
     SUBDIR += mbedtls4
-    SUBDIR += mcrypt
     SUBDIR += md5deep
     SUBDIR += medusa
     SUBDIR += meek
@@ -432,6 +429,7 @@
     SUBDIR += obfs4proxy-tor
     SUBDIR += ocaml-cryptgps
     SUBDIR += ocaml-cryptokit
+    SUBDIR += ocaml-digestif
     SUBDIR += ocaml-lwt_ssl
     SUBDIR += ocaml-ssl
     SUBDIR += oidentd
@@ -1375,7 +1373,6 @@
     SUBDIR += ssss
     SUBDIR += sst
     SUBDIR += starttls
-    SUBDIR += steghide
     SUBDIR += stegify
     SUBDIR += step-certificates
     SUBDIR += step-cli

@@ -1,3 +1,911 @@
+  <vuln vid="78910e7e-74e3-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Multiple vulnerabilities in iconv(3)</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>Several encoding modules, including HZ, UTF-7, VIQR, and ZW,
+	  did not properly check the size of the caller-supplied output buffer
+	  before writing converted characters.  [CVE-2026-58081]</p>
+	  <p>The ISO-2022 encoding module used a stack buffer sized to MB_LEN_MAX
+	  (6 bytes) for intermediate character output.  Some ISO-2022 variants
+	  can require up to 10 bytes per character, in which case conversions
+	  can trigger a stack buffer overflow of up to four bytes.
+	  [CVE-2026-58082]</p>
+	<h1>Impact:</h1>
+	  <p>An application that uses iconv(3) to convert untrusted input
+	  to or from one of the affected encodings may be vulnerable to buffer
+	  overflows if it uses one of the affected encoding modules.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-58081</cvename>
+      <cvename>CVE-2026-58082</cvename>
+      <freebsdsa>SA-26:49.iconv</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="43f9ca02-74e3-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD-kernel -- Kernel stack disclosure in 32-bit compatibility support</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>The compat32 kevent() handler translates a 64-bit kevent struct
+	  into a stack- declared 32-bit struct.  It did not first zero the
+	  stack struct.</p>
+	<h1>Impact:</h1>
+	  <p>An unprivileged user may observe a small amount of uninitialized
+	  kernel stack data, which may contain sensitive information.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49425</cvename>
+      <freebsdsa>SA-26:48.compat32</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="2355c475-74e3-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Kernel stack disclosure in Linux compatibility layer</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>The Linux waitid() implementation translates a FreeBSD siginfo_t
+	  struct into a stack-declared Linux siginfo_t.  It did not first
+	  zero the stack struct.</p>
+	<h1>Impact:</h1>
+	  <p>An unprivileged user may observe 104 bytes of uninitialized
+	  kernel stack data, which may contain sensitive information.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49424</cvename>
+      <freebsdsa>SA-26:47.linux</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="fb1bf2ae-74e2-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Remote DOS via uninitialized memory access in KTLS receive</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>When building the iovec array for a received TLS 1.2 CBC record,
+	  ktls_ocf_tls_cbc_decrypt() incremented the iovec index for every
+	  mbuf in the chain, including mbufs that were skipped because they
+	  contained only TLS header bytes.  This left uninitialized entries
+	  in the iovec array.  The iovec array was allocated without zeroing.</p>
+	<h1>Impact:</h1>
+	  <p>A remote TLS peer can cause the kernel to read from uninitialized
+	  iovec entries during HMAC computation, resulting in a kernel panic.
+	  The peer must be able to control TCP segmentation such that the
+	  first mbuf of a CBC record contains only the 5-byte TLS record
+	  header.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49423</cvename>
+      <freebsdsa>SA-26:46.ktls</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="cd658f09-74e2-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Incorrect audit records for ptrace(2) syscall requests</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>When auditing a system call executed via ptrace(PT_SC_REMOTE),
+	  the kernel passed the return value of an internal setup function
+	  to AUDIT_SYSCALL_EXIT() rather than the actual result of the executed
+	  system call.  As a result, committed audit records for system calls
+	  which returned an error do not reflect the true outcome of the
+	  operation.  That is, they indicate that the operation succeeded
+	  when it in fact failed.</p>
+	<h1>Impact:</h1>
+	  <p>Audit records for system calls executed via ptrace(PT_SC_REMOTE)
+	  may show an incorrect error status.  An attacker with the ability
+	  to debug a process could use this to produce misleading audit trails,
+	  potentially undermining audit-based Intrusion Detection Systems
+	  (IDS).</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49426</cvename>
+      <freebsdsa>SA-26:45.audit</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="91017b3b-74e2-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Multiple vulnerabilities in POSIX largepage objects</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>Pages belonging to largepage shared memory objects were not
+	  explicitly wired.  When sendfile(2) transmitted such an object with
+	  the SF_NOCACHE flag, it freed the underlying pages after transmission
+	  even though existing mappings still referred to them.  [CVE-2026-49427]</p>
+	  <p>Separately, certain system calls, such open(2) with the O_TRUNC
+	  flag set, and fspacectl(2), could incorrectly free memory in largepage
+	  objects.  These operations are not permitted on largepage objects,
+	  but the implementation did not verify this.  [CVE-2026-49428]</p>
+	<h1>Impact:</h1>
+	  <p>An unprivileged local user can abuse the bug to access freed
+	  kernel memory.  This can be exploited to escalate privileges.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49427</cvename>
+      <cvename>CVE-2026-49428</cvename>
+      <freebsdsa>SA-26:44.posixshm</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="6c547c1b-74e2-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Use-after-free in TCP RACK stack option handler</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>The RACK setsockopt(2) handler drops the connection lock in
+	  order to copy option data from userspace, then reacquires the lock.
+	  After reacquiring, it verifies that the TCP stack had not been
+	  switched away, but did not reload its pointer to the stack's
+	  per-connection control block.  If userspace switches stacks twice
+	  during this window, the check will succeed but the saved pointer
+	  will refer to freed memory.</p>
+	<h1>Impact:</h1>
+	  <p>The bug may be exploitable by an unprivileged local user to
+	  escalate privileges.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49422</cvename>
+      <freebsdsa>SA-26:43.tcp</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="33fd66d1-74e2-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- unlinkat(2) ignores AT_RESOLVE_BENEATH flag</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>The kernel function that implements unlinkat(2) and funlinkat(2)
+	  validated the AT_RESOLVE_BENEATH flag but failed to pass it through
+	  to the underlying path lookup.  The flag was silently dropped, so
+	  path resolution was not actually restricted.</p>
+	<h1>Impact:</h1>
+	  <p>A process that uses AT_RESOLVE_BENEATH with unlinkat(2) or
+	  funlinkat(2) to confine path resolution can in fact resolve paths
+	  above the starting directory.  A caller relying on this flag for
+	  path containment may delete files outside the intended directory
+	  tree.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49421</cvename>
+      <freebsdsa>SA-26:42.unlinkat</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="f5dd96dd-74e1-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Buffer overflow in libalias RTSP handler</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>The RTSP handler in libalias rewrote outgoing packets into a
+	  fixed-length stack buffer without checking whether the rewritten
+	  data fit in the buffer, or whether the result fit back in the
+	  original packet.</p>
+	<h1>Impact:</h1>
+	  <p>A host sending crafted RTSP traffic from inside a NAT gateway
+	  using libalias can overflow a stack buffer, potentially achieving
+	  remote code execution in the kernel (when using ipfw(4) NAT) or in
+	  the natd(8) process (which generally runs as the root user).</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49420</cvename>
+      <freebsdsa>SA-26:41.libalias</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="9534b664-74e1-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Multiple vulnerabilities in OpenZFS</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>The ZFS_IOC_USERSPACE_MANY ioctl, used by zfs-userspace(8),
+	  truncated a 64-bit output buffer size to a 32-bit integer for the
+	  kernel allocation, but used the original 64-bit size as the buffer
+	  limit when writing records.</p>
+	  <p>The ZFS_IOC_RECV_NEW ioctl, in the heal receive path, similarly
+	  truncated a 64-bit payload size to a 32-bit integer for allocation,
+	  then used the original 64-bit size as the length for a byteswap
+	  operation.</p>
+	  <p>The ZFS_IOC_SET_PROP ioctl, used by zfs-set(8), incorrectly validated
+	  the calling user such that an unprivileged user is able to set
+	  metadata on a dataset indicating that the dataset has received
+	  properties from a zfs-recv(8) stream.</p>
+	<h1>Impact:</h1>
+	  <p>A local user with the "userused" delegated ZFS permission can
+	  trigger a kernel heap overflow via the ZFS_IOC_USERSPACE_MANY ioctl,
+	  potentially escalating privileges.  [CVE-2026-49429]</p>
+	  <p>A local user with the "receive" delegated ZFS permission can trigger
+	  kernel memory corruption via ZFS_IOC_RECV_NEW by sending a crafted
+	  receive stream in heal mode.  [CVE-2026-49430]</p>
+	  <p>Any local user can set the internal ZFS metadata flag "$hasrecvd"
+	  on datasets via ZFS_IOC_SET_PROP.  [CVE-2026-49431]</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49429</cvename>
+      <cvename>CVE-2026-49430</cvename>
+      <cvename>CVE-2026-49431</cvename>
+      <freebsdsa>SA-26:40.zfs</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="4b0d0a49-74e1-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Local privilege escalation via execve(2) TOCTOU race</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>During execve(2) of a SUID binary, the new virtual address space
+	  is installed before the process credentials are updated.  During
+	  this window, a process running as the same user can access the
+	  target process's memory via procfs or linprocfs, because the kernel's
+	  debugging permission check still saw the original credentials.</p>
+	<h1>Impact:</h1>
+	  <p>An unprivileged local user can exploit this race to modify the
+	  address space of a SUID binary before its credentials are elevated,
+	  potentially gaining full control of the affected system.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49415</cvename>
+      <freebsdsa>SA-26:39.execve</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="a65c31d1-74e0-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Jail reference count underflow</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>When the JAIL_AT_DESC flag is specified, kern_jail_set() and
+	  kern_jail_get() released the reference to the caller's current
+	  prison before looking up the jail descriptor.  If the descriptor
+	  lookup failed, error-handling paths released the same reference a
+	  second time.</p>
+	<h1>Impact:</h1>
+	  <p>An unprivileged local user can trigger a prison reference count
+	  underflow, which may cause the prison structure to be freed while
+	  still in use.  When this is done on the jail host, the bug will
+	  generally result in an immediate panic.  However, if the user is
+	  running in a jail, then it may be possible to exploit the bug to
+	  elevate privileges.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49419</cvename>
+      <freebsdsa>SA-26:38.jail</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="5a34b147-74e0-11f1-958d-bc241121aa0a">
+    <topic>FreeBSD -- Use-after-free in device pager page list</topic>
+    <affects>
+      <package>
+	<name>FreeBSD-kernel</name>
+	<range><ge>15.1</ge><lt>15.1_1</lt></range>
+	<range><ge>15.0</ge><lt>15.0_11</lt></range>
+	<range><ge>14.4</ge><lt>14.4_7</lt></range>
+	<range><ge>14.3</ge><lt>14.3_16</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<h1>Problem Description:</h1>
+	  <p>When msync(MS_INVALIDATE) is called on a mapping of an unmanaged
+	  device object, the physical pages in the mapping range are marked
+	  invalid but remain in the pager's page list.  A subsequent page
+	  fault will cause the fault handler to re-insert the page into the
+	  object's list.  This corrupts the list, and on object destruction
+	  the page is freed twice.</p>
+	<h1>Impact:</h1>
+	  <p>An unprivileged local user with access to a device that provides
+	  memory-mapped I/O can trigger a use-after-free in the kernel, though
+	  this is limited to a pool of objects ("fictitious pages") that are
+	  never recycled for a different purpose.  It may be possible to
+	  exploit this to escalate privileges.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49418</cvename>
+      <freebsdsa>SA-26:37.vm</freebsdsa>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-07-01</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="5b7cb356-749c-11f1-8a71-50ebf6bdf8e9">
+    <topic>icinga2 -- Improper access control for JSON-RPC update certificate messages</topic>
+    <affects>
+      <package>
+      <name>icinga2</name>
+      <range><lt>2.16.2</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Icinga team reports:</p>
+	<blockquote cite="https://github.com/Icinga/icinga2/security/advisories/GHSA-vj39-ww8j-vvx5">
+	  <p>The code handling certificate update JSON-RPC messages was
+	    flawed and did not properly validate the sender of the message,
+	    allowing an unauthenticated attacker that can connect to Icinga
+	    2 to update both the own certificate as well as the trusted CA
+	    certificate. Updating the trusted CA allows an attacker to
+	    impersonate a trusted node, allowing them to take control over
+	    the node.</p>
+	  <p>Any Icinga 2 instance that is accessible to an attacker over
+	    the network is affected.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/Icinga/icinga2/security/advisories/GHSA-vj39-ww8j-vvx5</url>
+    </references>
+    <dates>
+      <discovery>2026-06-29</discovery>
+      <entry>2026-06-30</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="7701f760-745c-11f1-bc50-6cc21735f730">
+    <topic>PostgresSQL JDBC -- Silent channel-binding authentication downgrade via unsupported certificate algorithms</topic>
+    <affects>
+      <package>
+	<name>postgresql-jdbc</name>
+	<range><lt>47.7.12</lt></range>
+	<range><ge>47.7.4</ge></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>PostgreSQL project reports:</p>
+	<blockquote cite="https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-j92g-9f8w-j867">
+	  <p>
+	    channelBinding=require connections can be silently
+	    downgraded from SCRAM-SHA-256-PLUS (with channel
+	    binding) to plain SCRAM-SHA-256 (without it), losing the
+	    man-in-the-middle protection the setting is meant to
+	    guarantee. An attacker who can intercept the TLS
+	    connection triggers the downgrade with a certificate
+	    whose signature algorithm has no tls-server-end-point
+	    channel-binding hash. Examples are Ed25519, Ed448, and
+	    post-quantum algorithms.
+	  </p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-54291</cvename>
+      <url>https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-j92g-9f8w-j867</url>
+    </references>
+    <dates>
+      <discovery>2026-06-30</discovery>
+      <entry>2026-06-30</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="5181294e-7471-11f1-8de5-a8a1599412c6">
+    <topic>chromium -- security fixes</topic>
+    <affects>
+      <package>
+       <name>chromium</name>
+       <range><lt>149.0.7827.200</lt></range>
+      </package>
+      <package>
+       <name>ungoogled-chromium</name>
+       <range><lt>149.0.7827.200</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+       <p>Chrome Releases reports:</p>
+       <blockquote cite="https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html">
+	 <p>This update includes 3 security fixes:</p>
+	 <ul>
+	    <li>[513138301] High CVE-2026-13281: Integer overflow in Mojo. Reported by Google on 2026-05-14</li>
+	    <li>[517522620] High CVE-2026-13282: Use after free in Payments. Reported by Google on 2026-05-28</li>
+	    <li>[522561151] High CVE-2026-13283: Use after free in AdFilter. Reported by Google on 2026-06-11</li>
+	 </ul>
+       </blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-13281</cvename>
+      <cvename>CVE-2026-13282</cvename>
+      <cvename>CVE-2026-13283</cvename>
+      <url>https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html</url>
+    </references>
+    <dates>
+      <discovery>2026-06-25</discovery>
+      <entry>2026-06-30</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="bebbc065-73d2-11f1-910d-3c7c3fba4204">
+    <topic>NSD -- vulnerabilities</topic>
+    <affects>
+    <package>
+	<name>nsd</name>
+	<range><lt>4.14.3</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>NLnet Labs reports:</p>
+	<blockquote cite="https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12244.txt">
+	  <p>CVE-2026-12244: A specially crafted SVCB RR can cause a heap overflow of up to 65509 attacker controlled bytes.</p>
+	  <p>If NSD is configured as secondary for a zone, the primary of that zone can crash NSD with an AXFR containing a DNS message with a special crafted SVCB RR with an rdata size of 65512, that let's an (uint16_t) variable that is used to allocate space needed for the RR wrap (because total size > 65535), causing a heap overflow. The attacker can perform a controlled (RCE class) head write of up to 65509 bytes<br/><br/>
+Even though the data is from a configured primary inside NSD's trust boundary, we do consider the risk significant enough for multi-tenant secondary DNS deployments, given the potential severity of the attack.</p>
+	</blockquote>
+	<blockquote cite="https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12245.txt">
+	  <p>CVE-2026-12245: An attacker can keep all children in a crash-restart loop denying DoT service.</p>
+	  <p>NSD from version 4.13.0 has a heap use-after-free bug in logging errors on TLS connections, causing a crash of the server process, which can be triggered trivially by sending a DNS query over a DoT connection, and closing the connection without reading the response.<br/><br/>
+Any client with access to the DoT port (853) can trigger this. Even though a new server process will be immediately reforked to replace the crashed one, an attacker can keep all children in a crash-restart loop denying DoT service.</p>
+	</blockquote>
+	<blockquote cite="https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12246.txt">
+	  <p>CVE-2026-12246: The RR type APL rdata address, if too large, causes out of bounds write on the
+stack, when the zonefile is written out.</p>
+	  <p>NSD version 4.14.0 introduced a bug where a specially crafted APL RR, with an adflength larger than permitted for the address family will overwrite the stack when the zone is written to disk, with a maximum of 111 attacker controlled bytes.<br/><br/>
+Even though the data is from a configured primary inside NSD's trust boundary, we do consider the risk significant enough for multi-tenant secondary DNS deployments, where a primary could introduce the rogue APL with the secondary not noticing or only after the fact.</p>
+	</blockquote>
+	<blockquote cite="https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12490.txt">
+	  <p>CVE-2026-12490: Secondaries authenticated by a client certificate to transfer a zone over TLS,
+can bypass verification by transferring over TCP.</p>
+	  <p>When a "provide-xfr" is given with a "tls-auth-name", a secondary requesting a transfer should provide a client certificate with that name. However, no client certificate is needed when the request comes in over TLS over the regular "tls-port" (and not the "tls-auth-port") or over over TCP over the regular port, when the other conditions of the "provide-xfr" rule match.<br/><br/>
+The transfer security restrictions for client certificates can be bypassed completely if the attacker can match the other access control conditions, and the "tls-auth-xfr-only" option is not explicitly set to "yes" (which it by default is not)</p>
+	</blockquote>
+	<p>Thanks to people below for reporting and disclosing these vulnerabilities:</p>
+	<ul>
+	  <li>Qifan Zhang from Palo Alto Networks</li>
+	  <li>Haruki Oyama from Waseda University</li>
+	  <li>zhangph</li>
+	</ul>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-12244</cvename>
+      <url>https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12244.txt</url>
+      <cvename>CVE-2026-12245</cvename>
+      <url>https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12245.txt</url>
+      <cvename>CVE-2026-12246</cvename>
+      <url>https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12246.txt</url>
+      <cvename>CVE-2026-12490</cvename>
+      <url>https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12490.txt</url>
+    </references>
+    <dates>
+      <discovery>2026-06-25</discovery>
+      <entry>2026-06-29</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="0f3342e3-73ba-11f1-910d-3c7c3fba4204">
+    <topic>rclone -- Unauthenticated command execution in `rclone rcd --rc-serve` via inline remote instantiation</topic>
+    <affects>
+    <package>
+	<name>rclone</name>
+	<range><ge>1.46.0</ge><lt>1.74.3</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p><a href="https://github.com/rclone/rclone/security/advisories/GHSA-qw24-gh76-8rvv">https://github.com/rclone/rclone/security/advisories/GHSA-qw24-gh76-8rvv</a> reports:</p>
+	<blockquote cite="https://github.com/rclone/rclone/security/advisories/GHSA-qw24-gh76-8rvv">
+	  <p>Rclone is a command-line program to sync files and directories to
+and from different cloud storage providers.<br/>From 1.46.0 until 1.74.3, rclone rcd --rc-serve accepts unauthenticated GET and HEAD
+requests to paths of the form: /[remote:path]/object.<br/>The remote
+value is parsed from the URL and passed to normal backend initialization.
+Inline remote configuration can set backend options that execute
+local commands during initialization.<br/>As a result, a single
+unauthenticated GET or HEAD request can execute a command as the
+rclone process user.</p>
+	<p>Thanks to <a href="https://github.com/ncw">Nick Craig-Wood</a> for reporting this vulnerability.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-49980</cvename>
+      <url>https://cveawg.mitre.org/api/cve/CVE-2026-49980</url>
+      <url>https://github.com/rclone/rclone/security/advisories/GHSA-qw24-gh76-8rvv</url>
+    </references>
+    <dates>
+      <discovery>2026-06-24</discovery>
+      <entry>2026-06-29</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="a8614190-73b4-11f1-910d-3c7c3fba4204">
+    <topic>PowerDNS -- vulnerabilities</topic>
+    <affects>
+    <package>
+	<name>powerdns</name>
+	<range><lt>5.1.2</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>PowerDNS Team reports:</p>
+	<blockquote cite="https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-05.html">
+	<ul>
+	  <li>CVE-2026-33257: Insufficient input validation of internal webserver</li>
+	  <li>CVE-2026-33260: Insufficient input validation of internal webserver</li>
+	  <li>CVE-2026-33608: Incomplete domain name sanitization during Bind autosecondary zone transfer</li>
+	  <li>CVE-2026-33609: LDAP DN injection</li>
+	  <li>CVE-2026-33610: Possible file descriptor exhaustion in forward-dnsupdate</li>
+	  <li>CVE-2026-33611: Insufficient validation of HTTPS and SVCB records</li>
+	</ul>
+	<p>Thanks to people below for reporting these vulnerabilities:</p>
+	<ul>
+	  <li>Vitaly Simonovich</li>
+	  <li>Cavid</li>
+	  <li>Tibs</li>
+	  <li>ylwango613</li>
+	</ul>
+	</blockquote>
+	<blockquote cite="https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-07.html">
+	<ul>
+	  <li>CVE-2026-42005: Insufficient input validation of internal web server</li>
+	</ul>
+	<p>Thanks to ilya rozentsvaig for reporting this vulnerability.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-33257</cvename>
+      <cvename>CVE-2026-33260</cvename>
+      <cvename>CVE-2026-33608</cvename>
+      <cvename>CVE-2026-33609</cvename>
+      <cvename>CVE-2026-33610</cvename>
+      <cvename>CVE-2026-33611</cvename>
+      <cvename>CVE-2026-42005</cvename>
+      <url>https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-05.html</url>
+      <url>https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-07.html</url>
+    </references>
+    <dates>
+      <discovery>2026-02-16</discovery>
+      <entry>2026-06-29</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="62c4ed54-73aa-11f1-910d-3c7c3fba4204">
+    <topic>powerdns-recursor -- vulnerabilities</topic>
+    <affects>
+   <package>
+	<name>powerdns-recursor</name>
+	<range><lt>5.4.3</lt></range>
+   </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>PowerDNS Team reports:</p>
+	<blockquote cite="https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-08.html">
+	<ul>
+	  <li>CVE-2026-3361: ZoneToCache can poison the cache</li>
+	  <li>CVE-2026-40012: Information about ECS zero scoped answers might leak to clients that use a specific ECS</li>
+	  <li>CVE-2026-42005: Unbounded resource consumption in internal webserver</li>
+	  <li>CVE-2026-42387: Insufficient input validation in ZoneToCache</li>
+	  <li>CVE-2026-42388: Missing input validation for catalog zones</li>
+	  <li>CVE-2026-42389: Reject more queries with invalid header values</li>
+	  <li>CVE-2026-42390: ZONEMD validation can be bypassed</li>
+	  <li>CVE-2026-52690: Spoofed answers can mark an authoritative non-EDNS capable</li>
+	</ul>
+	<p>Thanks to people below for reporting these vulnerabilities.</p>
+	<ul>
+	  <li>Danial Mahadzir</li>
+	  <li>ilya rozentsvaig</li>
+	  <li>Vitaly Simonovich</li>
+	  <li>ylwango613</li>
+	  <li>nurmukhammyed</li>
+	  <li>Mehtab Zafar</li>
+	</ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-3361</cvename>
+      <cvename>CVE-2026-40012</cvename>
+      <cvename>CVE-2026-42005</cvename>
+      <cvename>CVE-2026-42387</cvename>
+      <cvename>CVE-2026-42388</cvename>
+      <cvename>CVE-2026-42389</cvename>
+      <cvename>CVE-2026-42390</cvename>
+      <cvename>CVE-2026-52690</cvename>
+      <url>https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-08.html</url>
+    </references>
+    <dates>
+      <discovery>2026-04-04</discovery>
+      <entry>2026-06-29</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="6c0e17cf-73a0-11f1-910d-3c7c3fba4204">
+    <topic>DNSdist -- vulnerabilities</topic>
+    <affects>
+    <package>
+	<name>dnsdist</name>
+	<range><lt>2.0.7</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The DNSdist team reports:</p>
+	<blockquote cite="https://www.dnsdist.org/security-advisories/powerdns-advisory-for-dnsdist-2026-09.html">
+	<ul>
+	  <li>CVE-2026-40011: Prometheus denial of service via crafted DNS queries</li>
+	  <li>CVE-2026-42004: EDNS options smuggling</li>
+	  <li>CVE-2026-42005: Insufficient input validation of internal web server</li>
+	  <li>CVE-2026-40208: Denial of service via DoH3 queries</li>
+	  <li>CVE-2026-40209: Denial of service via IXFR queries</li>
+	  <li>CVE-2026-40210: Out-of-bounds read in SetMacAddrAction</li>
+	  <li>CVE-2026-40211: Denial of service via crafted DoH3 queries</li>
+	</ul>
+	<p>Thanks to people below for reporting these vulnerabilities.</p>
+	<ul>
+	  <li>Haruki Oyama (Waseda University)</li>
+	  <li>Vitaly Simonovich</li>
+	  <li>ilya rozentsvaig</li>
+	  <li>ylwango613</li>
+	  <li>Qifan Zhang (Palo Alto Networks)</li>
+	  <li>Mehtab Zafar</li>
+	</ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-40011</cvename>
+      <cvename>CVE-2026-42004</cvename>
+      <cvename>CVE-2026-42005</cvename>
+      <cvename>CVE-2026-40208</cvename>
+      <cvename>CVE-2026-40209</cvename>
+      <cvename>CVE-2026-40210</cvename>
+      <cvename>CVE-2026-40211</cvename>
+      <url>https://www.dnsdist.org/security-advisories/powerdns-advisory-for-dnsdist-2026-09.html</url>
+    </references>
+    <dates>
+      <discovery>2026-06-25</discovery>
+      <entry>2026-06-29</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="4e82a0e6-6801-42c6-8fb6-91b6b275a9e1">
+    <topic>gstreamer1 -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>gstreamer1-libav</name>
+	<name>gstreamer1-plugins</name>
+	<name>gstreamer1-plugins-bad</name>
+	<name>gstreamer1-plugins-good</name>
+	<name>gstreamer1-plugins-ugly</name>
+	<range><lt>1.28.4</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The GStreamer project reports:</p>
+	<blockquote cite="https://gstreamer.freedesktop.org/security/">
+	  <p>Multiple security issues were identified and fixed in the GStreamer framework.</p>
+	  <ul>
+	    <li>GStreamer-SA-2026-0030: Missing bounds checks in RTCP SDES packet parsing</li>
+	    <li>GStreamer-SA-2026-0031: Integer overflow and truncation in MXF demuxer</li>
+	    <li>GStreamer-SA-2026-0032: Out-of-bounds read and write in XMP tag parser</li>
+	    <li>GStreamer-SA-2026-0033: Out-of-bounds read and modification of const data in ID3v2 parser</li>
+	    <li>GStreamer-SA-2026-0034: Division by zero in mDVDsub subtitle parser</li>
+	    <li>GStreamer-SA-2026-0035: Integer overflow in WavPack decoder</li>
+	    <li>GStreamer-SA-2026-0036: Out-of-bounds read in SBC audio parser header parsing</li>
+	    <li>GStreamer-SA-2026-0037: Heap corruption in gst-libav AV protocol pipe</li>
+	    <li>GStreamer-SA-2026-0038: Memory leak and NULL pointer dereference in gst-libav demuxer</li>
+	    <li>GStreamer-SA-2026-0039: Assertion in AV1 parser tile data parsing</li>
+	    <li>GStreamer-SA-2026-0040: Out-of-bounds read in VA JPEG decoder segment parsing</li>
+	    <li>GStreamer-SA-2026-0042: Out-of-bounds reads and integer overflows in RealMedia demuxer</li>
+	    <li>GStreamer-SA-2026-0043: Out-of-bounds read and write in RFB source</li>
+	    <li>GStreamer-SA-2026-0045: Out-of-bounds reads in PCAP parser due to missing bounds checks</li>
+	    <li>GStreamer-SA-2026-0046: Integer overflow in VMNC decoder cursor payload size calculation</li>
+	    <li>GStreamer-SA-2026-0047: One-byte out-of-bounds read in H.264 NAL unit parser</li>
+	    <li>GStreamer-SA-2026-0048: Out-of-bounds read in H.266 parser VUI aspect ratio parsing</li>
+	  </ul>
+	</blockquote>
+      </body>
+    </description>
+    <references>
+      <cvename>CVE-2026-12891</cvename>
+      <cvename>CVE-2026-12892</cvename>
+      <cvename>CVE-2026-12893</cvename>
+      <cvename>CVE-2026-52717</cvename>
+      <cvename>CVE-2026-52718</cvename>
+      <cvename>CVE-2026-52719</cvename>
+      <cvename>CVE-2026-52720</cvename>
+      <cvename>CVE-2026-52721</cvename>
+      <cvename>CVE-2026-52722</cvename>
+      <cvename>CVE-2026-53703</cvename>
+      <cvename>CVE-2026-53704</cvename>
+      <cvename>CVE-2026-53705</cvename>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0030.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0031.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0032.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0033.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0034.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0035.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0036.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0037.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0038.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0039.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0040.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0042.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0043.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0045.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0046.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0047.html</url>
+      <url>https://gstreamer.freedesktop.org/security/sa-2026-0048.html</url>
+    </references>
+    <dates>
+      <discovery>2026-06-12</discovery>
+      <entry>2026-06-29</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="d06b1fa2-731f-11f1-a0d2-589cfc10a551">
     <topic>Multiple vulnerability found in Expat</topic>
     <affects>
