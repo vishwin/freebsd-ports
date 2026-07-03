@@ -21,6 +21,7 @@
     SUBDIR += asbutton
     SUBDIR += asr-manpages
     SUBDIR += astc-encoder
+    SUBDIR += auto-tempo
     SUBDIR += bb
     SUBDIR += bbjd
     SUBDIR += bdelta
@@ -572,6 +573,7 @@
     SUBDIR += py-onnx
     SUBDIR += py-onnx-tf
     SUBDIR += py-onnxconverter-common
+    SUBDIR += py-onnxruntime
     SUBDIR += py-openai
     SUBDIR += py-openai-harmony
     SUBDIR += py-openai-whisper

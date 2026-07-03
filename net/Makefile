@@ -1260,6 +1260,7 @@
     SUBDIR += ripe-whois
     SUBDIR += rosenpass
     SUBDIR += rospo
+    SUBDIR += route-summarization
     SUBDIR += routinator
     SUBDIR += rpki-client
     SUBDIR += rscsi

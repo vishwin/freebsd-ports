@@ -1497,6 +1497,7 @@
     SUBDIR += py-aiobreaker
     SUBDIR += py-aioh2
     SUBDIR += py-aiohttp
+    SUBDIR += py-aiohttp-client-cache
     SUBDIR += py-aiohttp-cors
     SUBDIR += py-aiohttp-jinja2
     SUBDIR += py-aiohttp-middlewares

@@ -1,5 +1,6 @@
 PORTNAME=	chromium
-PORTVERSION=	149.0.7827.200
+PORTVERSION=	150.0.7871.46
+PORTREVISION=	1
 PULSEMV=	16
 PULSEV=		${PULSEMV}.1
 CATEGORIES=	www wayland
@@ -10,7 +11,7 @@ DISTFILES=	${DISTNAME}-lite${EXTRACT_SUFX} \
 		pulseaudio-${PULSEV}.tar.gz:pulseaudio
 
 USE_GITHUB=	nodefault
-GH_TUPLE=	rollup:rollup:v4.22.4:rollup/rollup \
+GH_TUPLE=	rollup:rollup:v4.60.4:rollup/rollup \
 		evanw:esbuild:v${_ESBUILD_VERSION:sh}:esbuild/esbuild
 
 MAINTAINER=	chromium@FreeBSD.org

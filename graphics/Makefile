@@ -1055,6 +1055,7 @@
     SUBDIR += py-rich-pixels
     SUBDIR += py-rlpycairo
     SUBDIR += py-s2
+    SUBDIR += py-sane
     SUBDIR += py-scikit-image
     SUBDIR += py-seqdiag
     SUBDIR += py-simplejpeg
@@ -1066,6 +1067,7 @@
     SUBDIR += py-svgwrite
     SUBDIR += py-term-image
     SUBDIR += py-termtosvg
+    SUBDIR += py-tesserocr
     SUBDIR += py-tifffile
     SUBDIR += py-tkcolorpicker
     SUBDIR += py-toyplot
@@ -1185,6 +1187,7 @@
     SUBDIR += satty
     SUBDIR += scale2x
     SUBDIR += scantailor
+    SUBDIR += scantpaper
     SUBDIR += scr2png
     SUBDIR += scrot
     SUBDIR += scwm-icons
