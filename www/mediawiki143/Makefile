@@ -1,5 +1,5 @@
 PORTNAME=	mediawiki
-PORTVERSION=	1.43.8		# LTS
+PORTVERSION=	1.43.9		# LTS
 CATEGORIES=	www
 MASTER_SITES=	https://releases.wikimedia.org/mediawiki/${PORTVERSION:R}/ \
 		LOCAL/wen
@@ -11,7 +11,7 @@ WWW=		https://www.mediawiki.org/
 
 LICENSE=	GPLv2
 
-CONFLICTS=	mediawiki139 mediawiki144 mediawiki145
+CONFLICTS=	mediawiki14[4-6]
 
 USES=		cpe php:flavors shebangfix
 SHEBANG_FILES=	maintenance/storage/make-blobs
