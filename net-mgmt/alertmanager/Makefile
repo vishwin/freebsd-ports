@@ -1,5 +1,5 @@
 PORTNAME=	alertmanager
-PORTVERSION=	0.33.0
+PORTVERSION=	0.33.1
 DISTVERSIONPREFIX=	v
 CATEGORIES=	net-mgmt
 MASTER_SITES=	https://raw.githubusercontent.com/${GH_ACCOUNT}/${GH_PROJECT}/${DISTVERSIONFULL}/:gomod \

@@ -1013,6 +1013,9 @@
     SUBDIR += php85-ldap
     SUBDIR += php85-soap
     SUBDIR += php85-sockets
+    SUBDIR += php86-ldap
+    SUBDIR += php86-soap
+    SUBDIR += php86-sockets
     SUBDIR += phpldapadmin
     SUBDIR += pimcommon
     SUBDIR += pimd

@@ -10,5 +10,6 @@ LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 USES=		compiler:c++11-lang php:pecl
+IGNORE_WITH_PHP=	86
 
 .include <bsd.port.mk>
