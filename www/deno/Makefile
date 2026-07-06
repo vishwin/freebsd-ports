@@ -74,7 +74,7 @@ post-patch:
 	${REINPLACE_CMD} "s|${PREFIX}|${PREFIX}|" \
 		${WRKSRC}/cli/task_runner.rs \
 		${WRKSRC}/tests/unit_node/process_test.ts
-	${REINPLACE_CMD} -e "s|%%CC%%|${CC}|" -e "s|%%CXX%%|${CXX}|" \
+	${REINPLACE_CMD} -e "s|%%LLVM_PREFIX%%|${LLVM_PREFIX}|g" \
 		${WRKSRC}/cargo-crates/v8-${V8_CARGO_V}/build/toolchain/gcc_toolchain.gni
 	${REINPLACE_CMD} "s|linux|freebsd|g" \
 		${WRKSRC}/tests/ffi/testdata/ffi_callback_errors.ts \

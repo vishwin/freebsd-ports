@@ -218,6 +218,7 @@ lib/emscripten/src/lib/libpthread_stub.js
 lib/emscripten/src/lib/libsdl.js
 lib/emscripten/src/lib/libsigs.js
 lib/emscripten/src/lib/libsockfs.js
+lib/emscripten/src/lib/libsockfs_node.js
 lib/emscripten/src/lib/libstack_trace.js
 lib/emscripten/src/lib/libstrings.js
 lib/emscripten/src/lib/libsyscall.js
@@ -1299,6 +1300,7 @@ lib/emscripten/system/lib/libc/musl/include/strings.h
 lib/emscripten/system/lib/libc/musl/include/stropts.h
 lib/emscripten/system/lib/libc/musl/include/sys/acct.h
 lib/emscripten/system/lib/libc/musl/include/sys/dir.h
+lib/emscripten/system/lib/libc/musl/include/sys/epoll.h
 lib/emscripten/system/lib/libc/musl/include/sys/errno.h
 lib/emscripten/system/lib/libc/musl/include/sys/fcntl.h
 lib/emscripten/system/lib/libc/musl/include/sys/file.h
@@ -6457,6 +6459,8 @@ lib/emscripten/tools/maint/create_dom_pk_codes.py
 lib/emscripten/tools/maint/create_entry_points.py
 lib/emscripten/tools/maint/create_release.py
 lib/emscripten/tools/maint/find_unused_settings.py
+lib/emscripten/tools/maint/gen_native_sig_info.py
+lib/emscripten/tools/maint/gen_release_notes.py
 lib/emscripten/tools/maint/gen_sig_info.py
 lib/emscripten/tools/maint/heuristic_clear_cache.py
 lib/emscripten/tools/maint/npm_update.py
@@ -6471,6 +6475,7 @@ lib/emscripten/tools/maint/simde_update.py
 lib/emscripten/tools/maint/update_settings_docs.py
 lib/emscripten/tools/maint/update_website.py
 lib/emscripten/tools/minimal_runtime_shell.py
+lib/emscripten/tools/native_sigs.py
 lib/emscripten/tools/ports/__init__.py
 lib/emscripten/tools/ports/boost_headers.py
 lib/emscripten/tools/ports/bullet.py

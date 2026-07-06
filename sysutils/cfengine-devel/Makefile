@@ -1,5 +1,6 @@
 PORTNAME=	cfengine
 PORTVERSION=	3.28.${CFENGINE_COMMIT_DATE}
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	sysutils
 PKGNAMESUFFIX=	-devel
@@ -53,7 +54,7 @@ INSTALL_TARGET=	install-strip
 
 LIB_DEPENDS+=	libpcre.so:devel/pcre \
 		libpcre2-posix.so:devel/pcre2 \
-		liblmdb.so:databases/lmdb \
+		liblmdb.so:databases/lmdb0 \
 		libyaml.so:textproc/libyaml \
 		libcurl.so:ftp/curl \
 		librsync.so:net/librsync
