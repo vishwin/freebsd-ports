@@ -12,7 +12,7 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	curl>0:ftp/curl \
 		libconfig>0:devel/libconfig \
-		lmdb>0:databases/lmdb0 \
+		lmdb0>0:databases/lmdb0 \
 		mosquitto>0:net/mosquitto \
 		pkgconf>0:devel/pkgconf
 
