@@ -413,6 +413,7 @@
     SUBDIR += unbound_exporter
     SUBDIR += unifi10
     SUBDIR += unifi9
+    SUBDIR += uptime-kuma
     SUBDIR += victoria-logs
     SUBDIR += victoria-metrics
     SUBDIR += virt-viewer

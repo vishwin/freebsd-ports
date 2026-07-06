@@ -1277,7 +1277,6 @@
     SUBDIR += pear-XML_HTMLSax
     SUBDIR += pear-XML_Wddx
     SUBDIR += pear-YAML
-    SUBDIR += pecl-pspell
     SUBDIR += pecl-xdiff2
     SUBDIR += pecl-xlswriter
     SUBDIR += pecl-yaml
@@ -1285,6 +1284,7 @@
     SUBDIR += peco
     SUBDIR += peg
     SUBDIR += perl2html
+    SUBDIR += php-pspell
     SUBDIR += php82-ctype
     SUBDIR += php82-dom
     SUBDIR += php82-enchant

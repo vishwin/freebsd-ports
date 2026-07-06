@@ -5490,3 +5490,4 @@ sysutils/rubygem-puppetserver-ca|sysutils/rubygem-openvoxserver-ca|2026-07-01|Ha
 java/jd-gui|java/jd-gui-duo|2026-07-03|Switch to active fork and rename
 lang/perl5.38||2026-07-03|Has expired: Support ends three years after .0 release. Please upgrade to a more recent version of Perl
 graphics/gimp-jxl-plugin||2026-07-03|Integrated into graphics/gimp-app
+textproc/pecl-pspell|textproc/php-pspell|2026-07-05|Converted to standard extension from pecl extension

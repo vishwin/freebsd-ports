@@ -993,6 +993,7 @@
     SUBDIR += py-joserfc
     SUBDIR += py-jwcrypto
     SUBDIR += py-k5test
+    SUBDIR += py-kdcproxy
     SUBDIR += py-keepkey
     SUBDIR += py-kerberos
     SUBDIR += py-keyring

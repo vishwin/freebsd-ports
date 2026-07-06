@@ -33,8 +33,8 @@ DESKTOP_ENTRIES="Battle Tanks" "" "" "${PORTNAME}" "Game;ArcadeGame;" ""
 OPTIONS_DEFINE=	DOCS
 
 post-patch:
-	@${REINPLACE_CMD} -e 's/lua5\.1/lua-${LUA_VER}/' \
-		${WRKSRC}/engine/SConscript
+	@${REINPLACE_CMD} -e '/for lua in/s/lua5\.1/lua-${LUA_VER}/ ; \
+		/^env.*ENABLE_LUA/d' ${WRKSRC}/engine/SConscript
 	@${REINPLACE_CMD} -e "s/env\.has_key('prefix')/'prefix' in env/" \
 		${WRKSRC}/mrt/SConscript
 # Prevent the clash with /usr/include/semaphore.h

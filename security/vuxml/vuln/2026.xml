@@ -1,3 +1,101 @@
+  <vuln vid="c7be43b0-78f0-11f1-8898-1c697a616631">
+    <topic>Emacs -- Heap out-of-bounds write when rendering SVG images</topic>
+    <affects>
+      <package>
+	<name>emacs</name>
+	<name>emacs-canna</name>
+	<name>emacs-nox</name>
+	<name>emacs-wayland</name>
+	<range><ge>28.1,3</ge><lt>30.2_4,3</lt></range>
+      </package>
+      <package>
+	<name>emacs-devel</name>
+	<name>emacs-devel-nox</name>
+	<range><lt>31.0.50.20250201,3</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	  <h1>Problem Description</h1>
+	  <p>When GNU Emacs renders an SVG image whose image spec includes a
+	  :css property, an off-by-one error in svg_load_image() writes a NUL
+	  byte one position past the end of a heap allocation.  The copied
+	  string is also left without NUL termination within its allocation,
+	  causing a subsequent out-of-bounds read.</p>
+	  <h1>Impact</h1>
+	  <p>A single NUL byte heap overflow is a well-understood exploitation
+	  primitive ("poison NUL byte") that can corrupt heap metadata and
+	  potentially be escalated to arbitrary code execution.  The overflow
+	  can be triggered by Lisp code that displays an SVG image with a
+	  crafted :css property.</p>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-6861</cvename>
+      <url>https://debbugs.gnu.org/cgi/bugreport.cgi?bug=80851</url>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2026-6861</url>
+    </references>
+    <dates>
+      <discovery>2026-04-17</discovery>
+      <entry>2026-07-06</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="d7939352-788b-11f1-b72c-8447094a420f">
+    <topic>Weechat -- Memory leak in relay-API</topic>
+    <affects>
+      <package>
+	<name>weechat</name>
+	<range><lt>4.7.3</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Weechat project reports:</p>
+	<blockquote cite="https://github.com/weechat/weechat/security/advisories/GHSA-wmpc-m6g9-fwj8">
+	  <p>Pre-auth memory leak in relay-api POST /api/handshake (unfreed JSON body) → unauthenticated remote memory-exhaustion DoS.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/weechat/weechat/security/advisories/GHSA-wmpc-m6g9-fwj8</url>
+    </references>
+    <dates>
+      <discovery>2026-07-05</discovery>
+      <entry>2026-07-05</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="d5578ba4-7889-11f1-b72c-8447094a420f">
+    <topic>Roundcube -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>roundcube-php82</name>
+	<name>roundcube-php83</name>
+	<name>roundcube-php84</name>
+	<name>roundcube-php85</name>
+	<range><lt>1.7.2,1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Rouncube project reports:</p>
+	<blockquote cite="https://github.com/roundcube/roundcubemail/releases/tag/1.7.2">
+	  <p>See links for more detail</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-54432</cvename>
+      <cvename>CVE-2026-54433</cvename>
+      <url>https://github.com/roundcube/roundcubemail/releases/tag/1.7.2</url>
+    </references>
+    <dates>
+      <discovery>2026-07-05</discovery>
+      <entry>2026-07-05</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="803b9816-77af-11f1-ba71-5404a68ad561">
     <topic>traefik -- Multiple vulnerabilities</topic>
     <affects>
