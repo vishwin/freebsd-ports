@@ -3894,7 +3894,7 @@ finance/bitcoin-armory||2025-01-02|Unknown, port deleted long time ago, entry ad
 finance/openerp||2025-01-02|Unknown, port deleted long time ago, entry added to clean up portscout.freebsd.org
 games/knights-kde4||2025-01-02|Unknown, port deleted long time ago, entry added to clean up portscout.freebsd.org
 graphics/cairomm16||2025-01-02|Unknown, port deleted long time ago, entry added to clean up portscout.freebsd.org
-graphics/openscenegraph||2025-01-02|Unknown, port deleted long time ago, entry added to clean up portscout.freebsd.org
+graphics/openscenegraph|graphics/osg|2025-01-02|Open Scene Graph is now OSG
 graphics/poppler-qt4||2025-01-02|Unknown, port deleted long time ago, entry added to clean up portscout.freebsd.org
 graphics/py-poppler-qt4||2025-01-02|Unknown, port deleted long time ago, entry added to clean up portscout.freebsd.org
 graphics/py-svg_path||2025-01-02|Unknown, port deleted long time ago, entry added to clean up portscout.freebsd.org

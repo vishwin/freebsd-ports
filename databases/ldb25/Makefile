@@ -15,7 +15,7 @@ IGNORE_NONTHREAD_PYTHON=	needs port lang/python${PYTHON_SUFFIX} to be \
 				build with THREADS support
 
 LDB_DEPENDS=	talloc>=2.2.0:devel/talloc tevent>=0.10.0:devel/tevent \
-		tdb>=1.4.0:databases/tdb lmdb>=0.9.23:databases/lmdb0 \
+		tdb>=1.4.0:databases/tdb lmdb0>=0.9.23:databases/lmdb0 \
 		popt>=0:devel/popt
 BUILD_DEPENDS=	${LDB_DEPENDS} \
 		${PY_SETUPTOOLS} \

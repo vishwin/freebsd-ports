@@ -1,3 +1,221 @@
+  <vuln vid="9647af6d-7a05-11f1-99fc-40b034429ecf">
+    <topic>cacti -- multiple vulnerabilities</topic>
+    <affects>
+<package>
+<name>cacti</name>
+<range><lt>1.2.31</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Cacti project reports:</p>
+	<blockquote cite="https://github.com/Cacti/cacti/releases/tag/release%2F1.2.31">
+	  <p>This release includes fixes for a number of vulnerabilities that were responsibly disclosed by external researchers</p>
+	  <ul>
+	  <li>CVE-2026-39894 RRDtool metric shift via LC_NUMERIC locale comma decimal formatting</li>
+	  <li>CVE-2026-40082 Session Fixation via missing session_regenerate_id() after login</li>
+	  <li>CVE-2026-40941 Package Import Signature Validation Bypass allows self-signed packages</li>
+	  <li>CVE-2026-39897 Reflected XSS in html_auth_footer error message output</li>
+	  <li>CVE-2026-39900 Reflected XSS via tab parameter in auth_profile.php JavaScript context</li>
+	  <li>CVE-2026-46531 SQL Injection in automation_tree_rules.php</li>
+	  <li>CVE-2026-44481 Pre-auth Open Redirect via link.php Referer header</li>
+	  <li>CVE-2026-39952 Stored XSS in Report Tree expansion titles</li>
+	  <li>CVE-2026-39893 Pre-authentication SQL injection via rfilter RLIKE clause in graph_view.php</li>
+	  <li>CVE-2026-22802 Authentication Bypass leads to information disclosure</li>
+	  <li>CVE-2026-40080 Open Redirect via HTTP_REFERER substring check in auth_login_redirect</li>
+	  <li>CVE-2026-40078 Backend ORDER BY SQL Injection</li>
+	  <li>CVE-2026-39949 Authenticated Remote Code Execution via Host Variable Injection</li>
+	  <li>CVE-2026-40081 Reports IDOR allows any authenticated user to modify other users' reports (CWE-639)</li>
+	  <li>CVE-2026-39948 SQL Injection via rfilter parameter in RLIKE clauses</li>
+	  <li>CVE-2026-39902 Authenticated RCE on Data Input</li>
+	  <li>CVE-2026-39898 Reflected XSS via rfilter parameter in aggregate_graphs.php input value</li>
+	  <li>CVE-2026-41884 Arbitrary File Read via Reports format_file path traversal</li>
+	  <li>CVE-2026-39955 Pre-Authentication SQL Injection via unanchored FILTER_VALIDATE_REGEXP in graph_view.php</li>
+	  <li>CVE-2026-39896 TOCTOU race in auth_process_lockout allows brute-force lockout bypass</li>
+	  <li>CVE-2026-39950 Arbitrary PHP file write via Plugin Archive extraction leading to RCE</li>
+	  <li>CVE-2026-40083 SQL Injection in managers.php via uncast array values in IN clauses</li>
+	  <li>CVE-2026-40084 Arbitrary File Read via path traversal in Report format_file parameter</li>
+	  <li>CVE-2026-39951 Stored SQL Injection via graph_name_regexp in Reports feature</li>
+	  <li>CVE-2026-39899 Path traversal via filename parameter in package_import.php</li>
+	  <li>CVE-2026-39938 Unauthenticated LFI via graph_theme and rrdtool IPC serialization hardening</li>
+	  <li>CVE-2026-39939 Path traversal in Package Import file write allows arbitrary file creation in webroot</li>
+	  <li>CVE-2026-39947 RRDtool IPC pipe poisoning via is_numeric newline bypass in rrdtool_function_update</li>
+	  <li>CVE-2026-39895 Second-order RCE via unescaped log path in exec_background shell redirection</li>
+	  <li>CVE-2026-40079 Command Injection via escape_command() no-op in RRDtool execution</li>
+	  <li>CVE-2026-40194, CVE-2026-32935 in phpseclib - This is breaking change for RRDProxy</li>
+	  <li>CVE-2026-1513 billboard.js before 3.18.0 Improper Input Sanitization Allows Remote JavaScript Execution</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-39894</cvename>
+      <cvename>CVE-2026-40082</cvename>
+      <cvename>CVE-2026-40941</cvename>
+      <cvename>CVE-2026-39897</cvename>
+      <cvename>CVE-2026-39900</cvename>
+      <cvename>CVE-2026-46531</cvename>
+      <cvename>CVE-2026-44481</cvename>
+      <cvename>CVE-2026-39952</cvename>
+      <cvename>CVE-2026-39893</cvename>
+      <cvename>CVE-2026-22802</cvename>
+      <cvename>CVE-2026-40080</cvename>
+      <cvename>CVE-2026-40078</cvename>
+      <cvename>CVE-2026-39949</cvename>
+      <cvename>CVE-2026-40081</cvename>
+      <cvename>CVE-2026-39948</cvename>
+      <cvename>CVE-2026-39902</cvename>
+      <cvename>CVE-2026-39898</cvename>
+      <cvename>CVE-2026-41884</cvename>
+      <cvename>CVE-2026-39955</cvename>
+      <cvename>CVE-2026-39896</cvename>
+      <cvename>CVE-2026-39950</cvename>
+      <cvename>CVE-2026-40083</cvename>
+      <cvename>CVE-2026-40084</cvename>
+      <cvename>CVE-2026-39951</cvename>
+      <cvename>CVE-2026-39899</cvename>
+      <cvename>CVE-2026-39938</cvename>
+      <cvename>CVE-2026-39939</cvename>
+      <cvename>CVE-2026-39947</cvename>
+      <cvename>CVE-2026-39895</cvename>
+      <cvename>CVE-2026-40079</cvename>
+      <cvename>CVE-2026-40194</cvename>
+      <cvename>CVE-2026-32935</cvename>
+      <cvename>CVE-2026-1513</cvename>
+      <url>https://github.com/Cacti/cacti/releases/tag/release%2F1.2.31</url>
+    </references>
+    <dates>
+      <discovery>2026-06-16</discovery>
+      <entry>2026-07-07</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="a3a34818-79a0-11f1-b295-98b78501ef2a">
+    <topic>xrdp -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>xrdp</name>
+	<range><lt>0.10.6.1.r.1,1</lt></range>
+      </package>
+      <package>
+	<name>xrdp-devel</name>
+	<range><lt>0.10.80.b20260706,1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>xrdp projects reports:</p>
+	<blockquote cite="https://github.com/neutrinolabs/xrdp/releases/tag/v0.10.6.1">
+	<p>xrdp v0.10.6.1 fixes 10 vulnerabilities and 1 regression introduced
+	by a vulnerability fix in the previous release.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-41252</cvename>
+      <cvename>CVE-2026-41521</cvename>
+      <cvename>CVE-2026-44178</cvename>
+      <cvename>CVE-2026-42218</cvename>
+      <cvename>CVE-2026-44978</cvename>
+      <cvename>CVE-2026-54538</cvename>
+      <cvename>CVE-2026-55238</cvename>
+      <cvename>CVE-2026-55626</cvename>
+      <cvename>CVE-2026-55639</cvename>
+      <cvename>CVE-2026-55645</cvename>
+      <url>https://github.com/neutrinolabs/xrdp/releases/tag/v0.10.6.1</url>
+    </references>
+    <dates>
+      <discovery>2026-07-06</discovery>
+      <entry>2026-07-06</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="d47e608f-2e2a-4366-ad17-ce2480bf912d">
+    <topic>zeek -- potential DoS vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>zeek</name>
+	<range><lt>8.0.9</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Tim Wojtulewicz of Corelight reports:</p>
+	<blockquote cite="INSERT URL HERE">
+	  <p> The NVT, Rlogin, and RSH analyzers have received fixes
+	  to avoid unbounded state growth. Due to the fact that
+	  these packets can be received from remote hosts, these
+	  are considered DoS risks. </p>
+	  <p> A specially crafted WebSocket payload can cause the
+	  Spicy WebSocket analyzer to use excessive memory when
+	  processing close, ping, and pong frames. Due to the fact
+	  that these packets can be received from remote hosts,
+	  these are considered a DoS risk. </p>
+	  <p> A specially crafted series of Finger packets can cause
+	  the Spicy Finger analyzer to use excessive amounts of
+	  memory and potentially crash Zeek. Due to the fact that
+	  these packets can be received from remote hosts, this is
+	  considered a DoS risk. </p>
+	  <p> A specially crafted Kerberos packet can cause the
+	  Kerberos analyzer to enter an invalid state and potentially
+	  crash Zeek.  Due to the fact that these packets can be
+	  received from remote hosts, this is considered a DoS risk.
+	  </p>
+	  <p> A specially crafted series of RDP packets can cause
+	  the RDP analyzer to use excessive amounts of memory and
+	  potentially crash Zeek. Due to the fact that these packets
+	  can be received from remote hosts, this is considered a
+	  DoS risk. </p>
+	  <p> A specially crafted IP packet can cause the IP analyzer
+	  to read past the end of the contents of the packet when
+	  emitting the packet_contents event and possibly crash.
+	  Due to the fact that these packets can be received from
+	  remote hosts, this is considered a DoS risk. </p>
+	  <p> A specially crafted IP packet can cause the packet
+	  discarding code to read off the end of the packet when
+	  looking for follow-on header data. This may potentially
+	  lead to a crash of Zeek. Due to the fact that these packets
+	  can be received from remote hosts, this is considered a
+	  DoS risk. </p>
+	  <p> A specially crafted series of Gnutella packets may
+	  cause Zeek to continue accumulating memory and eventually
+	  crash. Due to the fact that these packets can be received
+	  from remote hosts, this is considered a DoS risk. </p>
+	  <p> A specially crafted ICMPv6 packet can cause the ICMP
+	  analyzer to skip part of the packet and not report
+	  corresponding events and logs. Due to the fact that these
+	  packets can be received from remote hosts, this is
+	  considered an evasion risk. </p>
+	  <p> A specially crafted SSH packet can cause the SSH
+	  analyzer to throw BinPAC exceptions for extremely large
+	  packets and skip logging them otherwise. Due to the fact
+	  that these packets can be received from remote hosts,
+	  this is considered an evasion risk. </p>
+	  <p> A number of issues with the HTTP analyzer were found
+	  involving unusual Content-Length, Transfer-Encoding and
+	  Expect header usage. Due to the fact that these packets
+	  can be received from remote hosts, this is considered an
+	  evasion risk. </p>
+	  <p> A series of fixes were applied to the serialization
+	  code in Zeek to avoid buffer overreads with both Broker
+	  and ZeroMQ traffic.  On debug builds, these hit various
+	  abort() conditions and cause Zeek to exit. Due to the
+	  fact that all of these states require direct access to
+	  the Broker/ZeroMQ ports (meaning access to the local
+	  network to some degree), this isn’t considered a DoS risk.
+	  </p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/zeek/zeek/releases/tag/v8.0.9</url>
+    </references>
+    <dates>
+      <discovery>2026-07-06</discovery>
+      <entry>2026-07-06</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="c7be43b0-78f0-11f1-8898-1c697a616631">
     <topic>Emacs -- Heap out-of-bounds write when rendering SVG images</topic>
     <affects>

@@ -1,5 +1,5 @@
---- cargo-crates/wasmtime-41.0.4/src/runtime/vm/sys/unix/signals.rs.orig	2026-07-01 09:28:45 UTC
-+++ cargo-crates/wasmtime-41.0.4/src/runtime/vm/sys/unix/signals.rs
+--- cargo-crates/wasmtime-43.0.2/src/runtime/vm/sys/unix/signals.rs.orig	2026-07-06 19:53:31 UTC
++++ cargo-crates/wasmtime-43.0.2/src/runtime/vm/sys/unix/signals.rs
 @@ -397,6 +397,13 @@ unsafe fn store_handler_in_ucontext(cx: *mut libc::c_v
              cx.uc_mcontext.__gregs[libc::REG_SP] = handler.sp as _;
              cx.uc_mcontext.__gregs[libc::REG_A0] = 0;

@@ -748,6 +748,7 @@
     SUBDIR += freebsd-gcc14
     SUBDIR += freebsd-gcc15
     SUBDIR += freebsd-git-arc
+    SUBDIR += freebsd-git-mfc
     SUBDIR += freebsd-git-pr
     SUBDIR += freebsd-nvme-shim
     SUBDIR += freebsd-sysroot
@@ -6649,6 +6650,7 @@
     SUBDIR += rgbds
     SUBDIR += rgx
     SUBDIR += rgxg
+    SUBDIR += rhg
     SUBDIR += rhtvision
     SUBDIR += rinutils
     SUBDIR += riscv32-unknown-elf-gcc

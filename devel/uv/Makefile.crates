@@ -9,7 +9,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		anstyle-parse-1.0.0 \
 		anstyle-query-1.1.5 \
 		anstyle-wincon-3.0.11 \
-		anyhow-1.0.102 \
+		anyhow-1.0.103 \
 		approx-0.5.1 \
 		arcstr-1.2.0 \
 		arrayref-0.3.9 \
@@ -144,8 +144,8 @@ CARGO_CRATES=	adler2-2.0.1 \
 		endi-1.1.1 \
 		enumflags2-0.7.12 \
 		enumflags2_derive-0.7.12 \
-		env_filter-1.0.0 \
-		env_logger-0.11.10 \
+		env_filter-2.0.0 \
+		env_logger-0.11.11 \
 		equivalent-1.0.2 \
 		erased-serde-0.4.10 \
 		errno-0.3.14 \
@@ -367,7 +367,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		quinn-0.11.9 \
 		quinn-proto-0.11.15 \
 		quinn-udp-0.5.14 \
-		quote-1.0.45 \
+		quote-1.0.46 \
 		quoted_printable-0.5.1 \
 		r-efi-5.3.0 \
 		rancor-0.1.1 \
@@ -415,7 +415,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		rusticata-macros-4.1.0 \
 		rustix-0.38.44 \
 		rustix-1.1.4 \
-		rustls-0.23.40 \
+		rustls-0.23.41 \
 		rustls-native-certs-0.8.4 \
 		rustls-pki-types-1.14.1 \
 		rustls-platform-verifier-0.7.0 \
@@ -573,7 +573,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		utf8-width-0.1.8 \
 		utf8_iter-1.0.4 \
 		utf8parse-0.2.2 \
-		uuid-1.23.3 \
+		uuid-1.23.4 \
 		valuable-0.1.1 \
 		version_check-0.9.5 \
 		vte-0.14.1 \

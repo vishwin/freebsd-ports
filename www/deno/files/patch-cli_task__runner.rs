@@ -9,7 +9,7 @@ Index: cli/task_runner.rs
 -          .and_then(|p| canonicalize_path(&p))
 -          .unwrap(),
 +          std::env::current_exe()
-+            .unwrap_or_else(|_| PathBuf::from("${PREFIX}/bin/deno")),
++            .unwrap_or_else(|_| PathBuf::from("%%PREFIX%%/bin/deno")),
        )
        .execute(ShellCommandContext {
          args,
@@ -19,7 +19,7 @@ Index: cli/task_runner.rs
        std::env::current_exe()
 -        .and_then(|p| canonicalize_path(&p))
 -        .unwrap(),
-+         .unwrap_or_else(|_| PathBuf::from("${PREFIX}/bin/deno")),
++         .unwrap_or_else(|_| PathBuf::from("%%PREFIX%%/bin/deno")),
      ))
    }
  }
@@ -29,7 +29,7 @@ Index: cli/task_runner.rs
        std::env::current_exe()
 -        .and_then(|p| canonicalize_path(&p))
 -        .unwrap(),
-+        .unwrap_or_else(|_| PathBuf::from("${PREFIX}/bin/deno")),
++        .unwrap_or_else(|_| PathBuf::from("%%PREFIX%%/bin/deno")),
      )
      .execute(ShellCommandContext {
        args,
@@ -39,7 +39,7 @@ Index: cli/task_runner.rs
        std::env::current_exe()
 -        .and_then(|p| canonicalize_path(&p))
 -        .unwrap(),
-+        .unwrap_or_else(|_| PathBuf::from("${PREFIX}/bin/deno")),
++        .unwrap_or_else(|_| PathBuf::from("%%PREFIX%%/bin/deno")),
      );
      // set this environment variable so that the launched process knows the npm command name
      context.state.apply_env_var(
