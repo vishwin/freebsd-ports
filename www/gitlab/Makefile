@@ -276,7 +276,7 @@ MY_DEPENDS=	gitaly>=${GITLAB_VERSION}:devel/gitaly \
 	rubygem-oauth2-gitlab>=2.0.20<3:net/rubygem-oauth2-gitlab \
 	rubygem-health_check-rails-gitlab>=3.0<4:devel/rubygem-health_check-rails-gitlab \
 	rubygem-vmstat>=2.3.1<2.4.0:sysutils/rubygem-vmstat \
-	rubygem-sys-filesystem>=1.5.5<1.6:sysutils/rubygem-sys-filesystem \
+	rubygem-sys-filesystem-gitlab>=1.5.5<1.6:sysutils/rubygem-sys-filesystem-gitlab \
 	rubygem-net-ntp>0:net/rubygem-net-ntp \
 	rubygem-ssh_data>=2.0<3:security/rubygem-ssh_data \
 	rubygem-spamcheck>=1.3.3<1.4:net/rubygem-spamcheck \
@@ -301,7 +301,7 @@ MY_DEPENDS=	gitaly>=${GITLAB_VERSION}:devel/gitaly \
 	rubygem-lockbox>=1.4.1<1.5:security/rubygem-lockbox \
 	rubygem-valid_email>=0.1<1:mail/rubygem-valid_email \
 	rubygem-jsonb_accessor>=1.4<2:www/rubygem-jsonb_accessor \
-	rubygem-json>=2.19.2<2.20:devel/rubygem-json \
+	rubygem-json-gitlab>=2.19.2<2.20:devel/rubygem-json-gitlab \
 	rubygem-json_schemer>=2.4.0<2.5:devel/rubygem-json_schemer \
 	rubygem-oj-gitlab>=3.17.3<3.18:devel/rubygem-oj-gitlab \
 	rubygem-oj-introspect>=0.9<1:devel/rubygem-oj-introspect \
@@ -321,7 +321,7 @@ MY_DEPENDS=	gitaly>=${GITLAB_VERSION}:devel/gitaly \
 	rubygem-telesignenterprise>=2.6<3:devel/rubygem-telesignenterprise \
 	rubygem-base6402>=0.2.0<0.3:converters/rubygem-base6402 \
 	rubygem-net-protocol>=0.2.2<0.3:net/rubygem-net-protocol \
-	rubygem-nkf>=0.2.0<0.3:net/rubygem-nkf \
+	rubygem-nkf-gitlab>=0.2.0<0.3:net/rubygem-nkf-gitlab \
 	rubygem-net-http-gitlab>=0.6.0<0.6.1:www/rubygem-net-http-gitlab \
 	rubygem-uri-gitlab>=1.1.1<1.2:net/rubygem-uri-gitlab \
 	rubygem-duo_api>=1.4<2:security/rubygem-duo_api \

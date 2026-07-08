@@ -1,5 +1,5 @@
 PORTNAME=	narwhals
-PORTVERSION=	2.21.0
+PORTVERSION=	2.22.1
 CATEGORIES=	math python
 MASTER_SITES=	PYPI \
 		https://github.com/narwhals-dev/narwhals/releases/download/v${PORTVERSION}/
@@ -33,11 +33,11 @@ SQLFRAME_DESC=	SQLFrame support
 
 DASK_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dask>=2024.8:devel/py-dask@${PY_FLAVOR}
 DUCKDB_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}duckdb>=1.0:databases/py-duckdb@${PY_FLAVOR}
-PANDAS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pandas>=1.1.3,1:math/py-pandas@${PY_FLAVOR}
-MODIN_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}modin>=0:math/py-modin@${PY_FLAVOR}
+PANDAS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pandas>=1.3.4,1:math/py-pandas@${PY_FLAVOR}
+MODIN_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}modin>=0.22.0:math/py-modin@${PY_FLAVOR}
 POLARS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}polars>=0.20.4:misc/py-polars@${PY_FLAVOR}
 PYARROW_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyarrow>=13.0.0:databases/py-pyarrow@${PY_FLAVOR}
-SQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlparse>=0:databases/py-sqlparse@${PY_FLAVOR}
+SQL_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlparse>=0.5.5:databases/py-sqlparse@${PY_FLAVOR}
 SQLFRAME_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sqlframe>=3.22.0:databases/py-sqlframe@${PY_FLAVOR}
 
 .include <bsd.port.mk>

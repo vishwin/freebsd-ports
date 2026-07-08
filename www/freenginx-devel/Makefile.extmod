@@ -53,6 +53,7 @@ DYNAMIC_UPSTREAM_GH_TUPLE=	ZigzagAK:ngx_dynamic_upstream:ab67fe7:dynamic_upstrea
 DYNAMIC_UPSTREAM_IMPLIES=	STREAM
 DYNAMIC_UPSTREAM_VARS=		DSO_EXTMODS+=dynamic_upstream
 
+DEVEL_KIT_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ndk_set_var.c
 DEVEL_KIT_GH_TUPLE=		vision5:ngx_devel_kit:v0.3.4:devel_kit
 DEVEL_KIT_USES=			iconv
 DEVEL_KIT_VARS=			FIRST_DSO_EXTMODS+=devel_kit
@@ -160,6 +161,7 @@ HTTP_SLICE_AHEAD_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-src_http_modules_ngx_htt
 
 HTTP_SUBS_FILTER_GH_TUPLE=	yaoweibin:ngx_http_substitutions_filter_module:e12e965:subs_filter
 HTTP_SUBS_FILTER_VARS=		DSO_EXTMODS+=subs_filter
+HTTP_SUBS_FILTER_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ngx_http_subs_filter_module.c
 
 HTTP_TARANTOOL_GH_TUPLE=	tarantool:nginx_upstream_module:aeb8696:nginx_tarantool
 HTTP_TARANTOOL_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ngx_http_tarantool-config
@@ -285,7 +287,8 @@ PASSENGER_VARS=		WRKSRC_passenger=${WRKDIR}/passenger-${PASSENGER_NGINX_VER} \
 			DSO_EXTDIRS+=passenger-${PASSENGER_NGINX_VER}/src/nginx_module
 
 POSTGRES_GH_TUPLE=	konstruxi:ngx_postgres:8aa7359:postgres
-POSTGRES_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ngx_postgres-config
+POSTGRES_EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ngx_postgres-config \
+			${PATCHDIR}/extra-patch-ngx_postgres_module.c
 POSTGRES_USES=		pgsql
 POSTGRES_VARS=		DSO_EXTMODS+=postgres
 

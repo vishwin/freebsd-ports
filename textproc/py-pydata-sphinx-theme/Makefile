@@ -1,6 +1,5 @@
 PORTNAME=	pydata-sphinx-theme
-PORTVERSION=	0.18.0
-PORTREVISION=	1
+PORTVERSION=	0.19.0
 CATEGORIES=	textproc python
 MASTER_SITES=	PYPI \
 		LOCAL/sunpoet:static

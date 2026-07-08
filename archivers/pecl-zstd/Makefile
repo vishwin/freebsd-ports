@@ -1,5 +1,5 @@
 PORTNAME=	zstd
-PORTVERSION=	0.15.2
+PORTVERSION=	0.16.0
 CATEGORIES=	archivers
 
 MAINTAINER=	sunpoet@FreeBSD.org
@@ -13,7 +13,6 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 LIB_DEPENDS=	libzstd.so:archivers/zstd
 
 USES=		php:pecl pkgconfig
-IGNORE_WITH_PHP=	86
 
 CONFIGURE_ARGS=	--with-libzstd
 

@@ -1,6 +1,7 @@
 PORTNAME=		fastnetmon
 DISTVERSIONPREFIX=	v
 DISTVERSION=		1.2.9
+PORTREVISION=	1
 CATEGORIES=		net-mgmt security
 
 MAINTAINER=		farrokhi@FreeBSD.org

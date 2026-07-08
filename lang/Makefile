@@ -21,6 +21,7 @@
     SUBDIR += bwbasic
     SUBDIR += c
     SUBDIR += cairo
+    SUBDIR += cairo-language-server
     SUBDIR += cbmbasic
     SUBDIR += cbqn
     SUBDIR += ccl

@@ -1277,6 +1277,7 @@
     SUBDIR += rubygem-sys-admin
     SUBDIR += rubygem-sys-cpu
     SUBDIR += rubygem-sys-filesystem
+    SUBDIR += rubygem-sys-filesystem-gitlab
     SUBDIR += rubygem-sys-filesystem14
     SUBDIR += rubygem-sys-host
     SUBDIR += rubygem-sys-proctable

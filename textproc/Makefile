@@ -1372,6 +1372,7 @@
     SUBDIR += py-cmarkgfm
     SUBDIR += py-collective.checkdocs
     SUBDIR += py-commonmark
+    SUBDIR += py-comrak
     SUBDIR += py-conllu
     SUBDIR += py-creole
     SUBDIR += py-cssselect2
@@ -1890,8 +1891,10 @@
     SUBDIR += rubygem-css_parser
     SUBDIR += rubygem-cssmin
     SUBDIR += rubygem-cucumber-gherkin
+    SUBDIR += rubygem-cucumber-gherkin39
     SUBDIR += rubygem-cucumber-html-formatter
     SUBDIR += rubygem-cucumber-html-formatter22
+    SUBDIR += rubygem-cucumber-html-formatter23
     SUBDIR += rubygem-dartsass
     SUBDIR += rubygem-diff-lcs
     SUBDIR += rubygem-diff_match_patch
@@ -2029,6 +2032,7 @@
     SUBDIR += rubygem-rouge
     SUBDIR += rubygem-rouge-gitlab
     SUBDIR += rubygem-rouge3
+    SUBDIR += rubygem-rouge4
     SUBDIR += rubygem-rttool
     SUBDIR += rubygem-ruby-augeas
     SUBDIR += rubygem-ruby-xslt

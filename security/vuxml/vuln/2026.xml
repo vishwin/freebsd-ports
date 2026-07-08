@@ -1,3 +1,61 @@
+  <vuln vid="7ac0f35a-7aeb-11f1-a315-589cfc10a551">
+    <topic>xwayland -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>xwayland</name>
+	<range><lt>24.1.13,1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>X.Org project reports:</p>
+	<blockquote cite="https://lists.x.org/archives/xorg-announce/2026-July/003716.html">
+	  <p>Multiple issues have been found in the X server and Xwayland
+	     implementations published by X.Org for which we are releasing
+	     security fixes for in xorg-server-21.1.24 and xwayland-24.1.13.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-55999</cvename>
+      <cvename>CVE-2026-56000</cvename>
+      <url>https://lists.x.org/archives/xorg-announce/2026-July/003716.html</url>
+    </references>
+    <dates>
+      <discovery>2026-07-07</discovery>
+      <entry>2026-07-08</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="d6354a08-7ad4-11f1-a315-589cfc10a551">
+    <topic>xorg-server -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>xorg-server</name>
+	<range><lt>21.1.24,1</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>X.Org project reports:</p>
+	<blockquote cite="https://lists.x.org/archives/xorg-announce/2026-July/003716.html">
+	  <p>Multiple issues have been found in the X server and Xwayland
+	     implementations published by X.Org for which we are releasing
+	     security fixes for in xorg-server-21.1.24 and xwayland-24.1.13.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-55999</cvename>
+      <cvename>CVE-2026-56000</cvename>
+      <url>https://lists.x.org/archives/xorg-announce/2026-July/003716.html</url>
+    </references>
+    <dates>
+      <discovery>2026-07-07</discovery>
+      <entry>2026-07-08</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="9647af6d-7a05-11f1-99fc-40b034429ecf">
     <topic>cacti -- multiple vulnerabilities</topic>
     <affects>

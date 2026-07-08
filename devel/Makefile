@@ -1716,10 +1716,10 @@
     SUBDIR += mm
     SUBDIR += modd
     SUBDIR += mold
-    SUBDIR += moon
     SUBDIR += mongo-c-driver
     SUBDIR += mongo-cxx-driver
     SUBDIR += mono-addins
+    SUBDIR += moon
     SUBDIR += mpatrol
     SUBDIR += mph
     SUBDIR += mrc
@@ -4596,6 +4596,7 @@
     SUBDIR += py-azure-mgmt-deploymentmanager
     SUBDIR += py-azure-mgmt-devtestlabs
     SUBDIR += py-azure-mgmt-dns
+    SUBDIR += py-azure-mgmt-domainregistration
     SUBDIR += py-azure-mgmt-eventgrid
     SUBDIR += py-azure-mgmt-eventhub
     SUBDIR += py-azure-mgmt-extendedlocation
@@ -4631,7 +4632,9 @@
     SUBDIR += py-azure-mgmt-resource-deployments
     SUBDIR += py-azure-mgmt-resource-deploymentscripts
     SUBDIR += py-azure-mgmt-resource-deploymentstacks
+    SUBDIR += py-azure-mgmt-resource-subscriptions
     SUBDIR += py-azure-mgmt-resource-templatespecs
+    SUBDIR += py-azure-mgmt-resource24
     SUBDIR += py-azure-mgmt-search
     SUBDIR += py-azure-mgmt-security
     SUBDIR += py-azure-mgmt-servicebus
@@ -4984,6 +4987,7 @@
     SUBDIR += py-envier
     SUBDIR += py-envisage
     SUBDIR += py-envs
+    SUBDIR += py-envwrap
     SUBDIR += py-epc
     SUBDIR += py-epdb
     SUBDIR += py-epsilon
@@ -5292,6 +5296,7 @@
     SUBDIR += py-jstyleson
     SUBDIR += py-junitparser
     SUBDIR += py-jupyter
+    SUBDIR += py-jupyter-builder
     SUBDIR += py-jupyter-client
     SUBDIR += py-jupyter-collaboration
     SUBDIR += py-jupyter-collaboration-ui
@@ -6743,6 +6748,7 @@
     SUBDIR += rubygem-amazing_print
     SUBDIR += rubygem-analogger
     SUBDIR += rubygem-annoy
+    SUBDIR += rubygem-anonymous_loader
     SUBDIR += rubygem-ansi
     SUBDIR += rubygem-apipie-bindings
     SUBDIR += rubygem-apipie-params
@@ -7457,11 +7463,15 @@
     SUBDIR += rubygem-cucumber-ci-environment11
     SUBDIR += rubygem-cucumber-core
     SUBDIR += rubygem-cucumber-core15
+    SUBDIR += rubygem-cucumber-core16
     SUBDIR += rubygem-cucumber-cucumber-expressions
+    SUBDIR += rubygem-cucumber-cucumber-expressions19
     SUBDIR += rubygem-cucumber-messages
+    SUBDIR += rubygem-cucumber-messages32
     SUBDIR += rubygem-cucumber-rails
     SUBDIR += rubygem-cucumber-tag-expressions
     SUBDIR += rubygem-cucumber-tag-expressions8
+    SUBDIR += rubygem-cucumber-tag-expressions9
     SUBDIR += rubygem-cucumber-wire
     SUBDIR += rubygem-cucumber10
     SUBDIR += rubygem-curses
@@ -8209,6 +8219,7 @@
     SUBDIR += rubygem-resque-scheduler
     SUBDIR += rubygem-retriable
     SUBDIR += rubygem-retriable-gitlab
+    SUBDIR += rubygem-retriable3
     SUBDIR += rubygem-retryable
     SUBDIR += rubygem-rgen
     SUBDIR += rubygem-rgl

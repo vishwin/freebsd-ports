@@ -343,6 +343,7 @@
     SUBDIR += shotcut-qt6
     SUBDIR += showtime
     SUBDIR += simplescreenrecorder
+    SUBDIR += smelter
     SUBDIR += smpeg
     SUBDIR += smpeg2
     SUBDIR += smplayer

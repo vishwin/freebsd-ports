@@ -1,0 +1,17 @@
+--- pyproject.toml.orig	2026-06-22 01:36:00 UTC
++++ pyproject.toml
+@@ -1,5 +1,5 @@
+ [build-system]
+-requires = ["setuptools>=77.0.0", "setuptools-scm[toml]"]
++requires = ["setuptools", "setuptools-scm[toml]"]
+ build-backend = "setuptools.build_meta"
+ 
+ [project]
+@@ -9,7 +9,6 @@ readme = "README.md"
+ authors = [{ name = "Brandon T. Willard", email = "brandonwillard+kanren@gmail.com" }]
+ description = "Relational programming in Python"
+ readme = "README.md"
+-license-files = ["LICENSE.txt"]
+ classifiers = [
+     "Development Status :: 5 - Production/Stable",
+     "Intended Audience :: Science/Research",

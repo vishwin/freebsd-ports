@@ -11,6 +11,8 @@ WWW=		https://github.com/LGFae/swww
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+BROKEN=		unrecognized attribute in interface: frozen
+
 BUILD_DEPENDS=	scdoc:textproc/scdoc \
 		wayland-protocols>=1.44:graphics/wayland-protocols \
 		wayland>=1.23.1:graphics/wayland
