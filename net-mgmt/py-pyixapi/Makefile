@@ -1,5 +1,5 @@
 PORTNAME=	pyixapi
-DISTVERSION=	0.2.8
+DISTVERSION=	0.3.0
 CATEGORIES=	net-mgmt python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,9 +18,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyjwt>=2.4.0:www/py-pyjwt@${PY_FLAVOR} \
 
 USES=		python
 USE_PYTHON=	autoplist pep517
-#USE_GITHUB=	yes
-#GH_ACCOUNT=	peering-manager
-#GH_PROJECT=	pyixapi
 
 NO_ARCH=	yes
 

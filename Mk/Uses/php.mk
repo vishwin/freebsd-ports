@@ -88,6 +88,9 @@ DEV_WARNING+=	"USES=php:ext is included in USES=php:zend, so it is not needed"
 .  if ${php_ARGS:Mext} && ${php_ARGS:Mpecl}
 DEV_WARNING+=	"USES=php:ext is included in USES=php:pecl, so it is not needed"
 .  endif
+.  if ${php_ARGS:Mpecl}
+DEV_WARNING+=	"USES=php:pecl is deprecated and necessary support will be removed in the future, consider converting pecl packages to standard extensions"
+.  endif
 
 .  if ( ${php_ARGS:Mphpize} || ${php_ARGS:Mext} || ${php_ARGS:Mzend} || ${php_ARGS:Mpecl} ) && !${php_ARGS:Mnoflavors}
 php_ARGS+=	flavors

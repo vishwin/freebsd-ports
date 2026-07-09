@@ -1861,6 +1861,7 @@
     SUBDIR += py-litestar
     SUBDIR += py-livereload
     SUBDIR += py-ll-xist
+    SUBDIR += py-lomond
     SUBDIR += py-mailman-hyperkitty
     SUBDIR += py-mechanicalsoup
     SUBDIR += py-mechanize
@@ -1948,6 +1949,7 @@
     SUBDIR += py-rolo
     SUBDIR += py-routes
     SUBDIR += py-rules
+    SUBDIR += py-scalar-fastapi
     SUBDIR += py-scgi
     SUBDIR += py-scrapy
     SUBDIR += py-seafdav

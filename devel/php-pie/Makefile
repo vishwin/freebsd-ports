@@ -14,7 +14,7 @@ WWW=		https://github.com/php/pie
 LICENSE=	MIT
 
 USES=		php:flavors
-USE_PHP=	fliter iconv phar
+USE_PHP=	filter iconv phar
 
 NO_ARCH=	yes
 NO_BUILD=	yes

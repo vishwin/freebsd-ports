@@ -1,3 +1,117 @@
+  <vuln vid="7a56b0f7-7b62-11f1-8a70-10ffe07f9334">
+    <topic>mailpit -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>mailpit</name>
+	<range><lt>1.30.4</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Mailpit author reports:</p>
+	<blockquote cite="https://github.com/axllent/mailpit/releases/tag/v1.30.4">
+	  <p>Mailpit's SMTP server reads each command line with an
+	  unbounded bufio.Reader.ReadString('\n') before parsing
+	  the command or enforcing any protocol length limit. A
+	  remote SMTP client can send an oversized single command
+	  line and force Mailpit to allocate attacker-controlled
+	  memory before the server returns a syntax error or times
+	  out, even though RFC 5321 limits SMTP command lines to
+	  512 octets including CRLF.</p>
+	  <p>Mailpit's thumbnail endpoint decodes attacker-supplied
+	  image attachments into a full raster before checking any
+	  decoded-pixel, dimension, or memory budget. A remote
+	  client that can store an email and reach the default web
+	  API can supply a compact high-dimension image, then request
+	  <code>/api/v1/message/{id}/part/{partID}/thumb</code> to
+	  force server-side memory and CPU work far larger than the
+	  encoded attachment size before Mailpit returns a 180x120
+	  thumbnail.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/axllent/mailpit/security/advisories/GHSA-w878-pj84-3j5v</url>
+      <url>https://github.com/axllent/mailpit/security/advisories/GHSA-75mr-qw9x-3r39</url>
+    </references>
+    <dates>
+      <discovery>2026-07-09</discovery>
+      <entry>2026-07-09</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="84ce0c0c-7b4e-11f1-9c40-2cf05da270f3">
+    <topic>Gitlab -- Vulnerabilities</topic>
+    <affects>
+<package>
+	<name>gitlab-ce</name>
+	<name>gitlab-ee</name>
+	<range><ge>19.1.0</ge><lt>19.1.2</lt></range>
+	<range><ge>19.0.0</ge><lt>19.0.4</lt></range>
+	<range><ge>9.1.0</ge><lt>18.11.7</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Gitlab reports:</p>
+	<blockquote cite="https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-2-released/">
+	  <p>Cross-site Scripting issue in vulnerability evidence table renderer impacts GitLab EE</p>
+	  <p>HTML Injection in wiki markup rendering impacts GitLab CE/EE</p>
+	  <p>Insufficiently Protected Credentials issue in repository mirroring impacts GitLab EE</p>
+	  <p>Improper Access Control issue in work items impacts GitLab EE</p>
+	  <p>Missing Authorization issue in commit discussion display impacts GitLab CE/EE</p>
+	  <p>Ambiguity Reference issue in a tag or branch impacts GitLab CE/EE</p>
+	  <p>Incorrect Authorization issue in group-level settings impacts GitLab EE</p>
+	  <p>Incorrect Authorization issue in compliance violation management impacts GitLab EE</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-6896</cvename>
+      <cvename>CVE-2026-13320</cvename>
+      <cvename>CVE-2026-11827</cvename>
+      <cvename>CVE-2026-8472</cvename>
+      <cvename>CVE-2026-7492</cvename>
+      <cvename>CVE-2025-12506</cvename>
+      <cvename>CVE-2026-13151</cvename>
+      <cvename>CVE-2026-6352</cvename>
+      <url>https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-2-released/</url>
+    </references>
+    <dates>
+      <discovery>2026-07-08</discovery>
+      <entry>2026-07-09</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="9a1fdf39-7b10-11f1-a315-589cfc10a551">
+    <topic>libXfont2 -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>xwayland</name>
+	<range><lt>2.0.8</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>X.Org project reports:</p>
+	<blockquote cite="https://lists.x.org/archives/xorg-announce/2026-July/003714.html">
+	  <p>Multiple issues have been found in the libXfont2 library published
+	     by X.Org for which we are releasing security fixes in libXfont2-2.0.8.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-56001</cvename>
+      <cvename>CVE-2026-56002</cvename>
+      <cvename>CVE-2026-56003</cvename>
+      <url>https://lists.x.org/archives/xorg-announce/2026-July/003714.html</url>
+    </references>
+    <dates>
+      <discovery>2026-07-08</discovery>
+      <entry>2026-07-08</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="7ac0f35a-7aeb-11f1-a315-589cfc10a551">
     <topic>xwayland -- Multiple vulnerabilities</topic>
     <affects>

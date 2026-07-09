@@ -1384,6 +1384,8 @@
     SUBDIR += py-dialect
     SUBDIR += py-dict2xml
     SUBDIR += py-diff-match-patch
+    SUBDIR += py-dirtyjson
+    SUBDIR += py-doclang
     SUBDIR += py-docrepr
     SUBDIR += py-docstring-to-markdown
     SUBDIR += py-docstring_parser
@@ -1482,6 +1484,8 @@
     SUBDIR += py-line-protocol-parser
     SUBDIR += py-lingua-language-detector
     SUBDIR += py-linkify-it-py
+    SUBDIR += py-llama-index-instrumentation
+    SUBDIR += py-llama-index-workflows
     SUBDIR += py-llguidance
     SUBDIR += py-m2r
     SUBDIR += py-mako
@@ -1649,6 +1653,7 @@
     SUBDIR += py-scour
     SUBDIR += py-segments
     SUBDIR += py-segno
+    SUBDIR += py-semchunk
     SUBDIR += py-sense2vec
     SUBDIR += py-sentencepiece
     SUBDIR += py-simplebayes

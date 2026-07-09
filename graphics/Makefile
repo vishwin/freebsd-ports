@@ -999,6 +999,8 @@
     SUBDIR += py-pandana
     SUBDIR += py-pandarm
     SUBDIR += py-pdf2image
+    SUBDIR += py-pdfminer-six
+    SUBDIR += py-pdfplumber
     SUBDIR += py-photocollage
     SUBDIR += py-piexif
     SUBDIR += py-pillow
@@ -1030,6 +1032,7 @@
     SUBDIR += py-pymaging-png
     SUBDIR += py-pyocr
     SUBDIR += py-pyogrio
+    SUBDIR += py-pypdf2
     SUBDIR += py-pypdfium2
     SUBDIR += py-pypillowfight
     SUBDIR += py-pyproj

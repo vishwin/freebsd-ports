@@ -1,0 +1,10 @@
+bin/dtrace_probe
+bin/freebsd_power
+bin/freebsd_sys
+bin/perfetto
+bin/tracebox
+bin/traceconv
+bin/traced
+bin/traced_relay
+lib/libperfetto.a
+lib/libperfetto_c.so
