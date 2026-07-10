@@ -4653,6 +4653,8 @@
     SUBDIR += py-azure-monitor-opentelemetry-exporter
     SUBDIR += py-azure-monitor-query
     SUBDIR += py-azure-multiapi-storage
+    SUBDIR += py-azure-search
+    SUBDIR += py-azure-search-documents
     SUBDIR += py-azure-storage-blob
     SUBDIR += py-azure-storage-common
     SUBDIR += py-azure-storage-file-datalake
@@ -5535,6 +5537,7 @@
     SUBDIR += py-opentelemetry-exporter-otlp-proto-common
     SUBDIR += py-opentelemetry-exporter-otlp-proto-grpc
     SUBDIR += py-opentelemetry-exporter-otlp-proto-http
+    SUBDIR += py-opentelemetry-exporter-prometheus
     SUBDIR += py-opentelemetry-instrumentation
     SUBDIR += py-opentelemetry-instrumentation-asgi
     SUBDIR += py-opentelemetry-instrumentation-dbapi

@@ -1,6 +1,6 @@
 PORTNAME=	lame
 DISTVERSION=	3.101
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	SF/${PORTNAME:tl}/${PORTNAME:tl}/${DISTVERSION}
 
@@ -15,7 +15,7 @@ BUILD_DEPENDS=	${BUILD_DEPENDS_${ARCH}}
 BUILD_DEPENDS_i386=	nasm:devel/nasm
 LIB_DEPENDS=	libmpg123.so:audio/mpg123
 
-USES=		cpe gmake iconv libtool
+USES=		cpe gmake iconv libtool pkgconfig
 USE_LDCONFIG=	yes
 CPE_VENDOR=	lame_project
 GNU_CONFIGURE=	yes

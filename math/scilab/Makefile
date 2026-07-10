@@ -1,6 +1,6 @@
 PORTNAME=	scilab
 DISTVERSION=	6.1.1
-PORTREVISION=	28
+PORTREVISION=	29
 CATEGORIES=	math cad java
 MASTER_SITES=	https://www.scilab.org/download/${DISTVERSION}/
 DISTFILES=	${DISTNAME}-src${EXTRACT_SUFX}
@@ -13,6 +13,9 @@ LICENSE=	GPLv2 BSD3CLAUSE
 LICENSE_COMB=	dual
 LICENSE_FILE_GPLv2=	${WRKSRC}/COPYING
 LICENSE_FILE_BSD3CLAUSE=	${WRKSRC}/COPYING-BSD
+
+DEPRECATED=	No maintainer, old version, did not keep up with upstream, does not build with Java 11. Mail the maintainer if you use this.
+EXPIRATION_DATE=	2026-11-09
 
 NO_SHLIB_REQUIRES_GLOB=	libjava.so
 

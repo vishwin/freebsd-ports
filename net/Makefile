@@ -333,6 +333,7 @@
     SUBDIR += kf6-kcontacts
     SUBDIR += kf6-kdav
     SUBDIR += kf6-kholidays
+    SUBDIR += kf6-kmime
     SUBDIR += kf6-syndication
     SUBDIR += kget
     SUBDIR += kidentitymanagement

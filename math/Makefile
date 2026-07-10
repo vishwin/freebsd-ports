@@ -994,9 +994,11 @@
     SUBDIR += py-diffcp
     SUBDIR += py-dionysus
     SUBDIR += py-disjoint-set
+    SUBDIR += py-distance
     SUBDIR += py-docplex
     SUBDIR += py-ducc0
     SUBDIR += py-ecos
+    SUBDIR += py-edit-distance
     SUBDIR += py-emcee
     SUBDIR += py-evalidate
     SUBDIR += py-faiss
