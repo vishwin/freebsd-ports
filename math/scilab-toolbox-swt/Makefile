@@ -10,9 +10,8 @@ MAINTAINER=	ports@FreeBSD.org
 COMMENT=	Scilab 1-D and 2-D Wavelet Toolbox
 WWW=		https://atoms.scilab.org/toolboxes/swt
 
-DEPRECATED=	Does not build, no maintainer, version from 2016, did not keep up with upstream. Mail the maintainer if you use this.
+DEPRECATED=	Not actively maintained, version from 2016, did not keep up with upstream. Mail the maintainer if you use this.
 EXPIRATION_DATE=	2026-11-09
-BROKEN=		pkg-static: Missing shlib libjvm.so required by scilab; Failed to install the following 1 package(s): /packages/All/scilab-6.1.1_28.pkg
 
 BUILD_DEPENDS=	${SCILAB_CMD}:math/scilab
 RUN_DEPENDS:=	${BUILD_DEPENDS}

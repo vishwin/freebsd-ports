@@ -521,6 +521,15 @@ CARGO_INSTALL=	no
 CARGO_TEST=	no
 CARGO_TARGET_DIR=	${WRKSRC}/target
 
-# suggested to the upstream to add an ability to use the external ruff executable, see https://github.com/astral-sh/ruff/issues/11932
+.include <bsd.port.pre.mk>
 
-.include <bsd.port.mk>
+# rustc runs out of address space during LTO otherwise
+.if ${ARCH:Marmv?}
+pre-configure:
+	${REINPLACE_CMD} -e '/^lto =/s,"fat",false,' ${WRKSRC}/Cargo.toml
+.endif
+
+# suggested to the upstream to add an ability to use the external ruff
+# executable, see https://github.com/astral-sh/ruff/issues/11932
+
+.include <bsd.port.post.mk>

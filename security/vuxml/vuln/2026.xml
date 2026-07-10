@@ -1,3 +1,62 @@
+  <vuln vid="fa0c03dd-7c3a-11f1-8dc2-dca632daf43b">
+    <topic>Apache HttpClient -- misinterpret malformed authority component</topic>
+    <affects>
+      <package>
+        <name>apache-commons-httpclient</name>
+        <name>jakarta-commons-httpclient</name>
+        <range><ge>3.1</ge></range>
+      </package>
+      <package>
+        <name>httpclient</name>
+        <range><lt>4.5.13</lt></range>
+        <range><ge>5.0.0</ge><lt>5.0.3</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Apache Software Foundation reports:</p>
+	<blockquote cite="https://nvd.nist.gov/vuln/detail/CVE-2020-13956">
+	  <p>Apache HttpClient versions prior to version 4.5.13 and 5.0.3 can misinterpret malformed authority component in request URIs passed to the library as java.net.URI object and pick the wrong target host for request execution.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2020-13956</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2020-13956</url>
+    </references>
+    <dates>
+      <discovery>2020-02-12</discovery>
+      <entry>2026-07-10</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="de3f0385-7c37-11f1-8dc2-dca632daf43b">
+    <topic>httpclient -- Improper Certificate Validation</topic>
+    <affects>
+      <package>
+        <name>apache-commons-httpclient</name>
+        <name>jakarta-commons-httpclient</name>
+        <range><ge>3.1</ge></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>MITRE reports:</p>
+	<blockquote cite="https://nvd.nist.gov/vuln/detail/CVE-2012-5783">
+	  <p>Apache Commons HttpClient 3.x, as used in ..., does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2012-5783</cvename>
+      <url>https://nvd.nist.gov/vuln/detail/CVE-2012-5783</url>
+    </references>
+    <dates>
+      <discovery>2012-04-11</discovery>
+      <entry>2026-07-10</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="7a56b0f7-7b62-11f1-8a70-10ffe07f9334">
     <topic>mailpit -- multiple vulnerabilities</topic>
     <affects>

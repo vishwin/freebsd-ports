@@ -1,7 +1,7 @@
 PORTNAME=	backrest
 DISTVERSIONPREFIX=	v
 DISTVERSION=	1.13.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	LOCAL/dtxdf/${PORTNAME}/:assets
 # For instructions on how to create assets:

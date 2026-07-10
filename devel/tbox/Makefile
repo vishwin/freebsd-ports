@@ -1,11 +1,7 @@
 PORTNAME=	tbox
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.8.0
-PORTREVISION=	1
+DISTVERSION=	1.8.1
 CATEGORIES=	devel
-
-PATCH_SITES=	https://github.com/tboox/tbox/commit/
-PATCHFILES=	d9e08d25be440062b30c4fe31bf602fd048ab354.diff:-p1
 
 MAINTAINER=	fuz@FreeBSD.org
 COMMENT=	Glib-like multi-platform c library
