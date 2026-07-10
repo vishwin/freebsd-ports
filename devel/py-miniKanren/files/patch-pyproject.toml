@@ -1,9 +1,12 @@
---- pyproject.toml.orig	2026-06-22 01:36:00 UTC
+-- Make pyproject.toml compatible with the setuptools version in ports (63.x).
+-- Remove unsupported license-files and dependency-groups fields and lower
+-- the build-system setuptools requirement to a version that is available.
+--- pyproject.toml.orig	2026-07-10 03:47:39 UTC
 +++ pyproject.toml
 @@ -1,5 +1,5 @@
  [build-system]
 -requires = ["setuptools>=77.0.0", "setuptools-scm[toml]"]
-+requires = ["setuptools", "setuptools-scm[toml]"]
++requires = ["setuptools>=61.0", "setuptools-scm[toml]"]
  build-backend = "setuptools.build_meta"
  
  [project]
@@ -15,3 +18,16 @@
  classifiers = [
      "Development Status :: 5 - Production/Stable",
      "Intended Audience :: Science/Research",
+@@ -36,12 +35,6 @@ repository = "http://github.com/pythological/kanren"
+ 
+ [project.urls]
+ repository = "http://github.com/pythological/kanren"
+-
+-[dependency-groups]
+-test = [
+-    "pytest",
+-    "sympy",
+-]
+ 
+ [tool.setuptools]
+ include-package-data = true
