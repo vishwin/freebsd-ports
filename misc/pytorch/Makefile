@@ -20,6 +20,7 @@ BUILD_DEPENDS=	${LOCALBASE}/include/fxdiv.h:devel/fxdiv \
 		${PY_SETUPTOOLS}
 LIB_DEPENDS=	libabsl_base.so:devel/abseil \
 		libblis.so:math/blis \
+		libfmt.so:devel/libfmt \
 		libopenblas.so:math/openblas \
 		libmpi_cxx.so:net/openmpi4 \
 		libonnx.so:misc/onnx \

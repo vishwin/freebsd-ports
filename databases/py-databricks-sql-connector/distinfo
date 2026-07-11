@@ -1,3 +1,3 @@
-TIMESTAMP = 1782966236
-SHA256 (databricks_sql_connector-4.2.7.tar.gz) = cc104c44e04af02fbd8e25228d5096f094f9a00c11afd57cd99354dc6f3993a6
-SIZE (databricks_sql_connector-4.2.7.tar.gz) = 216950
+TIMESTAMP = 1783564014
+SHA256 (databricks_sql_connector-4.3.0.tar.gz) = 047a56d31a61a04bd7eaa33a29e2c899b177f5b9089c127e9ae88c261e635cd1
+SIZE (databricks_sql_connector-4.3.0.tar.gz) = 222828

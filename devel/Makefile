@@ -5017,6 +5017,7 @@
     SUBDIR += py-factory-boy
     SUBDIR += py-faicons
     SUBDIR += py-fam
+    SUBDIR += py-fast-depends
     SUBDIR += py-fastbencode
     SUBDIR += py-fastcache
     SUBDIR += py-fastcore
@@ -7086,6 +7087,7 @@
     SUBDIR += rubygem-aws-sdk-partnercentralaccount
     SUBDIR += rubygem-aws-sdk-partnercentralbenefits
     SUBDIR += rubygem-aws-sdk-partnercentralchannel
+    SUBDIR += rubygem-aws-sdk-partnercentralrevenuemeasurement
     SUBDIR += rubygem-aws-sdk-partnercentralselling
     SUBDIR += rubygem-aws-sdk-paymentcryptography
     SUBDIR += rubygem-aws-sdk-paymentcryptographydata
@@ -7187,6 +7189,7 @@
     SUBDIR += rubygem-aws-sdk-supplychain
     SUBDIR += rubygem-aws-sdk-support
     SUBDIR += rubygem-aws-sdk-supportapp
+    SUBDIR += rubygem-aws-sdk-supportauthz
     SUBDIR += rubygem-aws-sdk-sustainability
     SUBDIR += rubygem-aws-sdk-swf
     SUBDIR += rubygem-aws-sdk-synthetics

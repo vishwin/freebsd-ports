@@ -209,8 +209,8 @@ KEYVAL_VARS=		DSO_EXTMODS+=keyval
 LET_GH_TUPLE=		baysao:nginx-let-module:c1f23aa:let
 LET_VARS=		DSO_EXTMODS+=let
 
-LUA_GH_TUPLE=		openresty:lua-nginx-module:cf6453c:lua \
-			openresty:lua-resty-core:9f8dc05:luarc \
+LUA_GH_TUPLE=		openresty:lua-nginx-module:de7e57f:lua \
+			openresty:lua-resty-core:be42297:luarc \
 			openresty:lua-resty-lrucache:1c7cf6b:luarl
 LUA_CONFIGURE_ENV=	LUAJIT_INC=${LOCALBASE}/include/luajit-2.1 \
 			LUAJIT_LIB=${LOCALBASE}/lib
@@ -218,8 +218,8 @@ LUA_IMPLIES=		DEVEL_KIT
 LUA_LIB_DEPENDS=	libluajit-5.1.so:lang/luajit-openresty
 LUA_VARS=		DSO_EXTMODS+=lua
 
-LUASTREAM_GH_TUPLE=	openresty:stream-lua-nginx-module:6f3335c:luastream \
-			openresty:lua-resty-core:9f8dc05:luarc \
+LUASTREAM_GH_TUPLE=	openresty:stream-lua-nginx-module:11f9e38:luastream \
+			openresty:lua-resty-core:be42297:luarc \
 			openresty:lua-resty-lrucache:1c7cf6b:luarl
 LUASTREAM_CONFIGURE_ENV=LUAJIT_INC=${LOCALBASE}/include/luajit-2.1 \
 			LUAJIT_LIB=${LOCALBASE}/lib
@@ -271,7 +271,7 @@ OTEL_LIB_DEPENDS=	libabsl_base.so:devel/abseil \
 			libre2.so:devel/re2
 OTEL_VARS=		DSO_EXTMODS+=otel OTEL_SUBDIR=/
 
-PASSENGER_NGINX_VER=	6.1.6
+PASSENGER_NGINX_VER=	6.1.7
 PASSENGER_MASTER_SITES=	https://s3.amazonaws.com/phusion-passenger/releases/:passenger
 PASSENGER_DISTFILES=	passenger-${PASSENGER_NGINX_VER}.tar.gz:passenger
 PASSENGER_BUILD_DEPENDS=${LOCALBASE}/bin/rake:devel/rubygem-rake

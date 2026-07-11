@@ -459,6 +459,7 @@
     SUBDIR += py-apache-beam
     SUBDIR += py-ascii-magic
     SUBDIR += py-ast-comments
+    SUBDIR += py-autogen
     SUBDIR += py-banks
     SUBDIR += py-bce-python-sdk
     SUBDIR += py-bitsandbytes

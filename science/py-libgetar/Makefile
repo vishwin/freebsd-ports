@@ -12,8 +12,7 @@ WWW=		https://github.com/glotzerlab/libgetar
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}breathe>0:devel/py-breathe@${PY_FLAVOR}
+PY_DEPENDS=	${PYTHON_PKGNAMEPREFIX}numpy>0:math/py-numpy@${PY_FLAVOR}
 BUILD_DEPENDS=	${PY_DEPENDS}
 RUN_DEPENDS=	${PY_DEPENDS}
 

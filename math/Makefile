@@ -1001,6 +1001,7 @@
     SUBDIR += py-edit-distance
     SUBDIR += py-emcee
     SUBDIR += py-evalidate
+    SUBDIR += py-fairlearn
     SUBDIR += py-faiss
     SUBDIR += py-fastcluster
     SUBDIR += py-fenics-basix

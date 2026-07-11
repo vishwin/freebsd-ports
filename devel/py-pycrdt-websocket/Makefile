@@ -1,5 +1,5 @@
 PORTNAME=	pycrdt-websocket
-PORTVERSION=	0.16.3
+PORTVERSION=	0.16.4
 CATEGORIES=	devel python
 MASTER_SITES=	PYPI \
 		https://github.com/jupyter-server/pycrdt-websocket/releases/download/v${PORTVERSION}/

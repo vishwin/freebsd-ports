@@ -1,6 +1,6 @@
-TIMESTAMP = 1782966082
-SHA256 (grpc-grpc-v1.81.1_GH0.tar.gz) = 48ae0d05f87206112d9e9144a923191ee1e482141a70686ec58dc86d0b40fddc
-SIZE (grpc-grpc-v1.81.1_GH0.tar.gz) = 15840192
+TIMESTAMP = 1783563952
+SHA256 (grpc-grpc-v1.82.0_GH0.tar.gz) = d6851f59b9c4edb3218d2659a3abf1138e5bb4d2871c9e89c9330ed71756ed0b
+SIZE (grpc-grpc-v1.82.0_GH0.tar.gz) = 16053357
 SHA256 (envoyproxy-data-plane-api-84e8436_GH0.tar.gz) = 63e4ab6514051cf76d86deaa8f266211e9bf47cf8bab5c5dd593c6e2479bb15d
 SIZE (envoyproxy-data-plane-api-84e8436_GH0.tar.gz) = 813467
 SHA256 (googleapis-googleapis-785537c_GH0.tar.gz) = 0da24c41a562bc0a8a67960559f1f630c8d211b8c2257b176a3a1735be6de57d

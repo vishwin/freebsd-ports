@@ -1,5 +1,5 @@
 PORTNAME=	dash
-PORTVERSION=	4.3.0
+PORTVERSION=	4.4.0
 CATEGORIES=	www python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}setuptools>=0:devel/py-setuptools@${PY_FLA
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}flask>=1.0.4:www/py-flask@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}importlib-metadata>=0:devel/py-importlib-metadata@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}janus>=1.0.0:devel/py-janus@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}mcp>=1.23.0:misc/py-mcp@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}nest-asyncio>=0:devel/py-nest-asyncio@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}plotly>=5.0.0:graphics/py-plotly@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}pydantic2>=2.10:devel/py-pydantic2@${PY_FLAVOR} \

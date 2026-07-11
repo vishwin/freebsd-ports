@@ -35,6 +35,17 @@ NO_ARCH=	yes
 
 CONFLICTS_INSTALL=	${PYTHON_PKGNAMEPREFIX}*django-redis
 
+OPTIONS_DEFINE=	HIREDIS LZ4 MSGPACK PYZSTD
+HIREDIS_DESC=	Hiredis support
+MSGPACK_DESC=	MessagePack support
+PYZSTD_DESC=	Zstandard support
+
+HIREDIS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hiredis>=3.2.0:databases/py-hiredis@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}redis>=4.0.2:databases/py-redis@${PY_FLAVOR}
+LZ4_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}lz4>=0.15:archivers/py-lz4@${PY_FLAVOR}
+MSGPACK_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}msgpack>=0.6.0:devel/py-msgpack@${PY_FLAVOR}
+PYZSTD_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pyzstd>=0.15:archivers/py-pyzstd@${PY_FLAVOR}
+
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_REL} < 31300

@@ -28,9 +28,12 @@ USE_PYTHON=	autoplist concurrent pep517
 
 NO_ARCH=	yes
 
-OPTIONS_DEFINE=	PLUS
+OPTIONS_DEFINE=	NOTEBOOKS PLUS
+NOTEBOOKS_DESC=	Extra dependencies for notebooks
 PLUS_DESC=	Extra features
 
+NOTEBOOKS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}matplotlib-scalebar>=0:math/py-matplotlib-scalebar@${PY_FLAVOR} \
+			${PYTHON_PKGNAMEPREFIX}watermark>=0:devel/py-watermark@${PY_FLAVOR}
 PLUS_RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}matplotlib>=3.10:math/py-matplotlib@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}numba>=0.61:devel/py-numba@${PY_FLAVOR} \
 			${PYTHON_PKGNAMEPREFIX}rtree>=1.3:devel/py-rtree@${PY_FLAVOR} \
