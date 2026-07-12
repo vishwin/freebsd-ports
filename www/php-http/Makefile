@@ -1,18 +1,14 @@
 PORTNAME=	http
 DISTVERSION=	4.3.1
-PORTREVISION=	2
 CATEGORIES=	www
-DISTNAME=	pecl_${PORTNAME}-${PORTVERSION}
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Extended HTTP Support
-WWW=		https://pecl.php.net/package/pecl_http
+WWW=		https://github.com/m6w6/ext-http
 
 LICENSE=	BSD2CLAUSE
 LICENSE_FILE=	${WRKSRC}/LICENSE
-
-DEPRECATED=		pecl infrastructure is being deprecated and no consumers for this port
-EXPIRAION_DATE=	2026-09-30
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/raphf.so:devel/php-raphf@${PHP_FLAVOR} \
 		re2c:devel/re2c \
@@ -22,7 +18,10 @@ LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libicudata.so:devel/icu
 RUN_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/raphf.so:devel/php-raphf@${PHP_FLAVOR}
 
-USES=		php:build,pecl
+USES=		php:ext
+USE_GITHUB=	yes
+GH_ACCOUNT=	m6w6
+GH_PROJECT=	ext-${PORTNAME}
 USE_PHP=	iconv:build zlib:build
 IGNORE_WITH_PHP=	86
 

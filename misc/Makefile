@@ -452,6 +452,7 @@
     SUBDIR += py-SimpleSoapy
     SUBDIR += py-SoapySDR
     SUBDIR += py-accelerate
+    SUBDIR += py-ag2
     SUBDIR += py-aistudio-sdk
     SUBDIR += py-alive-progress
     SUBDIR += py-analysis-framework-base
@@ -593,6 +594,9 @@
     SUBDIR += py-openai
     SUBDIR += py-openai-harmony
     SUBDIR += py-openai-whisper
+    SUBDIR += py-openinference-instrumentation
+    SUBDIR += py-openinference-instrumentation-smolagents
+    SUBDIR += py-openinference-semantic-conventions
     SUBDIR += py-openpaperwork-core
     SUBDIR += py-openpaperwork-gtk
     SUBDIR += py-openvdb
@@ -648,6 +652,8 @@
     SUBDIR += py-sigopt
     SUBDIR += py-skops
     SUBDIR += py-smdebug-rulesconfig
+    SUBDIR += py-smolagents
+    SUBDIR += py-smolagents-agentfolio
     SUBDIR += py-snakemake-interface-common
     SUBDIR += py-snakemake-interface-executor-plugins
     SUBDIR += py-snakemake-interface-logger-plugins

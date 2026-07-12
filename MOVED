@@ -5497,3 +5497,4 @@ devel/pecl-raphf2|devel/php-raphf|2026-07-12|Converted to standard extension fro
 devel/pecl-grpc|devel/php-grpc|2026-07-12|Converted to standard extension from pecl extension
 devel/pecl-swoole|devel/php-swoole|2026-07-12|Converted to standard extension from pecl extension
 graphics/pecl-qrencode|graphics/php-qrencode|2026-07-12|Converted to standard extension from pecl extension
+www/pecl-http|www/php-http|2026-07-12|Converted to standard extension from pecl extension

@@ -1,6 +1,6 @@
 GH_TUPLE+=	ClickHouse:AMQP-CPP:99b52d1a:ClickHouse_AMQP_CPP/contrib/AMQP-CPP
 GH_TUPLE+=	Maratyszcza:FP16:0a92994d:Maratyszcza_FP16/contrib/FP16
-GH_TUPLE+=	ClickHouse:NuRaft:6ae333f5:ClickHouse_NuRaft/contrib/NuRaft
+GH_TUPLE+=	ClickHouse:NuRaft:3af81fd6:ClickHouse_NuRaft/contrib/NuRaft
 GH_TUPLE+=	brainhub:SHA3IUF:fc850475:brainhub_SHA3IUF/contrib/SHA3IUF
 GH_TUPLE+=	ClickHouse:SimSIMD:305e9681:ClickHouse_SimSIMD/contrib/SimSIMD
 GH_TUPLE+=	ClickHouse:StringZilla:43306303:ClickHouse_StringZilla/contrib/StringZilla
@@ -120,7 +120,7 @@ GH_TUPLE+=	ClickHouse:vectorscan:e6993b70:ClickHouse_vectorscan/contrib/vectorsc
 GH_TUPLE+=	ClickHouse:wordnet-blast:1d16ac28:ClickHouse_wordnet_blast/contrib/wordnet-blast
 GH_TUPLE+=	wangyi-fudan:wyhash:991aa3da:wangyi_fudan_wyhash/contrib/wyhash
 GH_TUPLE+=	Cyan4973:xxHash:bbb27a5e:Cyan4973_xxHash/contrib/xxHash
-GH_TUPLE+=	xz-mirror:xz:869b9d1b:xz_mirror_xz/contrib/xz
+GH_TUPLE+=	tukaani-project:xz:4b73f2ec:tukaani_project_xz/contrib/xz
 GH_TUPLE+=	ClickHouse:yaml-cpp:acf41867:ClickHouse_yaml_cpp/contrib/yaml-cpp
 GH_TUPLE+=	ClickHouse:zlib-ng:a2fbeffd:ClickHouse_zlib_ng/contrib/zlib-ng
 GH_TUPLE+=	ClickHouse:zstd:43708185:ClickHouse_zstd/contrib/zstd

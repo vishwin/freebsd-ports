@@ -1443,7 +1443,6 @@
     SUBDIR += pear-UDDI
     SUBDIR += pear-XML_GRDDL
     SUBDIR += pear-twig
-    SUBDIR += pecl-http
     SUBDIR += pecl-solr
     SUBDIR += pecl-yaf
     SUBDIR += pecl-yar
@@ -1453,6 +1452,7 @@
     SUBDIR += pglogd
     SUBDIR += phalcon
     SUBDIR += php-google-api-php-client
+    SUBDIR += php-http
     SUBDIR += php82-opcache
     SUBDIR += php82-session
     SUBDIR += php82-tidy

@@ -1,5 +1,5 @@
 PORTNAME=	nushell
-DISTVERSION=	0.114.0
+DISTVERSION=	0.114.1
 CATEGORIES=	shells
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -149,11 +149,11 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		crc-2.1.0 \
 		crc-catalog-1.1.1 \
 		crc32fast-1.5.0 \
-		crossbeam-channel-0.5.15 \
-		crossbeam-deque-0.8.6 \
-		crossbeam-epoch-0.9.18 \
-		crossbeam-queue-0.3.12 \
-		crossbeam-utils-0.8.21 \
+		crossbeam-channel-0.5.16 \
+		crossbeam-deque-0.8.7 \
+		crossbeam-epoch-0.9.20 \
+		crossbeam-queue-0.3.13 \
+		crossbeam-utils-0.8.22 \
 		crossterm-0.29.0 \
 		crossterm_winapi-0.9.1 \
 		crunchy-0.2.4 \
