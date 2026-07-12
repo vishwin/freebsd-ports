@@ -990,6 +990,7 @@
     SUBDIR += trimines
     SUBDIR += triplane
     SUBDIR += trojka
+    SUBDIR += trx
     SUBDIR += tsito
     SUBDIR += tt
     SUBDIR += ttt

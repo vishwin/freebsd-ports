@@ -1,6 +1,6 @@
 PORTNAME=	shaka-packager
 DISTVERSIONPREFIX=	v
-DISTVERSION=	3.8.0
+DISTVERSION=	3.9.0
 CATEGORIES=	multimedia
 
 MAINTAINER=	olgeni@FreeBSD.org

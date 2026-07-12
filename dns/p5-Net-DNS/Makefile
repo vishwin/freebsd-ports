@@ -21,6 +21,8 @@ USE_PERL5=	configure
 CONFIGURE_ARGS=	--no-IPv6-tests --no-online-tests
 NO_ARCH=	yes
 
+PORTSCOUT=	limit:^[0-9\.]*$$
+
 OPTIONS_DEFINE=	IDN IDN2 IPV6 SSHFP TSIG
 OPTIONS_DEFAULT=TSIG
 IDN_DESC=	International Domain Names support via Net::LibIDN

@@ -1,6 +1,6 @@
 PORTNAME=	http
 DISTVERSION=	4.3.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www
 DISTNAME=	pecl_${PORTNAME}-${PORTVERSION}
 
@@ -14,13 +14,13 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 DEPRECATED=		pecl infrastructure is being deprecated and no consumers for this port
 EXPIRAION_DATE=	2026-09-30
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/raphf.so:devel/pecl-raphf2@${PHP_FLAVOR} \
+BUILD_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/raphf.so:devel/php-raphf@${PHP_FLAVOR} \
 		re2c:devel/re2c \
 		bash>0:shells/bash
 LIB_DEPENDS=	libcurl.so:ftp/curl \
 		libevent.so:devel/libevent \
 		libicudata.so:devel/icu
-RUN_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/raphf.so:devel/pecl-raphf2@${PHP_FLAVOR}
+RUN_DEPENDS=	${LOCALBASE}/lib/php/${PHP_EXT_DIR}/raphf.so:devel/php-raphf@${PHP_FLAVOR}
 
 USES=		php:build,pecl
 USE_PHP=	iconv:build zlib:build

@@ -1,6 +1,6 @@
-TIMESTAMP = 1783552297
-SHA256 (shaka-project-shaka-packager-v3.8.0_GH0.tar.gz) = 98a051c8feacabf81ed66b6fdf1d3cb1cac9fa632222cda0b7acb2233c7e707a
-SIZE (shaka-project-shaka-packager-v3.8.0_GH0.tar.gz) = 69366508
+TIMESTAMP = 1783769960
+SHA256 (shaka-project-shaka-packager-v3.9.0_GH0.tar.gz) = 9611f07dc785ed13e9e367ab53da5caef1c30a400c136eba746b69d9b07ffe80
+SIZE (shaka-project-shaka-packager-v3.9.0_GH0.tar.gz) = 71129400
 SHA256 (google-googletest-15460959cbbfa20e66ef0b5ab497367e47fc0a04_GH0.tar.gz) = 258f33ab1a8ee17adf48ec65e821d0ea9eafcbedeff6110f9eaed78472e73dde
 SIZE (google-googletest-15460959cbbfa20e66ef0b5ab497367e47fc0a04_GH0.tar.gz) = 855900
 SHA256 (abseil-abseil-cpp-255c84dadd029fd8ad25c5efb5933e47beaa00c7_GH0.tar.gz) = 87e91fb785a2d0233f4599317afd576b7736e6732d557bdcdfdc11990bd333ef

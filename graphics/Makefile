@@ -828,7 +828,6 @@
     SUBDIR += pear-Image_Transform
     SUBDIR += pecl-geospatial
     SUBDIR += pecl-imagick
-    SUBDIR += pecl-qrencode
     SUBDIR += pecl-vips
     SUBDIR += pencil2d
     SUBDIR += perceptualdiff
@@ -843,6 +842,7 @@
     SUBDIR += phototonic
     SUBDIR += php-facedetect
     SUBDIR += php-geos
+    SUBDIR += php-qrencode
     SUBDIR += php82-exif
     SUBDIR += php82-gd
     SUBDIR += php83-exif

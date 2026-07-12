@@ -1,9 +1,8 @@
 PORTNAME=	graphillion
-DISTVERSION=	2.0
+DISTVERSION=	2.1
 CATEGORIES=	math python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
-#DISTNAME=	${PORTNAME:S/g/G/}-${DISTVERSION}
 
 MAINTAINER=	bofh@FreeBSD.org
 COMMENT=	Fast, lightweight graphset operation library in Python

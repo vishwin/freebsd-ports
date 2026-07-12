@@ -20,6 +20,7 @@
     SUBDIR += bun
     SUBDIR += bwbasic
     SUBDIR += c
+    SUBDIR += c3c
     SUBDIR += cairo
     SUBDIR += cairo-language-server
     SUBDIR += cbmbasic

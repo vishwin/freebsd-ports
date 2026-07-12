@@ -361,6 +361,7 @@
     SUBDIR += byaccj
     SUBDIR += c-stdaux
     SUBDIR += c2mdoc
+    SUBDIR += c3-lsp
     SUBDIR += c4core
     SUBDIR += calibrator
     SUBDIR += caliper
@@ -4280,7 +4281,6 @@
     SUBDIR += pecl-event
     SUBDIR += pecl-excimer
     SUBDIR += pecl-expect
-    SUBDIR += pecl-grpc
     SUBDIR += pecl-inotify
     SUBDIR += pecl-json_post
     SUBDIR += pecl-msgpack
@@ -4289,9 +4289,7 @@
     SUBDIR += pecl-pcov
     SUBDIR += pecl-protobuf
     SUBDIR += pecl-psr
-    SUBDIR += pecl-raphf2
     SUBDIR += pecl-runkit7
-    SUBDIR += pecl-swoole
     SUBDIR += pecl-sync
     SUBDIR += pecl-uploadprogress
     SUBDIR += pecl-uuid
@@ -4314,10 +4312,13 @@
     SUBDIR += php-Psr_Log
     SUBDIR += php-composer
     SUBDIR += php-geshi
+    SUBDIR += php-grpc
     SUBDIR += php-ice37
     SUBDIR += php-libawl
     SUBDIR += php-maxminddb
     SUBDIR += php-pie
+    SUBDIR += php-raphf
+    SUBDIR += php-swoole
     SUBDIR += php82-ffi
     SUBDIR += php82-gettext
     SUBDIR += php82-intl

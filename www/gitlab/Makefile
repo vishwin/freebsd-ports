@@ -237,7 +237,7 @@ MY_DEPENDS=	gitaly>=${GITLAB_VERSION}:devel/gitaly \
 	rubygem-gitlab-security_report_schemas>=0.2.0.min15.0.0.max15.2.4<0.2.0.min15.0.0.max15.2.5:devel/rubygem-gitlab-security_report_schemas \
 	rubygem-vite_rails-gitlab>=3.10.0<3.11:devel/rubygem-vite_rails-gitlab \
 	rubygem-vite_ruby-gitlab>=3.10.1<3.11:devel/rubygem-vite_ruby-gitlab \
-	rubygem-js-routes>=2.3<3:www/rubygem-js-routes \
+	rubygem-js-routes-gitlab>=2.3<2.4:www/rubygem-js-routes-gitlab \
 	rubygem-opentelemetry-sdk-gitlab>=1.10.0:devel/rubygem-opentelemetry-sdk-gitlab \
 	rubygem-opentelemetry-exporter-otlp-gitlab>=0.31.1:devel/rubygem-opentelemetry-exporter-otlp-gitlab \
 	rubygem-opentelemetry-instrumentation-active_support-gitlab>=0.10.0:devel/rubygem-opentelemetry-instrumentation-active_support-gitlab \

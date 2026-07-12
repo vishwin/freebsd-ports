@@ -1,0 +1,95 @@
+From 7a98316fd14a3a8022e4705daa6b61c4c8a0a881 Mon Sep 17 00:00:00 2001
+From: Dash <dash@bad.pink>
+Date: Sun, 12 Jul 2026 08:38:10 +0200
+Subject: [PATCH 1/2] shell/paths: fix split-install paths
+
+Honor `TRX_CONFIG_DIR` when loading shader files and honor
+`TRX_SCREENSHOTS_DIR` when writing screenshots. This keeps split
+installs working when the executable lives outside the main TRX data
+folder.
+
+Resolves #5789.
+---
+ src/trx/game/shell/paths.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git trx/game/shell/paths.c trx/game/shell/paths.c
+index 4581e16fbd..b38d53e7f3 100644
+--- trx/game/shell/paths.c
++++ trx/game/shell/paths.c
+@@ -210,15 +210,15 @@ static const M_DYNAMIC_PATH_POLICY m_PathPolicies[TRX_DYNAMIC_PATH_NUMBER_OF] =
+             "%mod_dir%/shaders/%rel%",
+             "%base_mod_dir%/shaders/%rel%",
+             "%trx_dir%/shaders/%rel%",
+-            "%trx_dir%/cfg/shaders/%rel%",
++            "%config_dir%/shaders/%rel%",
+             nullptr,
+         },
+         .check_exists = true,
+     },
+     [TRX_DYNAMIC_PATH_SCREENSHOT_WRITE_FILE] = {
+         .patterns = {
+-            "%trx_dir%/screenshots/%mod%/%rel%",
+-            "%trx_dir%/screenshots/%rel%",
++            "%screenshots_dir%/%mod%/%rel%",
++            "%screenshots_dir%/%rel%",
+             nullptr,
+         },
+         .check_exists = false,
+
+From e0407cfb601157b8d218405f20a87df5742ef639 Mon Sep 17 00:00:00 2001
+From: Dash <dash@bad.pink>
+Date: Sun, 12 Jul 2026 08:38:26 +0200
+Subject: [PATCH 2/2] docs: document path overrides
+
+Add a short install guide section describing the runtime path
+environment variables used by split installs and package-managed
+wrappers.
+---
+ docs/trx/INSTALLING.md | 33 +++++++++++++++++++++++++++++++++
+ 1 file changed, 33 insertions(+)
+
+diff --git ../docs/trx/INSTALLING.md ../docs/trx/INSTALLING.md
+index cee27da4d0..275243cd19 100644
+--- ../docs/trx/INSTALLING.md
++++ ../docs/trx/INSTALLING.md
+@@ -30,6 +30,39 @@
+    to ["Manually copying original game files"](#manually-copying-original-game-files)
+    section in this document.
+ 
++## Split installs and custom paths
++
++By default, TRX expects a bundled layout where the executable sits next to
++the `cfg/` and `games/` directories. If you want to keep the executable in a
++different location, such as `/usr/local/bin`, you can override the runtime
++paths with environment variables:
++
++- `TRX_CONFIG_DIR`  
++  Defaults to `<trx_dir>/cfg`.
++- `TRX_CACHE_DIR`  
++  Defaults to `<trx_dir>/cache`.
++- `TRX_GAMES_DIR`  
++  Defaults to `<trx_dir>/games`.
++- `TRX_SCREENSHOTS_DIR`  
++  Defaults to `<trx_dir>/screenshots`.
++- `TRX_SAVES_DIR`  
++  Defaults to `<trx_dir>/saves`.
++
++For example, a wrapper script can keep the binary in one location while
++pointing TRX at a separate game-data directory:
++
++```sh
++#!/bin/sh
++export TRX_GAMES_DIR="$HOME/Work/TRX/games"
++export TRX_CONFIG_DIR="$HOME/Work/TRX/cfg"
++export TRX_SAVES_DIR="$HOME/Work/TRX/saves"
++export TRX_SCREENSHOTS_DIR="$HOME/Work/TRX/screenshots"
++exec /usr/local/bin/TRX.bin "$@"
++```
++
++This is especially useful for package managers and ports that install the
++binary outside the main TRX data tree.
++
+ ## Verifying the installation
+ 
+ If you install everything correctly, your game directory should look more or less like this (click to expand):
