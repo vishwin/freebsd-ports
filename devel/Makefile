@@ -1062,6 +1062,7 @@
     SUBDIR += ikos
     SUBDIR += imake
     SUBDIR += immer
+    SUBDIR += immanent-checker
     SUBDIR += imtui
     SUBDIR += include-what-you-use
     SUBDIR += indi

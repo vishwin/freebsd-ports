@@ -1,5 +1,5 @@
 PORTNAME=	libcanlock
-DISTVERSION=	3.3.2
+DISTVERSION=	3.3.3
 CATEGORIES=	news
 MASTER_SITES=	https://micha.freeshell.org/libcanlock/src/
 
