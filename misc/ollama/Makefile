@@ -5,7 +5,7 @@ PORTREVISION=	1
 CATEGORIES=	misc # machine-learning
 
 MAINTAINER=	yuri@FreeBSD.org
-COMMENT=	Run Llama 2, Mistral, and other large language models
+COMMENT=	Run text/image LLMs and programming APIs locally and in the cloud
 WWW=		https://ollama.com \
 		https://github.com/ollama/ollama
 

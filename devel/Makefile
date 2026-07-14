@@ -846,6 +846,7 @@
     SUBDIR += gflags
     SUBDIR += gfold
     SUBDIR += gh
+    SUBDIR += ghgrab
     SUBDIR += ghidra
     SUBDIR += ghostie
     SUBDIR += ghpr
@@ -987,6 +988,7 @@
     SUBDIR += gwenhywfar
     SUBDIR += gwenhywfar-gtk3
     SUBDIR += gwenhywfar-qt6
+    SUBDIR += gwm
     SUBDIR += gzstream
     SUBDIR += hapy
     SUBDIR += hare
@@ -1061,8 +1063,8 @@
     SUBDIR += ignition-utils
     SUBDIR += ikos
     SUBDIR += imake
-    SUBDIR += immer
     SUBDIR += immanent-checker
+    SUBDIR += immer
     SUBDIR += imtui
     SUBDIR += include-what-you-use
     SUBDIR += indi
@@ -5440,6 +5442,7 @@
     SUBDIR += py-mmh3
     SUBDIR += py-mock
     SUBDIR += py-molecule
+    SUBDIR += py-molecule-plugins
     SUBDIR += py-mondrian
     SUBDIR += py-mongokit
     SUBDIR += py-monkeytype
@@ -8768,6 +8771,7 @@
     SUBDIR += tkcvs
     SUBDIR += tkp4
     SUBDIR += tl-expected
+    SUBDIR += tla+
     SUBDIR += tllist
     SUBDIR += tlsh
     SUBDIR += tlx

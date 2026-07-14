@@ -1,5 +1,5 @@
 PORTNAME=	docling-parse
-DISTVERSION=	7.4.0
+DISTVERSION=	7.8.0
 CATEGORIES=	textproc python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,13 +14,14 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pybind11>=2.13.6:devel/py-pybind11@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}setuptools>=0:devel/py-setuptools@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}wheel>=0:devel/py-wheel@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}wheel>0:devel/py-wheel@${PY_FLAVOR} \
 		cmake>=3.27.0:devel/cmake \
 		cxxopts>=3.3.1:devel/cxxopts \
 		loguru>=2.1.0:devel/loguru \
 		nlohmann-json>=3.12.0:devel/nlohmann-json \
 		utf8cpp>=4.1.1:devel/utf8cpp
 LIB_DEPENDS=	libblend2d.so:graphics/blend2d \
+			libfreetype.so:print/freetype2 \
 		libjpeg.so:graphics/jpeg-turbo \
 		liblcms2.so:graphics/lcms2 \
 		libopenjp2.so:graphics/openjpeg \

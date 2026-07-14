@@ -460,6 +460,7 @@
     SUBDIR += linux-rl9-qt5-qtxmlpatterns
     SUBDIR += linuxdoc
     SUBDIR += linuxdoc-tools
+    SUBDIR += livediff
     SUBDIR += localize
     SUBDIR += logseq
     SUBDIR += lookatme
@@ -1371,7 +1372,6 @@
     SUBDIR += py-cloud_sptheme
     SUBDIR += py-cmarkgfm
     SUBDIR += py-collective.checkdocs
-    SUBDIR += py-commonmark
     SUBDIR += py-comrak
     SUBDIR += py-conllu
     SUBDIR += py-creole
@@ -1867,6 +1867,7 @@
     SUBDIR += refdb
     SUBDIR += reflex
     SUBDIR += regex2dfa
+    SUBDIR += regexplain
     SUBDIR += replaceit
     SUBDIR += rfcdiff
     SUBDIR += riffdiff

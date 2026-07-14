@@ -1083,6 +1083,7 @@
     SUBDIR += xdesktopwaves
     SUBDIR += xdigger
     SUBDIR += xemeraldia
+    SUBDIR += xevil
     SUBDIR += xeyesplus
     SUBDIR += xfce4-eyes-plugin
     SUBDIR += xfireworks

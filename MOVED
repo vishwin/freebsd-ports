@@ -5498,3 +5498,4 @@ devel/pecl-grpc|devel/php-grpc|2026-07-12|Converted to standard extension from p
 devel/pecl-swoole|devel/php-swoole|2026-07-12|Converted to standard extension from pecl extension
 graphics/pecl-qrencode|graphics/php-qrencode|2026-07-12|Converted to standard extension from pecl extension
 www/pecl-http|www/php-http|2026-07-12|Converted to standard extension from pecl extension
+textproc/py-commonmark|textproc/py-CommonMark|2026-07-13|Remove duplicate port

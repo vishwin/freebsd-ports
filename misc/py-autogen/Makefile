@@ -40,10 +40,12 @@ GH_TAGNAME=	fb9e911a220dddc15d2ce2924d9bed2d2df3e30e
 
 NO_ARCH=	yes
 
+TEST_ENV=	${MAKE_ENV} PATH=${WRKDIR}/.bin:${PATH} \
+		PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}:${WRKSRC}
+
 # The upstream test suite requires many optional providers and network access.
 # Run only the core tests that pass without optional extras.
-TEST_ARGS=	--ignore=test/beta/tools/sandbox/adapter/test_code_adapter.py \
-		--ignore=test/beta/tools/skills/test_toolkit.py \
+TEST_ARGS=	-p no:relaxed \
 		test/test_import_utils.py \
 		test/test_json_utils.py \
 		test/test_llm_config.py \
@@ -63,6 +65,10 @@ TEST_ARGS=	--ignore=test/beta/tools/sandbox/adapter/test_code_adapter.py \
 		test/beta \
 		test/logger
 
-# tests as of 0.14.1: 3300 passed, 416 skipped, 2 xfailed, 15 warnings in 32.09s
+pre-test:
+	@${MKDIR} ${WRKDIR}/.bin
+	@${LN} -sf ${PYTHON_CMD} ${WRKDIR}/.bin/python
+
+# tests as of 0.14.1: 3602 passed, 356 skipped, 2 xfailed, 36 warnings in 46.84s
 
 .include <bsd.port.mk>

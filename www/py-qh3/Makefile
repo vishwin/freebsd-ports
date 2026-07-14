@@ -1,6 +1,6 @@
 PORTNAME=	qh3
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.9.3
+DISTVERSION=	1.9.4
 CATEGORIES=	www python
 #MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -44,7 +44,7 @@ CARGO_CRATES=	aes-0.8.4 \
 		block-buffer-0.10.4 \
 		block-padding-0.3.3 \
 		cbc-0.1.2 \
-		cc-1.2.66 \
+		cc-1.2.67 \
 		cexpr-0.6.0 \
 		cfg-if-1.0.4 \
 		cfg_aliases-0.2.1 \
@@ -96,8 +96,8 @@ CARGO_CRATES=	aes-0.8.4 \
 		libm-0.2.16 \
 		litemap-0.8.2 \
 		log-0.4.33 \
-		ls-qpack-rs-0.3.1 \
-		ls-qpack-rs-sys-0.3.1 \
+		ls-qpack-rs-0.3.2 \
+		ls-qpack-rs-sys-0.3.2 \
 		memchr-2.8.3 \
 		minimal-lexical-0.2.1 \
 		nom-7.1.3 \
@@ -134,8 +134,8 @@ CARGO_CRATES=	aes-0.8.4 \
 		rand-0.8.5 \
 		rand_chacha-0.3.1 \
 		rand_core-0.6.4 \
-		regex-1.12.4 \
-		regex-automata-0.4.14 \
+		regex-1.13.0 \
+		regex-automata-0.4.15 \
 		regex-syntax-0.8.11 \
 		rfc6979-0.4.0 \
 		ring-0.17.14 \
@@ -153,7 +153,7 @@ CARGO_CRATES=	aes-0.8.4 \
 		serde-1.0.228 \
 		serde_core-1.0.228 \
 		serde_derive-1.0.228 \
-		sha1-0.10.6 \
+		sha1-0.10.7 \
 		sha2-0.10.9 \
 		shlex-1.3.0 \
 		shlex-2.0.1 \
@@ -201,8 +201,8 @@ CARGO_CRATES=	aes-0.8.4 \
 		x509-parser-0.18.1 \
 		yoke-0.8.3 \
 		yoke-derive-0.8.2 \
-		zerocopy-0.8.53 \
-		zerocopy-derive-0.8.53 \
+		zerocopy-0.8.54 \
+		zerocopy-derive-0.8.54 \
 		zerofrom-0.1.8 \
 		zerofrom-derive-0.1.7 \
 		zeroize-1.9.0 \

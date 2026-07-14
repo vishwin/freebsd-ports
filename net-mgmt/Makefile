@@ -73,6 +73,7 @@
     SUBDIR += fence-agents
     SUBDIR += fetchconfig
     SUBDIR += fli
+    SUBDIR += flow
     SUBDIR += flow-tools
     SUBDIR += flowd
     SUBDIR += flowviewer

@@ -532,6 +532,7 @@
     SUBDIR += py-jiwer
     SUBDIR += py-kartograph
     SUBDIR += py-kokoro
+    SUBDIR += py-lance-namespace-urllib3-client
     SUBDIR += py-langchain
     SUBDIR += py-langchain-anthropic
     SUBDIR += py-langchain-classic
@@ -565,6 +566,7 @@
     SUBDIR += py-lm-format-enforcer
     SUBDIR += py-log_symbols
     SUBDIR += py-mcp
+    SUBDIR += py-mda-xdrlib
     SUBDIR += py-mem0ai
     SUBDIR += py-mffpy
     SUBDIR += py-misaki
