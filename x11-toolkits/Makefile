@@ -117,6 +117,8 @@
     SUBDIR += mygui-dummy
     SUBDIR += mygui-ogre
     SUBDIR += mygui-opengl
+    SUBDIR += mygui-opengl3
+    SUBDIR += mygui-opengles
     SUBDIR += nanogui
     SUBDIR += neXtaw
     SUBDIR += ntk

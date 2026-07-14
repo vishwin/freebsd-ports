@@ -1,5 +1,5 @@
 PORTNAME=	emscripten
-DISTVERSION=	6.0.2
+DISTVERSION=	6.0.3
 CATEGORIES=	devel www
 
 MAINTAINER=	yuri@FreeBSD.org
