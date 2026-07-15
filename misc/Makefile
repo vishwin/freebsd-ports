@@ -469,6 +469,7 @@
     SUBDIR += py-censys
     SUBDIR += py-cmap
     SUBDIR += py-codecarbon
+    SUBDIR += py-cohere
     SUBDIR += py-colorbrewer
     SUBDIR += py-colored
     SUBDIR += py-colorzero
@@ -502,6 +503,7 @@
     SUBDIR += py-facenet-pytorch
     SUBDIR += py-fal-client
     SUBDIR += py-fast-histogram
+    SUBDIR += py-fastavro
     SUBDIR += py-faster-coco-eval
     SUBDIR += py-fastmcp
     SUBDIR += py-fastmcp-slim
@@ -620,6 +622,9 @@
     SUBDIR += py-pdd
     SUBDIR += py-peft
     SUBDIR += py-pexpect
+    SUBDIR += py-pinecone
+    SUBDIR += py-pinecone-plugin-assistant
+    SUBDIR += py-pinecone-plugin-interface
     SUBDIR += py-pkbar
     SUBDIR += py-placekey
     SUBDIR += py-polars

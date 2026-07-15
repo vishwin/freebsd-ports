@@ -27,7 +27,7 @@ MAKE_ARGS=	CC=${CC} \
 
 TEST_TARGET=	test
 
-# tests as of 2024-06-14:
+# tests as of 2026-07-14:
 # Ran 62 tests in 3.629s
 # OK
 

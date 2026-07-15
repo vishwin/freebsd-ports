@@ -1,6 +1,6 @@
 PORTNAME=	mise
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2026.7.5
+DISTVERSION=	2026.7.6
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -29,6 +29,7 @@ GH_ACCOUNT=	jdx
 CARGO_CRATES=	addr2line-0.25.1 \
 		adler2-2.0.1 \
 		aead-0.5.2 \
+		aead-0.6.1 \
 		aes-0.8.4 \
 		aes-0.9.1 \
 		aes-gcm-0.10.3 \
@@ -140,6 +141,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		chacha20-0.9.1 \
 		chacha20-0.10.1 \
 		chacha20poly1305-0.10.1 \
+		chacha20poly1305-0.11.0 \
 		chrono-0.4.45 \
 		chrono-tz-0.9.0 \
 		chrono-tz-build-0.3.0 \
@@ -219,7 +221,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		defmt-1.1.1 \
 		defmt-macros-1.1.1 \
 		defmt-parser-1.0.0 \
-		demand-2.0.2 \
+		demand-2.0.3 \
 		der-0.7.10 \
 		der_derive-0.7.3 \
 		deranged-0.5.8 \
@@ -283,6 +285,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		foreign-types-0.3.2 \
 		foreign-types-shared-0.1.1 \
 		form_urlencoded-1.2.2 \
+		formatx-0.3.0 \
 		fs-err-3.3.1 \
 		fs4-0.13.1 \
 		fs_extra-1.3.0 \
@@ -558,13 +561,13 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		pest_meta-2.8.7 \
 		petgraph-0.8.3 \
 		phf-0.11.3 \
-		phf-0.13.1 \
+		phf-0.14.0 \
 		phf_codegen-0.11.3 \
-		phf_codegen-0.13.1 \
+		phf_codegen-0.14.0 \
 		phf_generator-0.11.3 \
-		phf_generator-0.13.1 \
+		phf_generator-0.14.0 \
 		phf_shared-0.11.3 \
-		phf_shared-0.13.1 \
+		phf_shared-0.14.0 \
 		pin-project-1.1.13 \
 		pin-project-internal-1.1.13 \
 		pin-project-lite-0.2.17 \
@@ -575,6 +578,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		platforms-3.12.0 \
 		plist-1.10.0 \
 		poly1305-0.8.0 \
+		poly1305-0.9.1 \
 		polyval-0.6.2 \
 		portable-atomic-1.13.1 \
 		portable-atomic-util-0.2.7 \
@@ -648,8 +652,8 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		ring-0.17.14 \
 		rkyv-0.8.17 \
 		rkyv_derive-0.8.17 \
-		rmcp-1.8.0 \
-		rmcp-macros-1.8.0 \
+		rmcp-2.2.0 \
+		rmcp-macros-2.2.0 \
 		rmp-0.8.15 \
 		rmp-serde-1.3.1 \
 		roff-1.1.1 \
@@ -783,6 +787,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		tempfile-3.27.0 \
 		tera-1.20.1 \
 		tera-2.0.0 \
+		tera-contrib-0.2.0 \
 		termcolor-1.4.1 \
 		terminal_size-0.4.4 \
 		test-log-0.2.21 \
@@ -851,6 +856,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		unicode-xid-0.2.6 \
 		unit-prefix-0.5.2 \
 		universal-hash-0.5.1 \
+		universal-hash-0.6.1 \
 		unsafe-libyaml-0.2.11 \
 		untrusted-0.7.1 \
 		untrusted-0.9.0 \
@@ -858,7 +864,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		ureq-proto-0.6.0 \
 		url-2.5.8 \
 		urlencoding-2.1.3 \
-		usage-lib-3.5.3 \
+		usage-lib-3.5.4 \
 		utf8-zero-0.8.1 \
 		utf8_iter-1.0.4 \
 		utf8parse-0.2.2 \
@@ -908,7 +914,6 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		windows-numerics-0.2.0 \
 		windows-numerics-0.3.1 \
 		windows-registry-0.5.3 \
-		windows-registry-0.6.1 \
 		windows-result-0.3.4 \
 		windows-result-0.4.1 \
 		windows-strings-0.4.2 \

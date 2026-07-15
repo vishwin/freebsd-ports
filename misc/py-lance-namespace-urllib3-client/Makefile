@@ -1,5 +1,5 @@
 PORTNAME=	lance-namespace-urllib3-client
-DISTVERSION=	0.3.2
+DISTVERSION=	0.9.0
 CATEGORIES=	misc python # machine-learning
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}

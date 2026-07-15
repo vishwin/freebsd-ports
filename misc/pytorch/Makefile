@@ -1,6 +1,6 @@
 PORTNAME=	pytorch
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.12.1
+DISTVERSION=	2.13.0
 CATEGORIES=	misc # machine-learning
 MASTER_SITES=	https://github.com/pytorch/pytorch/releases/download/v${DISTVERSION}/
 DIST_SUBDIR=	${PORTNAME}
@@ -78,6 +78,8 @@ post-patch:
 post-install:
 	# functorch.so is installed back into the source directory, see https://github.com/pytorch/pytorch/issues/91524
 	@${RM} $$(${FIND} ${STAGEDIR} -name functorch.so)
+	# Remove build artifacts installed with absolute paths
+	@${RM} -r ${STAGEDIR}${WRKDIR} || true
 	# https://github.com/pytorch/pytorch/issues/24417
 	@${FIND} ${STAGEDIR} -type d -empty -delete
 

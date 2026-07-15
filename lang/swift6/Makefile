@@ -135,8 +135,10 @@ COMMON_BUILDFLAGS=	\
 		--install-prefix ${SWIFT_PREFIX} \
 		--install-all true \
 		--jobs ${MAKE_JOBS_NUMBER} \
-		--extra-cmake-options="-DCMAKE_C_FLAGS_RELEASE='${CFLAGS} -DNDEBUG'" \
-		--extra-cmake-options="-DCMAKE_CXX_FLAGS_RELEASE='${CXXFLAGS} -DNDEBUG'" \
+		--extra-cmake-options="-DCMAKE_C_FLAGS='${CFLAGS}'" \
+		--extra-cmake-options="-DCMAKE_CXX_FLAGS='${CXXFLAGS}'" \
+		--extra-cmake-options="-DCMAKE_C_FLAGS_RELEASE=-DNDEBUG" \
+		--extra-cmake-options="-DCMAKE_CXX_FLAGS_RELEASE=-DNDEBUG" \
 		--extra-cmake-options="-DCLANG_DEFAULT_LINKER=lld" \
 		--extra-cmake-options="-DLLVM_ENABLE_LLD=ON" \
 		--extra-cmake-options="-DSWIFT_USE_LINKER=lld" \
@@ -159,6 +161,8 @@ STAGE0_BUILDFLAGS=	${COMMON_BUILDFLAGS} \
 STAGE${n}_BUILDFLAGS=	${COMMON_BUILDFLAGS} \
 		--install-destdir ${OUT${n}_DIR} \
 		--native-swift-tools-path ${OUT${p}_DIR}${SWIFT_PREFIX}/bin \
+		--native-clang-tools-path ${OUT${p}_DIR}${SWIFT_PREFIX}/bin \
+		--native-llvm-tools-path ${OUT${p}_DIR}${SWIFT_PREFIX}/bin \
 		--extra-cmake-options="-DCMAKE_Swift_COMPILER=${OUT${p}_DIR}${SWIFT_PREFIX}/bin/swiftc" \
 		--bootstrapping hosttools \
 		${STAGE${n}_MODULES:C/^/--/:C/$/ true/}
@@ -167,6 +171,8 @@ BOOTSTRAP_DIR=	${WRKDIR}/${PORTNAME}${PKGNAMESUFFIX}-bootstrap${SWIFT_PREFIX}
 SWIFT_BUILDFLAGS=	${COMMON_BUILDFLAGS} \
 		--install-destdir ${OUT5_DIR} \
 		--native-swift-tools-path ${BOOTSTRAP_DIR}/bin \
+		--native-clang-tools-path ${BOOTSTRAP_DIR}/bin \
+		--native-llvm-tools-path ${BOOTSTRAP_DIR}/bin \
 		--extra-cmake-options="-DCMAKE_Swift_COMPILER=${BOOTSTRAP_DIR}/bin/swiftc" \
 		--bootstrapping hosttools \
 		${STAGE5_MODULES:C/^/--/:C/$/ true/}
@@ -203,6 +209,15 @@ BUILD_DEPENDS+=	${LOCALBASE}/lib/compat/libutil.so.9:misc/compat14x
 post-extract:
 	@${CP} ${WRKSRC}/swift-corelibs-libdispatch/dispatch/generic/module.modulemap \
 		${WRKSRC}/swift-corelibs-libdispatch/dispatch
+# Work around a clang 21 header modules/libc++ wchar.h regression on FreeBSD
+.if (${OSVERSION} >= 1404501 && ${OSVERSION} < 1500000) || \
+    (${OSVERSION} >= 1501501 && ${OSVERSION} < 1600000) || \
+     ${OSVERSION} >= 1600017
+	@${CP} ${FILESDIR}/extra-swift-wchar.h \
+		${WRKSRC}/llvm-project/llvm/include/wchar.h
+	@${CP} ${FILESDIR}/extra-swift-wchar.h \
+		${WRKSRC}/swift/stdlib/public/SwiftShims/swift/shims/wchar.h
+.endif
 
 do-build:
 .if defined(BOOTSTRAP_MODE)
@@ -217,6 +232,14 @@ do-build:
 	@${ECHO_MSG} "===>  Building stage ${n}"
 	@${ECHO_MSG} "======================"
 	@${RM} -r ${WRKSRC}/build
+.	if (${OSVERSION} >= 1404501 && ${OSVERSION} < 1500000) || \
+	   (${OSVERSION} >= 1501501 && ${OSVERSION} < 1600000) || \
+	    ${OSVERSION} >= 1600017
+	# Work around a clang 21 header modules/libc++ wchar.h regression on FreeBSD
+	@${MKDIR} ${WRKSRC}/build/Ninja-Release/swift-${OPSYS:tl}-${SWIFT_ARCH}/lib/swift
+	@${CP} ${FILESDIR}/extra-swift-wchar.h \
+		${WRKSRC}/build/Ninja-Release/swift-${OPSYS:tl}-${SWIFT_ARCH}/lib/swift/wchar.h
+.	endif
 .	if ${n} == 1
 	# Rename module.modulemap to avoid the error:
 	# error: redefinition of module 'Dispatch'
@@ -235,6 +258,14 @@ do-build:
 	${SETENV} ${MAKE_ENV} ./utils/build-script ${STAGE${n}_BUILDFLAGS}
 .   endfor
 .else
+.   if (${OSVERSION} >= 1404501 && ${OSVERSION} < 1500000) || \
+       (${OSVERSION} >= 1501501 && ${OSVERSION} < 1600000) || \
+        ${OSVERSION} >= 1600017
+	# Work around a clang 21 header modules/libc++ wchar.h regression on FreeBSD
+	@${MKDIR} ${WRKSRC}/build/Ninja-Release/swift-${OPSYS:tl}-${SWIFT_ARCH}/lib/swift
+	@${CP} ${FILESDIR}/extra-swift-wchar.h \
+		${WRKSRC}/build/Ninja-Release/swift-${OPSYS:tl}-${SWIFT_ARCH}/lib/swift/wchar.h
+.   endif
 	@${MV} ${WRKSRC}/swift-corelibs-libdispatch/dispatch/module.modulemap \
 		${WRKSRC}/swift-corelibs-libdispatch/dispatch/module.modulemap.bak
 	@${TOUCH} ${WRKSRC}/swift-corelibs-libdispatch/dispatch/module.modulemap

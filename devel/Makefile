@@ -834,6 +834,7 @@
     SUBDIR += gengetopt
     SUBDIR += genht
     SUBDIR += genie
+    SUBDIR += getopt-ada
     SUBDIR += getoptions
     SUBDIR += gettext
     SUBDIR += gettext-lint
@@ -919,6 +920,8 @@
     SUBDIR += glog
     SUBDIR += gmake
     SUBDIR += gn
+    SUBDIR += gnatcoll-core
+    SUBDIR += gnatcoll-minimal
     SUBDIR += gnome-builder
     SUBDIR += gnome-common
     SUBDIR += gnu-efi

@@ -319,9 +319,9 @@ CARGO_CRATES=	adler2-2.0.1 \
 		rustix-1.1.4 \
 		rustversion-1.0.22 \
 		ryu-1.0.20 \
-		salsa-0.27.2 \
-		salsa-macro-rules-0.27.2 \
-		salsa-macros-0.27.2 \
+		salsa-0.28.0 \
+		salsa-macro-rules-0.28.0 \
+		salsa-macros-0.28.0 \
 		same-file-1.0.6 \
 		schemars-1.2.1 \
 		schemars_derive-1.2.1 \

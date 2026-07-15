@@ -1,5 +1,5 @@
 PORTNAME=	docling
-DISTVERSION=	2.112.0
+DISTVERSION=	2.113.0
 CATEGORIES=	textproc python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,7 +10,7 @@ WWW=		https://github.com/docling-project/docling/blob/main/CHANGELOG.md
 
 LICENSE=	MIT
 
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hatchling>=0:devel/py-hatchling@${PY_FLAVOR}
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hatchling>0:devel/py-hatchling@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}accelerate>=1.0.0:misc/py-accelerate@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}beautifulsoup>=4.12.3:www/py-beautifulsoup@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}certifi>=2024.7.4:security/py-certifi@${PY_FLAVOR} \
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}accelerate>=1.0.0:misc/py-accelerate@${PY_FL
 		${PYTHON_PKGNAMEPREFIX}docling-core>=2.86.0:textproc/py-docling-core@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}docling-ibm-models>=3.13.0:textproc/py-docling-ibm-models@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}docling-parse>=7.0.0:textproc/py-docling-parse@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}docling-slim=2.112.0:textproc/py-docling-slim@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}docling-slim>=2.112.0:textproc/py-docling-slim@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}filetype>=1.2.0:devel/py-filetype@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}httpx>=0.28:www/py-httpx@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}huggingface-hub>=0.23:misc/py-huggingface-hub@${PY_FLAVOR} \

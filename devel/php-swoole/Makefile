@@ -1,11 +1,13 @@
 PORTNAME=	swoole
+DISTVERSIONPREFIX=	v
 DISTVERSION=	6.2.2
 PORTREVISION=	0
 CATEGORIES=	devel net
+PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
 MAINTAINER=	vanilla@FreeBSD.org
 COMMENT=	Asynchronous, concurrent, and distributed networking framework
-WWW=		https://pecl.php.net/package/swoole
+WWW=		https://github.com/swoole/swoole-src
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
@@ -13,8 +15,10 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 NOT_FOR_ARCHS=	i386 powerpc
 NOT_FOR_ARCHS_REASON=	upstream drop 32 bits support
 
-USES=		compiler:c11 localbase:ldflags php:build,pecl pkgconfig ssl
+USES=		compiler:c11 localbase:ldflags php:ext pkgconfig ssl
 IGNORE_WITH_PHP=	86
+USE_GITHUB=	yes
+GH_PROJECT=	swoole-src
 
 CONFIGURE_ARGS+=	--enable-mysqlnd \
 			--enable-openssl
