@@ -62,6 +62,7 @@
     SUBDIR += clpbar
     SUBDIR += code2prompt
     SUBDIR += codex
+    SUBDIR += colibri
     SUBDIR += colortail
     SUBDIR += coloursum
     SUBDIR += colwide
@@ -512,6 +513,7 @@
     SUBDIR += py-google-ai-generativelanguage
     SUBDIR += py-google-genai
     SUBDIR += py-gpiozero
+    SUBDIR += py-groq
     SUBDIR += py-gymnasium
     SUBDIR += py-halo
     SUBDIR += py-haystack_ai
@@ -535,10 +537,18 @@
     SUBDIR += py-lance-namespace-urllib3-client
     SUBDIR += py-langchain
     SUBDIR += py-langchain-anthropic
+    SUBDIR += py-langchain-aws
     SUBDIR += py-langchain-classic
     SUBDIR += py-langchain-community
+    SUBDIR += py-langchain-community-inspire-hep
     SUBDIR += py-langchain-core
+    SUBDIR += py-langchain-deepseek
+    SUBDIR += py-langchain-google-community
     SUBDIR += py-langchain-google-genai
+    SUBDIR += py-langchain-groq
+    SUBDIR += py-langchain-huggingface
+    SUBDIR += py-langchain-mcp-adapters
+    SUBDIR += py-langchain-ollama
     SUBDIR += py-langchain-openai
     SUBDIR += py-langchain-protocol
     SUBDIR += py-langchain-tests

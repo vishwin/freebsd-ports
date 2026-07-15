@@ -216,7 +216,7 @@
     <topic>libXfont2 -- Multiple vulnerabilities</topic>
     <affects>
       <package>
-	<name>xwayland</name>
+	<name>libXfont2</name>
 	<range><lt>2.0.8</lt></range>
       </package>
     </affects>
@@ -2543,7 +2543,7 @@ rclone process user.</p>
     <affects>
     <package>
 	<name>ffmpeg</name>
-	<range><lt>8.1.2</lt></range>
+	<range><lt>8.1.2,1</lt></range>
     </package>
     <package>
 	<name>ffmpeg4</name>

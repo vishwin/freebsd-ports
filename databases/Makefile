@@ -50,6 +50,7 @@
     SUBDIR += cutelyst-asql
     SUBDIR += dalmp
     SUBDIR += datafusion-cli
+    SUBDIR += datui
     SUBDIR += db
     SUBDIR += db18
     SUBDIR += db5

@@ -1,6 +1,6 @@
 PORTNAME=	TRX
 DISTVERSIONPREFIX=	trx-
-DISTVERSION=	1.9.1
+DISTVERSION=	1.9.2
 CATEGORIES=	games
 
 MAINTAINER=	eduardo@FreeBSD.org
@@ -24,6 +24,7 @@ MESON_ARGS=	-Dlua_dep=lua-${LUA_VER} \
 		-Dstaticdeps=false \
 		-Dtrx_version=${DISTVERSION}
 
+PORTSCOUT=	limit:^1\.
 SUB_FILES=	pkg-message trx.sh
 SUB_LIST=	PORTNAME=${PORTNAME}
 
