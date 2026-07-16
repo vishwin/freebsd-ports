@@ -1,5 +1,5 @@
 PORTNAME=	colibri
-DISTVERSION=	g20260714
+DISTVERSION=	g20260715
 CATEGORIES=	misc # machine-learning
 PKGNAMESUFFIX=	-ai
 
@@ -14,7 +14,7 @@ USES=		gmake python shebangfix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	JustVugg
-GH_TAGNAME=	62419af
+GH_TAGNAME=	550ddcb
 
 SHEBANG_FILES=	c/coli
 SHEBANG_GLOB=	*.py

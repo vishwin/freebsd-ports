@@ -1,3 +1,34 @@
+  <vuln vid="e26b9011-80ef-11f1-b72c-8447094a420f">
+    <topic>liboqs -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>liboqs</name>
+	<range><lt>0.16.0</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The OpenQuantumSafe project reports:</p>
+	<blockquote cite="https://github.com/open-quantum-safe/liboqs/releases/tag/0.16.0">
+	  <ul>
+	    <li>uninitialized encaps_derand pointer dereference</li>
+	    <li>out-of-bounds read in XMSS/XMSS^MT signature verification</li>
+	    <li>Integer underflow in CROSS crypto_sign_open()</li>
+	    <li>incorrect array size when calling secure_clean</li>
+	    <li>Implemented optimization barrier OQS_MEM_BLACK_BOX and applied to ct_select in FrodoKEM</li>
+	  </ul>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/open-quantum-safe/liboqs/releases/tag/0.16.0</url>
+    </references>
+    <dates>
+      <discovery>2026-07-09</discovery>
+      <entry>2026-07-16</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="74d0291e-7f81-11f1-83e9-901b0e13f1a0">
     <topic>Poppler: integer overflow in tilingPatternFill</topic>
     <affects>

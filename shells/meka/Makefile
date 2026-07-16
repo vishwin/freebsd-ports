@@ -1,5 +1,5 @@
 PORTNAME=	meka
-DISTVERSION=	0.32.0
+DISTVERSION=	0.33.1
 CATEGORIES=	shells # machine-learning
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -107,7 +107,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		crossbeam-0.8.4 \
 		crossbeam-channel-0.5.15 \
 		crossbeam-deque-0.8.6 \
-		crossbeam-epoch-0.9.18 \
+		crossbeam-epoch-0.9.20 \
 		crossbeam-queue-0.3.12 \
 		crossbeam-utils-0.8.21 \
 		crossterm-0.29.0 \

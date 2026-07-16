@@ -1,4 +1,4 @@
-TIMESTAMP = 1783961975
+TIMESTAMP = 1784166546
 SHA256 (rust/crates/adler2-2.0.1.crate) = 320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa
 SIZE (rust/crates/adler2-2.0.1.crate) = 13366
 SHA256 (rust/crates/allocator-api2-0.2.21.crate) = 683d7910e743518b0e34f1186f92494becacb047c7b6bf616c96772180fef923
@@ -515,5 +515,5 @@ SHA256 (rust/crates/zerovec-0.11.6.crate) = 90f911cbc359ab6af17377d242225f4d7511
 SIZE (rust/crates/zerovec-0.11.6.crate) = 128583
 SHA256 (rust/crates/zmij-1.0.21.crate) = b8848ee67ecc8aedbaf3e4122217aff892639231befc6a1b58d29fff4c2cabaa
 SIZE (rust/crates/zmij-1.0.21.crate) = 26665
-SHA256 (yatoub-susshi-v0.19.0_GH0.tar.gz) = e50a3eba8c25be315b554bf857d45afa76bb96f5e0f6141c5248e262d70bf5f4
-SIZE (yatoub-susshi-v0.19.0_GH0.tar.gz) = 762477
+SHA256 (yatoub-susshi-v0.20.0_GH0.tar.gz) = 80733e69e5837803040c57268f821dfa7205b53b1f808f6b8fd7d26af8ee4d22
+SIZE (yatoub-susshi-v0.20.0_GH0.tar.gz) = 766570

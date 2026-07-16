@@ -1,6 +1,6 @@
 PORTNAME=	gwm
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.0.3
+DISTVERSION=	1.1.0
 CATEGORIES=	devel
 
 MAINTAINER=	olgeni@FreeBSD.org
@@ -212,7 +212,7 @@ CARGO_CRATES=	aho-corasick-1.1.4 \
 		rayon-core-1.13.0 \
 		redox_syscall-0.5.18 \
 		redox_users-0.5.2 \
-		regex-1.12.4 \
+		regex-1.13.0 \
 		regex-automata-0.4.14 \
 		regex-syntax-0.8.11 \
 		rustc_version-0.4.1 \

@@ -11,9 +11,9 @@ libexec/colibri/tools/convert_fp8_to_int4.py
 libexec/colibri/tools/convert_olmoe.py
 libexec/colibri/tools/download_glm52.py
 libexec/colibri/tools/eval_glm.py
-libexec/colibri/tools/expert_atlas.py
 libexec/colibri/tools/fetch_benchmarks.py
 libexec/colibri/tools/gen_unicode.py
+libexec/colibri/tools/glm_fp8_emit.py
 libexec/colibri/tools/make_glm_bench_model.py
 libexec/colibri/tools/make_glm_oracle.py
 libexec/colibri/tools/quant_ablation.py

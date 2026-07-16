@@ -540,7 +540,6 @@
     SUBDIR += py-jiwer
     SUBDIR += py-kartograph
     SUBDIR += py-kokoro
-    SUBDIR += py-lance-namespace-urllib3-client
     SUBDIR += py-langchain
     SUBDIR += py-langchain-anthropic
     SUBDIR += py-langchain-aws
