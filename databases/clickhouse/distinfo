@@ -1,6 +1,6 @@
-TIMESTAMP = 1783855342
-SHA256 (clickhouse/ClickHouse-ClickHouse-v26.3.11.36-lts_GH0.tar.gz) = 36df8b0f2b59811db9ea117bc4be4fe76ed49b4329477f29a5f637e657db4f5e
-SIZE (clickhouse/ClickHouse-ClickHouse-v26.3.11.36-lts_GH0.tar.gz) = 208361676
+TIMESTAMP = 1784143207
+SHA256 (clickhouse/ClickHouse-ClickHouse-v26.3.12.3-lts_GH0.tar.gz) = 46c85bcdbae07baa62d880d1669523463278b6b1fd288858496dec7e06983ac0
+SIZE (clickhouse/ClickHouse-ClickHouse-v26.3.12.3-lts_GH0.tar.gz) = 208360144
 SHA256 (clickhouse/ClickHouse-AMQP-CPP-99b52d1a_GH0.tar.gz) = 65bbd7444e2b0cde96ab222907aeca6c0dcf165e9f5114d9d1b41a13ce1394f8
 SIZE (clickhouse/ClickHouse-AMQP-CPP-99b52d1a_GH0.tar.gz) = 160635
 SHA256 (clickhouse/Maratyszcza-FP16-0a92994d_GH0.tar.gz) = 72c55523880227b72fc97cee52d0082f44ec8d57d09a385cd6db22cfcb4a1d15

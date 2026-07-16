@@ -1,5 +1,5 @@
 PORTNAME=	nagiosplugin
-DISTVERSION=	1.3.2
+DISTVERSION=	1.3.3
 CATEGORIES=	sysutils python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -10,6 +10,8 @@ WWW=		https://nagiosplugin.readthedocs.io/
 
 LICENSE=	ZPL21
 LICENSE_FILE=	${WRKSRC}/LICENSE.txt
+
+TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}tox>0:devel/py-tox@${PY_FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

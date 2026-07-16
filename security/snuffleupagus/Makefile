@@ -1,6 +1,6 @@
 PORTNAME=	snuffleupagus
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.12.0
+DISTVERSION=	0.13.0
 CATEGORIES=	security
 PKGNAMEPREFIX=	${PHP_PKGNAMEPREFIX}
 
@@ -17,14 +17,10 @@ USES=		localbase:ldflags php:ext
 USE_GITHUB=	yes
 GH_ACCOUNT=	jvoisin
 USE_PHP=	session:build
-IGNORE_WITH_PHP=	85 86
 
 CONFIGURE_ARGS=	--enable-snuffleupagus
 
 TEST_TARGET=	test
-
-# Fix build with clang11
-CFLAGS+=	-fcommon
 
 WRKSRC_SUBDIR=	src
 
