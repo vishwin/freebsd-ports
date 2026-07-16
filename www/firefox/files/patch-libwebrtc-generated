@@ -1,6 +1,5 @@
 commit aff9c9149a23dfc8998b7259d90d58ce61387b53
 Author: Christoph Moench-Tegeder <cmt@FreeBSD.org>
-Date:   Sat Jul 11 12:52:52 2026 +0000
 
     regenerate FreeBSD libwebrtc patch for gecko 153
 

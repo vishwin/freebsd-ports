@@ -120,10 +120,6 @@ MOZ_OPTIONS+=	--with-ccache
 
 # Standard depends
 _ALL_DEPENDS=	av1 event ffi graphite harfbuzz jpeg nspr nss png pixman sqlite vpx webp
-# from 147 on, gecko needs ICU 78, but ports only has ICU 76 (2025-12-28)
-.    if ${MOZILLA_VER:R:R} < 147
-_ALL_DEPENDS+=	icu
-.    endif
 
 av1_LIB_DEPENDS=	libaom.so:multimedia/aom libdav1d.so:multimedia/dav1d
 av1_MOZ_OPTIONS=	--with-system-av1

@@ -5502,3 +5502,4 @@ textproc/py-commonmark|textproc/py-CommonMark|2026-07-13|Remove duplicate port
 devel/pecl-pcov|devel/php-pcov|2026-07-13|Converted to standard extension from pecl extension
 net/pecl-xmlrpc|net/php-xmlrpc|2026-07-14|Converted to standard extension from pecl extension
 misc/py-lance-namespace-urllib3-client|databases/py-lance-namespace-urllib3-client|2026-07-16|Remove duplicate port
+net/proxychains|net/proxychains-ng|2026-07-16|Has expired: Use net/proxychains-ng instead
