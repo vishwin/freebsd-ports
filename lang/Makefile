@@ -39,6 +39,7 @@
     SUBDIR += clisp
     SUBDIR += clojure
     SUBDIR += clojure-mode.el
+    SUBDIR += clx
     SUBDIR += cocor
     SUBDIR += coffeescript
     SUBDIR += colm

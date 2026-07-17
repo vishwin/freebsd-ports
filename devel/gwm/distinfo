@@ -1,4 +1,4 @@
-TIMESTAMP = 1784190060
+TIMESTAMP = 1784293548
 SHA256 (rust/crates/aho-corasick-1.1.4.crate) = ddd31a130427c27518df266943a5308ed92d4b226cc639f5a8f1002816174301
 SIZE (rust/crates/aho-corasick-1.1.4.crate) = 184015
 SHA256 (rust/crates/alloca-0.4.0.crate) = e5a7d05ea6aea7e9e64d25b9156ba2fee3fdd659e34e41063cd2fc7cd020d7f4
@@ -617,5 +617,5 @@ SHA256 (rust/crates/zerocopy-derive-0.8.48.crate) = 70e3cd084b1788766f53af483dd2
 SIZE (rust/crates/zerocopy-derive-0.8.48.crate) = 97646
 SHA256 (rust/crates/zmij-1.0.21.crate) = b8848ee67ecc8aedbaf3e4122217aff892639231befc6a1b58d29fff4c2cabaa
 SIZE (rust/crates/zmij-1.0.21.crate) = 26665
-SHA256 (kbrdn1-gwm-cli-v1.1.0_GH0.tar.gz) = 6100bd8d4618cdb067680976572b92ea37adc081b551db87b5bed5b445e2b49d
-SIZE (kbrdn1-gwm-cli-v1.1.0_GH0.tar.gz) = 7642181
+SHA256 (kbrdn1-gwm-cli-v1.1.1_GH0.tar.gz) = 72f6f960ba1a2e30eb2be6e406a8cae5672134d3267d0237bfad232a6fcf8709
+SIZE (kbrdn1-gwm-cli-v1.1.1_GH0.tar.gz) = 7646952

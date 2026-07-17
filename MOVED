@@ -5503,3 +5503,4 @@ devel/pecl-pcov|devel/php-pcov|2026-07-13|Converted to standard extension from p
 net/pecl-xmlrpc|net/php-xmlrpc|2026-07-14|Converted to standard extension from pecl extension
 misc/py-lance-namespace-urllib3-client|databases/py-lance-namespace-urllib3-client|2026-07-16|Remove duplicate port
 net/proxychains|net/proxychains-ng|2026-07-16|Has expired: Use net/proxychains-ng instead
+x11/swww|x11/awww|2026-07-17|Upstream renamed

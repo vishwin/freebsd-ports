@@ -5017,6 +5017,7 @@
     SUBDIR += py-expandvars
     SUBDIR += py-expecttest
     SUBDIR += py-expiringdict
+    SUBDIR += py-expression
     SUBDIR += py-extras
     SUBDIR += py-extremes
     SUBDIR += py-fabric
@@ -7174,7 +7175,9 @@
     SUBDIR += rubygem-aws-sdk-servicediscovery
     SUBDIR += rubygem-aws-sdk-servicequotas
     SUBDIR += rubygem-aws-sdk-ses
+    SUBDIR += rubygem-aws-sdk-ses-gitlab
     SUBDIR += rubygem-aws-sdk-sesv2
+    SUBDIR += rubygem-aws-sdk-sesv2-gitlab
     SUBDIR += rubygem-aws-sdk-shield
     SUBDIR += rubygem-aws-sdk-signer
     SUBDIR += rubygem-aws-sdk-signerdata

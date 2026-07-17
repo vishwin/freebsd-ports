@@ -86,6 +86,7 @@
     SUBDIR += citrix_ica
     SUBDIR += cjdns
     SUBDIR += claws
+    SUBDIR += cliproxyapi
     SUBDIR += cloud-init
     SUBDIR += cloudflare-speed-cli
     SUBDIR += cloudflared
@@ -1418,6 +1419,7 @@
     SUBDIR += rubygem-nkf-gitlab
     SUBDIR += rubygem-no_proxy_fix
     SUBDIR += rubygem-oauth
+    SUBDIR += rubygem-oauth-gitlab
     SUBDIR += rubygem-oauth-tty
     SUBDIR += rubygem-oauth0
     SUBDIR += rubygem-oauth2

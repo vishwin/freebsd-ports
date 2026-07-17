@@ -19,6 +19,7 @@
     SUBDIR += ashell
     SUBDIR += aterm
     SUBDIR += autorandr
+    SUBDIR += awww
     SUBDIR += babl
     SUBDIR += bbappconf
     SUBDIR += bbdock
@@ -443,7 +444,6 @@
     SUBDIR += swayr
     SUBDIR += swayrbar
     SUBDIR += swaysettings
-    SUBDIR += swww
     SUBDIR += sxhkd
     SUBDIR += sxmo-wayout
     SUBDIR += sxpc
