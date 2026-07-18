@@ -1,6 +1,6 @@
 PORTNAME=	mise
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2026.7.7
+DISTVERSION=	2026.7.8
 CATEGORIES=	sysutils
 
 MAINTAINER=	yuri@FreeBSD.org
@@ -443,6 +443,7 @@ CARGO_CRATES=	addr2line-0.25.1 \
 		itertools-0.14.0 \
 		itertools-0.15.0 \
 		itoa-1.0.18 \
+		jdx-tar-1.1.0 \
 		jiff-0.2.31 \
 		jiff-static-0.2.31 \
 		jiff-tzdb-0.1.7 \

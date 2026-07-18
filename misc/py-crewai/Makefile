@@ -1,5 +1,5 @@
 PORTNAME=	crewai
-PORTVERSION=	1.15.2
+PORTVERSION=	1.15.4
 CATEGORIES=	misc python
 MASTER_SITES=	PYPI
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -14,13 +14,13 @@ LICENSE=	MIT
 
 BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}hatchling>0:devel/py-hatchling@${PY_FLAVOR}
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}aiofiles>=23.2.1:devel/py-aiofiles@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}aiosqlite>=0.21.0:databases/py-aiosqlite@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}aiosqlite>=0.19.0:databases/py-aiosqlite@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}appdirs>=1.4.4:devel/py-appdirs@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}cel-python>=0.5.0,<0.6:devel/py-cel-python@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}chromadb>=1.1.0:databases/py-chromadb@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}click>=8.1.7,<9:devel/py-click@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}crewai-cli>=1.15.2:misc/py-crewai-cli@${PY_FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}crewai-core>=1.15.2:misc/py-crewai-core@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}crewai-cli>=1.15.4:misc/py-crewai-cli@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}crewai-core>=1.15.4:misc/py-crewai-core@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}httpx>=0.28.1:www/py-httpx@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}instructor>=1.3.3:misc/py-instructor@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}json-repair>=0.25.2:textproc/py-json-repair@${PY_FLAVOR} \
@@ -59,5 +59,7 @@ PEP517_INSTALL_CMD=	${PYTHON_CMD} -m installer --no-compile-bytecode \
 
 TEST_ENV=	${MAKE_ENV} PYTHONPATH=${STAGEDIR}${PYTHONPREFIX_SITELIBDIR} CREWAI_TESTING=true
 TEST_WRKSRC=	${WRKSRC}/tests
+
+# tests as of 1.15.4: 918 failed, 3697 passed, 89 skipped, 23 errors in 246.84s
 
 .include <bsd.port.mk>

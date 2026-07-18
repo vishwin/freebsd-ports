@@ -1,3 +1,85 @@
+  <vuln vid="0a0aca9f-8290-11f1-a93b-50ebf6bdf8e9">
+    <topic>phpmyfaq -- multiple vulnerabilities</topic>
+    <affects>
+      <package>
+	<name>phpmyfaq-php83</name>
+	<name>phpmyfaq-php84</name>
+	<name>phpmyfaq-php85</name>
+	<range><lt>4.1.6</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>phpMyFAQ team reports:</p>
+	<blockquote cite="https://www.phpmyfaq.de/security/advisory-2026-07-13/">
+	  <p>An authenticated administrator can supply an untrusted
+	    update-package path to the configuration API, causing phpMyFAQ
+	    to write an arbitrary PHP file to the server and thereby
+	    execute attacker-controlled code.</p>
+	  <p>An attacker can exploit a path traversal in the category image
+	    deletion routine to remove arbitrary files outside the intended
+	    directory, which can leave the installation in a state that
+	    allows a setup takeover.</p>
+	  <p>The two-factor authentication login flow can be completed
+	    without verifying the password factor, so an attacker who
+	    possesses only the second factor is able to authenticate as the
+	    victim.</p>
+	  <p>A delegated administrator with only the GROUP_EDIT permission
+	    can assign group memberships without restriction through
+	    GroupController::updateMembers, inheriting rights they do not
+	    hold and escalating their privileges.</p>
+	  <p>An authenticated user can inject SQL through an unescaped stop
+	    word inserted via StopWords::add(), allowing manipulation of the
+	    underlying database query.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://www.phpmyfaq.de/security/advisory-2026-07-13/</url>
+    </references>
+    <dates>
+      <discovery>2026-07-13</discovery>
+      <entry>2026-07-18</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="56feeac6-8263-11f1-92ba-bc24110523fe">
+    <topic>nginx -- multiple vulnerabilities</topic>
+    <affects>
+    <package>
+	<name>nginx</name>
+	<range><lt>1.30.4,3</lt></range>
+    </package>
+    <package>
+	<name>nginx-devel</name>
+	<range><lt>1.31.3</lt></range>
+    </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The nginx development team reports:</p>
+	<blockquote cite="https://nginx.org/en/security_advisories.html">
+	  <p>Buffer overflow when using map and regex
+	    (CVE-2026-42533). Severity: major.</p>
+	  <p>Memory disclosure when using ngx_http_slice_module
+	    (CVE-2026-60005). Severity: medium.</p>
+	  <p>Use-after-free when using ngx_http_ssi_module
+	    (CVE-2026-56434). Severity: medium.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <cvename>CVE-2026-42533</cvename>
+      <cvename>CVE-2026-56434</cvename>
+      <cvename>CVE-2026-60005</cvename>
+      <url>https://nginx.org/en/security_advisories.html</url>
+    </references>
+    <dates>
+      <discovery>2026-07-15</discovery>
+      <entry>2026-07-18</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="e26b9011-80ef-11f1-b72c-8447094a420f">
     <topic>liboqs -- Multiple vulnerabilities</topic>
     <affects>

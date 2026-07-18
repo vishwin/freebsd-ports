@@ -1,6 +1,6 @@
 PORTNAME=	pipewire-spa-oss-ng
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.9.6
+DISTVERSION=	0.9.7
 CATEGORIES=	audio
 
 MAINTAINER=	kbowling@FreeBSD.org
@@ -24,12 +24,12 @@ CARGO_CRATES=	aho-corasick-1.1.4 \
 		annotate-snippets-0.11.5 \
 		anstyle-1.0.14 \
 		bindgen-0.72.1 \
-		bitflags-2.13.0 \
+		bitflags-2.13.1 \
 		cc-1.2.67 \
 		cexpr-0.6.0 \
 		cfg-expr-0.20.8 \
 		cfg-if-1.0.4 \
-		cfg_aliases-0.2.1 \
+		cfg_aliases-0.2.2 \
 		clang-sys-1.8.1 \
 		cookie-factory-0.3.3 \
 		either-1.16.0 \
@@ -54,8 +54,8 @@ CARGO_CRATES=	aho-corasick-1.1.4 \
 		pkg-config-0.3.33 \
 		proc-macro2-1.0.106 \
 		quote-1.0.46 \
-		regex-1.13.0 \
-		regex-automata-0.4.15 \
+		regex-1.13.1 \
+		regex-automata-0.4.16 \
 		regex-syntax-0.8.11 \
 		rustc-hash-2.1.3 \
 		rustix-1.1.4 \
@@ -65,20 +65,20 @@ CARGO_CRATES=	aho-corasick-1.1.4 \
 		shlex-1.3.0 \
 		shlex-2.0.1 \
 		smallvec-1.15.2 \
-		syn-2.0.118 \
+		syn-2.0.119 \
 		system-deps-7.0.8 \
 		target-lexicon-0.13.5 \
-		toml-1.1.2+spec-1.1.0 \
+		toml-1.1.3+spec-1.1.0 \
 		toml_datetime-1.1.1+spec-1.1.0 \
 		toml_parser-1.1.2+spec-1.1.0 \
-		toml_writer-1.1.1+spec-1.1.0 \
+		toml_writer-1.1.2+spec-1.1.0 \
 		uds-0.4.2 \
 		unicode-ident-1.0.24 \
 		unicode-width-0.2.2 \
 		version-compare-0.2.1 \
 		windows-link-0.2.1 \
 		windows-sys-0.61.2 \
-		winnow-1.0.3
+		winnow-1.0.4
 
 CONFLICTS_INSTALL=	pipewire-spa-oss
 
