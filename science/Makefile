@@ -329,6 +329,7 @@
     SUBDIR += py-dlib
     SUBDIR += py-dwave-cloud-client
     SUBDIR += py-dwave-gate
+    SUBDIR += py-dwave-graphs
     SUBDIR += py-dwave-greedy
     SUBDIR += py-dwave-hybrid
     SUBDIR += py-dwave-inspector

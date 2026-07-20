@@ -1,3 +1,115 @@
+  <vuln vid="562ff91e-8407-11f1-bfde-10ffe07f9334">
+    <topic>Mailpit -- SMTP DATA line reader buffers over-limit input before size enforcement</topic>
+    <affects>
+      <package>
+	<name>mailpit</name>
+	<range><lt>1.30.5</lt></range>
+      </package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Mailpit author reports:</p>
+	<blockquote cite="https://github.com/axllent/mailpit/security/advisories/GHSA-r553-m4fv-5v97">
+	  <p>Mailpit's SMTP DATA reader enforces the configured
+	  MaxMessageSize only after bufio.Reader.ReadBytes('\n')
+	  has already buffered a complete DATA line. A remote
+	  unauthenticated SMTP client can send one line larger than
+	  the configured message-size cap and force memory allocation
+	  before Mailpit returns the expected 552 5.3.4 rejection,
+	  leaving patched versions still exposed to a single-line
+	  incomplete-fix variant of the earlier SMTP DATA body-size
+	  issue.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://github.com/axllent/mailpit/security/advisories/GHSA-r553-m4fv-5v97</url>
+    </references>
+    <dates>
+      <discovery>2026-07-20</discovery>
+      <entry>2026-07-20</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="272a2772-8367-11f1-82b9-901b0e9408dc">
+    <topic>tailscale -- Multiple vulnerabilities</topic>
+    <affects>
+<package>
+<name>tailscale</name>
+<range><lt>1.98.9</lt></range>
+</package>
+    </affects>
+    <description>
+	<body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Tailscale team reports:</p>
+	<blockquote cite="https://tailscale.com/changelog#2026-07-14">
+	  <p>Tailscale SSH Unix socket forwarding respects symlink
+	  permissions. This fix addresses a security vulnerability
+	  described in TS-2026-004.</p>
+	  <p>Tailscale Serve Unix socket proxy targets are restricted
+	  to the root user. This fix addresses a security
+	  vulnerability described in TS-2026-005.</p>
+	  <p>Tailscale SSH does not allow the use of UIDs or
+	  numeric-only usernames. This fix addresses a security
+	  vulnerability described in TS-2026-006.</p>
+	  <p>Nodes advertising Tailscale Services filter and reject
+	  packets from service IPs on ports they do not
+	  advertise. This fix addresses a security vulnerability
+	  described in TS-2026-007.</p>
+	  <p>Tailscale Serve and Tailscale Funnel terminate path walks
+	  for non-absolute paths, preventing CPU core pinning. This
+	  fix addresses a security vulnerability described in
+	  TS-2026-008.</p>
+	  <p>Tailscale SSH does not allow the use of usernames with
+	  leading dashes. This fix addresses a security vulnerability
+	  described in TS-2026-009.</p>
+	</blockquote>
+	</body>
+    </description>
+    <references>
+      <url>https://tailscale.com/changelog#2026-07-14</url>
+    </references>
+    <dates>
+      <discovery>2026-06-03</discovery>
+      <entry>2026-07-19</entry>
+    </dates>
+  </vuln>
+
+  <vuln vid="9645fcd7-82a1-11f1-8c96-5404a68ad561">
+    <topic>traefik -- Multiple vulnerabilities</topic>
+    <affects>
+      <package>
+      <name>traefik</name>
+      <range><lt>3.7.8</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+      <p>The traefik project releases a new version addressing multiple vulnerabilities:</p>
+      <blockquote cite="https://github.com/traefik/traefik/releases/tag/v3.7.7">
+      <ul>
+      <li>GHSA-cxjq-mrr5-89rv (Authentication Bypass via Path Traversal in ReplacePathRegex Middleware)</li>
+      <li>GHSA-42cj-m3vj-89wv (CRD IngressRouteTCP ServersTransport Cross-Provider Namespace Bypass)</li>
+      <li>GHSA-qq9q-x9w4-chhj (Gateway API HTTPRoute BackendRef ExtensionRef Namespace Confusion)</li>
+      </ul>
+      </blockquote>
+      <blockquote cite="https://github.com/traefik/traefik/releases/tag/v3.7.8">
+      <ul>
+      <li>GHSA-8rxv-jg7p-wvg3 (Kubernetes Ingress NGINX RewriteTarget Path Traversal Allows Route-Level Authentication Bypass)</li>
+      </ul>
+      </blockquote>
+      </body>
+    </description>
+    <references>
+      <url>https://github.com/traefik/traefik/releases/tag/v3.7.7</url>
+      <url>https://github.com/traefik/traefik/releases/tag/v3.7.8</url>
+    </references>
+    <dates>
+      <discovery>2026-07-08</discovery>
+      <entry>2026-07-18</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="0a0aca9f-8290-11f1-a93b-50ebf6bdf8e9">
     <topic>phpmyfaq -- multiple vulnerabilities</topic>
     <affects>

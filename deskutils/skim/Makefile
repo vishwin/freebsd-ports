@@ -1,6 +1,6 @@
 PORTNAME=	skim
 DISTVERSIONPREFIX=	v
-DISTVERSION=	5.2.0
+DISTVERSION=	5.3.1
 CATEGORIES=	deskutils
 PKGNAMESUFFIX=	-fuzzy-finder
 
@@ -31,7 +31,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		anstyle-parse-1.0.0 \
 		anstyle-query-1.1.5 \
 		anstyle-wincon-3.0.11 \
-		anyhow-1.0.103 \
+		anyhow-1.0.104 \
 		approx-0.5.1 \
 		arrayvec-0.7.8 \
 		assert_enum_variants-0.1.2 \
@@ -49,14 +49,14 @@ CARGO_CRATES=	adler2-2.0.1 \
 		bstr-1.13.0 \
 		bumpalo-3.20.3 \
 		by_address-1.2.1 \
-		bytemuck-1.25.1 \
+		bytemuck-1.25.2 \
 		bytemuck_derive-1.11.0 \
 		byteorder-1.5.0 \
 		byteorder-lite-0.1.0 \
 		bytes-1.12.1 \
 		cast-0.3.0 \
 		castaway-0.2.4 \
-		cc-1.2.67 \
+		cc-1.3.0 \
 		cfg-if-1.0.4 \
 		cfg_aliases-0.1.1 \
 		cfg_aliases-0.2.2 \
@@ -67,7 +67,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		clap-4.6.2 \
 		clap_builder-4.6.2 \
 		clap_complete-4.6.7 \
-		clap_complete_nushell-4.6.0 \
+		clap_complete_nushell-4.6.1 \
 		clap_derive-4.6.1 \
 		clap_lex-1.1.0 \
 		clap_mangen-0.3.0 \
@@ -121,7 +121,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		eyre-0.6.12 \
 		fancy-regex-0.11.0 \
 		fast-srgb8-1.0.0 \
-		fastrand-2.4.1 \
+		fastrand-2.5.0 \
 		fdeflate-0.3.7 \
 		filedescriptor-0.8.3 \
 		find-msvc-tools-0.1.9 \
@@ -132,15 +132,15 @@ CARGO_CRATES=	adler2-2.0.1 \
 		foldhash-0.2.0 \
 		frizbee-0.11.0 \
 		funty-2.0.0 \
-		futures-0.3.32 \
-		futures-channel-0.3.32 \
-		futures-core-0.3.32 \
-		futures-executor-0.3.32 \
-		futures-io-0.3.32 \
-		futures-macro-0.3.32 \
-		futures-sink-0.3.32 \
-		futures-task-0.3.32 \
-		futures-util-0.3.32 \
+		futures-0.3.33 \
+		futures-channel-0.3.33 \
+		futures-core-0.3.33 \
+		futures-executor-0.3.33 \
+		futures-io-0.3.33 \
+		futures-macro-0.3.33 \
+		futures-sink-0.3.33 \
+		futures-task-0.3.33 \
+		futures-util-0.3.33 \
 		generic-array-0.14.7 \
 		getrandom-0.2.17 \
 		getrandom-0.3.4 \
@@ -169,8 +169,9 @@ CARGO_CRATES=	adler2-2.0.1 \
 		itertools-0.13.0 \
 		itertools-0.14.0 \
 		itoa-1.0.18 \
-		jiff-0.2.32 \
-		jiff-static-0.2.32 \
+		jiff-0.2.33 \
+		jiff-core-0.1.0 \
+		jiff-static-0.2.33 \
 		js-sys-0.3.103 \
 		kanal-0.1.1 \
 		kasuari-0.4.12 \
@@ -237,12 +238,12 @@ CARGO_CRATES=	adler2-2.0.1 \
 		ppv-lite86-0.2.21 \
 		proc-macro-error-attr3-3.0.2 \
 		proc-macro-error3-3.0.2 \
-		proc-macro2-1.0.106 \
+		proc-macro2-1.0.107 \
 		pulldown-cmark-0.13.4 \
 		pxfm-0.1.30 \
 		quantette-0.5.1 \
 		quick-error-2.0.1 \
-		quote-1.0.46 \
+		quote-1.0.47 \
 		r-efi-5.3.0 \
 		r-efi-6.0.0 \
 		radium-0.7.0 \
@@ -267,8 +268,8 @@ CARGO_CRATES=	adler2-2.0.1 \
 		rayon-core-1.13.0 \
 		recvmsg-1.0.0 \
 		redox_syscall-0.5.18 \
-		ref-cast-1.0.25 \
-		ref-cast-impl-1.0.25 \
+		ref-cast-1.0.26 \
+		ref-cast-impl-1.0.26 \
 		regex-1.13.1 \
 		regex-automata-0.4.16 \
 		regex-syntax-0.8.11 \
@@ -284,9 +285,9 @@ CARGO_CRATES=	adler2-2.0.1 \
 		scopeguard-1.2.0 \
 		self_cell-1.3.0 \
 		semver-1.0.28 \
-		serde-1.0.228 \
-		serde_core-1.0.228 \
-		serde_derive-1.0.228 \
+		serde-1.0.229 \
+		serde_core-1.0.229 \
+		serde_derive-1.0.229 \
 		serde_json-1.0.150 \
 		serial2-0.2.37 \
 		serial_test-3.5.0 \
@@ -312,6 +313,7 @@ CARGO_CRATES=	adler2-2.0.1 \
 		strum_macros-0.28.0 \
 		syn-1.0.109 \
 		syn-2.0.119 \
+		syn-3.0.0 \
 		tap-1.0.1 \
 		tempfile-3.27.0 \
 		termina-0.3.3 \
@@ -319,9 +321,9 @@ CARGO_CRATES=	adler2-2.0.1 \
 		termios-0.3.3 \
 		termwiz-0.23.3 \
 		thiserror-1.0.69 \
-		thiserror-2.0.18 \
+		thiserror-2.0.19 \
 		thiserror-impl-1.0.69 \
-		thiserror-impl-2.0.18 \
+		thiserror-impl-2.0.19 \
 		thread_local-1.1.10 \
 		time-0.3.53 \
 		time-core-0.1.9 \

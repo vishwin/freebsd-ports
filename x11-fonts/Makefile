@@ -25,6 +25,7 @@
     SUBDIR += bdf2sfd
     SUBDIR += bdfresize
     SUBDIR += bdftopcf
+    SUBDIR += bedstead
     SUBDIR += bitstream-vera
     SUBDIR += bitter
     SUBDIR += blackout

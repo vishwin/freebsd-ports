@@ -1,8 +1,8 @@
 PORTNAME=	mihomo
 DISTVERSIONPREFIX=	v
-DISTVERSION=	1.19.28
-PORTREVISION=	1
+DISTVERSION=	1.19.29
 CATEGORIES=	net
+DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	yuri@FreeBSD.org
 COMMENT=	Simple Python Pydantic model for Honkai
@@ -11,7 +11,7 @@ WWW=		https://github.com/MetaCubeX/mihomo/tree/Alpha
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-USES=		go:modules cpe
+USES=		go:1.26,modules cpe
 
 CPE_VENDOR=	clash_project
 

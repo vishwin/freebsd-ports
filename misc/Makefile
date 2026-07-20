@@ -507,7 +507,6 @@
     SUBDIR += py-facenet-pytorch
     SUBDIR += py-fal-client
     SUBDIR += py-fast-histogram
-    SUBDIR += py-fastavro
     SUBDIR += py-faster-coco-eval
     SUBDIR += py-fastmcp
     SUBDIR += py-fastmcp-slim
@@ -617,6 +616,7 @@
     SUBDIR += py-openpaperwork-core
     SUBDIR += py-openpaperwork-gtk
     SUBDIR += py-openvdb
+    SUBDIR += py-optimum
     SUBDIR += py-optuna
     SUBDIR += py-oterm
     SUBDIR += py-paddlepaddle

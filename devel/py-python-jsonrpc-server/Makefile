@@ -12,6 +12,10 @@ WWW=		https://github.com/palantir/python-jsonrpc-server
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
+DEPRECATED=	There is no new version in 6 years, the upstream build and CI are failing and nothing depends on this port, hence the removal
+EXPIRATION_DATE=	2026-07-31
+BROKEN=		SyntaxWarning: invalid escape sequence '\s'
+
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}ujson>0:devel/py-ujson@${PY_FLAVOR}
 
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest@${PY_FLAVOR} \

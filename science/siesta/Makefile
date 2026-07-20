@@ -1,7 +1,7 @@
 PORTNAME=	siesta
 DISTVERSION=	5.4.2
 CATEGORIES=	science # chemistry
-MASTER_SITES=	https://gitlab.com/siesta-project/${PORTNAME}/-/releases/v${DISTVERSION}/downloads/
+MASTER_SITES=	https://gitlab.com/siesta-project/${PORTNAME}/-/releases/${DISTVERSION}/downloads/
 DISTFILES=	${PORTNAME}-${DISTVERSION}.tar.gz
 
 MAINTAINER=	yuri@FreeBSD.org

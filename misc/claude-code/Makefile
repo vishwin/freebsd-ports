@@ -1,5 +1,5 @@
 PORTNAME=	claude-code
-DISTVERSION=	2.1.214
+DISTVERSION=	2.1.215
 CATEGORIES=	misc # machine-learning
 MASTER_SITES=	https://downloads.claude.ai/claude-code-releases/${DISTVERSION}/:amd64 \
 		https://downloads.claude.ai/claude-code-releases/${DISTVERSION}/:aarch64
@@ -20,6 +20,7 @@ USE_LINUX=	base
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 EXTRACT_ONLY=
+STRIP=		# elftoolchain strip fails on these Linux binaries
 
 PLIST_FILES=	bin/claude \
 		libexec/claude

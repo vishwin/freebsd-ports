@@ -1114,6 +1114,7 @@
     SUBDIR += py-psutil
     SUBDIR += py-ptyprocess
     SUBDIR += py-puremagic
+    SUBDIR += py-py-consul
     SUBDIR += py-py-cpuinfo
     SUBDIR += py-pyinfra
     SUBDIR += py-python-bareos

@@ -921,6 +921,16 @@
     SUBDIR += glog
     SUBDIR += gmake
     SUBDIR += gn
+    SUBDIR += gnatcoll-bindings
+    SUBDIR += gnatcoll-bindings-cpp
+    SUBDIR += gnatcoll-bindings-gmp
+    SUBDIR += gnatcoll-bindings-iconv
+    SUBDIR += gnatcoll-bindings-lzma
+    SUBDIR += gnatcoll-bindings-omp
+    SUBDIR += gnatcoll-bindings-python
+    SUBDIR += gnatcoll-bindings-readline
+    SUBDIR += gnatcoll-bindings-syslog
+    SUBDIR += gnatcoll-bindings-zlib
     SUBDIR += gnatcoll-core
     SUBDIR += gnatcoll-minimal
     SUBDIR += gnome-builder
@@ -8601,6 +8611,7 @@
     SUBDIR += sentry-cli
     SUBDIR += serd
     SUBDIR += serdisplib
+    SUBDIR += serialize
     SUBDIR += sfml
     SUBDIR += sfsexp
     SUBDIR += sgb

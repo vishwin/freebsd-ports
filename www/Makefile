@@ -214,6 +214,7 @@
     SUBDIR += forgejo
     SUBDIR += forgejo-lts
     SUBDIR += forgejo15
+    SUBDIR += forgejo16
     SUBDIR += formication
     SUBDIR += foswiki
     SUBDIR += free-sa-devel
@@ -1817,6 +1818,7 @@
     SUBDIR += py-h2
     SUBDIR += py-habanero
     SUBDIR += py-hdfs
+    SUBDIR += py-hf-transfer
     SUBDIR += py-horizon
     SUBDIR += py-hpack
     SUBDIR += py-hstspreload
